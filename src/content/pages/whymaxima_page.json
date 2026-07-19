@@ -1,0 +1,234 @@
+{
+  "pageKey": "whymaxima_page",
+  "sections": [
+    {
+      "key": "custom_whymaxima_hero",
+      "label": "Hero Image",
+      "type": "hero-image-only",
+      "content": {
+        "image": "/images/cms/uploads/1772676001289-sekkr.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You"
+      }
+    },
+    {
+      "key": "custom_whymaxima_intro",
+      "label": "Why Maxima",
+      "type": "why-maxima-intro",
+      "content": {
+        "title": "Built on Trust. \nDriven by\nPrecision.",
+        "image1": "/images/cms/uploads/1772675743580-grztir.webp",
+        "image2": "/images/cms/uploads/1772675764399-c8f59.webp",
+        "ctaLink": "",
+        "ctaText": "",
+        "subtitle": "Why Maxima?",
+        "buttonLink": "#contact",
+        "buttonText": "Contact Us",
+        "paragraph1": "At <b>Maxima Concrete</b>, we believe great construction starts with great trust. For over 15 years, we’ve been the <b>concrete contractor in Central Ohio</b> that homeowners and businesses rely on for precision, accountability, and lasting results.  ",
+        "paragraph2": "From <b>driveways</b> and <b>patios</b> to <b>outdoor living spaces</b> and <b>pools</b>, we handle every step of your project with our own equipment and our own expert team — no middlemen, no outsourcing, and no excuses."
+      }
+    },
+    {
+      "key": "custom_real_reviews_seed",
+      "label": "Real Reviews",
+      "type": "real-reviews",
+      "content": {
+        "title": "<b>Below are just a few real reviews from our satisfied customers</b>\n — proof of our commitment to excellence and care on every job.",
+        "reviews": [
+          {
+            "name": "J.H — Suburban Home",
+            "text": "A wonderful experience! Will definitely be hiring them again in the future for further projects! Just a wonderful job by all involved.",
+            "image": "/images/cms/uploads/1772676858917-i1qnas.webp"
+          },
+          {
+            "name": "J.S — Grey House",
+            "text": "They were professional and impressively hard-working. The high praise from several neighbors probably says all you need to know. Big improvement. It looks great. Problem solved.",
+            "image": "/images/cms/uploads/1772676869163-n4z0d.webp"
+          },
+          {
+            "name": "A.B — Suburban Home",
+            "text": "They did an excellent job on our drive extension. They were on time, efficient, and done in 2 days. I will definitely use them again in the future.",
+            "image": "/images/cms/uploads/1772676880383-eeptlj.webp"
+          },
+          {
+            "name": "C.L — Suburban Home",
+            "text": "I would 100% recommend Maxima Concrete. They are extremely professional and their team does an amazing job. My driveway looks fantastic — if I ever need concrete again, I would most definitely call Maxima Concrete.",
+            "image": "/images/cms/uploads/1772676888543-jsjw6.webp"
+          }
+        ],
+        "bottomText": "See more great reviews of our company on",
+        "bottomLogos": [
+          "/images/cms/uploads/1772677138854-9hr6th.webp"
+        ],
+        "overlayOpacity": 80,
+        "backgroundImage": "/images/cms/uploads/1772676826848-krzb4t.webp"
+      }
+    },
+    {
+      "key": "custom_areas_seed",
+      "label": "Areas",
+      "type": "areas",
+      "content": {
+        "areas": [
+          "Delaware County: Delaware, Powell, Galena, Lewis Center, Sunbury, Dublin, and more.",
+          "Franklin County: Columbus, Westerville, Upper Arlington, Grove City, Gahanna, Worthington, and nearby suburbs.",
+          "Licking County: Granville, Johnstown, Pataskala, Hebron, and others.",
+          "Knox, Fairfield, Marion, Madison, Morrow, Pickaway, and Union Counties: Select projects available upon request."
+        ],
+        "title": "Serving Central Ohio and Beyond",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "subtitle": "We proudly serve homeowners and businesses across the following counties:",
+        "trustIcons": [
+          "/images/cms/uploads/1772678974393-u5kd4k.webp"
+        ],
+        "bottomTitle": "Not sure if we serve your area?",
+        "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8.webp",
+        "bottomDescription": "Contact us to discuss your project — we often travel beyond our main service radius for select installations."
+      }
+    },
+    {
+      "key": "custom_financing_seed",
+      "label": "Financing",
+      "type": "financing",
+      "content": {
+        "title": "Financing Options\nThat Fit Your Budget",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "benefits": [
+          "Loan amounts up to $100,000",
+          "Affordable monthly payments tailored to your budget",
+          "Fast approval — see your options in minutes without affecting your credit score",
+          "Funding within 1–3 days",
+          "No prepayment penalties",
+          "No home equity required"
+        ],
+        "cardImage": "/images/cms/uploads/1772679492268-y6ls8i.webp",
+        "bottomText": "See your personalized payment options today — simple, secure, and transparent.",
+        "dollarIcon": "/images/cms/uploads/1772679509572-704q7.webp",
+        "description": "Home improvement shouldn't feel out of reach — that's why Maxima Concrete partners with Hearth Financing to make your project more affordable and stress-free.",
+        "benefitsTitle": "Benefits of Financing with Maxima Concrete:"
+      }
+    },
+    {
+      "key": "custom_values_seed",
+      "label": "Values",
+      "type": "values",
+      "content": {
+        "image": "/images/cms/uploads/1772680164186-wbdtn.webp",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "pillars": [
+          {
+            "title": "Transparency",
+            "paragraphs": [
+              "Buying or upgrading concrete work is a major decision. We believe you deserve clarity every step of the way.",
+              "That's why we educate you about materials, methods, and what to expect during construction. If any step involves external work — we'll tell you.",
+              "You stay informed, empowered, and confident."
+            ]
+          },
+          {
+            "title": "Accountability",
+            "paragraphs": [
+              "We don't hide behind contractors — we take ownership.",
+              "Because we perform most of the work ourselves, your entire project remains in our hands from start to finish.",
+              "Your questions are answered directly by Maxima Concrete, ensuring your experience is smooth and your results are flawless."
+            ]
+          },
+          {
+            "title": "Efficiency",
+            "paragraphs": [
+              "With our own licensed team and fleet of equipment, we complete projects faster and with greater consistency.",
+              "No waiting for third parties. No scheduling conflicts.",
+              "From start to finish, our process is built for precision and productivity — so you get results that last without unnecessary delays."
+            ]
+          }
+        ],
+        "overlayTitle": "Transparency.\nAccountability.\nEfficiency."
+      }
+    },
+    {
+      "key": "custom_1773689121091_usp26a",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1773689112171_tu7nc",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    }
+  ]
+}

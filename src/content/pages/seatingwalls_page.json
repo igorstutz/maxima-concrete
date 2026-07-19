@@ -1,0 +1,277 @@
+{
+  "pageKey": "seatingwalls_page",
+  "sections": [
+    {
+      "key": "custom_1771529919101_ur4yf6",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Seating Walls",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Structure, Comfort, and Design",
+        "subtitle": "Structure, Comfort, and Design — Built Into Your Outdoor Space",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782842820455-a9z3rg.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782842820455-a9z3rg-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981760116_krj08",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Timeless Warmth. Built to Gather. Designed to Last.",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "Paver and stone seating walls are more than a place to sit — they are architectural elements that bring structure, flow, and comfort to outdoor living spaces. Thoughtfully designed and professionally built, they define areas, invite conversation, and elevate the overall experience of your patio or b",
+        "imageLarge": "/images/cms/uploads/1782842801560-e9yyn.webp",
+        "paragraph1": "At Maxima, we design and construct custom paver and stone seating walls that blend durability, refined aesthetics, and everyday functionality — all tailored to your space and lifestyle.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842793670-2u8rft.webp"
+      }
+    },
+    {
+      "key": "custom_1771982037918_3tmoo",
+      "label": "Why Add a Seating Wall",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Add a Seating Wall to Your Outdoor Space?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/placeholder.svg",
+            "items": [
+              {
+                "text": "",
+                "label": ""
+              }
+            ],
+            "title": "Built-In Seating Without the Clutter",
+            "description": "Patios and outdoor living areas benefit from generous seating — and seating walls provide it seamlessly. They eliminate the need for extra furniture while maintaining a clean, cohesive design."
+          },
+          {
+            "icon": "/placeholder.svg",
+            "items": [
+              {
+                "text": "",
+                "label": ""
+              }
+            ],
+            "title": "Built-In Seating Without the Clutter",
+            "bullets": [
+              "Fire pit zones",
+              "Dining and entertaining spaces",
+              "Walkways and transition areas"
+            ],
+            "closingText": "This creates flow without closing off the space.",
+            "description": "Seating walls help organize your outdoor layout, subtly separating areas such as:"
+          },
+          {
+            "icon": "/placeholder.svg",
+            "items": [
+              {
+                "text": "",
+                "label": ""
+              }
+            ],
+            "title": "Visual Impact & Design Flexibility",
+            "description": "Pavers and natural stone are available in a wide range of colors, textures, and profiles — allowing seating walls to either stand out as a focal point or blend harmoniously with existing patios, walkways, and walls."
+          }
+        ],
+        "description": "Seating walls are one of the most versatile hardscape features, offering both form and function without cluttering your space.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773316150359-1p20pk.webp"
+      }
+    },
+    {
+      "key": "custom_1773620518953_95e8rh",
+      "label": "Design Option",
+      "type": "common-applications",
+      "content": {
+        "items": [
+          "Clean lines and a modern aesthetic",
+          "Ideal for defining edges and creating structured layouts",
+          "Softer, more organic appearance",
+          "Perfect for wrapping around fire pits, patios, and pools"
+        ],
+        "title": "Seating Wall Design Option",
+        "rightTitle": "Design Options",
+        "_sourceLabel": "Common Applications",
+        "designOptions": [
+          {
+            "image": "/images/cms/uploads/1773620720621-g6zumi.webp",
+            "title": "Straight Seating Walls",
+            "description": "Clean, modern lines ideal for structured landscapes and contemporary designs."
+          },
+          {
+            "image": "/images/cms/uploads/1773620740714-dcp3n.webp",
+            "title": "Curved Seating Walls",
+            "description": "Soft, organic shapes that blend naturally into the environment — perfect for gardens and flowing outdoor layouts."
+          }
+        ]
+      }
+    },
+    {
+      "key": "custom_1773619937324_wuswdq",
+      "label": "Benches & Material Combinations",
+      "type": "integrated-features-2",
+      "content": {
+        "cards": [
+          {
+            "image": "/images/cms/uploads/1773620154644-uw8fd.webp",
+            "title": "Contrasting paver caps",
+            "description": ""
+          },
+          {
+            "image": "/images/cms/uploads/1773620164754-6dc0ir.webp",
+            "title": "Natural stone accents",
+            "description": ""
+          },
+          {
+            "image": "/images/cms/uploads/1773620172585-luv6m.webp",
+            "title": "Wood bench tops for warmth and texture",
+            "description": ""
+          }
+        ],
+        "title": "Seating Wall Benches & Material Combinations",
+        "subtitle": "These details elevate both comfort and design.\nTo enhance comfort and visual contrast, seating walls can incorporate:",
+        "_sourceLabel": "Integrated Features 2",
+        "backgroundColor": "#041C2D"
+      }
+    },
+    {
+      "key": "custom_1773620031344_id97t",
+      "label": "Integrated Features 2",
+      "type": "integrated-features-2",
+      "content": {
+        "cards": [
+          {
+            "image": "/images/cms/uploads/1773343997454-25g5c8_copy_1773619939123_1jkt1_copy_1773620032644_12o94w.webp",
+            "title": "Fire Pits",
+            "description": "Create an inviting, social gathering space with seating walls that naturally frame the fire."
+          },
+          {
+            "image": "/images/cms/uploads/1773344039232-prz73_copy_1773619939124_iq4gtq_copy_1773620032654_didlwr.webp",
+            "title": "Outdoor Kitchens & Bars",
+            "description": "Extend counters or create bar-height seating for casual dining and entertaining."
+          },
+          {
+            "image": "/images/cms/uploads/1773344056280-j0z8muj_copy_1773619939126_uwuxyd_copy_1773620032696_9edoq.webp",
+            "title": "Privacy & Boundary Definition",
+            "description": "Strategically placed seating walls add subtle privacy while maintaining openness."
+          }
+        ],
+        "title": "Integrated Features",
+        "subtitle": "Seating walls work beautifully when combined with other outdoor living elements:",
+        "_sourceLabel": "Integrated Features 2"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982544615_jomzpt",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982608961_epgvkc",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Most seating walls are built between 16–18 inches high for comfortable seating.",
+            "question": "1. How high is a typical seating wall?"
+          },
+          {
+            "answer": "Minimal. Occasional cleaning keeps them looking new for years.",
+            "question": "2. Do seating walls require maintenance?"
+          },
+          {
+            "answer": "Yes. In most cases, they can be seamlessly integrated into existing hardscapes.",
+            "question": "3. Can seating walls be added to an existing patio?"
+          },
+          {
+            "answer": "Yes. Proper base preparation and drainage are essential and always included.",
+            "question": "4. Are seating walls structurally reinforced?"
+          }
+        ],
+        "title": "FAQ — Seating Walls",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

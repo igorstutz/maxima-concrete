@@ -1,0 +1,151 @@
+{
+  "pageKey": "finishesbuffwash_page",
+  "sections": [
+    {
+      "key": "custom_1773272999744_v73jee",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Buff Wash & Exposed Aggregate Concrete",
+        "tagline": "The Finish Made to Be Touched",
+        "backLink": "/finishes",
+        "subtitle": "The Finish Made to Be Touched",
+        "backLabel": "Back to Finishes",
+        "description": "A surface wash that reveals the natural stone embedded in the mix, giving every pour a rich, organic texture you can both see and feel.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1778533291033-fl6wv.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1778533291033-fl6wv-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1773273005013_323yuk",
+      "label": "Intro",
+      "type": "finishes-intro",
+      "content": {
+        "image": "/images/cms/uploads/1781008734451-sh8t9q.webp",
+        "title": "The Concrete Finish Made to Be Touched",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "description": "<b>Buff Wash and Exposed Aggregate</b> finishes elevate standard concrete into tactile, visually rich surfaces that celebrate texture, color, and natural beauty.\n\nBy using <b>specialized chemical techniques</b>, Maxima Concrete transforms plain slabs into stunning, slip-resistant surfaces — <b>perfect for patios, pool decks, walkways, and entryways.</b>",
+        "_sourceLabel": "Intro"
+      }
+    },
+    {
+      "key": "custom_1778534114090_6gmwxi",
+      "label": "How It Works",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Crafting Beauty Beneath the Surface",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "How It Works",
+        "benefits": [],
+        "description": "These finishes begin with freshly poured, high-quality concrete.\n\nA <b>chemical surface retarder</b> is applied to slow down the curing of the topmost “cream” layer.\nAfter a controlled period, our team carefully removes this thin layer using a high-pressure washer, revealing the fine sands and stones hidden within the concrete.\n\nThe result is a <b>naturally slip-resistant, multi-textured surface</b> that’s as beautiful as it is durable.",
+        "_sourceLabel": "What is",
+        "overlayOpacity": 87,
+        "backgroundImage": "/images/cms/uploads/1778539493855-dg58n8.webp"
+      }
+    },
+    {
+      "key": "custom_1778539735711_i7nry",
+      "label": "Where to Use",
+      "type": "where-to-use",
+      "content": {
+        "cards": [
+          {
+            "link": "/services/driveways-concrete",
+            "image": "/images/cms/uploads/1778531244973-wj8e5g_copy_1778539737484_10fces.webp",
+            "title": "Driveways",
+            "description": "Add curb appeal with rich color and reliable traction."
+          },
+          {
+            "link": "/services/patios-concrete",
+            "image": "/images/cms/uploads/1778531266783-mczm0e_copy_1778539737263_sg0z08.webp",
+            "title": "Patios",
+            "description": "Create cozy, inviting areas with earthy tones or bold accents."
+          },
+          {
+            "link": "/services/sidewalks-walkways-concrete",
+            "image": "/images/cms/uploads/1778531290978-xxlxv_copy_1778539737096_tapb4.webp",
+            "title": "Sidewalks & Walkways",
+            "description": "Blend functionality with design, enhancing both safety and beauty."
+          },
+          {
+            "link": "/services/steps-concrete",
+            "image": "/images/cms/uploads/1778531313983-q6dzn_copy_1778539737615_1i427n.webp",
+            "title": "Porches & Steps",
+            "description": "Slip-resistant and long-lasting under daily use."
+          }
+        ],
+        "title": "Where to Use Broom-Finished Concrete",
+        "ctaLink": "#contact",
+        "ctaText": "Get Inspired",
+        "subtitle": "This finish is suitable for virtually any flatwork application:",
+        "finalText": "No matter the project, Maxima Concrete ensures every broom-finished surface is perfectly graded, properly cured, and beautifully detailed.",
+        "_sourceLabel": "Where to Use"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    }
+  ]
+}

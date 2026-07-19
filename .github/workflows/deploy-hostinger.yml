@@ -1,0 +1,93 @@
+name: Deploy to Hostinger
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-hostinger
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export (root-domain build, no basePath)
+        run: npx next build
+
+      # O SSH da Hostinger falha de forma intermitente (rsync exit 255) —
+      # é instabilidade transitória, não problema de build. Repetimos até
+      # 3 vezes, como no deploy comprovado do maximapools.com.
+      #
+      # EXCLUDE: caminhos não são enviados NEM apagados no servidor, então
+      # /.private/ (segredos vivos: oauth-config.php, submissions.log)
+      # permanece intacto.
+
+      - name: Deploy to Hostinger (attempt 1)
+        id: deploy1
+        continue-on-error: true
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          REMOTE_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          SOURCE: "out/"
+          TARGET: "domains/maximaconcrete.com/public_html/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Wait before retry 1
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy to Hostinger (attempt 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          REMOTE_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          SOURCE: "out/"
+          TARGET: "domains/maximaconcrete.com/public_html/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Wait before retry 2
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 60
+
+      - name: Deploy to Hostinger (attempt 3)
+        id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        continue-on-error: true
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTINGER_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.HOSTINGER_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.HOSTINGER_SSH_USER }}
+          REMOTE_PORT: ${{ secrets.HOSTINGER_SSH_PORT }}
+          SOURCE: "out/"
+          TARGET: "domains/maximaconcrete.com/public_html/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Fail if all deploy attempts failed
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure' && steps.deploy3.outcome == 'failure'
+        run: |
+          echo "All 3 deploy attempts failed (likely a persistent Hostinger SSH outage)."
+          exit 1

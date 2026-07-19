@@ -1,0 +1,345 @@
+{
+  "pageKey": "steps_page",
+  "sections": [
+    {
+      "key": "custom_1771529791699_c6xb9p",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Steps",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Strength, Beauty, and Every Step in Between",
+        "subtitle": "Strength, Beauty, and Every Step in Between\n\nCustom, durable steps built for safety and style. Maxima Concrete crafts long-lasting, beautiful stairways for homes across Central Ohio.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782842262442-i81fee.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782842262442-i81fee-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981085324_u38ge",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Every Step Tells a Story",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "Enhance the safety, accessibility, and appearance of your property with custom concrete steps built to last. Maxima Concrete designs and installs durable, attractive steps that seamlessly connect outdoor spaces while complementing your home's architecture and landscape.",
+        "imageLarge": "/images/cms/uploads/1784038920695-g29tvs.webp",
+        "paragraph1": "Our concrete steps are built using high-strength 6.5-bag concrete, fiber reinforcement, and 10-gauge wire mesh for maximum durability and stability. This reinforced construction helps minimize cracking, resist weather damage, and provide long-term performance, even in high-traffic areas and changing Ohio weather conditions.",
+        "paragraph2": "Available in broom-finished, stamped and colored, buff wash, or exposed aggregate finishes, our concrete steps can be customized to complement any architectural style. Whether you're looking for a clean, modern appearance or a more decorative look, we create steps that enhance curb appeal while providing safe, functional access to your home or outdoor living space.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1780680596889-zad75n.webp"
+      }
+    },
+    {
+      "key": "custom_1771981991396_pbqxi",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Choose Maxima Steps",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb_copy_1771981975871_a9qoja_copy_1771981982823_8zd0bi_copy_1771981987862_athnsn_copy_1771981993330_gk5qy.webp",
+            "items": [
+              {
+                "text": "Engineered to handle heavy foot traffic and weather exposure without warping or rotting.",
+                "label": ""
+              }
+            ],
+            "title": "Durability"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp_copy_1771981982523_pi12gs_copy_1771981988114_v41vpg_copy_1771981993430_lrtm1f.webp",
+            "items": [
+              {
+                "text": "Occasional cleaning and sealing keep them looking new for decades. ",
+                "label": ""
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob_copy_1771981982870_nomhy_copy_1771981987292_eyosoc_copy_1771981992981_lrk178.webp",
+            "items": [
+              {
+                "text": "Multiple styles and finishes to match any architecture — from modern to traditional.",
+                "label": ""
+              }
+            ],
+            "title": "Versatility"
+          },
+          {
+            "icon": "/images/cms/uploads/1773703127259-nmvccd.webp",
+            "items": [
+              {
+                "text": "Excellent traction options like broom finishes or exposed aggregate to reduce slip risk.",
+                "label": ""
+              }
+            ],
+            "title": "Safety"
+          }
+        ],
+        "description": "We combine high-quality materials, structural integrity, and attention to design detail to create steps that are as strong as they are beautiful.\n\nEvery pour, finish, and contour is executed with care — ensuring your steps stand the test of time while enhancing your property’s visual appeal.\n\n<b>Benefits of Steps:</b>",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1780680803040-7gj38b.webp"
+      }
+    },
+    {
+      "key": "custom_1773272270184_yzy0tm",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Style Options for Every Home",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780947546343-f7lxk.webp",
+            "title": "Broom-Finished:",
+            "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780947551397-qj2gj.webp",
+            "title": "Stamped & Colored:",
+            "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780947555500-nezqau.webp",
+            "title": "Exposed Aggregate:",
+            "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780947559619-o73nus.webp",
+            "title": "Buff Wash:",
+            "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+          }
+        ],
+        "description": "Step Finish Options",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1771983395830_j89ocp",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Steps",
+        "images": [
+          "/images/cms/uploads/1780948282046-e00dpj.webp",
+          "/images/cms/uploads/1780680829835-6mtgej.webp",
+          "/images/cms/uploads/1780680830914-vo51kd.webp",
+          "/images/cms/uploads/1780680828032-cd7rm.webp",
+          "/images/cms/uploads/1780680933516-lehva.webp",
+          "/images/cms/uploads/1780948323627-njy18.webp",
+          "/images/cms/uploads/1780948336549-hps6nt.webp",
+          "/images/cms/uploads/1780948322084-dousgvc.webp",
+          "/images/cms/uploads/1782842245051-7dhh9j.webp",
+          "/images/cms/uploads/1782842246352-039bk.webp"
+        ],
+        "ctaText": "Schedule Your Free Estimate!",
+        "description": "Browse our gallery and imagine the possibilities for your home.",
+        "_sourceLabel": "Inspiration",
+        "descriptionBold": ""
+      }
+    },
+    {
+      "key": "custom_1773272328476_ktg5ff",
+      "label": "Paver Steps",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Paver Steps That Elevate Your Entryway",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Paver Steps",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [],
+        "description": "At Maxima, we elevate the humble step — transforming it into a paver-built statement that defines the entrance to your home. More than a functional element, paver steps create rhythm, balance, and visual impact, setting the tone for everything that follows.\n\nOur team of paver specialists designs and builds custom steps and front porches using premium materials and precise craftsmanship. From wide, welcoming treads to seamless transitions between patios, walkways, and doors, every step is engineered for strength, safety, and long-term durability, while reflecting your home’s unique character.\n\nBeautifully textured, structurally sound, and built to last — paver steps combine timeless style with everyday performance.",
+        "_sourceLabel": "Paver Patios",
+        "overlayOpacity": 82,
+        "backgroundImage": "/images/cms/uploads/1780947932852-pvfsr.webp"
+      }
+    },
+    {
+      "key": "custom_1773271085837_fa1p2s",
+      "label": "Advantage",
+      "type": "why-choose",
+      "content": {
+        "title": "The Maxima Concrete Advantage",
+        "benefits": [
+          {
+            "title": "6.5-Bag High-Strength Concrete Mix:",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773703244211-pj0h69.webp",
+            "description": "Superior to standard blends, offering increased load-bearing capacity."
+          },
+          {
+            "title": "Fiber Reinforcement",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773703258479-2kl96n.webp",
+            "description": "Microfibers dispersed throughout the mix minimize cracking and improve resilience."
+          },
+          {
+            "title": "10-Gauge Wire Mesh:",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773703268926-q4x38s.webp",
+            "description": "Additional reinforcement that distributes weight and prevents structural fractures."
+          },
+          {
+            "title": "Comprehensive Service:",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773703281308-p2l38j.webp",
+            "description": "From consultation to finishing, we manage everything — including design, permits, pouring, and cleanup."
+          }
+        ],
+        "description": "Every set of steps we build carries the signature strength and craftsmanship Maxima Concrete is known for.\n\nOur process includes:\n",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1771983097769_bvvi",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Built to Last — Beautifully",
+        "titleLine2": "",
+        "contactText": "Contact us today to schedule your free consultation, and take that “giant leap” toward a more functional and inspiring home.",
+        "description": "Don’t underestimate the impact of a single step. With Maxima Concrete, you’re not just improving accessibility — you’re enhancing safety, value, and beauty for years to come.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/curbs-gutters",
+            "label": "Curb & Gutter"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviews & Areas Served)"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982498367_ifh1tq",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982584646_bo751e",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a concrete patio last?"
+          },
+          {
+            "answer": " When built with Maxima Concrete’s reinforced mix and proper sealing, your steps can last 30 years or more with minimal upkeep.",
+            "question": "How long do steps last?"
+          },
+          {
+            "answer": "",
+            "question": "How soon can I use my patio after installation?"
+          },
+          {
+            "answer": "",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Steps",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

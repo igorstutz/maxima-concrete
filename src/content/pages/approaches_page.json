@@ -1,0 +1,286 @@
+{
+  "pageKey": "approaches_page",
+  "sections": [
+    {
+      "key": "custom_1771529813098_d251z",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Approaches",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "The Finishing Touch That Connects It All",
+        "subtitle": "The Finishing Touch That Connects It All\n\nSmooth, durable, and compliant — Maxima Concrete installs approaches that connect your driveway to the street with precision and style.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782842502428-kd3bq.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782842502428-kd3bq-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981632510_dnhblo",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "What Is an Approach?",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "An approach (also known as a driveway apron) is the transitional area connecting your driveway or sidewalk to the street curb, ensuring a smooth and safe passage for vehicles and pedestrians alike.",
+        "imageLarge": "/images/cms/uploads/1782842479430-xhtvtj.webp",
+        "paragraph1": "It’s more than just a practical element — it’s the first impression of your property. A clean, well-finished approach enhances your curb appeal, complements your driveway, and gives your home’s entrance a polished, cohesive look.\n\nSo the next time you pull into your driveway, take a moment to appreciate the unsung hero beneath your tires — your approach, quietly doing its job.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842470169-25pn1.webp"
+      }
+    },
+    {
+      "key": "custom_1771982028270_yndr1p",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Maxima Is the Right \nChoice for Your Approach",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773312894276-em1y0h.webp",
+            "items": [
+              {
+                "text": "Provides a safe and comfortable drive between the street and your driveway. ",
+                "label": ""
+              }
+            ],
+            "title": "Smooth Transition:"
+          },
+          {
+            "icon": "/images/cms/uploads/1773312923542-ik3q8b.webp",
+            "items": [
+              {
+                "text": "Built with the same 6.5-bag fiber-reinforced concrete mix and 10-gauge wire mesh used in our driveways, ensuring long-term strength. ",
+                "label": ""
+              }
+            ],
+            "title": "Durability:"
+          },
+          {
+            "icon": "/images/cms/uploads/1773312935125-trtzx.webp",
+            "items": [
+              {
+                "text": "Clean lines, professional finishing, and design alignment with your driveway and sidewalk.",
+                "label": ""
+              }
+            ],
+            "title": "Enhanced Curb Appeal:"
+          },
+          {
+            "icon": "/images/cms/uploads/1773312951598-drmst.webp",
+            "items": [
+              {
+                "text": "We handle all required permits and inspections — no paperwork headaches for you. ",
+                "label": ""
+              }
+            ],
+            "title": "Regulation Compliance:"
+          }
+        ],
+        "description": "At Maxima Concrete, we treat every project — big or small — with the same precision and professionalism. Our approaches are designed to be both functional and visually seamless, meeting all Ohio municipality standards while maintaining your home’s aesthetic flow.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1782842519787-48nk4q.webp"
+      }
+    },
+    {
+      "key": "custom_1773313362490_rjqc8k",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Municipality Requirements — We Handle It All",
+        "styles": [
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773338397093-4jrmrq.webp",
+            "title": "Inspection Coordination:",
+            "description": "We schedule and handle inspections as required by your local municipality."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773338433230-6k5ije.webp",
+            "title": "Professional installation:",
+            "description": "Our team ensures all work meets or exceeds state and local standards. "
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773338462198-ntcls.webp",
+            "title": "Hassle-Free Experience:",
+            "description": " You relax while we take care of everything — from start to finish. "
+          }
+        ],
+        "description": "Installing a approach in Ohio requires compliance with specific city or county regulations. Most municipalities require a Right-of-Way permit or Building permit before work begins.\n\nThat’s where Maxima Concrete makes things easy.",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1773313525556_auheve",
+      "label": "Paver Steps",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Paver Approaches That Make \na Lasting First Impression",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Paver Steps",
+        "eyebrow": " ",
+        "benefits": [],
+        "description": " Your approach is more than a transition from street to driveway — it’s the first visual handshake your home offers. Replacing a standard concrete approach with pavers instantly elevates curb appeal, transforming cracked, dull surfaces into a refined and welcoming entry.\n\nAt Maxima, we design paver approaches using rich textures, clean lines, and durable materials that balance beauty with performance. From timeless natural stone looks to modern concrete pavers with defined borders, every project is crafted to complement your home’s architecture and withstand Central Ohio’s climate. \n\nBeyond aesthetics, paver approaches provide superior drainage, reducing standing water and protecting your foundation. Their modular design also allows for easy repairs and long-term flexibility, ensuring your investment looks great for years to come.\n\nFunctional. Elegant. Built to Last. Upgrade your approach with a solution that adds value and character from the very first glance.",
+        "_sourceLabel": "Paver Steps",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1782842601783-qdodp.webp"
+      }
+    },
+    {
+      "key": "custom_1771983374631_huti6i",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Approaches",
+        "images": [
+          "/images/cms/uploads/1782842546286-peqnp.webp",
+          "/images/cms/uploads/1782842547568-9om53p.webp",
+          "/images/cms/uploads/1782842544029-7yd4kd.webp",
+          "/images/cms/uploads/1782842541469-ermyic.webp",
+          "/images/cms/uploads/1782842540128-n3ial9.webp",
+          "/images/cms/uploads/1782842542639-i81v.webp",
+          "/images/cms/uploads/1782842545266-lmsrqv.webp"
+        ],
+        "description": "Browse our gallery and imagine the possibilities for your home.",
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "custom_1771983200440_7r6tl5",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to Upgrade",
+        "titleLine2": "Your Curb Appeal?",
+        "contactText": "Contact us today for a free consultation and let’s design a clean, durable approach that enhances the entrance of your home.",
+        "description": "Don’t overlook one of the most important parts of your driveway. A approach by Maxima Concrete offers the perfect blend of function, form, and compliance — built to withstand daily use and Ohio’s toughest weather conditions.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/outdoor-living",
+            "label": "Outdoor Living Spaces"
+          }
+        ]
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982488358_t0apd5",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982615727_98x8z8",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "",
+            "question": "What’s the difference between an approach and a driveway?"
+          },
+          {
+            "answer": " Yes — Ohio municipalities require a Right-of-Way permit, which Maxima Concrete handles entirely for you.",
+            "question": " Do I need a permit for a approach?"
+          },
+          {
+            "answer": "",
+            "question": " How long does installation take?"
+          }
+        ],
+        "title": "FAQ — Approaches",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

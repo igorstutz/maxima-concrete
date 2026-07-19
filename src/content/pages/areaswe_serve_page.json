@@ -1,0 +1,105 @@
+{
+  "pageKey": "areaswe_serve_page",
+  "sections": [
+    {
+      "key": "custom_1779129010350_bsuipj",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Trusted Concrete Contractor  in Columbus & Central Ohio",
+        "ctaLink": "",
+        "ctaText": "",
+        "heightVh": 65,
+        "subtitle": "Built on experience. Backed by family values. Installed by our own crew.\n",
+        "_sourceLabel": "Hero",
+        "overlayOpacity": 0.6,
+        "backgroundImage": "/images/cms/uploads/1779129056289-d84ids.webp",
+        "secondaryCtaLink": "",
+        "secondaryCtaText": "",
+        "backgroundImageMobile": "/images/cms/uploads/1779129056289-d84ids-mobile.webp"
+      }
+    },
+    {
+      "key": "areaswe_serve_page_areas_grid",
+      "label": "Areas Grid",
+      "type": "areas-grid",
+      "content": {
+        "heading": "Cities We Serve",
+        "subheading": "Premium concrete services across Central Ohio"
+      }
+    },
+    {
+      "key": "custom_1779129440214_c6lski",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ],
+        "_sourceLabel": "Find Our Work Near You"
+      }
+    },
+    {
+      "key": "custom_1779129455133_r1plcb",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "We treat every home like it's our own."
+          },
+          {
+            "icon": "users",
+            "title": "No Subcontractors",
+            "description": "Every project is completed by our trained, in-house team."
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete systems designed for long-term durability."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed & Fully Insured",
+            "description": "Professional, compliant, and reliable from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "Trust (Global)",
+        "projectsText": "[XXX+] Projects Delivered",
+        "backgroundImage": "/images/cms/uploads/1778515585911-9ykf1_copy_1779129456493_guwolm.webp"
+      }
+    },
+    {
+      "key": "custom_1779129468090_53p5v5",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1779129478407_8vbti",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

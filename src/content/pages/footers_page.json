@@ -1,0 +1,310 @@
+{
+  "pageKey": "footers_page",
+  "sections": [
+    {
+      "key": "custom_1771529664083_cz5l9q",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Footers, Piers & Structural Support",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Strength From the Ground Up",
+        "subtitle": "Strength From the Ground Up\n\nCode-compliant concrete footings, piers, and structural support built to last. Maxima Concrete engineers strength, stability, and peace of mind. Free estimate.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037779206-y1vebv.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037779206-y1vebv-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771979856670_sjrm5",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Why foundations matter",
+        "ctaLink": "#contact",
+        "ctaText": "Schedule Your Free Estimate!",
+        "subtitle": "A strong foundation is essential to the success of any project. Maxima Concrete provides expertly built footings, piers, and structural support systems designed to ensure stability, durability, and long-term performance for residential and commercial applications.",
+        "imageLarge": "/images/cms/uploads/1774812580017-z6ekzj.webp",
+        "paragraph1": "Concrete footings and piers provide the structural support needed to safely transfer weight into the ground. They help prevent settling, shifting, and structural issues while creating a stable base for patios, retaining walls, garages, pergolas, and other concrete structures.",
+        "paragraph2": "At Maxima Concrete, we build every foundation component to meet local codes and site requirements. Using quality materials, proper reinforcement, and proven construction methods, we deliver dependable support that helps protect your investment for years to come.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1781010025999-5wk5v.webp"
+      }
+    },
+    {
+      "key": "custom_1771979882777_pxskin",
+      "label": "Why Maxima",
+      "type": "why-maxima-detailed",
+      "content": {
+        "title": "What we build (and when)",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "title": "Concrete Footings (Footers) — Your load-spreading anchors",
+            "checkItems": [
+              "Garage foundations & additions",
+              "Retaining walls / seat walls",
+              "Patio edges on slopes where the patio face is tall"
+            ],
+            "description": "Footings <b>distribute structural loads</b> into the soil, preventing settlement. We size them to code and conditions (load, soil bearing, frost depth), perfect for:"
+          },
+          {
+            "title": "Concrete Piers — Vertical strength where you need it",
+            "checkItems": [
+              "Elevated or sloped patios / decks",
+              "Pergolas and outdoor structures",
+              "Column bases and point-load support"
+            ],
+            "description": "Piers transfer loads upward from footings, ideal when slopes or point loads demand extra support:"
+          },
+          {
+            "title": "Steel Reinforcement — The invisible safety net",
+            "checkItems": [],
+            "description": "We place <b>rebar and mesh</b> per plan/spec to resist tension, control cracking, and ensure <b>rock-solid performance</b> for decades."
+          }
+        ],
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1781010047223-3e3lep.webp"
+      }
+    },
+    {
+      "key": "custom_1773271985108_u6qdom",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Style Options for Every Home",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780947067069-9mlok.webp",
+            "title": "Broom-Finished:",
+            "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780947071756-93305zc.webp",
+            "title": "Stamped & Colored:",
+            "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780947079489-43sfvk.webp",
+            "title": "Exposed Aggregate:",
+            "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780947083450-f3xzei.webp",
+            "title": "Buff Wash:",
+            "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+          }
+        ],
+        "description": "Step Finish Options",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1771979929588_sudiif",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Sidewalks & Walkways",
+        "images": [
+          "/images/cms/uploads/1782842057456-zgeyoc.webp",
+          "/images/cms/uploads/1782842053359-lnuqx.webp",
+          "/images/cms/uploads/1782842055181-0zhe7.webp",
+          "/images/cms/uploads/1782842056521-d6rnc.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1771980039236_4ravxi",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Materials \nthat make \nthe difference",
+        "benefits": [
+          {
+            "title": "6.5-Bag Mix Concrete",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773700234749-1jcg3e.webp",
+            "description": "for dense, durable support"
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773700245743-dbi8ysj.webp",
+            "description": "to help control micro-cracking"
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773700254289-zmxo6.webp",
+            "description": "Provides superior stability and long-term support."
+          },
+          {
+            "title": "10-gauge wire mesh / rebar",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773700321144-4txjmt.webp",
+            "description": " per plan for structural integrity"
+          }
+        ],
+        "description": "Engineered for maximum support. Our footers utilize high-density materials and reinforced steel to provide the unwavering structural base necessary for a professional-grade, durable court.",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1771980060997_f7ezu",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to Create Your",
+        "titleLine2": "Perfect Outdoor Retreat?",
+        "contactText": "",
+        "description": "A great project starts with a great foundation. Maxima Concrete delivers precision, compliance, and durability—from footing to finish.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/basement-floors",
+            "label": "Basement Floors"
+          },
+          {
+            "link": "/services/steps",
+            "label": "Steps"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/curbs-gutters",
+            "label": "Curbs & Gutters"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviews & Areas Served)"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771980102915_5u28lt",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771980120944_cu6df",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a concrete patio last?"
+          },
+          {
+            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
+            "question": "Can I customize the color and texture?"
+          },
+          {
+            "answer": "",
+            "question": "How soon can I use my patio after installation?"
+          },
+          {
+            "answer": "",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Patios - Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

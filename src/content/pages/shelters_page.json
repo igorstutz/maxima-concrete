@@ -1,0 +1,309 @@
+{
+  "pageKey": "shelters_page",
+  "sections": [
+    {
+      "key": "custom_1773681730635_7hf018",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Shelters, Pergolas & Shade Structures",
+        "ctaLink": "#contact",
+        "ctaText": "Get Your Free Estimate",
+        "tagline": "Comfort and Style for Every Season",
+        "subtitle": "Comfort and Style for Every Season",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782843400732-ruvv0f.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782843400732-ruvv0f-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1773681775653_21k9lm",
+      "label": "Intro",
+      "type": "outdoor-intro",
+      "content": {
+        "image": "/images/cms/uploads/1773682235616-91ktbs.webp",
+        "title": "Extend Your Living Space Under the Open Sky",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "description": "Imagine a space where you can cook, entertain, and unwind — all outdoors.<br><br>At <b>Maxima Concrete</b>, we build <b>custom outdoor kitchens</b> and <b>bars</b> using premium <b>concrete and paver materials</b>, combining functionality, beauty, and durability.",
+        "_sourceLabel": "Outdoor Intro"
+      }
+    },
+    {
+      "key": "custom_1773681815170_xm7ko",
+      "label": "Possibilities",
+      "type": "whatis",
+      "content": {
+        "cards": [
+          {
+            "title": "Pergolas",
+            "subtitle": "Resists heat, weather, and heavy use."
+          },
+          {
+            "title": "Gazebos",
+            "subtitle": "Choose from textures, colors, and patterns to match your home’s style."
+          },
+          {
+            "title": "Pavilions",
+            "subtitle": "Easy to clean, resilient against stains and moisture."
+          }
+        ],
+        "title": "A World of Design Possibilities",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "finalText": "From cozy corners to grand backyard destinations, your shelter becomes a reflection of how you live outdoors.",
+        "description": "<b>Every outdoor space has its own personality — and Maxima Concrete brings it to life.</b>\n<br><br>\nWhether you want a shaded escape for lounging, a covered hot tub retreat, or a statement canopy over your outdoor kitchen, we’ll design and build the perfect structure to fit your space and style.",
+        "_sourceLabel": "What Is",
+        "overlayOpacity": 0,
+        "backgroundImage": "/images/cms/uploads/1772217053065-7booac_copy_1773681816362_rppbe.webp"
+      }
+    },
+    {
+      "key": "custom_1773682647131_peinry",
+      "label": "Style",
+      "type": "style-options",
+      "content": {
+        "title": "Crafted from Premium Materials",
+        "styles": [
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773679927107-upao2_copy_1773682648698_tzqmb1.webp",
+            "title": "Wood",
+            "description": "Classic warmth and natural texture for timeless appeal."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773679951349-3wtbi_copy_1773682648533_22xri.webp",
+            "title": "Metal",
+            "description": "Modern durability and sleek design."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773679981534-w053kf_copy_1773682648599_et4u98.webp",
+            "title": "Pavers & Concrete",
+            "description": "Solid, low-maintenance bases that tie into your patio or walkway."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773680013801-fh4urk_copy_1773682648806_1lea5a.webp",
+            "title": "Combinations",
+            "description": "Mix materials for a custom aesthetic that matches your home’s architecture."
+          }
+        ],
+        "ctaLink": "#contact",
+        "ctaText": "Get Inspired",
+        "variant": "light",
+        "closingText": "At Maxima Concrete, we manage every detail — from **design and permits to construction and final inspection** — ensuring a seamless experience from start to finish.",
+        "description": "We build every structure with longevity and beauty in mind.\n**Material Options:**",
+        "_sourceLabel": "Style"
+      }
+    },
+    {
+      "key": "custom_shelters_unleash",
+      "label": "Unleash",
+      "type": "unleash",
+      "content": {
+        "items": [
+          {
+            "text": "kitchens, bars, lounges, hammocks, and hot tubs.",
+            "boldTitle": "Cover versatile spaces:"
+          },
+          {
+            "text": "integrate fireplaces, firepits, or infrared heaters.",
+            "boldTitle": "Stay warm year-round:"
+          },
+          {
+            "text": "fans, lighting, sound systems, TVs, and power outlets.",
+            "boldTitle": "Add smart features:"
+          },
+          {
+            "text": "color-changing lights and programmable timers for every mood or occasion.",
+            "boldTitle": "Customize the atmosphere:"
+          }
+        ],
+        "title": "Unleash Your Outdoor Potential",
+        "closingText": "Whether you're hosting a party, relaxing solo, or sharing dinner under the stars — your pergola or pavilion becomes the heart of your backyard experience.",
+        "description": "Your shelter can be much more than shade — it's a platform for comfort, technology, and creativity."
+      }
+    },
+    {
+      "key": "custom_1773682950051_ef6tko",
+      "label": "Why Invest",
+      "type": "trust-maxima",
+      "content": {
+        "items": [
+          {
+            "label": "Romantic evenings under glowing lights.",
+            "description": ""
+          },
+          {
+            "label": "Cookouts and celebrations with family and friends.",
+            "description": ""
+          },
+          {
+            "label": "Peaceful mornings with coffee and fresh air.",
+            "description": ""
+          },
+          {
+            "label": "Add value, comfort, and beauty to your home with a ",
+            "description": "custom outdoor structure designed to inspire."
+          }
+        ],
+        "titleLine1": "More Than Just ",
+        "titleLine2": "Shade — It’s a ",
+        "titleLine3": "Lifestyle",
+        "_sourceLabel": "Why Invest"
+      }
+    },
+    {
+      "key": "custom_1773686622265_wvs5pa",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp_copy_1773686623753_jyx1d.webp"
+      }
+    },
+    {
+      "key": "custom_1773686626993_necoyf",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "custom_1773686640415_t31vmr",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1773686631692_icyy5p",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1773686636654_yjcykg",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
+            "question": "How long does an outdoor living project take?"
+          },
+          {
+            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
+            "question": "What maintenance is required?"
+          },
+          {
+            "answer": "Yes, we offer flexible payment options.",
+            "question": "Do you offer financing?"
+          }
+        ],
+        "title": "FAQ - Outdoor Lighting",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

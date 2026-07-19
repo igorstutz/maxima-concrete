@@ -1,0 +1,109 @@
+{
+  "pageKey": "joinourteam_page",
+  "sections": [
+    {
+      "key": "joinourteam_page_intro",
+      "label": "Intro",
+      "type": "joinourteam-sec-intro",
+      "content": {
+        "title": "Build a career with us.",
+        "eyebrow": "Careers at Maxima",
+        "paragraph1": "At Maxima Concrete we pour more than driveways. We pour careers. Every project our crew touches is something they can drive past for decades and say: I built that.",
+        "paragraph2": "We are a tight-knit team that takes pride in the craft, shows up on time, and treats every customer like a neighbor. If that sounds like you, we want to meet you.",
+        "stat1Label": "Years in business",
+        "stat1Value": "15+",
+        "stat2Label": "Projects completed",
+        "stat2Value": "500+",
+        "stat3Label": "BBB rated",
+        "stat3Value": "A+"
+      }
+    },
+    {
+      "key": "joinourteam_page_positions",
+      "label": "Open Positions",
+      "type": "joinourteam-sec-positions",
+      "content": {
+        "items": [
+          {
+            "type": "Full-time",
+            "title": "Concrete Finisher",
+            "location": "Columbus, OH",
+            "description": "2+ years finishing flatwork. Reliable transport and a strong work ethic required."
+          },
+          {
+            "type": "Full-time",
+            "title": "Crew Foreman",
+            "location": "Columbus, OH",
+            "description": "Lead a 3-5 person crew, run jobs on time and on budget, and mentor new finishers."
+          },
+          {
+            "type": "Full-time",
+            "title": "Laborer / Helper",
+            "location": "Columbus, OH",
+            "description": "Entry-level role. We train. Show up, work hard, and we will teach you a trade."
+          },
+          {
+            "type": "Full-time",
+            "title": "Form Setter",
+            "location": "Columbus, OH",
+            "description": "Set and strip forms for driveways, patios, and walls. Experience preferred."
+          }
+        ],
+        "title": "Roles we are hiring for.",
+        "eyebrow": "Open positions",
+        "applyLink": "#apply",
+        "applyLabel": "Apply now",
+        "description": "Do not see your role? We are always interested in great people. Send us your resume anyway."
+      }
+    },
+    {
+      "key": "joinourteam_page_final_cta",
+      "label": "Final CTA",
+      "type": "joinourteam-sec-final-cta",
+      "content": {
+        "title": "Ready to pour your career in concrete?",
+        "ctaLink": "mailto:careers@maximaconcrete.com",
+        "ctaText": "Apply now",
+        "description": "Send your resume and a quick note about why you would be a good fit. We respond within a few business days.",
+        "secondaryCtaLink": "/contact-us",
+        "secondaryCtaText": "Contact us"
+      }
+    },
+    {
+      "key": "joinourteam_page_benefits",
+      "label": "Benefits",
+      "type": "joinourteam-sec-benefits",
+      "content": {
+        "items": [
+          {
+            "title": "Competitive weekly pay",
+            "description": "Above-market wages, paid weekly, with overtime for every hour earned."
+          },
+          {
+            "title": "Real growth path",
+            "description": "Clear promotion track from helper to lead finisher to crew foreman."
+          },
+          {
+            "title": "Quality tools and trucks",
+            "description": "We give you the equipment to do the job right the first time."
+          },
+          {
+            "title": "Safety first",
+            "description": "OSHA-compliant gear, training, and a zero-tolerance safety culture."
+          },
+          {
+            "title": "Year-round work",
+            "description": "Steady schedule from spring through fall, with winter projects when weather permits."
+          },
+          {
+            "title": "Crew that has your back",
+            "description": "Tight team, no drama, and bosses who actually swing a trowel."
+          }
+        ],
+        "title": "What we offer.",
+        "eyebrow": "Why work with us",
+        "description": "We invest in our crew so they can do their best work and build a life they are proud of."
+      }
+    }
+  ]
+}

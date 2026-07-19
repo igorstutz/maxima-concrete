@@ -1,0 +1,2600 @@
+{
+  "contact": {
+    "count": 48,
+    "exampleKey": "custom_1762900000010_paverdrv",
+    "fields": {
+      "title": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "_sourceLabel": "string",
+      "nameSectionLabel": "string"
+    }
+  },
+  "hero": {
+    "count": 37,
+    "exampleKey": "custom_1762900000001_paverdrv",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "tagline": "string",
+      "subtitle": "text",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text",
+      "videoUrl": "text",
+      "heightVh": "number",
+      "overlayOpacity": "number"
+    }
+  },
+  "(sem _sectionType)": {
+    "count": 32,
+    "exampleKey": "areas_we_serve_hero",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "description": "text",
+      "backgroundImage": "string",
+      "backgroundImageMobile": "string",
+      "items": "array<{title,description}>",
+      "closing1": "text",
+      "closing2": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "image": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "closing": "text",
+      "ctaLabel": "string",
+      "leftItems": "array<string>",
+      "rightItems": "array<string>",
+      "logos": "array<text>",
+      "nameSectionLabel": "string",
+      "label": "string",
+      "images": "array<text>",
+      "keys": "array<string>",
+      "imageLarge": "text",
+      "titleLine2": "string",
+      "imageTopRight": "text",
+      "styles": "array<{link,image,title,description}>",
+      "benefits": "array<{title,iconType,description}>",
+      "eyebrow": "string",
+      "overlayOpacity": "number",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "contactText": "text",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>",
+      "mapZoom": "number",
+      "mapCenter": "array<number>",
+      "phone": "string",
+      "copyright": "string",
+      "designerUrl": "string",
+      "socialLinks": "{google,facebook,instagram}",
+      "designerName": "string",
+      "designerText": "string",
+      "handle": "string",
+      "titlePart1": "string",
+      "titlePart2": "string",
+      "cta2Link": "string",
+      "cta2Text": "string",
+      "videoUrl": "text",
+      "heading": "string",
+      "titleGray": "string",
+      "titleWhite": "string",
+      "projectsText": "string",
+      "tagline": "string",
+      "benefit1": "string",
+      "benefit2": "string",
+      "benefit3": "string",
+      "mainImage": "text",
+      "description1": "text",
+      "description2": "string",
+      "questionTitle": "string"
+    }
+  },
+  "instagram": {
+    "count": 30,
+    "exampleKey": "custom_1766192996321_ecbd9",
+    "fields": {
+      "handle": "string",
+      "titlePart1": "string",
+      "titlePart2": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-why-maxima": {
+    "count": 9,
+    "exampleKey": "custom_1762901000003_paverpat",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "steps-sec-final-cta": {
+    "count": 8,
+    "exampleKey": "custom_1771983168976_uokzgg",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "gallerypools-sec-hero-minimal": {
+    "count": 8,
+    "exampleKey": "custom_1773692943468_ayn5pw",
+    "fields": {
+      "title": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "backgroundImageMobile": "text",
+      "backLabel": "string",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backLink": "string"
+    }
+  },
+  "steps-sec-faq": {
+    "count": 7,
+    "exampleKey": "custom_1771982606576_g2vbm",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerypools-sec-inspiration-gallery": {
+    "count": 7,
+    "exampleKey": "custom_1773693051540_rjkfqr",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "paverImages": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerypools-sec-projects-grid": {
+    "count": 7,
+    "exampleKey": "custom_1773693087868_frrv9m",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "imageTypes": "array<string>",
+      "paverImages": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-faq": {
+    "count": 6,
+    "exampleKey": "custom_1762901000010_paverpat",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-inspiration": {
+    "count": 5,
+    "exampleKey": "custom_1762901000006_paverpat",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text"
+    }
+  },
+  "sportscourts-sec-inspiration": {
+    "count": 5,
+    "exampleKey": "custom_1771983365093_mf0rwh",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "description": "string",
+      "_sourceLabel": "string",
+      "ctaText": "string",
+      "descriptionBold": "string"
+    }
+  },
+  "driveways-sec-style-options": {
+    "count": 4,
+    "exampleKey": "custom_1762901000004_paverpat",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "variant": "string",
+      "closingText": "text"
+    }
+  },
+  "driveways-sec-why-choose": {
+    "count": 4,
+    "exampleKey": "custom_1762901000007_paverpat",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,customIcon,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "footer": {
+    "count": 4,
+    "exampleKey": "custom_1766193295987_b58l5l",
+    "fields": {
+      "phone": "string",
+      "copyright": "string",
+      "designerUrl": "string",
+      "socialLinks": "{twitter,youtube,facebook,instagram}",
+      "_sourceLabel": "string",
+      "designerName": "string",
+      "designerText": "string"
+    }
+  },
+  "porches-sec-why-maxima": {
+    "count": 4,
+    "exampleKey": "custom_1769563709045_w851sf",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "gallery_page-sec-hero-minimal": {
+    "count": 4,
+    "exampleKey": "custom_1772205916764_e8doq7",
+    "fields": {
+      "title": "string",
+      "backLabel": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text",
+      "tagline": "string",
+      "backLink": "string",
+      "subtitle": "string",
+      "description": "text"
+    }
+  },
+  "finishesbroom-sec-whatis": {
+    "count": 4,
+    "exampleKey": "custom_1772216500000_whatis",
+    "fields": {
+      "cards": "array<{title,subtitle}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "finalText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "finishesbroom-sec-why-choose-finish": {
+    "count": 4,
+    "exampleKey": "custom_1772216600000_whychoosefinish",
+    "fields": {
+      "items": "array<{text,label}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesbroom-sec-related-services": {
+    "count": 4,
+    "exampleKey": "custom_1772216700001_relatedservices",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "backgroundImage": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerypools-sec-more-than-concrete": {
+    "count": 4,
+    "exampleKey": "custom_1773693243555_r5cp8s",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "find-work": {
+    "count": 4,
+    "exampleKey": "custom_1779129440214_c6lski",
+    "fields": {
+      "title": "string",
+      "mapZoom": "number",
+      "subtitle": "text",
+      "mapCenter": "array<number>",
+      "_sourceLabel": "string"
+    }
+  },
+  "trust-global": {
+    "count": 4,
+    "exampleKey": "custom_1779129455133_r1plcb",
+    "fields": {
+      "items": "array<{icon,title,description}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "_sourceLabel": "string",
+      "projectsText": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "paverdriveways-sec-why-maxima": {
+    "count": 3,
+    "exampleKey": "custom_1762900000003_paverdrv",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "text",
+      "overlayOpacity": "number",
+      "backgroundImage": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-intro": {
+    "count": 3,
+    "exampleKey": "custom_1762901000002_paverpat",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "driveways-page-final-cta": {
+    "count": 3,
+    "exampleKey": "custom_1762901000008_paverpat",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "porches-sec-style-options": {
+    "count": 3,
+    "exampleKey": "custom_1769564323273_bsd3q1g",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "sportscourts-sec-why-maxima": {
+    "count": 3,
+    "exampleKey": "custom_1771981973702_mzlgw9",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "approaches-sec-why-maxima": {
+    "count": 3,
+    "exampleKey": "custom_1771982037918_3tmoo",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "gallery_page-sec-more-than-concrete": {
+    "count": 3,
+    "exampleKey": "custom_1772210775459_lhrrgo",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesbroom-sec-finishes-intro": {
+    "count": 3,
+    "exampleKey": "custom_1772216000000_intro",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesbroom-sec-maxima-advantage": {
+    "count": 3,
+    "exampleKey": "custom_1772216700000_maximaadvantage",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{text,boldText}>",
+      "pillText": "text",
+      "rightTitle": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesbroom-sec-more-than-concrete": {
+    "count": 3,
+    "exampleKey": "custom_1772216700002_morethanconcrete",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorliving-sec-outdoor-intro": {
+    "count": 3,
+    "exampleKey": "custom_1773671141537_a92olc",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "whymaxima_page-sec-hero-image-only": {
+    "count": 3,
+    "exampleKey": "custom_1778125190194_lhxpr",
+    "fields": {
+      "image": "text",
+      "_sourceLabel": "string",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string"
+    }
+  },
+  "driveways-page-inspiration": {
+    "count": 2,
+    "exampleKey": "custom_1768773409152_59caut",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "descriptionBold": "string"
+    }
+  },
+  "patios-sec-style-options": {
+    "count": 2,
+    "exampleKey": "custom_1769039004224_zmexj8",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "patios-sec-why-choose": {
+    "count": 2,
+    "exampleKey": "custom_1769039333759_ttk0t",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "slabs-sec-why-choose": {
+    "count": 2,
+    "exampleKey": "custom_1769039617546_g8kb4",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "patios-sec-final-cta": {
+    "count": 2,
+    "exampleKey": "custom_1769040094841_fg17fl",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "patios-sec-faq": {
+    "count": 2,
+    "exampleKey": "custom_1769040149283_94bdpc",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "porches-sec-intro": {
+    "count": 2,
+    "exampleKey": "custom_1769563545004_x1qf7s",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "porches-sec-paver-intro": {
+    "count": 2,
+    "exampleKey": "custom_1769564413639_iqclsc",
+    "fields": {
+      "title": "string",
+      "mainImage": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "paragraph3": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text",
+      "complementaryText": "string"
+    }
+  },
+  "porches-sec-inspiration": {
+    "count": 2,
+    "exampleKey": "custom_1769565355230_p7oay",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "porches-sec-faq": {
+    "count": 2,
+    "exampleKey": "custom_1769565629237_1dp9e",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "steps-sec-intro": {
+    "count": 2,
+    "exampleKey": "custom_1771981363064_cn8h5fg",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "string",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "basementfloors-sec-intro": {
+    "count": 2,
+    "exampleKey": "custom_1771981752221_xwahgp",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "string",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "curbsgutters-sec-why-maxima": {
+    "count": 2,
+    "exampleKey": "custom_1771981980849_kzj5n",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "string",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "seatingwalls-sec-why-maxima": {
+    "count": 2,
+    "exampleKey": "custom_1771982068629_coatac",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "[]",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "finishesbroom-sec-where-to-use": {
+    "count": 2,
+    "exampleKey": "custom_1772216700000_wheretouse",
+    "fields": {
+      "cards": "array<{link,image,title,description}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "finalText": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesbroom-sec-hero-minimal": {
+    "count": 2,
+    "exampleKey": "custom_1772599651852_vt7kz7",
+    "fields": {
+      "title": "string",
+      "tagline": "string",
+      "backLink": "string",
+      "subtitle": "string",
+      "backLabel": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "finishesbroom-sec-faq": {
+    "count": 2,
+    "exampleKey": "custom_1772599874091_tuoiqp",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "patios-sec-why-maxima": {
+    "count": 2,
+    "exampleKey": "custom_1773272328476_ktg5ff",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "[]",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text",
+      "bottomText": "text"
+    }
+  },
+  "finishescoloredbroom-sec-where-to-use": {
+    "count": 2,
+    "exampleKey": "custom_1773272708429_00m4u",
+    "fields": {
+      "cards": "array<{link,image,title,description}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "finalText": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "steps-sec-why-maxima": {
+    "count": 2,
+    "exampleKey": "custom_1773273362142_kzzr",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "[]",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "steps-sec-why-choose": {
+    "count": 2,
+    "exampleKey": "custom_1773273606419_0umfr5",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,customIcon,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "retainingwalls-sec-integrated-features-2": {
+    "count": 2,
+    "exampleKey": "custom_1773619937324_wuswdq",
+    "fields": {
+      "cards": "array<{image,title,description}>",
+      "title": "string",
+      "subtitle": "text",
+      "_sourceLabel": "string",
+      "backgroundColor": "string"
+    }
+  },
+  "retainingwalls-sec-common-applications": {
+    "count": 2,
+    "exampleKey": "custom_1773620518953_95e8rh",
+    "fields": {
+      "items": "array<string>",
+      "title": "string",
+      "rightTitle": "string",
+      "_sourceLabel": "string",
+      "designOptions": "array<{image,title,description}>"
+    }
+  },
+  "whymaxima-sec-areas": {
+    "count": 2,
+    "exampleKey": "custom_1773661367212_fvnbna",
+    "fields": {
+      "areas": "array<text>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "trustIcons": "array<text>",
+      "bottomTitle": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "bottomDescription": "text"
+    }
+  },
+  "outdoorlighting-sec-trust-maxima": {
+    "count": 2,
+    "exampleKey": "custom_1773681297911_xnbwfl",
+    "fields": {
+      "items": "array<{label,description}>",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "titleLine3": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "shelters-sec-faq": {
+    "count": 2,
+    "exampleKey": "custom_1773689115121_yflvgr",
+    "fields": {
+      "items": "[]",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercial_page-sec-commercial-hero": {
+    "count": 2,
+    "exampleKey": "custom_1777947198441_twq6kl",
+    "fields": {
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "backgroundImageMobile": "text",
+      "title": "string",
+      "tagline": "string",
+      "subtitle": "string",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string"
+    }
+  },
+  "commercialconcrete-sec-building-central": {
+    "count": 2,
+    "exampleKey": "custom_1778129269786_t6oy6c",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialconcrete-sec-why-choose-mc": {
+    "count": 2,
+    "exampleKey": "custom_1778249920235_jg0wlq",
+    "fields": {
+      "image": "text",
+      "items": "array<{title,description}>",
+      "title": "string",
+      "subtitle": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialconcrete-sec-ready-to-build": {
+    "count": 2,
+    "exampleKey": "custom_1778250278060_a7qvwn",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "contactText": "string",
+      "_sourceLabel": "string",
+      "contactTitle": "string"
+    }
+  },
+  "areaswe-sec-areas-grid": {
+    "count": 1,
+    "exampleKey": "areaswe_serve_page_areas_grid",
+    "fields": {
+      "heading": "string",
+      "subheading": "string"
+    }
+  },
+  "areaswe-sec-hero-areas": {
+    "count": 1,
+    "exampleKey": "areaswe_serve_page_hero_areas",
+    "fields": {
+      "title": "string",
+      "subtitle": "string",
+      "backgroundImage": "text",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "paverdriveways-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1762900000002_paverdrv",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "paverdriveways-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1762900000004_paverdrv",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text"
+    }
+  },
+  "paverdriveways-sec-why-choose": {
+    "count": 1,
+    "exampleKey": "custom_1762900000006_paverdrv",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,description}>",
+      "description": "text"
+    }
+  },
+  "paverdriveways-sec-inspiration": {
+    "count": 1,
+    "exampleKey": "custom_1762900000007_paverdrv",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "ctaText": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "paverdriveways-sec-trust": {
+    "count": 1,
+    "exampleKey": "custom_1762900000008_paverdrv",
+    "fields": {
+      "image": "text",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "titleLine3": "string",
+      "description": "text",
+      "highlightWords": "array<string>"
+    }
+  },
+  "paverdriveways-sec-final-cta": {
+    "count": 1,
+    "exampleKey": "custom_1762900000009_paverdrv",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "paverdriveways-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1762900000011_paverdrv",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-page-why-choose": {
+    "count": 1,
+    "exampleKey": "custom_1768610997236_w4lrt",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "patios-page-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1768777124947_mpt36",
+    "fields": {
+      "title": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "[]",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1768777232307_e6odcw",
+    "fields": {
+      "image": "string",
+      "ctaText": "string",
+      "tagline": "string",
+      "benefit1": "string",
+      "benefit2": "string",
+      "benefit3": "string",
+      "mainImage": "text",
+      "_sourceLabel": "string",
+      "description1": "text",
+      "description2": "string",
+      "questionTitle": "string"
+    }
+  },
+  "patios-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1769037235793_x6ngei",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "patios-sec-inspiration": {
+    "count": 1,
+    "exampleKey": "custom_1769039126984_f2ii9",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "slabs-sec-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1769039655145_129eow",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "sidewalks-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771979856670_sjrm5",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "footers-sec-why-maxima-detailed": {
+    "count": 1,
+    "exampleKey": "custom_1771979882777_pxskin",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{title,checkItems,description}>",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "sidewalks-sec-inspiration": {
+    "count": 1,
+    "exampleKey": "custom_1771979929588_sudiif",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "footers-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771980204967_uw12lxr",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "sportscourts-sec-why-maxima-sports": {
+    "count": 1,
+    "exampleKey": "custom_1771980225758_ivezh",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "subtitle": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "footers-sec-inspiration": {
+    "count": 1,
+    "exampleKey": "custom_1771980241686_27o307",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "footers-sec-why-choose": {
+    "count": 1,
+    "exampleKey": "custom_1771980270283_dilcgth",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,customIcon,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "footers-sec-final-cta": {
+    "count": 1,
+    "exampleKey": "custom_1771980285903_eb37y",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "footers-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1771980305229_2vy5dk",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "sportscourts-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771981085324_u38ge",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "curbsgutters-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771981632510_dnhblo",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "string",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "approaches-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771981739771_dkkkhu",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "string",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text",
+      "paragraphLayout": "string"
+    }
+  },
+  "seatingwalls-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771981780103_a6ulrz",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "retainingwalls-sec-intro": {
+    "count": 1,
+    "exampleKey": "custom_1771981789729_25kbg",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "text",
+      "imageLarge": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "titleLine2": "string",
+      "_sourceLabel": "string",
+      "imageTopRight": "text"
+    }
+  },
+  "sportscourts-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1771982584646_bo751e",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "retainingwalls-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1771982905425_220jtm",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-final-cta": {
+    "count": 1,
+    "exampleKey": "custom_1771983097769_bvvi",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "gallery_page-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1772202211085_ti6zna",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesstampedcolored-sec-design-options": {
+    "count": 1,
+    "exampleKey": "custom_1772216800001_designoptions",
+    "fields": {
+      "title": "string",
+      "patterns": "array<{image,title,description}>",
+      "subtitle": "text",
+      "bottomNote": "text",
+      "colorGroups": "array<{label,colors}>",
+      "colorPaletteTitle": "string"
+    }
+  },
+  "footers-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1773272270184_yzy0tm",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishescoloredbroom-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773272695343_rmyd",
+    "fields": {
+      "title": "string",
+      "tagline": "string",
+      "backLink": "string",
+      "subtitle": "string",
+      "backLabel": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "finishescoloredbroom-sec-finishes-intro": {
+    "count": 1,
+    "exampleKey": "custom_1773272699412_3c79nj",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishescoloredbroom-sec-whatis": {
+    "count": 1,
+    "exampleKey": "custom_1773272702147_9yi8l",
+    "fields": {
+      "cards": "array<{title,subtitle}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "finalText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "finishescoloredbroom-sec-why-choose-finish": {
+    "count": 1,
+    "exampleKey": "custom_1773272705492_2tg0yq",
+    "fields": {
+      "items": "array<{text,label}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishescoloredbroom-sec-maxima-advantage": {
+    "count": 1,
+    "exampleKey": "custom_1773272713974_ia1oc",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{text,boldText}>",
+      "pillText": "text",
+      "rightTitle": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishescoloredbroom-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1773272717174_c14wrj",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "finishescoloredbroom-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773272720138_fsa95",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishescoloredbroom-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1773272732529_n4m3r",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesstampedcolored-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773272999744_v73jee",
+    "fields": {
+      "title": "string",
+      "tagline": "string",
+      "backLink": "string",
+      "subtitle": "string",
+      "backLabel": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "finishesstampedcolored-sec-finishes-intro": {
+    "count": 1,
+    "exampleKey": "custom_1773273005013_323yuk",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "steps-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1773276470214_0qt6wr",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "curbsgutters-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1773313362490_rjqc8k",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "driveways-sec-trust": {
+    "count": 1,
+    "exampleKey": "custom_1773313668991_78eil9",
+    "fields": {
+      "image": "text",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "titleLine3": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "highlightWords": "array<string>"
+    }
+  },
+  "retainingwalls-sec-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1773319483042_3z8dqc",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{title,description}>",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "fireplaces-sec-why-maxima-simple": {
+    "count": 1,
+    "exampleKey": "custom_1773398273577_dge4gs",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title}>",
+      "description": "string",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "finishesstampedcolored-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773599781394_3ssak",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "seatingwalls-sec-integrated-features-2": {
+    "count": 1,
+    "exampleKey": "custom_1773620031344_id97t",
+    "fields": {
+      "cards": "array<{image,title,description}>",
+      "title": "string",
+      "subtitle": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorliving-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773676014214_rza16o",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorliving-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1773676032610_4gz3yt",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorlighting-sec-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1773676493407_jl1uer",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title,description}>",
+      "bottomText": "text",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "outdoorlighting-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1773681562032_hvkwb",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "outdoorlighting-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773681575353_hqkzv",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorlighting-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1773681607824_v3nhcn",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorkitchens-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1773682647131_peinry",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "variant": "string",
+      "closingText": "text",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorkitchens-sec-trust-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1773682950051_ef6tko",
+    "fields": {
+      "items": "array<{label,description}>",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "titleLine3": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorkitchens-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1773686622265_wvs5pa",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "outdoorkitchens-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773686626993_necoyf",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorkitchens-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1773686636654_yjcykg",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerysidewalks-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773696152263_qmk6b",
+    "fields": {
+      "title": "string",
+      "backLabel": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "gallerysidewalks-sec-inspiration-gallery": {
+    "count": 1,
+    "exampleKey": "custom_1773696162655_06wy1m",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerysidewalks-sec-projects-grid": {
+    "count": 1,
+    "exampleKey": "custom_1773696168774_eyda4",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerysidewalks-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773696184782_cuunnj",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerydriveways-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773698459997_2y6etbh",
+    "fields": {
+      "title": "string",
+      "backLabel": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "gallerypavers-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773699194272_vluxee",
+    "fields": {
+      "title": "string",
+      "backLink": "string",
+      "backLabel": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "gallerypavers-sec-inspiration-gallery": {
+    "count": 1,
+    "exampleKey": "custom_1773699376997_5ub39",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerypavers-sec-projects-grid": {
+    "count": 1,
+    "exampleKey": "custom_1773699384399_rzu6a",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "imageTypes": "array<string>",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerypavers-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773699387972_xrcjbr",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerycommercial-sec-hero-minimal": {
+    "count": 1,
+    "exampleKey": "custom_1773700535022_him7bk",
+    "fields": {
+      "title": "string",
+      "backLink": "string",
+      "backLabel": "string",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "gallerycommercial-sec-inspiration-gallery": {
+    "count": 1,
+    "exampleKey": "custom_1773700548922_24fbnf",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerycommercial-sec-projects-grid": {
+    "count": 1,
+    "exampleKey": "custom_1773700563461_x3qeln",
+    "fields": {
+      "title": "string",
+      "images": "array<text>",
+      "imageTypes": "array<string>",
+      "_sourceLabel": "string"
+    }
+  },
+  "gallerycommercial-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1773700578635_e82o5e",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "approaches-sec-style-options": {
+    "count": 1,
+    "exampleKey": "custom_1773705052619_5jyl5d",
+    "fields": {
+      "title": "string",
+      "styles": "array<{link,image,title,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialconcrete_page-sec-commercial-hero": {
+    "count": 1,
+    "exampleKey": "custom_1778125446486_akc2z",
+    "fields": {
+      "title": "string",
+      "tagline": "string",
+      "subtitle": "string",
+      "_sourceLabel": "string",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "commercialconcrete-sec-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1778126495665_q48v9l",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "array<{icon,items,title,description}>",
+      "description": "string",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "shelters-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1778128435487_6j2mm",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "shelters-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1778128452818_s33gtc",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "commercialconcrete-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1778128785814_uv1xk9",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "commercialconcrete-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1778128812858_8gixx",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialconcrete-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1778128826360_v6qem",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercial_page-sec-commercial-ada": {
+    "count": 1,
+    "exampleKey": "custom_1778129583669_ofbfny",
+    "fields": {
+      "items": "array<{title,description}>",
+      "title": "string",
+      "closing1": "text",
+      "closing2": "string",
+      "subtitle": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialpools-sec-related-services": {
+    "count": 1,
+    "exampleKey": "custom_1778129826301_o9qw6",
+    "fields": {
+      "title": "string",
+      "services": "array<{link,label}>",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "commercialpools-sec-more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_1778129833671_cvsk3",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "commercialpools-sec-faq": {
+    "count": 1,
+    "exampleKey": "custom_1778129848150_cwi32o",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "finishesstampedcolored-sec-why-maxima": {
+    "count": 1,
+    "exampleKey": "custom_1778534114090_6gmwxi",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "benefits": "[]",
+      "description": "text",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "city-hero": {
+    "count": 1,
+    "exampleKey": "custom_1779130922_columbus_hero",
+    "fields": {
+      "cards": "array<{icon,title,subtitle}>",
+      "title": "string",
+      "cityName": "string",
+      "subtitle": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "city-approach": {
+    "count": 1,
+    "exampleKey": "custom_1779200000_columbus_approach",
+    "fields": {
+      "steps": "array<{icon,title,ctaLink,ctaText,description}>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "cityPill": "string",
+      "features": "array<{icon,text}>",
+      "subtitle": "string",
+      "mainImage": "text",
+      "titleBlue": "string",
+      "titleDark": "string",
+      "badge1Image": "text",
+      "badge2Image": "text"
+    }
+  },
+  "commercial-sec-commercial-categories": {
+    "count": 1,
+    "exampleKey": "custom_commercial_categories_001",
+    "fields": {
+      "cards": "array<{link,image,title,ctaText,description}>",
+      "title": "string",
+      "subtitle": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "outdoorlighting-sec-concrete-vs-pavers": {
+    "count": 1,
+    "exampleKey": "custom_concrete_vs_pavers_ol",
+    "fields": {
+      "cards": "array<{image,title,description}>",
+      "title": "string",
+      "bottomText": "text",
+      "backgroundColor": "string"
+    }
+  },
+  "contactus_page-sec-contact-info-map": {
+    "count": 1,
+    "exampleKey": "custom_contactus_info_map_default",
+    "fields": {
+      "email": "string",
+      "intro": "string",
+      "phone": "string",
+      "title": "string",
+      "subtitle": "string",
+      "emailLabel": "string",
+      "hoursLabel": "string",
+      "hoursLine1": "string",
+      "hoursLine2": "string",
+      "hoursLine3": "string",
+      "phoneLabel": "string",
+      "twitterUrl": "string",
+      "youtubeUrl": "string",
+      "description": "text",
+      "facebookUrl": "string",
+      "mapEmbedUrl": "text",
+      "_sourceLabel": "string",
+      "addressLabel": "string",
+      "addressLine1": "string",
+      "addressLine2": "string",
+      "instagramUrl": "string"
+    }
+  },
+  "outdoorkitchens-sec-dream-kitchen": {
+    "count": 1,
+    "exampleKey": "custom_dream_kitchen_okitchens",
+    "fields": {
+      "cards": "array<{image,items,title}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "sideText": "text",
+      "bgGradient": "string",
+      "_sourceLabel": "string"
+    }
+  },
+  "whymaxima-sec-financing": {
+    "count": 1,
+    "exampleKey": "custom_financing_seed",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "benefits": "array<string>",
+      "cardImage": "text",
+      "bottomText": "string",
+      "dollarIcon": "text",
+      "description": "text",
+      "benefitsTitle": "string"
+    }
+  },
+  "retainingwalls-sec-integrated-features": {
+    "count": 1,
+    "exampleKey": "custom_integrated_features_rw",
+    "fields": {
+      "title": "string",
+      "features": "array<{icon,title}>",
+      "subtitle": "string",
+      "bottomText": "string"
+    }
+  },
+  "commercialpools-sec-maxima-standard": {
+    "count": 1,
+    "exampleKey": "custom_maxima_standard_cp_001",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "subtitle": "string",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "_sourceLabel": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "outdoorkitchens-sec-ok-intro": {
+    "count": 1,
+    "exampleKey": "custom_ok_intro_okitchens",
+    "fields": {
+      "ctaLink": "string",
+      "ctaText": "string",
+      "imageLeft": "string",
+      "imageRight": "text",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "description": "text",
+      "_sourceLabel": "string",
+      "imageVertical": "text",
+      "imageBottomLeft": "text",
+      "imageHorizontal": "text"
+    }
+  },
+  "outdoorkitchens-sec-outdoor-kitchen": {
+    "count": 1,
+    "exampleKey": "custom_outdoorkitchens_outdoor_kitchen",
+    "fields": {
+      "image": "text",
+      "title": "text",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "options": "array<string>",
+      "bottomText": "text",
+      "description": "text",
+      "optionsTitle": "string"
+    }
+  },
+  "outdoorlighting-sec-carousel-images": {
+    "count": 1,
+    "exampleKey": "custom_outdoorlighting_carousel_images",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "mainImage": "text",
+      "thumbnails": "array<text>",
+      "description": "text"
+    }
+  },
+  "outdoorliving-sec-custom-outdoor-living": {
+    "count": 1,
+    "exampleKey": "custom_outdoorliving_custom_outdoor_living",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "subtitle": "string",
+      "description": "text"
+    }
+  },
+  "outdoorliving-sec-outdoor-lightning": {
+    "count": 1,
+    "exampleKey": "custom_outdoorliving_outdoor_lightning",
+    "fields": {
+      "image": "text",
+      "steps": "array<{title,number,description,highlighted}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "rightTitle": "string",
+      "description": "text",
+      "rightDescription": "text"
+    }
+  },
+  "outdoorliving-sec-outdoor-space": {
+    "count": 1,
+    "exampleKey": "custom_outdoorliving_outdoor_space",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "backgroundImage": "text"
+    }
+  },
+  "outdoorliving-sec-why-choose-outdoor": {
+    "count": 1,
+    "exampleKey": "custom_outdoorliving_why_choose_outdoor",
+    "fields": {
+      "image": "text",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "benefits": "array<{text}>",
+      "bottomTitle": "string",
+      "_sourceLabel": "string",
+      "overlayOpacity": "number",
+      "bottomTitleLight": "string"
+    }
+  },
+  "porches-sec-final-cta": {
+    "count": 1,
+    "exampleKey": "custom_porches_related_services",
+    "fields": {
+      "ctaLink": "string",
+      "bottomText": "string",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "contactText": "text",
+      "description": "string",
+      "_sourceLabel": "string",
+      "relatedTitle": "string",
+      "ctaButtonText": "string",
+      "relatedServices": "array<{link,label}>"
+    }
+  },
+  "porches-sec-why-choose": {
+    "count": 1,
+    "exampleKey": "custom_porches_why_choose",
+    "fields": {
+      "title": "string",
+      "benefits": "array<{title,iconType,description}>",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "okitchens-sec-pro-design": {
+    "count": 1,
+    "exampleKey": "custom_pro_design_okitchens",
+    "fields": {
+      "items": "array<{bold,text}>",
+      "title": "string",
+      "eyebrow": "string",
+      "listTitle": "string",
+      "description": "text",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "whymaxima_page-sec-real-reviews": {
+    "count": 1,
+    "exampleKey": "custom_real_reviews_seed",
+    "fields": {
+      "title": "text",
+      "reviews": "array<{name,text,image}>",
+      "bottomText": "string",
+      "bottomLogos": "array<text>",
+      "overlayOpacity": "number",
+      "backgroundImage": "text"
+    }
+  },
+  "shelters-sec-unleash": {
+    "count": 1,
+    "exampleKey": "custom_shelters_unleash",
+    "fields": {
+      "items": "array<{text,boldTitle}>",
+      "title": "string",
+      "closingText": "text",
+      "description": "text"
+    }
+  },
+  "more-than-concrete": {
+    "count": 1,
+    "exampleKey": "custom_sportcourt_morethan",
+    "fields": {
+      "title": "string",
+      "description": "text",
+      "_sourceLabel": "string"
+    }
+  },
+  "whymaxima-sec-values": {
+    "count": 1,
+    "exampleKey": "custom_values_seed",
+    "fields": {
+      "image": "text",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "pillars": "array<{title,paragraphs}>",
+      "overlayTitle": "string"
+    }
+  },
+  "whymaxima_page-sec-why-maxima-intro": {
+    "count": 1,
+    "exampleKey": "custom_whymaxima_intro",
+    "fields": {
+      "title": "string",
+      "image1": "text",
+      "image2": "text",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "buttonLink": "string",
+      "buttonText": "string",
+      "paragraph1": "text",
+      "paragraph2": "text"
+    }
+  },
+  "driveways-page-trust": {
+    "count": 1,
+    "exampleKey": "driveways_page_trust",
+    "fields": {
+      "image": "text",
+      "titleLine1": "string",
+      "titleLine2": "string",
+      "titleLine3": "string",
+      "description": "text",
+      "highlightWords": "array<string>"
+    }
+  },
+  "drivewayshub-sec-hub-durability": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_durability",
+    "fields": {
+      "cards": "array<{icon,title,description}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "drivewayshub-sec-hub-final-cta": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_final_cta",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "services": "array<{link,label}>",
+      "badgesText": "string",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "relatedTitle": "string"
+    }
+  },
+  "drivewayshub-sec-hub-hero": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_hero",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "description": "text",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "drivewayshub-sec-hub-intro": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_intro",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "imageTop": "text",
+      "leadText": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "imageBottom": "text"
+    }
+  },
+  "drivewayshub-sec-hub-options": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_options",
+    "fields": {
+      "title": "string",
+      "options": "array<{image,title,ctaLink,ctaText,description}>",
+      "description": "text"
+    }
+  },
+  "drivewayshub-sec-hub-feature": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_paver",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "tagline": "string",
+      "paragraphs": "array<text>",
+      "backgroundImage": "text",
+      "taglineDescription": "string"
+    }
+  },
+  "drivewayshub-sec-hub-why-choose": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_why_choose",
+    "fields": {
+      "items": "array<{icon,title,description}>",
+      "title": "string",
+      "description": "text"
+    }
+  },
+  "drivewayshub-sec-hub-why-maxima": {
+    "count": 1,
+    "exampleKey": "drivewayshub_page_why_maxima",
+    "fields": {
+      "title": "string",
+      "groups": "array<{icon,items,title}>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "description": "text",
+      "backgroundImage": "text"
+    }
+  },
+  "finishes-sec-finishes-grid": {
+    "count": 1,
+    "exampleKey": "finishes_page_finishes_grid",
+    "fields": {
+      "heading": "string",
+      "subheading": "text",
+      "cardCtaText": "string"
+    }
+  },
+  "finishes-sec-hero-areas": {
+    "count": 1,
+    "exampleKey": "finishes_page_hero_areas",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "description": "text"
+    }
+  },
+  "gallery_page-sec-all-services": {
+    "count": 1,
+    "exampleKey": "gallery_page_all_services",
+    "fields": {
+      "items": "array<{link,name,image}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "bottomText": "text",
+      "description": "string"
+    }
+  },
+  "joinourteam-sec-benefits": {
+    "count": 1,
+    "exampleKey": "joinourteam_page_benefits",
+    "fields": {
+      "items": "array<{title,description}>",
+      "title": "string",
+      "eyebrow": "string",
+      "description": "text"
+    }
+  },
+  "joinourteam-sec-final-cta": {
+    "count": 1,
+    "exampleKey": "joinourteam_page_final_cta",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "description": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string"
+    }
+  },
+  "joinourteam-sec-intro": {
+    "count": 1,
+    "exampleKey": "joinourteam_page_intro",
+    "fields": {
+      "title": "string",
+      "eyebrow": "string",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "stat1Label": "string",
+      "stat1Value": "string",
+      "stat2Label": "string",
+      "stat2Value": "string",
+      "stat3Label": "string",
+      "stat3Value": "string"
+    }
+  },
+  "joinourteam-sec-positions": {
+    "count": 1,
+    "exampleKey": "joinourteam_page_positions",
+    "fields": {
+      "items": "array<{type,title,location,description}>",
+      "title": "string",
+      "eyebrow": "string",
+      "applyLink": "string",
+      "applyLabel": "string",
+      "description": "text"
+    }
+  },
+  "patioshub-sec-hub-durability": {
+    "count": 1,
+    "exampleKey": "patioshub_page_durability",
+    "fields": {
+      "cards": "array<{icon,title,description}>",
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "backgroundImage": "text"
+    }
+  },
+  "patioshub-sec-faq": {
+    "count": 1,
+    "exampleKey": "patioshub_page_faq",
+    "fields": {
+      "items": "array<{answer,question}>",
+      "title": "string"
+    }
+  },
+  "patioshub-sec-hub-final-cta": {
+    "count": 1,
+    "exampleKey": "patioshub_page_final_cta",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "services": "array<{link,label}>",
+      "badgesText": "string",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "relatedTitle": "string"
+    }
+  },
+  "patioshub-sec-hub-hero": {
+    "count": 1,
+    "exampleKey": "patioshub_page_hero",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "subtitle": "string",
+      "description": "text",
+      "backgroundImage": "text",
+      "secondaryCtaLink": "string",
+      "secondaryCtaText": "string",
+      "backgroundImageMobile": "text"
+    }
+  },
+  "patioshub-sec-hub-intro": {
+    "count": 1,
+    "exampleKey": "patioshub_page_intro",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "imageTop": "text",
+      "leadText": "text",
+      "paragraph1": "text",
+      "paragraph2": "text",
+      "imageBottom": "text"
+    }
+  },
+  "patioshub-sec-hub-options": {
+    "count": 1,
+    "exampleKey": "patioshub_page_options",
+    "fields": {
+      "title": "string",
+      "options": "array<{image,title,ctaLink,ctaText,description}>",
+      "description": "text"
+    }
+  },
+  "patioshub-sec-hub-feature": {
+    "count": 1,
+    "exampleKey": "patioshub_page_paver",
+    "fields": {
+      "title": "string",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "tagline": "string",
+      "paragraphs": "array<text>",
+      "backgroundImage": "text",
+      "taglineDescription": "string"
+    }
+  },
+  "patioshub-sec-hub-why-choose": {
+    "count": 1,
+    "exampleKey": "patioshub_page_why_choose",
+    "fields": {
+      "items": "array<{icon,title,description}>",
+      "title": "string",
+      "description": "text"
+    }
+  },
+  "patioshub-sec-hub-why-maxima": {
+    "count": 1,
+    "exampleKey": "patioshub_page_why_maxima",
+    "fields": {
+      "title": "string",
+      "groups": "array<{icon,items,title}>",
+      "ctaLink": "string",
+      "ctaText": "string",
+      "eyebrow": "string",
+      "description": "text",
+      "backgroundImage": "text"
+    }
+  },
+  "projectmap-sec-explorer": {
+    "count": 1,
+    "exampleKey": "projectmap_page_explorer",
+    "fields": {
+      "title": "string",
+      "subtitle": "text",
+      "badgeText": "string",
+      "nearbyLabel": "string",
+      "defaultRadius": "string",
+      "noResultsText": "string",
+      "projectsLabel": "string",
+      "zipPlaceholder": "string",
+      "fullscreenLabel": "string",
+      "listButtonLabel": "string",
+      "myLocationLabel": "string",
+      "searchButtonText": "string"
+    }
+  },
+  "projectmap-sec-hero": {
+    "count": 1,
+    "exampleKey": "projectmap_page_hero",
+    "fields": {
+      "title": "string",
+      "imageAlt": "string",
+      "subtitle": "text",
+      "badgeText": "string",
+      "backgroundImage": "string"
+    }
+  },
+  "reviews": {
+    "count": 1,
+    "exampleKey": "reviews",
+    "fields": {
+      "subtitle": "string",
+      "profileUrl": "string",
+      "titlePart1": "string",
+      "titlePart2": "string",
+      "viewAllText": "string"
+    }
+  },
+  "stampedcolored-sec-benefits-process": {
+    "count": 1,
+    "exampleKey": "stampedcolored-sec-benefits-process",
+    "fields": {
+      "benefits": "array<{title,description}>",
+      "bottomQuote": "text",
+      "processImage": "text",
+      "processIntro": "text",
+      "processSteps": "array<{text,label}>",
+      "processTitle": "string",
+      "benefitsTitle": "string"
+    }
+  }
+}

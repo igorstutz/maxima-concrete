@@ -1,0 +1,304 @@
+{
+  "pageKey": "commercialpools_page",
+  "sections": [
+    {
+      "key": "custom_1778001498245_g0zkp8",
+      "label": "Hero",
+      "type": "commercial-hero",
+      "content": {
+        "title": "Commercial Pools",
+        "tagline": "Designed, Built, and Perfected by Maxima Concrete",
+        "subtitle": "Designed, Built, and Perfected by Maxima Concrete",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784038760894-bpsw9b.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784038760894-bpsw9b-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1778129269786_t6oy6c",
+      "label": "Transform Your Property",
+      "type": "building-central",
+      "content": {
+        "image": "/images/cms/uploads/1780681799844-mnwb38.webp",
+        "title": "Transform Your \nProperty with a Custom \nCommercial Pool",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "paragraph1": "At <b>Maxima Concrete</b>, we bring your vision to life — from <b>concept and design to excavation and expert concrete construction.</b>  Serving <b>Central Ohio</b>, our experienced team delivers commercial pool projects that blend <b>aesthetic appeal, safety, and performance</b> to meet your business needs.",
+        "paragraph2": "Whether it’s a hotel courtyard, an apartment complex, a gym facility, or a recreation center, we build pools that enhance property value and customer experience alike.",
+        "_sourceLabel": "Building Central"
+      }
+    },
+    {
+      "key": "custom_1778126495665_q48v9l",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Choose Maxima Concrete for Your Commercial Pool Project",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1778129082984-tqf6a.webp",
+            "items": [
+              {
+                "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
+                "label": ""
+              }
+            ],
+            "title": "Experienced & Qualified",
+            "description": "Our specialists bring years of hands-on experience in high-quality concrete pool construction that adheres to all local safety and regulatory standards."
+          },
+          {
+            "icon": "/images/cms/uploads/1778129074410-5fjb1b.webp",
+            "items": [
+              {
+                "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
+                "label": ""
+              }
+            ],
+            "title": "Customizable Solutions",
+            "description": "Every property is different — and so is every pool. We collaborate closely with you to design a pool that complements your brand and environment, ensuring beauty, safety, and efficiency."
+          },
+          {
+            "icon": "/images/cms/uploads/1778129064774-6slje.webp",
+            "items": [
+              {
+                "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
+                "label": ""
+              }
+            ],
+            "title": "Built for Durability",
+            "description": "Using premium-grade concrete and advanced reinforcement methods, we ensure each pool withstands heavy use, seasonal shifts, and years of enjoyment."
+          },
+          {
+            "icon": "/images/cms/uploads/1778129053182-5vsw1v.webp",
+            "items": [
+              {
+                "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Seamless Project Management",
+            "description": "Our dedicated project managers oversee every phase — design, excavation, pouring, and finishing — keeping timelines tight and communication clear."
+          }
+        ],
+        "description": "\n",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1782843625015-da8rxq.webp"
+      }
+    },
+    {
+      "key": "custom_1778249920235_jg0wlq",
+      "label": "Our Commercial",
+      "type": "why-choose-mc",
+      "content": {
+        "image": "/images/cms/uploads/1782843676897-06iobf.webp",
+        "items": [
+          {
+            "title": "Design & Planning:",
+            "description": "Tailored layouts, precise engineering, and aesthetic alignment with your property."
+          },
+          {
+            "title": "Concrete Construction:",
+            "description": "Structural integrity through reinforced concrete and expert pouring techniques."
+          },
+          {
+            "title": "Excavation & Site Prep:",
+            "description": "Proper grading, drainage systems, and foundation stability for long-term performance."
+          },
+          {
+            "title": "Finishing Touches:",
+            "description": "Custom tile, coping, and deck options for a refined, cohesive look."
+          }
+        ],
+        "title": "Our Commercial Pool Services",
+        "subtitle": "We offer complete turnkey pool-building solutions, ensuring your project is executed flawlessly from start to finish:",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_maxima_standard_cp_001",
+      "label": "Maxima Standard",
+      "type": "maxima-standard",
+      "content": {
+        "image": "/images/cms/uploads/1780682175606-kphd2q.webp",
+        "title": "The Maxima Standard",
+        "subtitle": "Where Function Meets Design",
+        "paragraph1": "Maxima Concrete combines <b>architectural creativity</b> with structural precision, producing pools that are both <b>visually striking and technically sound.</b>\nFrom small leisure pools to large-scale resort installations, we focus on <b>safety, efficiency, and craftsmanship</b> at every step.",
+        "paragraph2": "We serve <b>Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties</b>, offering premium commercial pool construction for Ohio's most trusted properties.",
+        "_sourceLabel": "Maxima Standard",
+        "backgroundImage": "/images/cms/uploads/1780682123915-pzcrlc.webp"
+      }
+    },
+    {
+      "key": "custom_1778128785814_uv1xk9",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1780682137460-443tmo.webp"
+      }
+    },
+    {
+      "key": "custom_1778250278060_a7qvwn",
+      "label": "Ready to Build",
+      "type": "ready-to-build",
+      "content": {
+        "title": "Ready to Build Your Dream Pool?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact us",
+        "subtitle": "Turn your vision into a reality with <b>Maxima Concrete’s professional pool design and construction services.</b>",
+        "contactText": "  Let’s design, build, and finish a pool that sets your property apart.",
+        "_sourceLabel": "Ready to Build",
+        "contactTitle": "Contact Maxima Concrete today for a free consultation and estimate."
+      }
+    },
+    {
+      "key": "custom_1778128812858_8gixx",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "custom_1778128830009_2cr0pn",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1778128822155_wewxd",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1778128826360_v6qem",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "We typically use a 6.5-bag (4500 PSI) fiber-reinforced mix with 10-gauge wire mesh for strength, crack control, and long-term durability.",
+            "question": "What type of concrete does Maxima use for commercial projects?"
+          },
+          {
+            "answer": "Yes. We manage new construction, additions, and ADA-compliant remodels, ensuring consistency across all phases.",
+            "question": "Do you handle both new builds and renovations?"
+          },
+          {
+            "answer": "Absolutely. Our crews are trained to read and execute from blueprints, collaborating seamlessly with general contractors and engineers.",
+            "question": "Can you build to architectural or engineered plans?"
+          },
+          {
+            "answer": "We serve Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties — and select neighboring regions across Central Ohio.",
+            "question": "What areas do you serve?"
+          }
+        ],
+        "title": "FAQ — Commercial Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

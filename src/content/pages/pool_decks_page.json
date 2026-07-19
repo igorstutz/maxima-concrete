@@ -1,0 +1,342 @@
+{
+  "pageKey": "pool_decks_page",
+  "sections": [
+    {
+      "key": "custom_1762902000001_pooldeck",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Pool Decks & Surrounds",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Beautiful, Functional, and Built to Cool Your Summer",
+        "subtitle": "Slip-resistant, weather-tough pool decks crafted from decorative concrete and pavers — designed to complement your pool and elevate your outdoor living. Free consultation available.",
+        "videoUrl": "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/videos/1780599076392-m4n1g7.MOV",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784043223806-x9xaxq.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784043223806-x9xaxq-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1762902000002_pooldeck",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "A Pool Deck That Transforms",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Pool Deck",
+        "subtitle": "Your pool deserves a setting as stunning as the water itself. From classic broom finishes to elegant pavers and stamped designs, Maxima Concrete creates pool decks that are cool to the touch, safe to walk on, and built to handle every Ohio season.",
+        "imageLarge": "/images/cms/uploads/1784043426226-wbz497.webp",
+        "paragraph1": "At Maxima Concrete, we design pool surrounds that blend beauty, safety, and longevity. Our team works with you from concept to finish — choosing slip-resistant textures, heat-reflective colors, and durable materials that complement your pool, landscaping, and lifestyle. The result: a backyard space you'll love for decades.",
+        "titleLine2": "Your Backyard Oasis",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1784043244869-0qmq6s.webp"
+      }
+    },
+    {
+      "key": "custom_1762902000003_pooldeck",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Maxima Is the Right \nChoice for Your Pool Deck",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773697788895-gyo8uo.webp",
+            "items": [
+              {
+                "text": "Built to withstand pool chemicals, freeze-thaw cycles, and constant moisture for decades of performance.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              }
+            ],
+            "title": "Durability and Longevity"
+          },
+          {
+            "icon": "/images/cms/uploads/1773699156947-rtse3.webp",
+            "items": [
+              {
+                "text": "Broom, exposed aggregate, and stamped textures give wet feet the grip they need around the pool.",
+                "label": "Textured Finishes:"
+              }
+            ],
+            "title": "Slip Resistance & Safety"
+          },
+          {
+            "icon": "/images/cms/uploads/1768777652386-dseslw.webp",
+            "items": [
+              {
+                "text": "Light tones and decorative finishes keep your deck comfortable on the hottest summer days.",
+                "label": "Heat-Reflective Colors:"
+              }
+            ],
+            "title": "Cool-to-the-Touch Design"
+          },
+          {
+            "icon": "/images/cms/uploads/1768777710208-0cfaxq.webp",
+            "items": [
+              {
+                "text": "A beautifully finished pool deck elevates curb appeal and increases your property value.",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
+        "description": "Our pool decks combine strength, slip resistance, and timeless style. Whether you want a sleek modern surround or a warm, natural retreat, we build it cool to the touch and made to last through every Ohio season.\n\n\n",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/pooldeck-whymaxima-bg.webp"
+      }
+    },
+    {
+      "key": "custom_1762902000004_pooldeck",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Pool Deck Finish Options",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780941435100-645de.webp",
+            "title": "Broom-Finished",
+            "description": "Subtle texture with great slip resistance. A classic, durable, low-maintenance choice."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780941482081-q61mm.webp",
+            "title": "Stamped & Colored",
+            "description": "Mimics stone, brick or wood with rich color and texture for a premium look."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780941523240-48kvs.webp",
+            "title": "Exposed Aggregate",
+            "description": "Bold, textured surface revealing decorative stones — slip-resistant and natural."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780941558563-066tz.webp",
+            "title": "Buff Wash",
+            "description": "Soft exposure of sand and fine aggregates for a refined, natural finish."
+          }
+        ],
+        "description": "Maxima Concrete offers a diverse range of finishes and textures designed for safety, comfort, and style around your pool:",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1762902000005_pooldeck",
+      "label": "Pool Decks",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Pool Decks That Turn Your \nBackyard Into a Resort",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Pool Deck",
+        "eyebrow": "",
+        "benefits": [],
+        "description": "A pool deck is more than a surface — it sets the tone for your entire backyard escape. At Maxima Concrete, we combine artistry and engineering to design pool surrounds that blend natural beauty with long-lasting strength.\n\nFrom decorative concrete to elegant pavers in cool, light tones, we craft layouts that complement your pool, landscape, and home. Whether it is a sleek modern surround or a warm Mediterranean feel, we bring your vision to life with precision and care.",
+        "_sourceLabel": "Design Paver Driveway",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1784043485295-rwij1q.webp"
+      }
+    },
+    {
+      "key": "custom_1762902000006_pooldeck",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Pool Deck",
+        "images": [
+          "/images/cms/uploads/1782840526907-v24o8v.webp",
+          "/images/cms/uploads/1782841316214-hdwhmq.webp",
+          "/images/cms/uploads/1782841314925-hpz1ny.webp",
+          "/images/cms/uploads/1782841317240-9dz5l.webp",
+          "/images/cms/uploads/1782841292126-gy4npq.webp",
+          "/images/cms/uploads/1782841293414-qoa2ji.webp",
+          "/images/cms/uploads/1782841313865-43jwjf.webp",
+          "/images/cms/uploads/1784043462562-asj69.webp",
+          "/images/cms/uploads/1784043464057-4hhmk.webp",
+          "/images/cms/uploads/1784043465439-ftzifq.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1762902000007_pooldeck",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Our Commitment\nto Quality",
+        "benefits": [
+          {
+            "title": "6.5-Bag Mix Concrete",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773699438648-dynlyv.webp",
+            "description": "Stronger and denser for a durable foundation."
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773699474063-2mfasg.webp",
+            "description": "Reduces cracking and adds internal strength."
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773699498502-gdlyhk.webp",
+            "description": "Provides superior stability and long-term support."
+          },
+          {
+            "title": "Full-Service Experience",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773699532840-275u69.webp",
+            "description": "From consultation to final finish — we handle it all."
+          }
+        ],
+        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1762902000008_pooldeck",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to Create Your",
+        "titleLine2": "Perfect Pool Deck?",
+        "contactText": "",
+        "description": "Your dream pool deck is within reach. From the initial design consultation to the final touch, we are with you every step of the way to ensure a smooth process and a result you will love.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Pool Deck Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/outdoor-living",
+            "label": "Outdoor Living"
+          },
+          {
+            "link": "/services/fire-pits",
+            "label": "Fire Pits"
+          }
+        ]
+      }
+    },
+    {
+      "key": "custom_1762902000009_pooldeck",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1762902000010_pooldeck",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Most projects are completed in 3-7 days depending on size, finish, and site conditions.",
+            "question": "How long does a concrete pool deck installation take?"
+          },
+          {
+            "answer": "Yes. We use textured finishes such as broom, exposed aggregate, and stamped concrete to provide safe footing even when wet.",
+            "question": "Are your pool decks slip-resistant?"
+          },
+          {
+            "answer": "We recommend light-colored or heat-reflective finishes that significantly reduce surface temperature on hot, sunny days.",
+            "question": "Will the surface stay cool in summer?"
+          },
+          {
+            "answer": "Absolutely. We offer stamped, colored, broom-finished, exposed aggregate, and paver options tailored to your pool and home style.",
+            "question": "Can I customize the color, pattern, and texture?"
+          },
+          {
+            "answer": "Foot traffic is usually safe after 24-48 hours, with full cure in about 7 days before heavy use.",
+            "question": "How soon can I use my pool deck after installation?"
+          },
+          {
+            "answer": "Yes — we provide free on-site consultations and design estimates anywhere in Central Ohio.",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Pool Decks & Surrounds",
+        "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+/**
+ * Cidades/condados atendidos — snapshot estático da tabela "service_areas"
+ * do Supabase (fonte: _extraction/service_areas.json, dump gitignored),
+ * já filtrado por is_active e ordenado por position.
+ *
+ * As imagens ainda apontam para o storage público do Supabase porque não
+ * foram baixadas para /public (o download da extração cobriu apenas as
+ * imagens do site_content). Trocar para /images/cms/uploads/... quando
+ * forem baixadas.
+ */
+export interface ServiceArea {
+  slug: string;
+  name: string;
+  description: string;
+  image: string;
+}
+
+export const SERVICE_AREAS: ServiceArea[] = [
+  {
+    slug: "columbus",
+    name: "Columbus",
+    description: "High-performance concrete driveways and patios installed by Maxima's in-house team.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128112217-q4wnom.webp",
+  },
+  {
+    slug: "delaware",
+    name: "Delaware",
+    description: "Durable residential concrete solutions designed to withstand Ohio's seasons.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128178004-f40vuq.webp",
+  },
+  {
+    slug: "sunbury",
+    name: "Sunbury",
+    description: "Family-installed concrete driveways and patios built for strength and clean curb appeal.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128223333-kaok1l.webp",
+  },
+  {
+    slug: "galena",
+    name: "Galena",
+    description: "Reliable concrete craftsmanship delivered by our trained in-house crew.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128259014-95huyiol.webp",
+  },
+  {
+    slug: "kilbourne",
+    name: "Kilbourne",
+    description: "Custom concrete driveways and flatwork engineered for lasting performance.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128271515-4q0y2k.webp",
+  },
+  {
+    slug: "jerome",
+    name: "Jerome",
+    description: "Premium concrete solutions installed with precision and care.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128279560-hr1bo.webp",
+  },
+  {
+    slug: "lewis-center",
+    name: "Lewis Center",
+    description: "High-strength driveways and patios built to enhance your home's value.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128292910-xnl3ab.webp",
+  },
+  {
+    slug: "shawnee-hills",
+    name: "Shawnee Hills",
+    description: "Concrete built to last, installed without subcontractors.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128343517-jzr4a.webp",
+  },
+  {
+    slug: "powell",
+    name: "Powell",
+    description: "Clean, durable concrete installations designed for long-term reliability.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128355410-dqvhai.webp",
+  },
+  {
+    slug: "radnor",
+    name: "Radnor",
+    description: "Residential concrete solutions focused on strength and longevity.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128363678-v00cru.webp",
+  },
+  {
+    slug: "ashley",
+    name: "Ashley",
+    description: "Driveways and patios installed with structural integrity and expert execution.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128375545-zrlm2q.webp",
+  },
+  {
+    slug: "dublin",
+    name: "Dublin",
+    description: "High-end concrete driveways and custom flatwork built for durability.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128938033-zrqryq.webp",
+  },
+  {
+    slug: "bexley",
+    name: "Bexley",
+    description: "Concrete solutions that combine craftsmanship with long-term strength.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128401861-1oarvn.webp",
+  },
+  {
+    slug: "marysville",
+    name: "Marysville",
+    description: "Engineered concrete systems designed for performance and curb appeal.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128412563-ctpr7.webp",
+  },
+  {
+    slug: "ostrander",
+    name: "Ostrander",
+    description: "Family-owned concrete services installed with precision.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128425798-hrjev3.webp",
+  },
+  {
+    slug: "new-albany",
+    name: "New Albany",
+    description: "Premium concrete driveways and patios built to elevate your property.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128435829-6dnqh.webp",
+  },
+  {
+    slug: "johnstown",
+    name: "Johnstown",
+    description: "Long-lasting concrete installations tailored to your home.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128446849-ap1hh.webp",
+  },
+  {
+    slug: "centerburg",
+    name: "Centerburg",
+    description: "Strong, clean, and professionally installed concrete surfaces.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128456882-u4tgfe.webp",
+  },
+  {
+    slug: "grandview-heights",
+    name: "Grandview Heights",
+    description: "Custom concrete work built for durability and style.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128469182-emwhiw.webp",
+  },
+  {
+    slug: "gahanna",
+    name: "Gahanna",
+    description: "High-performance driveways installed by our trained in-house team.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128478292-s489al.webp",
+  },
+  {
+    slug: "worthington",
+    name: "Worthington",
+    description: "Concrete solutions built to withstand Ohio's freeze-thaw cycles.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128495692-anytld.webp",
+  },
+  {
+    slug: "westerville",
+    name: "Westerville",
+    description: "Residential concrete systems engineered for strength and longevity.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128506844-vuqlr.webp",
+  },
+  {
+    slug: "upper-arlington",
+    name: "Upper Arlington",
+    description: "Premium concrete installations designed for refined curb appeal.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128517681-p4bm9h.webp",
+  },
+  {
+    slug: "hilliard",
+    name: "Hilliard",
+    description: "Durable driveways and patios installed with precision and care.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128535742-25tyuh.webp",
+  },
+  {
+    slug: "plain-city",
+    name: "Plain City",
+    description: "Reliable concrete craftsmanship built for decades of use.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128545571-lldw7s.webp",
+  },
+  {
+    slug: "reynoldsburg",
+    name: "Reynoldsburg",
+    description: "Family-installed concrete solutions focused on structural performance.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128556697-2evs2.webp",
+  },
+  {
+    slug: "pickerington",
+    name: "Pickerington",
+    description: "High-strength residential concrete built for long-term value.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128568271-4zr2x.webp",
+  },
+  {
+    slug: "canal-winchester",
+    name: "Canal Winchester",
+    description: "Driveways and flatwork designed for durability and clean aesthetics.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128581664-0bv8s.webp",
+  },
+  {
+    slug: "lithopolis",
+    name: "Lithopolis",
+    description: "Concrete surfaces engineered to handle Ohio weather.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128591049-augln.webp",
+  },
+  {
+    slug: "urbancrest",
+    name: "Urbancrest",
+    description: "Professional concrete installations built by our in-house crew.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128598940-0r7nei.webp",
+  },
+  {
+    slug: "grove-city",
+    name: "Grove City",
+    description: "Strong, reinforced concrete systems built to last.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128610616-7opyxj.webp",
+  },
+  {
+    slug: "groveport",
+    name: "Groveport",
+    description: "Residential concrete driveways and patios installed with expert precision.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128633825-9pyid.webp",
+  },
+  {
+    slug: "blacklick",
+    name: "Blacklick",
+    description: "Custom concrete solutions designed for durability and performance.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128652892-u604pd.webp",
+  },
+  {
+    slug: "etna",
+    name: "Etna",
+    description: "Engineered concrete installations built for long-term strength.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128666047-4gwz99.webp",
+  },
+  {
+    slug: "pataskala",
+    name: "Pataskala",
+    description: "High-quality driveways and flatwork designed for reliability.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128678663-r5sbzi.webp",
+  },
+  {
+    slug: "clintonville",
+    name: "Clintonville",
+    description: "Clean, durable concrete solutions installed without subcontractors.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128691838-4jz55lv.webp",
+  },
+  {
+    slug: "galloway",
+    name: "Galloway",
+    description: "Family-owned concrete services focused on lasting results.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128709493-9512jr.webp",
+  },
+  {
+    slug: "obetz",
+    name: "Obetz",
+    description: "Reinforced concrete driveways built for daily use and durability.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128721057-b7tlq7.webp",
+  },
+  {
+    slug: "whitehall",
+    name: "Whitehall",
+    description: "Concrete systems designed for strength, safety, and longevity.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128736079-gvyre.webp",
+  },
+  {
+    slug: "lockbourne",
+    name: "Lockbourne",
+    description: "Professionally installed concrete surfaces built to endure.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128747058-dkltne.webp",
+  },
+  {
+    slug: "west-jefferson",
+    name: "West Jefferson",
+    description: "High-performance concrete solutions delivered with precision.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128761239-5rycod.webp",
+  },
+  {
+    slug: "franklin-county",
+    name: "Franklin County",
+    description: "Reinforced concrete driveways and patios installed by our in-house team, built to last.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128774038-w02e6d.webp",
+  },
+  {
+    slug: "delaware-county",
+    name: "Delaware County",
+    description: "Durable residential concrete solutions designed for long-term performance.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128789438-dj012.webp",
+  },
+  {
+    slug: "union-county",
+    name: "Union County",
+    description: "High-strength concrete systems installed without subcontractors.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128818676-52t4sk.webp",
+  },
+  {
+    slug: "licking-county",
+    name: "Licking County",
+    description: "Driveways and patios engineered for strength and longevity.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128833542-ig4k86.webp",
+  },
+  {
+    slug: "fairfield-county",
+    name: "Fairfield County",
+    description: "Professionally installed concrete surfaces built for durability.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128840273-esxop.webp",
+  },
+  {
+    slug: "madison-county",
+    name: "Madison County",
+    description: "Family-owned concrete services focused on lasting results.",
+    image: "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1779128863029-prlo6.webp",
+  },
+];

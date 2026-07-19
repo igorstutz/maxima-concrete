@@ -1,0 +1,169 @@
+{
+  "pageKey": "gallerypavers_page",
+  "sections": [
+    {
+      "key": "custom_1773698493876_8q3l28",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Pavers",
+        "backLink": "/gallery",
+        "backLabel": "Back to Gallery",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1781035509623-3855i.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1781035509623-3855i-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1773698516396_p53437",
+      "label": "Inspiration",
+      "type": "inspiration-gallery",
+      "content": {
+        "title": "Inspiration for Your Pavers",
+        "images": [
+          "/images/cms/uploads/1781035456743-cg9wfc.webp",
+          "/images/cms/uploads/1773698868298-0cak5f.webp",
+          "/images/cms/uploads/1773698869262-7q7t7.webp",
+          "/images/cms/uploads/1773698870044-ocmb1.webp",
+          "/images/cms/uploads/1773698870781-bt33qk.webp",
+          "/images/cms/uploads/1773698872210-z8btn4.webp",
+          "/images/cms/uploads/1773698873164-bx7dth.webp",
+          "/images/cms/uploads/1781035448875-8irjce.webp",
+          "/images/cms/uploads/1781035449826-ubrl5c.webp",
+          "/images/cms/uploads/1781035451185-xbftgb.webp",
+          "/images/cms/uploads/1781035452665-k7pdfc.webp",
+          "/images/cms/uploads/1781035454115-21910a.webp",
+          "/images/cms/uploads/1781035455077-6zhuc.webp",
+          "/images/cms/uploads/1781035455845-cqeuys.webp",
+          "/images/cms/uploads/1781035457516-bc6uli.webp",
+          "/images/cms/uploads/1781035458395-unqoej.webp",
+          "/images/cms/uploads/1781035459469-vmyagg.webp"
+        ],
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1773698519730_kql8v",
+      "label": "Projects",
+      "type": "projects-grid",
+      "content": {
+        "title": "",
+        "images": [
+          "/images/cms/uploads/1782831915562-fds2sj.webp",
+          "/images/cms/uploads/1773699027128-hgr6ho.webp",
+          "/images/cms/uploads/1773699048653-aqxx4k.webp",
+          "/images/cms/uploads/1782831834944-wya3wr.webp",
+          "/images/cms/uploads/1782831855038-bzx48.webp",
+          "/images/cms/uploads/1773699063205-xzbvf.webp"
+        ],
+        "imageTypes": [
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete"
+        ],
+        "_sourceLabel": "Projects"
+      }
+    },
+    {
+      "key": "custom_1773698523708_urhpfi",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1773698531723_ccxfdv",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1773698534590_eij2ge",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

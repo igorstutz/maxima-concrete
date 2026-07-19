@@ -1,0 +1,174 @@
+{
+  "pageKey": "areascolumbus_page",
+  "sections": [
+    {
+      "key": "custom_1779130922_columbus_hero",
+      "label": "Hero",
+      "type": "city-hero",
+      "content": {
+        "cards": [
+          {
+            "icon": "handshake",
+            "title": "Trusted",
+            "subtitle": "Maxima Trusted Concrete Experts"
+          },
+          {
+            "icon": "map-pin",
+            "title": "Local",
+            "subtitle": "Locally Owned in Ohio"
+          },
+          {
+            "icon": "tag",
+            "title": "Affordable",
+            "subtitle": "High-Quality, Affordable Solutions"
+          }
+        ],
+        "title": "Trusted Concrete Contractor in",
+        "cityName": "Columbus, Ohio",
+        "subtitle": "Start your project with confidence.",
+        "description": "At Maxima Concrete, we deliver high-quality concrete solutions for homeowners across Columbus and Central Ohio. From durable driveways to patios and custom flatwork, our family-owned, in-house team provides expert guidance and craftsmanship built to last.",
+        "_sourceLabel": "City Hero"
+      }
+    },
+    {
+      "key": "custom_1779200000_columbus_approach",
+      "label": "5-Step Approach",
+      "type": "city-approach",
+      "content": {
+        "steps": [
+          {
+            "icon": "hammer",
+            "title": "Demolition & Site Prep",
+            "ctaLink": "#contact",
+            "ctaText": "Get Your Free Estimate",
+            "description": "We remove old material, set proper grading, and ensure correct drainage."
+          },
+          {
+            "icon": "layers",
+            "title": "Solid Gravel Base",
+            "ctaLink": "#contact",
+            "ctaText": "Get Your Free Estimate",
+            "description": "We install a compacted gravel base for structural strength and water control."
+          },
+          {
+            "icon": "thumbs-up",
+            "title": "Final Walkthrough",
+            "ctaLink": "#contact",
+            "ctaText": "Get Your Free Estimate",
+            "description": "You approve layout and details before we pour."
+          },
+          {
+            "icon": "droplets",
+            "title": "Professional Concrete Pour",
+            "ctaLink": "#contact",
+            "ctaText": "Get Your Free Estimate",
+            "description": "We transport concrete carefully and protect your yard during installation."
+          },
+          {
+            "icon": "sparkles",
+            "title": "Finish & Cure",
+            "ctaLink": "#contact",
+            "ctaText": "Get Your Free Estimate",
+            "description": "We apply the selected finish and monitor curing until ready for use."
+          }
+        ],
+        "ctaLink": "/why-maxima",
+        "ctaText": "Why Maxima Concrete ?",
+        "cityPill": "Columbus, OH",
+        "features": [
+          {
+            "icon": "badge-check",
+            "text": "15+ Years of Experience"
+          },
+          {
+            "icon": "badge-check",
+            "text": "Fully Licensed & Insured"
+          },
+          {
+            "icon": "badge-check",
+            "text": "Expert In-House Team"
+          }
+        ],
+        "subtitle": "We handle every detail so you can\nrelax and enjoy results built to impress.",
+        "mainImage": "/images/cms/uploads/1779134967160-j51d3.webp",
+        "titleBlue": "Our 5-Step Approach",
+        "titleDark": "to Pouring Concrete Driveways",
+        "badge1Image": "/images/cms/uploads/1779137021862-ixwxje.webp",
+        "badge2Image": "/images/cms/uploads/1779137089888-v3u37v.webp"
+      }
+    },
+    {
+      "key": "custom_1779195004103_9ahovi",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ],
+        "_sourceLabel": "Find Our Work Near You"
+      }
+    },
+    {
+      "key": "custom_1779195015061_0m1v8p",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "We treat every home like it's our own."
+          },
+          {
+            "icon": "users",
+            "title": "No Subcontractors",
+            "description": "Every project is completed by our trained, in-house team."
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete systems designed for long-term durability."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed & Fully Insured",
+            "description": "Professional, compliant, and reliable from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "Trust (Global)",
+        "projectsText": "[XXX+] Projects Delivered",
+        "backgroundImage": "/images/cms/uploads/1778515585911-9ykf1_copy_1779129456493_guwolm.webp"
+      }
+    },
+    {
+      "key": "custom_1779195023900_nzbjxp",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1779195032654_fhcojm",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

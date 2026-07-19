@@ -1,0 +1,149 @@
+{
+  "pageKey": "gallerypools_page",
+  "sections": [
+    {
+      "key": "custom_1772205916764_e8doq7",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Pools",
+        "backLabel": "Back to Gallery",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1772206468289-jpv4j.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1772206468289-jpv4j-mobile.webp"
+      }
+    },
+    {
+      "key": "gallerypools-sec-inspiration-gallery",
+      "label": "Inspiration",
+      "type": "inspiration-gallery",
+      "content": {
+        "title": "Inspiration for Your Pools",
+        "images": [
+          "/images/cms/uploads/1772207979190-t46nkl.webp",
+          "/images/cms/uploads/1782830395731-h8d9fd.webp",
+          "/images/cms/uploads/1782830397390-a3u27i.webp",
+          "/images/cms/uploads/1782830398845-np48by.webp",
+          "/images/cms/uploads/1782830400623-o5iwyn.webp",
+          "/images/cms/uploads/1782830401805-1wligd.webp"
+        ],
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "gallerypools-sec-projects-grid",
+      "label": "Projects",
+      "type": "projects-grid",
+      "content": {
+        "title": "",
+        "images": [
+          "/images/cms/uploads/1772208896858-6px9j.webp",
+          "/images/cms/uploads/1772208893075-vnj93.webp",
+          "/images/cms/uploads/1772208894306-f6wy1ep.webp",
+          "/images/cms/uploads/1772208898018-vyub9h.webp",
+          "/images/cms/uploads/1772208895799-n82cwr.webp",
+          "/images/cms/uploads/1772208891698-9qmdgj.webp"
+        ],
+        "_sourceLabel": "Projects"
+      }
+    },
+    {
+      "key": "custom_1772210775459_lhrrgo",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1772210789861_x8buz",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1772210804749_lfx7g8",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

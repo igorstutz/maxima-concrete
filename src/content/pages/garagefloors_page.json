@@ -1,0 +1,245 @@
+{
+  "pageKey": "garagefloors_page",
+  "sections": [
+    {
+      "key": "custom_1771529785388_0sh63i",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Garage Floors",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Durable, Functional, and Built for Every Season",
+        "subtitle": "Durable, Functional, and Built for Every Season\n\nDurable, low-maintenance garage Floors by Maxima Concrete. Perfect for Ohio weather, built to last, and designed to look great. Free estimate.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784042820983-mit39m.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784042820983-mit39m-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981363064_cn8h5fg",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Strength meets style",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "A concrete garage floor doesn’t have to look plain or utilitarian. With Maxima Concrete, you can achieve a warm, inviting look that complements your home’s character — not contrasts it.",
+        "imageLarge": "/images/cms/uploads/1780681056473-a3fv3b.webp",
+        "paragraph1": "From sleek, modern finishes to rustic and textured styles, your garage can become a true extension of your living space. Use it not only for parking, but also as a workshop, gym, or creative studio — supported by flooring designed to handle heavy loads, high traffic, and daily use.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1780681052328-ukunq.webp"
+      }
+    },
+    {
+      "key": "custom_1773273362142_kzzr",
+      "label": "Strength meets style",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Strength meets style",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [],
+        "description": "A concrete garage floor doesn’t have to look plain or utilitarian. With Maxima Concrete, you can achieve a warm, inviting look that complements your home’s character — not contrasts it.\n\nFrom sleek, modern finishes to rustic and textured styles, your garage can become a true extension of your living space. Use it not only for parking, but also as a workshop, gym, or creative studio — supported by flooring designed to handle heavy loads, high traffic, and daily use.",
+        "_sourceLabel": "Paver Steps",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1780681195502-5lhdjr.webp"
+      }
+    },
+    {
+      "key": "custom_1771983386938_8yrh8",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Garage Floors",
+        "images": [
+          "/images/cms/uploads/1780681333470-3f77ip.webp",
+          "/images/cms/uploads/1780681330833-8hvst8.webp",
+          "/images/cms/uploads/1780681473749-1iatyg.webp",
+          "/images/cms/uploads/1780681331802-npxzi.webp",
+          "/images/cms/uploads/1780681380245-okcicp.webp",
+          "/images/cms/uploads/1780681332457-bl2aws.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1773273606419_0umfr5",
+      "label": "Advantage",
+      "type": "why-choose",
+      "content": {
+        "title": "The Maxima Concrete advantage",
+        "benefits": [
+          {
+            "title": "",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773274229065-r7hdst.webp",
+            "description": "6.5-bag high-strength concrete mix"
+          },
+          {
+            "title": "",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773274360506-ihhs49.webp",
+            "description": "Fiber reinforcement for crack resistance"
+          },
+          {
+            "title": "",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773273913371-fncx3v.webp",
+            "description": "10-gauge wire mesh for added stability"
+          },
+          {
+            "title": "",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773274399427-i6v8cb.webp",
+            "description": "Proper grading and sealing for long-term protection"
+          }
+        ],
+        "description": "Choosing the right contractor makes all the difference. With hundreds of completed garage floors across Central Ohio, Maxima Concrete brings unmatched expertise, precision, and reliability to every project. We handle the process end to end — from preparation to finish — ensuring your floor is flat, strong, and beautiful.",
+        "_sourceLabel": "Advantage"
+      }
+    },
+    {
+      "key": "custom_1771983204714_nzw8b1",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to elevate your garage?",
+        "titleLine2": "",
+        "contactText": "Contact us today for a free estimate and discover why we’re Central Ohio’s trusted choice for garage Floors.",
+        "description": "Don’t settle for a dull or damaged floor. Let Maxima Concrete transform your garage into a functional, beautiful, and durable space that lasts for decades.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/basement-floors",
+            "label": "Basement Floors"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviews & Areas Served)"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982496201_td5ap3",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982619138_n4qso5",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "",
+            "question": "How long does a concrete garage floor last?"
+          },
+          {
+            "answer": "Our fiber-reinforced, 6.5-bag mix and wire mesh reinforcement minimize cracking, even in extreme freeze-thaw cycles common in Ohio.",
+            "question": "Does concrete crack in cold weather?"
+          },
+          {
+            "answer": "",
+            "question": "Can I make my garage floor look decorative?"
+          },
+          {
+            "answer": "",
+            "question": " How do I maintain my concrete garage floor?"
+          }
+        ],
+        "title": "FAQ — Patios - Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

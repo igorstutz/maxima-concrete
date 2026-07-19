@@ -1,0 +1,66 @@
+[
+  {
+    "name": "Jennifer Walsh",
+    "rating": 5,
+    "comment": "Maxima Concrete completely transformed our backyard with a beautiful stamped concrete patio. The crew was professional, on time, and the finish quality is outstanding. Highly recommend!",
+    "date": "2026-05-07T15:33:41.518091+00:00",
+    "featured": true,
+    "photo": null
+  },
+  {
+    "name": "Michael Anderson",
+    "rating": 5,
+    "comment": "We had our driveway replaced and could not be happier with the result. Clean lines, perfect grading, and they cleaned up everything before leaving. True professionals.",
+    "date": "2026-04-21T15:33:41.518091+00:00",
+    "featured": true,
+    "photo": null
+  },
+  {
+    "name": "Rebecca Thompson",
+    "rating": 5,
+    "comment": "Outstanding pool deck installation. The team walked us through every step and the textured finish looks incredible. Worth every penny.",
+    "date": "2026-04-04T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  },
+  {
+    "name": "David Martinez",
+    "rating": 5,
+    "comment": "Best concrete contractor in Ohio. Honest pricing, no surprises, and the workmanship is top notch. We will definitely use them again for future projects.",
+    "date": "2026-03-17T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  },
+  {
+    "name": "Sarah Collins",
+    "rating": 5,
+    "comment": "From the first estimate to the final walkthrough, the experience was excellent. Our new patio is exactly what we envisioned. Thank you Maxima!",
+    "date": "2026-02-18T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  },
+  {
+    "name": "Robert Hayes",
+    "rating": 4,
+    "comment": "Very pleased with our new sidewalks and porch. Communication was great and the work was completed on schedule. Minor cleanup issue but resolved quickly.",
+    "date": "2026-01-29T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  },
+  {
+    "name": "Amanda Foster",
+    "rating": 5,
+    "comment": "They installed a gorgeous fire pit area and outdoor kitchen base for us. Beautiful craftsmanship and attention to detail. Our neighbors keep asking who did the work!",
+    "date": "2025-12-30T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  },
+  {
+    "name": "James Patterson",
+    "rating": 5,
+    "comment": "Fantastic experience from start to finish. The team was respectful, efficient, and delivered a beautiful stamped concrete driveway that we get compliments on constantly.",
+    "date": "2025-11-20T15:33:41.518091+00:00",
+    "featured": false,
+    "photo": null
+  }
+]

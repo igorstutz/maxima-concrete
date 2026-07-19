@@ -1,0 +1,211 @@
+{
+  "pageKey": "fireplaces_page",
+  "sections": [
+    {
+      "key": "custom_1771529960465_8smrh9",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Fireplaces",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "The Heart of Every Outdoor Gathering",
+        "subtitle": "Bringing warmth and comfort to the heart of your home.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037264567-b1h8y.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037264567-b1h8y-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981789729_25kbg",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Enhance Your Outdoor Space",
+        "ctaLink": "#contact",
+        "ctaText": "Schedule Your Free Estimate!",
+        "subtitle": "Create a warm and inviting outdoor gathering space with a custom paver fire pit. Designed for both beauty and functionality, fire pits provide the perfect centerpiece for entertaining guests, relaxing with family, and enjoying your outdoor living area year-round.",
+        "imageLarge": "/images/cms/uploads/1780684889569-kvadvai.webp",
+        "paragraph1": "A professionally built paver fire pit adds character, comfort, and value to any backyard. Available in a variety of shapes, colors, and paver styles, fire pits can be customized to complement your patio and outdoor design. Their durable construction creates a safe, attractive space for gathering, conversation, and making lasting memories.",
+        "paragraph2": "At Maxima Concrete, we build fire pits using high-quality materials and expert installation techniques to ensure long-term durability and performance. Whether incorporated into a new patio or added to an existing outdoor space, a custom paver fire pit enhances functionality while creating a beautiful focal point you'll enjoy for years to come.",
+        "titleLine2": "With Custom Fire Pits",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1773398149473-wjj4k9.webp"
+      }
+    },
+    {
+      "key": "custom_1771982073134_cq66b",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Design Your Outdoor Space with a Custom Fire Pit",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [],
+        "description": "Create the perfect outdoor gathering area with a custom paver fire pit from Maxima Concrete. Designed to combine durability, safety, and style, our fire pits serve as a functional centerpiece for patios and backyard spaces.\n\nBuilt with high-quality materials and expert craftsmanship, each fire pit is designed to withstand weather conditions and long-term use while maintaining its appearance over time. Available in a variety of shapes, colors, and paver styles, every project is customized to match your outdoor design and personal preferences.\n\nA paver fire pit adds warmth, comfort, and value to your property, transforming your backyard into a welcoming space for relaxation, entertainment, and lasting memories with family and friends.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773709287908-kkglvl.webp"
+      }
+    },
+    {
+      "key": "custom_1773398273577_dge4gs",
+      "label": "Why Maxima",
+      "type": "why-maxima-simple",
+      "content": {
+        "title": "Why Choose Maxima \nfor Your Paver Fireplace",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "",
+            "items": [
+              {
+                "text": "All designs are created in-house to ensure accuracy. We work directly with you to develop a custom layout based on your space and goals. When needed, 3D renderings are provided to help you visualize size, materials, and placement before construction begins.",
+                "label": ""
+              }
+            ],
+            "title": "In-House Design & Visualization"
+          },
+          {
+            "icon": "",
+            "items": [
+              {
+                "text": "Our fireplaces are designed to connect naturally with the rest of your outdoor space, including patios, seating walls, kitchens, and lighting. This creates a cohesive layout with better flow, functionality, and visual balance. ",
+                "label": ""
+              }
+            ],
+            "title": "Seamless Outdoor Integration"
+          },
+          {
+            "icon": "",
+            "items": [
+              {
+                "text": "Every project is built by experienced professionals using proven installation methods. We focus on proper base preparation, precision work, and durable construction to ensure long-term performance and a clean finished result.",
+                "label": ""
+              }
+            ],
+            "title": "Experienced Craftsmanship"
+          },
+          {
+            "icon": "",
+            "items": [
+              {
+                "text": "We offer natural stone, pavers, and veneer finishes to match different styles and budgets. Each option is selected for durability and design flexibility, allowing a custom look that fits your property.",
+                "label": ""
+              }
+            ],
+            "title": "Flexible Building Options"
+          }
+        ],
+        "description": " ",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773398434365-nn94c7.webp"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982558405_rbry6o",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982905425_220jtm",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Both are excellent. Gas offers convenience and control; wood provides a traditional fireplace experience.",
+            "question": "1. Gas or wood — which is better?"
+          },
+          {
+            "answer": "Yes. Fireplaces can be integrated into new or existing paver patios.",
+            "question": "2. Can a fireplace be added to an existing patio?"
+          },
+          {
+            "answer": "When properly designed and built, they are extremely durable and safe for long-term use.",
+            "question": "3. Are paver fireplaces safe and durable?"
+          },
+          {
+            "answer": "Absolutely. Height, width, materials, and features are fully customizable.",
+            "question": "4. Can fireplaces be customized in size and style?"
+          }
+        ],
+        "title": "FAQ — Paver Fireplaces",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

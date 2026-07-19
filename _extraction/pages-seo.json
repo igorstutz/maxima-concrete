@@ -1,0 +1,345 @@
+﻿{
+    "services\\RetainingWallsPage.tsx":  {
+                                             "title":  "Retaining Walls",
+                                             "description":  "Concrete retaining wall construction in Ohio. Prevent erosion and add beauty to your landscape with Maxima Concrete.",
+                                             "canonicalPath":  "/services/retaining-walls",
+                                             "usesServicePageLayout":  true,
+                                             "pageKey":  "retainingwalls_page"
+                                         },
+    "services\\StepsPage.tsx":  {
+                                    "title":  "Steps",
+                                    "description":  "Concrete step and stair installation in Ohio. Safe, durable, and attractive steps for your home by Maxima Concrete.",
+                                    "canonicalPath":  "/services/steps",
+                                    "usesServicePageLayout":  true,
+                                    "pageKey":  "steps_page"
+                                },
+    "CommercialPage.tsx":  {
+                               "title":  "Commercial Concrete",
+                               "description":  "Commercial concrete services by Maxima â€” durable, professional, and built for business.",
+                               "canonicalPath":  "/commercial",
+                               "usesServicePageLayout":  true,
+                               "pageKey":  "commercial_page"
+                           },
+    "gallery\\GalleryCommercialPage.tsx":  {
+                                               "title":  "Commercial Gallery",
+                                               "description":  "Commercial concrete project gallery by Maxima Concrete. Parking lots, sidewalks \u0026 commercial flatwork in Ohio.",
+                                               "canonicalPath":  "/gallery/commercial",
+                                               "usesServicePageLayout":  true,
+                                               "pageKey":  "gallerycommercial_page"
+                                           },
+    "gallery\\GalleryPaversPage.tsx":  {
+                                           "title":  "Pavers Gallery",
+                                           "description":  "Paver installation gallery by Maxima Concrete. Browse our paver driveway, patio \u0026 walkway projects in Ohio.",
+                                           "canonicalPath":  "/gallery/pavers",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "gallerypavers_page"
+                                       },
+    "FinancingPage.tsx":  {
+                              "usesPageSEO":  true
+                          },
+    "services\\SportsCourtsPage.tsx":  {
+                                           "title":  "Sports Courts",
+                                           "description":  "Custom concrete sports court installation in Ohio. Basketball, pickleball \u0026 multi-sport courts built by Maxima Concrete.",
+                                           "canonicalPath":  "/services/sports-courts",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "sportscourts_page"
+                                       },
+    "services\\BasementFloorsPage.tsx":  {
+                                             "title":  "Basement Floors",
+                                             "description":  "Basement floor concrete work in Ohio. Leveling, polishing \u0026 finishing for a clean, durable basement by Maxima Concrete.",
+                                             "canonicalPath":  "/services/basement-floors",
+                                             "usesServicePageLayout":  true,
+                                             "pageKey":  "basementfloors_page"
+                                         },
+    "finishes\\FinishesBuffWashExposedPage.tsx":  {
+                                                      "title":  "Buff Wash \u0026 Exposed Aggregate",
+                                                      "description":  "Buff wash and exposed aggregate concrete finishes by Maxima Concrete. Reveal natural stone beauty.",
+                                                      "canonicalPath":  "/finishes/buff-wash-exposed",
+                                                      "usesServicePageLayout":  true,
+                                                      "pageKey":  "finishesbuffwash_page"
+                                                  },
+    "ProjectMapPage.tsx":  {
+                               "usesPageSEO":  true
+                           },
+    "services\\OutdoorLivingPage.tsx":  {
+                                            "title":  "Outdoor Living",
+                                            "description":  "Custom outdoor living spaces in Ohio. Patios, fire pits, outdoor kitchens and more by Maxima Concrete.",
+                                            "canonicalPath":  "/services/outdoor-living",
+                                            "usesServicePageLayout":  true,
+                                            "pageKey":  "outdoorliving_page"
+                                        },
+    "ReviewsPage.tsx":  {
+                            "usesPageSEO":  true
+                        },
+    "gallery\\GalleryPatiosPage.tsx":  {
+                                           "title":  "Patios Gallery",
+                                           "description":  "Concrete patio project gallery by Maxima Concrete. See our stamped, stained \u0026 decorative patio work in Ohio.",
+                                           "canonicalPath":  "/gallery/patios",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "gallerypatios_page"
+                                       },
+    "services\\SheltersPage.tsx":  {
+                                       "title":  "Shelters, Pergolas \u0026 Shade Structures",
+                                       "description":  "Custom shelters, pergolas and shade structures in Ohio. Beautiful and functional outdoor shade solutions by Maxima Concrete.",
+                                       "canonicalPath":  "/services/shelters",
+                                       "usesServicePageLayout":  true,
+                                       "pageKey":  "shelters_page"
+                                   },
+    "Login.tsx":  {
+
+                  },
+    "services\\PorchesPage.tsx":  {
+                                      "title":  "Porches",
+                                      "description":  "Beautiful concrete porch and front step construction in Ohio. Enhance your home\u0027s curb appeal with Maxima Concrete.",
+                                      "canonicalPath":  "/services/porches",
+                                      "usesServicePageLayout":  true,
+                                      "pageKey":  "porches_page"
+                                  },
+    "services\\PaverDrivewaysPage.tsx":  {
+                                             "title":  "Driveways - Paver",
+                                             "description":  "Paver driveway services by Maxima â€” elegant, durable, and built to enhance your home\u0027s curb appeal.",
+                                             "canonicalPath":  "/services/driveways/driveways-paver",
+                                             "usesServicePageLayout":  true,
+                                             "pageKey":  "paverdriveways_page"
+                                         },
+    "finishes\\FinishesBroomPage.tsx":  {
+                                            "title":  "Broom Finish",
+                                            "description":  "Broom finish concrete by Maxima Concrete. Durable, slip-resistant texture for driveways, sidewalks and patios.",
+                                            "canonicalPath":  "/finishes/broom",
+                                            "usesServicePageLayout":  true,
+                                            "pageKey":  "finishesbroom_page"
+                                        },
+    "finishes\\FinishesStampedColoredPage.tsx":  {
+                                                     "title":  "Stamped \u0026 Colored Finish",
+                                                     "description":  "Stamped and colored concrete finishes by Maxima Concrete. Replicate stone, brick, and tile patterns.",
+                                                     "canonicalPath":  "/finishes/stamped-colored",
+                                                     "usesServicePageLayout":  true,
+                                                     "pageKey":  "finishesstampedcolored_page"
+                                                 },
+    "services\\OutdoorLightingPage.tsx":  {
+                                              "title":  "Outdoor Lighting",
+                                              "description":  "Custom outdoor lighting solutions in Ohio. Enhance your landscape and hardscape with professional lighting by Maxima Concrete.",
+                                              "canonicalPath":  "/services/outdoor-lighting",
+                                              "usesServicePageLayout":  true,
+                                              "pageKey":  "outdoorlighting_page"
+                                          },
+    "services\\FootersPage.tsx":  {
+                                      "title":  "Footers \u0026 Structural Support",
+                                      "description":  "Concrete footers and structural support for decks, porches, and additions in Ohio. Reliable foundation work by Maxima Concrete.",
+                                      "canonicalPath":  "/services/footers",
+                                      "usesServicePageLayout":  true,
+                                      "pageKey":  "footers_page"
+                                  },
+    "LicensingInsuredPage.tsx":  {
+                                     "usesPageSEO":  true
+                                 },
+    "services\\FireplacesPage.tsx":  {
+                                         "title":  "Fireplaces",
+                                         "description":  "Outdoor concrete fireplace construction in Ohio. Custom-built fireplaces for your backyard by Maxima Concrete.",
+                                         "canonicalPath":  "/services/fireplaces",
+                                         "usesServicePageLayout":  true,
+                                         "pageKey":  "fireplaces_page"
+                                     },
+    "services\\DrivewaysPage.tsx":  {
+                                        "title":  "Driveways - Concrete",
+                                        "description":  "Professional concrete driveway installation in Ohio. Custom stamped, exposed aggregate \u0026 decorative driveways by Maxima Concrete. Free estimates.",
+                                        "canonicalPath":  "/services/driveways/driveways-concrete",
+                                        "usesServicePageLayout":  true,
+                                        "pageKey":  "driveways_page"
+                                    },
+    "services\\GarageFloorsPage.tsx":  {
+                                           "title":  "Garage Floors",
+                                           "description":  "Professional garage floor coating and concrete installation in Ohio. Epoxy, polished \u0026 decorative finishes by Maxima Concrete.",
+                                           "canonicalPath":  "/services/garage-floors",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "garagefloors_page"
+                                       },
+    "ContactUsPage.tsx":  {
+                              "usesPageSEO":  true
+                          },
+    "services\\CurbsGuttersPage.tsx":  {
+                                           "title":  "Curbs \u0026 Gutters",
+                                           "description":  "Concrete curb and gutter installation in Ohio. Improve drainage and property aesthetics with Maxima Concrete.",
+                                           "canonicalPath":  "/services/curbs-gutters",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "curbsgutters_page"
+                                       },
+    "services\\DrivewaysHubPage.tsx":  {
+                                           "title":  "Driveways",
+                                           "description":  "Concrete and paver driveways by Maxima Concrete. Explore our driveway options and find the perfect style for your Ohio home. Free estimates.",
+                                           "canonicalPath":  "/services/driveways",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "drivewayshub_page"
+                                       },
+    "services\\PatiosHubPage.tsx":  {
+                                        "title":  "Patios",
+                                        "description":  "Concrete and paver patios by Maxima Concrete. Explore our patio options and find the perfect style for your Ohio backyard. Free estimates.",
+                                        "canonicalPath":  "/services/patios",
+                                        "usesServicePageLayout":  true,
+                                        "pageKey":  "patioshub_page"
+                                    },
+    "services\\PoolDecksSurroundsPage.tsx":  {
+                                                 "title":  "Pool Decks \u0026 Surrounds",
+                                                 "description":  "Beautiful, slip-resistant pool decks and surrounds in decorative concrete and pavers. Custom designs by Maxima Concrete in Ohio. Free consultation.",
+                                                 "canonicalPath":  "/services/pool-decks-surrounds",
+                                                 "usesServicePageLayout":  true,
+                                                 "pageKey":  "pool_decks_page"
+                                             },
+    "services\\PatiosPage.tsx":  {
+                                     "title":  "Patios - Concrete",
+                                     "description":  "Custom concrete patios designed for outdoor living in Ohio. Stamped, stained \u0026 decorative patio installation by Maxima Concrete. Get a free quote.",
+                                     "canonicalPath":  "/services/patios/patios-concrete",
+                                     "usesServicePageLayout":  true,
+                                     "pageKey":  "patios_page"
+                                 },
+    "CommercialPoolsPage.tsx":  {
+                                    "title":  "Commercial Pools",
+                                    "description":  "Commercial Pools services by Maxima â€” durable, professional, and built for business.",
+                                    "canonicalPath":  "/commercial-pools",
+                                    "usesServicePageLayout":  true,
+                                    "pageKey":  "commercialpools_page"
+                                },
+    "WhyMaximaPage.tsx":  {
+                              "usesPageSEO":  true
+                          },
+    "services\\PaverPatiosPage.tsx":  {
+                                          "title":  "Patios - Paver",
+                                          "description":  "Paver patio services by Maxima â€” elegant, durable outdoor living spaces built with premium pavers.",
+                                          "canonicalPath":  "/services/patios/patios-paver",
+                                          "usesServicePageLayout":  true,
+                                          "pageKey":  "paverpatios_page"
+                                      },
+    "areas\\AreasColumbusPage.tsx":  {
+                                         "usesPageSEO":  true
+                                     },
+    "finishes\\FinishesPage.tsx":  {
+                                       "usesPageSEO":  true
+                                   },
+    "gallery\\GallerySidewalksPage.tsx":  {
+                                              "title":  "Sidewalks Gallery",
+                                              "description":  "Concrete sidewalk and walkway gallery by Maxima Concrete. Browse our completed projects in Ohio.",
+                                              "canonicalPath":  "/gallery/sidewalks",
+                                              "usesServicePageLayout":  true,
+                                              "pageKey":  "gallerysidewalks_page"
+                                          },
+    "gallery\\GallerySportCourtPage.tsx":  {
+                                               "title":  "Sport Court Gallery",
+                                               "description":  "Sport court concrete gallery by Maxima Concrete. Browse our basketball, pickleball \u0026 multi-sport court projects in Ohio.",
+                                               "canonicalPath":  "/gallery/sport-court",
+                                               "usesServicePageLayout":  true,
+                                               "pageKey":  "gallerysportcourt_page"
+                                           },
+    "gallery\\GalleryDrivewaysPage.tsx":  {
+                                              "title":  "Driveways Gallery",
+                                              "description":  "Concrete driveway project gallery by Maxima Concrete. Stamped, exposed aggregate \u0026 decorative driveways in Ohio.",
+                                              "canonicalPath":  "/gallery/driveways",
+                                              "usesServicePageLayout":  true,
+                                              "pageKey":  "gallerydriveways_page"
+                                          },
+    "AreasWeServePage.tsx":  {
+                                 "usesPageSEO":  true
+                             },
+    "areas\\AreasCityPage.tsx":  {
+                                     "usesPageSEO":  true
+                                 },
+    "Index.tsx":  {
+                      "usesPageSEO":  true
+                  },
+    "services\\SeatingWallsPage.tsx":  {
+                                           "title":  "Seating Walls",
+                                           "description":  "Decorative concrete seating walls for patios and outdoor areas in Ohio. Functional \u0026 beautiful designs by Maxima Concrete.",
+                                           "canonicalPath":  "/services/seating-walls",
+                                           "usesServicePageLayout":  true,
+                                           "pageKey":  "seatingwalls_page"
+                                       },
+    "CommercialConcretePage.tsx":  {
+                                       "title":  "Commercial Concrete",
+                                       "description":  "Commercial Concrete services by Maxima â€” durable, professional, and built for business.",
+                                       "canonicalPath":  "/commercial-concrete",
+                                       "usesServicePageLayout":  true,
+                                       "pageKey":  "commercialconcrete_page"
+                                   },
+    "services\\FirePitsPage.tsx":  {
+                                       "title":  "Fire Pits",
+                                       "description":  "Custom concrete fire pit installation in Ohio. Create the perfect outdoor gathering space with Maxima Concrete.",
+                                       "canonicalPath":  "/services/fire-pits",
+                                       "usesServicePageLayout":  true,
+                                       "pageKey":  "firepits_page"
+                                   },
+    "finishes\\FinishesSmoothPage.tsx":  {
+                                             "title":  "Smooth Finish",
+                                             "description":  "Smooth finish concrete by Maxima Concrete. Clean, modern look for interior and exterior surfaces.",
+                                             "canonicalPath":  "/finishes/smooth",
+                                             "usesServicePageLayout":  true,
+                                             "pageKey":  "finishessmooth_page"
+                                         },
+    "finishes\\FinishesColoredBroomPage.tsx":  {
+                                                   "title":  "Colored Broom Finish",
+                                                   "description":  "Colored broom finish concrete by Maxima Concrete. Combine color and texture for stunning results.",
+                                                   "canonicalPath":  "/finishes/colored-broom",
+                                                   "usesServicePageLayout":  true,
+                                                   "pageKey":  "finishescoloredbroom_page"
+                                               },
+    "NotFound.tsx":  {
+
+                     },
+    "gallery\\GalleryPorchesStepsPage.tsx":  {
+                                                 "title":  "Porches \u0026 Steps Gallery",
+                                                 "description":  "Concrete porch and step project gallery by Maxima Concrete. See our craftsmanship in Ohio.",
+                                                 "canonicalPath":  "/gallery/porches-steps",
+                                                 "usesServicePageLayout":  true,
+                                                 "pageKey":  "galleryporchessteps_page"
+                                             },
+    "gallery\\GalleryGarageFloorBarnPage.tsx":  {
+                                                    "title":  "Garage Floor \u0026 Barn Gallery",
+                                                    "description":  "Garage floor and barn concrete project gallery by Maxima Concrete. Epoxy, polished \u0026 coated floors in Ohio.",
+                                                    "canonicalPath":  "/gallery/garage-floor-barn",
+                                                    "usesServicePageLayout":  true,
+                                                    "pageKey":  "gallerygaragebarn_page"
+                                                },
+    "services\\SidewalksPage.tsx":  {
+                                        "title":  "Sidewalks \u0026 Walkways",
+                                        "description":  "Custom concrete sidewalks and walkways in Ohio. Durable, stylish paths designed and installed by Maxima Concrete.",
+                                        "canonicalPath":  "/services/sidewalks",
+                                        "usesServicePageLayout":  true,
+                                        "pageKey":  "sidewalks_page"
+                                    },
+    "GalleryPage.tsx":  {
+                            "title":  "Gallery",
+                            "description":  "Browse our portfolio of concrete driveways, patios, pool decks, and outdoor living projects in Ohio. See Maxima Concrete\u0027s craftsmanship.",
+                            "canonicalPath":  "/gallery",
+                            "usesServicePageLayout":  true,
+                            "pageKey":  "gallery_page"
+                        },
+    "services\\ApproachesPage.tsx":  {
+                                         "title":  "Approaches",
+                                         "description":  "Concrete approach and apron installation in Ohio. Smooth transitions from street to driveway by Maxima Concrete.",
+                                         "canonicalPath":  "/services/approaches",
+                                         "usesServicePageLayout":  true,
+                                         "pageKey":  "approaches_page"
+                                     },
+    "services\\OutdoorKitchensPage.tsx":  {
+                                              "title":  "Outdoor Kitchens \u0026 Bars",
+                                              "description":  "Custom outdoor kitchens and bars in Ohio. Entertain in style with concrete countertops and outdoor cooking spaces by Maxima Concrete.",
+                                              "canonicalPath":  "/services/outdoor-kitchens",
+                                              "usesServicePageLayout":  true,
+                                              "pageKey":  "outdoorkitchens_page"
+                                          },
+    "services\\SlabsPage.tsx":  {
+                                    "title":  "Slabs",
+                                    "description":  "Durable concrete slab installation for residential and commercial projects in Ohio. Expert craftsmanship by Maxima Concrete.",
+                                    "canonicalPath":  "/services/slabs",
+                                    "usesServicePageLayout":  true,
+                                    "pageKey":  "slabs_page"
+                                },
+    "gallery\\GalleryPoolsPage.tsx":  {
+                                          "title":  "Pool Gallery",
+                                          "description":  "Pool deck and pool area concrete gallery by Maxima Concrete. Browse our completed pool projects in Ohio.",
+                                          "canonicalPath":  "/gallery/pools",
+                                          "usesServicePageLayout":  true,
+                                          "pageKey":  "gallerypools_page"
+                                      },
+    "JoinOurTeamPage.tsx":  {
+                                "usesPageSEO":  true
+                            }
+}

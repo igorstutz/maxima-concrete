@@ -1,0 +1,200 @@
+{
+  "pageKey": "firepits_page",
+  "sections": [
+    {
+      "key": "custom_1771529834706_896al",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Fire Pits",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Timeless Warmth. Built to Gather. Designed to Last.",
+        "subtitle": "Timeless Warmth. Built to Gather. Designed to Last.\n",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1773315426841-ae08oq.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": ""
+      }
+    },
+    {
+      "key": "custom_1771981752221_xwahgp",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Timeless Warmth. Built to Gather. Designed to Last.",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "A paver fire pit transforms your outdoor space into a natural gathering point — a place where warmth, conversation, and design come together. More than a seasonal feature, a professionally built fire pit becomes the heart of your patio, extending outdoor living well beyond sunset and cooler months.",
+        "imageLarge": "/images/cms/uploads/1782842760133-2czxg1c.webp",
+        "paragraph1": "At Maxima, we design and build custom paver fire pits that combine lasting structure, refined aesthetics, and everyday safety — tailored to your space, your style, and how you gather.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842753436-3dkwx.webp"
+      }
+    },
+    {
+      "key": "custom_1771982046394_d8hw5k",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Choose a Paver Fire Pit?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773708309569-ikgzlb.webp",
+            "items": [
+              {
+                "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
+                "label": ""
+              }
+            ],
+            "title": "Built for  Stability & Safety",
+            "closingText": "",
+            "description": "Paver fire pits sit on a properly prepared base, eliminating uneven ground, shifting stones, or instability. This creates a safer environment for family and guests while containing fire in a controlled, durable structure."
+          },
+          {
+            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp_copy_1771981982523_pi12gs_copy_1771982028656_ey68t3_copy_1771982046778_j9rgpd.webp",
+            "items": [
+              {
+                "text": "Just an occasional rinse to keep it clean and pristine.",
+                "label": ""
+              }
+            ],
+            "title": "Designed to Withstand  the Elements",
+            "description": "High-quality concrete pavers resist heat, moisture, and freeze-thaw cycles — making them ideal for Central Ohio’s changing seasons. No warping, rusting, or premature wear."
+          },
+          {
+            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob_copy_1771981982870_nomhy_copy_1771982028657_8eesle_copy_1771982046779_yo1qcs.webp",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
+                "label": ""
+              }
+            ],
+            "title": "Low Maintenance, Long-Term Value",
+            "description": "Non-porous pavers are easy to clean and maintain. Occasional sweeping and simple upkeep keep your fire pit looking pristine year after year."
+          },
+          {
+            "icon": "/images/cms/uploads/1773315543405-l8rfvl.webp",
+            "items": [
+              {
+                "text": "From rustic earth tones to modern charcoal and gray blends, paver fire pits integrate seamlessly with:\n\n- Paver patios\n- Outdoor kitchens\n- Seating walls\n- Walkways and steps\n\nThey can be circular, square, or custom-shaped to match your outdoor layout.",
+                "label": ""
+              }
+            ],
+            "title": "Aesthetic Versatility",
+            "description": "From rustic earth tones to modern charcoal and gray blends, paver fire pits integrate seamlessly with:\n\n • Paver patios\n • Outdoor kitchens\n • Seating walls\n • Walkways and steps\n\nThey can be circular, square, or custom-shaped to match your outdoor layout."
+          }
+        ],
+        "description": "Unlike temporary fire rings or metal pits, a paver fire pit offers permanence, stability, and visual impact. Built with precision and premium materials, it elevates both form and function.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773315491100-zfhpc.webp"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982480492_8uitov",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982611341_ixw1hd",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Yes. When built correctly on a stable base with proper materials, paver fire pits offer excellent safety and structural reliability.",
+            "question": "Are paver fire pits safe?"
+          },
+          {
+            "answer": "Both work well. Wood offers a traditional experience, while gas provides convenience and cleaner operation. We help you choose the best option for your space.",
+            "question": "Wood-burning or gas — which is better?"
+          },
+          {
+            "answer": "Minimal maintenance is required. Occasional cleaning and inspection keep the surface and structure in excellent condition.",
+            "question": "Do paver fire pits require maintenance?"
+          },
+          {
+            "answer": "In many cases, yes. We assess your current patio and integrate the fire pit seamlessly.",
+            "question": "Can a fire pit be added to an existing patio?"
+          }
+        ],
+        "title": "FAQ — Paver Fire Pits",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

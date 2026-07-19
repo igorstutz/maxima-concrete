@@ -1,0 +1,301 @@
+{
+  "pageKey": "commercial_page",
+  "sections": [
+    {
+      "key": "commercial_page_hero",
+      "label": "Hero",
+      "type": "commercial-hero",
+      "content": {
+        "backgroundImage": "/images/cms/uploads/1776299359507-7rr16k.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1776299359507-7rr16k-mobile.webp"
+      }
+    },
+    {
+      "key": "commercial_page_intro",
+      "label": "Intro",
+      "type": "commercial-intro",
+      "content": {
+        "image": "/images/cms/uploads/1777947361538-6u2tv.webp",
+        "title": "We Take Your Business Seriously",
+        "paragraph1": "At <b>Maxima Concrete</b>, commercial work is not just another job — it is a commitment to <b>precision, compliance, and reliability.</b> We specialize in <b>ADA-compliant concrete</b> solutions designed to meet the most demanding regulatory and performance standards.",
+        "paragraph2": "Whether you are upgrading an existing property or building from the ground up, we ensure every project is built with <b>accuracy, safety, and lasting value.</b>"
+      }
+    },
+    {
+      "key": "commercial_page_ada",
+      "label": "ADA Compliance",
+      "type": "commercial-ada",
+      "content": {
+        "items": [
+          {
+            "title": "ADA Parking",
+            "description": "Proper slope, markings, and accessibility compliance."
+          },
+          {
+            "title": "Ramps",
+            "description": "Correct incline ratios and smooth transitions for mobility."
+          },
+          {
+            "title": "Sidewalks",
+            "description": "Width, cross-slope, and surface finish built to spec."
+          }
+        ],
+        "title": "ADA Compliance Expertise",
+        "closing1": "We handle ADA work with <b>tight tolerances</b> and full documentation - so your property passes inspection the first time.",
+        "closing2": "<b>Maxima Concrete reads and interprets blueprints</b> to ensure precise execution of every design specification.",
+        "subtitle": "Our team is highly experienced in implementing <b>Americans with Disabilities Act (ADA)</b> requirements for both <b>new builds</b> and <b>remediation projects.</b>"
+      }
+    },
+    {
+      "key": "commercial_page_services",
+      "label": "Commercial Services",
+      "type": "commercial-services",
+      "content": {
+        "title": "Commercial Concrete Services",
+        "closing": "From <b>restaurants and retail to banks, warehouses, and multi-unit complexes</b>, we understand the importance of <b>durability, accessibility, and compliance</b> in commercial environments.",
+        "ctaLink": "#contact",
+        "ctaLabel": "Contact Us",
+        "subtitle": "Maxima Concrete provides a complete range of commercial concrete installations, including:",
+        "leftItems": [
+          "Drive-Thru Pads",
+          "ADA-Compliant Parking, Ramps & Sidewalks",
+          "Driveways & Approaches",
+          "Dumpster Pads",
+          "Interior Building Slabs"
+        ],
+        "rightItems": [
+          "Curbs & Gutters",
+          "Structural Slabs",
+          "ATM Pads",
+          "Heated Concrete",
+          "Footers & Foundations"
+        ],
+        "backgroundImage": "/images/cms/uploads/1777948550422-m9a8t.webp"
+      }
+    },
+    {
+      "key": "custom_commercial_categories_001",
+      "label": "Our Commercial Solutions",
+      "type": "commercial-categories",
+      "content": {
+        "cards": [
+          {
+            "link": "/commercial-pools",
+            "image": "/images/cms/uploads/1778251816748-jue8jy.webp",
+            "title": "Commercial Pools",
+            "ctaText": "Explore Commercial Pools",
+            "description": "Custom-built commercial pools engineered for safety, durability, and visual impact for hotels, resorts, and properties."
+          },
+          {
+            "link": "/commercial-concrete",
+            "image": "/images/cms/uploads/1778251854993-hfnmtj.webp",
+            "title": "Commercial Concrete",
+            "ctaText": "Explore Commercial Concrete",
+            "description": "Heavy-duty concrete services for parking lots, sidewalks, warehouses, and commercial properties built to last."
+          }
+        ],
+        "title": "Our Commercial Solutions",
+        "subtitle": "Specialized concrete services tailored to your business needs.",
+        "_sourceLabel": "Our Commercial Solutions"
+      }
+    },
+    {
+      "key": "custom_1778129826301_o9qw6",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp_copy_1773686623753_jyx1d_copy_1778128454927_wiiwi_copy_1778128787698_7wu0dt_copy_1778129828013_m6lkbh.webp"
+      }
+    },
+    {
+      "key": "commercial_page_why_business",
+      "label": "Why Businesses Choose",
+      "type": "commercial-why-business",
+      "content": {
+        "image": "/images/cms/uploads/1777950262122-01h0tu.webp",
+        "items": [
+          {
+            "text": "Licensed & Insured Commercial Contractor",
+            "iconIndex": 0
+          },
+          {
+            "text": "6.5-Bag (4500 PSI) Fiber-Reinforced Mix for maximum strength",
+            "iconIndex": 1
+          },
+          {
+            "text": "Precision in Blueprint Reading & Layout",
+            "iconIndex": 2
+          },
+          {
+            "text": "Full ADA Specification Expertise",
+            "iconIndex": 3
+          },
+          {
+            "text": "Proven Record Across Central Ohio Counties, Franklin, Delaware, Union, Licking, and Fairfield",
+            "iconIndex": 4
+          }
+        ],
+        "logos": [
+          "/images/cms/uploads/1777950424295-x65mnu.webp",
+          "/images/cms/uploads/1777950423539-hud5jr.webp",
+          "/images/cms/uploads/1777950419463-lk93v7.webp",
+          "/images/cms/uploads/1777950420749-donoho.webp",
+          "/images/cms/uploads/1777950421808-b3bdld.webp",
+          "/images/cms/uploads/1777950422242-6ngkx.webp",
+          "/images/cms/uploads/1777950423074-7dgv5i.webp",
+          "/images/cms/uploads/1777950419874-v77hw.webp",
+          "/images/cms/uploads/1777950418892-b024xj.webp",
+          "/images/cms/uploads/1777950423919-agdc2i.webp"
+        ],
+        "title": "Why Businesses Choose <b>Maxima Concrete</b>",
+        "closing": "Every pour is handled with <b>engineering-level precision</b>, because in commercial concrete, small errors can lead to big liabilities."
+      }
+    },
+    {
+      "key": "custom_1778129833671_cvsk3",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "custom_1778129840408_xz5ocp",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1778129848150_cwi32o",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "We typically use a 6.5-bag (4500 PSI) fiber-reinforced mix with 10-gauge wire mesh for strength, crack control, and long-term durability.",
+            "question": "What type of concrete does Maxima use for commercial projects?"
+          },
+          {
+            "answer": "Yes. We manage new construction, additions, and ADA-compliant remodels, ensuring consistency across all phases.",
+            "question": "Do you handle both new builds and renovations?"
+          },
+          {
+            "answer": "Absolutely. Our crews are trained to read and execute from blueprints, collaborating seamlessly with general contractors and engineers.",
+            "question": "Can you build to architectural or engineered plans?"
+          },
+          {
+            "answer": "We serve Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties — and select neighboring regions across Central Ohio.",
+            "question": "What areas do you serve?"
+          }
+        ],
+        "title": "FAQ — Commercial Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1778129860426_eixl2q",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

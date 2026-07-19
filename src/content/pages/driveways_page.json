@@ -1,0 +1,271 @@
+{
+  "pageKey": "driveways_page",
+  "sections": [
+    {
+      "key": "custom_1766273483523_e1zxbj",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Driveways l Concrete",
+        "ctaLink": "#contact",
+        "ctaText": "Get Your Free Estimate",
+        "tagline": "Strength, Style, and Lasting Value",
+        "subtitle": "Upgrade your curb appeal with a durable concrete driveway built for strength, lasting performance, and enhanced home value.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784036222574-3b85x.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784036222574-3b85x-mobile.webp"
+      }
+    },
+    {
+      "key": "driveways_page_intro",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "A Driveway That Elevates ",
+        "ctaLink": "#contact",
+        "ctaText": "Let's Build your Vision? Schedule your free estimate.",
+        "subtitle": "Your driveway is more than a place to park your vehicle, it’s the first impression your home makes. Imagine arriving home to a beautifully crafted concrete driveway that enhances your property’s curb appeal and reflects the quality of your home.",
+        "imageLarge": "/images/cms/uploads/1782839069815-22oldj.webp",
+        "paragraph1": "At Maxima Concrete, we design and install high-quality residential concrete driveways built to deliver exceptional durability, functionality, and style. Say goodbye to cracked asphalt, constant repairs, and unwanted weeds. Our expertly crafted concrete surfaces are designed to withstand the elements while maintaining their beauty for years to come.\n",
+        "paragraph2": "Choose from a wide range of finishes, textures, and design options to create a driveway that perfectly complements your home. Whether you prefer the timeless look of smooth grey concrete, the character of stamped patterns, or the elegance of decorative borders, our team can bring your vision to life.",
+        "titleLine2": "Your Home’s First Impression",
+        "imageTopRight": "/images/cms/uploads/1784041687787-217edl.webp"
+      }
+    },
+    {
+      "key": "driveways_page_why_maxima",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Maxima Is the Right\nChoice for Your Driveways?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1768607612932-fo0vu8.webp",
+            "items": [
+              {
+                "text": "Creates a stronger, more durable surface that handles heavy vehicles, changing weather conditions, and years of daily use with ease, offering lasting beauty and performance that far exceeds asphalt alternatives.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              },
+              {
+                "text": "Tiny structural fibers dispersed throughout the concrete mix act like micro-rebar, helping control shrinkage cracks, improving tensile strength, and enhancing resistance to impact, heavy loads, and everyday wear. This advanced reinforcement creates a more durable, resilient surface designed to maint",
+                "label": "Fiber Reinforcement:"
+              },
+              {
+                "text": "Adds another layer of reinforcement by distributing weight and stress evenly throughout the concrete, helping prevent cracks, shifting, and deformation. This added support enhances durability, stability, and long-term performance, making it ideal for freeze-thaw climates and heavy daily use.",
+                "label": "10-Gauge Wire Mesh:"
+              }
+            ],
+            "title": "Durability and Longevity"
+          },
+          {
+            "icon": "/images/cms/uploads/1768607604517-r9e35s.webp",
+            "items": [
+              {
+                "text": "The reinforced concrete mix significantly reduces cracking caused by shrinkage, stress, and temperature changes, helping maintain a stronger, smoother surface over time. By minimizing damage and wear, it lowers maintenance needs and reduces costly repairs throughout the life of your driveway.",
+                "label": "Crack Resistance:"
+              },
+              {
+                "text": "A quick rinse and mild detergent are all it takes to keep your driveway looking fresh and brand-new. The sealed surface helps resist stains, dirt, and everyday wear, making maintenance simple while preserving its clean, polished appearance for years to come.",
+                "label": "Easy to Clean:"
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1768607580426-xmmv8q.webp",
+            "items": [
+              {
+                "text": "Choose from a wide range of styles, colors, textures, and finishes to create a custom look that perfectly complements your home’s architecture. From modern designs to timeless patterns, our options help you enhance curb appeal and create a driveway that reflects your personal style.",
+                "label": "Curb Appeal:"
+              },
+              {
+                "text": "A high-quality concrete driveway is a lasting investment that boosts your property’s curb appeal, functionality, and market value. With superior durability and timeless design, it creates a welcoming first impression while enhancing the overall appeal and long-term value of your home.",
+                "label": "Increased Resale Value:"
+              },
+              {
+                "text": "",
+                "label": ""
+              },
+              {
+                "text": "",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
+        "description": "At Maxima Concrete, we don’t compromise on quality. Our driveways are built with 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh for superior strength, durability, and long-lasting performance. From proper preparation to expert finishing, we ensure every driveway is designed to withstand daily use, harsh weather, and the test of time.",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1784033598159-v78ta.webp"
+      }
+    },
+    {
+      "key": "driveways_page_style_options",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Style Options for Every Driveway",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1784044874329-k5cfiqa.webp",
+            "title": "Broom-Finish",
+            "description": "Classic slip-resistant texture with clean lines, offering all-season traction and timeless appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1784044729660-qjfgro.webp",
+            "title": "Stamped & Colored",
+            "description": "Decorative patterns and rich colors that mimic natural stone or brick, creating a distinctive look with enhanced curb appeal."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780690097574-hzfl1.webp",
+            "title": "Exposed Aggregate & Buff Wash",
+            "description": "A warm, natural finish that reveals exposed stone textures, adding depth, character, and a refined look to any concrete surface."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1784044541984-0dbar.webp",
+            "title": "Paver, Brick or Natural Stone",
+            "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
+          }
+        ],
+        "description": "Choose a finish that combines strength, safety, and lasting curb appeal. Each option is expertly designed to withstand daily use while delivering exceptional durability and timeless beauty."
+      }
+    },
+    {
+      "key": "custom_1768608650305_09elyi",
+      "label": "Design Paver Driveway",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Can You Have a Paver Driveway? Absolutely.\n",
+        "ctaLink": "/services/driveways-paver",
+        "ctaText": "Explore Paver Driveways",
+        "eyebrow": "",
+        "benefits": [],
+        "description": "Paver driveways provide a premium, customizable solution that combines strength, functionality, and elegance to create a lasting first impression.\n\nA paver driveway is more than a place to park, it’s a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver driveways are engineered to handle heavy loads, extreme weather, and daily use without cracking, crumbling, or fading over time.\n\nAt Maxima, we design paver driveways that balance aesthetic impact with structural resilience. Each project is built with precision grading, proper base preparation, and premium paver materials selected to complement your home’s architecture and elevate curb appeal from the very first glance.\n\nBeyond looks, paver driveways offer superior drainage. Rainwater flows naturally through the joints, reducing pooling, preventing surface damage, and protecting your foundation. And when life happens, spills, stains, or localized wear — individual pavers can be replaced with ease, keeping your driveway looking pristine for years to come.\n\nChoose from classic cobblestone patterns for timeless elegance, sleek modern concrete pavers for a clean, contemporary feel, or custom layouts with borders and accents that reflect your personal style. The design flexibility is virtually limitless.\n\nDurable. Repairable. Built to last. \nUpgrade your driveway with a surface that performs as beautifully as it looks.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 71,
+        "backgroundImage": "/images/cms/uploads/1784048089782-6xn24b.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "custom_1768612553600_ayxod",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Concrete Driveways",
+        "images": [
+          "/images/cms/uploads/1782838127276-3n8smp.webp",
+          "/images/cms/uploads/1780674753702-neptw.webp",
+          "/images/cms/uploads/1782837735743-ppbdq.webp",
+          "/images/cms/uploads/1782837760363-e8c4sh.webp"
+        ],
+        "ctaLink": "#contact",
+        "ctaText": "Ready to Start Your Project? Schedule your Free Estimate",
+        "description": "Every project is unique. Explore our work and imagine the possibilities for transforming your own home with a custom design built around your vision.",
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1766273464841_2vtztl",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "driveways_page_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "With proper installation and maintenance, a Maxima Concrete driveway can last 30 years or more.",
+            "question": "How long will my concrete driveway last?"
+          },
+          {
+            "answer": "We handle everything — from design consultation and demolition to pouring, finishing, and cleanup.",
+            "question": "What's included in your driveway installation?"
+          },
+          {
+            "answer": "Yes, we offer stamped, colored, bordered, and heated driveways, all tailored to your home's look and climate needs.",
+            "question": "Do you offer design or decorative options?"
+          }
+        ],
+        "title": "FAQ — Driveways - Concrete"
+      }
+    }
+  ]
+}

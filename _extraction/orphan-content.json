@@ -1,0 +1,1347 @@
+[
+  {
+    "key": "areas_we_serve_hero",
+    "content": {
+      "title": "Areas We Serve",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Concrete craftsmanship across Central Ohio",
+      "description": "From Columbus to surrounding communities, Maxima Concrete delivers premium driveways, patios, and outdoor living spaces backed by our in-house team.",
+      "backgroundImage": "",
+      "backgroundImageMobile": ""
+    }
+  },
+  {
+    "key": "areaswe_serve_page_hero_areas",
+    "content": {
+      "title": "Areas We Serve",
+      "subtitle": "Columbus & Central Ohio",
+      "_sectionType": "areaswe-sec-hero-areas",
+      "backgroundImage": "/images/cms/uploads/1779128985686-j5xo4p.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1779128985686-j5xo4p-mobile.webp"
+    }
+  },
+  {
+    "key": "custom_1762900000004_paverdrv",
+    "content": {
+      "title": "Style Options for your Paver Driveway",
+      "styles": [
+        {
+          "link": "/finishes/broom",
+          "image": "/images/cms/uploads/1780938992200-s09e8.webp",
+          "title": "Broom-Finished:",
+          "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal.\n"
+        },
+        {
+          "link": "/finishes/stamped-colored",
+          "image": "/images/cms/uploads/1780939115365-66tmsi.webp",
+          "title": "Stamped & Colored:",
+          "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+        },
+        {
+          "link": "/finishes/buff-wash-exposed",
+          "image": "/images/cms/uploads/1780939092181-284924.webp",
+          "title": "Exposed Aggregate:",
+          "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look.\n"
+        },
+        {
+          "link": "/finishes/buff-wash-exposed",
+          "image": "/images/cms/uploads/1780939102003-3zlyf.webp",
+          "title": "Buff Wash:",
+          "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+        }
+      ],
+      "description": "Choose a finish that balances strength, safety, and curb appeal. Each option is engineered for daily use and long-term durability.",
+      "_sectionType": "paverdriveways-sec-style-options"
+    }
+  },
+  {
+    "key": "custom_1762900000008_paverdrv",
+    "content": {
+      "image": "/images/cms/uploads/1768613816989-0c1gr7.webp",
+      "titleLine1": "Why Homeowners",
+      "titleLine2": "Trust Maxima",
+      "titleLine3": "Concrete",
+      "description": "We combine <b>expert craftsmanship</b>, high-grade materials, and full regulatory support to deliver results that last for decades. Whether you need a new driveway approach, a <b>replacement apron</b>, or a <b>sidewalk connection</b>, we make sure every project is done right — the first time.",
+      "_sectionType": "paverdriveways-sec-trust",
+      "highlightWords": [
+        "expert craftsmanship",
+        "replacement apron",
+        "sidewalk connection"
+      ]
+    }
+  },
+  {
+    "key": "custom_1762901000004_paverpat",
+    "content": {
+      "title": "Concrete Patio Finish Options",
+      "styles": [
+        {
+          "link": "/finishes/broom",
+          "image": "/images/cms/uploads/1780941435100-645de.webp",
+          "title": "Broom-Finished:",
+          "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+        },
+        {
+          "link": "/finishes/stamped-colored",
+          "image": "/images/cms/uploads/1780941482081-q61mm.webp",
+          "title": "Stamped & Colored:",
+          "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+        },
+        {
+          "link": "/finishes/buff-wash-exposed",
+          "image": "/images/cms/uploads/1780941523240-48kvs.webp",
+          "title": "Exposed Aggregate:",
+          "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+        },
+        {
+          "link": "/finishes/buff-wash-exposed",
+          "image": "/images/cms/uploads/1780941558563-066tz.webp",
+          "title": "Buff Wash:",
+          "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+        }
+      ],
+      "description": "Maxima Concrete offers a diverse range of finishes and textures to match your home’s architecture and your personal taste:",
+      "_sectionType": "driveways-sec-style-options",
+      "_sourceLabel": "Style Options"
+    }
+  },
+  {
+    "key": "custom_1766181909974_plkd1",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone."
+    }
+  },
+  {
+    "key": "custom_1766182330383_xu32nf",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero"
+    }
+  },
+  {
+    "key": "custom_1766184150857_ohpbzd",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero"
+    }
+  },
+  {
+    "key": "custom_1766184641106_ah7sl",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero"
+    }
+  },
+  {
+    "key": "custom_1766184844954_jmwn8",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/src/assets/hero-background.jpg"
+    }
+  },
+  {
+    "key": "custom_1766186801381_lgkrtf",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/src/assets/hero-background.jpg"
+    }
+  },
+  {
+    "key": "custom_1766187026510_60733",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/src/assets/hero-background.jpg"
+    }
+  },
+  {
+    "key": "custom_1766187076749_2ns9iw",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/src/assets/hero-background.jpg"
+    }
+  },
+  {
+    "key": "custom_1766191924647_ex647",
+    "content": {
+      "title": "Transform Your Property into a Masterpiece",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Expertly crafting driveways, pools, patios, and outdoor living spaces with premium materials like concrete, pavers, and stone.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/src/assets/hero-background.jpg"
+    }
+  },
+  {
+    "key": "custom_1766192295119_nnm3xl",
+    "content": {
+      "title": "Driveways - Strength, Style, and Lasting Value",
+      "ctaLink": "#contact",
+      "ctaText": "Design My Outdoor Space",
+      "subtitle": "Transform your home's entrance with a Maxima Driveway — durable, elegant, and built to last. Free estimates available.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1766247868783-0a7xzg.webp"
+    }
+  },
+  {
+    "key": "custom_1766192996321_ecbd9",
+    "content": {
+      "handle": "@maximaconcrete",
+      "titlePart1": "Follow Us",
+      "titlePart2": "— On Instagram",
+      "_sectionType": "instagram",
+      "_sourceLabel": "Instagram"
+    }
+  },
+  {
+    "key": "custom_1766193014021_1sn4xf",
+    "content": {
+      "title": "Don't Wait, Transform Your Space Now",
+      "ctaText": "Send Request",
+      "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+      "_sectionType": "contact",
+      "_sourceLabel": "Contact"
+    }
+  },
+  {
+    "key": "custom_1766193295987_b58l5l",
+    "content": {
+      "phone": "(614) 384-5917",
+      "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+      "designerUrl": "https://melaniesconsulting.com",
+      "socialLinks": {
+        "twitter": "https://twitter.com",
+        "youtube": "https://youtube.com",
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com"
+      },
+      "_sectionType": "footer",
+      "_sourceLabel": "Footer",
+      "designerName": "Melanie's Consulting",
+      "designerText": "Designed by"
+    }
+  },
+  {
+    "key": "custom_1766193747926_gknkyj",
+    "content": {
+      "phone": "(614) 384-5917",
+      "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+      "designerUrl": "https://melaniesconsulting.com",
+      "socialLinks": {
+        "twitter": "https://twitter.com",
+        "youtube": "https://youtube.com",
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com"
+      },
+      "_sectionType": "footer",
+      "_sourceLabel": "Footer",
+      "designerName": "Melanie's Consulting - Igor Stutz",
+      "designerText": "Designed by"
+    }
+  },
+  {
+    "key": "custom_1766194252992_kottgt",
+    "content": {
+      "handle": "@maximaconcrete",
+      "titlePart1": "Follow Uss",
+      "titlePart2": "— On Instagram",
+      "_sectionType": "instagram",
+      "_sourceLabel": "Instagram"
+    }
+  },
+  {
+    "key": "custom_1766194376144_nc0luw",
+    "content": {
+      "handle": "@maximaconcrete",
+      "titlePart1": "Follow Uss",
+      "titlePart2": "— On Instagram",
+      "_sectionType": "instagram",
+      "_sourceLabel": "Instagram"
+    }
+  },
+  {
+    "key": "custom_1766197644540_m1ucxd",
+    "content": {
+      "title": "Don't Wait, Transform Your Space Now",
+      "ctaText": "Send Request",
+      "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+      "_sectionType": "contact",
+      "_sourceLabel": "Contact",
+      "nameSectionLabel": ""
+    }
+  },
+  {
+    "key": "custom_1766273415763_v0uryj",
+    "content": {
+      "phone": "(614) 384-5917",
+      "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+      "designerUrl": "https://melaniesconsulting.com",
+      "socialLinks": {
+        "twitter": "https://twitter.com",
+        "youtube": "https://youtube.com",
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com"
+      },
+      "_sectionType": "footer",
+      "_sourceLabel": "Footer",
+      "designerName": "Melanie's Consulting",
+      "designerText": "Designed by"
+    }
+  },
+  {
+    "key": "custom_1766273430011_hwd52s",
+    "content": {
+      "handle": "@maximaconcrete",
+      "titlePart1": "Follow Uss",
+      "titlePart2": "— On Instagram",
+      "_sectionType": "instagram",
+      "_sourceLabel": "Instagram"
+    }
+  },
+  {
+    "key": "custom_1768610997236_w4lrt",
+    "content": {
+      "title": "Why Choose\nMaxima Concrete\nDrivewayss",
+      "benefits": [
+        {
+          "title": "6.5-Bag Mix Concrete",
+          "iconType": "package",
+          "description": "Provides a denser, tougher surface that withstands heavy loads and decades of use — far outperforming asphalt alternatives."
+        },
+        {
+          "title": "Fiber Mesh Reinforcement",
+          "iconType": "layers",
+          "description": "Reduces cracking and adds internal strength."
+        },
+        {
+          "title": "10-Gauge Wire Mesh",
+          "iconType": "grid",
+          "description": "Provides superior stability and long-term support."
+        },
+        {
+          "title": "Full-Service Experience",
+          "iconType": "clipboard",
+          "description": "From consultation to final finish — we handle it all."
+        }
+      ],
+      "description": "At Maxima Concrete, we don't compromise on quality. Our driveways are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
+      "_sectionType": "driveways-page-why-choose",
+      "_sourceLabel": "Why Choose"
+    }
+  },
+  {
+    "key": "custom_1768773409152_59caut",
+    "content": {
+      "title": "Inspiration for Your Drivewayss",
+      "images": [
+        "/images/cms/uploads/1768611675405-xln2qp_copy_1768612555149_jfslub_copy_1768773410353_re5gs.webp",
+        "/images/cms/uploads/1768611687458-4vbvlk_copy_1768612554890_i6uzhi_copy_1768773410499_aokve.webp",
+        "/images/cms/uploads/1768611698407-rov7hk_copy_1768612554863_59s5c6_copy_1768773410387_axxeks.webp",
+        "/images/cms/uploads/1768611705751-0zk51t_copy_1768612554826_31a8nt_copy_1768773410403_spzp6n.webp",
+        "/images/cms/uploads/1768611713885-8mm4e_copy_1768612554890_xo7vma_copy_1768773410348_r4gn1u.webp"
+      ],
+      "_sectionType": "driveways-page-inspiration",
+      "_sourceLabel": "Inspiration"
+    }
+  },
+  {
+    "key": "custom_1768774913658_vg4qj2",
+    "content": {
+      "phone": "(614) 384-5917",
+      "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+      "designerUrl": "https://melaniesconsulting.com",
+      "socialLinks": {
+        "twitter": "https://twitter.com",
+        "youtube": "https://youtube.com",
+        "facebook": "https://facebook.com",
+        "instagram": "https://instagram.com"
+      },
+      "_sectionType": "footer",
+      "_sourceLabel": "Footer",
+      "designerName": "Melanie's Consulting",
+      "designerText": "Designed by"
+    }
+  },
+  {
+    "key": "custom_1768777124947_mpt36",
+    "content": {
+      "title": "Paver Patios That Bring \nYour Backyard to Life",
+      "ctaText": "Design My Paver Patio",
+      "eyebrow": "",
+      "benefits": [],
+      "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
+      "_sectionType": "patios-page-why-maxima",
+      "_sourceLabel": "Paver Patios",
+      "overlayOpacity": 57,
+      "backgroundImage": "/images/cms/uploads/1768774507745-xwvo6b_copy_1768777126561_4rtad.webp"
+    }
+  },
+  {
+    "key": "custom_1768777232307_e6odcw",
+    "content": {
+      "image": "/src/assets/why-maxima.png",
+      "ctaText": "Why Maxima Concrete ?",
+      "tagline": "Every great project starts with flawless execution.",
+      "benefit1": "15+ Years of Experience",
+      "benefit2": "Fully Licensed & Insured",
+      "benefit3": "Expert In-House Team",
+      "mainImage": "/images/cms/uploads/1766260199815-jhga35_copy_1768777233741_qsg7q6.webp",
+      "_sectionType": "why-maxima",
+      "_sourceLabel": "Why Maxima",
+      "description1": "At Maxima, our craftsmen blend precision, design, and durability to create spaces that last — from concrete driveways to luxury pools and patios.",
+      "description2": "We handle every detail so you can relax and enjoy results built to impress.",
+      "questionTitle": "What sets Maxima Concrete apart?"
+    }
+  },
+  {
+    "key": "custom_1769039617546_g8kb4",
+    "content": {
+      "title": "Our Commitment\nWhy Choose Maxima Slabs",
+      "benefits": [
+        {
+          "title": "6.5-bag high-strength concrete mix",
+          "iconType": "package",
+          "description": "for superior load-bearing capacity. "
+        },
+        {
+          "title": "Fiber Mesh Reinforcement",
+          "iconType": "layers",
+          "description": " to reduce cracking and improve toughness."
+        },
+        {
+          "title": "10-Gauge Wire Mesh",
+          "iconType": "grid",
+          "description": "(where applicable) for structural integrity. "
+        },
+        {
+          "title": "Accurate leveling & finishing",
+          "iconType": "clipboard",
+          "customIcon": "/images/cms/uploads/1769039531501-m9hbb_copy_1769039618926_j95nzb.webp",
+          "description": "for a flawless, even surface."
+        }
+      ],
+      "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
+      "_sectionType": "slabs-sec-why-choose",
+      "_sourceLabel": "Why Choose"
+    }
+  },
+  {
+    "key": "custom_1769039655145_129eow",
+    "content": {
+      "title": "Residential Slabs — Solid, \nSmooth, and Ready",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "eyebrow": "by Maxima Concrete",
+      "benefits": [
+        {
+          "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769039656185_tce7j5.webp",
+          "items": [
+            {
+              "text": "Strong, sealed, and level.",
+              "label": ""
+            }
+          ],
+          "title": "Basements & garages"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769039656490_t67vi.webp",
+          "items": [
+            {
+              "text": "Durable under daily use.",
+              "label": ""
+            }
+          ],
+          "title": "Home gyms, workshops, or storage areas"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038441272-qsgu5s_copy_1769039656443_q9du9.webp",
+          "items": [
+            {
+              "text": "Patios, garden walkways, or seating zones that stay beautiful year-round.",
+              "label": ""
+            }
+          ],
+          "title": "Outdoor living spaces"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038489866-xcswlt_copy_1769039656499_ufmmixw.webp",
+          "items": [
+            {
+              "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+              "label": ""
+            }
+          ],
+          "title": "Added Home Value"
+        }
+      ],
+      "description": "Uneven basement floors? Damp garage surfaces? A properly installed concrete slab \ntransforms those problem areas into clean, level, and moisture-resistant foundations \nready for whatever comes next.\n\n<b>Our slabs provide the perfect base for: </b>",
+      "_sectionType": "slabs-sec-why-maxima",
+      "_sourceLabel": "Why Maxima",
+      "overlayOpacity": 76,
+      "backgroundImage": "/images/cms/uploads/1769037917781-oyfcls_copy_1769039656478_b6blu8.webp"
+    }
+  },
+  {
+    "key": "custom_1769039667085_m0s3n",
+    "content": {
+      "title": "Slabs",
+      "ctaLink": "#contact",
+      "ctaText": "Design My Outdoor Space",
+      "subtitle": "The Foundation for Every Possibility\nDurable, level, and versatile concrete slabs by Maxima Concrete. From homes to industrial sites, we build the strong foundations every project needs.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1769037147195-85ewui_copy_1769039668288_27bh6tj.webp"
+    }
+  },
+  {
+    "key": "custom_1769039834375_voxibb",
+    "content": {
+      "title": "Why Choose Maxima Slabs",
+      "benefits": [
+        {
+          "title": "6.5-bag high-strength concrete mix",
+          "iconType": "package",
+          "description": "for superior load-bearing capacity. "
+        },
+        {
+          "title": "Fiber Mesh Reinforcement",
+          "iconType": "layers",
+          "description": " to reduce cracking and improve toughness."
+        },
+        {
+          "title": "10-Gauge Wire Mesh",
+          "iconType": "grid",
+          "description": "(where applicable) for structural integrity. "
+        },
+        {
+          "title": "Accurate leveling & finishing",
+          "iconType": "clipboard",
+          "customIcon": "/images/cms/uploads/1769039531501-m9hbb_copy_1769039834732_1jhryj.webp",
+          "description": "for a flawless, even surface."
+        }
+      ],
+      "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
+      "_sectionType": "slabs-sec-why-choose",
+      "_sourceLabel": "Why Choose"
+    }
+  },
+  {
+    "key": "custom_1771529146095_878cxg",
+    "content": {
+      "title": "Benefits of a Maxima Porch",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "eyebrow": "by Maxima Concrete",
+      "benefits": [
+        {
+          "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1771529147746_l1ewck.webp",
+          "items": [
+            {
+              "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
+              "label": ""
+            }
+          ],
+          "title": "Durability & Longevity"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1771529147781_1o7aof.webp",
+          "items": [
+            {
+              "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
+              "label": ""
+            }
+          ],
+          "title": "Low Maintenance"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1771529147768_7x4d9o.webp",
+          "items": [
+            {
+              "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
+              "label": ""
+            }
+          ],
+          "title": "Versatility & Design Freedom"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1771529147772_70nnfk.webp",
+          "items": [
+            {
+              "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",
+              "label": ""
+            }
+          ],
+          "title": "Increased Curb Appeal"
+        }
+      ],
+      "description": "<b>Concrete isn’t just functional</b> — it’s a smart investment in your home’s future. Here’s why\n homeowners across Ohio choose \nMaxima Concrete:\n\n",
+      "_sectionType": "porches-sec-why-maxima",
+      "_sourceLabel": "Why Maxima",
+      "overlayOpacity": 76,
+      "backgroundImage": "/images/cms/uploads/1769043221839-cl2o2a_copy_1771529147957_tnhs7.webp"
+    }
+  },
+  {
+    "key": "custom_1771981973702_mzlgw9",
+    "content": {
+      "title": "Why Choose Maxima \nfor Your Sidewalks",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "eyebrow": "by Maxima Concrete",
+      "benefits": [
+        {
+          "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb_copy_1771981975871_a9qoja.webp",
+          "items": [
+            {
+              "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
+              "label": ""
+            }
+          ],
+          "title": "Durable & Long-Lasting:"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp.webp",
+          "items": [
+            {
+              "text": "Just an occasional rinse to keep it clean and pristine.",
+              "label": ""
+            }
+          ],
+          "title": "Low Maintenance"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob.webp",
+          "items": [
+            {
+              "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
+              "label": ""
+            }
+          ],
+          "title": "Versatile Design:"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc_copy_1771979884304_mooive_copy_1771980227680_puf0y_copy_1771981975754_qwd5dn.webp",
+          "items": [
+            {
+              "text": "A well-designed sidewalk or walkway creates a welcoming first impression.",
+              "label": ""
+            }
+          ],
+          "title": "Enhanced Curb Appeal:"
+        }
+      ],
+      "description": "\n<b>Concrete offers a perfect balance of strength, aesthetics, and ease</b> \n— an investment that improves your daily comfort and your property’s value. \n\n<b>Key Benefits:</b>",
+      "_sectionType": "sportscourts-sec-why-maxima",
+      "_sourceLabel": "Why Maxima",
+      "overlayOpacity": 76,
+      "backgroundImage": "/images/cms/uploads/1769043221839-cl2o2a_copy_1769563710575_d08zug_copy_1771979885998_q2ykam_copy_1771980228328_19xg8p_copy_1771981976844_f26e38.webp"
+    }
+  },
+  {
+    "key": "custom_1771981986163_p1g94c",
+    "content": {
+      "title": "Why Choose Maxima \nfor Your Sidewalks",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "eyebrow": "by Maxima Concrete",
+      "benefits": [
+        {
+          "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb_copy_1771981975871_a9qoja_copy_1771981982823_8zd0bi_copy_1771981987862_athnsn.webp",
+          "items": [
+            {
+              "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
+              "label": ""
+            }
+          ],
+          "title": "Durable & Long-Lasting:"
+        },
+        {
+          "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp_copy_1771981982523_pi12gs_copy_1771981988114_v41vpg.webp",
+          "items": [
+            {
+              "text": "Just an occasional rinse to keep it clean and pristine.",
+              "label": ""
+            }
+          ],
+          "title": "Low Maintenance"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob_copy_1771981982870_nomhy_copy_1771981987292_eyosoc.webp",
+          "items": [
+            {
+              "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
+              "label": ""
+            }
+          ],
+          "title": "Versatile Design:"
+        },
+        {
+          "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc_copy_1771979884304_mooive_copy_1771980227680_puf0y_copy_1771981975754_qwd5dn_copy_1771981983631_l2zvro_copy_1771981987999_c1yvv.webp",
+          "items": [
+            {
+              "text": "A well-designed sidewalk or walkway creates a welcoming first impression.",
+              "label": ""
+            }
+          ],
+          "title": "Enhanced Curb Appeal:"
+        }
+      ],
+      "description": "\n<b>Concrete offers a perfect balance of strength, aesthetics, and ease</b> \n— an investment that improves your daily comfort and your property’s value. \n\n<b>Key Benefits:</b>",
+      "_sectionType": "sportscourts-sec-why-maxima",
+      "_sourceLabel": "Why Maxima",
+      "overlayOpacity": 76,
+      "backgroundImage": "/images/cms/uploads/1769043221839-cl2o2a_copy_1769563710575_d08zug_copy_1771979885998_q2ykam_copy_1771980228328_19xg8p_copy_1771981976844_f26e38_copy_1771981983219_gpd0d5_copy_1771981988910_1zqtlr.webp"
+    }
+  },
+  {
+    "key": "custom_1771983168976_uokzgg",
+    "content": {
+      "ctaLink": "#contact",
+      "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+      "titleLine1": "Don't Settle for Ordinary —",
+      "titleLine2": "Drive Home Excellence",
+      "contactText": "Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
+      "description": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
+      "_sectionType": "steps-sec-final-cta",
+      "_sourceLabel": "Related Services",
+      "relatedTitle": "Related Services",
+      "ctaButtonText": "Schedule Your Free Design Consultation",
+      "relatedServices": [
+        {
+          "link": "/services/concrete/patios",
+          "label": "Patios"
+        },
+        {
+          "link": "/services/concrete/approaches",
+          "label": "Approaches"
+        },
+        {
+          "link": "/services/outdoor-living",
+          "label": "Outdoor Living Spaces"
+        }
+      ]
+    }
+  },
+  {
+    "key": "custom_1771983188461_512c7",
+    "content": {
+      "ctaLink": "#contact",
+      "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+      "titleLine1": "Don't Settle for Ordinary —",
+      "titleLine2": "Drive Home Excellence",
+      "contactText": "Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
+      "description": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
+      "_sectionType": "steps-sec-final-cta",
+      "_sourceLabel": "Related Services",
+      "relatedTitle": "Related Services",
+      "ctaButtonText": "Schedule Your Free Design Consultation",
+      "relatedServices": [
+        {
+          "link": "/services/concrete/patios",
+          "label": "Patios"
+        },
+        {
+          "link": "/services/concrete/approaches",
+          "label": "Approaches"
+        },
+        {
+          "link": "/services/outdoor-living",
+          "label": "Outdoor Living Spaces"
+        }
+      ]
+    }
+  },
+  {
+    "key": "custom_1771983193003_ikcpfi",
+    "content": {
+      "ctaLink": "#contact",
+      "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+      "titleLine1": "Don't Settle for Ordinary —",
+      "titleLine2": "Drive Home Excellence",
+      "contactText": "Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
+      "description": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
+      "_sectionType": "steps-sec-final-cta",
+      "_sourceLabel": "Related Services",
+      "relatedTitle": "Related Services",
+      "ctaButtonText": "Schedule Your Free Design Consultation",
+      "relatedServices": [
+        {
+          "link": "/services/concrete/patios",
+          "label": "Patios"
+        },
+        {
+          "link": "/services/concrete/approaches",
+          "label": "Approaches"
+        },
+        {
+          "link": "/services/outdoor-living",
+          "label": "Outdoor Living Spaces"
+        }
+      ]
+    }
+  },
+  {
+    "key": "custom_1771983195448_uxozu8",
+    "content": {
+      "ctaLink": "#contact",
+      "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+      "titleLine1": "Don't Settle for Ordinary —",
+      "titleLine2": "Drive Home Excellence",
+      "contactText": "Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
+      "description": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
+      "_sectionType": "steps-sec-final-cta",
+      "_sourceLabel": "Related Services",
+      "relatedTitle": "Related Services",
+      "ctaButtonText": "Schedule Your Free Design Consultation",
+      "relatedServices": [
+        {
+          "link": "/services/concrete/patios",
+          "label": "Patios"
+        },
+        {
+          "link": "/services/concrete/approaches",
+          "label": "Approaches"
+        },
+        {
+          "link": "/services/outdoor-living",
+          "label": "Outdoor Living Spaces"
+        }
+      ]
+    }
+  },
+  {
+    "key": "custom_1772202211085_ti6zna",
+    "content": {
+      "items": [
+        {
+          "answer": "Typically 3-5 days depending on size and complexity.",
+          "question": "How long does a concrete patio last?"
+        },
+        {
+          "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
+          "question": "Can I customize the color and texture?"
+        },
+        {
+          "answer": "",
+          "question": "How soon can I use my patio after installation?"
+        },
+        {
+          "answer": "",
+          "question": "Do you offer free consultations?"
+        }
+      ],
+      "title": "FAQ — Patios - Concrete",
+      "_sectionType": "gallery_page-sec-faq",
+      "_sourceLabel": "FAQ"
+    }
+  },
+  {
+    "key": "custom_1772216700000_maximaadvantage",
+    "content": {
+      "title": "The Maxima Concrete Advantage",
+      "benefits": [
+        {
+          "text": "for superior durability.",
+          "boldText": "6.5-bag high-strength concrete mix"
+        },
+        {
+          "text": "for crack control and added toughness.",
+          "boldText": "Fiber reinforcement"
+        },
+        {
+          "text": "where needed for structural support.",
+          "boldText": "10-gauge wire mesh"
+        },
+        {
+          "text": "to achieve consistent, high-quality texture.",
+          "boldText": "Expert finishing techniques"
+        }
+      ],
+      "pillText": "From small patios to expansive driveways, our team delivers reliable, professional results — every time.",
+      "rightTitle": "Our broom-finished projects are built with:",
+      "description": "When you choose Maxima Concrete, you're not just getting a surface — you're getting decades of experience, technical precision, and craftsmanship.",
+      "_sectionType": "finishesbroom-sec-maxima-advantage"
+    }
+  },
+  {
+    "key": "custom_1772598764748_y95hn8",
+    "content": {
+      "title": "What Is Stamped & Colored Concrete?",
+      "ctaText": "Contact Us",
+      "eyebrow": "",
+      "benefits": [],
+      "description": "This decorative process uses specialized rubber stamps to imprint textures and designs into freshly poured concrete. \n\nWhile the surface is still workable, color pigments are integrated into or applied onto the concrete, creating realistic depth and dimension that rivals natural materials — at a fraction of the cost.\n\nOnce cured, the surface is cleaned, detailed, and sealed, locking in color vibrancy and protecting it from moisture, UV rays, and wear.\n\nThe result: a visually striking, low-maintenance surface that stands up to Ohio’s weather and daily use.",
+      "_sectionType": "driveways-sec-why-maxima",
+      "_sourceLabel": "Design Paver Driveway",
+      "overlayOpacity": 36,
+      "backgroundImage": "/images/cms/uploads/1768609948120-os117i_copy_1772598765753_eapa6i.webp"
+    }
+  },
+  {
+    "key": "custom_1772599494171_7sq95",
+    "content": {
+      "items": [
+        {
+          "text": "The textured surface helps prevent slipping, making it perfect for driveways, pool decks, patios, and walkways.",
+          "label": "Slip-Resistant Safety:"
+        },
+        {
+          "text": "When installed by Maxima Concrete using our 6.5-bag high-strength mix, broom-finished concrete resists wear, cracking, and harsh weather — lasting for decades with minimal maintenance.",
+          "label": "Long-Lasting Durability:"
+        },
+        {
+          "text": "A quick rinse or light wash keeps it clean year-round. For added longevity, a periodic resealing enhances stain resistance and color retention.",
+          "label": "Low Maintenance:"
+        },
+        {
+          "text": "It's one of the most cost-effective finishes, offering excellent value without compromising appearance or performance.",
+          "label": "Affordable & Versatile:"
+        }
+      ],
+      "title": "Why Choose a Broom Finish?",
+      "_sectionType": "finishesbroom-sec-why-choose-finish",
+      "_sourceLabel": "Why Choose"
+    }
+  },
+  {
+    "key": "custom_1772599706338_vuno2n",
+    "content": {
+      "cards": [
+        {
+          "title": "Slip resistance,",
+          "subtitle": "especially when wet"
+        },
+        {
+          "title": "Improved durability",
+          "subtitle": "in high-traffic areas"
+        },
+        {
+          "title": "A subtle, clean texture",
+          "subtitle": "that complements any exterior"
+        }
+      ],
+      "title": "What Is Broom-Finished Concrete?",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "finalText": "This finishing method is ideal for <b>residential and commercial spaces</b> where both safety and aesthetics matter.",
+      "description": "Broom-finished concrete is achieved by <b>dragging a broom across freshly poured concrete</b>, creating fine grooves on the surface. These grooves provide:",
+      "_sectionType": "finishesbroom-sec-whatis",
+      "_sourceLabel": "What Is",
+      "overlayOpacity": 0,
+      "backgroundImage": "/images/cms/uploads/1772217053065-7booac_copy_1772599707428_qvjald.webp"
+    }
+  },
+  {
+    "key": "custom_1772599750101_xzdemm",
+    "content": {
+      "items": [
+        {
+          "text": "The textured surface helps prevent slipping, making it perfect for driveways, pool decks, patios, and walkways.",
+          "label": "Slip-Resistant Safety:"
+        },
+        {
+          "text": "When installed by Maxima Concrete using our 6.5-bag high-strength mix, broom-finished concrete resists wear, cracking, and harsh weather — lasting for decades with minimal maintenance.",
+          "label": "Long-Lasting Durability:"
+        },
+        {
+          "text": "A quick rinse or light wash keeps it clean year-round. For added longevity, a periodic resealing enhances stain resistance and color retention.",
+          "label": "Low Maintenance:"
+        },
+        {
+          "text": "It's one of the most cost-effective finishes, offering excellent value without compromising appearance or performance.",
+          "label": "Affordable & Versatile:"
+        }
+      ],
+      "title": "Why Choose a Broom Finish?",
+      "_sectionType": "finishesbroom-sec-why-choose-finish",
+      "_sourceLabel": "Why Choose"
+    }
+  },
+  {
+    "key": "custom_1773313668991_78eil9",
+    "content": {
+      "image": "/images/cms/uploads/1768613816989-0c1gr7_copy_1773313669874_7vux71e.webp",
+      "titleLine1": "Why Homeowners",
+      "titleLine2": "Trust Maxima",
+      "titleLine3": "Concrete",
+      "description": "We combine <b>expert craftsmanship</b>, high-grade materials, and full regulatory support to deliver results that last for decades. Whether you need a new driveway approach, a <b>replacement apron</b>, or a <b>sidewalk connection</b>, we make sure every project is done right — the first time.",
+      "_sectionType": "driveways-sec-trust",
+      "_sourceLabel": "Why Homeowners Trust",
+      "highlightWords": [
+        "expert craftsmanship",
+        "replacement apron",
+        "sidewalk connection"
+      ]
+    }
+  },
+  {
+    "key": "custom_1773599781394_3ssak",
+    "content": {
+      "title": "More Than Concrete,\nIt's Confidence.",
+      "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+      "_sectionType": "finishesstampedcolored-sec-more-than-concrete",
+      "_sourceLabel": "More Than Concrete"
+    }
+  },
+  {
+    "key": "custom_1773661367212_fvnbna",
+    "content": {
+      "areas": [
+        "Delaware County: Delaware, Powell, Galena, Lewis Center, Sunbury, Dublin, and more.",
+        "Franklin County: Columbus, Westerville, Upper Arlington, Grove City, Gahanna, Worthington, and nearby suburbs.",
+        "Licking County: Granville, Johnstown, Pataskala, Hebron, and others.",
+        "Knox, Fairfield, Marion, Madison, Morrow, Pickaway, and Union Counties: Select projects available upon request."
+      ],
+      "title": "Serving Central Ohio and Beyond",
+      "ctaLink": "#contact",
+      "ctaText": "Contact Us",
+      "subtitle": "We proudly serve homeowners and businesses across the following counties:",
+      "trustIcons": [
+        "/images/cms/uploads/1772678974393-u5kd4k_copy_1773661368494_a5deyt.webp"
+      ],
+      "bottomTitle": "Not sure if we serve your area?",
+      "_sectionType": "whymaxima-sec-areas",
+      "_sourceLabel": "Areas",
+      "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8_copy_1773661368498_4aew7.webp",
+      "bottomDescription": "Contact us to discuss your project — we often travel beyond our main service radius for select installations."
+    }
+  },
+  {
+    "key": "custom_1773689115121_yflvgr",
+    "content": {
+      "items": [],
+      "title": "FAQ - Why Maxima",
+      "_sectionType": "shelters-sec-faq",
+      "_sourceLabel": "FAQ"
+    }
+  },
+  {
+    "key": "custom_1773692943468_ayn5pw",
+    "content": {
+      "title": "Pools",
+      "_sectionType": "gallerypools-sec-hero-minimal",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1772206468289-jpv4j_copy_1773692945070_188hxfd.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1772206468289-jpv4j-mobile_copy_1773692944820_7u8x9.webp"
+    }
+  },
+  {
+    "key": "custom_1773693215212_2dt3tn",
+    "content": {
+      "title": "More Than Concrete,\nIt's Confidence.",
+      "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+      "_sectionType": "gallery_page-sec-more-than-concrete",
+      "_sourceLabel": "More Than Concrete"
+    }
+  },
+  {
+    "key": "custom_1773695391600_22ejm",
+    "content": {
+      "title": "Pools",
+      "_sectionType": "gallerypools-sec-hero-minimal",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1772206468289-jpv4j_copy_1773695391821_ydlutt.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1772206468289-jpv4j-mobile_copy_1773695391821_ycms8.webp"
+    }
+  },
+  {
+    "key": "custom_1773695420584_3g1z09",
+    "content": {
+      "title": "Pools",
+      "_sectionType": "gallerypools-sec-hero-minimal",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1772206468289-jpv4j_copy_1773695420805_5iyx5.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1772206468289-jpv4j-mobile_copy_1773695420806_d4hfj.webp"
+    }
+  },
+  {
+    "key": "custom_1773696152263_qmk6b",
+    "content": {
+      "title": "Sidewalks",
+      "backLabel": "Back to Gallery",
+      "_sectionType": "gallerysidewalks-sec-hero-minimal",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1773696057632-nh029l_copy_1773696153458_r3oue.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1773696057632-nh029l-mobile_copy_1773696153818_ca4oms.webp"
+    }
+  },
+  {
+    "key": "custom_1773696162655_06wy1m",
+    "content": {
+      "title": "Inspiration for Your Sidewalks",
+      "images": [
+        "/images/cms/uploads/1773695131770-jliy9j_copy_1773696163816_dhm7bp.webp",
+        "/images/cms/uploads/1773695146827-kgeo2q_copy_1773696163752_vlles9.webp",
+        "/images/cms/uploads/1773695156222-ttift5_copy_1773696163423_mjp6a.webp",
+        "/images/cms/uploads/1773695167944-q9x6p9_copy_1773696163760_4ur5rc.webp",
+        "/images/cms/uploads/1773695180566-hnjuaj_copy_1773696163788_n4hnhe.webp",
+        "/images/cms/uploads/1773695193724-0cfr5f_copy_1773696163789_bhjkc9.webp",
+        "/images/cms/uploads/1773695202772-t10dfr_copy_1773696163800_7edeek.webp"
+      ],
+      "ctaLink": "#contact",
+      "ctaText": "Inspired? Let's Build Your Vision",
+      "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
+      "_sectionType": "gallerysidewalks-sec-inspiration-gallery",
+      "_sourceLabel": "Inspiration"
+    }
+  },
+  {
+    "key": "custom_1773696168774_eyda4",
+    "content": {
+      "title": "",
+      "images": [
+        "/images/cms/uploads/1773695242379-umvksf_copy_1773696169836_agghtp.webp",
+        "/images/cms/uploads/1773695251728-zuzdgg_copy_1773696169761_es7di.webp",
+        "/images/cms/uploads/1773695258553-aieq5g_copy_1773696169461_4rd4m.webp",
+        "/images/cms/uploads/1773695266960-848q1_copy_1773696170148_p5wkv.webp",
+        "/images/cms/uploads/1773695276508-crfe5_copy_1773696169772_7mfwei.webp",
+        "/images/cms/uploads/1773695285551-lh2dj_copy_1773696169433_7rxfge.webp"
+      ],
+      "_sectionType": "gallerysidewalks-sec-projects-grid",
+      "_sourceLabel": "Projects"
+    }
+  },
+  {
+    "key": "custom_1773698459997_2y6etbh",
+    "content": {
+      "title": "Driveways",
+      "backLabel": "Back to Gallery",
+      "_sectionType": "gallerydriveways-sec-hero-minimal",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1773696775291-rzze9o_copy_1773698461559_n88f2a.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1773696775291-rzze9o-mobile_copy_1773698462397_s6t9h9.webp"
+    }
+  },
+  {
+    "key": "custom_1777947198441_twq6kl",
+    "content": {
+      "_sectionType": "commercial_page-sec-commercial-hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/images/cms/uploads/1776299359507-7rr16k_copy_1777947200073_0tmnpl.webp",
+      "backgroundImageMobile": "/images/cms/uploads/1776299359507-7rr16k-mobile_copy_1777947200887_4cgffd.webp"
+    }
+  },
+  {
+    "key": "custom_1784054974124_ue7nnl",
+    "content": {
+      "title": "Your Vision. Our Expertise. Exceptional Results.",
+      "ctaLink": "/contact-us",
+      "ctaText": "Get Your Free Estimate!",
+      "subtitle": "Beautiful Outdoor Spaces Start Here!\nPremium Concrete, Paver & Stone Solutions Built to Last.",
+      "_sectionType": "hero",
+      "_sourceLabel": "Hero",
+      "backgroundImage": "/assets/hero-background-DbZPbLNr.jpg",
+      "secondaryCtaLink": "/project-map",
+      "secondaryCtaText": "Find Our Work Near You!",
+      "backgroundImageMobile": "/images/cms/uploads/1771987267398-vbp5kh-mobile_copy_1784054975286_afag7.webp"
+    }
+  },
+  {
+    "key": "custom_porches_hero",
+    "content": {
+      "title": "Porches",
+      "ctaLink": "#contact",
+      "ctaText": "Design My Outdoor Space",
+      "subtitle": "The Perfect Welcome to Your Home\n\nPorches | Maxima Concrete Ohio\nTransform your home's entryway with a durable, elegant porch by Maxima Concrete. Our custom-designed porches combine beauty, strength, and lasting quality—perfect for relaxing, entertaining, or simply enjoying the outdoors.",
+      "_sectionType": "hero",
+      "secondaryCtaLink": "#find-work",
+      "secondaryCtaText": "Find Our Work Near You"
+    }
+  },
+  {
+    "key": "driveways_page__seeded_defaults",
+    "content": {
+      "keys": [
+        "driveways_page_hero",
+        "driveways_page_gallery",
+        "driveways_page_benefits",
+        "driveways_page_process",
+        "driveways_page_contact"
+      ]
+    }
+  },
+  {
+    "key": "driveways_page_inspiration",
+    "content": {
+      "title": "Inspiration for Your Driveways",
+      "images": [
+        "/images/cms/uploads/1768611675405-xln2qp.webp",
+        "/images/cms/uploads/1768611687458-4vbvlk.webp",
+        "/images/cms/uploads/1768611698407-rov7hk.webp",
+        "/images/cms/uploads/1768611705751-0zk51t.webp",
+        "/images/cms/uploads/1768611713885-8mm4e.webp"
+      ],
+      "ctaLink": "#contact",
+      "ctaText": "Inspired? Let's Build Your Vision",
+      "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
+      "_sectionType": "driveways-page-inspiration",
+      "descriptionBold": "Every project is unique."
+    }
+  },
+  {
+    "key": "driveways_page_trust",
+    "content": {
+      "image": "/images/cms/uploads/1768613816989-0c1gr7.webp",
+      "titleLine1": "Why Homeowners",
+      "titleLine2": "Trust Maxima",
+      "titleLine3": "Concrete",
+      "description": "We combine <b>expert craftsmanship</b>, high-grade materials, and full regulatory support to deliver results that last for decades. Whether you need a new driveway approach, a <b>replacement apron</b>, or a <b>sidewalk connection</b>, we make sure every project is done right — the first time.",
+      "_sectionType": "driveways-page-trust",
+      "highlightWords": [
+        "expert craftsmanship",
+        "replacement apron",
+        "sidewalk connection"
+      ]
+    }
+  },
+  {
+    "key": "driveways_page_why_choose",
+    "content": {
+      "title": "The Maxima Concrete Difference!",
+      "benefits": [
+        {
+          "title": "6.5-Bag Mix Concrete",
+          "iconType": "package",
+          "description": "Provides a dense, durable surface built for heavy loads and long-term performance."
+        },
+        {
+          "title": "Fiber Mesh Reinforcement",
+          "iconType": "layers",
+          "description": "Reduces cracking and adds internal strength for enhanced durability."
+        },
+        {
+          "title": "10-Gauge Wire Mesh",
+          "iconType": "grid",
+          "description": "Provides superior stability and long-term support with enhanced durability."
+        },
+        {
+          "title": "Full-Service Experience",
+          "iconType": "clipboard",
+          "description": "We manage the entire process with expert planning, quality installation, and a clean finish."
+        }
+      ],
+      "description": "At Maxima Concrete, quality is at the foundation of everything we do. Our driveways are built with premium materials and proven techniques to deliver strength, durability, and lasting performance."
+    }
+  },
+  {
+    "key": "driveways_sec_final_cta",
+    "content": {
+      "ctaLink": "#contact",
+      "bottomText": "Licensed & Insured • 30+ Years Experience",
+      "titleLine1": "Don’t Settle for Ordinary —",
+      "titleLine2": "Drive Home Excellence",
+      "contactText": "📞 Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home’s first impression.",
+      "description": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
+      "relatedTitle": "Related Services",
+      "ctaButtonText": "Schedule Your Free Design Consultation",
+      "relatedServices": [
+        {
+          "link": "/services/patios-concrete",
+          "label": "Concrete Patios"
+        },
+        {
+          "link": "/services/driveways-paver",
+          "label": "Paver Driveways"
+        },
+        {
+          "link": "/services/outdoor-living",
+          "label": "Outdoor Living Spaces"
+        }
+      ]
+    }
+  },
+  {
+    "key": "drivewayshub_page__seeded_defaults",
+    "content": {
+      "keys": [
+        "drivewayshub_page_hero",
+        "drivewayshub_page_intro",
+        "drivewayshub_page_paver",
+        "drivewayshub_page_why_choose",
+        "drivewayshub_page_durability",
+        "drivewayshub_page_final_cta",
+        "drivewayshub_page_options",
+        "drivewayshub_page_why_maxima"
+      ]
+    }
+  },
+  {
+    "key": "finishes_page_hero_areas",
+    "content": {
+      "title": "Concrete Finishes",
+      "ctaLink": "#contact",
+      "ctaText": "Get Your Free Estimate",
+      "subtitle": "Texture, color, and craftsmanship for every project",
+      "description": "From classic broom finishes to decorative stamped concrete, Maxima Concrete delivers the finish options that bring your driveway, patio, or commercial slab to life across Central Ohio.",
+      "_sectionType": "finishes-sec-hero-areas"
+    }
+  },
+  {
+    "key": "joinourteam_page__seeded_defaults",
+    "content": {
+      "keys": [
+        "joinourteam_page_intro",
+        "joinourteam_page_positions",
+        "joinourteam_page_final_cta",
+        "joinourteam_page_benefits"
+      ]
+    }
+  },
+  {
+    "key": "patioshub_page__seeded_defaults",
+    "content": {
+      "keys": [
+        "patioshub_page_hero",
+        "patioshub_page_intro",
+        "patioshub_page_options",
+        "patioshub_page_paver",
+        "patioshub_page_why_choose",
+        "patioshub_page_durability",
+        "patioshub_page_why_maxima",
+        "patioshub_page_faq",
+        "patioshub_page_final_cta"
+      ]
+    }
+  },
+  {
+    "key": "projectmap_page__seeded_defaults",
+    "content": {
+      "keys": [
+        "projectmap_page_explorer",
+        "projectmap_page_hero"
+      ]
+    }
+  }
+]

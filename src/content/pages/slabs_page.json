@@ -1,0 +1,307 @@
+{
+  "pageKey": "slabs_page",
+  "sections": [
+    {
+      "key": "custom_1769036934208_z5xxo9",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Slabs",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "The Foundation for Every Possibility",
+        "subtitle": "The Foundation for Every Possibility\nDurable, level, and versatile concrete slabs by Maxima Concrete. From homes to industrial sites, we build the strong foundations every project needs.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037570997-agg8at.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037570997-agg8at-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1769037235793_x6ngei",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "More Than Grey Squares",
+        "ctaLink": "#contact",
+        "ctaText": "Schedule Your Frree Estimate!",
+        "subtitle": "Concrete slabs provide a strong, reliable foundation for a wide range of residential and commercial applications. Built for durability and long-term performance, they offer the stability needed for everything from patios and garages to warehouses, walkways, and outdoor living spaces.",
+        "imageLarge": "/images/cms/uploads/1780943414637-gyyu75.webp",
+        "paragraph1": "Concrete slabs are one of the most versatile construction solutions available. Whether used for patios, garages, shed foundations, sidewalks, or outdoor living areas, they create a smooth, level surface designed to withstand daily use and changing weather conditions. Their durability and low-maintenance nature make them a practical choice for both homeowners and businesses.",
+        "paragraph2": "At Maxima Concrete, every slab is installed with proper site preparation, grading, and reinforcement to ensure long-lasting performance. From residential projects to large commercial applications, our team delivers quality workmanship and reliable results. The outcome is a solid foundation that provides strength, functionality, and lasting value for years to come.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1780942999742-mc7c99.webp"
+      }
+    },
+    {
+      "key": "custom_1769037707677_wzag88",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Residential Slabs — Solid, \nSmooth, and Ready",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1769038267587-tfuz2.webp",
+            "items": [
+              {
+                "text": "Strong, sealed, and level.",
+                "label": ""
+              }
+            ],
+            "title": "Basements & garages"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038401984-34yknj.webp",
+            "items": [
+              {
+                "text": "Durable under daily use.",
+                "label": ""
+              }
+            ],
+            "title": "Home gyms, workshops, or storage areas"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038441272-qsgu5s.webp",
+            "items": [
+              {
+                "text": "Patios, garden walkways, or seating zones that stay beautiful year-round.",
+                "label": ""
+              }
+            ],
+            "title": "Outdoor living spaces"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038489866-xcswlt.webp",
+            "items": [
+              {
+                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
+        "description": "Uneven basement floors? Damp garage surfaces? A properly installed concrete slab \ntransforms those problem areas into clean, level, and moisture-resistant foundations \nready for whatever comes next.\n\n<b>Our slabs provide the perfect base for: </b>",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1769037917781-oyfcls.webp"
+      }
+    },
+    {
+      "key": "custom_1769039004224_zmexj8",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Commercial & Industrial Slabs — Built for Strength",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780943448865-odlow.webp",
+            "title": "Broom-Finished:",
+            "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780943461996-j0yll.webp",
+            "title": "Stamped & Colored:",
+            "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780943472940-iou868.webp",
+            "title": "Exposed Aggregate:",
+            "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780943483233-ka62kd.webp",
+            "title": "Buff Wash:",
+            "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+          }
+        ],
+        "description": "Slabs also serve as the workhorses of industry. From warehouses to storefronts, parking lots, and plazas, Maxima Concrete delivers heavy-load-ready slabs that perform under constant use.",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1769039126984_f2ii9",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Slabs",
+        "images": [
+          "/images/cms/uploads/1782841580052-9id5n7.webp",
+          "/images/cms/uploads/1782841581180-rc8yjm.webp",
+          "/images/cms/uploads/1782841579054-o4din.webp",
+          "/images/cms/uploads/1782841582340-6vj0gs.webp",
+          "/images/cms/uploads/1782841583293-p7nz9j.webp",
+          "/images/cms/uploads/1782841584261-qvh1lb.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1769039333759_ttk0t",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Why Choose Maxima Slabs",
+        "benefits": [
+          {
+            "title": "6.5-bag high-strength concrete mix",
+            "iconType": "package",
+            "description": "for superior load-bearing capacity. "
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "description": " to reduce cracking and improve toughness."
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "description": "(where applicable) for structural integrity. "
+          },
+          {
+            "title": "Accurate leveling & finishing",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1769039531501-m9hbb.webp",
+            "description": "for a flawless, even surface."
+          }
+        ],
+        "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1769040094841_fg17fl",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Endless Applications, One Trusted Partner",
+        "titleLine2": "",
+        "contactText": "<b>Contact us today for a free consultation</b> and discover how our concrete slabs can turn your ideas into solid reality.\n\nBecause every great project — big or small — starts with the right foundation.",
+        "description": "Whether you need a simple backyard pad or an industrial-grade foundation, Maxima Concrete is your go-to partner for quality, precision, and reliability.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/basement-floors",
+            "label": "Basement Floors"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1769040131299_bu11ba",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1769040149283_94bdpc",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "It depends on use — residential slabs are typically 4–6 inches, while commercial or heavy-load slabs may range from 6–12 inches or more.",
+            "question": " How thick should a slab be?"
+          },
+          {
+            "answer": "",
+            "question": " How long does it take to cure?"
+          },
+          {
+            "answer": "",
+            "question": "What can concrete slabs be used for?"
+          }
+        ],
+        "title": "FAQ — Slabs",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

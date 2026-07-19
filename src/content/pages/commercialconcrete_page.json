@@ -1,0 +1,316 @@
+{
+  "pageKey": "commercialconcrete_page",
+  "sections": [
+    {
+      "key": "custom_1778125446486_akc2z",
+      "label": "Hero",
+      "type": "commercial-hero",
+      "content": {
+        "title": "Commercial Concrete",
+        "tagline": "Built for Strength, Function, and Precision",
+        "subtitle": "Built for Strength, Function, and Precision",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782843445995-mgugfo.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782843445995-mgugfo-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_building_central_cc_001",
+      "label": "Building Central",
+      "type": "building-central",
+      "content": {
+        "image": "/images/cms/uploads/1782843518149-yjet1c.webp",
+        "title": "Building Central Ohio,\nOne Project at a Time",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "paragraph1": "At <b>Maxima Concrete</b>, we understand the <b>unique demands of commercial construction</b> — tight schedules, strict regulations, and the need for absolute reliability. Serving <b>Columbus, Delaware, and surrounding Central Ohio counties</b>, our team delivers <b>durable, code-compliant, and visually precise</b> concrete work for a wide range of industries.",
+        "paragraph2": "From restaurants and schools to gas stations and office parks, we bring <b>experience, craftsmanship, and commitment</b> to every pour."
+      }
+    },
+    {
+      "key": "custom_1778125599182_yctohj",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Comprehensive Commercial Concrete Services",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1778127546773-780ogn.webp",
+            "items": [
+              {
+                "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
+                "label": ""
+              }
+            ],
+            "title": "Footers",
+            "description": "A solid beginning for every structure. Our reinforced concrete footers distribute weight evenly, ensuring long-term stability and strength."
+          },
+          {
+            "icon": "/images/cms/uploads/1778127566192-lmn2pe.webp",
+            "items": [
+              {
+                "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
+                "label": ""
+              }
+            ],
+            "title": "Slab on Grade",
+            "description": "Perfectly level and engineered for durability, our slabs create the ideal foundation for commercial floors, warehouses, and industrial buildings."
+          },
+          {
+            "icon": "/images/cms/uploads/1778127585835-415hb.webp",
+            "items": [
+              {
+                "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
+                "label": ""
+              }
+            ],
+            "title": "Curbs & Sidewalks",
+            "description": "Designed for safety, accessibility, and longevity, our curbs and sidewalks meet all ADA and local municipality standards."
+          },
+          {
+            "icon": "/images/cms/uploads/1778127604159-lvqnbp.webp",
+            "items": [
+              {
+                "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Light Pole Bases",
+            "description": "Precision-engineered bases for lighting fixtures, providing safety, electrical reliability, and structural support."
+          }
+        ],
+        "description": "Maxima Concrete provides a full suite of <b>commercial concrete installations</b>,\nensuring seamless coordination across your entire project.\n",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1782843532557-olmue.webp"
+      }
+    },
+    {
+      "key": "custom_1778129583669_ofbfny",
+      "label": "Industries We Serve",
+      "type": "commercial-ada",
+      "content": {
+        "items": [
+          {
+            "title": "Restaurants",
+            "description": "Durable patios and outdoor dining areas"
+          },
+          {
+            "title": "Banks & Pharmacies",
+            "description": "Safe, accessible concrete entrances and drive-thrus."
+          },
+          {
+            "title": "Schools & Churches",
+            "description": "Reliable infrastructure for community use."
+          },
+          {
+            "title": "Warehouses & Gas Stations",
+            "description": "Heavy-duty slabs for equipment and traffic."
+          },
+          {
+            "title": "Office & Retail Buildings",
+            "description": "Clean, professional hardscapes and walkways."
+          }
+        ],
+        "title": "Industries We Serve",
+        "closing1": "Every project is executed with engineering-level precision, safety compliance, and meticulous finish work.",
+        "closing2": "",
+        "subtitle": "Maxima Concrete’s portfolio spans hundreds of successful projects across Central Ohio’s commercial sector.",
+        "_sourceLabel": "ADA Compliance"
+      }
+    },
+    {
+      "key": "custom_why_choose_mc_cc_001",
+      "label": "Why Choose",
+      "type": "why-choose-mc",
+      "content": {
+        "image": "/images/cms/uploads/1782843560078-qfjzpb.webp",
+        "items": [
+          {
+            "title": "Local Expertise",
+            "description": "Deep understanding of <b>Central Ohio's soil, climate, and building codes.</b>"
+          },
+          {
+            "title": "Commitment to Excellence",
+            "description": "We pride ourselves on <b>on-time delivery,</b> precise workmanship, and transparent communication."
+          },
+          {
+            "title": "Certified Professionals",
+            "description": "Skilled teams with experience across <b>commercial, industrial, and institutional projects.</b>"
+          },
+          {
+            "title": "One-Stop Solution",
+            "description": "From <b>design consultation to execution,</b> we manage every step of the concrete process."
+          }
+        ],
+        "title": "Why Choose \n<b>Maxima Concrete</b>"
+      }
+    },
+    {
+      "key": "custom_ready_to_build_cc_001",
+      "label": "Ready to Build",
+      "type": "ready-to-build",
+      "content": {
+        "title": "Ready to Build\nYour Vision?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact us",
+        "subtitle": "Partner with a commercial concrete contractor that values quality, safety, and your bottom line.",
+        "contactText": "We'll help you plan, design, and build the perfect foundation for your business success.",
+        "contactTitle": "Contact Maxima Concrete today for a free consultation and estimate."
+      }
+    },
+    {
+      "key": "custom_1778128452818_s33gtc",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/commercial",
+            "label": "ADA & Commercial Projects"
+          },
+          {
+            "link": "/finishes/broom",
+            "label": "Broom-Finished"
+          },
+          {
+            "link": "/services/footers",
+            "label": "Footers, Piers & Structural Support"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviews & Areas Served)"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1782843578334-l4kmcjv.webp"
+      }
+    },
+    {
+      "key": "custom_1778128435487_6j2mm",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "custom_1778128528697_u0o7z",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1778128504914_7e811j",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1778128520269_bnvg1u",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "We typically use a 6.5-bag (4500 PSI) fiber-reinforced mix with 10-gauge wire mesh for strength, crack control, and long-term durability.",
+            "question": "What type of concrete does Maxima use for commercial projects?"
+          },
+          {
+            "answer": "Yes. We manage new construction, additions, and ADA-compliant remodels, ensuring consistency across all phases.",
+            "question": "Do you handle both new builds and renovations?"
+          },
+          {
+            "answer": "Absolutely. Our crews are trained to read and execute from blueprints, collaborating seamlessly with general contractors and engineers.",
+            "question": "Can you build to architectural or engineered plans?"
+          },
+          {
+            "answer": "We serve Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties — and select neighboring regions across Central Ohio.",
+            "question": "What areas do you serve?"
+          }
+        ],
+        "title": "FAQ — Commercial Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

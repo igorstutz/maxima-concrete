@@ -1,0 +1,265 @@
+{
+  "pageKey": "sidewalks_page",
+  "sections": [
+    {
+      "key": "custom_1769563274661_bjz7kj",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Sidewalks & Walkways",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Beautiful, Durable Paths That Lead You Home",
+        "subtitle": "Beautiful, Durable Paths That Lead You Home\n\nCustom, low-maintenance concrete sidewalks and walkways by Maxima Concrete. Durable, stylish, and built to enhance your home’s outdoor space.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037034524-6jlnl.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037034524-6jlnl-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1769563545004_x1qf7s",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "A Path You’ll Actually Want to Walk On",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "The feeling of grass under your feet is nice—until it turns muddy after the rain or thorns catch your socks. Why not enjoy the outdoors without the mess or maintenance?",
+        "imageLarge": "/images/cms/uploads/1782841836518-v6sppc.webp",
+        "paragraph1": "With Maxima Concrete, your yard transforms into a functional, elegant, and low-maintenance space. Our expertly built concrete sidewalks and walkways provide smooth, durable paths that let you walk, play, and relax comfortably all year long.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782841848504-o1t85m.webp"
+      }
+    },
+    {
+      "key": "custom_1769563709045_w851sf",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Choose Maxima \nfor Your Sidewalks",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q.webp",
+            "items": [
+              {
+                "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
+                "label": ""
+              }
+            ],
+            "title": "Durable & Long-Lasting:"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj.webp",
+            "items": [
+              {
+                "text": "Just an occasional rinse to keep it clean and pristine.",
+                "label": ""
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5.webp",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
+                "label": ""
+              }
+            ],
+            "title": "Versatile Design:"
+          },
+          {
+            "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc.webp",
+            "items": [
+              {
+                "text": "A well-designed sidewalk or walkway creates a welcoming first impression.",
+                "label": ""
+              }
+            ],
+            "title": "Enhanced Curb Appeal:"
+          }
+        ],
+        "description": "\n<b>Concrete offers a perfect balance of strength, aesthetics, and ease</b> \n— an investment that improves your daily comfort and your property’s value. \n\n<b>Key Benefits:</b>",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1782841871478-7ngsfs.webp"
+      }
+    },
+    {
+      "key": "custom_1769564323273_bsd3q1g",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Maxima Concrete’s Sidewalk Options",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780945540042-dxszty.webp",
+            "title": "Broom-Finished:",
+            "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780945545718-a3yxto.webp",
+            "title": "Stamped & Colored:",
+            "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780945552915-yfalp.webp",
+            "title": "Exposed Aggregate:",
+            "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780945560643-ogq4om.webp",
+            "title": "Buff Wash:",
+            "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+          }
+        ],
+        "description": "Your home deserves a walkway that reflects your style. Explore our most popular finishes",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1769564413639_iqclsc",
+      "label": "Paver Intro",
+      "type": "paver-intro",
+      "content": {
+        "title": "Paver Walkways That \nConnect Beauty and Function",
+        "mainImage": "/images/cms/uploads/1780945623026-kcwwab.webp",
+        "paragraph1": "Our durable, low-maintenance paver solutions create inviting pathways that seamlessly guide you through your landscape. No more navigating muddy quagmires, uneven ground, or tiptoeing around delicate flower beds — just clean lines, solid footing, and effortless flow.",
+        "paragraph2": "But we go beyond mere practicality. Maxima offers a diverse palette of colors, textures, and patterns, allowing your walkway to harmonize perfectly with your home’s architecture and personal style. Every curve, joint, and transition is designed with intention.\nEnvision a charming paver walkway winding through your garden, leading naturally to a spacious — the perfect setting for al fresco dining and relaxed evenings under the stars.",
+        "paragraph3": "Unlike grass or poured surfaces, pavers withstand the elements, maintaining their color, structure, and beauty year after year. They resist fading, cracking, and wear, all while offering easy maintenance and long-term flexibility.",
+        "_sourceLabel": "Paver Intro",
+        "overlayOpacity": 0.65,
+        "backgroundImage": "/images/cms/uploads/1780945630921-ct0wdw.webp",
+        "complementaryText": ""
+      }
+    },
+    {
+      "key": "custom_1769565355230_p7oay",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Sidewalks & Walkways",
+        "images": [
+          "/images/cms/uploads/1782841914049-77so4b.webp",
+          "/images/cms/uploads/1782841917210-lurb22.webp",
+          "/images/cms/uploads/1782841916288-6ai52m.webp",
+          "/images/cms/uploads/1780945729613-h2owdh.webp",
+          "/images/cms/uploads/1780946026442-pm6eq9.webp",
+          "/images/cms/uploads/1780945919567-biw02n.webp",
+          "/images/cms/uploads/1782841912854-5n1qg5.webp",
+          "/images/cms/uploads/1782841915357-qqq1g.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1769565615176_svt99j",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1769565629237_1dp9e",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "",
+            "question": "How long does a concrete sidewalk last?"
+          },
+          {
+            "answer": " Yes — we can color-match or texture-match new work to your existing surfaces for a seamless look.",
+            "question": "Can you match my existing driveway or patio finish?"
+          },
+          {
+            "answer": "",
+            "question": "Is maintenance difficult?"
+          },
+          {
+            "answer": "",
+            "question": "Are concrete walkways safe when wet?"
+          }
+        ],
+        "title": "FAQ — Sidewalks & Walkways",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

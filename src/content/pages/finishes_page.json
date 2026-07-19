@@ -1,0 +1,57 @@
+{
+  "pageKey": "finishes_page",
+  "sections": [
+    {
+      "key": "custom_1779197236482_riswwf",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Texture, color, and craftsmanship for every project",
+        "ctaLink": "#contact",
+        "ctaText": "Get Your Free Estimate",
+        "heightVh": 65,
+        "subtitle": "From classic broom finishes to decorative stamped concrete, Maxima Concrete delivers the finish options that bring your driveway, patio, or commercial slab to life across Central Ohio.",
+        "_sourceLabel": "Hero",
+        "overlayOpacity": 0.6,
+        "backgroundImage": "/images/cms/uploads/1779197375221-aatk9t.webp",
+        "secondaryCtaLink": "",
+        "secondaryCtaText": "",
+        "backgroundImageMobile": "/images/cms/uploads/1779197375221-aatk9t-mobile.webp"
+      }
+    },
+    {
+      "key": "finishes_page_finishes_grid",
+      "label": "Finishes Grid",
+      "type": "finishes-grid",
+      "content": {
+        "heading": "Our Concrete Finishes",
+        "subheading": "From classic broom to decorative stamped concrete, explore the finish options Maxima Concrete delivers across Central Ohio.",
+        "cardCtaText": "See more"
+      }
+    },
+    {
+      "key": "custom_1779197014001_findwork",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {}
+    },
+    {
+      "key": "custom_1779197014002_trustglobal",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {}
+    },
+    {
+      "key": "custom_1779197014003_contact",
+      "label": "Contact",
+      "type": "contact",
+      "content": {}
+    },
+    {
+      "key": "custom_1779197014004_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {}
+    }
+  ]
+}

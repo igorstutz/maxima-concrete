@@ -1,0 +1,152 @@
+{
+  "pageKey": "gallerysportcourt_page",
+  "sections": [
+    {
+      "key": "custom_sportcourt_hero",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Sport Courts",
+        "backLabel": "Back to Gallery",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782832616877-pgw3dzb.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782832616877-pgw3dzb-mobile.webp"
+      }
+    },
+    {
+      "key": "gallerysportcourt-sec-inspiration-gallery",
+      "label": "Inspiration",
+      "type": "inspiration-gallery",
+      "content": {
+        "title": "Inspiration for Your Sport Courts",
+        "images": [
+          "/images/cms/uploads/1782832640597-zx3u1u.webp",
+          "/images/cms/uploads/1782832642456-iwnn6w.webp",
+          "/images/cms/uploads/1782832638546-4gbe3.webp",
+          "/images/cms/uploads/1782832639613-gyc2v5.webp",
+          "/images/cms/uploads/1782832641620-wbjlxr.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "gallerysportcourt-sec-projects-grid",
+      "label": "Projects",
+      "type": "projects-grid",
+      "content": {
+        "title": "Our Projects",
+        "images": [
+          "/images/cms/uploads/1782832715136-z92iht.webp",
+          "/images/cms/uploads/1782832681004-d4r0mb.webp",
+          "/images/cms/uploads/1782832685304-bm2jkm.webp",
+          "/images/cms/uploads/1773704391543-5rrgue.webp",
+          "/images/cms/uploads/1782832697748-ix873q.webp",
+          "/images/cms/uploads/1773704406843-dm72w8.webp"
+        ],
+        "imageTypes": [
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete",
+          "concrete"
+        ],
+        "_sourceLabel": "Projects"
+      }
+    },
+    {
+      "key": "custom_sportcourt_morethan",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\n\nWith 20+ years of experience, licensed & insured professionals, and a commitment to quality — we build spaces that stand the test of time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "custom_sportcourt_contact",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact"
+      }
+    },
+    {
+      "key": "custom_sportcourt_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

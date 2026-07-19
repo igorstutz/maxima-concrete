@@ -1,0 +1,32 @@
+{
+  "logoImage": "/images/assets/footer/footer-logo.png",
+  "tagline": "Premium concrete craftsmanship for driveways, patios, and outdoor living across Central Ohio. Family-owned. Licensed & insured.",
+  "address": "Office Address:\n4059 State Route 37 E, Suite A\nDelaware, OH 43015",
+  "hours": "Business Hours:\nMonday - Friday: 8 AM - 5 PM\nSaturday: By Appointment\nSunday: Closed",
+  "email": "info@maximaconcrete.com",
+  "phone": "(614) 384-5917",
+  "learnMoreLinks": [
+    { "label": "Why Maxima", "href": "/why-maxima" },
+    { "label": "Areas We Serve", "href": "/areas-we-serve" },
+    { "label": "Gallery", "href": "/gallery" },
+    { "label": "Finishes", "href": "/finishes" },
+    { "label": "Commercial", "href": "/commercial" },
+    { "label": "About Maxima", "href": "/about" },
+    { "label": "Privacy Policy", "href": "/privacy" }
+  ],
+  "contactCta": { "label": "Contact Us", "href": "/contact-us" },
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/maximaconcrete/",
+    "instagram": "https://www.instagram.com/maximaconcrete/",
+    "google": "https://search.google.com/local/writereview?placeid=ChIJ15ONBZf6OIgRPydowIItn-Q"
+  },
+  "monthlyPaymentImage": "/images/assets/footer/monthly-payment.png",
+  "googleReviewsImage": "/images/assets/footer/google-reviews.png",
+  "bbbRatingImage": "/images/assets/footer/bbb-rating.svg",
+  "licensedInsuredImage": "/images/assets/footer/licensed-insured.svg",
+  "angiesListImage": "/images/assets/footer/angies-list.png",
+  "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+  "designerText": "Designed by",
+  "designerName": "Melanie's Consulting",
+  "designerUrl": "https://melaniesconsulting.com"
+}

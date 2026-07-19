@@ -1,0 +1,283 @@
+{
+  "pageKey": "retainingwalls_page",
+  "sections": [
+    {
+      "key": "custom_1771529911168_w12dfq",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Retaining Walls",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Strength, Structure, and Timeless Design",
+        "subtitle": "Strength, Structure, and Timeless Outdoor Design",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1782842879795-trotyg.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1782842879795-trotyg-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981780103_a6ulrz",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Timeless Warmth. Built to Gather. Designed to Last.",
+        "ctaLink": "#contact",
+        "ctaText": "Schedule Your Free Estimate!",
+        "subtitle": "Transform sloped or uneven areas into beautiful, functional spaces with custom retaining walls. Built for strength, drainage, and long-term durability, our retaining walls add structure, curb appeal, and value to any property.",
+        "imageLarge": "/images/cms/uploads/1781010525962-y2w187.webp",
+        "paragraph1": "Retaining walls do more than hold back soil—they create opportunities to enhance your landscape. Whether you need erosion control, level outdoor living areas, raised garden beds, or decorative features, Maxima Concrete designs and installs retaining walls that blend functionality with exceptional craftsmanship.",
+        "paragraph2": "Using premium stone, block, and paver materials, we build retaining walls engineered for durability and visual appeal. From elegant garden terraces and stairways to structural walls for challenging grades, our team creates custom solutions that improve drainage, maximize usable space, and elevate your property's overall appearance.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1773338731654-00xi8h.webp"
+      }
+    },
+    {
+      "key": "custom_1771982068629_coatac",
+      "label": "Where Function Meets Design",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Where Function Meets Design",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [],
+        "description": "Traditional retaining walls often prioritize function alone. We believe your outdoor space deserves more.\n\nImagine gently terraced stone walls cascading down a slope, framed by greenery and seasonal blooms. Picture clean-lined paver walls that guide elevation changes with confidence and elegance. With a wide range of stones, pavers, textures, and finishes, we create retaining walls that feel intentional — not forced.\n\nWhether your goal is subtle elevation control or a bold architectural statement, we help you design a wall that enhances both form and function.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 26,
+        "backgroundImage": "/images/cms/uploads/1773619803193-noq74d.webp"
+      }
+    },
+    {
+      "key": "custom_1773319483042_3z8dqc",
+      "label": "Why Add a Retaining Wall",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Add a Retaining Wall\nto Your Outdoor Space?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "By Maxima Concrete",
+        "benefits": [
+          {
+            "title": "Structural Strength That Lasts",
+            "description": "Stone and paver retaining walls are engineered to withstand soil pressure, weather, and time. Proper base preparation, drainage systems, and reinforcement ensure long-term performance and safety."
+          },
+          {
+            "title": "Minimal Maintenance",
+            "bullets": [
+              "Fire pit zones",
+              "Dining and entertaining spaces",
+              "Walkways and transition areas"
+            ],
+            "closingText": "This creates flow without closing off the space.",
+            "description": "Unlike poured concrete that can crack or deteriorate over time, stone and paver systems allow for flexibility, easier repairs, and long-term durability with minimal upkeep."
+          },
+          {
+            "title": "Design Flexibility",
+            "bullets": [
+              "Match existing patios and walkways",
+              "Create tiered gardens",
+              "Frame fire pits or seating areas",
+              "Define outdoor living zones"
+            ],
+            "closingText": "This creates flow without closing off the space.",
+            "description": "From rustic natural stone to sleek modular pavers, retaining walls can be customized to:"
+          },
+          {
+            "title": "Increased Property Value",
+            "description": "Well-designed retaining walls improve usability, curb appeal, and overall landscape quality — making them a valuable long-term investment."
+          }
+        ],
+        "description": "Retaining walls are one of the most versatile hardscape features, offering both form and function without cluttering your space.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773319547103-0vjynl.webp"
+      }
+    },
+    {
+      "key": "custom_common_applications_rw",
+      "label": "Common Applications",
+      "type": "common-applications",
+      "content": {
+        "items": [
+          "Slope stabilization and erosion control",
+          "Tiered garden beds",
+          "Fire pit and seating wall integration",
+          "Step transitions between elevations",
+          "Privacy and boundary definition",
+          "Outdoor living space framing"
+        ],
+        "title": "Common Retaining Wall Applications",
+        "rightTitle": "Design Options",
+        "designOptions": [
+          {
+            "image": "/images/cms/uploads/1773342662588-auzc7.webp",
+            "title": "Straight Retaining Walls",
+            "description": "Clean, modern lines ideal for structured landscapes and contemporary designs."
+          },
+          {
+            "image": "/images/cms/uploads/1773342541430-mqcgu.webp",
+            "title": "Curved Retaining Walls",
+            "description": "Soft, organic shapes that blend naturally into the environment — perfect for gardens and flowing outdoor layouts."
+          }
+        ]
+      }
+    },
+    {
+      "key": "custom_integrated_features_rw",
+      "label": "Integrated Features",
+      "type": "integrated-features",
+      "content": {
+        "title": "Integrated Features",
+        "features": [
+          {
+            "icon": "/images/cms/uploads/1773343451428-4543e.webp",
+            "title": "Built-in steps"
+          },
+          {
+            "icon": "/images/cms/uploads/1773343467999-52h97.webp",
+            "title": "Seating wall transitions"
+          },
+          {
+            "icon": "/images/cms/uploads/1773343474516-b2d6lav.webp",
+            "title": "Planters"
+          },
+          {
+            "icon": "/images/cms/uploads/1773343481486-aet16.webp",
+            "title": "Low-voltage lighting for safety and ambiance"
+          }
+        ],
+        "subtitle": "Retaining walls can be enhanced with thoughtful additions:",
+        "bottomText": "These details turn a functional structure into a design feature."
+      }
+    },
+    {
+      "key": "custom_integrated_features_2_rw",
+      "label": "Integrated Features 2",
+      "type": "integrated-features-2",
+      "content": {
+        "cards": [
+          {
+            "image": "/images/cms/uploads/1773343997454-25g5c8.webp",
+            "title": "Fire Pits",
+            "description": "Create an inviting, social gathering space with seating walls that naturally frame the fire."
+          },
+          {
+            "image": "/images/cms/uploads/1773344039232-prz73.webp",
+            "title": "Outdoor Kitchens & Bars",
+            "description": "Extend counters or create bar-height seating for casual dining and entertaining."
+          },
+          {
+            "image": "/images/cms/uploads/1773344056280-j0z8muj.webp",
+            "title": "Privacy & Boundary Definition",
+            "description": "Strategically placed seating walls add subtle privacy while maintaining openness."
+          }
+        ],
+        "title": "Related Projects",
+        "subtitle": "Seating walls work beautifully when combined with other outdoor living elements:"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982542189_nm3f0s",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982606576_g2vbm",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Yes. Proper drainage is essential to prevent pressure buildup and ensure long-term stability.",
+            "question": "1. Do retaining walls require drainage?"
+          },
+          {
+            "answer": "Absolutely. Stone and paver walls are both structural and decorative elements.",
+            "question": "2. Can retaining walls be decorative?"
+          },
+          {
+            "answer": "Yes. Height, shape, materials, textures, and finishes are fully customizable.",
+            "question": "3. Are retaining walls customizable?"
+          },
+          {
+            "answer": "Yes. Many retaining walls are designed to integrate steps, seating, or planters.",
+            "question": "4. Can retaining walls include steps or seating?"
+          }
+        ],
+        "title": "FAQ — Retaining Walls",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

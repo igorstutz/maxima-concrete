@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Maxima Concrete — Content Manager</title>
+
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+
+    <!-- Sveltia sobrescreve o title/favicon em runtime; mantém o painel com a
+         marca Maxima Concrete (cosmético, não altera o comportamento do CMS). -->
+    <script>
+      (function () {
+        var DEFAULT_TITLE = "Maxima Concrete — Content Manager";
+
+        function fixTitle() {
+          var t = document.title || "";
+          if (/Sveltia CMS/i.test(t)) {
+            document.title = t.replace(/Sveltia CMS/gi, "Maxima Concrete CMS");
+          } else if (!t.trim()) {
+            document.title = DEFAULT_TITLE;
+          }
+        }
+
+        function fixIcons() {
+          document.querySelectorAll('link[rel~="icon"]').forEach(function (l) {
+            var href = l.getAttribute("href") || "";
+            if (/sveltia/i.test(href) || href.indexOf("data:") === 0) {
+              l.setAttribute("href", "/favicon.ico");
+            }
+          });
+        }
+
+        function fixText(root) {
+          try {
+            var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+            var n;
+            while ((n = walker.nextNode())) {
+              if (n.nodeValue && n.nodeValue.indexOf("Sveltia CMS") !== -1) {
+                n.nodeValue = n.nodeValue.replace(/Sveltia CMS/g, "Maxima Concrete");
+              }
+            }
+          } catch (e) {}
+        }
+
+        function apply() {
+          fixTitle();
+          fixIcons();
+          fixText(document.body || document.documentElement);
+        }
+
+        apply();
+        document.addEventListener("DOMContentLoaded", apply);
+
+        var titleEl = document.querySelector("title");
+        if (titleEl) new MutationObserver(fixTitle).observe(titleEl, { childList: true });
+
+        new MutationObserver(function (muts) {
+          fixIcons();
+          for (var i = 0; i < muts.length; i++) {
+            for (var j = 0; j < muts[i].addedNodes.length; j++) {
+              var node = muts[i].addedNodes[j];
+              if (node.nodeType === 1) fixText(node);
+              else if (node.nodeType === 3 && node.nodeValue && node.nodeValue.indexOf("Sveltia CMS") !== -1) {
+                node.nodeValue = node.nodeValue.replace(/Sveltia CMS/g, "Maxima Concrete");
+              }
+            }
+          }
+        }).observe(document.documentElement, { childList: true, subtree: true });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- Sveltia CMS — CMS Git-based compatível com Decap. Totalmente isolado
+         do site público: nenhuma página pública carrega este script. -->
+    <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js" type="module"></script>
+  </body>
+</html>

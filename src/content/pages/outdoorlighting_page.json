@@ -1,0 +1,348 @@
+{
+  "pageKey": "outdoorlighting_page",
+  "sections": [
+    {
+      "key": "custom_1773616889211_qijdoa",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Outdoor Lighting",
+        "ctaLink": "#contact",
+        "ctaText": "Get Your Free Estimate",
+        "tagline": "Illuminate Every Outdoor Moment",
+        "subtitle": "Illuminate Your Space with Maxima Concrete",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037529549-kzymnc.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037529549-kzymnc-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_outdoorlighting_carousel_images",
+      "label": "Carousel Images",
+      "type": "carousel-images",
+      "content": {
+        "title": "Transform Your Backyard into a Nighttime Oasis",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Lightning",
+        "mainImage": "/images/cms/uploads/1782843278644-rudkl.webp",
+        "thumbnails": [
+          "/images/cms/uploads/1781011786399-1o99pf.webp",
+          "/images/cms/uploads/1781011913577-w7hxf.webp",
+          "/images/cms/uploads/1773617572951-9284jd.webp"
+        ],
+        "description": "Turn your <b>Central Ohio backyard</b> into a captivating, functional retreat after sunset with <b>low-voltage decorative lighting</b> from Maxima <b>Concrete.</b>\n\nOur lighting systems are designed to <b>illuminate, accentuate, and protect</b> your outdoor living spaces — from <b>patios and pools</b> to <b>paver walls, driveways, and garden paths.</b>\n\nWhether you want ambient lighting for relaxing evenings or vibrant accents for entertaining, we'll craft the perfect illumination plan for your home."
+      }
+    },
+    {
+      "key": "custom_1773661896047_xun28s",
+      "label": "Low-Voltage",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Choose Low-Voltage Lighting?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773666458932-w1piq.webp",
+            "items": [
+              {
+                "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              }
+            ],
+            "title": "Safety & Security",
+            "description": "Soft yet bright illumination improves nighttime visibility, preventing slips and deterring unwanted visitors"
+          },
+          {
+            "icon": "/images/cms/uploads/1773666478265-9mswow.webp",
+            "items": [
+              {
+                "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
+                "label": "Crack Resistance:"
+              }
+            ],
+            "title": "Aesthetics & Ambiance",
+            "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape."
+          },
+          {
+            "icon": "/images/cms/uploads/1773666496187-ey8wjl.webp",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
+                "label": "Style:"
+              }
+            ],
+            "title": "Energy Efficiency",
+            "description": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
+          },
+          {
+            "icon": "/images/cms/uploads/1773666513369-v7vcqhi.webp",
+            "items": [
+              {
+                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Versatility & Simple Installation",
+            "description": "Available in countless fixtures, styles, and beam spreads, low-voltage lights are easily installed and expanded — ideal for both homeowners and contractors."
+          }
+        ],
+        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
+        "description": "",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1781011937410-5detm.webp"
+      }
+    },
+    {
+      "key": "custom_1773670584861_ohgrpcg",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Maxima Concrete’s Lighting Solutions",
+        "styles": [
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773670690293-feqe0q.webp",
+            "title": "Path Lights:",
+            "description": "Subtle fixtures that safely guide guests along walkways and driveways."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773670752866-pjaztp.webp",
+            "title": "Step Lights:",
+            "description": "Increase visibility on stairs and transitions, adding both beauty and security."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773670770604-danyrk.webp",
+            "title": "Paver Lights:",
+            "description": "Flush-mounted LEDs embedded in patios, steps, and driveways for a seamless glow."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773670795622-3gmwsj.webp",
+            "title": "Spotlights:",
+            "description": "Highlight focal points such as sculptures, trees, or water features."
+          }
+        ],
+        "description": "Every home is unique — that’s why Maxima offers a tailored selection of lighting solutions designed to fit your layout, materials, and aesthetic:",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1773671141537_a92olc",
+      "label": "Smart Controls & Color Options",
+      "type": "outdoor-intro",
+      "content": {
+        "image": "/images/cms/uploads/1781011972577-tvsjqo.webp",
+        "title": "Smart Controls & Color Options",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "description": "Take lighting to the next level with <b>timers and color-changing systems.</b>\n<br><br>\n• <b>Timers:</b> Automate on/off schedules for security and convenience.\n<br><br>\n• <b>Color-Changing LEDs:</b> Shift hues for holidays, events, or mood lighting — adding personality and seasonal flair to your yard.",
+        "_sourceLabel": "Outdoor Intro"
+      }
+    },
+    {
+      "key": "custom_concrete_vs_pavers_ol",
+      "label": "Concrete vs Pavers",
+      "type": "concrete-vs-pavers",
+      "content": {
+        "cards": [
+          {
+            "image": "/images/cms/uploads/1773675476535-6qxzrd.webp",
+            "title": "Concrete:",
+            "description": "Sleek, continuous, and low-maintenance. Options include <b>stamped, colored, or stained</b> finishes to match your design vision."
+          },
+          {
+            "image": "/images/cms/uploads/1773675500642-vjo7l.webp",
+            "title": "Pavers:",
+            "description": "Available in many colors, shapes, and patterns. Easy to repair and ideal for decorative or modular layouts."
+          }
+        ],
+        "title": "<b>Concrete vs. Pavers</b> — Choosing the Right Base",
+        "bottomText": "Whether you choose the timeless strength of <b>concrete</b> or the creative flexibility of <b>pavers</b>, Maxima ensures flawless integration with your lighting design.",
+        "backgroundColor": "#494948"
+      }
+    },
+    {
+      "key": "custom_trust_maxima_ol",
+      "label": "Trust Maxima",
+      "type": "trust-maxima",
+      "content": {
+        "items": [
+          {
+            "label": "Design Expertise",
+            "description": "Tailored lighting plans that balance function and aesthetics."
+          },
+          {
+            "label": "Premium Fixtures",
+            "description": "Energy-efficient, weather-resistant systems built to last."
+          },
+          {
+            "label": "End-to-End Service",
+            "description": "Tailored lighting plans that balance function and aesthetics."
+          },
+          {
+            "label": "Local Experience",
+            "description": "Serving Columbus, Delaware, and surrounding Central Ohio communities."
+          }
+        ],
+        "titleLine1": "Why Homeowners",
+        "titleLine2": "Trust Maxima",
+        "titleLine3": "Concrete"
+      }
+    },
+    {
+      "key": "custom_1773675803581_3tr6g",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp.webp"
+      }
+    },
+    {
+      "key": "custom_1773676014214_rza16o",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "custom_1773676034999_96bq5y",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1773676029527_k67m2f",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1773676032610_4gz3yt",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
+            "question": "How long does an outdoor living project take?"
+          },
+          {
+            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
+            "question": "What maintenance is required?"
+          },
+          {
+            "answer": "Yes, we offer flexible payment options.",
+            "question": "Do you offer financing?"
+          }
+        ],
+        "title": "FAQ - Outdoor Lighting",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

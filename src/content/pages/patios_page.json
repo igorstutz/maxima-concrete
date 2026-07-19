@@ -1,0 +1,330 @@
+{
+  "pageKey": "patios_page",
+  "sections": [
+    {
+      "key": "custom_1768773909977_mad62e",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Patios - Concrete",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Where Style Meets the Outdoors",
+        "subtitle": "Turn your backyard into the ultimate gathering space with a custom concrete patio. Built with 6.5-bag concrete, fiber reinforcement, and wire mesh for lasting durability, beauty, and value.\n",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784041355595-gnxzsqa.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784041355595-gnxzsqa-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1768777884355_u3x969",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "A Patio That Redefines",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "A patio can be the crown jewel of your backyard — a place where design meets comfort, and every gathering feels effortless. But let’s face it: most standard patios fall short. Cracked slabs, faded colors, and uneven finishes often steal the spotlight, leaving your dream of an elegant outdoor retreat",
+        "imageLarge": "/images/cms/uploads/1780940459397-olgs7.webp",
+        "paragraph1": "At Maxima Concrete, we don’t just pour slabs — we craft outdoor living experiences. Our team collaborates with you from design to installation, creating a patio that reflects your unique personality, lifestyle, and aesthetic vision. Using premium materials, modern techniques, and expert craftsmanship, we turn your outdoor space into a lasting expression of home.",
+        "titleLine2": "Outdoor Living",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1784041048146-senvd2q.webp"
+      }
+    },
+    {
+      "key": "custom_1768777267496_if1yr",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Why Maxima Is the Right \nChoice for Your Patio",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773697788895-gyo8uo.webp",
+            "items": [
+              {
+                "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              }
+            ],
+            "title": "Durability and Longevity"
+          },
+          {
+            "icon": "/images/cms/uploads/1773699156947-rtse3.webp",
+            "items": [
+              {
+                "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
+                "label": "Crack Resistance:"
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1768777652386-dseslw.webp",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
+                "label": "Style:"
+              }
+            ],
+            "title": "Versatility"
+          },
+          {
+            "icon": "/images/cms/uploads/1768777710208-0cfaxq.webp",
+            "items": [
+              {
+                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
+        "description": "Our patios combine strength, style, and simplicity. Whether you envision a sleek modern retreat or a warm rustic escape, we’ll bring it to life — built for beauty and made to last.\n\n\n",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 70,
+        "backgroundImage": "/images/cms/uploads/1784041383032-is4zw.webp"
+      }
+    },
+    {
+      "key": "custom_1768774280205_4dvuq8",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Concrete Patio Finish Options",
+        "styles": [
+          {
+            "link": "/finishes/broom",
+            "image": "/images/cms/uploads/1780687948556-2qlyku.webp",
+            "title": "Broom-Finished:",
+            "description": "Classic, slip-resistant texture with clean lines — ideal for all-season traction and timeless appeal."
+          },
+          {
+            "link": "/finishes/stamped-colored",
+            "image": "/images/cms/uploads/1780687984714-woo06w.webp",
+            "title": "Stamped & Colored:",
+            "description": "Decorative patterns and rich color that replicate stone or brick for elevated curb appeal."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780687979144-0cjca.webp",
+            "title": "Exposed Aggregate:",
+            "description": "Natural stone texture with added grip and visual depth for a distinctive, durable surface."
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "image": "/images/cms/uploads/1780687995084-ah3p5d.webp",
+            "title": "Buff Wash:",
+            "description": "Subtle texture with a warm, refined look that softens concrete without sacrificing performance."
+          }
+        ],
+        "description": "Maxima Concrete offers a diverse range of finishes and textures to match your home’s architecture and your personal taste:",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1768774328450_gjyvhk",
+      "label": "Paver Patios",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Paver Patios That Bring \nYour Backyard to Life",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Paver Patio",
+        "eyebrow": "",
+        "benefits": [],
+        "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
+        "_sourceLabel": "Design Paver Driveway",
+        "overlayOpacity": 57,
+        "backgroundImage": "/images/cms/uploads/1780688063642-eo7x3o.webp"
+      }
+    },
+    {
+      "key": "custom_1768774684113_emzxch",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Patio",
+        "images": [
+          "/images/cms/uploads/1784041402238-bjscpm.webp",
+          "/images/cms/uploads/1784041406042-ntvato.webp",
+          "/images/cms/uploads/1780940687044-k2uxxh.webp",
+          "/images/cms/uploads/1780940688182-8fjj4r.webp",
+          "/images/cms/uploads/1780940688836-oa2hv.webp",
+          "/images/cms/uploads/1782840082687-fnvhj.webp",
+          "/images/cms/uploads/1782840083211-9irq1.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1768774898603_y3l3b",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Our Commitment\nto Quality",
+        "benefits": [
+          {
+            "title": "6.5-Bag Mix Concrete",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773699438648-dynlyv.webp",
+            "description": "Stronger and denser for a durable foundation."
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773699474063-2mfasg.webp",
+            "description": "Reduces cracking and adds internal strength."
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773699498502-gdlyhk.webp",
+            "description": "Provides superior stability and long-term support."
+          },
+          {
+            "title": "Full-Service Experience",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773699532840-275u69.webp",
+            "description": "From consultation to final finish — we handle it all."
+          }
+        ],
+        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1768776111319_k0l9mi",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to Create Your",
+        "titleLine2": "Perfect Outdoor Retreat?",
+        "contactText": "",
+        "description": "Your dream patio and walkways are within reach. From the initial  design consultation to the final touch, we are with you every step of  the way to ensure a smooth process and a result you'll love.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/outdoor-living",
+            "label": "Outdoor Living"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/basement-floors",
+            "label": "Basement Floors"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1768776165154_r7uvm6",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1768776180340_3b96n",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a concrete patio last?"
+          },
+          {
+            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
+            "question": "Can I customize the color and texture?"
+          },
+          {
+            "answer": "",
+            "question": "How soon can I use my patio after installation?"
+          },
+          {
+            "answer": "",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Patios",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

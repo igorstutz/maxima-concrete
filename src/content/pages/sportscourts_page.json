@@ -1,0 +1,290 @@
+{
+  "pageKey": "sportscourts_page",
+  "sections": [
+    {
+      "key": "custom_1771529688443_gvs2p8",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Sports Courts",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Play, Compete, and Create Memories at Home",
+        "subtitle": "Play, Compete, and Create Memories at Home\n\nDurable, customizable sports Courts by Maxima Concrete. Perfect for basketball, tennis, pickleball, and more. Built for performance and fun.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1780682717068-jolhjp.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1780682717068-jolhjp-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771980204967_uw12lxr",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Bring the Game Home",
+        "ctaLink": "#contact",
+        "ctaText": "Schedule Your Free Estimate!",
+        "subtitle": "Transform your backyard into a space for recreation, exercise, and family fun with a custom sports court from Maxima Concrete. Built with high-strength materials and expert craftsmanship, our courts are designed to deliver long-lasting performance, durability, and enjoyment.",
+        "imageLarge": "/images/cms/uploads/1782842126022-z79csf.webp",
+        "paragraph1": "Our sports courts are constructed using 6.5-bag concrete, fiber reinforcement, and 10-gauge wire mesh to create a strong, stable playing surface. This combination helps minimize cracking, improve durability, and withstand years of activity, weather exposure, and heavy use.",
+        "paragraph2": "Whether for basketball, pickleball, tennis, volleyball, or multi-purpose use, each court is tailored to your space and needs. We also offer broom-finished, buff wash, and exposed aggregate finishes, allowing you to choose the appearance, texture, and performance that best fit your project.",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842115836-1l7kvn.webp"
+      }
+    },
+    {
+      "key": "custom_1771980225758_ivezh",
+      "label": "Why Maxima",
+      "type": "why-maxima-sports",
+      "content": {
+        "title": "Maxima Concrete: Building Your Dream Court with Lasting Performance",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb.webp",
+            "items": [
+              {
+                "text": "Withstands years of competitive play, weather exposure, and high activity.",
+                "label": ""
+              }
+            ],
+            "title": "Unmatched Durability:"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t.webp",
+            "items": [
+              {
+                "text": "Simply rinse and clean occasionally — no resurfacing or repainting required.",
+                "label": ""
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5.webp",
+            "items": [
+              {
+                "text": "Performs flawlessly through Ohio's hot summers and freezing winters.",
+                "label": ""
+              }
+            ],
+            "title": "Weather Resistance:"
+          },
+          {
+            "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc_copy_1771979884304_mooive_copy_1771980227680_puf0y.webp",
+            "items": [
+              {
+                "text": "We'll tailor your court to fit your space, sport, and style preferences.",
+                "label": ""
+              }
+            ],
+            "title": "Customizable Design:"
+          },
+          {
+            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb.webp",
+            "items": [
+              {
+                "text": "Multiple finishes to create a court that enhances your outdoor space.",
+                "label": ""
+              }
+            ],
+            "title": "Aesthetic Appeal:"
+          }
+        ],
+        "subtitle": "Why Choose a Concrete Sports Court?",
+        "description": "As Central Ohio's leading <b>concrete contractor</b>, Maxima Concrete specializes in <b>high-performance sports Courts</b> built for years of enjoyment. Whether you play basketball, tennis, hockey, futsal, pickleball, volleyball, <b>badminton, or rollerblade</b> — your concrete court will deliver exceptional durability and playability.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1782842150687-0veuia.webp"
+      }
+    },
+    {
+      "key": "custom_1771980241686_27o307",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Sports Courts",
+        "images": [
+          "/images/cms/uploads/1780682890609-ielasr.webp",
+          "/images/cms/uploads/1780682889619-do59p7a.webp",
+          "/images/cms/uploads/1780682888523-dtzfrd.webp",
+          "/images/cms/uploads/1782842167127-8a2ovr.webp",
+          "/images/cms/uploads/1782842167905-ie6hph.webp",
+          "/images/cms/uploads/1782842169447-yy3i7f.webp",
+          "/images/cms/uploads/1782842170649-bb92j9.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1771980270283_dilcgth",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Maxima’s Commitment to Quality and Performance",
+        "benefits": [
+          {
+            "title": "6.5-Bag High-Strength Mix:",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773702792516-gr43j5.webp",
+            "description": "Denser, more durable concrete foundation for long-term stability."
+          },
+          {
+            "title": "Fiber reinforcement",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773702820914-yyez0f.webp",
+            "description": "Prevents cracking and strengthens the slab against constant impact."
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773702877887-cgpsnmj.webp",
+            "description": "Adds another layer of structural support to handle intense activity."
+          },
+          {
+            "title": "Full-Service Process:",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773702890707-3hbaw.webp",
+            "description": "From consultation to completion, our expert team handles design, permits, pouring, finishing, and cleanup."
+          }
+        ],
+        "description": "Every court we build is designed to withstand heavy use and harsh weather, while delivering years of safe, enjoyable performance.\n\nOur Quality Standards Include:",
+        "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1771980285903_eb37y",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to Create Your",
+        "titleLine2": "Perfect Outdoor Retreat?",
+        "contactText": "",
+        "description": "Your dream patio and walkways are within reach. From the initial  design consultation to the final touch, we are with you every step of  the way to ensure a smooth process and a result you'll love.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/basement-floors",
+            "label": "Basement Floors"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771980298030_0waozr",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771980305229_2vy5dk",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a concrete patio last?"
+          },
+          {
+            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
+            "question": "Can I customize the color and texture?"
+          },
+          {
+            "answer": "",
+            "question": "How soon can I use my patio after installation?"
+          },
+          {
+            "answer": "",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Patios - Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

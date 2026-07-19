@@ -1,0 +1,314 @@
+{
+  "pageKey": "finishesstampedcolored_page",
+  "sections": [
+    {
+      "key": "custom_1772599651852_vt7kz7",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Stamped & Colored Concrete",
+        "tagline": "More Than a Finish, a Visual Experience",
+        "backLink": "/finishes",
+        "subtitle": "More Than a Finish, a Visual Experience",
+        "backLabel": "Back to Finishes",
+        "description": "Patterns pressed into fresh concrete and tinted with custom colors to mimic stone, brick, or tile at a fraction of the cost.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1780688148132-4wqr7h.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1780688148132-4wqr7h-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1772599655565_vy4nlm",
+      "label": "Intro",
+      "type": "finishes-intro",
+      "content": {
+        "image": "/images/cms/uploads/1781007119051-t2dyxd.webp",
+        "title": "A Finish That’s Truly an Experience",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "description": "<b>Stamped and colored concrete</b> isn’t just a surface treatment — it’s artistry in motion.\n\nBy combining pattern, texture, and color, <b>Maxima Concrete</b> transforms ordinary slabs into breathtaking, durable designs that mimic premium materials like stone, slate, tile, or brick, all while maintaining the strength and longevity of concrete.",
+        "_sourceLabel": "Intro"
+      }
+    },
+    {
+      "key": "custom_1778531888055_n35yhq",
+      "label": "What is",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "What Is Stamped & Colored Concrete?",
+        "ctaLink": "#contact",
+        "ctaText": " Design My Paver Driveway",
+        "eyebrow": "",
+        "benefits": [],
+        "description": "This decorative process uses specialized rubber stamps to imprint textures and designs into freshly poured concrete.\n\n While the surface is still workable, color pigments are integrated into or applied onto the concrete, creating realistic depth and dimension that rivals natural materials — at a fraction of the cost.\n\nOnce cured, the surface is cleaned, detailed, and sealed, locking in color vibrancy and protecting it from moisture, UV rays, and wear.\n\nThe result: a visually striking, low-maintenance surface that stands up to Ohio’s weather and daily use.",
+        "_sourceLabel": "Design Paver Driveway",
+        "overlayOpacity": 87,
+        "backgroundImage": "/images/cms/uploads/1781007767026-9mzds.webp"
+      }
+    },
+    {
+      "key": "custom_1772216800001_designoptions",
+      "label": "Design Options",
+      "type": "design-options",
+      "content": {
+        "title": "Design Options That Inspire",
+        "patterns": [
+          {
+            "image": "/images/cms/uploads/1772587034540-jd65u.webp",
+            "title": "Popular Pattern Choices",
+            "description": "Old-world charm with timeless appeal."
+          },
+          {
+            "image": "/images/cms/uploads/1772587076763-w5gqqo.webp",
+            "title": "Brick or Herringbone",
+            "description": "Perfect for walkways, porches, and patios."
+          },
+          {
+            "image": "/images/cms/uploads/1772587133829-krg8a.webp",
+            "title": "Wood Grain",
+            "description": "Warm, organic character with the durability of concrete."
+          },
+          {
+            "image": "/images/cms/uploads/1772587143566-wpoiz.webp",
+            "title": "Slate or Flagstone",
+            "description": "Natural texture with elegant irregularity."
+          }
+        ],
+        "subtitle": "Stamped and colored concrete opens a world of design possibilities — from classic to contemporary, subtle to bold.",
+        "bottomNote": "Maxima's color systems are UV-stable and fade-resistant, ensuring your design remains vibrant for years.",
+        "colorGroups": [
+          {
+            "label": "Earthy tones",
+            "colors": [
+              "#8B5E3C",
+              "#D2B48C",
+              "#444444",
+              "#C4A484"
+            ]
+          },
+          {
+            "label": "Warm Reds & Terracottas",
+            "colors": [
+              "#A0522D",
+              "#B22222",
+              "#B66E41",
+              "#C36241"
+            ]
+          },
+          {
+            "label": "Modern Grays & Blacks",
+            "colors": [
+              "#6E6E6E",
+              "#2F2F2F",
+              "#9E9E9E",
+              "#1B1B1B"
+            ]
+          }
+        ],
+        "colorPaletteTitle": "Color Palette:"
+      }
+    },
+    {
+      "key": "stampedcolored-sec-benefits-process",
+      "label": "Benefits & Process",
+      "type": "benefits-process",
+      "content": {
+        "benefits": [
+          {
+            "title": "1. Unmatched Aesthetics",
+            "description": "Replicate the look of premium materials without their cost or maintenance demands."
+          },
+          {
+            "title": "2. Strength & Durability",
+            "description": "Stamped concrete maintains the load-bearing integrity of structural concrete — ideal for driveways, patios, pool decks, and walkways."
+          },
+          {
+            "title": "3. Low Maintenance",
+            "description": "Unlike pavers or natural stone, there are no loose joints or shifting pieces. Occasional cleaning and resealing keep it looking brand new."
+          },
+          {
+            "title": "4. Fully Customizable",
+            "description": "From pattern combinations to custom color blends, every surface is uniquely designed to complement your property."
+          }
+        ],
+        "bottomQuote": "The result is a surface that's as **functional as it is stunning** — built to endure, designed to impress.",
+        "processImage": "/images/cms/uploads/1781007382860-o8179.webp",
+        "processIntro": "At **Maxima Concrete**, we ensure every stamped and colored surface is crafted to perfection:",
+        "processSteps": [
+          {
+            "text": "Choose your pattern, color, and layout.",
+            "label": "Consultation & Design"
+          },
+          {
+            "text": "Grade, compact, and form for proper slope and drainage.",
+            "label": "Preparation"
+          },
+          {
+            "text": "High-strength 6.5-bag mix with integral or broadcast pigments.",
+            "label": "Pour & Color"
+          },
+          {
+            "text": "Precision stamping using professional-grade rubber mats.",
+            "label": "Stamping"
+          },
+          {
+            "text": "Power wash, detail, and seal for long-term protection.",
+            "label": "Cleaning & Sealing"
+          }
+        ],
+        "processTitle": "The Maxima Process",
+        "benefitsTitle": "Benefits of Stamped & Colored Concrete"
+      }
+    },
+    {
+      "key": "custom_1772599761512_56krn8",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1772599762366_qf37x.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1772599777658_wwhbmi",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": "More Than Concrete"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "custom_1772599879165_9yhvc",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1772599874091_tuoiqp",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a driveway installation take?"
+          },
+          {
+            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
+            "question": "What maintenance is required?"
+          },
+          {
+            "answer": "Yes, we offer flexible payment options.",
+            "question": "Do you offer financing?"
+          }
+        ],
+        "title": "Stamped & Colored - FAQ ",
+        "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1772599882014_sp946j",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

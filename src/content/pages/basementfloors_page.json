@@ -1,0 +1,321 @@
+{
+  "pageKey": "basementfloors_page",
+  "sections": [
+    {
+      "key": "custom_1771529820467_stcy",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Basement Floors",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Durable, Comfortable, and Built to Last",
+        "subtitle": "Durable, Comfortable, and Built to Last\n\nStrong, moisture-resistant, low-maintenance basement floors by Maxima Concrete. Durable, stylish, and energy-efficient. Free estimate.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1784037941516-p0onae.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1784037941516-p0onae-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981739771_dkkkhu",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Why choose a Basement floor?",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "Basement floors are often overlooked, yet they deliver exceptional strength, moisture resistance, and design flexibility. ",
+        "imageLarge": "/images/cms/uploads/1782842707861-nbz5n.webp",
+        "paragraph1": "They handle heavy foot traffic and humidity with ease and can be finished to match any style—from sleek and modern to warm and rustic.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842703576-gm2mp.webp",
+        "paragraphLayout": "spaced"
+      }
+    },
+    {
+      "key": "custom_1771982043618_yhsf7c",
+      "label": "Benefits",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Benefits of a high-quality basement floor",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773314404302-biat0j.webp",
+            "items": [
+              {
+                "text": "Concrete is virtually indestructible—resisting heavy traffic, scratches, stains, and tears. It won’t warp or rot like other materials and provides a long-lasting, stable base for any finish (sealed, polished, stained, epoxy, LVP overlay, area rugs).",
+                "label": ""
+              }
+            ],
+            "title": "Durability you can rely on"
+          },
+          {
+            "icon": "/images/cms/uploads/1773314383991-8b1vmq.webp",
+            "items": [
+              {
+                "text": "Naturally moisture-resistant, concrete helps deter mold and mildew—crucial for basements with humidity or occasional water intrusion. When combined with proper sub-base prep, vapor barrier, and the right sealer, you get everyday protection and healthier air.",
+                "label": ""
+              }
+            ],
+            "title": "Moisture & mold resistance"
+          },
+          {
+            "icon": "/images/cms/uploads/1773314339091-dpv72h.webp",
+            "items": [
+              {
+                "text": "Simple routine: sweep and mop. Quality sealers make cleaning easier and help reduce staining. Less upkeep, more use of the space.",
+                "label": ""
+              }
+            ],
+            "title": "Low maintenance"
+          },
+          {
+            "icon": "/images/cms/uploads/1773314303437-hzjfd.webp",
+            "items": [
+              {
+                "text": "Concrete’s thermal mass absorbs and releases heat slowly, helping keep the basement warmer in winter and cooler in summer—which can support lower energy bills. It also pairs perfectly with radiant heating for all-season comfort.",
+                "label": ""
+              }
+            ],
+            "title": "Energy efficiency & comfort"
+          }
+        ],
+        "description": " ",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773314205914-yr3wg.webp"
+      }
+    },
+    {
+      "key": "custom_1773705052619_5jyl5d",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Finish options for your basement",
+        "styles": [
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773705235178-af7jyx.webp",
+            "title": "Smooth / Sealed:",
+            "description": "Clean look, easy to maintain, great for multipurpose spaces."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773705273824-dr84ec.webp",
+            "title": "Polished Concrete:",
+            "description": "Controlled sheen (matte to high-gloss), premium aesthetics, and high abrasion resistance."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773705327125-wtqw2.webp",
+            "title": "Colored / Stained:",
+            "description": "Custom tones to add warmth and character."
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773705341337-ob0pg.webp",
+            "title": "Epoxy / Polyaspartic:",
+            "description": "Chemical and abrasion protection—ideal for hobby areas, gyms, or workshops. "
+          }
+        ],
+        "description": "Pro tip: We can combine a 6.5-bag mix, fiber mesh, and 10-gauge wire mesh (where applicable) for added reinforcement and crack control, along with best-practice sub-base prep and a properly specified vapor barrier.",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1772599576703_8xuzco",
+      "label": "Maxima Advantage",
+      "type": "maxima-advantage",
+      "content": {
+        "title": "Why Choose Maxima Slabs",
+        "benefits": [
+          {
+            "text": "for superior load-bearing capacity.",
+            "boldText": "6.5-bag high-strength concrete mix"
+          },
+          {
+            "text": " to reduce cracking and improve toughness.",
+            "boldText": "Fiber mesh reinforcement"
+          },
+          {
+            "text": "(where applicable) for structural integrity.",
+            "boldText": "10-gauge wire mesh"
+          },
+          {
+            "text": "for a flawless, even surface.",
+            "boldText": "Accurate leveling  & finishing"
+          },
+          {
+            "text": "to prevent dampness or surface degradation.",
+            "boldText": "Moisture control & sealing"
+          }
+        ],
+        "pillText": "We manage every step — from site preparation and form setup to pouring, curing, and cleanup — ensuring your slab is perfectly installed and ready for use.",
+        "rightTitle": "Our broom-finished projects are built with:",
+        "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
+        "_sourceLabel": "Maxima Advantage"
+      }
+    },
+    {
+      "key": "custom_1771983365093_mf0rwh",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Basement Floors",
+        "images": [
+          "/images/cms/uploads/1773314527602-1rxeud.webp",
+          "/images/cms/uploads/1773314542110-g9f2s.webp",
+          "/images/cms/uploads/1773314560775-h6mztv.webp",
+          "/images/cms/uploads/1773314573793-gnnbg.webp",
+          "/images/cms/uploads/1773314585943-k4lc7t.webp",
+          "/images/cms/uploads/1782842677549-psb3x.webp",
+          "/images/cms/uploads/1782842678526-izipg.webp",
+          "/images/cms/uploads/1782842679563-sc4r2q.webp",
+          "/images/cms/uploads/1782842681179-5bxsik.webp"
+        ],
+        "description": "Browse our gallery and imagine the possibilities for your home.",
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771983198104_pepdhh",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to upgrade your basement?",
+        "titleLine2": "",
+        "contactText": "",
+        "description": "Transform your basement into a durable, beautiful, low-maintenance space with Maxima Concrete.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviws & Areas Served)"
+          },
+          {
+            "link": "/contact",
+            "label": "Financing Options"
+          }
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982486015_1vc8x6",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982613661_r369ag",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "Typically 3-5 days depending on size and complexity.",
+            "question": "How long does a concrete patio last?"
+          },
+          {
+            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
+            "question": "Can I customize the color and texture?"
+          },
+          {
+            "answer": "",
+            "question": "How soon can I use my patio after installation?"
+          },
+          {
+            "answer": "",
+            "question": "Do you offer free consultations?"
+          }
+        ],
+        "title": "FAQ — Patios - Concrete",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}

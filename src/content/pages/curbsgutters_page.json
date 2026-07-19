@@ -1,0 +1,320 @@
+{
+  "pageKey": "curbsgutters_page",
+  "sections": [
+    {
+      "key": "custom_1771529827645_lf169",
+      "label": "Hero",
+      "type": "hero",
+      "content": {
+        "title": "Curbs & Gutters",
+        "ctaLink": "#contact",
+        "ctaText": "Design My Outdoor Space",
+        "tagline": "Protecting Your Property, Enhancing Your Street",
+        "subtitle": "Protecting Your Property, Enhancing Your Street\n\nDurable, code-compliant curbs and gutters that manage stormwater, improve safety, and boost curb appeal. Installed by Maxima Concrete.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "/images/cms/uploads/1773275640522-a3r6kk.webp",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/uploads/1773275640522-a3r6kk-mobile.webp"
+      }
+    },
+    {
+      "key": "custom_1771981390751_wwx2ql",
+      "label": "Intro",
+      "type": "intro",
+      "content": {
+        "title": "Why are Curbs and Gutters important?",
+        "ctaLink": "#contact",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "subtitle": "Curbs and gutters may not be the first thing you notice, but they’re essential for maintaining the safety, durability, and beauty of your property and neighborhood. Positioned along the edge of the roadway or driveway, these structures are critical for drainage control, pedestrian safety, and defini",
+        "imageLarge": "/images/cms/uploads/1773275795307-y07ab.webp",
+        "paragraph1": "At Maxima Concrete, we design and install code-compliant curbs and gutters that are both functional and visually refined — ensuring your property looks great while meeting all local regulations.",
+        "paragraph2": "",
+        "titleLine2": "",
+        "_sourceLabel": "Intro",
+        "imageTopRight": "/images/cms/uploads/1782842389993-hpp1f.webp"
+      }
+    },
+    {
+      "key": "custom_1771981980849_kzj5n",
+      "label": "Why Maxima",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "The role of Curbs and Gutters",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [
+          {
+            "icon": "/images/cms/uploads/1773276105651-ahr0qg.webp",
+            "items": [
+              {
+                "text": "Curbs and gutters channel rainwater runoff from roofs, driveways, and yards — directing it toward storm drains instead of letting it pool or erode your landscape. This prevents flooding, soil erosion, and road damage, while helping protect nearby sidewalks and driveways.",
+                "label": ""
+              }
+            ],
+            "title": "Stormwater management"
+          },
+          {
+            "icon": "/images/cms/uploads/1773276119231-2rnrh.webp",
+            "items": [
+              {
+                "text": "Curbs act as physical barriers, separating traffic lanes from sidewalks and residential driveways. This creates safe zones for pedestrians, prevents cars from veering off-road, and ensures smoother vehicle flow in residential and commercial areas.",
+                "label": ""
+              }
+            ],
+            "title": "Pedestrian and traffic safety"
+          },
+          {
+            "icon": "/images/cms/uploads/1773276418531-ppl1i9.webp",
+            "items": [
+              {
+                "text": "Beyond functionality, curbs help define the edges of driveways and walkways, creating a cleaner visual boundary. They also make parking and maneuvering easier, guiding vehicles while protecting lawns and landscaping.",
+                "label": ""
+              }
+            ],
+            "title": "Property definition and usability"
+          },
+          {
+            "icon": "/images/cms/uploads/1773276387321-cuccm.webp",
+            "items": [
+              {
+                "text": "Well-maintained curbs and gutters enhance curb appeal and signal pride of ownership. Cracked or neglected curbs can create a sense of disrepair — while clean, uniform ones increase property value and contribute to the neighborhood's visual harmony.",
+                "label": ""
+              }
+            ],
+            "title": "Aesthetic and property value"
+          }
+        ],
+        "description": "",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 76,
+        "backgroundImage": "/images/cms/uploads/1773275984945-n69qz.webp"
+      }
+    },
+    {
+      "key": "custom_1773276470214_0qt6wr",
+      "label": "Style Options",
+      "type": "style-options",
+      "content": {
+        "title": "Built to Code, Built to Last",
+        "styles": [
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773277438270-4p93le.webp",
+            "title": "Permit management:",
+            "description": " We pull and pay for local Right-of-Way permits. "
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773703586351-djiv8v.webp",
+            "title": "Professional installation:",
+            "description": "Expert crews form and pour curbs and gutters to precise grades and dimensions. "
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773703596218-r1wcdn.webp",
+            "title": "Quality materials:",
+            "description": "We use 6.5-bag high-strength concrete, fiber reinforcement, and 10-gauge wire mesh (as needed) for structural integrity. "
+          },
+          {
+            "link": "#contact",
+            "image": "/images/cms/uploads/1773703648441-05gz7.webp",
+            "title": "Final inspection:",
+            "description": "All installations are inspected for code compliance and durability."
+          }
+        ],
+        "description": "Installing curbs and gutters in Ohio often requires compliance with local municipal codes and proper Right-of-Way permits.",
+        "_sourceLabel": "Style Options"
+      }
+    },
+    {
+      "key": "custom_1771983384387_jjnwa8",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Curbs and Gutters",
+        "images": [
+          "/images/cms/uploads/1773278257751-2uv23f.webp",
+          "/images/cms/uploads/1773278275002-cpxvlp.webp",
+          "/images/cms/uploads/1773278303143-agnkoj.webp",
+          "/images/cms/uploads/1773278341665-e460e.webp",
+          "/images/cms/uploads/1773278372301-guosx.webp",
+          "/images/cms/uploads/1782842414784-4khwtei.webp",
+          "/images/cms/uploads/1782842416068-osrjzs.webp",
+          "/images/cms/uploads/1782842416816-natoo9.webp"
+        ],
+        "_sourceLabel": "Inspiration"
+      }
+    },
+    {
+      "key": "custom_1773278554288_dyetln",
+      "label": "Advantage",
+      "type": "why-choose",
+      "content": {
+        "title": "Why homeowners trust Maxima Concrete",
+        "benefits": [
+          {
+            "title": "",
+            "iconType": "package",
+            "customIcon": "/images/cms/uploads/1773278805728-q5aeah.webp",
+            "description": "Fully licensed and insured concrete contractor serving Central Ohio"
+          },
+          {
+            "title": "",
+            "iconType": "layers",
+            "customIcon": "/images/cms/uploads/1773278742072-t49l3q.webp",
+            "description": "Extensive experience in residential and municipal concrete projects"
+          },
+          {
+            "title": "",
+            "iconType": "grid",
+            "customIcon": "/images/cms/uploads/1773278713488-xrvopb.webp",
+            "description": "Commitment to precision, compliance, and lasting craftsmanship"
+          },
+          {
+            "title": "",
+            "iconType": "clipboard",
+            "customIcon": "/images/cms/uploads/1773278671065-urxcal.webp",
+            "description": "Transparent process from permit to pour "
+          }
+        ],
+        "description": " ",
+        "_sourceLabel": "Advantage"
+      }
+    },
+    {
+      "key": "custom_1771983202229_pe16ng",
+      "label": "Related Services",
+      "type": "final-cta",
+      "content": {
+        "ctaLink": "#contact",
+        "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
+        "titleLine1": "Ready to enhance your property’s edge?",
+        "titleLine2": "",
+        "contactText": "📞 Schedule your free estimate today and let’s keep your property connected, protected, and looking its best.",
+        "description": "Protect your home, improve drainage, and upgrade your curb appeal with professionally installed curbs and gutters by Maxima Concrete.  We make it simple — from design to permit approval to final finish.",
+        "_sourceLabel": "Related Services",
+        "relatedTitle": "Related Services",
+        "ctaButtonText": "Schedule Your Free Design Consultation",
+        "relatedServices": [
+          {
+            "link": "/services/patios-concrete",
+            "label": "Patios"
+          },
+          {
+            "link": "/services/approaches",
+            "label": "Approaches"
+          },
+          {
+            "link": "/services/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/why-maxima",
+            "label": "Why Maxima (Reviews & Areas Served)"
+          }
+        ]
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_1771982490610_1yddet",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1771982617518_pant8",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "answer": "",
+            "question": "Do I need a permit to install a curb or gutter?"
+          },
+          {
+            "answer": " When installed correctly, they can last 30+ years with minimal maintenance.",
+            "question": "How long do curbs and gutters last?"
+          },
+          {
+            "answer": "",
+            "question": "Can damaged curbs be repaired or must they be replaced?"
+          },
+          {
+            "answer": "",
+            "question": "Do curbs really affect property value? "
+          }
+        ],
+        "title": "FAQ — Curbs & gutters",
+        "_sourceLabel": "FAQ"
+      }
+    }
+  ]
+}
