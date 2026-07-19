@@ -8,6 +8,10 @@ import Footer from "@/components/Footer";
 
 const GTM_ID = tracking.gtmId;
 
+// Ícones precisam do basePath explícito (o metadata do Next não o aplica):
+// vazio na Hostinger, "/maxima-concrete" no preview do GitHub Pages.
+const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -57,12 +61,12 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "48x48" },
-      { url: "/icon-32.png", type: "image/png", sizes: "32x32" },
-      { url: "/icon-192.png", type: "image/png", sizes: "192x192" },
-      { url: "/icon-512.png", type: "image/png", sizes: "512x512" },
+      { url: `${BP}/favicon.ico`, sizes: "48x48" },
+      { url: `${BP}/icon-32.png`, type: "image/png", sizes: "32x32" },
+      { url: `${BP}/icon-192.png`, type: "image/png", sizes: "192x192" },
+      { url: `${BP}/icon-512.png`, type: "image/png", sizes: "512x512" },
     ],
-    apple: "/apple-touch-icon.png",
+    apple: `${BP}/apple-touch-icon.png`,
   },
   other: { "theme-color": "#041c2d" },
 };
