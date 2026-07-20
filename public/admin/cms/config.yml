@@ -21690,6 +21690,56 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+              - label: paver-offer
+                name: paver-offer
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: icon
+                        label: icon
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: paragraph
+                        label: paragraph
+                        required: false
+                        widget: text
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object

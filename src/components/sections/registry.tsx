@@ -19,6 +19,7 @@ import Instagram from "./home/Instagram";
 // Serviços (core)
 import Intro from "./service/Intro";
 import PaverIntro from "./service/PaverIntro";
+import PaverOffer from "./service/PaverOffer";
 import WhyMaximaService from "./service/WhyMaximaService";
 import WhyChoose from "./service/WhyChoose";
 import StyleOptions from "./service/StyleOptions";
@@ -128,6 +129,7 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
 
   intro: Intro,
   "paver-intro": PaverIntro,
+  "paver-offer": PaverOffer,
   "why-maxima-service": WhyMaximaService,
   "why-choose": WhyChoose,
   "style-options": StyleOptions,
