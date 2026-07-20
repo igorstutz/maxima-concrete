@@ -89,9 +89,11 @@ export default function Hero({ content }: { content: Record<string, any> }) {
               </p>
             )}
 
-            <p className="whitespace-pre-line text-[16px] font-normal leading-[130%] tracking-[-0.96px] text-white md:text-[20px] lg:max-w-96">
-              {c.subtitle}
-            </p>
+            {c.subtitle && (
+              <p className="whitespace-pre-line text-[16px] font-normal leading-[130%] tracking-[-0.96px] text-white md:text-[20px] lg:max-w-96">
+                {c.subtitle}
+              </p>
+            )}
 
             <div className="flex flex-col items-start gap-3">
               {c.ctaText && (

@@ -10,7 +10,7 @@
         "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
         "tagline": "Built to Last and Impress",
-        "subtitle": "Built to Last and Impress\n\nTransform your backyard with Maxima Patios — durable, elegant, and fully customized for your lifestyle. Free consultation available.",
+        "subtitle": "Transform your backyard with Maxima Patios — durable, elegant, and fully customized for your lifestyle. Free consultation available.",
         "_sourceLabel": "Hero",
         "backgroundImage": "/images/cms/uploads/1784036706804-f7yxn5.webp",
         "secondaryCtaLink": "#find-work",
@@ -237,6 +237,39 @@
             "label": "Basement Floors"
           }
         ]
+      }
+    },
+    {
+      "key": "paverpatios_page_durability",
+      "label": "Engineered for Durability",
+      "type": "hub-durability",
+      "content": {
+        "cards": [
+          {
+            "icon": "",
+            "title": "Heavy-Duty\nDurability",
+            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
+          },
+          {
+            "icon": "",
+            "title": "Weather-Ready\nConstruction",
+            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
+          },
+          {
+            "icon": "",
+            "title": "Professional\nInstallation",
+            "description": "Completed by our trained in-house team with no subcontractors involved."
+          },
+          {
+            "icon": "",
+            "title": "Long-Term Value",
+            "description": "Durable surfaces designed to enhance function, appearance, and property value."
+          }
+        ],
+        "title": "Engineered for Durability",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1784036706804-f7yxn5.webp"
       }
     },
     {

@@ -10,7 +10,7 @@
         "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
         "tagline": "Timeless Warmth. Built to Gather. Designed to Last.",
-        "subtitle": "Timeless Warmth. Built to Gather. Designed to Last.\n",
+        "subtitle": "",
         "_sourceLabel": "Hero",
         "backgroundImage": "/images/cms/uploads/1773315426841-ae08oq.webp",
         "secondaryCtaLink": "#find-work",
@@ -141,6 +141,39 @@
         "titlePart1": "Why Homeowners Recommend ",
         "titlePart2": "Maxima Concrete?",
         "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "firepits_page_durability",
+      "label": "Engineered for Durability",
+      "type": "hub-durability",
+      "content": {
+        "cards": [
+          {
+            "icon": "",
+            "title": "Heavy-Duty\nDurability",
+            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
+          },
+          {
+            "icon": "",
+            "title": "Weather-Ready\nConstruction",
+            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
+          },
+          {
+            "icon": "",
+            "title": "Professional\nInstallation",
+            "description": "Completed by our trained in-house team with no subcontractors involved."
+          },
+          {
+            "icon": "",
+            "title": "Long-Term Value",
+            "description": "Durable surfaces designed to enhance function, appearance, and property value."
+          }
+        ],
+        "title": "Engineered for Durability",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1773315426841-ae08oq.webp"
       }
     },
     {

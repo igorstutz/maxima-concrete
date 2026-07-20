@@ -330,7 +330,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -355,14 +356,6 @@ collections:
                         value_type: float
                       - name: videoUrl
                         label: videoUrl
-                        required: false
-                        widget: string
-                      - name: imageAlt
-                        label: imageAlt
-                        required: false
-                        widget: string
-                      - name: badgeText
-                        label: badgeText
                         required: false
                         widget: string
               - label: instagram
@@ -785,6 +778,15 @@ collections:
                         label: questionTitle
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
       - name: approaches_page
         label: Approaches
         file: src/content/pages/approaches_page.json
@@ -1021,7 +1023,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -1048,14 +1051,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -1944,7 +1989,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -1969,14 +2015,6 @@ collections:
                         value_type: float
                       - name: videoUrl
                         label: videoUrl
-                        required: false
-                        widget: string
-                      - name: imageAlt
-                        label: imageAlt
-                        required: false
-                        widget: string
-                      - name: badgeText
-                        label: badgeText
                         required: false
                         widget: string
               - label: instagram
@@ -2305,7 +2343,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -2332,14 +2371,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -5131,7 +5212,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -5158,14 +5240,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -5716,7 +5840,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -5743,14 +5868,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -6932,7 +7099,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -6957,14 +7125,6 @@ collections:
                         value_type: float
                       - name: videoUrl
                         label: videoUrl
-                        required: false
-                        widget: string
-                      - name: imageAlt
-                        label: imageAlt
-                        required: false
-                        widget: string
-                      - name: badgeText
-                        label: badgeText
                         required: false
                         widget: string
               - label: instagram
@@ -10142,7 +10302,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -10169,14 +10330,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: intro
                 name: intro
                 widget: object
@@ -10562,7 +10765,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -10589,14 +10793,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: intro
                 name: intro
                 widget: object
@@ -11123,7 +11369,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -11150,14 +11397,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -16258,7 +16547,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -16285,14 +16575,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -16653,6 +16985,47 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: find-work
+                name: find-work
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: mapZoom
+                        label: mapZoom
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: mapCenter
+                        label: mapCenter
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -17084,7 +17457,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -17111,14 +17485,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -17866,7 +18282,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -17893,14 +18310,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -18511,7 +18970,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -18538,14 +18998,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -19169,7 +19671,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -19196,14 +19699,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -19630,6 +20175,47 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: find-work
+                name: find-work
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: mapZoom
+                        label: mapZoom
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: mapCenter
+                        label: mapCenter
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -20288,7 +20874,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -20315,14 +20902,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -20872,7 +21501,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -20899,14 +21529,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -21456,7 +22128,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -21483,14 +22156,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -22106,7 +22821,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -22133,14 +22849,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -22690,117 +23448,6 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-              - label: hero
-                name: hero
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: text
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: string
-                      - name: secondaryCtaLink
-                        label: secondaryCtaLink
-                        required: false
-                        widget: string
-                      - name: secondaryCtaText
-                        label: secondaryCtaText
-                        required: false
-                        widget: string
-                      - name: backgroundImageMobile
-                        label: backgroundImageMobile
-                        required: false
-                        widget: string
-                      - name: heightVh
-                        label: heightVh
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: videoUrl
-                        label: videoUrl
-                        required: false
-                        widget: string
-                      - name: imageAlt
-                        label: imageAlt
-                        required: false
-                        widget: string
-                      - name: badgeText
-                        label: badgeText
-                        required: false
-                        widget: string
-              - label: hero-image-only
-                name: hero-image-only
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: image
-                        label: image
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: secondaryCtaLink
-                        label: secondaryCtaLink
-                        required: false
-                        widget: string
-                      - name: secondaryCtaText
-                        label: secondaryCtaText
-                        required: false
-                        widget: string
       - name: retainingwalls_page
         label: Retainingwalls
         file: src/content/pages/retainingwalls_page.json
@@ -23026,7 +23673,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -23053,14 +23701,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: integrated-features
                 name: integrated-features
                 widget: object
@@ -23592,7 +24282,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -23619,14 +24310,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: integrated-features-2
                 name: integrated-features-2
                 widget: object
@@ -24062,7 +24795,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -24089,14 +24823,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -24720,7 +25496,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -24747,14 +25524,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -25375,7 +26194,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -25402,14 +26222,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -26025,7 +26887,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -26052,14 +26915,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -26632,7 +27537,8 @@ collections:
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -26659,14 +27565,56 @@ collections:
                         label: videoUrl
                         required: false
                         widget: string
-                      - name: imageAlt
-                        label: imageAlt
+              - label: hub-durability
+                name: hub-durability
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: text
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
                         required: false
                         widget: string
-                      - name: badgeText
-                        label: badgeText
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object

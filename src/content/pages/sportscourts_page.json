@@ -10,7 +10,7 @@
         "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
         "tagline": "Play, Compete, and Create Memories at Home",
-        "subtitle": "Play, Compete, and Create Memories at Home\n\nDurable, customizable sports Courts by Maxima Concrete. Perfect for basketball, tennis, pickleball, and more. Built for performance and fun.",
+        "subtitle": "Durable, customizable sports Courts by Maxima Concrete. Perfect for basketball, tennis, pickleball, and more. Built for performance and fun.",
         "_sourceLabel": "Hero",
         "backgroundImage": "/images/cms/uploads/1780682717068-jolhjp.webp",
         "secondaryCtaLink": "#find-work",
@@ -231,6 +231,39 @@
         "titlePart1": "Why Homeowners Recommend ",
         "titlePart2": "Maxima Concrete?",
         "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "sportscourts_page_durability",
+      "label": "Engineered for Durability",
+      "type": "hub-durability",
+      "content": {
+        "cards": [
+          {
+            "icon": "",
+            "title": "Heavy-Duty\nDurability",
+            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
+          },
+          {
+            "icon": "",
+            "title": "Weather-Ready\nConstruction",
+            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
+          },
+          {
+            "icon": "",
+            "title": "Professional\nInstallation",
+            "description": "Completed by our trained in-house team with no subcontractors involved."
+          },
+          {
+            "icon": "",
+            "title": "Long-Term Value",
+            "description": "Durable surfaces designed to enhance function, appearance, and property value."
+          }
+        ],
+        "title": "Engineered for Durability",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1780682717068-jolhjp.webp"
       }
     },
     {

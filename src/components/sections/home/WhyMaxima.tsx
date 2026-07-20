@@ -3,6 +3,7 @@ import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmartLink } from "./SmartLink";
+import WhyMaximaCarousel from "./WhyMaximaCarousel";
 
 interface WhyMaximaContent {
   questionTitle?: string;
@@ -15,6 +16,7 @@ interface WhyMaximaContent {
   ctaText?: string;
   ctaLink?: string;
   mainImage?: string;
+  images?: string[];
 }
 
 // Só permite <b>/<strong> vindos do CMS (paridade com o site antigo).
@@ -32,6 +34,11 @@ export default function WhyMaxima({ content }: { content: Record<string, any> })
     ? questionTitle.split("Maxima Concrete")
     : [questionTitle, undefined];
   const benefits = [c.benefit1, c.benefit2, c.benefit3].filter(Boolean) as string[];
+  const carouselImages = (c.images?.filter(Boolean) as string[] | undefined)?.length
+    ? (c.images!.filter(Boolean) as string[])
+    : c.mainImage
+      ? [c.mainImage]
+      : [];
 
   return (
     <section id="why-maxima" className="bg-white py-16 sm:py-24">
@@ -48,22 +55,7 @@ export default function WhyMaxima({ content }: { content: Record<string, any> })
                 </>
               )}
             </h2>
-            <div className="flex w-full flex-col items-center gap-2.5">
-              <div className="relative h-64 w-full overflow-hidden rounded-2xl md:h-96">
-                <Image
-                  src={c.mainImage || "/images/assets/why-maxima.png"}
-                  alt="Maxima Concrete building"
-                  fill
-                  sizes="(min-width: 768px) 640px, 100vw"
-                  className="object-cover"
-                />
-              </div>
-              <div className="flex gap-2" aria-hidden="true">
-                <span className="size-1.5 rounded-full bg-ocean" />
-                <span className="size-1.5 rounded-full bg-ocean/50" />
-                <span className="size-1.5 rounded-full bg-ocean/50" />
-              </div>
-            </div>
+            <WhyMaximaCarousel images={carouselImages} />
             <p className="text-center text-lg font-medium leading-6 text-zinc-700 md:text-2xl md:leading-7">
               {c.tagline}
             </p>

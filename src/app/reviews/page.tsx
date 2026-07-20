@@ -5,6 +5,7 @@ import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import ElfsightWidget from "@/components/ElfsightWidget";
 import Contact from "@/components/sections/home/Contact";
+import FindWork from "@/components/sections/home/FindWork";
 import home from "@/content/pages/home.json";
 import googleReviews from "@/content/data/google-reviews.json";
 
@@ -20,6 +21,8 @@ const REVIEWS_WIDGET_ID = "ede2daec-6946-4a1d-ae2f-bcb41f160474";
 
 const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
+const findWorkContent =
+  home.sections.find((s) => s.type === "find-work")?.content ?? {};
 const profileUrl =
   (home.sections.find((s) => s.type === "reviews")?.content as
     | { profileUrl?: string }
@@ -209,6 +212,7 @@ export default function Page() {
       </section>
 
       <Contact content={contactContent} />
+      <FindWork content={findWorkContent} />
     </div>
   );
 }

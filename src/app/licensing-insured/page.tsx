@@ -17,6 +17,7 @@ import {
 import { Container } from "@/components/Container";
 import Image from "@/components/Image";
 import Contact from "@/components/sections/home/Contact";
+import FindWork from "@/components/sections/home/FindWork";
 import home from "@/content/pages/home.json";
 import FaqAccordion from "./FaqAccordion";
 
@@ -30,6 +31,8 @@ export const metadata: Metadata = {
 
 const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
+const findWorkContent =
+  home.sections.find((s) => s.type === "find-work")?.content ?? {};
 
 const credentials = [
   {
@@ -444,6 +447,7 @@ export default function Page() {
       </section>
 
       <Contact content={contactContent} />
+      <FindWork content={findWorkContent} />
     </div>
   );
 }

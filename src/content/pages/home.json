@@ -30,7 +30,12 @@
         "mainImage": "/images/cms/uploads/1766260199815-jhga35.webp",
         "description1": "Maxima Concrete is a locally owned, licensed, bonded, insured, and registered contractor serving Central Ohio. We specialize in custom concrete, pavers, natural stone, and outdoor living spaces, delivering quality craftsmanship and lasting results that enhance your home or business.",
         "description2": "Choose Right. Choose Maxima Concrete.",
-        "questionTitle": "What sets Maxima Concrete apart?"
+        "questionTitle": "What sets Maxima Concrete apart?",
+        "images": [
+          "/images/cms/uploads/1766260199815-jhga35.webp",
+          "/images/cms/uploads/1772675743580-grztir.webp",
+          "/images/cms/uploads/1772675764399-c8f59.webp"
+        ]
       }
     },
     {

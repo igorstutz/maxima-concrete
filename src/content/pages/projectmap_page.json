@@ -2,17 +2,6 @@
   "pageKey": "projectmap_page",
   "sections": [
     {
-      "key": "custom_1781553287230_zw0ev",
-      "label": "Hero Image",
-      "type": "hero-image-only",
-      "content": {
-        "image": "/images/cms/uploads/1772676001289-sekkr_copy_1781553288710_qu17b.webp",
-        "_sourceLabel": "Hero Image",
-        "secondaryCtaLink": "#find-work",
-        "secondaryCtaText": "Find Our Work Near You"
-      }
-    },
-    {
       "key": "projectmap_page_explorer",
       "label": "Map Explorer",
       "type": "explorer",
@@ -29,18 +18,6 @@
         "listButtonLabel": "List",
         "myLocationLabel": "My location",
         "searchButtonText": "Search"
-      }
-    },
-    {
-      "key": "projectmap_page_hero",
-      "label": "Hero",
-      "type": "hero",
-      "content": {
-        "title": "Every project, on the map.",
-        "imageAlt": "Aerial view of Ohio neighborhoods with completed Maxima Concrete projects",
-        "subtitle": "Browse hundreds of completed Maxima Concrete projects across Ohio. Search by ZIP code, adjust the radius, or open the map in fullscreen.",
-        "badgeText": "Project Map",
-        "backgroundImage": ""
       }
     },
     {

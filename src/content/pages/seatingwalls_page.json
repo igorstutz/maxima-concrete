@@ -221,6 +221,39 @@
       }
     },
     {
+      "key": "seatingwalls_page_durability",
+      "label": "Engineered for Durability",
+      "type": "hub-durability",
+      "content": {
+        "cards": [
+          {
+            "icon": "",
+            "title": "Heavy-Duty\nDurability",
+            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
+          },
+          {
+            "icon": "",
+            "title": "Weather-Ready\nConstruction",
+            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
+          },
+          {
+            "icon": "",
+            "title": "Professional\nInstallation",
+            "description": "Completed by our trained in-house team with no subcontractors involved."
+          },
+          {
+            "icon": "",
+            "title": "Long-Term Value",
+            "description": "Durable surfaces designed to enhance function, appearance, and property value."
+          }
+        ],
+        "title": "Engineered for Durability",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1782842820455-a9z3rg.webp"
+      }
+    },
+    {
       "key": "find_work",
       "label": "Find Our Work Near You",
       "type": "find-work",
