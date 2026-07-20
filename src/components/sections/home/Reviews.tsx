@@ -5,6 +5,8 @@ import ElfsightWidget from "@/components/ElfsightWidget";
 
 // Widget de reviews do Google (Elfsight) — mesmo ID do site antigo.
 const REVIEWS_WIDGET_ID = "ede2daec-6946-4a1d-ae2f-bcb41f160474";
+// Cabeçalho injetado pelo widget que deve ser removido.
+const HIDE_HEADINGS = ["What Our Customers Say"];
 
 interface ReviewsContent {
   titlePart1?: string;
@@ -30,7 +32,7 @@ export default function Reviews({ content }: { content: Record<string, any> }) {
         </div>
 
         {/* Widget Elfsight de reviews do Google (carrega ao entrar na viewport) */}
-        <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} />
+        <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
 
         {/* CTAs */}
         <div className="mt-8 flex flex-wrap items-center justify-start gap-3 md:mt-10">

@@ -127,3 +127,10 @@ body {
     animation: none;
   }
 }
+
+/* Remove o selo do plano gratuito do Elfsight ("Free ... Widget").
+   Reforço em CSS (o ElfsightWidget também força via JS, cobrindo shadow DOM). */
+.eapps-widget-toolbar,
+[class*="eapps-widget-toolbar"] {
+  display: none !important;
+}

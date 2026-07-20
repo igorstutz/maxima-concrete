@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 
 // Mesmo widget Elfsight de reviews do Google usado na home (Reviews.tsx).
 const REVIEWS_WIDGET_ID = "ede2daec-6946-4a1d-ae2f-bcb41f160474";
+const HIDE_HEADINGS = ["What Our Customers Say"];
 
 const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
@@ -207,7 +208,7 @@ export default function Page() {
       {/* WIDGET ELFSIGHT (reviews ao vivo do Google) */}
       <section className="bg-white py-16 lg:py-20">
         <Container>
-          <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} />
+          <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
         </Container>
       </section>
 
