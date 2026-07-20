@@ -243,11 +243,11 @@
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "label": "Concrete Driveways"
           },
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "label": "Concrete Patios"
           },
           {

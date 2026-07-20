@@ -95,25 +95,25 @@
       "content": {
         "cards": [
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "image": "/images/cms/uploads/1781008332878-vhni5q.webp",
             "title": "Driveways",
             "description": "Smooth to drive on, with safe traction even in rain or snow."
           },
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "image": "/images/cms/uploads/1781008358160-y1b0pd.webp",
             "title": "Patios",
             "description": "Functional and attractive, blending with landscape design."
           },
           {
-            "link": "/services/sidewalks-walkways-concrete",
+            "link": "/services/sidewalks",
             "image": "/images/cms/uploads/1781008416549-8l16gq.webp",
             "title": "Sidewalks & Walkways",
             "description": "Comfortable for walking and wheelchair access."
           },
           {
-            "link": "/services/steps-concrete",
+            "link": "/services/steps",
             "image": "/images/cms/uploads/1781008398231-8dwt9.webp",
             "title": "Porches & Steps",
             "description": "Slip-resistant and long-lasting under daily use."
@@ -177,11 +177,11 @@
             "label": "Buff Wash Concrete"
           },
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "label": "Driveways"
           },
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
         ],

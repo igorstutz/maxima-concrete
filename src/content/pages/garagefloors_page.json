@@ -120,7 +120,7 @@
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "label": "Patios"
           },
           {
@@ -128,7 +128,7 @@
             "label": "Approaches"
           },
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "label": "Driveways"
           },
           {

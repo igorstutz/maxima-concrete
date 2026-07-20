@@ -45,107 +45,107 @@
       "content": {
         "items": [
           {
-            "link": "https://maximaconcrete.lovable.app/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "name": "Driveways l Concrete ",
             "image": "/images/cms/uploads/1782418764534-lilnfu.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/driveways-paver",
+            "link": "/services/driveways/driveways-paver",
             "name": "Driveways l Paver, Brick and Stone",
             "image": "/images/cms/uploads/1782416905023-y7fvg9.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "name": "Patios l Concrete",
             "image": "/images/cms/uploads/1782419168172-799n1uh.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/patios-paver",
+            "link": "/services/patios/patios-paver",
             "name": "Patios l Paver, Brick and Stone",
             "image": "/images/cms/uploads/1782419284904-bvifza.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/approaches",
+            "link": "/services/approaches",
             "name": "Approaches",
             "image": "/images/cms/uploads/1782829546817-1w0wd.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/outdoor-living",
+            "link": "/services/outdoor-living",
             "name": "Outdoor Living",
             "image": "/images/cms/uploads/1784047919021-oscdoo.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/pool-decks-surrounds",
+            "link": "/services/pool-decks-surrounds",
             "name": "Pools Decks and Surrounds",
             "image": "/images/cms/uploads/1782419972213-capm07.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/basement-floors",
+            "link": "/services/basement-floors",
             "name": "Basements",
             "image": "/images/cms/uploads/1782419614757-rh0hvf.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/curbs-gutters",
+            "link": "/services/curbs-gutters",
             "name": "Curb & Gutters",
             "image": "/images/cms/uploads/1782419796073-vrsdc.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/footers",
+            "link": "/services/footers",
             "name": "Footers",
             "image": "/images/cms/uploads/1782419724316-m19ipr.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/fireplaces",
+            "link": "/services/fireplaces",
             "name": "Firepits",
             "image": "/images/cms/uploads/1782829681251-65dsgj.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/garage-floors",
+            "link": "/services/garage-floors",
             "name": "Garage Floors",
             "image": "/images/cms/uploads/1784047951430-xrucg.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/outdoor-kitchens",
+            "link": "/services/outdoor-kitchens",
             "name": "Outdoor Kitchen and Bar",
             "image": "/images/cms/uploads/1782483847221-89m2bp.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/outdoor-lighting",
+            "link": "/services/outdoor-lighting",
             "name": "Outdoor Lighting ",
             "image": "/images/cms/uploads/1782483966243-jk99q.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/retaining-walls",
+            "link": "/services/retaining-walls",
             "name": "Retaining Walls",
             "image": "/images/cms/uploads/1782484078551-al4irf.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/seating-walls",
+            "link": "/services/seating-walls",
             "name": "Seating Walls ",
             "image": "/images/cms/uploads/1782484174171-6sdgu.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/shelters",
+            "link": "/services/shelters",
             "name": "Shelters, Pergolas and Shade",
             "image": "/images/cms/uploads/1782484375687-o9x00a.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/sidewalks",
+            "link": "/services/sidewalks",
             "name": "Sidewalks & Walkways",
             "image": "/images/cms/uploads/1782829611204-f4yjhh.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/slabs",
+            "link": "/services/slabs",
             "name": "Slabs",
             "image": "/images/cms/uploads/1782484561829-aw0xw.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/sports-courts",
+            "link": "/services/sports-courts",
             "name": "Sports Courts",
             "image": "/images/cms/uploads/1782484618932-9iyhsn.webp"
           },
           {
-            "link": "https://maximaconcrete.lovable.app/services/steps",
+            "link": "/services/steps",
             "name": "Steps",
             "image": "/images/cms/uploads/1782829745840-qddfwo.webp"
           }
@@ -216,7 +216,7 @@
           "/images/cms/uploads/1781096504594-828gde.webp",
           "/images/cms/uploads/1782829834121-tay59.webp"
         ],
-        "ctaLink": "/services/driveways-concrete",
+        "ctaLink": "/services/driveways/driveways-concrete",
         "ctaText": "Learn more",
         "description": "Upgrade your home's curb appeal with a durable, high-quality concrete driveway from Maxima Concrete. Built with 6.5-bag fiber-reinforced concrete and wire mesh, our driveways are made for strength, durability, and lasting performance. From preparation to installation, we deliver a clean, low-maintenance driveway that adds value to your property."
       }
@@ -232,7 +232,7 @@
           "/images/cms/uploads/1784047095848-frwu8f.webp",
           "/images/cms/uploads/1784047071534-2kjna.webp"
         ],
-        "ctaLink": "/services/patios-concrete",
+        "ctaLink": "/services/patios/patios-concrete",
         "ctaText": "Learn More",
         "description": "Transform your backyard with a custom patio from Maxima Concrete. Built with durable materials and expert craftsmanship, our patios are designed to last. Choose from broom-finished, stamped, colored, exposed aggregate, buff wash or pavers finishes. From design to installation, we create beautiful, low-maintenance outdoor spaces perfect for relaxing and entertaining."
       }

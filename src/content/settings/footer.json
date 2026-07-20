@@ -6,15 +6,39 @@
   "email": "info@maximaconcrete.com",
   "phone": "(614) 384-5917",
   "learnMoreLinks": [
-    { "label": "Why Maxima", "href": "/why-maxima" },
-    { "label": "Areas We Serve", "href": "/areas-we-serve" },
-    { "label": "Gallery", "href": "/gallery" },
-    { "label": "Finishes", "href": "/finishes" },
-    { "label": "Commercial", "href": "/commercial" },
-    { "label": "About Maxima", "href": "/about" },
-    { "label": "Privacy Policy", "href": "/privacy" }
+    {
+      "label": "Why Maxima",
+      "href": "/why-maxima"
+    },
+    {
+      "label": "Areas We Serve",
+      "href": "/areas-we-serve"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery"
+    },
+    {
+      "label": "Finishes",
+      "href": "/finishes"
+    },
+    {
+      "label": "Commercial",
+      "href": "/commercial"
+    },
+    {
+      "label": "About Maxima",
+      "href": "/why-maxima"
+    },
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy"
+    }
   ],
-  "contactCta": { "label": "Contact Us", "href": "/contact-us" },
+  "contactCta": {
+    "label": "Contact Us",
+    "href": "/contact-us"
+  },
   "socialLinks": {
     "facebook": "https://www.facebook.com/maximaconcrete/",
     "instagram": "https://www.instagram.com/maximaconcrete/",

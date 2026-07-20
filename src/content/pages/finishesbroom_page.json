@@ -93,13 +93,13 @@
       "content": {
         "cards": [
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "image": "/images/cms/uploads/1780688435290-2hwsiv.webp",
             "title": "Driveways",
             "description": "Smooth to drive on, with safe traction even in rain or snow."
           },
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "image": "/images/cms/uploads/1780688464795-80yx5f.webp",
             "title": "Patios",
             "description": "Functional and attractive, blending with landscape design."
@@ -187,11 +187,11 @@
             "label": "Buff Wash Concrete"
           },
           {
-            "link": "/services/driveways-concrete",
+            "link": "/services/driveways/driveways-concrete",
             "label": "Driveways"
           },
           {
-            "link": "/services/patios-concrete",
+            "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
         ],
