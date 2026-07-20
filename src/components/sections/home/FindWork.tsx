@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { ArrowRight, MapPin, Search } from "lucide-react";
 import Image from "@/components/Image";
@@ -92,6 +92,7 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
   const [filtered, setFiltered] = useState<Project[] | null>(null);
   const [nearbyCount, setNearbyCount] = useState<number | null>(null);
   const [searching, setSearching] = useState(false);
+  const [geoError, setGeoError] = useState<string | null>(null);
 
   // Preferência de auto-find persistida.
   useEffect(() => {
@@ -199,20 +200,39 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
       weight: 2,
     }).addTo(map);
     circleRef.current = circle;
-    map.fitBounds(circle.getBounds(), { padding: [24, 24] });
+    // Movimento animado até a localização (raio), deixando claro que o mapa moveu.
+    map.flyToBounds(circle.getBounds(), { padding: [24, 24], maxZoom: 13, duration: 0.8 });
   }, [ready, searchCenter, radius, projects]);
 
-  // Auto-find (geolocalização) quando habilitado.
-  useEffect(() => {
-    if (!ready || !autoFind || !projects || searchCenter) return;
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (pos) => setSearchCenter({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-        () => {},
-        { timeout: 5000 },
-      );
+  // Pede a geolocalização e centraliza o mapa nela; trata negação/erro.
+  const locateUser = useCallback(() => {
+    if (!("geolocation" in navigator)) {
+      setGeoError("Location isn't available on this device.");
+      return;
     }
-  }, [ready, autoFind, projects, searchCenter]);
+    setSearching(true);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        setSearching(false);
+        setGeoError(null);
+        setSearchCenter({ lat: pos.coords.latitude, lng: pos.coords.longitude });
+      },
+      () => {
+        setSearching(false);
+        setAutoFind(false);
+        localStorage.setItem("findwork_autofind", "false");
+        setGeoError(
+          "We couldn't access your location. Please allow location access in your browser and try again.",
+        );
+      },
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 },
+    );
+  }, []);
+
+  // Auto-find (geolocalização) quando habilitado e o mapa está pronto.
+  useEffect(() => {
+    if (ready && autoFind && !searchCenter) locateUser();
+  }, [ready, autoFind, searchCenter, locateUser]);
 
   const searchByZip = async () => {
     if (zip.length < 5) return;
@@ -254,13 +274,10 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
   const toggleAutoFind = (checked: boolean) => {
     setAutoFind(checked);
     localStorage.setItem("findwork_autofind", String(checked));
-    if (checked && "geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (pos) => setSearchCenter({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
-        () => {},
-        { timeout: 5000 },
-      );
-    } else if (!checked) {
+    if (checked) {
+      locateUser();
+    } else {
+      setGeoError(null);
       clearFilter();
     }
   };
@@ -370,6 +387,8 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
                 Auto find
               </label>
             </div>
+
+            {geoError && <p className="text-xs leading-snug text-red-600">{geoError}</p>}
           </div>
 
           {/* Direita — mapa interativo */}
