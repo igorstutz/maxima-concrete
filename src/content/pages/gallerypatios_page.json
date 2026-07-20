@@ -170,6 +170,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerypatios_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long will my concrete patio last?",
+            "answer": "With proper installation and maintenance, a Maxima Concrete patio can last 30 years or more."
+          },
+          {
+            "question": "Can I customize the color, pattern, and texture?",
+            "answer": "Yes. We offer stamped, colored, broom-finished, exposed aggregate, and paver options to match your home."
+          },
+          {
+            "question": "How long does a patio installation take?",
+            "answer": "Most patios are completed in 3–7 days, depending on size, finish, and site conditions."
+          },
+          {
+            "question": "Do you offer free patio consultations?",
+            "answer": "Yes. We provide free on-site design consultations and estimates throughout Central Ohio."
+          }
+        ],
+        "title": "FAQ — Patios",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

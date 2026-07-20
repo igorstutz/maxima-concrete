@@ -283,19 +283,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a driveway installation take?"
+            "question": "What is stamped and colored concrete?",
+            "answer": "It's concrete imprinted with patterns and tinted with color to mimic natural stone, brick, slate, or wood at a more affordable price."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Is stamped concrete durable?",
+            "answer": "Yes. Applied over our high-strength mix and properly sealed, stamped concrete is durable and long-lasting."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "What patterns and colors are available?",
+            "answer": "We offer a wide range of stone, brick, and slate patterns with many color options to match your home."
+          },
+          {
+            "question": "How do I maintain stamped and colored concrete?",
+            "answer": "Clean as needed and reseal every 2–3 years to keep the pattern and color looking their best."
           }
         ],
-        "title": "Stamped & Colored - FAQ ",
+        "title": "FAQ — Stamped & Colored",
         "_sourceLabel": "FAQ"
       }
     },

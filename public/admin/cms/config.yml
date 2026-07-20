@@ -114,6 +114,43 @@ collections:
                         label: description
                         required: false
                         widget: text
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -819,14 +856,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -1544,6 +1581,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -1747,6 +1821,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -2029,14 +2140,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -2973,14 +3084,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -3441,14 +3552,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -4008,14 +4119,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -4605,6 +4716,43 @@ collections:
                         label: instagramUrl
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -4818,14 +4966,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -5468,14 +5616,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -6003,14 +6151,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -6635,6 +6783,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -6943,14 +7128,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -7480,6 +7665,43 @@ collections:
             widget: list
             typeKey: type
             types:
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -7914,14 +8136,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -8557,14 +8779,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -9330,14 +9552,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -9820,14 +10042,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -10240,14 +10462,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -10736,14 +10958,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -11424,6 +11646,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -11734,6 +11993,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -12152,6 +12448,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -12566,6 +12899,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -12984,6 +13354,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -13398,6 +13805,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -13816,6 +14260,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -14230,6 +14711,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -14648,6 +15166,43 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: find-work
                 name: find-work
                 widget: object
@@ -15062,6 +15617,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: find-work
@@ -15501,14 +16093,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -16028,6 +16620,43 @@ collections:
             widget: list
             typeKey: type
             types:
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: joinourteam-sec-benefits
                 name: joinourteam-sec-benefits
                 widget: object
@@ -16355,14 +16984,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -17137,14 +17766,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -17782,14 +18411,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -18375,14 +19004,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -18989,14 +19618,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -19494,14 +20123,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -20078,14 +20707,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -20662,14 +21291,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -21312,14 +21941,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -22024,6 +22653,43 @@ collections:
                         label: searchButtonText
                         required: false
                         widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: hero
                 name: hero
                 widget: object
@@ -22260,14 +22926,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -22826,14 +23492,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -23296,14 +23962,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -23954,14 +24620,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -24544,14 +25210,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -25194,14 +25860,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -25801,14 +26467,14 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: answer
-                            label: answer
-                            required: false
-                            widget: text
                           - name: question
                             label: question
                             required: false
                             widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
                       - name: title
                         label: title
                         required: false
@@ -26490,6 +27156,43 @@ collections:
                         widget: string
                       - name: nameSectionLabel
                         label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: financing

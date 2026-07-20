@@ -369,6 +369,37 @@
         "designerName": "Melanie's Consulting",
         "designerText": "Designed by"
       }
+    },
+    {
+      "key": "custom_home_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What services does Maxima Concrete offer?",
+            "answer": "We install driveways, patios, sidewalks, pool decks, outdoor living spaces, commercial concrete, and more across Central Ohio."
+          },
+          {
+            "question": "Are you licensed and insured?",
+            "answer": "Yes. We're licensed, bonded, fully insured, and registered in the cities we work in, and we handle all permits."
+          },
+          {
+            "question": "How much does a concrete project cost?",
+            "answer": "Every project is unique. We provide free, no-obligation on-site estimates so you know exactly what to expect."
+          },
+          {
+            "question": "What areas do you serve?",
+            "answer": "We serve Columbus, Delaware, and communities throughout Central Ohio."
+          },
+          {
+            "question": "Do you offer financing?",
+            "answer": "Yes. We offer flexible financing options to help make your project affordable."
+          }
+        ],
+        "title": "FAQ — Maxima Concrete",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

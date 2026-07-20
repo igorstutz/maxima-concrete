@@ -86,6 +86,33 @@
           -82.9988
         ]
       }
+    },
+    {
+      "key": "custom_contactus_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How can I reach Maxima Concrete?",
+            "answer": "Call us at (614) 384-5917, email info@maximaconcrete.com, or use the form on this page and we'll respond promptly."
+          },
+          {
+            "question": "Are consultations and estimates free?",
+            "answer": "Yes. We provide free, no-obligation on-site consultations and estimates throughout Central Ohio."
+          },
+          {
+            "question": "Where is Maxima Concrete located?",
+            "answer": "Our office is at 4059 State Route 37 E, Suite A, Delaware, OH 43015, and we serve the surrounding Central Ohio area."
+          },
+          {
+            "question": "How soon will you respond to my request?",
+            "answer": "We aim to respond within one business day, often sooner during business hours."
+          }
+        ],
+        "title": "FAQ — Contact Maxima",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

@@ -164,6 +164,33 @@
         "_sourceLabel": "Contact",
         "nameSectionLabel": ""
       }
+    },
+    {
+      "key": "custom_gallery_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "Are these real Maxima Concrete projects?",
+            "answer": "Yes. Every photo in our gallery is real work completed by our in-house team across Central Ohio."
+          },
+          {
+            "question": "Can you build something similar to what I see here?",
+            "answer": "Absolutely. Show us the projects you love and we'll design a custom solution tailored to your home and budget."
+          },
+          {
+            "question": "Do you offer the same finishes shown in the gallery?",
+            "answer": "Yes. We offer broom, smooth, stamped, colored, buff wash, exposed aggregate, and paver options."
+          },
+          {
+            "question": "How do I get started on my own project?",
+            "answer": "Contact us for a free consultation and estimate, and we'll help bring your vision to life."
+          }
+        ],
+        "title": "FAQ — Our Work",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

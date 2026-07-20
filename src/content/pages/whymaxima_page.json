@@ -229,6 +229,33 @@
           -82.9988
         ]
       }
+    },
+    {
+      "key": "custom_whymaxima_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long has Maxima Concrete been in business?",
+            "answer": "We've been a family-owned and operated company since 2011, serving more than 9,000 happy clients across Central Ohio."
+          },
+          {
+            "question": "Is Maxima Concrete licensed and insured?",
+            "answer": "Yes. We are licensed, bonded, fully insured, and registered in the cities we work in, and we handle all required permits."
+          },
+          {
+            "question": "Do you use subcontractors?",
+            "answer": "No. Every project is completed by our skilled in-house team, ensuring consistent quality and full accountability."
+          },
+          {
+            "question": "What areas do you serve?",
+            "answer": "We serve Columbus, Delaware, and surrounding Central Ohio communities across Franklin, Union, Licking, and Fairfield Counties."
+          }
+        ],
+        "title": "FAQ — About Maxima Concrete",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

@@ -287,16 +287,16 @@
       "content": {
         "items": [
           {
-            "answer": "It depends on use — residential slabs are typically 4–6 inches, while commercial or heavy-load slabs may range from 6–12 inches or more.",
-            "question": " How thick should a slab be?"
+            "question": "How thick should a slab be?",
+            "answer": "It depends on use — residential slabs are typically 4–6 inches, while commercial or heavy-load slabs may be thicker with added reinforcement."
           },
           {
-            "answer": "",
-            "question": " How long does it take to cure?"
+            "question": "How long does it take to cure?",
+            "answer": "A slab is usually ready for foot traffic in 24–48 hours and reaches full strength in about 28 days."
           },
           {
-            "answer": "",
-            "question": "What can concrete slabs be used for?"
+            "question": "What can concrete slabs be used for?",
+            "answer": "Slabs serve as a stable, level base for sheds, garages, patios, hot tubs, AC units, workshops, and equipment pads."
           }
         ],
         "title": "FAQ — Slabs",

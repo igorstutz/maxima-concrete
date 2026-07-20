@@ -144,6 +144,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerypools_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "Are your pool decks slip-resistant?",
+            "answer": "Yes. We use textured finishes like broom, exposed aggregate, and stamped concrete for safe footing when wet."
+          },
+          {
+            "question": "Will the surface stay cool in summer?",
+            "answer": "We recommend light-colored and heat-reflective finishes that noticeably reduce surface temperature on hot days."
+          },
+          {
+            "question": "Can you work around my existing pool?",
+            "answer": "Yes. We design and pour decks around new and existing pools for a clean, seamless result."
+          },
+          {
+            "question": "Do you offer free pool deck consultations?",
+            "answer": "Yes. We provide free on-site consultations and estimates across Central Ohio."
+          }
+        ],
+        "title": "FAQ — Pool Decks",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

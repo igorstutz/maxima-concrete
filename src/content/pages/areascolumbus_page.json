@@ -169,6 +169,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_areascolumbus_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "Does Maxima Concrete work throughout the Columbus area?",
+            "answer": "Yes. We serve Columbus and all surrounding suburbs, delivering the same quality craftsmanship across the metro."
+          },
+          {
+            "question": "Do you handle permits for Columbus projects?",
+            "answer": "Yes. We manage all required permits and ensure every project meets local codes."
+          },
+          {
+            "question": "What concrete services do you offer in Columbus?",
+            "answer": "Driveways, patios, sidewalks, pool decks, commercial work, and more — residential and commercial projects of every size."
+          },
+          {
+            "question": "Are estimates free in Columbus?",
+            "answer": "Absolutely. We provide free on-site consultations and estimates throughout the Columbus area."
+          }
+        ],
+        "title": "FAQ — Columbus Concrete",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

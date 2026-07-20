@@ -218,19 +218,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a driveway installation take?"
+            "question": "What is a smooth (trowel) finish?",
+            "answer": "A smooth finish is troweled to a sleek, even surface, ideal for a clean, modern look."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Is smooth concrete slippery when wet?",
+            "answer": "It can be more slick than textured finishes, so it's best for covered or indoor areas like garages and basements. We'll recommend the right finish for your space."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Where does a smooth finish work best?",
+            "answer": "Garage floors, basement floors, and interior slabs where a clean, easy-to-clean surface is the priority."
+          },
+          {
+            "question": "How do I maintain a smooth finish?",
+            "answer": "Regular cleaning and periodic resealing keep it looking sharp and protect against stains."
           }
         ],
-        "title": "Frequently Asked Questions",
+        "title": "FAQ — Smooth Finish",
         "_sourceLabel": "FAQ"
       }
     },

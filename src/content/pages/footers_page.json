@@ -286,23 +286,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a concrete patio last?"
+            "question": "What is a concrete footer?",
+            "answer": "A footer is the reinforced concrete base that supports foundations, walls, and columns, spreading the load and keeping structures stable."
           },
           {
-            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
-            "question": "Can I customize the color and texture?"
+            "question": "How deep should footers be?",
+            "answer": "Depth depends on the structure and the frost line. In Ohio, footers are placed below the frost line to prevent heaving, and we always build to local code."
           },
           {
-            "answer": "",
-            "question": "How soon can I use my patio after installation?"
+            "question": "Do you handle permits and inspections for footers?",
+            "answer": "Yes. We manage the required permits and coordinate inspections so everything meets code from the start."
           },
           {
-            "answer": "",
-            "question": "Do you offer free consultations?"
+            "question": "Do you offer free consultations?",
+            "answer": "Yes — we provide free on-site consultations and estimates anywhere in Central Ohio."
           }
         ],
-        "title": "FAQ — Patios - Concrete",
+        "title": "FAQ — Footers",
         "_sourceLabel": "FAQ"
       }
     }

@@ -362,19 +362,23 @@
       "content": {
         "items": [
           {
-            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
-            "question": "How long does an outdoor living project take?"
+            "question": "How long does an outdoor kitchen project take?",
+            "answer": "Most projects take 2–6 weeks depending on size, materials, and features. We handle all permits and scheduling."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "What features can be included?",
+            "answer": "Grills, counters, seating, storage, and paver or concrete surfaces — we design each kitchen around how you like to cook and entertain."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Are outdoor kitchens durable in Ohio weather?",
+            "answer": "Yes. We use weather-resistant materials and proper construction so your kitchen holds up year-round."
+          },
+          {
+            "question": "Do you offer financing?",
+            "answer": "Yes, we offer flexible payment options."
           }
         ],
-        "title": "FAQ - Outdoor Lighting",
+        "title": "FAQ — Outdoor Kitchens",
         "_sourceLabel": "FAQ"
       }
     }

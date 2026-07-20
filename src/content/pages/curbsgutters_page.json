@@ -296,23 +296,23 @@
       "content": {
         "items": [
           {
-            "answer": "",
-            "question": "Do I need a permit to install a curb or gutter?"
+            "question": "Do I need a permit to install a curb or gutter?",
+            "answer": "Often yes, especially for work in the public right-of-way. Maxima handles all required permits and ensures the work meets local codes."
           },
           {
-            "answer": " When installed correctly, they can last 30+ years with minimal maintenance.",
-            "question": "How long do curbs and gutters last?"
+            "question": "How long do curbs and gutters last?",
+            "answer": "When installed correctly, they can last 30+ years with minimal maintenance."
           },
           {
-            "answer": "",
-            "question": "Can damaged curbs be repaired or must they be replaced?"
+            "question": "Can damaged curbs be repaired or must they be replaced?",
+            "answer": "It depends on the extent of the damage. Minor sections can often be repaired, while severely cracked or heaved curbs are best replaced for lasting results."
           },
           {
-            "answer": "",
-            "question": "Do curbs really affect property value? "
+            "question": "Do curbs really affect property value?",
+            "answer": "Yes. Clean, well-defined curbs and gutters improve drainage, protect your pavement, and boost curb appeal — all of which support property value."
           }
         ],
-        "title": "FAQ — Curbs & gutters",
+        "title": "FAQ — Curbs & Gutters",
         "_sourceLabel": "FAQ"
       }
     }

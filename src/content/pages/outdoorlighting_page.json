@@ -328,19 +328,23 @@
       "content": {
         "items": [
           {
-            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
-            "question": "How long does an outdoor living project take?"
+            "question": "What outdoor lighting options do you offer?",
+            "answer": "We integrate path, step, wall, and accent lighting into patios, walkways, and outdoor living spaces for both beauty and safety."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Is outdoor lighting energy efficient?",
+            "answer": "Yes. We use LED fixtures that deliver bright, warm light while keeping energy use low."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Can lighting be added to an existing patio or walkway?",
+            "answer": "In many cases, yes. We'll assess your space and recommend the best way to add lighting."
+          },
+          {
+            "question": "Do you offer financing?",
+            "answer": "Yes, we offer flexible payment options."
           }
         ],
-        "title": "FAQ - Outdoor Lighting",
+        "title": "FAQ — Outdoor Lighting",
         "_sourceLabel": "FAQ"
       }
     }

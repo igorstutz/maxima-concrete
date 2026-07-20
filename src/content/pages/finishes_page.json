@@ -52,6 +52,33 @@
       "label": "Instagram",
       "type": "instagram",
       "content": {}
+    },
+    {
+      "key": "custom_finishes_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "Which concrete finish is right for my project?",
+            "answer": "It depends on your style, budget, and where it will be used. We'll walk you through broom, smooth, stamped, colored, buff wash, and exposed aggregate options during your free consultation."
+          },
+          {
+            "question": "Are decorative finishes as durable as standard concrete?",
+            "answer": "Yes. Every finish is applied over our high-strength, fiber-reinforced mix, so you get lasting durability with the look you want."
+          },
+          {
+            "question": "Can finishes be matched to my existing concrete?",
+            "answer": "In most cases, yes. We can color- and texture-match new work to blend seamlessly with your current surfaces."
+          },
+          {
+            "question": "Do decorative finishes require special maintenance?",
+            "answer": "Just periodic cleaning and resealing every 2–3 years to keep colors and textures looking their best."
+          }
+        ],
+        "title": "FAQ — Concrete Finishes",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

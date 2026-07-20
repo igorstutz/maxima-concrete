@@ -289,19 +289,23 @@
       "content": {
         "items": [
           {
-            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
-            "question": "How long does an outdoor living project take?"
+            "question": "What types of shelters do you build?",
+            "answer": "We build pavilions, pergolas, and covered outdoor structures on durable concrete or paver foundations."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Are shelters built to withstand Ohio weather?",
+            "answer": "Yes. We use weather-resistant materials and solid foundations so your shelter lasts for years."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Can a shelter be added to my existing patio?",
+            "answer": "In many cases, yes. We'll assess your space and design a shelter that fits your layout."
+          },
+          {
+            "question": "Do you offer financing?",
+            "answer": "Yes, we offer flexible payment options."
           }
         ],
-        "title": "FAQ - Outdoor Lighting",
+        "title": "FAQ — Shelters & Pavilions",
         "_sourceLabel": "FAQ"
       }
     }

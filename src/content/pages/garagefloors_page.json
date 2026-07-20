@@ -221,23 +221,23 @@
       "content": {
         "items": [
           {
-            "answer": "",
-            "question": "How long does a concrete garage floor last?"
+            "question": "How long does a concrete garage floor last?",
+            "answer": "A properly installed garage floor can last 30 years or more, standing up to vehicles, tools, and daily wear."
           },
           {
-            "answer": "Our fiber-reinforced, 6.5-bag mix and wire mesh reinforcement minimize cracking, even in extreme freeze-thaw cycles common in Ohio.",
-            "question": "Does concrete crack in cold weather?"
+            "question": "Does concrete crack in cold weather?",
+            "answer": "Our fiber-reinforced, 6.5-bag mix and wire mesh reinforcement minimize cracking, even through harsh Ohio winters."
           },
           {
-            "answer": "",
-            "question": "Can I make my garage floor look decorative?"
+            "question": "Can I make my garage floor look decorative?",
+            "answer": "Yes. We offer sealed, colored, and finished options that resist stains and are easy to keep clean."
           },
           {
-            "answer": "",
-            "question": " How do I maintain my concrete garage floor?"
+            "question": "How do I maintain my concrete garage floor?",
+            "answer": "Sweep and clean regularly, wipe up oil or chemical spills promptly, and reseal every few years to protect the surface."
           }
         ],
-        "title": "FAQ — Patios - Concrete",
+        "title": "FAQ — Garage Floors",
         "_sourceLabel": "FAQ"
       }
     }

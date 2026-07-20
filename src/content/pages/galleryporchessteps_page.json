@@ -159,6 +159,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_galleryporchessteps_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long do concrete porches and steps last?",
+            "answer": "Built with our reinforced mix and properly sealed, porches and steps can last 30 years or more."
+          },
+          {
+            "question": "Are the steps safe and slip-resistant?",
+            "answer": "Yes. We use textured finishes and proper dimensions for safe, comfortable footing in all weather."
+          },
+          {
+            "question": "Can porches and steps be decorative?",
+            "answer": "Absolutely. We offer custom forms, colors, and stamped finishes to match your home's style."
+          },
+          {
+            "question": "Can you replace or resurface my existing porch and steps?",
+            "answer": "In many cases, yes. We'll assess your current structure and recommend the best approach."
+          }
+        ],
+        "title": "FAQ — Porches & Steps",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

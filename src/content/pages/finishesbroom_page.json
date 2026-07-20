@@ -217,19 +217,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a driveway installation take?"
+            "question": "What is a broom finish?",
+            "answer": "A broom finish is created by dragging a broom across fresh concrete, adding fine texture that improves slip resistance while keeping a clean, classic look."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Where does broom-finished concrete work best?",
+            "answer": "It's ideal for driveways, sidewalks, patios, porches, and steps — anywhere you want durable, low-maintenance traction."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Is a broom finish slippery when wet?",
+            "answer": "No. The subtle texture actually improves grip, making it one of the safest finishes for wet conditions."
+          },
+          {
+            "question": "How do I maintain broom-finished concrete?",
+            "answer": "Simple cleaning and resealing every 2–3 years keeps it looking great and extends its life."
           }
         ],
-        "title": "Frequently Asked Questions",
+        "title": "FAQ — Broom Finish",
         "_sourceLabel": "FAQ"
       }
     },

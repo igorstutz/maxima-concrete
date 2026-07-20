@@ -278,19 +278,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a driveway installation take?"
+            "question": "What is a colored broom finish?",
+            "answer": "It combines the slip-resistant texture of a broom finish with integral color, giving you a durable surface with added warmth and character."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "Will the color fade over time?",
+            "answer": "Integral color is mixed throughout the concrete and holds up well. Periodic resealing helps keep it rich and vibrant for years."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Where does a colored broom finish work best?",
+            "answer": "It's a popular choice for driveways, patios, walkways, and porches where you want both texture and a custom color."
+          },
+          {
+            "question": "How do I maintain it?",
+            "answer": "Clean as needed and reseal every 2–3 years to protect both the color and the surface."
           }
         ],
-        "title": "Frequently Asked Questions",
+        "title": "FAQ — Colored Broom Finish",
         "_sourceLabel": "FAQ"
       }
     },

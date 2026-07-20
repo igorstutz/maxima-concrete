@@ -164,6 +164,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerypavers_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long do paver installations last?",
+            "answer": "Properly installed pavers can last 30+ years, and individual pavers can be replaced if one is ever damaged."
+          },
+          {
+            "question": "Are pavers better than poured concrete?",
+            "answer": "Both are excellent. Pavers offer easy repairs and a distinctive look, while poured concrete offers a seamless surface. We'll help you choose."
+          },
+          {
+            "question": "Do pavers shift or settle over time?",
+            "answer": "With proper base preparation and edge restraints, our paver installations stay stable and level for years."
+          },
+          {
+            "question": "Can I match the paver designs shown here?",
+            "answer": "Yes. We offer a wide range of colors, patterns, and styles to create the look you want."
+          }
+        ],
+        "title": "FAQ — Pavers",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

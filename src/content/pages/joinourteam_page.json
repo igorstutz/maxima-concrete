@@ -104,6 +104,33 @@
         "eyebrow": "Why work with us",
         "description": "We invest in our crew so they can do their best work and build a life they are proud of."
       }
+    },
+    {
+      "key": "custom_joinourteam_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What positions does Maxima Concrete hire for?",
+            "answer": "We regularly hire concrete finishers, laborers, crew leaders, and office staff. Open roles are listed above on this page."
+          },
+          {
+            "question": "Do I need prior experience to apply?",
+            "answer": "Experience is a plus, but we value work ethic and reliability. We provide hands-on training to help the right people grow with us."
+          },
+          {
+            "question": "What is it like to work at Maxima?",
+            "answer": "As a family-owned company, we offer a supportive team environment, steady work, and real opportunities to build a long-term career."
+          },
+          {
+            "question": "How do I apply?",
+            "answer": "Simply fill out the form on this page or contact us directly, and our team will follow up with next steps."
+          }
+        ],
+        "title": "FAQ — Careers at Maxima",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

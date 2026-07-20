@@ -155,6 +155,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerygaragebarn_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How thick should a garage or barn floor be?",
+            "answer": "Most residential garage floors are poured 4–6 inches thick; barn pads and heavy-equipment areas may be thicker for added strength."
+          },
+          {
+            "question": "Will the floor crack in cold weather?",
+            "answer": "Our fiber-reinforced, high-strength mix and wire mesh reinforcement minimize cracking, even through Ohio winters."
+          },
+          {
+            "question": "Can garage floors be decorative?",
+            "answer": "Yes. We offer sealed, colored, and finished options that are both attractive and easy to clean."
+          },
+          {
+            "question": "Do you pour barn pads and outbuilding floors?",
+            "answer": "Absolutely. We handle garages, barns, workshops, and equipment pads of all sizes."
+          }
+        ],
+        "title": "FAQ — Garage & Barn Floors",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

@@ -14,6 +14,7 @@ import TrustGlobal from "@/components/sections/home/TrustGlobal";
 import FindWork from "@/components/sections/home/FindWork";
 import Contact from "@/components/sections/home/Contact";
 import Instagram from "@/components/sections/home/Instagram";
+import Faq from "@/components/sections/service/Faq";
 
 // type do JSON -> componente. A seção "footer" é global (renderizada no layout).
 const SECTION_COMPONENTS: Record<
@@ -34,6 +35,7 @@ const SECTION_COMPONENTS: Record<
   "find-work": FindWork,
   contact: Contact,
   instagram: Instagram,
+  faq: Faq,
 };
 
 export default function Home() {

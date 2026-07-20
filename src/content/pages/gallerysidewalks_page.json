@@ -158,6 +158,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerysidewalks_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long does a concrete sidewalk last?",
+            "answer": "With proper installation, a Maxima Concrete sidewalk can last 30 years or more with minimal maintenance."
+          },
+          {
+            "question": "Are your walkways safe when wet?",
+            "answer": "Yes. We apply broom and textured finishes that provide reliable traction in wet or icy conditions."
+          },
+          {
+            "question": "Can you match my existing driveway or patio finish?",
+            "answer": "Yes. We can color- and texture-match new walkways to your existing surfaces for a seamless look."
+          },
+          {
+            "question": "Do you handle permits for sidewalk work?",
+            "answer": "Yes. When a permit is required, we handle the paperwork and ensure the work meets local codes."
+          }
+        ],
+        "title": "FAQ — Sidewalks",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

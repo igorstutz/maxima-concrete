@@ -272,23 +272,23 @@
       "content": {
         "items": [
           {
-            "answer": "Typically 3-5 days depending on size and complexity.",
-            "question": "How long does a concrete patio last?"
+            "question": "How long will my paver patio last?",
+            "answer": "Properly installed paver patios can last 30+ years, and individual pavers can be replaced if one is ever damaged."
           },
           {
-            "answer": "Regular sealing Absolutely. We offer stamped, colored, broom-finished, and exposed aggregate designs tailored to your vision. 2-3 years and prompt crack repair.",
-            "question": "Can I customize the color and texture?"
+            "question": "Can I customize the color, pattern, and style?",
+            "answer": "Yes. We offer a wide range of paver colors, textures, and patterns to create a truly custom patio."
           },
           {
-            "answer": "",
-            "question": "How soon can I use my patio after installation?"
+            "question": "Do pavers shift or settle over time?",
+            "answer": "With proper base preparation and edge restraints, our paver patios stay stable and level for years."
           },
           {
-            "answer": "",
-            "question": "Do you offer free consultations?"
+            "question": "Do you offer free consultations?",
+            "answer": "Yes — we provide free on-site consultations and design estimates anywhere in Central Ohio."
           }
         ],
-        "title": "FAQ — Patios",
+        "title": "FAQ — Paver Patios",
         "_sourceLabel": "FAQ"
       }
     }

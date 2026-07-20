@@ -280,23 +280,27 @@
       "content": {
         "items": [
           {
-            "answer": "We typically use a 6.5-bag (4500 PSI) fiber-reinforced mix with 10-gauge wire mesh for strength, crack control, and long-term durability.",
-            "question": "What type of concrete does Maxima use for commercial projects?"
+            "question": "What types of commercial pools do you build?",
+            "answer": "We design and build everything from small leisure and hotel pools to large-scale commercial and community pools, handling the full turnkey process."
           },
           {
-            "answer": "Yes. We manage new construction, additions, and ADA-compliant remodels, ensuring consistency across all phases.",
-            "question": "Do you handle both new builds and renovations?"
+            "question": "Do you manage the entire pool project?",
+            "answer": "Yes. We handle everything from concept and design to excavation and expert concrete construction, giving you a single, accountable team from start to finish."
           },
           {
-            "answer": "Absolutely. Our crews are trained to read and execute from blueprints, collaborating seamlessly with general contractors and engineers.",
-            "question": "Can you build to architectural or engineered plans?"
+            "question": "Are your commercial pools built to code and safety standards?",
+            "answer": "Absolutely. We build to all applicable commercial and health-department codes and manage the required permits and inspections."
           },
           {
-            "answer": "We serve Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties — and select neighboring regions across Central Ohio.",
-            "question": "What areas do you serve?"
+            "question": "How long does a commercial pool project take?",
+            "answer": "Timelines vary with size and complexity. We provide a clear schedule during your consultation and keep the project on track from start to finish."
+          },
+          {
+            "question": "What areas do you serve?",
+            "answer": "We serve Columbus, Delaware, and communities throughout Central Ohio."
           }
         ],
-        "title": "FAQ — Commercial Concrete",
+        "title": "FAQ — Commercial Pools",
         "_sourceLabel": "FAQ"
       }
     }

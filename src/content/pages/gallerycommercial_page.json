@@ -155,6 +155,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerycommercial_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What types of commercial concrete work do you handle?",
+            "answer": "Parking lots, sidewalks, ADA ramps, loading areas, foundations, and more — for new builds and renovations alike."
+          },
+          {
+            "question": "Can you work from architectural or engineered plans?",
+            "answer": "Yes. Our crews are trained to read and execute from blueprints and to collaborate with your team."
+          },
+          {
+            "question": "Do you minimize disruption to my business?",
+            "answer": "We schedule around your operations and work efficiently to keep downtime to a minimum."
+          },
+          {
+            "question": "How do I request a commercial estimate?",
+            "answer": "Contact us with your project details and we'll provide a free, detailed estimate."
+          }
+        ],
+        "title": "FAQ — Commercial Projects",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

@@ -147,6 +147,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerysportcourt_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What sports can a concrete court be used for?",
+            "answer": "Basketball, pickleball, tennis, and multi-sport play — we build courts sized and finished for your game."
+          },
+          {
+            "question": "How thick is a concrete sport court?",
+            "answer": "Most courts are poured 4–5 inches thick with reinforcement to handle years of active use."
+          },
+          {
+            "question": "Can the court be painted or lined?",
+            "answer": "Yes. We can coordinate colored coatings and game lines to finish your court for play."
+          },
+          {
+            "question": "Do you offer free sport court estimates?",
+            "answer": "Yes. We provide free consultations and estimates throughout Central Ohio."
+          }
+        ],
+        "title": "FAQ — Sport Courts",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

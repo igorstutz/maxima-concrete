@@ -42,6 +42,33 @@
         "badgeText": "Project Map",
         "backgroundImage": ""
       }
+    },
+    {
+      "key": "custom_projectmap_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What does the project map show?",
+            "answer": "It highlights real Maxima Concrete projects completed across Central Ohio, so you can see our work near you."
+          },
+          {
+            "question": "Have you worked in my neighborhood?",
+            "answer": "With 9,000+ projects across the region, chances are good. Explore the map or contact us to find work near you."
+          },
+          {
+            "question": "Can I see a completed project in person?",
+            "answer": "In many cases we can share nearby references. Just ask us during your free consultation."
+          },
+          {
+            "question": "How do I start my own project?",
+            "answer": "Contact us for a free consultation and estimate, and we'll add your project to the map."
+          }
+        ],
+        "title": "FAQ — Our Projects",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

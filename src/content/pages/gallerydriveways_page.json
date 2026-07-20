@@ -155,6 +155,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_gallerydriveways_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "How long will my concrete driveway last?",
+            "answer": "With proper installation and maintenance, a Maxima Concrete driveway can last 30 years or more."
+          },
+          {
+            "question": "Can I get a decorative driveway like the ones shown?",
+            "answer": "Yes. We offer stamped, colored, bordered, and exposed aggregate driveways tailored to your home."
+          },
+          {
+            "question": "How long does a driveway installation take?",
+            "answer": "Most driveways are completed in 3–5 days, depending on size and site conditions."
+          },
+          {
+            "question": "Do you offer free driveway estimates?",
+            "answer": "Yes. We provide free on-site consultations and estimates across Central Ohio."
+          }
+        ],
+        "title": "FAQ — Driveways",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

@@ -302,16 +302,16 @@
       "content": {
         "items": [
           {
-            "answer": "It depends on use — residential porches are typically 4–6 inches, while commercial or heavy-load porches may range from 6–12 inches or more.",
-            "question": "How thick should a porch be?"
+            "question": "How thick should a porch be?",
+            "answer": "It depends on use — residential porches are typically 4–6 inches, while commercial or heavy-load porches may range from 6–12 inches or more."
           },
           {
-            "answer": "",
-            "question": "How long does it take to cure?"
+            "question": "How long does it take to cure?",
+            "answer": "Concrete is usually ready for foot traffic in 24–48 hours and fully cures in about 28 days, though normal use is fine well before then."
           },
           {
-            "answer": "",
-            "question": "What can concrete porches be used for?"
+            "question": "What can concrete porches be used for?",
+            "answer": "A concrete porch creates a durable, welcoming entryway, an outdoor seating area, and a low-maintenance surface that boosts curb appeal and resale value."
           }
         ],
         "title": "FAQ — Porches",

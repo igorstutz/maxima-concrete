@@ -266,16 +266,16 @@
       "content": {
         "items": [
           {
-            "answer": "",
-            "question": "What’s the difference between an approach and a driveway?"
+            "question": "What's the difference between an approach and a driveway?",
+            "answer": "The approach is the section that connects your driveway to the public road, often within the city right-of-way, so it must meet specific municipal standards that Maxima handles for you."
           },
           {
-            "answer": " Yes — Ohio municipalities require a Right-of-Way permit, which Maxima Concrete handles entirely for you.",
-            "question": " Do I need a permit for a approach?"
+            "question": "Do I need a permit for an approach?",
+            "answer": "Yes — Ohio municipalities require a Right-of-Way permit for work in the public right-of-way. Maxima Concrete handles the entire permitting process for you."
           },
           {
-            "answer": "",
-            "question": " How long does installation take?"
+            "question": "How long does installation take?",
+            "answer": "Most approaches are completed in 1–3 days, though curing and any required inspections may add a little time before use."
           }
         ],
         "title": "FAQ — Approaches",

@@ -146,6 +146,33 @@
           -82.9988
         ]
       }
+    },
+    {
+      "key": "custom_finishesbuffwash_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What's the difference between buff wash and exposed aggregate?",
+            "answer": "Both reveal the decorative stone within the concrete, but buff wash removes only the top surface for a subtle, sandy texture, while exposed aggregate exposes more stone for a bolder, pebbled look."
+          },
+          {
+            "question": "Is exposed aggregate slip-resistant?",
+            "answer": "Yes. The textured surface provides excellent traction, making it a popular, safe choice for pool decks, patios, and walkways."
+          },
+          {
+            "question": "How do I maintain a buff wash or exposed aggregate surface?",
+            "answer": "Simple cleaning and resealing every 2–3 years keeps the finish vibrant and protects it from stains and weather."
+          },
+          {
+            "question": "Can I choose the color and stone?",
+            "answer": "Absolutely. We offer a range of aggregate types and integral colors so your finish complements your home and landscape."
+          }
+        ],
+        "title": "FAQ — Buff Wash & Exposed Aggregate",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }

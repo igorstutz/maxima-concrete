@@ -100,6 +100,33 @@
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
       }
+    },
+    {
+      "key": "custom_areaswe_serve_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "What areas does Maxima Concrete serve?",
+            "answer": "We serve Columbus, Delaware, and communities throughout Central Ohio, including Franklin, Union, Licking, and Fairfield Counties."
+          },
+          {
+            "question": "Do you charge for travel within your service area?",
+            "answer": "No. Consultations and estimates are free anywhere in our Central Ohio service area."
+          },
+          {
+            "question": "Is my city covered?",
+            "answer": "If you're near Columbus or Delaware, we likely serve your area. Contact us with your address and we'll confirm right away."
+          },
+          {
+            "question": "How soon can you start a project in my area?",
+            "answer": "Scheduling depends on the season and project size. Reach out early to secure your spot, especially for spring and summer work."
+          }
+        ],
+        "title": "FAQ — Service Areas",
+        "_sourceLabel": "FAQ"
+      }
     }
   ]
 }
