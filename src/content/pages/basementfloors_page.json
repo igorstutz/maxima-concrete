@@ -25,7 +25,7 @@
       "content": {
         "title": "Why choose a Basement floor?",
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "subtitle": "Basement floors are often overlooked, yet they deliver exceptional strength, moisture resistance, and design flexibility. ",
         "imageLarge": "/images/cms/uploads/1782842707861-nbz5n.webp",
         "paragraph1": "They handle heavy foot traffic and humidity with ease and can be finished to match any style—from sleek and modern to warm and rustic.",
@@ -117,12 +117,6 @@
             "image": "/images/cms/uploads/1773705327125-wtqw2.webp",
             "title": "Colored / Stained:",
             "description": "Custom tones to add warmth and character."
-          },
-          {
-            "link": "#contact",
-            "image": "/images/cms/uploads/1773705341337-ob0pg.webp",
-            "title": "Epoxy / Polyaspartic:",
-            "description": "Chemical and abrasion protection—ideal for hobby areas, gyms, or workshops. "
           }
         ],
         "description": "Pro tip: We can combine a 6.5-bag mix, fiber mesh, and 10-gauge wire mesh (where applicable) for added reinforcement and crack control, along with best-practice sub-base prep and a properly specified vapor barrier.",
@@ -132,35 +126,37 @@
     {
       "key": "custom_1772599576703_8xuzco",
       "label": "Maxima Advantage",
-      "type": "maxima-advantage",
+      "type": "why-choose",
       "content": {
-        "title": "Why Choose Maxima Slabs",
+        "title": "Why Choose Maxima Basement Floors",
+        "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
         "benefits": [
           {
-            "text": "for superior load-bearing capacity.",
-            "boldText": "6.5-bag high-strength concrete mix"
+            "title": "6.5-bag high-strength concrete mix",
+            "iconType": "package",
+            "description": "for superior load-bearing capacity."
           },
           {
-            "text": " to reduce cracking and improve toughness.",
-            "boldText": "Fiber mesh reinforcement"
+            "title": "Fiber mesh reinforcement",
+            "iconType": "layers",
+            "description": "to reduce cracking and improve toughness."
           },
           {
-            "text": "(where applicable) for structural integrity.",
-            "boldText": "10-gauge wire mesh"
+            "title": "10-gauge wire mesh",
+            "iconType": "grid",
+            "description": "(where applicable) for structural integrity."
           },
           {
-            "text": "for a flawless, even surface.",
-            "boldText": "Accurate leveling  & finishing"
+            "title": "Accurate leveling  & finishing",
+            "iconType": "clipboard",
+            "description": "for a flawless, even surface."
           },
           {
-            "text": "to prevent dampness or surface degradation.",
-            "boldText": "Moisture control & sealing"
+            "title": "Moisture control & sealing",
+            "iconType": "package",
+            "description": "to prevent dampness or surface degradation."
           }
-        ],
-        "pillText": "We manage every step — from site preparation and form setup to pouring, curing, and cleanup — ensuring your slab is perfectly installed and ready for use.",
-        "rightTitle": "Our broom-finished projects are built with:",
-        "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
-        "_sourceLabel": "Maxima Advantage"
+        ]
       }
     },
     {
@@ -181,7 +177,9 @@
           "/images/cms/uploads/1782842681179-5bxsik.webp"
         ],
         "description": "Browse our gallery and imagine the possibilities for your home.",
-        "_sourceLabel": "Inspiration"
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Inspired? Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {
@@ -309,6 +307,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

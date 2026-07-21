@@ -25,7 +25,7 @@
       "content": {
         "title": "What Is an Approach?",
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "subtitle": "An approach (also known as a driveway apron) is the transitional area connecting your driveway or sidewalk to the street curb, ensuring a smooth and safe passage for vehicles and pedestrians alike.",
         "imageLarge": "/images/cms/uploads/1782842479430-xhtvtj.webp",
         "paragraph1": "It’s more than just a practical element — it’s the first impression of your property. A clean, well-finished approach enhances your curb appeal, complements your driveway, and gives your home’s entrance a polished, cohesive look.\n\nSo the next time you pull into your driveway, take a moment to appreciate the unsung hero beneath your tires — your approach, quietly doing its job.",
@@ -128,8 +128,8 @@
       "type": "why-maxima-service",
       "content": {
         "title": "Paver Approaches That Make \na Lasting First Impression",
-        "ctaLink": "#contact",
-        "ctaText": "Design My Paver Steps",
+        "ctaLink": "/finishes/paver",
+        "ctaText": "Explore Paver Options",
         "eyebrow": " ",
         "benefits": [],
         "description": " Your approach is more than a transition from street to driveway — it’s the first visual handshake your home offers. Replacing a standard concrete approach with pavers instantly elevates curb appeal, transforming cracked, dull surfaces into a refined and welcoming entry.\n\nAt Maxima, we design paver approaches using rich textures, clean lines, and durable materials that balance beauty with performance. From timeless natural stone looks to modern concrete pavers with defined borders, every project is crafted to complement your home’s architecture and withstand Central Ohio’s climate. \n\nBeyond aesthetics, paver approaches provide superior drainage, reducing standing water and protecting your foundation. Their modular design also allows for easy repairs and long-term flexibility, ensuring your investment looks great for years to come.\n\nFunctional. Elegant. Built to Last. Upgrade your approach with a solution that adds value and character from the very first glance.",
@@ -154,7 +154,9 @@
           "/images/cms/uploads/1782842545266-lmsrqv.webp"
         ],
         "description": "Browse our gallery and imagine the possibilities for your home.",
-        "_sourceLabel": "Inspiration"
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Inspired? Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {
@@ -278,6 +280,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

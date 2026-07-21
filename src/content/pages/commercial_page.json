@@ -102,38 +102,6 @@
       }
     },
     {
-      "key": "custom_1778129826301_o9qw6",
-      "label": "Related Services",
-      "type": "related-services",
-      "content": {
-        "title": "Related Services",
-        "services": [
-          {
-            "link": "/finishes/stamped-colored",
-            "label": "Stamped & Colored Concrete"
-          },
-          {
-            "link": "/finishes/buff-wash-exposed",
-            "label": "Exposed Aggregate Concrete"
-          },
-          {
-            "link": "/finishes/colored-broom",
-            "label": "Buff Wash Concrete"
-          },
-          {
-            "link": "/services/driveways/driveways-concrete",
-            "label": "Driveways"
-          },
-          {
-            "link": "/services/patios/patios-concrete",
-            "label": "Patios"
-          }
-        ],
-        "_sourceLabel": "Related Services",
-        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp_copy_1773686623753_jyx1d_copy_1778128454927_wiiwi_copy_1778128787698_7wu0dt_copy_1778129828013_m6lkbh.webp"
-      }
-    },
-    {
       "key": "commercial_page_why_business",
       "label": "Why Businesses Choose",
       "type": "commercial-why-business",
@@ -257,6 +225,38 @@
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",
         "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_1778129826301_o9qw6",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate Concrete"
+          },
+          {
+            "link": "/finishes/colored-broom",
+            "label": "Buff Wash Concrete"
+          },
+          {
+            "link": "/services/driveways/driveways-concrete",
+            "label": "Driveways"
+          },
+          {
+            "link": "/services/patios/patios-concrete",
+            "label": "Patios"
+          }
+        ],
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp_copy_1773686623753_jyx1d_copy_1778128454927_wiiwi_copy_1778128787698_7wu0dt_copy_1778129828013_m6lkbh.webp"
       }
     },
     {

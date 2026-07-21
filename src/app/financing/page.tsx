@@ -85,10 +85,10 @@ function Divider({ label }: { label: string }) {
     <div className="bg-[hsl(218_45%_8%)]">
       <Container className="flex items-center gap-6 py-4 md:py-5">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-white/5" />
-        <div className="flex items-center gap-2 text-[hsl(180_85%_70%)]">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(180_85%_70%)]" />
+        <div className="flex items-center gap-2 text-[hsl(210_100%_70%)]">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_70%)]" />
           <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">{label}</span>
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(180_85%_70%)]" />
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_70%)]" />
         </div>
         <div className="h-px flex-1 bg-gradient-to-l from-transparent via-white/15 to-white/5" />
       </Container>
@@ -126,7 +126,7 @@ export default function Page() {
           <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-[hsl(218_45%_8%)] via-[hsl(218_45%_8%)]/70 to-transparent" />
           {/* Orbes de luz */}
           <div
-            className="absolute right-[-5%] top-[-10%] h-[600px] w-[600px] animate-pulse rounded-full bg-[radial-gradient(circle,hsl(195_100%_55%/0.35),transparent_65%)] blur-2xl"
+            className="absolute right-[-5%] top-[-10%] h-[600px] w-[600px] animate-pulse rounded-full bg-[radial-gradient(circle,hsl(210_100%_55%/0.35),transparent_65%)] blur-2xl"
             style={{ animationDuration: "6s" }}
           />
           <div className="absolute bottom-[-15%] left-[5%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,hsl(28_100%_55%/0.22),transparent_70%)] blur-3xl" />
@@ -135,7 +135,7 @@ export default function Page() {
             className="pointer-events-none absolute inset-0 opacity-[0.22]"
             style={{
               backgroundImage:
-                "linear-gradient(hsl(195 100% 85% / 1) 1px, transparent 1px), linear-gradient(90deg, hsl(195 100% 85% / 1) 1px, transparent 1px)",
+                "linear-gradient(hsl(210 100% 85% / 1) 1px, transparent 1px), linear-gradient(90deg, hsl(210 100% 85% / 1) 1px, transparent 1px)",
               backgroundSize: "64px 64px",
               maskImage: "radial-gradient(ellipse 80% 70% at 60% 40%, black 20%, transparent 80%)",
               WebkitMaskImage:
@@ -147,7 +147,7 @@ export default function Page() {
             className="pointer-events-none absolute inset-0 opacity-[0.12]"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(45deg, transparent 0 22px, hsl(195 100% 75% / 0.5) 22px 23px)",
+                "repeating-linear-gradient(45deg, transparent 0 22px, hsl(210 100% 75% / 0.5) 22px 23px)",
               maskImage: "linear-gradient(115deg, transparent 30%, black 70%, transparent 100%)",
               WebkitMaskImage:
                 "linear-gradient(115deg, transparent 30%, black 70%, transparent 100%)",
@@ -157,7 +157,7 @@ export default function Page() {
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.25]"
             style={{
-              backgroundImage: "radial-gradient(hsl(195 100% 85% / 0.6) 1px, transparent 1.5px)",
+              backgroundImage: "radial-gradient(hsl(210 100% 85% / 0.6) 1px, transparent 1.5px)",
               backgroundSize: "22px 22px",
               maskImage: "radial-gradient(circle at 15% 25%, black 0%, transparent 35%)",
               WebkitMaskImage: "radial-gradient(circle at 15% 25%, black 0%, transparent 35%)",
@@ -176,34 +176,37 @@ export default function Page() {
         <Container className="relative z-10">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-[0_4px_30px_-10px_hsl(195_100%_60%/0.6)] backdrop-blur-md">
+              <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-[0_4px_30px_-10px_hsl(210_100%_60%/0.6)] backdrop-blur-md">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(180_85%_60%)] opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(180_85%_60%)]" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(210_100%_60%)] opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(210_100%_60%)]" />
                 </span>
-                <CreditCard className="h-4 w-4 text-[hsl(195_100%_75%)]" />
-                Homeowner Financing · Ohio
+                <CreditCard className="h-4 w-4 text-[hsl(210_100%_75%)]" />
+                Financing by Hearth · Ohio
               </span>
               <h1 className="mt-6 text-4xl font-bold leading-[1.02] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)] md:text-5xl lg:text-[68px]">
                 Build Now.
                 <br />
-                <span className="bg-gradient-to-r from-[hsl(195_100%_75%)] via-[hsl(180_90%_72%)] to-[hsl(160_85%_70%)] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[hsl(210_100%_75%)] via-[hsl(210_100%_72%)] to-[hsl(205_90%_70%)] bg-clip-text text-transparent">
                   Pay Over Time.
                 </span>
               </h1>
               <p className="mt-7 max-w-2xl text-lg leading-relaxed text-white/85 md:text-xl">
                 Affordable monthly payments on your concrete project — driveways, patios, pool
-                decks and outdoor living. Get pre-qualified in minutes with no impact to your
-                credit.
+                decks and outdoor living. Through our lending partner{" "}
+                <strong className="font-semibold text-white">Hearth</strong>, get pre-qualified in
+                minutes with no impact to your credit.
               </p>
               <div className="mt-9 flex flex-wrap gap-3">
-                <Link
-                  href="/contact-us/#contact"
+                <a
+                  href="https://app.gethearth.com/financing/19313/27602/prequalify?utm_campaign=19313&utm_content=white&utm_medium=contractor-website&utm_source=contractor&utm_term=27602"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="gradient-navy group inline-flex items-center gap-2 rounded-lg px-7 py-4 font-semibold text-white transition-all hover:-translate-y-0.5 hover:shadow-[0_6px_18px_-8px_rgba(13,93,147,0.45)]"
                 >
                   Get Pre-Qualified
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
-                </Link>
+                </a>
                 <a
                   href="tel:+16142000731"
                   className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-7 py-4 font-semibold text-white backdrop-blur-md transition hover:bg-white/10"
@@ -215,13 +218,13 @@ export default function Page() {
               {/* Faixa de confiança */}
               <div className="mt-12 flex flex-wrap gap-x-8 gap-y-4 text-sm text-white/75">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[hsl(180_85%_60%)]" /> Soft credit check
+                  <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_60%)]" /> Soft credit check
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[hsl(180_85%_60%)]" /> Decision in 60s
+                  <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_60%)]" /> Decision in 60s
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 className="h-4 w-4 text-[hsl(180_85%_60%)]" /> $0 down options
+                  <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_60%)]" /> $0 down options
                 </div>
               </div>
             </div>
@@ -229,10 +232,10 @@ export default function Page() {
             {/* Cartão de simulação (vidro) */}
             <div className="relative hidden lg:block">
               <div
-                className="absolute -inset-6 animate-pulse rounded-3xl bg-gradient-to-br from-[hsl(195_100%_56%)]/40 via-[hsl(209_100%_50%)]/20 to-transparent blur-3xl"
+                className="absolute -inset-6 animate-pulse rounded-3xl bg-gradient-to-br from-[hsl(210_100%_56%)]/40 via-[hsl(209_100%_50%)]/20 to-transparent blur-3xl"
                 style={{ animationDuration: "5s" }}
               />
-              <div className="absolute -left-5 -top-5 z-10 rotate-[-6deg] rounded-full bg-[hsl(180_85%_55%)] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-[hsl(218_60%_8%)] shadow-lg shadow-[hsl(180_85%_55%)]/40">
+              <div className="absolute -left-5 -top-5 z-10 rotate-[-6deg] rounded-full bg-[hsl(210_100%_55%)] px-3 py-1.5 text-[11px] font-bold uppercase tracking-wider text-[hsl(218_60%_8%)] shadow-lg shadow-[hsl(210_100%_55%)]/40">
                 From 7.99% APR
               </div>
               <div className="relative rounded-3xl border border-white/15 bg-white/[0.07] p-8 shadow-2xl backdrop-blur-2xl">
@@ -240,7 +243,7 @@ export default function Page() {
                   <span className="text-xs font-semibold uppercase tracking-[0.2em] text-white/60">
                     Sample Payment
                   </span>
-                  <BadgePercent className="h-5 w-5 text-[hsl(180_85%_60%)]" />
+                  <BadgePercent className="h-5 w-5 text-[hsl(210_100%_60%)]" />
                 </div>
                 <div className="mt-6">
                   <div className="text-5xl font-bold text-white">
@@ -260,12 +263,14 @@ export default function Page() {
                     <div className="mt-1 text-lg font-bold text-white">Up to 144 mo</div>
                   </div>
                 </div>
-                <Link
-                  href="/contact-us/#contact"
+                <a
+                  href="https://app.gethearth.com/financing/19313/27602/prequalify?utm_campaign=19313&utm_content=white&utm_medium=contractor-website&utm_source=contractor&utm_term=27602"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="gradient-navy mt-6 inline-flex w-full items-center justify-center gap-2 rounded-lg px-5 py-3 font-semibold text-white transition hover:opacity-90"
                 >
                   Check My Rate
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -281,12 +286,12 @@ export default function Page() {
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16">
             {/* Coluna esquerda — título */}
             <div className="space-y-7 lg:col-span-5">
-              <div className="inline-flex items-center gap-2 rounded-full border border-[hsl(180_85%_55%)]/30 bg-[hsl(180_85%_55%)]/10 px-4 py-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-[hsl(210_100%_55%)]/30 bg-[hsl(210_100%_55%)]/10 px-4 py-2">
                 <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(180_85%_60%)] opacity-75" />
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(180_85%_60%)]" />
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(210_100%_60%)] opacity-75" />
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(210_100%_60%)]" />
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(180_85%_70%)]">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(210_100%_70%)]">
                   Rates from 7.99% APR
                 </span>
               </div>
@@ -294,7 +299,7 @@ export default function Page() {
               <h2 className="text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl">
                 How it
                 <br />
-                <span className="bg-gradient-to-r from-[hsl(195_100%_75%)] to-[hsl(209_100%_60%)] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[hsl(210_100%_75%)] to-[hsl(209_100%_60%)] bg-clip-text text-transparent">
                   works
                 </span>
               </h2>
@@ -307,7 +312,7 @@ export default function Page() {
 
             {/* Coluna direita — passos */}
             <div className="relative lg:col-span-7">
-              <div className="absolute bottom-0 left-8 top-0 hidden w-px bg-gradient-to-b from-[hsl(180_85%_55%)]/50 via-[hsl(180_85%_55%)]/20 to-transparent md:block" />
+              <div className="absolute bottom-0 left-8 top-0 hidden w-px bg-gradient-to-b from-[hsl(210_100%_55%)]/50 via-[hsl(210_100%_55%)]/20 to-transparent md:block" />
 
               <div className="space-y-14">
                 {steps.map((s, i) => {
@@ -317,8 +322,8 @@ export default function Page() {
                       <div
                         className={`relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl text-lg font-bold transition-all duration-300 ${
                           isLast
-                            ? "bg-gradient-to-br from-[hsl(195_100%_55%)] to-[hsl(180_85%_50%)] text-[hsl(218_60%_8%)] shadow-[0_0_30px_rgba(34,211,238,0.35)]"
-                            : "border border-[hsl(180_85%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(180_85%_70%)] shadow-[0_0_20px_rgba(34,211,238,0.18)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+                            ? "bg-gradient-to-br from-[hsl(210_100%_55%)] to-[hsl(210_100%_50%)] text-[hsl(218_60%_8%)] shadow-[0_0_30px_rgba(34,211,238,0.35)]"
+                            : "border border-[hsl(210_100%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(210_100%_70%)] shadow-[0_0_20px_rgba(34,211,238,0.18)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
                         }`}
                       >
                         0{i + 1}
@@ -345,7 +350,7 @@ export default function Page() {
 
       {/* FEATURE QUOTE */}
       <section className="relative overflow-hidden bg-[hsl(218_45%_8%)] pb-20 pt-6 md:pb-28 md:pt-8">
-        <div className="pointer-events-none absolute left-0 top-1/2 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[hsl(180_85%_50%)]/10 blur-3xl" />
+        <div className="pointer-events-none absolute left-0 top-1/2 h-[450px] w-[450px] -translate-y-1/2 rounded-full bg-[hsl(210_100%_50%)]/10 blur-3xl" />
         <Container className="relative">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.1fr_1fr] lg:gap-14">
             {/* Imagem com chip flutuante */}
@@ -371,7 +376,7 @@ export default function Page() {
                     </p>
                     <p className="mt-1 text-lg font-bold text-white">The Johnson Family</p>
                   </div>
-                  <p className="font-mono text-xs text-[hsl(180_85%_60%)]">Columbus, OH</p>
+                  <p className="font-mono text-xs text-[hsl(210_100%_60%)]">Columbus, OH</p>
                 </div>
               </div>
               {/* Cartão "recibo" flutuante */}
@@ -380,7 +385,7 @@ export default function Page() {
                   <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/50">
                     Monthly
                   </span>
-                  <Wallet className="h-4 w-4 text-[hsl(180_85%_60%)]" />
+                  <Wallet className="h-4 w-4 text-[hsl(210_100%_60%)]" />
                 </div>
                 <div className="mt-3 text-3xl font-black text-white">
                   $189<span className="text-sm font-medium text-white/50">/mo</span>
@@ -394,12 +399,12 @@ export default function Page() {
 
             {/* Depoimento editorial */}
             <div className="relative">
-              <span className="font-serif text-7xl leading-none text-[hsl(180_85%_60%)]/40 md:text-8xl">
+              <span className="font-serif text-7xl leading-none text-[hsl(210_100%_60%)]/40 md:text-8xl">
                 &ldquo;
               </span>
               <p className="-mt-6 text-2xl font-bold leading-[1.2] text-white md:text-3xl lg:text-[2rem]">
                 We didn&apos;t have to wait years to{" "}
-                <span className="font-serif italic text-[hsl(180_85%_70%)]">finally</span> redo
+                <span className="font-serif italic text-[hsl(210_100%_70%)]">finally</span> redo
                 our driveway.
               </p>
               <p className="mt-6 leading-relaxed text-white/65">
@@ -407,7 +412,7 @@ export default function Page() {
                 started the next week. No drama, no hidden fees — just our new driveway.
               </p>
               <div className="mt-8 flex items-center gap-4 border-t border-white/10 pt-6">
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[hsl(209_100%_45%)] to-[hsl(180_85%_45%)] text-lg font-bold text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-[hsl(209_100%_45%)] to-[hsl(210_100%_45%)] text-lg font-bold text-white">
                   J
                 </div>
                 <div>
@@ -428,8 +433,8 @@ export default function Page() {
         <Container className="relative">
           <div className="max-w-3xl">
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 bg-[hsl(180_85%_60%)]/60" />
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(180_85%_60%)]">
+              <span className="h-px w-10 bg-[hsl(210_100%_60%)]/60" />
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
                 Why finance with Maxima
               </p>
             </div>
@@ -444,10 +449,10 @@ export default function Page() {
           {/* Bento grid */}
           <div className="mt-14 grid auto-rows-[180px] grid-cols-2 gap-4 md:grid-cols-4">
             {/* Tile principal 2x2 */}
-            <div className="relative col-span-2 row-span-2 flex flex-col justify-between overflow-hidden rounded-2xl border border-[hsl(180_85%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8">
-              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(180_85%_50%)]/15 blur-3xl" />
+            <div className="relative col-span-2 row-span-2 flex flex-col justify-between overflow-hidden rounded-2xl border border-[hsl(210_100%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8">
+              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-[hsl(180_85%_70%)]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
                   <Zap className="h-3 w-3" /> Most chosen
                 </div>
                 <p className="mt-6 text-6xl font-black leading-none text-white md:text-7xl">
@@ -474,10 +479,10 @@ export default function Page() {
             {highlights.map((h) => (
               <div
                 key={h.title}
-                className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(180_85%_60%)]/50"
+                className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(210_100%_60%)]/50"
               >
-                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(180_85%_50%)]/20">
-                  <h.icon className="h-4 w-4 text-[hsl(180_85%_70%)]" />
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(210_100%_50%)]/20">
+                  <h.icon className="h-4 w-4 text-[hsl(210_100%_70%)]" />
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-white">{h.title}</h3>
@@ -512,8 +517,8 @@ export default function Page() {
         <Container className="relative">
           <div className="max-w-[1000px]">
             <div className="flex items-center gap-3">
-              <span className="h-px w-10 bg-[hsl(180_85%_60%)]/60" />
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(180_85%_60%)]">
+              <span className="h-px w-10 bg-[hsl(210_100%_60%)]/60" />
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
                 Frequently asked
               </p>
             </div>

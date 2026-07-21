@@ -26,7 +26,7 @@
         "image": "/images/cms/uploads/1784037460087-w6tuvq.webp",
         "title": "Transform Your Backyard Into a Functional and Elegant Retreat",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "description": "Transform your backyard into a <b>custom outdoor living destination</b> designed around the way you live. From outdoor kitchens and fire features to pergolas, pavilions, lighting, and entertainment areas, Maxima Concrete provides complete <b>design-build solutions</b> that blend beauty, comfort, and functionality. Our experienced in-house team handles every step of the process, creating outdoor spaces that enhance your lifestyle and add lasting value to your home."
       }
     },
@@ -80,8 +80,8 @@
       "content": {
         "image": "/images/cms/uploads/1782842998468-p6ft3.webp",
         "title": "Enjoy the full experience of outdoor cooking and dining with a <b>custom concrete outdoor kitchen.</b>",
-        "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Kitchen",
+        "ctaLink": "/services/fire-pits",
+        "ctaText": "Explore Fire Pits",
         "options": [
           "Built-in grills and wood-fired pizza ovens",
           "Outdoor sinks with hot and cold water",
@@ -120,8 +120,8 @@
           }
         ],
         "title": "Lighting, Shelters &\nYear-Round Comfort",
-        "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Lightning",
+        "ctaLink": "/services/fireplaces",
+        "ctaText": "Explore Fireplaces",
         "rightTitle": "Your Complete\nOutdoor Living Partner",
         "description": "A beautiful outdoor space should shine day and night. Our outdoor lighting systems combine function and style, illuminating paths, patios, and architecture with energy-efficient solutions.<br><br>\n\nWe also design <b>shelters and shade structures</b> — pergolas, gazebos, and pavilions — that enhance comfort while protecting against the elements. Each is engineered for durability and crafted to complement your home's design.",
         "rightDescription": "Extend the beauty and functionality of your outdoor space long after the sun goes down. Professionally designed outdoor lighting enhances safety, improves visibility, and creates a warm, inviting atmosphere for entertaining and relaxing. Our custom lighting solutions highlight architectural features, walkways, patios, landscaping, and outdoor living areas while adding security and curb appeal. Whether you're looking for subtle accent lighting or a complete outdoor illumination system, we create solutions tailored to your property and lifestyle.\n\nOur process is simple:"
@@ -134,8 +134,8 @@
       "content": {
         "image": "/images/cms/uploads/1784042530315-x2p22m.webp",
         "title": "Start Your Outdoor\nLiving Journey Today",
-        "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaLink": "/gallery",
+        "ctaText": "Explore Our Gallery",
         "description": "Ready to elevate your home with a custom-designed outdoor space?\n\nOur team is here to turn your vision into a reality that lasts for years to come.",
         "backgroundImage": "/images/cms/uploads/1784042537489-uho6q.webp"
       }
@@ -246,6 +246,17 @@
       }
     },
     {
+      "key": "custom_1773599863080_3ji93d",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
       "key": "custom_1773590987517_5ivzxx",
       "label": "FAQ",
       "type": "faq",
@@ -266,17 +277,6 @@
         ],
         "title": "FAQ — Outdoor Living",
         "_sourceLabel": "FAQ"
-      }
-    },
-    {
-      "key": "custom_1773599863080_3ji93d",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     }
   ]

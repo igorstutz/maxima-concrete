@@ -62,6 +62,20 @@ export default function Hero({ content }: { content: Record<string, any> }) {
             <p className="mt-3 whitespace-pre-line text-[clamp(18px,2.5vw,24px)] font-normal leading-[130%] tracking-[-0.04em] text-white">
               {subtitle}
             </p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="#find-work"
+                className="inline-flex items-center gap-2 rounded-[10px] border border-white/40 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+              >
+                Find Our Work Near You
+              </a>
+              <a
+                href="#contact"
+                className="gradient-navy inline-flex items-center gap-2 rounded-[10px] px-6 py-3 text-sm font-medium text-white shadow-md transition-opacity hover:opacity-90"
+              >
+                Contact Us
+              </a>
+            </div>
           </div>
         </Container>
       </div>
