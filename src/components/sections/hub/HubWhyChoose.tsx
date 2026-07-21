@@ -27,7 +27,7 @@ export default function HubWhyChoose({ content }: { content: Record<string, any>
   return (
     <section className="bg-[linear-gradient(100deg,#04121D_0%,var(--color-ocean)_100%)]">
       <Container className="py-14 md:py-20">
-        <div className="flex flex-col items-start gap-10 lg:flex-row lg:gap-12">
+        <div className="flex flex-col items-start gap-10 lg:flex-row lg:items-center lg:gap-12">
           <ScrollReveal className="shrink-0 lg:max-w-xs">
             <h2 className="mb-5 whitespace-pre-line text-3xl font-medium leading-tight tracking-[-1px] text-white md:text-4xl">
               {c.title}

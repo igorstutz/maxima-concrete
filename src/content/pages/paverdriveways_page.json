@@ -121,37 +121,6 @@
       }
     },
     {
-      "key": "custom_1762900000006_paverdrv",
-      "label": "Why Choose",
-      "type": "why-choose",
-      "content": {
-        "title": "Why Choose\nMaxima Concrete\nDriveways",
-        "benefits": [
-          {
-            "title": "6.5-Bag Mix Concrete",
-            "iconType": "package",
-            "description": "Stronger and denser for a durable foundation."
-          },
-          {
-            "title": "Fiber Mesh Reinforcement",
-            "iconType": "layers",
-            "description": "Reduces cracking and adds internal strength."
-          },
-          {
-            "title": "10-Gauge Wire Mesh",
-            "iconType": "grid",
-            "description": "Provides superior stability and long-term support."
-          },
-          {
-            "title": "Full-Service Experience",
-            "iconType": "clipboard",
-            "description": "From consultation to final finish — we handle it all."
-          }
-        ],
-        "description": "At Maxima Concrete, we don't compromise on quality. Our driveways are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability."
-      }
-    },
-    {
       "key": "custom_1762900000007_paverdrv",
       "label": "Inspiration",
       "type": "inspiration",

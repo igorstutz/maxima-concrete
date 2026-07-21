@@ -42,7 +42,7 @@ export default function HubWhyMaxima({ content }: { content: Record<string, any>
 
       <div className="relative z-10 py-16 md:py-24">
         <Container>
-          <ScrollReveal className="mx-auto max-w-2xl lg:mx-0 lg:ml-24">
+          <ScrollReveal className="mx-auto max-w-2xl lg:mx-0">
             {c.eyebrow && (
               <p className="mb-2 text-sm text-white/80">{c.eyebrow}</p>
             )}

@@ -48,7 +48,7 @@
           "Endless layout and design options"
         ],
         "paragraph": "Whether you envision a modern entertainment space or a warm, inviting retreat with a fire feature and seating walls, our in-house team brings precision craftsmanship and premium materials together to create something truly lasting.",
-        "ctaText": "Design My Paver Patio",
+        "ctaText": "Contact Us",
         "ctaLink": "#contact",
         "backgroundImage": "/images/cms/hub/patioshub_paver_bg.jpg"
       }
@@ -143,43 +143,9 @@
           "/images/cms/uploads/1782840211048-0th77.webp",
           "/images/cms/uploads/1784041624617-95rma.webp"
         ],
-        "_sourceLabel": "Inspiration"
-      }
-    },
-    {
-      "key": "custom_1762901000007_paverpat",
-      "label": "Why Choose",
-      "type": "why-choose",
-      "content": {
-        "title": "Our Commitment\nto Quality",
-        "benefits": [
-          {
-            "title": "6.5-Bag Mix Concrete",
-            "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773699438648-dynlyv.webp",
-            "description": "Stronger and denser for a durable foundation."
-          },
-          {
-            "title": "Fiber Mesh Reinforcement",
-            "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773699474063-2mfasg.webp",
-            "description": "Reduces cracking and adds internal strength."
-          },
-          {
-            "title": "10-Gauge Wire Mesh",
-            "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773699498502-gdlyhk.webp",
-            "description": "Provides superior stability and long-term support."
-          },
-          {
-            "title": "Full-Service Experience",
-            "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773699532840-275u69.webp",
-            "description": "From consultation to final finish — we handle it all."
-          }
-        ],
-        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
-        "_sourceLabel": "Why Choose"
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Inspired? Request your Free Estimate now!",
+        "ctaLink": "#contact"
       }
     },
     {

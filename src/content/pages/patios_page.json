@@ -134,31 +134,13 @@
       "content": {
         "title": "Paver Patios That Bring \nYour Backyard to Life",
         "ctaLink": "#contact",
-        "ctaText": "Design My Paver Patio",
+        "ctaText": "Explore Paver Patio",
         "eyebrow": "",
         "benefits": [],
         "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
         "_sourceLabel": "Design Paver Driveway",
         "overlayOpacity": 57,
         "backgroundImage": "/images/cms/uploads/1780688063642-eo7x3o.webp"
-      }
-    },
-    {
-      "key": "custom_1768774684113_emzxch",
-      "label": "Inspiration",
-      "type": "inspiration",
-      "content": {
-        "title": "Inspiration for Your Patio",
-        "images": [
-          "/images/cms/uploads/1784041402238-bjscpm.webp",
-          "/images/cms/uploads/1784041406042-ntvato.webp",
-          "/images/cms/uploads/1780940687044-k2uxxh.webp",
-          "/images/cms/uploads/1780940688182-8fjj4r.webp",
-          "/images/cms/uploads/1780940688836-oa2hv.webp",
-          "/images/cms/uploads/1782840082687-fnvhj.webp",
-          "/images/cms/uploads/1782840083211-9irq1.webp"
-        ],
-        "_sourceLabel": "Inspiration"
       }
     },
     {
@@ -195,6 +177,26 @@
         ],
         "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
         "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_1768774684113_emzxch",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Patio",
+        "images": [
+          "/images/cms/uploads/1784041402238-bjscpm.webp",
+          "/images/cms/uploads/1784041406042-ntvato.webp",
+          "/images/cms/uploads/1780940687044-k2uxxh.webp",
+          "/images/cms/uploads/1780940688182-8fjj4r.webp",
+          "/images/cms/uploads/1780940688836-oa2hv.webp",
+          "/images/cms/uploads/1782840082687-fnvhj.webp",
+          "/images/cms/uploads/1782840083211-9irq1.webp"
+        ],
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {

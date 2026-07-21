@@ -9,7 +9,7 @@
         "title": "Driveways",
         "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "subtitle": "Over [XXX+] Driveways Installed",
+        "subtitle": "Over 2,000 Driveways Installed",
         "description": "Transform your home's entrance with a Maxima Driveway — durable, elegant, and built to last. Free estimates available.",
         "backgroundImage": "/images/cms/hub/drivewayshub_hero_desktop.jpg",
         "secondaryCtaLink": "/project-map",
@@ -24,7 +24,7 @@
       "content": {
         "title": "A Driveway That Redefines\nFirst Impressions",
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "imageTop": "/images/cms/uploads/1784210705511-motiej.webp",
         "leadText": "Imagine pulling into your driveway and feeling a sense of pride. Not just any driveway — but a beautifully crafted surface that reflects your home's character and elevates its value.",
         "paragraph1": "At Maxima Concrete, we believe a driveway is more than a place to park your car. It's the gateway to your home, an extension of your living space, and a key part of your property's curb appeal.",
@@ -64,7 +64,7 @@
       "content": {
         "title": "Paver Driveways That\nCombine Strength and Style",
         "ctaLink": "/services/driveways/driveways-paver",
-        "ctaText": "Design My Paver Driveway",
+        "ctaText": "Explore Paver Driveway",
         "tagline": "Durable. Repairable. Built to last.",
         "paragraphs": [
           "A paver driveway is more than a place to park — it's a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver driveways are engineered to handle heavy loads, extreme weather, and daily use without cracking, crumbling, or fading over time.",
@@ -112,7 +112,7 @@
       "label": "Why Maxima",
       "type": "hub-why-maxima",
       "content": {
-        "title": "Why Maxima Is the Right\nChoice for Your Driveways",
+        "title": "Experience the Maxima Difference for Your Driveway",
         "groups": [
           {
             "icon": "",

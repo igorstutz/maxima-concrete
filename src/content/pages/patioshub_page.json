@@ -9,7 +9,7 @@
         "title": "Patios",
         "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "subtitle": "Over [XXX+] Patios Installed",
+        "subtitle": "Over 1,000 Patios Installed",
         "description": "Transform your backyard with a Maxima Patio — durable, elegant, and built to last. Free estimates available.",
         "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.jpg",
         "secondaryCtaLink": "/project-map",
@@ -24,7 +24,7 @@
       "content": {
         "title": "A Patio That Redefines\nOutdoor Living",
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "imageTop": "/images/cms/hub/patioshub_intro_top.jpg",
         "leadText": "Imagine stepping onto your patio and feeling a sense of pride. Not just any patio — but a beautifully crafted space that reflects your home's character and elevates its value.",
         "paragraph1": "At Maxima Concrete, we believe a patio is more than a slab in the backyard. It's an extension of your living space, the stage for family gatherings, and a key part of your property's appeal.",
@@ -64,7 +64,7 @@
       "content": {
         "title": "Paver Patios That\nCombine Strength and Style",
         "ctaLink": "/services/patios/patios-paver",
-        "ctaText": "Design My Paver Patio",
+        "ctaText": "Explore Paver Patio",
         "tagline": "Durable. Repairable. Built to last.",
         "paragraphs": [
           "A paver patio is more than a place to gather — it's a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver patios are engineered to handle heavy use, extreme weather, and daily life without cracking, crumbling, or fading over time.",
@@ -74,37 +74,6 @@
         ],
         "backgroundImage": "/images/cms/hub/patioshub_paver_bg.jpg",
         "taglineDescription": "Upgrade your patio with a surface that performs as beautifully as it looks."
-      }
-    },
-    {
-      "key": "patioshub_page_why_choose",
-      "label": "Why Choose",
-      "type": "hub-why-choose",
-      "content": {
-        "items": [
-          {
-            "icon": "",
-            "title": "6.5-Bag Mix Concrete",
-            "description": "Provides a denser, tougher surface that withstands heavy use and decades of enjoyment."
-          },
-          {
-            "icon": "",
-            "title": "Fiber Mesh Reinforcement",
-            "description": "Reduces cracking and adds internal strength."
-          },
-          {
-            "icon": "",
-            "title": "10-Gauge Wire Mesh",
-            "description": "Provides superior stability and long-term support."
-          },
-          {
-            "icon": "",
-            "title": "Full-Service Experience",
-            "description": "From consultation to final finish — we handle it all."
-          }
-        ],
-        "title": "Why Choose\nMaxima Concrete\nPatios",
-        "description": "At Maxima Concrete, we don't compromise on quality. Our patios are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability."
       }
     },
     {
@@ -145,7 +114,7 @@
       "label": "Why Maxima",
       "type": "hub-why-maxima",
       "content": {
-        "title": "Why Maxima Is the Right\nChoice for Your Patios",
+        "title": "The Maxima Advantage: The Perfect Choice for Your Patio",
         "groups": [
           {
             "icon": "",
@@ -241,6 +210,18 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "patioshub_page_contact",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Ready to Transform Your Space? Let's Get Started.",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
       }
     },
     {

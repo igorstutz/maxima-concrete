@@ -139,25 +139,9 @@
         "paragraph3": "Built for real life, our premium paver porches are engineered to endure. Harsh weather, daily foot traffic, and constant exposure become mere whispers against their strength. No chipping. No cracking. No fading. Just a porch that remains a source of pride for years to come.\n\nA thoughtfully designed paver porch isn't just an aesthetic upgrade — it's an investment that delivers lasting value. By enhancing curb appeal and elevating perceived quality, a paver porch can positively impact your home's resale potential.",
         "overlayOpacity": 0.75,
         "backgroundImage": "/images/cms/uploads/1782841790015-immic.webp",
-        "complementaryText": ""
-      }
-    },
-    {
-      "key": "custom_porches_inspiration",
-      "label": "Inspiration",
-      "type": "inspiration",
-      "content": {
-        "title": "Inspiration for Your Porches",
-        "images": [
-          "/images/cms/uploads/1782841699723-wwmi6.webp",
-          "/images/cms/uploads/1782841700886-iyrkx7.webp",
-          "/images/cms/uploads/1780945103709-ion2.webp",
-          "/images/cms/uploads/1782841701674-s11y7n.webp",
-          "/images/cms/uploads/1780945100745-r6psa5.webp",
-          "/images/cms/uploads/1780945097853-x4g7ne.webp",
-          "/images/cms/uploads/1780945096321-9p9yq.webp"
-        ],
-        "_sourceLabel": "Inspiration"
+        "complementaryText": "",
+        "ctaText": "Inspired? Request your Free Estimate now!",
+        "ctaLink": "#contact"
       }
     },
     {
@@ -191,6 +175,26 @@
         ],
         "description": "Our process combines engineering precision and craftsmanship to deliver results that stand the test of time.",
         "_sourceLabel": "Why Choose"
+      }
+    },
+    {
+      "key": "custom_porches_inspiration",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Porches",
+        "images": [
+          "/images/cms/uploads/1782841699723-wwmi6.webp",
+          "/images/cms/uploads/1782841700886-iyrkx7.webp",
+          "/images/cms/uploads/1780945103709-ion2.webp",
+          "/images/cms/uploads/1782841701674-s11y7n.webp",
+          "/images/cms/uploads/1780945100745-r6psa5.webp",
+          "/images/cms/uploads/1780945097853-x4g7ne.webp",
+          "/images/cms/uploads/1780945096321-9p9yq.webp"
+        ],
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {
