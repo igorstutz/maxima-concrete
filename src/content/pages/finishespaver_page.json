@@ -1,0 +1,274 @@
+{
+  "pageKey": "finishespaver_page",
+  "sections": [
+    {
+      "key": "custom_finishespaver_hero",
+      "label": "Hero",
+      "type": "hero-minimal",
+      "content": {
+        "title": "Paver, Brick & Natural Stone",
+        "tagline": "Timeless Texture, Built to Last",
+        "backLink": "/finishes",
+        "subtitle": "Timeless Texture, Built to Last",
+        "backLabel": "Back to Finishes",
+        "description": "Interlocking pavers, brick, and natural stone bring rich texture, color, and old-world character to driveways, patios, and outdoor living spaces — with the strength to endure Ohio's seasons.",
+        "_sourceLabel": "Hero",
+        "backgroundImage": "",
+        "secondaryCtaLink": "#find-work",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": ""
+      }
+    },
+    {
+      "key": "custom_finishespaver_intro",
+      "label": "Intro",
+      "type": "finishes-intro",
+      "content": {
+        "image": "",
+        "title": "The Beauty and Strength of Pavers, Brick & Natural Stone",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "description": "Paver, brick, and natural stone surfaces combine timeless beauty with exceptional durability. Made from individual units set over a precisely prepared base, they deliver rich texture and design flexibility that poured concrete alone can't match.\n\nFrom classic cobblestone patterns to sleek modern pavers and the natural character of stone, this finish elevates driveways, patios, walkways, and outdoor living spaces. Because each unit moves independently, the surface resists cracking, drains beautifully, and can be repaired one piece at a time.\n\nAt Maxima Concrete, every paver project is built on a properly graded, compacted base with premium materials — for a surface that stays level, stable, and stunning for decades."
+      }
+    },
+    {
+      "key": "custom_finishespaver_whatis",
+      "label": "What Is",
+      "type": "whatis",
+      "content": {
+        "cards": [
+          {
+            "title": "Flexible & Crack-Resistant",
+            "subtitle": "Individual units flex with the ground, resisting the cracking of poured slabs."
+          },
+          {
+            "title": "Easy to Repair",
+            "subtitle": "A single damaged paver can be swapped out — no need to replace the whole surface."
+          },
+          {
+            "title": "Endless Design Options",
+            "subtitle": "Countless colors, shapes, and patterns to match your home and style."
+          }
+        ],
+        "title": "What Is a Paver, Brick & Natural Stone Finish?",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "finalText": "The result is a <b>durable, high-end surface</b> that adds lasting value and curb appeal to any property.",
+        "description": "Instead of a single poured slab, this finish uses <b>individual pavers, bricks, or stones</b> set over a compacted, properly prepared base. That construction delivers:",
+        "_sourceLabel": "What Is",
+        "overlayOpacity": 50,
+        "backgroundImage": ""
+      }
+    },
+    {
+      "key": "custom_finishespaver_whychoose",
+      "label": "Why Choose",
+      "type": "why-choose-finish",
+      "content": {
+        "items": [
+          {
+            "text": "Because each unit moves independently, paver surfaces flex with freeze-thaw cycles and ground movement instead of cracking like a solid slab.",
+            "label": "Flexible & Crack-Resistant:"
+          },
+          {
+            "text": "If a paver is ever stained or damaged, we simply lift and replace that single unit — keeping your surface looking flawless without a full redo.",
+            "label": "Easy, Spot Repairs:"
+          },
+          {
+            "text": "Open joints let rainwater drain naturally, reducing pooling and protecting your foundation and landscaping.",
+            "label": "Superior Drainage:"
+          },
+          {
+            "text": "From cobblestone and brick to sleek modern pavers and natural stone, the design possibilities are virtually limitless.",
+            "label": "Endless Design Freedom:"
+          }
+        ],
+        "title": "Why Choose Paver, Brick & Natural Stone?"
+      }
+    },
+    {
+      "key": "custom_finishespaver_wheretouse",
+      "label": "Where to Use",
+      "type": "where-to-use",
+      "content": {
+        "cards": [
+          {
+            "link": "/services/driveways/driveways-paver",
+            "image": "",
+            "title": "Driveways",
+            "description": "A bold, high-end entrance built to handle vehicles and weather."
+          },
+          {
+            "link": "/services/patios/patios-paver",
+            "image": "",
+            "title": "Patios",
+            "description": "A distinctive outdoor living space with rich texture and color."
+          },
+          {
+            "link": "/services/approaches",
+            "image": "",
+            "title": "Approaches & Walkways",
+            "description": "Elegant, durable paths that welcome guests to your home."
+          },
+          {
+            "link": "/services/porches",
+            "image": "",
+            "title": "Porches & Steps",
+            "description": "Timeless character and safe footing at your entryway."
+          }
+        ],
+        "title": "Where to Use Pavers, Brick & Natural Stone",
+        "ctaLink": "#contact",
+        "ctaText": "Get Inspired",
+        "subtitle": "This finish shines across a wide range of applications:",
+        "finalText": "No matter the project, Maxima Concrete builds every paver surface on a properly graded, compacted base — for lasting beauty and stability."
+      }
+    },
+    {
+      "key": "custom_finishespaver_morethanconcrete",
+      "label": "More Than Concrete",
+      "type": "more-than-concrete",
+      "content": {
+        "title": "More Than Concrete,\nIt's Confidence.",
+        "description": "Whether it's a custom paver driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just install pavers — we build trust, one project at a time."
+      }
+    },
+    {
+      "key": "custom_finishespaver_relatedservices",
+      "label": "Related Services",
+      "type": "related-services",
+      "content": {
+        "title": "Related Services",
+        "services": [
+          {
+            "link": "/finishes/stamped-colored",
+            "label": "Stamped & Colored Concrete"
+          },
+          {
+            "link": "/finishes/buff-wash-exposed",
+            "label": "Exposed Aggregate & Buff Wash"
+          },
+          {
+            "link": "/services/driveways/driveways-paver",
+            "label": "Paver Driveways"
+          },
+          {
+            "link": "/services/patios/patios-paver",
+            "label": "Paver Patios"
+          }
+        ],
+        "backgroundImage": ""
+      }
+    },
+    {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
+      "key": "custom_finishespaver_contact",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Ready to Transform Your Space? Let's Get Started.",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
+      "key": "custom_finishespaver_faq",
+      "label": "FAQ",
+      "type": "faq",
+      "content": {
+        "items": [
+          {
+            "question": "Are pavers better than poured concrete?",
+            "answer": "Both are excellent. Pavers offer easy spot repairs, superior drainage, and a distinctive look, while poured concrete offers a seamless surface. We'll help you choose the best fit for your project."
+          },
+          {
+            "question": "Do pavers shift or settle over time?",
+            "answer": "With proper base preparation and edge restraints, our paver installations stay stable and level for years."
+          },
+          {
+            "question": "How do I maintain a paver, brick, or stone surface?",
+            "answer": "Occasional cleaning and re-sanding of the joints keeps it looking great. Individual units can be replaced if ever damaged."
+          },
+          {
+            "question": "What styles are available?",
+            "answer": "A wide range — classic cobblestone, brick, sleek modern pavers, and natural stone — in many colors and patterns to match your home."
+          }
+        ],
+        "title": "FAQ — Paver, Brick & Natural Stone",
+        "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_finishespaver_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    }
+  ]
+}

@@ -117,7 +117,7 @@
             "description": "Increase visibility on stairs and transitions, adding both beauty and security."
           },
           {
-            "link": "#contact",
+            "link": "/finishes/paver",
             "image": "/images/cms/uploads/1773670770604-danyrk.webp",
             "title": "Paver Lights:",
             "description": "Flush-mounted LEDs embedded in patios, steps, and driveways for a seamless glow."
@@ -336,7 +336,7 @@
       "label": "Contact",
       "type": "contact",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",

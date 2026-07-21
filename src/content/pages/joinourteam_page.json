@@ -19,44 +19,6 @@
       }
     },
     {
-      "key": "joinourteam_page_positions",
-      "label": "Open Positions",
-      "type": "joinourteam-sec-positions",
-      "content": {
-        "items": [
-          {
-            "type": "Full-time",
-            "title": "Concrete Finisher",
-            "location": "Columbus, OH",
-            "description": "2+ years finishing flatwork. Reliable transport and a strong work ethic required."
-          },
-          {
-            "type": "Full-time",
-            "title": "Crew Foreman",
-            "location": "Columbus, OH",
-            "description": "Lead a 3-5 person crew, run jobs on time and on budget, and mentor new finishers."
-          },
-          {
-            "type": "Full-time",
-            "title": "Laborer / Helper",
-            "location": "Columbus, OH",
-            "description": "Entry-level role. We train. Show up, work hard, and we will teach you a trade."
-          },
-          {
-            "type": "Full-time",
-            "title": "Form Setter",
-            "location": "Columbus, OH",
-            "description": "Set and strip forms for driveways, patios, and walls. Experience preferred."
-          }
-        ],
-        "title": "Roles we are hiring for.",
-        "eyebrow": "Open positions",
-        "applyLink": "#apply",
-        "applyLabel": "Apply now",
-        "description": "Do not see your role? We are always interested in great people. Send us your resume anyway."
-      }
-    },
-    {
       "key": "joinourteam_page_final_cta",
       "label": "Final CTA",
       "type": "joinourteam-sec-final-cta",

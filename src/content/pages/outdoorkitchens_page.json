@@ -150,7 +150,7 @@
             "description": "Modern durability and sleek design."
           },
           {
-            "link": "#contact",
+            "link": "/finishes/paver",
             "image": "/images/cms/uploads/1773679981534-w053kf.webp",
             "title": "Pavers & Concrete",
             "description": "Solid, low-maintenance bases that tie into your patio or walkway."
@@ -370,7 +370,7 @@
       "label": "Contact",
       "type": "contact",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",

@@ -118,7 +118,7 @@
             "description": "A warm, natural finish that reveals exposed stone textures, adding depth, character, and a refined look to any concrete surface."
           },
           {
-            "link": "/finishes/buff-wash-exposed",
+            "link": "/finishes/paver",
             "image": "/images/cms/uploads/1780941558563-066tz.webp",
             "title": "Paver, Brick or Natural Stone",
             "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
@@ -329,7 +329,7 @@
       "label": "Contact",
       "type": "contact",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",

@@ -60,6 +60,13 @@ const DEFAULT_FINISHES: FinishItem[] = [
       "Reveals the natural beauty of stone aggregate for a durable, textured look.",
     image: "/images/cms/uploads/1778533291033-fl6wv.webp",
   },
+  {
+    slug: "paver",
+    name: "Paver, Brick & Natural Stone",
+    description:
+      "Interlocking pavers, brick and natural stone for rich texture, easy repairs and superior drainage.",
+    image: "/images/cms/uploads/1784044541984-0dbar.webp",
+  },
 ];
 
 /**
