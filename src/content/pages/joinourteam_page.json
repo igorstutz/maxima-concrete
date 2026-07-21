@@ -68,6 +68,22 @@
       }
     },
     {
+      "key": "joinourteam_page_form",
+      "label": "Apply Form",
+      "type": "joinourteam-sec-form",
+      "content": {
+        "title": "Apply to Join Our Team",
+        "subtitle": "Send us your resume and tell us a bit about yourself. If there's a fit, we'll be in touch.",
+        "positions": [
+          "Concrete Finisher",
+          "Laborer / Crew Member",
+          "Crew Leader",
+          "Office / Admin",
+          "Other"
+        ]
+      }
+    },
+    {
       "key": "find_work",
       "label": "Find Our Work Near You",
       "type": "find-work",

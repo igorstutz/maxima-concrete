@@ -98,6 +98,7 @@ import JoinOurTeamIntro from "./areas/JoinOurTeamIntro";
 import JoinOurTeamBenefits from "./areas/JoinOurTeamBenefits";
 import JoinOurTeamPositions from "./areas/JoinOurTeamPositions";
 import JoinOurTeamFinalCTA from "./areas/JoinOurTeamFinalCTA";
+import JoinOurTeamForm from "./areas/JoinOurTeamForm";
 import WhyMaximaIntro from "./areas/WhyMaximaIntro";
 import RealReviews from "./areas/RealReviews";
 import Areas from "./areas/Areas";
@@ -203,6 +204,7 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   "joinourteam-sec-benefits": JoinOurTeamBenefits,
   "joinourteam-sec-positions": JoinOurTeamPositions,
   "joinourteam-sec-final-cta": JoinOurTeamFinalCTA,
+  "joinourteam-sec-form": JoinOurTeamForm,
   "why-maxima-intro": WhyMaximaIntro,
   "real-reviews": RealReviews,
   areas: Areas,

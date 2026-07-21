@@ -61,9 +61,97 @@ function log_submission(array $entry): void {
     @file_put_contents($dir . '/submissions.log', $line, FILE_APPEND | LOCK_EX);
 }
 
+/**
+ * Handles a résumé submission from the Join Our Team page. Emails info@ with a
+ * distinct subject and the uploaded file as an attachment (multipart/mixed).
+ */
+function handle_resume(string $recipient, string $fromName, string $fromEmail): void {
+    $name     = clean_line((string)($_POST['name'] ?? ''));
+    $email    = clean_line((string)($_POST['email'] ?? ''));
+    $phone    = clean_line((string)($_POST['phone'] ?? ''));
+    $position = clean_line((string)($_POST['position'] ?? ''));
+    $msg      = substr(trim((string)($_POST['message'] ?? '')), 0, 5000);
+
+    $errors = [];
+    if (strlen($name) < 2) $errors['name'] = 'Please enter your name';
+    $hasPhone = strlen(preg_replace('/\D/', '', $phone)) >= 10;
+    $hasEmail = filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
+    if (!$hasPhone && !$hasEmail) $errors['contact'] = 'Please enter a valid phone number or email';
+    if ($errors) { http_response_code(400); echo json_encode(['ok' => false, 'errors' => $errors]); return; }
+
+    // Uploaded résumé (optional but expected).
+    $attachData = null; $attachName = null; $fileNote = 'no file attached';
+    if (isset($_FILES['resume']) && ($_FILES['resume']['error'] ?? UPLOAD_ERR_NO_FILE) === UPLOAD_ERR_OK) {
+        $tmp  = (string)$_FILES['resume']['tmp_name'];
+        $size = (int)($_FILES['resume']['size'] ?? 0);
+        $orig = clean_line((string)($_FILES['resume']['name'] ?? 'resume'));
+        $ext  = strtolower(pathinfo($orig, PATHINFO_EXTENSION));
+        $allowed = ['pdf', 'doc', 'docx', 'rtf', 'txt', 'odt'];
+        if ($size > 8 * 1024 * 1024) { http_response_code(400); echo json_encode(['ok' => false, 'errors' => ['resume' => 'File too large (max 8 MB)']]); return; }
+        if (!in_array($ext, $allowed, true)) { http_response_code(400); echo json_encode(['ok' => false, 'errors' => ['resume' => 'Unsupported file type']]); return; }
+        if (is_uploaded_file($tmp)) {
+            $attachData = @file_get_contents($tmp);
+            $attachName = preg_replace('/[^A-Za-z0-9._-]/', '_', $orig) ?: ('resume.' . $ext);
+            $fileNote   = "$attachName ($size bytes)";
+        }
+    }
+
+    $subject = 'New Resume Submitted | Maxima Concrete';
+    $text  = "New job application from the Maxima Concrete website.\n";
+    $text .= str_repeat('-', 60) . "\n\n";
+    $text .= "Name:      $name\n";
+    $text .= "Phone:     $phone\n";
+    $text .= "Email:     $email\n";
+    $text .= "Position:  " . ($position !== '' ? $position : '-') . "\n";
+    $text .= "Resume:    $fileNote\n\n";
+    $text .= str_repeat('-', 60) . "\nMessage:\n\n" . ($msg !== '' ? $msg : '-') . "\n\n";
+    $text .= str_repeat('-', 60) . "\nSubmitted: " . gmdate('Y-m-d H:i:s') . " UTC\n";
+    $text .= "From IP:   " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
+
+    if ($attachData !== null && $attachName !== null) {
+        $boundary = '=_' . md5(uniqid('', true));
+        $headers  = "From: $fromName <$fromEmail>\r\n";
+        if ($hasEmail) $headers .= "Reply-To: $name <$email>\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+        $body  = "--$boundary\r\n";
+        $body .= "Content-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n";
+        $body .= $text . "\r\n";
+        $body .= "--$boundary\r\n";
+        $body .= "Content-Type: application/octet-stream; name=\"$attachName\"\r\n";
+        $body .= "Content-Transfer-Encoding: base64\r\n";
+        $body .= "Content-Disposition: attachment; filename=\"$attachName\"\r\n\r\n";
+        $body .= chunk_split(base64_encode($attachData)) . "\r\n";
+        $body .= "--$boundary--";
+        $ok = @mail($recipient, $subject, $body, $headers, '-f ' . $fromEmail);
+    } else {
+        $headers  = "From: $fromName <$fromEmail>\r\n";
+        if ($hasEmail) $headers .= "Reply-To: $name <$email>\r\n";
+        $headers .= "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\n";
+        $ok = @mail($recipient, $subject, $text, $headers, '-f ' . $fromEmail);
+    }
+
+    log_submission([
+        'ts' => gmdate('Y-m-d\TH:i:s\Z'), 'type' => 'resume',
+        'name' => $name, 'phone' => $phone, 'email' => $email,
+        'position' => $position, 'resume' => $fileNote, 'message' => $msg,
+        'email_status' => $ok ? 'sent' : 'failed',
+    ]);
+
+    if ($ok) { echo json_encode(['ok' => true]); return; }
+    http_response_code(500);
+    echo json_encode(['ok' => false, 'error' => 'Send failed. Please try again or email info@maximaconcrete.com.']);
+}
+
 // Honeypot — silently accept and drop.
 if (trim((string)($_POST['_gotcha'] ?? '')) !== '') {
     echo json_encode(['ok' => true]);
+    exit;
+}
+
+// Resume submissions (Join Our Team) use a dedicated handler.
+if (($_POST['form_type'] ?? '') === 'resume') {
+    handle_resume($RECIPIENT, $FROM_NAME, $FROM_EMAIL);
     exit;
 }
 
