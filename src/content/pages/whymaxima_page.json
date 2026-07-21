@@ -29,42 +29,6 @@
       }
     },
     {
-      "key": "custom_real_reviews_seed",
-      "label": "Real Reviews",
-      "type": "real-reviews",
-      "content": {
-        "title": "<b>Below are just a few real reviews from our satisfied customers</b>\n — proof of our commitment to excellence and care on every job.",
-        "reviews": [
-          {
-            "name": "J.H — Suburban Home",
-            "text": "A wonderful experience! Will definitely be hiring them again in the future for further projects! Just a wonderful job by all involved.",
-            "image": "/images/cms/uploads/1772676858917-i1qnas.webp"
-          },
-          {
-            "name": "J.S — Grey House",
-            "text": "They were professional and impressively hard-working. The high praise from several neighbors probably says all you need to know. Big improvement. It looks great. Problem solved.",
-            "image": "/images/cms/uploads/1772676869163-n4z0d.webp"
-          },
-          {
-            "name": "A.B — Suburban Home",
-            "text": "They did an excellent job on our drive extension. They were on time, efficient, and done in 2 days. I will definitely use them again in the future.",
-            "image": "/images/cms/uploads/1772676880383-eeptlj.webp"
-          },
-          {
-            "name": "C.L — Suburban Home",
-            "text": "I would 100% recommend Maxima Concrete. They are extremely professional and their team does an amazing job. My driveway looks fantastic — if I ever need concrete again, I would most definitely call Maxima Concrete.",
-            "image": "/images/cms/uploads/1772676888543-jsjw6.webp"
-          }
-        ],
-        "bottomText": "See more great reviews of our company on",
-        "bottomLogos": [
-          "/images/cms/uploads/1772677138854-9hr6th.webp"
-        ],
-        "overlayOpacity": 80,
-        "backgroundImage": "/images/cms/uploads/1772676826848-krzb4t.webp"
-      }
-    },
-    {
       "key": "custom_areas_seed",
       "label": "Areas",
       "type": "areas",
@@ -85,29 +49,6 @@
         "bottomTitle": "Not sure if we serve your area?",
         "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8.webp",
         "bottomDescription": "Contact us to discuss your project — we often travel beyond our main service radius for select installations."
-      }
-    },
-    {
-      "key": "custom_financing_seed",
-      "label": "Financing",
-      "type": "financing",
-      "content": {
-        "title": "Financing Options\nThat Fit Your Budget",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "benefits": [
-          "Loan amounts up to $100,000",
-          "Affordable monthly payments tailored to your budget",
-          "Fast approval — see your options in minutes without affecting your credit score",
-          "Funding within 1–3 days",
-          "No prepayment penalties",
-          "No home equity required"
-        ],
-        "cardImage": "/images/cms/uploads/1772679492268-y6ls8i.webp",
-        "bottomText": "See your personalized payment options today — simple, secure, and transparent.",
-        "dollarIcon": "/images/cms/uploads/1772679509572-704q7.webp",
-        "description": "Home improvement shouldn't feel out of reach — that's why Maxima Concrete partners with Hearth Financing to make your project more affordable and stress-free.",
-        "benefitsTitle": "Benefits of Financing with Maxima Concrete:"
       }
     },
     {
@@ -145,6 +86,29 @@
           }
         ],
         "overlayTitle": "Transparency.\nAccountability.\nEfficiency."
+      }
+    },
+    {
+      "key": "custom_financing_seed",
+      "label": "Financing",
+      "type": "financing",
+      "content": {
+        "title": "Financing Options\nThat Fit Your Budget",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "benefits": [
+          "Loan amounts up to $100,000",
+          "Affordable monthly payments tailored to your budget",
+          "Fast approval — see your options in minutes without affecting your credit score",
+          "Funding within 1–3 days",
+          "No prepayment penalties",
+          "No home equity required"
+        ],
+        "cardImage": "/images/cms/uploads/1772679492268-y6ls8i.webp",
+        "bottomText": "See your personalized payment options today — simple, secure, and transparent.",
+        "dollarIcon": "/images/cms/uploads/1772679509572-704q7.webp",
+        "description": "Home improvement shouldn't feel out of reach — that's why Maxima Concrete partners with Hearth Financing to make your project more affordable and stress-free.",
+        "benefitsTitle": "Benefits of Financing with Maxima Concrete:"
       }
     },
     {
@@ -220,6 +184,17 @@
       }
     },
     {
+      "key": "custom_1773689112171_tu7nc",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
+      }
+    },
+    {
       "key": "custom_whymaxima_faq",
       "label": "FAQ",
       "type": "faq",
@@ -244,17 +219,6 @@
         ],
         "title": "FAQ — About Maxima Concrete",
         "_sourceLabel": "FAQ"
-      }
-    },
-    {
-      "key": "custom_1773689112171_tu7nc",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     }
   ]

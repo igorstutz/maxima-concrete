@@ -100,12 +100,12 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
   ].filter((s) => s.url);
 
   return (
-    <section className="bg-surface-alt py-12 md:py-16 lg:py-20">
+    <section className="bg-white py-12 md:py-16 lg:py-20">
       <Container>
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)] lg:gap-12 xl:gap-16">
           {/* Coluna esquerda — informações */}
           <div className="space-y-6">
-            <h2 className="text-3xl font-light text-navy md:text-4xl">{title}</h2>
+            <h2 className="text-3xl font-semibold text-navy md:text-4xl">{title}</h2>
             <p className="border-b border-navy/15 pb-6 text-base text-navy/70 md:text-lg">
               {subtitle}
             </p>

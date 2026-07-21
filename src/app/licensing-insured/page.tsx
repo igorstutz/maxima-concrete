@@ -129,12 +129,12 @@ export default function Page() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
-                <ShieldCheck className="h-4 w-4 text-[hsl(180_85%_60%)]" />
+                <ShieldCheck className="h-4 w-4 text-[hsl(210_100%_60%)]" />
                 Credentials &amp; Protection
               </span>
               <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl lg:text-6xl">
                 Licensed. Insured.{" "}
-                <span className="text-[hsl(180_85%_60%)]">Accountable.</span>
+                <span className="text-[hsl(210_100%_60%)]">Accountable.</span>
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
                 Hiring a concrete contractor is a long-term investment in your property. Maxima
@@ -143,7 +143,7 @@ export default function Page() {
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link href="/contact-us/#contact" className={PRIMARY_BTN}>
-                  Request Our Credentials
+                  Contact Us
                 </Link>
                 <a href="tel:+16142000731" className={SECONDARY_BTN}>
                   <Phone className="h-4 w-4" /> (614) 200-0731
@@ -153,8 +153,8 @@ export default function Page() {
             <div className="relative hidden lg:block">
               <div className="absolute -inset-4 rounded-3xl bg-[hsl(209_100%_56%)]/20 blur-2xl" />
               <Image
-                src="/images/assets/licensing-hero.jpg"
-                alt="Maxima Concrete licensed and insured professional crew on site"
+                src="/images/cms/uploads/1766260199815-jhga35.webp"
+                alt="The Maxima Concrete team"
                 width={1024}
                 height={1280}
                 className="relative aspect-[4/5] w-full rounded-2xl border border-white/15 object-cover shadow-2xl"
@@ -167,20 +167,20 @@ export default function Page() {
       {/* CREDENTIALS GRID */}
       <section className="relative overflow-hidden border-t border-white/5 bg-gradient-to-b from-[hsl(216_55%_14%)] via-[hsl(217_50%_11%)] to-[hsl(218_45%_8%)] py-24">
         <div className="pointer-events-none absolute -top-32 right-0 h-[600px] w-[600px] rounded-full bg-[hsl(209_100%_45%)]/20 blur-3xl" />
-        <div className="pointer-events-none absolute bottom-0 left-1/3 h-[420px] w-[420px] rounded-full bg-[hsl(180_85%_50%)]/10 blur-3xl" />
+        <div className="pointer-events-none absolute bottom-0 left-1/3 h-[420px] w-[420px] rounded-full bg-[hsl(210_100%_50%)]/10 blur-3xl" />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.06]"
           style={{
             backgroundImage:
-              "linear-gradient(hsl(180 85% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(180 85% 70%) 1px, transparent 1px)",
+              "linear-gradient(hsl(210 100% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 100% 70%) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
 
         <Container className="relative">
           <div className="flex items-center gap-3">
-            <span className="h-px w-10 bg-[hsl(180_85%_60%)]/60" />
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(180_85%_60%)]">
+            <span className="h-px w-10 bg-[hsl(210_100%_60%)]/60" />
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
               Our credentials
             </p>
           </div>
@@ -194,17 +194,17 @@ export default function Page() {
 
           <div className="mt-14 grid grid-cols-1 gap-5 lg:grid-cols-12">
             {/* Cartão de confiança em destaque */}
-            <div className="relative overflow-hidden rounded-2xl border border-[hsl(180_85%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8 md:p-10 lg:col-span-5">
-              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(180_85%_50%)]/15 blur-3xl" />
+            <div className="relative overflow-hidden rounded-2xl border border-[hsl(210_100%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8 md:p-10 lg:col-span-5">
+              <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(180_85%_70%)]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(150_80%_55%)]" />
                   Verified · Active
                 </div>
                 <div className="mt-8 flex items-end gap-3">
                   <span className="text-7xl font-black leading-none tracking-tight text-white md:text-8xl">
-                    100<span className="text-[hsl(180_85%_60%)]">%</span>
+                    100<span className="text-[hsl(210_100%_60%)]">%</span>
                   </span>
                 </div>
                 <h3 className="mt-4 text-2xl font-bold text-white">
@@ -236,14 +236,14 @@ export default function Page() {
               {credentials.map((c, i) => (
                 <div
                   key={c.title}
-                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(180_85%_60%)]/50 hover:bg-white/[0.06]"
+                  className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(210_100%_60%)]/50 hover:bg-white/[0.06]"
                 >
-                  <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-[hsl(209_100%_56%)] to-[hsl(180_85%_60%)] transition-all duration-500 group-hover:w-full" />
+                  <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-[hsl(209_100%_56%)] to-[hsl(210_100%_60%)] transition-all duration-500 group-hover:w-full" />
                   <span className="absolute right-6 top-5 font-mono text-xs font-semibold tracking-wider text-white/25">
                     0{i + 1}
                   </span>
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(180_85%_50%)]/20 shadow-[0_0_30px_-10px_hsl(180_85%_50%/0.5)]">
-                    <c.icon className="h-5 w-5 text-[hsl(180_85%_70%)]" />
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(210_100%_50%)]/20 shadow-[0_0_30px_-10px_hsl(210_100%_50%/0.5)]">
+                    <c.icon className="h-5 w-5 text-[hsl(210_100%_70%)]" />
                   </div>
                   <h3 className="mt-5 text-lg font-bold text-white">{c.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-white/65">{c.text}</p>
@@ -303,7 +303,7 @@ export default function Page() {
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/50">
                       License
                     </p>
-                    <p className="mt-1 font-mono text-sm font-semibold text-[hsl(180_85%_60%)] md:text-base">
+                    <p className="mt-1 font-mono text-sm font-semibold text-[hsl(210_100%_60%)] md:text-base">
                       MC-OH-2026
                     </p>
                   </div>
@@ -313,8 +313,8 @@ export default function Page() {
 
             {/* Copy editorial */}
             <div className="relative">
-              <FileText className="h-10 w-10 text-[hsl(180_85%_60%)]/70" />
-              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.3em] text-[hsl(180_85%_60%)]">
+              <FileText className="h-10 w-10 text-[hsl(210_100%_60%)]/70" />
+              <p className="mt-5 text-xs font-semibold uppercase tracking-[0.3em] text-[hsl(210_100%_60%)]">
                 Craftsmanship you can verify
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-[2.75rem]">
@@ -332,7 +332,7 @@ export default function Page() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(209_100%_45%)] text-xs font-bold text-white">
                     M
                   </div>
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(180_85%_45%)] text-xs font-bold text-white">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(210_100%_45%)] text-xs font-bold text-white">
                     C
                   </div>
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(150_80%_45%)] text-xs font-bold text-white">
@@ -355,7 +355,7 @@ export default function Page() {
         <div className="pointer-events-none absolute bottom-0 left-0 h-[500px] w-[500px] rounded-full bg-[hsl(216_100%_27%)]/25 blur-3xl" />
         <Container className="relative">
           <div className="max-w-3xl">
-            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(180_85%_60%)]">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
               What it means for you
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-5xl">
@@ -370,14 +370,14 @@ export default function Page() {
 
           {/* Timeline com conectores */}
           <div className="relative mt-16">
-            <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-[hsl(180_85%_60%)]/30 to-transparent lg:block" />
+            <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-[hsl(210_100%_60%)]/30 to-transparent lg:block" />
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-6">
               {protections.map((p, i) => (
                 <div key={p.title} className="relative">
                   {/* Nó */}
                   <div className="relative flex items-center gap-4 lg:block">
-                    <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[hsl(180_85%_60%)]/60 bg-[hsl(218_45%_8%)] shadow-[0_0_30px_-5px_hsl(180_85%_50%/0.6)]">
-                      <p.icon className="h-5 w-5 text-[hsl(180_85%_70%)]" />
+                    <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[hsl(210_100%_60%)]/60 bg-[hsl(218_45%_8%)] shadow-[0_0_30px_-5px_hsl(210_100%_50%/0.6)]">
+                      <p.icon className="h-5 w-5 text-[hsl(210_100%_70%)]" />
                       <span className="absolute -right-1.5 -top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-[hsl(150_80%_50%)] text-[10px] font-black text-[hsl(218_50%_10%)]">
                         0{i + 1}
                       </span>
@@ -420,8 +420,8 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
             {/* Painel de introdução */}
             <div className="lg:sticky lg:top-28 lg:self-start">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(180_85%_70%)]">
-                <span className="h-1.5 w-1.5 rounded-full bg-[hsl(180_85%_60%)]" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
+                <span className="h-1.5 w-1.5 rounded-full bg-[hsl(210_100%_60%)]" />
                 FAQ
               </div>
               <h2 className="mt-5 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-5xl">
@@ -434,7 +434,7 @@ export default function Page() {
               </p>
               <Link
                 href="/contact-us/#contact"
-                className="mt-7 inline-flex items-center gap-2 font-semibold text-[hsl(180_85%_60%)] transition-all hover:gap-3"
+                className="mt-7 inline-flex items-center gap-2 font-semibold text-[hsl(210_100%_60%)] transition-all hover:gap-3"
               >
                 Ask us directly <ArrowUpRight className="h-4 w-4" />
               </Link>
