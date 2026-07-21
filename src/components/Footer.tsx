@@ -26,6 +26,10 @@ export default function Footer() {
     bbbRatingImage,
     licensedInsuredImage,
     angiesListImage,
+    hearthUrl,
+    bbbUrl,
+    angiesListUrl,
+    licensedUrl,
     copyright,
     designerText,
     designerName,
@@ -55,13 +59,23 @@ export default function Footer() {
               {address && (
                 <div className="flex items-start gap-2.5 text-white/90 text-sm">
                   <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-white/70" />
-                  <span className="leading-relaxed whitespace-pre-line">{address}</span>
+                  <span className="leading-relaxed whitespace-pre-line">
+                    <strong className="font-semibold text-white">
+                      {address.split("\n")[0]}
+                    </strong>
+                    {address.includes("\n") ? "\n" + address.split("\n").slice(1).join("\n") : ""}
+                  </span>
                 </div>
               )}
               {hours && (
                 <div className="flex items-start gap-2.5 text-white/90 text-sm">
                   <Clock className="w-4 h-4 mt-0.5 flex-shrink-0 text-white/70" />
-                  <span className="leading-relaxed whitespace-pre-line">{hours}</span>
+                  <span className="leading-relaxed whitespace-pre-line">
+                    <strong className="font-semibold text-white">
+                      {hours.split("\n")[0]}
+                    </strong>
+                    {hours.includes("\n") ? "\n" + hours.split("\n").slice(1).join("\n") : ""}
+                  </span>
                 </div>
               )}
               {email && (
@@ -164,45 +178,83 @@ export default function Footer() {
 
           {/* Column 4 - Badges & Payment */}
           <div className="flex flex-col gap-6 items-start">
-            {/* Monthly Payment Options Banner */}
-            <Image
-              src={monthlyPaymentImage}
-              alt="Hearth Monthly Payment Options"
-              width={310}
-              height={120}
-              className="w-auto h-auto max-w-[240px] md:max-w-[280px] rounded-lg"
-            />
+            {/* Monthly Payment Options Banner (Hearth) */}
+            <a
+              href={hearthUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-opacity hover:opacity-90"
+              aria-label="Financing with Hearth"
+            >
+              <Image
+                src={monthlyPaymentImage}
+                alt="Hearth Monthly Payment Options"
+                width={310}
+                height={120}
+                className="w-auto h-auto max-w-[240px] md:max-w-[280px] rounded-lg"
+              />
+            </a>
 
             {/* Trust Badges Row */}
             <div className="flex flex-wrap items-center justify-start gap-3 md:gap-4">
-              <Image
-                src={googleReviewsImage}
-                alt="Google Reviews"
-                width={117}
-                height={88}
-                className="w-auto object-contain h-8 md:h-10"
-              />
-              <Image
-                src={bbbRatingImage}
-                alt="BBB A+ Rating"
-                width={50}
-                height={34}
-                className="w-auto object-contain h-7 md:h-8"
-              />
-              <Image
-                src={licensedInsuredImage}
-                alt="Licensed & Insured"
-                width={69}
-                height={35}
-                className="w-auto object-contain h-7 md:h-8"
-              />
-              <Image
-                src={angiesListImage}
-                alt="Angie's List"
-                width={138}
-                height={23}
-                className="w-auto object-contain h-3 md:h-4"
-              />
+              <a
+                href={socialLinks.google}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+                aria-label="Maxima Concrete on Google"
+              >
+                <Image
+                  src={googleReviewsImage}
+                  alt="Google Reviews"
+                  width={117}
+                  height={88}
+                  className="w-auto object-contain h-8 md:h-10"
+                />
+              </a>
+              <a
+                href={bbbUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+                aria-label="Maxima Concrete on BBB"
+              >
+                <Image
+                  src={bbbRatingImage}
+                  alt="BBB A+ Rating"
+                  width={50}
+                  height={34}
+                  className="w-auto object-contain h-7 md:h-8"
+                />
+              </a>
+              <Link
+                href={licensedUrl}
+                className="transition-opacity hover:opacity-80"
+                aria-label="Licensing & Insurance"
+              >
+                <Image
+                  src={licensedInsuredImage}
+                  alt="Licensed & Insured"
+                  width={69}
+                  height={35}
+                  className="w-auto object-contain h-7 md:h-8"
+                />
+              </Link>
+              <a
+                href={angiesListUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-opacity hover:opacity-80"
+                aria-label="Maxima Concrete on Angi"
+              >
+                <Image
+                  src={angiesListImage}
+                  alt="Angie's List"
+                  width={138}
+                  height={23}
+                  className="w-auto object-contain h-3 md:h-4"
+                />
+              </a>
             </div>
           </div>
         </div>

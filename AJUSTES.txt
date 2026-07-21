@@ -1,0 +1,76 @@
+Nas sessões:
+
+Pool Deck Finish Options (https://igorstutz.github.io/maxima-concrete/services/pool-decks-surrounds/ ) considerar finishes presentes na página de Concrete Driveways (links, títulos e textos)
+
+Style Options for Every Home (https://igorstutz.github.io/maxima-concrete/services/footers/ ) considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) e alterar titulo desse sessão para: Footers Finish Options;
+
+Maxima Concrete’s Sidewalk Options (https://igorstutz.github.io/maxima-concrete/services/sidewalks/ ) considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) e alterar titulo desse sessão para: Sidewalks Finish Options
+
+Commercial & Industrial Slabs — Built for Strength (https://igorstutz.github.io/maxima-concrete/services/slabs/ ) considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) e alterar titulo desse sessão para: Commercial & Industrial Slabs Finish Options;
+
+Style Options for Every Home (https://igorstutz.github.io/maxima-concrete/services/steps/ ) considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) e alterar titulo desse sessão para: Steps Finish Options;
+
+
+
+Na página: Contact Us  (https://igorstutz.github.io/maxima-concrete/contact-us/ ) alterar foto de capa por foto de melhor qualidade e que seja relacionada a concreto; Alterar Titulo “Contact Us” em semibold, retirar icone do LinkedIn e alterar background color para branco (ja que formulario abaixo ja é cinza).
+
+No menu (Our Finishes) Inserir nome completo dos finishes, tais como: Broom Finish, Colored Broom Finish, Stamped & Colored, Smooth Finish, Buff Wash & Exposed Aggregate, e ADICIONAR “Paver, Brick and Natural Stone”. IMPORTANTE: VERIFICAR SE OS LINKS ESTAO COM PAGINAS CORRETAS EM CADA OPÇÃO.
+
+
+Na página “Why Maxima” https://igorstutz.github.io/maxima-concrete/why-maxima/ Ajustar foto do Hero (foto em melhor qualidade e voltada a concrete). Remover sessão: Below are just a few real reviews from our satisfied customers. Na sessão: WHY MAXIMA? substituir por fotos anexos no card @natashagonzalez31 vai anexar aqui.  Na sessão: Serving Central Ohio and Beyond ajustar logo de “licensed and insurance”. Trazer sessão Transparency. Accountability. Efficiency. após “Serving Central Ohio and Beyond”. Trazer sessão de “Follow us” antes de FAQ.
+
+Na página https://igorstutz.github.io/maxima-concrete/licensing-insured/  substituir foto dos trabalhadores por foto da equipe utilizada no Home page. Substituir botão “Request our credentials” por “Contact Us” e corrigir numero de telefone no botão ao lado; Substituir títulos, textos “azul turquesa” por cores presentes na brand book do cliente. Não usar cores que não estejam presentes na identidade visual do cliente;
+
+Na página https://igorstutz.github.io/maxima-concrete/areas-we-serve/  substituir foto no hero, por foto anexa. Conteúdo de todas as paginas das cidades devem mudar (@natashagonzalez31 enviará copy/fotos para essas paginas). Sessão: Why Homeowners Trust Maxima Concrete não está atualizada com a ultima versão, precisamos atualizar em todas as páginas das cidades.
+VERSÃO ATUALIZADA (abaixo):
+
+
+pode ser encontrada aqui: https://igorstutz.github.io/maxima-concrete/services/driveways/
+
+Na página https://igorstutz.github.io/maxima-concrete/reviews/  quantidade de “verified reviews” não está correto e adicionar do Google. Melhorar sessão “What Our Customers Are Saying” para algo mais dinâmico, reviews rolando em formato carrossel infinito mostrando a quantidade de reviews positivos que eles possuem, adicionar um link de “Impressionado com a quantidade de experiencias positivas dos nossos clientes, seja um deles você também” algo assim. Retirar gap branco entre sessões (conforme abaixo):
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/financing/ primeiras sessões da pagina parecem ser de um website diferente, fontes diferentes, cores, etc, precisamos ajustar para cores e formatos mais similares deste website. Além disso, precisamos mencionar o nome da companhia de financing (Hearth Financing) e trazer detalhes sobre ela, assim como fazemos no website de MP. Link da aplicação e da empresa: https://app.gethearth.com/financing/19313/27602/prequalify?utm_campaign=19313&utm_content=white&utm_medium=contractor-website&utm_source=contractor&utm_term=27602
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/commercial/ hero: adicionar botoes de find our work in your neiborhood & contact us. Na primeira sessão após hero: substituir foto e imagem conforme anexo (@natashagonzalez31 vai adc ambos aqui no card); Sessão de “Related Services” precisam ir p/ após o formulário (antes de FAQ).
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/join-our-team/ Paul quer que a gente retire todas essas vagas, pois elas não existem, precisamos melhorar um pouco a introdução (texto ficou bom), mas podemos trazer umas fotos da equipe e da estrutura (@natashagonzalez31 vai anexar essas fotos aqui) e  criar um formulário (versao melhorada a que eles possuem no website atual no momento https://www.maximaconcrete.com/career . Esse formulario precisa chegar à info@maximaconcrete.com com titulo de New Resume Submitted l Maxima Concrete ou algo similar; Manter sessão WHY WORK WITH US.
+
+
+
+No rodapé do website: Adicionar o link da paginas nos ícones da Hearth (https://app.gethearth.com/financing/19313/27602/prequalify?utm_campaign=19313&utm_content=white&utm_medium=contractor-website&utm_source=contractor&utm_term=27602), Google, BBB (https://www.bbb.org/us/oh/delaware/profile/driveway-installation/maxima-concrete-llc-0302-70090955), Angielist (https://www.angi.com/companylist/us/oh/delaware/maxima-concrete-reviews-8622473.htm  e no icone de “Licensed & Insured” inserir a pagina de Licensing que temos no website. Colocar os titulos: Office Address e Business Hours em semi bold ou bold. MUDANCA DEVE REFLETIR NO RODAPE DE TODAS AS PAGINAS.
+
+
+Na pagina https://igorstutz.github.io/maxima-concrete/gallery/  precisamos adicionar o numeros de forma dinamica, sessão Don't see your neighborhood yet? justificada à esquerda.
+
+Home page - sessão Driveways link de learn more precisa ir para sessão de “Driveways” somente; sessão Patios link de learn more precisa ir para pagina exclusiva de Patios;
+
+Na pagina  https://igorstutz.github.io/maxima-concrete/services/driveways/ Hero: Tamanho da foto e fontes estao um pouco maiores que a versao original, seguir padrao conforme: https://igorstutz.github.io/maxima-concrete/services/driveways/driveways-concrete/ Adicionar informacao: Over 2,000 Driveways Installed. Na sessao: A Driveway That Redefines First Impressions, subsituir botao para “Inspired? Request your Free Estimate now!”. Na sessao: Paver Driveways That Combine Strength and Style substituir botao por “Explore Paver Driveway”. Na sessão ”Why Choose Maxima Concrete Driveways, inserir ícones da direita centralizado a altura do texto à esquerda; Substituir titulo da sessão “Why Maxima Is the Right Choice for Your Driveways” para “Experience the Maxima Difference for Your Driveway” e alinhar texto a esquerda conforme demais sessões;  Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/services/patios/ Hero: Tamanho da foto e fontes estao um pouco maiores que a versao original, seguir padrao conforme: https://igorstutz.github.io/maxima-concrete/services/patios/patios-concrete/  Adicionar informacao: Over 1,000 Patios Installed. Na sessao: A Patio That Redefines First Impressions, subsituir botao para “Inspired? Request your Free Estimate now!”. Alem disso, @natashagonzalez31 enviara novo copyright para essa sessão.
+Na sessao: Paver Patios That Combine Strength and Style substituir botao por “Explore Paver Patio” e @natashagonzalez31 enviara novo copyright para essa sessão.
+Excluir sessão ”Why Choose Maxima Concrete Patios, Substituir titulo da sessão “Why Maxima Is the Right Choice for Your Patios” para “The Maxima Advantage: The Perfect Choice for Your Patio” e alinhar texto a esquerda conforme demais sessões; Adicionar formulario na parte inferior da pagina com titulo “Ready to Transform Your Space? Let’s Get Started.”
+
+Na pagina https://igorstutz.github.io/maxima-concrete/services/driveways/driveways-concrete/Na sessao Why Maxima Is the Right Choice for Your Driveways? os icones estao em baixa resolução e pixelados, e precisam ser substituídos. Na sessão Style Options for Every Driveway ajustar links em cada card do finish, eles estão incorretos. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/services/driveways/driveways-paver/ Na sessao Why Maxima Is the Right Choice for Your Paver Driveways? os icones estao em baixa resolução e pixelados, e precisam ser substituídos. Excluir sessão: Why Choose Maxima Concrete Driveways. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/services/patios/patios-concrete/ Na sessão: A Patio That Redefines
+Outdoor Living @natashagonzalez31 enviara novo copyright.
+Na sessão: Concrete Patio Finish Options, considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) (https://igorstutz.github.io/maxima-concrete/services/driveways/ ). Ajustar links também. Na sessão Paver Patios That Bring Your Backyard to Life @natashagonzalez31 enviara novo copyright. Mover Sessão: Our Commitment to Quality para após Paver Patios that Bring your Backyard to Life. Na sessao: Paver Patios That Bring Your Backyard to Life alterar botao para “ Explore Paver Patio”. Na sessao: Inspiration for Your Patio alterar botao para Explore more in our Gallery. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/services/patios/patios-paver/ na sessao: A Patio That Redefines
+Outdoor Living @natashagonzalez31 enviara novo copyright. Na sessao Paver patios offer: substituir botao por contact us. Na sessao Inspiration for your Patio, substituir botao para “Inspired? Request your Free Estimate now! Excluir sessão: Our Commitment to Quality. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina: https://igorstutz.github.io/maxima-concrete/services/porches/ Na sessão: A Porch That Makes a Statement@natashagonzalez31 enviara novo copyright e nova foto/texto para hero.
+Na sessão: Maxima Concrete Porch Finishes, considerar finishes presentes na página de Concrete Driveways (links, títulos e textos) (https://igorstutz.github.io/maxima-concrete/services/driveways/ ). Ajustar links também. Na sessão Paver Porches That Make a Lasting First Impression adicionar CTA para solicitacao de estimativa. Mover Sessão: Why Choose Maxima Porches para após Paver Porches That Make a Lasting First Impression. Na sessao: Inspiration for Your Porches alterar botao para Explore more in our Gallery. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started.
+
+Na pagina Maxima Concrete — Premium Patios & Driveways in Ohio Na sessão Transform Your Backyard Into a Functional and Elegant Retreat substituir botao CTA para solicitacao de estimativa. Deixar sessão Why Choose Maxima Concrete for Outdoor Living Projects um pouco mais interativo e dinâmico. Substituir botões de Design my Outdoor Kitchen por outras opções; (explore gallery, explore firepits, fireplaces, free estimates). Mover sessão Follow us antes de FAQ.
+
+Na pagina Maxima Concrete — Premium Patios & Driveways in Ohio Na sessão What Is an Approach? @natashagonzalez31 enviara novo copyright. Substituir link do botao p/ “Inspired? Request your Free Estimate now!” Na sessao Why Maxima Is the Right Choice for Your Paver Approach? os icones estao em baixa resolução e pixelados, e precisam ser substituídos. Na sessão: Municipality Requirements — We Handle It All @natashagonzalez31 enviara novas fotos e novo copyright;
+Na sessão Paver Approaches That Make a Lasting First Impression substituir botao para Explore Paver Options (link da pagina de paver finish). Na sessao Inspiration for Your Approaches substituir botao p/ Inspired? Explore more in our Gallery. Na sessão Don’t wait, transform your space now, substituir titulo por Ready to Transform Your Space? Let’s Get Started. Adicionar Follow Us com Instagram nessa pagina antes do formulario.
+
+Na pagina Maxima Concrete — Premium Patios & Driveways in Ohio  @natashagonzalez31 enviara copy para sessão “Why choose a Basement floor?”  Substituir link do botao p/ “Inspired? Request your Free Estimate now!” Na sessao Finish options for your basement retirar opção Epoxy / polyaspartic. Na sessao Why Choose Maxima Slabs esta desconfigurada, considerar modelo utilizados em outras paginas (fundo azul com icones). Na sessao Inspiration for Your Basement substituir botao p/ Inspired? Explore more in our Gallery. Adicionar Follow Us com Instagram nessa pagina antes do formulario.
+
+Na pagina Maxima Concrete — Premium Patios & Driveways in Ohio  adicionar botões “find our work near you” and “contact us” no hero. Na sessao Industries We Serve, add logos das companhias das empresas que ja fizeram projeto. Logos podem estar em branco e passando em formato de carrossel infinito. Add botao de Explore more e ter esse link: Maxima Concrete — Premium Patios & Driveways in Ohio
+
+Na pagina Maxima Concrete — Premium Patios & Driveways in Ohio  @natashagonzalez31 enviara novo copyright e links para os botões, temos que citar muito mais a MP (maximapools.com) e inserir o link deles nessa pagina.

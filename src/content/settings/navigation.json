@@ -16,68 +16,252 @@
     "google": "https://search.google.com/local/writereview?placeid=ChIJ15ONBZf6OIgRPydowIItn-Q"
   },
   "items": [
-    { "label": "Home", "href": "/", "icon": "Home" },
-    { "label": "Services", "submenu": "services", "icon": "Briefcase" },
-    { "label": "Gallery", "href": "/gallery", "icon": "Image" },
-    { "label": "Finishes", "submenu": "finishes", "icon": "Palette" },
-    { "label": "Why Maxima?", "submenu": "why", "icon": "HelpCircle" },
-    { "label": "Project Map", "href": "/project-map", "icon": "MapPin", "variant": "outline", "showIcon": true },
-    { "label": "Contact us", "href": "/contact-us", "icon": "MessageSquare", "variant": "outline" }
+    {
+      "label": "Home",
+      "href": "/",
+      "icon": "Home"
+    },
+    {
+      "label": "Services",
+      "submenu": "services",
+      "icon": "Briefcase"
+    },
+    {
+      "label": "Gallery",
+      "href": "/gallery",
+      "icon": "Image"
+    },
+    {
+      "label": "Finishes",
+      "submenu": "finishes",
+      "icon": "Palette"
+    },
+    {
+      "label": "Why Maxima?",
+      "submenu": "why",
+      "icon": "HelpCircle"
+    },
+    {
+      "label": "Project Map",
+      "href": "/project-map",
+      "icon": "MapPin",
+      "variant": "outline",
+      "showIcon": true
+    },
+    {
+      "label": "Contact us",
+      "href": "/contact-us",
+      "icon": "MessageSquare",
+      "variant": "outline"
+    }
   ],
   "submenus": {
     "services": {
       "title": "Our Services",
       "subtitle": "Premium concrete solutions for every project",
       "items": [
-        { "label": "Driveways", "href": "/services/driveways", "icon": "CarFront" },
-        { "label": "Patios", "href": "/services/patios", "icon": "Trees" },
-        { "label": "Porches", "href": "/services/porches", "icon": "DoorOpen" },
-        { "label": "Outdoor Living", "href": "/services/outdoor-living", "icon": "Sofa" },
-        { "label": "Approaches", "href": "/services/approaches", "icon": "ArrowRightToLine" },
-        { "label": "Basement Floors", "href": "/services/basement-floors", "icon": "Home" },
-        { "label": "Commercial Concrete", "href": "/commercial-concrete", "icon": "Building2" },
-        { "label": "Commercial Pools", "href": "/commercial-pools", "icon": "Waves" },
-        { "label": "Curbs & Gutters", "href": "/services/curbs-gutters", "icon": "AlignVerticalSpaceAround" },
-        { "label": "Fire Pits", "href": "/services/fire-pits", "icon": "Flame" },
-        { "label": "Fireplaces", "href": "/services/fireplaces", "icon": "FireExtinguisher" },
-        { "label": "Footers", "href": "/services/footers", "icon": "Construction" },
-        { "label": "Garage Floors", "href": "/services/garage-floors", "icon": "Warehouse" },
-        { "label": "Outdoor Kitchen & Bars", "href": "/services/outdoor-kitchens", "icon": "CookingPot" },
-        { "label": "Outdoor Lighting", "href": "/services/outdoor-lighting", "icon": "Lightbulb" },
-        { "label": "Pool Decks & Surrounds", "href": "/services/pool-decks-surrounds", "icon": "Waves" },
-        { "label": "Retaining Walls", "href": "/services/retaining-walls", "icon": "Blocks" },
-        { "label": "Seating Walls", "href": "/services/seating-walls", "icon": "Armchair" },
-        { "label": "Shelters, Pergolas & Shade", "href": "/services/shelters", "icon": "Tent" },
-        { "label": "Sidewalks", "href": "/services/sidewalks", "icon": "Footprints" },
-        { "label": "Slabs", "href": "/services/slabs", "icon": "Square" },
-        { "label": "Sports Courts", "href": "/services/sports-courts", "icon": "Trophy" },
-        { "label": "Steps", "href": "/services/steps", "icon": "ArrowUpFromLine" }
+        {
+          "label": "Driveways",
+          "href": "/services/driveways",
+          "icon": "CarFront"
+        },
+        {
+          "label": "Patios",
+          "href": "/services/patios",
+          "icon": "Trees"
+        },
+        {
+          "label": "Porches",
+          "href": "/services/porches",
+          "icon": "DoorOpen"
+        },
+        {
+          "label": "Outdoor Living",
+          "href": "/services/outdoor-living",
+          "icon": "Sofa"
+        },
+        {
+          "label": "Approaches",
+          "href": "/services/approaches",
+          "icon": "ArrowRightToLine"
+        },
+        {
+          "label": "Basement Floors",
+          "href": "/services/basement-floors",
+          "icon": "Home"
+        },
+        {
+          "label": "Commercial Concrete",
+          "href": "/commercial-concrete",
+          "icon": "Building2"
+        },
+        {
+          "label": "Commercial Pools",
+          "href": "/commercial-pools",
+          "icon": "Waves"
+        },
+        {
+          "label": "Curbs & Gutters",
+          "href": "/services/curbs-gutters",
+          "icon": "AlignVerticalSpaceAround"
+        },
+        {
+          "label": "Fire Pits",
+          "href": "/services/fire-pits",
+          "icon": "Flame"
+        },
+        {
+          "label": "Fireplaces",
+          "href": "/services/fireplaces",
+          "icon": "FireExtinguisher"
+        },
+        {
+          "label": "Footers",
+          "href": "/services/footers",
+          "icon": "Construction"
+        },
+        {
+          "label": "Garage Floors",
+          "href": "/services/garage-floors",
+          "icon": "Warehouse"
+        },
+        {
+          "label": "Outdoor Kitchen & Bars",
+          "href": "/services/outdoor-kitchens",
+          "icon": "CookingPot"
+        },
+        {
+          "label": "Outdoor Lighting",
+          "href": "/services/outdoor-lighting",
+          "icon": "Lightbulb"
+        },
+        {
+          "label": "Pool Decks & Surrounds",
+          "href": "/services/pool-decks-surrounds",
+          "icon": "Waves"
+        },
+        {
+          "label": "Retaining Walls",
+          "href": "/services/retaining-walls",
+          "icon": "Blocks"
+        },
+        {
+          "label": "Seating Walls",
+          "href": "/services/seating-walls",
+          "icon": "Armchair"
+        },
+        {
+          "label": "Shelters, Pergolas & Shade",
+          "href": "/services/shelters",
+          "icon": "Tent"
+        },
+        {
+          "label": "Sidewalks",
+          "href": "/services/sidewalks",
+          "icon": "Footprints"
+        },
+        {
+          "label": "Slabs",
+          "href": "/services/slabs",
+          "icon": "Square"
+        },
+        {
+          "label": "Sports Courts",
+          "href": "/services/sports-courts",
+          "icon": "Trophy"
+        },
+        {
+          "label": "Steps",
+          "href": "/services/steps",
+          "icon": "ArrowUpFromLine"
+        }
       ]
     },
     "finishes": {
       "title": "Our Finishes",
       "subtitle": "Choose the perfect finish for your project",
       "items": [
-        { "label": "Broom", "href": "/finishes/broom", "icon": "Paintbrush" },
-        { "label": "Colored Broom", "href": "/finishes/colored-broom", "icon": "Layers" },
-        { "label": "Stamped & Colored", "href": "/finishes/stamped-colored", "icon": "Stamp" },
-        { "label": "Smooth", "href": "/finishes/smooth", "icon": "CircleDot" },
-        { "label": "Buff Wash & Exposed", "href": "/finishes/buff-wash-exposed", "icon": "Droplets" }
+        {
+          "label": "Broom Finish",
+          "href": "/finishes/broom",
+          "icon": "Paintbrush"
+        },
+        {
+          "label": "Colored Broom Finish",
+          "href": "/finishes/colored-broom",
+          "icon": "Layers"
+        },
+        {
+          "label": "Stamped & Colored",
+          "href": "/finishes/stamped-colored",
+          "icon": "Stamp"
+        },
+        {
+          "label": "Smooth Finish",
+          "href": "/finishes/smooth",
+          "icon": "CircleDot"
+        },
+        {
+          "label": "Buff Wash & Exposed Aggregate",
+          "href": "/finishes/buff-wash-exposed",
+          "icon": "Droplets"
+        },
+        {
+          "label": "Paver, Brick and Natural Stone",
+          "href": "/finishes",
+          "icon": "Grid3x3"
+        }
       ]
     },
     "why": {
       "title": "Why Maxima?",
       "subtitle": "Get to know Maxima Concrete",
       "items": [
-        { "label": "About Us", "href": "/why-maxima", "icon": "Info" },
-        { "label": "Licensing & Insured", "href": "/licensing-insured", "icon": "ShieldCheck" },
-        { "label": "Project Map", "href": "/project-map", "icon": "Map" },
-        { "label": "Areas We Serve", "href": "/areas-we-serve", "icon": "MapPin" },
-        { "label": "Reviews", "href": "/reviews", "icon": "Star" },
-        { "label": "Contact Us", "href": "/contact-us", "icon": "MessageSquare" },
-        { "label": "Financing", "href": "/financing", "icon": "DollarSign" },
-        { "label": "Commercial Projects", "href": "/commercial", "icon": "Building2" },
-        { "label": "Join Our Team", "href": "/join-our-team", "icon": "Users" }
+        {
+          "label": "About Us",
+          "href": "/why-maxima",
+          "icon": "Info"
+        },
+        {
+          "label": "Licensing & Insured",
+          "href": "/licensing-insured",
+          "icon": "ShieldCheck"
+        },
+        {
+          "label": "Project Map",
+          "href": "/project-map",
+          "icon": "Map"
+        },
+        {
+          "label": "Areas We Serve",
+          "href": "/areas-we-serve",
+          "icon": "MapPin"
+        },
+        {
+          "label": "Reviews",
+          "href": "/reviews",
+          "icon": "Star"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact-us",
+          "icon": "MessageSquare"
+        },
+        {
+          "label": "Financing",
+          "href": "/financing",
+          "icon": "DollarSign"
+        },
+        {
+          "label": "Commercial Projects",
+          "href": "/commercial",
+          "icon": "Building2"
+        },
+        {
+          "label": "Join Our Team",
+          "href": "/join-our-team",
+          "icon": "Users"
+        }
       ]
     }
   }

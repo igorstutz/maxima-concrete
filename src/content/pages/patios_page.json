@@ -101,26 +101,26 @@
           {
             "link": "/finishes/broom",
             "image": "/images/cms/uploads/1780687948556-2qlyku.webp",
-            "title": "Broom-Finished:",
-            "description": "Classic, slip-resistant texture with clean lines — ideal for all-season traction and timeless appeal."
+            "title": "Broom-Finish",
+            "description": "Classic slip-resistant texture with clean lines, offering all-season traction and timeless appeal."
           },
           {
             "link": "/finishes/stamped-colored",
             "image": "/images/cms/uploads/1780687984714-woo06w.webp",
-            "title": "Stamped & Colored:",
-            "description": "Decorative patterns and rich color that replicate stone or brick for elevated curb appeal."
+            "title": "Stamped & Colored",
+            "description": "Decorative patterns and rich colors that mimic natural stone or brick, creating a distinctive look with enhanced curb appeal."
           },
           {
             "link": "/finishes/buff-wash-exposed",
             "image": "/images/cms/uploads/1780687979144-0cjca.webp",
-            "title": "Exposed Aggregate:",
-            "description": "Natural stone texture with added grip and visual depth for a distinctive, durable surface."
+            "title": "Exposed Aggregate & Buff Wash",
+            "description": "A warm, natural finish that reveals exposed stone textures, adding depth, character, and a refined look to any concrete surface."
           },
           {
             "link": "/finishes/buff-wash-exposed",
             "image": "/images/cms/uploads/1780687995084-ah3p5d.webp",
-            "title": "Buff Wash:",
-            "description": "Subtle texture with a warm, refined look that softens concrete without sacrificing performance."
+            "title": "Paver, Brick or Natural Stone",
+            "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
           }
         ],
         "description": "Maxima Concrete offers a diverse range of finishes and textures to match your home’s architecture and your personal taste:",
@@ -325,7 +325,7 @@
       "label": "Contact",
       "type": "contact",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",

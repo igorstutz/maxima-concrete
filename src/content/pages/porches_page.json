@@ -101,26 +101,26 @@
           {
             "link": "/finishes/broom",
             "image": "/images/cms/uploads/1780944892648-tzcb32.webp",
-            "title": "Broom-Finished:",
-            "description": "Broom-finished concrete is one of the most popular and versatile concrete finishes for patios, driveways, sidewalks, porches, and steps. Created by brushing the surface before it fully cures, this finish adds subtle texture and improved slip resistance while maintaining a clean, classic appearance. Durable, low-maintenance, and cost-effective, broom-finished concrete is ideal for both residential and commercial properties, offering long-lasting performance and timeless curb appeal."
+            "title": "Broom-Finish",
+            "description": "Classic slip-resistant texture with clean lines, offering all-season traction and timeless appeal."
           },
           {
             "link": "/finishes/stamped-colored",
             "image": "/images/cms/uploads/1780944899369-on01t.webp",
-            "title": "Stamped & Colored:",
-            "description": "Stamped and colored concrete enhances the look of patios, walkways, driveways, and outdoor living spaces. By imprinting patterns and adding color during the installation process, concrete can replicate the appearance of natural stone, brick, slate, or wood at a more cost-effective price. With a wide variety of textures, patterns, and color options available, this finish offers endless design possibilities. The result is a durable, low-maintenance surface that combines beauty and functionality."
+            "title": "Stamped & Colored",
+            "description": "Decorative patterns and rich colors that mimic natural stone or brick, creating a distinctive look with enhanced curb appeal."
           },
           {
             "link": "/finishes/buff-wash-exposed",
             "image": "/images/cms/uploads/1780944904976-ab4qi7.webp",
-            "title": "Exposed Aggregate:",
-            "description": "Exposed Aggregate concrete creates a bold, textured appearance by revealing the decorative stones embedded within the concrete surface. This finish highlights the natural color and character of the aggregate, creating added visual interest and depth. Popular for driveways, patios, pool decks, and walkways, Exposed Aggregate offers a durable, slip-resistant surface with a natural look."
+            "title": "Exposed Aggregate & Buff Wash",
+            "description": "A warm, natural finish that reveals exposed stone textures, adding depth, character, and a refined look to any concrete surface."
           },
           {
             "link": "/finishes/buff-wash-exposed",
             "image": "/images/cms/uploads/1780944910023-0w1xfh.webp",
-            "title": "Buff Wash:",
-            "description": "Buff Wash concrete creates a unique, textured appearance by gently exposing the natural sand and fine aggregates within the concrete surface. Through a specialized finishing process, the top layer of concrete is carefully removed to reveal subtle textures and natural color variations. Available in different exposure levels, Buff Wash is a popular choice for patios, pool decks, walkways, and outdoor living areas, offering a refined, natural look with added texture and visual depth."
+            "title": "Paver, Brick or Natural Stone",
+            "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
           }
         ],
         "description": "Your finish sets the tone — here are our most popular options:",
@@ -321,7 +321,7 @@
       "label": "Contact",
       "type": "contact",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",
