@@ -148,26 +148,15 @@
       }
     },
     {
-      "key": "custom_1773689121091_usp26a",
-      "label": "Contact",
-      "type": "contact",
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
       "content": {
-        "title": "Don't Wait, Transform Your Space Now",
-        "ctaText": "Send Request",
-        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
-        "_sourceLabel": "Contact",
-        "nameSectionLabel": ""
-      }
-    },
-    {
-      "key": "custom_1773689112171_tu7nc",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
       }
     },
     {
@@ -205,18 +194,6 @@
       }
     },
     {
-      "key": "reviews",
-      "label": "Reviews",
-      "type": "reviews",
-      "content": {
-        "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
-        "titlePart2": "Maxima Concrete?",
-        "viewAllText": "View all reviews on Google"
-      }
-    },
-    {
       "key": "find_work",
       "label": "Find Our Work Near You",
       "type": "find-work",
@@ -228,6 +205,18 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_1773689121091_usp26a",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
       }
     },
     {
@@ -255,6 +244,17 @@
         ],
         "title": "FAQ — About Maxima Concrete",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1773689112171_tu7nc",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]

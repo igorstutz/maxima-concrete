@@ -200,6 +200,66 @@
       }
     },
     {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
       "key": "custom_1773272729192_krzrzs",
       "label": "Contact",
       "type": "contact",
@@ -247,66 +307,6 @@
         "titlePart1": "Follow Us",
         "titlePart2": "— On Instagram",
         "_sourceLabel": "Instagram"
-      }
-    },
-    {
-      "key": "trust_global",
-      "label": "Trust (Global)",
-      "type": "trust-global",
-      "content": {
-        "items": [
-          {
-            "icon": "home",
-            "title": "Family-Owned & Operated",
-            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
-          },
-          {
-            "icon": "users",
-            "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
-          },
-          {
-            "icon": "shield",
-            "title": "Built for Decades",
-            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
-          },
-          {
-            "icon": "filecheck",
-            "title": "Licensed, Fully Insured & Registered in your City",
-            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
-          }
-        ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
-      }
-    },
-    {
-      "key": "reviews",
-      "label": "Reviews",
-      "type": "reviews",
-      "content": {
-        "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
-        "titlePart2": "Maxima Concrete?",
-        "viewAllText": "View all reviews on Google"
-      }
-    },
-    {
-      "key": "find_work",
-      "label": "Find Our Work Near You",
-      "type": "find-work",
-      "content": {
-        "title": "Find Our Work Near You",
-        "mapZoom": 8,
-        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
-        "mapCenter": [
-          39.9612,
-          -82.9988
-        ]
       }
     }
   ]

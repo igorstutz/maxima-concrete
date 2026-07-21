@@ -39,18 +39,6 @@
       }
     },
     {
-      "key": "custom_1778125297540_2un2d",
-      "label": "Contact",
-      "type": "contact",
-      "content": {
-        "title": "Don't Wait, Transform Your Space Now",
-        "ctaText": "Send Request",
-        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
-        "_sourceLabel": "Contact",
-        "nameSectionLabel": ""
-      }
-    },
-    {
       "key": "reviews",
       "label": "Reviews",
       "type": "reviews",
@@ -60,17 +48,6 @@
         "titlePart1": "Why Homeowners Recommend ",
         "titlePart2": "Maxima Concrete?",
         "viewAllText": "View all reviews on Google"
-      }
-    },
-    {
-      "key": "custom_1778125311186_0wruyd",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     },
     {
@@ -85,6 +62,18 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_1778125297540_2un2d",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Don't Wait, Transform Your Space Now",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
       }
     },
     {
@@ -112,6 +101,17 @@
         ],
         "title": "FAQ — Contact Maxima",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1778125311186_0wruyd",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]

@@ -98,21 +98,6 @@
       }
     },
     {
-      "key": "custom_1779195004103_9ahovi",
-      "label": "Find Our Work Near You",
-      "type": "find-work",
-      "content": {
-        "title": "Find Our Work Near You",
-        "mapZoom": 8,
-        "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
-        "mapCenter": [
-          39.9612,
-          -82.9988
-        ],
-        "_sourceLabel": "Find Our Work Near You"
-      }
-    },
-    {
       "key": "custom_1779195015061_0m1v8p",
       "label": "Trust (Global)",
       "type": "trust-global",
@@ -148,6 +133,21 @@
       }
     },
     {
+      "key": "custom_1779195004103_9ahovi",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ],
+        "_sourceLabel": "Find Our Work Near You"
+      }
+    },
+    {
       "key": "custom_1779195023900_nzbjxp",
       "label": "Contact",
       "type": "contact",
@@ -157,17 +157,6 @@
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",
         "nameSectionLabel": ""
-      }
-    },
-    {
-      "key": "custom_1779195032654_fhcojm",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     },
     {
@@ -195,6 +184,17 @@
         ],
         "title": "FAQ — Columbus Concrete",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1779195032654_fhcojm",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]

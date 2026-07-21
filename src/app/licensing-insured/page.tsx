@@ -446,8 +446,8 @@ export default function Page() {
         </Container>
       </section>
 
-      <Contact content={contactContent} />
       <FindWork content={findWorkContent} />
+      <Contact content={contactContent} />
     </div>
   );
 }

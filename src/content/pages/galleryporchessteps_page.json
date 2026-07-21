@@ -78,6 +78,18 @@
       }
     },
     {
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
+      "content": {
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
+      }
+    },
+    {
       "key": "trust_global",
       "label": "Trust (Global)",
       "type": "trust-global",
@@ -112,18 +124,6 @@
       }
     },
     {
-      "key": "reviews",
-      "label": "Reviews",
-      "type": "reviews",
-      "content": {
-        "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
-        "titlePart2": "Maxima Concrete?",
-        "viewAllText": "View all reviews on Google"
-      }
-    },
-    {
       "key": "find_work",
       "label": "Find Our Work Near You",
       "type": "find-work",
@@ -147,17 +147,6 @@
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact",
         "nameSectionLabel": ""
-      }
-    },
-    {
-      "key": "custom_porchessteps_instagram",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     },
     {
@@ -185,6 +174,17 @@
         ],
         "title": "FAQ — Porches & Steps",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_porchessteps_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]

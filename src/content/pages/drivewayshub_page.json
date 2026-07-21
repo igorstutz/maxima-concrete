@@ -108,41 +108,6 @@
       }
     },
     {
-      "key": "custom_1784214306229_nqzrms",
-      "label": "Trust (Global)",
-      "type": "trust-global",
-      "content": {
-        "items": [
-          {
-            "icon": "home",
-            "title": "Family-Owned & Operated",
-            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
-          },
-          {
-            "icon": "users",
-            "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
-          },
-          {
-            "icon": "shield",
-            "title": "Built for Decades",
-            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
-          },
-          {
-            "icon": "filecheck",
-            "title": "Licensed, Fully Insured & Registered in your City",
-            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
-          }
-        ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "_sourceLabel": "Trust (Global)",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
-      }
-    },
-    {
       "key": "drivewayshub_page_why_maxima",
       "label": "Why Maxima",
       "type": "hub-why-maxima",
@@ -280,6 +245,41 @@
         "paragraph1": "Your driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
         "paragraph2": "📞 Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
         "relatedTitle": "Related Services"
+      }
+    },
+    {
+      "key": "custom_1784214306229_nqzrms",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "Trust (Global)",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
       }
     },
     {

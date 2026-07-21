@@ -30,27 +30,21 @@
       }
     },
     {
-      "key": "custom_1779197014001_findwork",
-      "label": "Find Our Work Near You",
-      "type": "find-work",
-      "content": {}
-    },
-    {
       "key": "custom_1779197014002_trustglobal",
       "label": "Trust (Global)",
       "type": "trust-global",
       "content": {}
     },
     {
-      "key": "custom_1779197014003_contact",
-      "label": "Contact",
-      "type": "contact",
+      "key": "custom_1779197014001_findwork",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
       "content": {}
     },
     {
-      "key": "custom_1779197014004_instagram",
-      "label": "Instagram",
-      "type": "instagram",
+      "key": "custom_1779197014003_contact",
+      "label": "Contact",
+      "type": "contact",
       "content": {}
     },
     {
@@ -79,6 +73,12 @@
         "title": "FAQ — Concrete Finishes",
         "_sourceLabel": "FAQ"
       }
+    },
+    {
+      "key": "custom_1779197014004_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {}
     }
   ]
 }

@@ -191,14 +191,15 @@
       }
     },
     {
-      "key": "custom_1778128830009_2cr0pn",
-      "label": "Instagram",
-      "type": "instagram",
+      "key": "reviews",
+      "label": "Reviews",
+      "type": "reviews",
       "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "subtitle": "See What Our Customers Are Saying on Google",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
+        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart2": "Maxima Concrete?",
+        "viewAllText": "View all reviews on Google"
       }
     },
     {
@@ -233,18 +234,6 @@
         "ctaText": "Get a Free Estimate",
         "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
         "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
-      }
-    },
-    {
-      "key": "reviews",
-      "label": "Reviews",
-      "type": "reviews",
-      "content": {
-        "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
-        "titlePart2": "Maxima Concrete?",
-        "viewAllText": "View all reviews on Google"
       }
     },
     {
@@ -302,6 +291,17 @@
         ],
         "title": "FAQ — Commercial Pools",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_1778128830009_2cr0pn",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]

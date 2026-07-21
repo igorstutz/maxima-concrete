@@ -181,40 +181,6 @@
       }
     },
     {
-      "key": "trust_global",
-      "label": "Trust (Global)",
-      "type": "trust-global",
-      "content": {
-        "items": [
-          {
-            "icon": "home",
-            "title": "Family-Owned & Operated",
-            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
-          },
-          {
-            "icon": "users",
-            "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
-          },
-          {
-            "icon": "shield",
-            "title": "Built for Decades",
-            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
-          },
-          {
-            "icon": "filecheck",
-            "title": "Licensed, Fully Insured & Registered in your City",
-            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
-          }
-        ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
-      }
-    },
-    {
       "key": "reviews",
       "label": "Reviews",
       "type": "reviews",
@@ -257,6 +223,40 @@
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
         "backgroundImage": "/images/cms/uploads/1782842879795-trotyg.webp"
+      }
+    },
+    {
+      "key": "trust_global",
+      "label": "Trust (Global)",
+      "type": "trust-global",
+      "content": {
+        "items": [
+          {
+            "icon": "home",
+            "title": "Family-Owned & Operated",
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
+          },
+          {
+            "icon": "users",
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+          },
+          {
+            "icon": "shield",
+            "title": "Built for Decades",
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
+          },
+          {
+            "icon": "filecheck",
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
+          }
+        ],
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
       }
     },
     {

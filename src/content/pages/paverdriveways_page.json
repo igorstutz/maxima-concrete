@@ -214,20 +214,6 @@
       }
     },
     {
-      "key": "find_work",
-      "label": "Find Our Work Near You",
-      "type": "find-work",
-      "content": {
-        "title": "Find Our Work Near You",
-        "mapZoom": 8,
-        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
-        "mapCenter": [
-          39.9612,
-          -82.9988
-        ]
-      }
-    },
-    {
       "key": "custom_1762900000009_paverdrv",
       "label": "Related Services",
       "type": "final-cta",
@@ -289,6 +275,20 @@
         "ctaText": "Get a Free Estimate",
         "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
         "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+      }
+    },
+    {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
       }
     },
     {

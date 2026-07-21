@@ -349,33 +349,6 @@
       }
     },
     {
-      "key": "instagram",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram"
-      }
-    },
-    {
-      "key": "footer",
-      "label": "Footer",
-      "type": "footer",
-      "content": {
-        "phone": "(614) 384-5917",
-        "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
-        "designerUrl": "https://melaniesconsulting.com",
-        "socialLinks": {
-          "google": "https://search.google.com/local/writereview?placeid=ChIJ15ONBZf6OIgRPydowIItn-Q",
-          "facebook": "https://www.facebook.com/maximaconcrete/",
-          "instagram": "https://www.instagram.com/maximaconcrete/"
-        },
-        "designerName": "Melanie's Consulting",
-        "designerText": "Designed by"
-      }
-    },
-    {
       "key": "custom_home_faq",
       "label": "FAQ",
       "type": "faq",
@@ -404,6 +377,33 @@
         ],
         "title": "FAQ — Maxima Concrete",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram"
+      }
+    },
+    {
+      "key": "footer",
+      "label": "Footer",
+      "type": "footer",
+      "content": {
+        "phone": "(614) 384-5917",
+        "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
+        "designerUrl": "https://melaniesconsulting.com",
+        "socialLinks": {
+          "google": "https://search.google.com/local/writereview?placeid=ChIJ15ONBZf6OIgRPydowIItn-Q",
+          "facebook": "https://www.facebook.com/maximaconcrete/",
+          "instagram": "https://www.instagram.com/maximaconcrete/"
+        },
+        "designerName": "Melanie's Consulting",
+        "designerText": "Designed by"
       }
     }
   ]

@@ -79,20 +79,6 @@
       }
     },
     {
-      "key": "find_work",
-      "label": "Find Our Work Near You",
-      "type": "find-work",
-      "content": {
-        "title": "Find Our Work Near You",
-        "mapZoom": 8,
-        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
-        "mapCenter": [
-          39.9612,
-          -82.9988
-        ]
-      }
-    },
-    {
       "key": "trust_global",
       "label": "Trust (Global)",
       "type": "trust-global",
@@ -127,6 +113,20 @@
       }
     },
     {
+      "key": "find_work",
+      "label": "Find Our Work Near You",
+      "type": "find-work",
+      "content": {
+        "title": "Find Our Work Near You",
+        "mapZoom": 8,
+        "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapCenter": [
+          39.9612,
+          -82.9988
+        ]
+      }
+    },
+    {
       "key": "custom_sportcourt_contact",
       "label": "Contact",
       "type": "contact",
@@ -135,17 +135,6 @@
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "_sourceLabel": "Contact"
-      }
-    },
-    {
-      "key": "custom_sportcourt_instagram",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
       }
     },
     {
@@ -173,6 +162,17 @@
         ],
         "title": "FAQ — Sport Courts",
         "_sourceLabel": "FAQ"
+      }
+    },
+    {
+      "key": "custom_sportcourt_instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     }
   ]
