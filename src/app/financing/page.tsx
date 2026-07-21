@@ -208,10 +208,10 @@ export default function Page() {
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </a>
                 <a
-                  href="tel:+16142000731"
+                  href="tel:+16143845917"
                   className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-7 py-4 font-semibold text-white backdrop-blur-md transition hover:bg-white/10"
                 >
-                  <Phone className="h-4 w-4" /> (614) 200-0731
+                  <Phone className="h-4 w-4" /> (614) 384-5917
                 </a>
               </div>
 

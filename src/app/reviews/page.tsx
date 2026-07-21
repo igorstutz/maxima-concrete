@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight, ChevronRight, Star } from "lucide-react";
 import { Container } from "@/components/Container";
-import { ScrollReveal } from "@/components/ScrollReveal";
 import ElfsightWidget from "@/components/ElfsightWidget";
 import Contact from "@/components/sections/home/Contact";
 import FindWork from "@/components/sections/home/FindWork";
 import home from "@/content/pages/home.json";
 import googleReviews from "@/content/data/google-reviews.json";
+import ReviewsMarquee from "./ReviewsMarquee";
 
 export const metadata: Metadata = {
   title: "Maxima Concrete - Customer Reviews | Maxima Concrete",
@@ -40,30 +40,9 @@ interface GoogleReview {
 
 const reviews = googleReviews as GoogleReview[];
 const totalReviews = reviews.length;
+const positiveReviews = reviews.filter((r) => r.rating >= 5).length;
 const averageRating =
   reviews.reduce((sum, r) => sum + r.rating, 0) / Math.max(totalReviews, 1);
-
-const MONTHS = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
-/**
- * Data absoluta ("May 2026") derivada apenas da string ISO — determinística
- * no build, sem Date.now(), então não há risco de mismatch na hidratação.
- */
-function formatMonthYear(iso: string): string {
-  const year = iso.slice(0, 4);
-  const month = Number(iso.slice(5, 7));
-  return `${MONTHS[month - 1] ?? ""} ${year}`.trim();
-}
-
-/** Iniciais para o avatar quando a review não tem foto (portado do site antigo). */
-function getInitials(name: string): string {
-  const parts = name.trim().split(/\s+/);
-  if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
-  return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
-}
 
 function StarRating({ rating, size = "h-4 w-4" }: { rating: number; size?: string }) {
   return (
@@ -150,65 +129,46 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* REVIEWS DO GOOGLE (dados locais) */}
-      <section className="bg-surface-soft py-16 sm:py-24">
+      {/* CARROSSEL INFINITO DE REVIEWS + WIDGET ELFSIGHT (mesma faixa, sem gap) */}
+      <section className="bg-surface-soft pb-16 pt-16 sm:pt-24 lg:pb-20">
         <Container>
-          <div className="mb-8 md:mb-12">
+          <div className="mb-8 md:mb-10">
             <h2 className="mb-3 text-2xl font-semibold leading-[115%] tracking-[-1.2px] text-navy md:text-3xl lg:text-[40px]">
               What Our Customers <span className="text-ocean">Are Saying</span>
             </h2>
             <p className="max-w-xl text-sm text-[#5A6B7B] md:text-base">
-              Genuine Google reviews from homeowners across Ohio.
+              Join the <strong className="text-navy">{positiveReviews}+</strong> homeowners who
+              rated Maxima Concrete 5 stars on Google.
             </p>
           </div>
+        </Container>
 
-          <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
-            {reviews.map((review, i) => (
-              <ScrollReveal key={review.name} delay={(i % 2) * 100}>
-                <div className="flex h-full flex-col rounded-2xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md md:p-7">
-                  <div className="flex items-center gap-4">
-                    {/* Avatar: foto quando existe, senão iniciais em círculo */}
-                    {review.photo ? (
-                      // eslint-disable-next-line @next/next/no-img-element
-                      <img
-                        src={review.photo}
-                        alt={review.name}
-                        width={48}
-                        height={48}
-                        loading="lazy"
-                        className="h-12 w-12 rounded-full object-cover"
-                      />
-                    ) : (
-                      <div className="gradient-navy flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-sm font-semibold text-white">
-                        {getInitials(review.name)}
-                      </div>
-                    )}
-                    <div className="min-w-0">
-                      <p className="truncate font-semibold text-navy">{review.name}</p>
-                      <div className="mt-0.5 flex items-center gap-2">
-                        <StarRating rating={review.rating} />
-                        <span className="text-xs text-gray-500">
-                          {formatMonthYear(review.date)}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                  {review.comment && (
-                    <p className="mt-4 text-sm leading-relaxed text-[#5A6B7B] md:text-base">
-                      {review.comment}
-                    </p>
-                  )}
-                </div>
-              </ScrollReveal>
-            ))}
+        {/* Carrossel infinito (client component) */}
+        <Container>
+          <ReviewsMarquee reviews={reviews} />
+        </Container>
+
+        {/* CTA */}
+        <Container>
+          <div className="mt-10 flex flex-col items-start gap-4 rounded-2xl bg-navy px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:mt-12 md:px-8">
+            <p className="text-base font-medium text-white md:text-lg">
+              Impressed by all these happy customers? Become one of them.
+            </p>
+            <Link
+              href="/contact-us/#contact"
+              className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-navy transition-colors hover:bg-white/90"
+            >
+              Get Your Free Estimate
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
           </div>
         </Container>
-      </section>
 
-      {/* WIDGET ELFSIGHT (reviews ao vivo do Google) */}
-      <section className="bg-white py-16 lg:py-20">
+        {/* Reviews ao vivo do Google (Elfsight) */}
         <Container>
-          <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
+          <div className="mt-12">
+            <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
+          </div>
         </Container>
       </section>
 

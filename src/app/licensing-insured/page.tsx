@@ -145,8 +145,8 @@ export default function Page() {
                 <Link href="/contact-us/#contact" className={PRIMARY_BTN}>
                   Contact Us
                 </Link>
-                <a href="tel:+16142000731" className={SECONDARY_BTN}>
-                  <Phone className="h-4 w-4" /> (614) 200-0731
+                <a href="tel:+16143845917" className={SECONDARY_BTN}>
+                  <Phone className="h-4 w-4" /> (614) 384-5917
                 </a>
               </div>
             </div>

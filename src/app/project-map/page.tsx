@@ -113,15 +113,15 @@ export default function Page() {
         <div className="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-primary/20 blur-3xl" />
         <div className="pointer-events-none absolute -bottom-24 -left-24 h-96 w-96 rounded-full bg-ocean/30 blur-3xl" />
         <Container className="relative">
-          <div className="mx-auto max-w-2xl text-center">
+          <div className="max-w-2xl text-left">
             <h2 className="text-2xl font-semibold leading-tight tracking-[-0.5px] text-white md:text-3xl lg:text-4xl">
               Don&apos;t see your neighborhood yet?
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/80 md:text-base">
+            <p className="mt-4 max-w-xl text-sm leading-relaxed text-white/80 md:text-base">
               We&apos;re adding new projects across Central Ohio every week. Get your free,
               no-obligation estimate and become the next pin on the map.
             </p>
-            <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col items-start justify-start gap-3 sm:flex-row">
               <Link
                 href="/contact-us/#contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-navy shadow-md transition-colors hover:bg-white/90 lg:text-base"

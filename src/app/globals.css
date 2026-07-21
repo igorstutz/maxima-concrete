@@ -134,3 +134,16 @@ body {
 [class*="eapps-widget-toolbar"] {
   display: none !important;
 }
+
+/* Carrossel infinito (marquee horizontal) — usado nos reviews. */
+@keyframes marquee-x {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee-x var(--marquee-duration, 45s) linear infinite;
+  will-change: transform;
+}
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+}
