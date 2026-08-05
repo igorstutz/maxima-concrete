@@ -13,6 +13,8 @@ interface BuildingCentralContent {
   image?: string;
   ctaText?: string;
   ctaLink?: string;
+  cta2Text?: string;
+  cta2Link?: string;
 }
 
 /** type: "building-central" — texto + CTA à esquerda, imagem à direita, fundo branco. */
@@ -44,15 +46,27 @@ export default function BuildingCentral({ content }: { content: Record<string, a
                 dangerouslySetInnerHTML={{ __html: sanitizeHtml(c.paragraph2) }}
               />
             )}
-            {ctaText && (
-              <div>
-                <SmartLink
-                  href={ctaLink}
-                  className="gradient-navy inline-flex items-center gap-2 rounded-[10px] px-5 py-2.5 text-sm font-medium text-white transition-all hover:brightness-110"
-                >
-                  {ctaText}
-                  <ArrowUpRight className="h-4 w-4" />
-                </SmartLink>
+            {(ctaText || c.cta2Text) && (
+              <div className="flex flex-wrap items-center gap-3">
+                {ctaText && (
+                  <SmartLink
+                    href={ctaLink}
+                    className="gradient-navy inline-flex items-center gap-2 rounded-[10px] px-5 py-2.5 text-sm font-medium text-white transition-all hover:brightness-110"
+                  >
+                    {ctaText}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </SmartLink>
+                )}
+                {/* CTA secundário opcional (ex.: link para o site da Maxima Pools) */}
+                {c.cta2Text && (
+                  <SmartLink
+                    href={c.cta2Link || "#contact"}
+                    className="inline-flex items-center gap-2 rounded-[10px] border border-navy/25 px-5 py-2.5 text-sm font-medium text-navy transition-all hover:bg-navy/5"
+                  >
+                    {c.cta2Text}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </SmartLink>
+                )}
               </div>
             )}
           </ScrollReveal>

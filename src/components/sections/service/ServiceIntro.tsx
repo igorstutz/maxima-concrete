@@ -84,12 +84,12 @@ export default function ServiceIntro({
             {paragraphs.length > 0 ? (
               <div className="mb-6 flex flex-col gap-4 md:mb-8 md:gap-5">
                 {paragraphs.map((p, i) => (
+                  // Permite ênfase inline (<b>/<strong>/<br>) vinda do CMS; o restante é removido.
                   <p
                     key={i}
                     className="whitespace-pre-line text-sm font-medium leading-normal text-[#494948] md:text-[14px]"
-                  >
-                    {p}
-                  </p>
+                    dangerouslySetInnerHTML={{ __html: sanitizeHtml(p) }}
+                  />
                 ))}
               </div>
             ) : descriptionHtml ? (

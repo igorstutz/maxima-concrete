@@ -22,12 +22,14 @@
       "type": "building-central",
       "content": {
         "image": "/images/cms/uploads/1780681799844-mnwb38.webp",
-        "title": "Transform Your \nProperty with a Custom \nCommercial Pool",
+        "title": "Transform Your Property with a Premium Commercial Pool",
         "ctaLink": "#contact",
         "ctaText": "Contact Us",
-        "paragraph1": "At <b>Maxima Concrete</b>, we bring your vision to life — from <b>concept and design to excavation and expert concrete construction.</b>  Serving <b>Central Ohio</b>, our experienced team delivers commercial pool projects that blend <b>aesthetic appeal, safety, and performance</b> to meet your business needs.",
-        "paragraph2": "Whether it’s a hotel courtyard, an apartment complex, a gym facility, or a recreation center, we build pools that enhance property value and customer experience alike.",
-        "_sourceLabel": "Building Central"
+        "paragraph1": "Maxima Pools designs and installs premium commercial fiberglass pools for hotels, apartment communities, fitness centers, and more throughout Central Ohio. As an <b>Authorized San Juan Pools Dealer</b>, we deliver durable, high-quality pools backed by America’s leading fiberglass pool manufacturer since 1958.",
+        "paragraph2": "Every commercial pool project is managed by our experienced in-house team using proven construction methods, premium fiberglass pool systems, and professional project management. Together, Maxima Pools and Maxima Concrete deliver safe, low-maintenance, and long-lasting installations designed to enhance your property, improve the guest experience, and provide reliable performance for years to come.",
+        "_sourceLabel": "Building Central",
+        "cta2Text": "Visit Maxima Pools",
+        "cta2Link": "https://maximapools.com/"
       }
     },
     {
@@ -126,10 +128,10 @@
       "type": "maxima-standard",
       "content": {
         "image": "/images/cms/uploads/1780682175606-kphd2q.webp",
-        "title": "The Maxima Standard",
-        "subtitle": "Where Function Meets Design",
-        "paragraph1": "Maxima Concrete combines <b>architectural creativity</b> with structural precision, producing pools that are both <b>visually striking and technically sound.</b>\nFrom small leisure pools to large-scale resort installations, we focus on <b>safety, efficiency, and craftsmanship</b> at every step.",
-        "paragraph2": "We serve <b>Columbus, Delaware, Franklin, Union, Licking, and Fairfield Counties</b>, offering premium commercial pool construction for Ohio's most trusted properties.",
+        "title": "The Maxima Pools Difference",
+        "subtitle": "Built for Performance. Designed to Last.",
+        "paragraph1": "As a family-owned company, Maxima Pools provides complete commercial pool installation with in-house project management, expert craftsmanship, and personalized service. Together with <b>Maxima Concrete</b>, we deliver durable pool systems and quality concrete finishes built to perform for years.",
+        "paragraph2": "Backed by the structural expertise of Maxima Concrete and the proven quality of San Juan Pools, every project is built with premium materials, precision installation, and attention to every detail. From initial planning to final completion, we deliver commercial pool solutions engineered for durability, efficiency, and lasting performance.",
         "_sourceLabel": "Maxima Standard",
         "backgroundImage": "/images/cms/uploads/1780682123915-pzcrlc.webp"
       }

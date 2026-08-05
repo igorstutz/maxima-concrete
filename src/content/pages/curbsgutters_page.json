@@ -23,12 +23,12 @@
       "label": "Intro",
       "type": "intro",
       "content": {
-        "title": "Why are Curbs and Gutters important?",
+        "title": "Why Are Curbs and Gutters Important?",
         "ctaLink": "#contact",
         "ctaText": "Inspired? Let's Build Your Vision",
-        "subtitle": "Curbs and gutters may not be the first thing you notice, but they’re essential for maintaining the safety, durability, and beauty of your property and neighborhood. Positioned along the edge of the roadway or driveway, these structures are critical for drainage control, pedestrian safety, and defini",
+        "subtitle": "",
         "imageLarge": "/images/cms/uploads/1773275795307-y07ab.webp",
-        "paragraph1": "At Maxima Concrete, we design and install code-compliant curbs and gutters that are both functional and visually refined — ensuring your property looks great while meeting all local regulations.",
+        "paragraph1": "Curbs and gutters do more than define the edge of a roadway — they play a critical role in protecting your property. Properly installed systems improve drainage, direct water away from pavement, reduce erosion, and help extend the life of your concrete surfaces. At Maxima Concrete, we use proven construction methods and quality materials to deliver durable, long-lasting results for residential and commercial projects.",
         "paragraph2": "",
         "titleLine2": "",
         "_sourceLabel": "Intro",
@@ -97,34 +97,34 @@
       "label": "Style Options",
       "type": "style-options",
       "content": {
-        "title": "Built to Code, Built to Last",
+        "title": "Built to Code. Built to Last.",
         "styles": [
           {
             "link": "#contact",
             "image": "/images/cms/uploads/1773277438270-4p93le.webp",
-            "title": "Permit management:",
-            "description": " We pull and pay for local Right-of-Way permits. "
+            "title": "Permit Compliance:",
+            "description": "We coordinate the required Right-of-Way (ROW) permits and help ensure your project meets local municipal requirements throughout Ohio."
           },
           {
             "link": "#contact",
             "image": "/images/cms/uploads/1773703586351-djiv8v.webp",
-            "title": "Professional installation:",
-            "description": "Expert crews form and pour curbs and gutters to precise grades and dimensions. "
+            "title": "Precision Installation:",
+            "description": "Our experienced team follows proper grading, forming, and finishing techniques to deliver curbs and gutters built for long-term performance."
           },
           {
             "link": "#contact",
             "image": "/images/cms/uploads/1773703596218-r1wcdn.webp",
-            "title": "Quality materials:",
-            "description": "We use 6.5-bag high-strength concrete, fiber reinforcement, and 10-gauge wire mesh (as needed) for structural integrity. "
+            "title": "Premium Materials:",
+            "description": "We use high-strength concrete, proper reinforcement when required, and proven construction methods to maximize durability and structural integrity."
           },
           {
             "link": "#contact",
             "image": "/images/cms/uploads/1773703648441-05gz7.webp",
-            "title": "Final inspection:",
-            "description": "All installations are inspected for code compliance and durability."
+            "title": "Quality Assurance:",
+            "description": "Every project is inspected throughout the installation process to ensure proper workmanship, code compliance, and lasting performance."
           }
         ],
-        "description": "Installing curbs and gutters in Ohio often requires compliance with local municipal codes and proper Right-of-Way permits.",
+        "description": "Curb and gutter projects in Ohio often require compliance with local municipal codes and applicable Right-of-Way (ROW) permits. Maxima Concrete follows all local requirements and industry best practices to deliver safe, durable, and code-compliant installations.",
         "_sourceLabel": "Style Options"
       }
     },

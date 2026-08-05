@@ -9,8 +9,8 @@
         "title": "Outdoor Lighting",
         "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Illuminate Every Outdoor Moment",
-        "subtitle": "Illuminate Your Space with Maxima Concrete",
+        "tagline": "Professional Outdoor Lighting Solutions That Highlight Your Landscape, Improve Safety, and Extend Your Outdoor Living Space.",
+        "subtitle": "Professional Outdoor Lighting Solutions That Highlight Your Landscape, Improve Safety, and Extend Your Outdoor Living Space.",
         "_sourceLabel": "Hero",
         "backgroundImage": "/images/cms/uploads/1784037529549-kzymnc.webp",
         "secondaryCtaLink": "#find-work",
@@ -25,14 +25,14 @@
       "content": {
         "title": "Transform Your Backyard into a Nighttime Oasis",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Lightning",
+        "ctaText": "Inspired? Request your Free Estimate now!",
         "mainImage": "/images/cms/uploads/1782843278644-rudkl.webp",
         "thumbnails": [
           "/images/cms/uploads/1781011786399-1o99pf.webp",
           "/images/cms/uploads/1781011913577-w7hxf.webp",
           "/images/cms/uploads/1773617572951-9284jd.webp"
         ],
-        "description": "Turn your <b>Central Ohio backyard</b> into a captivating, functional retreat after sunset with <b>low-voltage decorative lighting</b> from Maxima <b>Concrete.</b>\n\nOur lighting systems are designed to <b>illuminate, accentuate, and protect</b> your outdoor living spaces — from <b>patios and pools</b> to <b>paver walls, driveways, and garden paths.</b>\n\nWhether you want ambient lighting for relaxing evenings or vibrant accents for entertaining, we'll craft the perfect illumination plan for your home."
+        "description": "Enhance the beauty, safety, and functionality of your outdoor space with professionally installed low-voltage lighting. Maxima Concrete designs custom lighting systems that highlight patios, walkways, driveways, retaining walls, pools, and landscape features while improving visibility and curb appeal. Built with premium components and expert installation, our lighting solutions deliver reliable performance and lasting value for your home.<br><br>Every lighting system is custom-designed to complement your property’s layout and installed with precision for dependable, long-term performance. Whether you want to improve nighttime safety, highlight architectural features, or create the perfect ambiance for entertaining, our outdoor lighting solutions are built to enhance your home year-round."
       }
     },
     {
@@ -49,30 +49,30 @@
             "icon": "/images/cms/uploads/1773666458932-w1piq.webp",
             "items": [
               {
-                "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
-                "label": "High-Strength Mix (6.5-Bag Concrete):"
+                "text": "Improve visibility around walkways, stairs, driveways, and outdoor living areas, helping create a safer environment after dark.",
+                "label": ""
               }
             ],
-            "title": "Safety & Security",
+            "title": "Safety & Visibility",
             "description": "Soft yet bright illumination improves nighttime visibility, preventing slips and deterring unwanted visitors"
           },
           {
             "icon": "/images/cms/uploads/1773666478265-9mswow.webp",
             "items": [
               {
-                "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
-                "label": "Crack Resistance:"
+                "text": "Highlight your home’s architecture, landscaping, patios, and outdoor features with professionally placed lighting that adds depth and elegance.",
+                "label": ""
               }
             ],
-            "title": "Aesthetics & Ambiance",
+            "title": "Enhanced Curb Appeal",
             "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape."
           },
           {
             "icon": "/images/cms/uploads/1773666496187-ey8wjl.webp",
             "items": [
               {
-                "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
-                "label": "Style:"
+                "text": "Low-voltage LED lighting consumes less energy, requires minimal maintenance, and provides reliable, long-lasting performance.",
+                "label": ""
               }
             ],
             "title": "Energy Efficiency",
@@ -82,11 +82,11 @@
             "icon": "/images/cms/uploads/1773666513369-v7vcqhi.webp",
             "items": [
               {
-                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "text": "Every lighting system is designed to complement your property, creating the perfect balance of functionality, ambiance, and style.",
                 "label": ""
               }
             ],
-            "title": "Versatility & Simple Installation",
+            "title": "Custom Design",
             "description": "Available in countless fixtures, styles, and beam spreads, low-voltage lights are easily installed and expanded — ideal for both homeowners and contractors."
           }
         ],
@@ -142,7 +142,7 @@
         "title": "Smart Controls & Color Options",
         "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
-        "description": "Take lighting to the next level with <b>timers and color-changing systems.</b>\n<br><br>\n• <b>Timers:</b> Automate on/off schedules for security and convenience.\n<br><br>\n• <b>Color-Changing LEDs:</b> Shift hues for holidays, events, or mood lighting — adding personality and seasonal flair to your yard.",
+        "description": "Enhance your outdoor lighting with intelligent features that provide greater convenience, efficiency, and customization.<br><br><b>Smart Timers:</b> Automatically schedule your lighting to improve security, increase energy efficiency, and eliminate manual operation.<br><b>Color-Changing LED Systems:</b> Customize your outdoor space with adjustable colors for holidays, special occasions, or everyday ambiance, creating the perfect atmosphere for any occasion.",
         "_sourceLabel": "Outdoor Intro"
       }
     },
