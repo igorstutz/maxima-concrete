@@ -44,7 +44,9 @@
         "ctaText": "Contact Us",
         "subtitle": "We proudly serve homeowners and businesses across the following counties:",
         "trustIcons": [
-          "/images/cms/uploads/1772678974393-u5kd4k.webp"
+          "/images/assets/footer/licensed-insured.svg",
+          "/images/assets/footer/bbb-rating.svg",
+          "/images/assets/footer/angies-list.png"
         ],
         "bottomTitle": "Not sure if we serve your area?",
         "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8.webp",
@@ -94,8 +96,8 @@
       "type": "financing",
       "content": {
         "title": "Financing Options\nThat Fit Your Budget",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
+        "ctaLink": "/financing",
+        "ctaText": "Explore Financing Options",
         "benefits": [
           "Loan amounts up to $100,000",
           "Affordable monthly payments tailored to your budget",

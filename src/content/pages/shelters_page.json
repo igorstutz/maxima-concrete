@@ -61,46 +61,6 @@
       }
     },
     {
-      "key": "custom_1773682647131_peinry",
-      "label": "Style",
-      "type": "style-options",
-      "content": {
-        "title": "Crafted from Premium Materials",
-        "styles": [
-          {
-            "link": "#contact",
-            "image": "/images/cms/uploads/1773679927107-upao2_copy_1773682648698_tzqmb1.webp",
-            "title": "Wood",
-            "description": "Classic warmth and natural texture for timeless appeal."
-          },
-          {
-            "link": "#contact",
-            "image": "/images/cms/uploads/1773679951349-3wtbi_copy_1773682648533_22xri.webp",
-            "title": "Metal",
-            "description": "Modern durability and sleek design."
-          },
-          {
-            "link": "/finishes/paver",
-            "image": "/images/cms/uploads/1773679981534-w053kf_copy_1773682648599_et4u98.webp",
-            "title": "Pavers & Concrete",
-            "description": "Solid, low-maintenance bases that tie into your patio or walkway."
-          },
-          {
-            "link": "#contact",
-            "image": "/images/cms/uploads/1773680013801-fh4urk_copy_1773682648806_1lea5a.webp",
-            "title": "Combinations",
-            "description": "Mix materials for a custom aesthetic that matches your home’s architecture."
-          }
-        ],
-        "ctaLink": "#contact",
-        "ctaText": "Get Inspired",
-        "variant": "light",
-        "closingText": "At Maxima Concrete, we manage every detail — from **design and permits to construction and final inspection** — ensuring a seamless experience from start to finish.",
-        "description": "We build every structure with longevity and beauty in mind.\n**Material Options:**",
-        "_sourceLabel": "Style"
-      }
-    },
-    {
       "key": "custom_shelters_unleash",
       "label": "Unleash",
       "type": "unleash",
@@ -187,16 +147,6 @@
         ],
         "_sourceLabel": "Related Services",
         "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp_copy_1773686623753_jyx1d.webp"
-      }
-    },
-    {
-      "key": "custom_1773686626993_necoyf",
-      "label": "More Than Concrete",
-      "type": "more-than-concrete",
-      "content": {
-        "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
-        "_sourceLabel": "More Than Concrete"
       }
     },
     {

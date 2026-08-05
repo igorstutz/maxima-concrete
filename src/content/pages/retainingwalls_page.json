@@ -36,22 +36,6 @@
       }
     },
     {
-      "key": "custom_1771982068629_coatac",
-      "label": "Where Function Meets Design",
-      "type": "why-maxima-service",
-      "content": {
-        "title": "Where Function Meets Design",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "eyebrow": "by Maxima Concrete",
-        "benefits": [],
-        "description": "Traditional retaining walls often prioritize function alone. We believe your outdoor space deserves more.\n\nImagine gently terraced stone walls cascading down a slope, framed by greenery and seasonal blooms. Picture clean-lined paver walls that guide elevation changes with confidence and elegance. With a wide range of stones, pavers, textures, and finishes, we create retaining walls that feel intentional — not forced.\n\nWhether your goal is subtle elevation control or a bold architectural statement, we help you design a wall that enhances both form and function.",
-        "_sourceLabel": "Why Maxima",
-        "overlayOpacity": 26,
-        "backgroundImage": "/images/cms/uploads/1773619803193-noq74d.webp"
-      }
-    },
-    {
       "key": "custom_1773319483042_3z8dqc",
       "label": "Why Add a Retaining Wall",
       "type": "why-maxima-service",
@@ -155,6 +139,22 @@
       }
     },
     {
+      "key": "custom_1771982068629_coatac",
+      "label": "Where Function Meets Design",
+      "type": "why-maxima-service",
+      "content": {
+        "title": "Where Function Meets Design",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "eyebrow": "by Maxima Concrete",
+        "benefits": [],
+        "description": "Traditional retaining walls often prioritize function alone. We believe your outdoor space deserves more.\n\nImagine gently terraced stone walls cascading down a slope, framed by greenery and seasonal blooms. Picture clean-lined paver walls that guide elevation changes with confidence and elegance. With a wide range of stones, pavers, textures, and finishes, we create retaining walls that feel intentional — not forced.\n\nWhether your goal is subtle elevation control or a bold architectural statement, we help you design a wall that enhances both form and function.",
+        "_sourceLabel": "Why Maxima",
+        "overlayOpacity": 26,
+        "backgroundImage": "/images/cms/uploads/1773619803193-noq74d.webp"
+      }
+    },
+    {
       "key": "custom_integrated_features_2_rw",
       "label": "Integrated Features 2",
       "type": "integrated-features-2",
@@ -163,17 +163,20 @@
           {
             "image": "/images/cms/uploads/1773343997454-25g5c8.webp",
             "title": "Fire Pits",
-            "description": "Create an inviting, social gathering space with seating walls that naturally frame the fire."
+            "description": "Create an inviting, social gathering space with seating walls that naturally frame the fire.",
+            "link": "/services/fire-pits"
           },
           {
             "image": "/images/cms/uploads/1773344039232-prz73.webp",
             "title": "Outdoor Kitchens & Bars",
-            "description": "Extend counters or create bar-height seating for casual dining and entertaining."
+            "description": "Extend counters or create bar-height seating for casual dining and entertaining.",
+            "link": "/services/outdoor-kitchens"
           },
           {
             "image": "/images/cms/uploads/1773344056280-j0z8muj.webp",
             "title": "Privacy & Boundary Definition",
-            "description": "Strategically placed seating walls add subtle privacy while maintaining openness."
+            "description": "Strategically placed seating walls add subtle privacy while maintaining openness.",
+            "link": "/services/seating-walls"
           }
         ],
         "title": "Related Projects",

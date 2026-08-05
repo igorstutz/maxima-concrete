@@ -6,7 +6,7 @@
       "label": "Hero",
       "type": "hero-minimal",
       "content": {
-        "title": "Broom-Finished Concrete",
+        "title": "Colored Broom-Finished Concrete",
         "tagline": "Color Meets Texture in Every Stroke",
         "backLink": "/finishes",
         "subtitle": "Classic, Durable, and Timeless",
@@ -16,7 +16,8 @@
         "backgroundImage": "/images/cms/uploads/1781006763871-ugdtj.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1781006763871-ugdtj-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1781006763871-ugdtj-mobile.webp",
+        "overlayOpacity": 62
       }
     },
     {
@@ -80,7 +81,7 @@
             "label": "Affordable & Versatile:"
           }
         ],
-        "title": "Why Choose a Broom Finish?",
+        "title": "Why Choose a Colored Broom Finish?",
         "_sourceLabel": "Why Choose"
       }
     },
@@ -115,7 +116,7 @@
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
-        "title": "Where to Use Broom-Finished Concrete",
+        "title": "Where to Use Colored Broom Finish",
         "ctaLink": "#contact",
         "ctaText": "Get Inspired",
         "subtitle": "This finish is suitable for virtually any flatwork application:",

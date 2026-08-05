@@ -16,7 +16,8 @@
         "backgroundImage": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": ""
+        "backgroundImageMobile": "",
+        "overlayOpacity": 62
       }
     },
     {

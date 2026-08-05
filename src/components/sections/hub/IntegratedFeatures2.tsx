@@ -2,11 +2,13 @@ import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { legacyAsset } from "@/components/sections/home/legacy";
+import { SmartLink } from "@/components/sections/home/SmartLink";
 
 interface IntegratedFeatures2Card {
   image?: string;
   title?: string;
   description?: string;
+  link?: string;
 }
 
 interface IntegratedFeatures2Content {
@@ -42,29 +44,46 @@ export default function IntegratedFeatures2({
         </ScrollReveal>
         {cards.length > 0 && (
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
-            {cards.map((card, i) => (
-              <ScrollReveal key={i} delay={i + 1} className="flex flex-col gap-3">
-                <p className="text-[15px] font-medium leading-[120%] tracking-[-0.6px] text-white">
-                  {card.title}
-                </p>
-                {card.image && (
-                  <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
-                    <Image
-                      src={legacyAsset(card.image)}
-                      alt={card.title || "Feature"}
-                      fill
-                      sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                {card.description && (
-                  <p className="text-base leading-[120%] tracking-[-0.64px] text-white/90">
-                    {card.description}
+            {cards.map((card, i) => {
+              const body = (
+                <>
+                  <p className="text-[15px] font-medium leading-[120%] tracking-[-0.6px] text-white">
+                    {card.title}
                   </p>
-                )}
-              </ScrollReveal>
-            ))}
+                  {card.image && (
+                    <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+                      <Image
+                        src={legacyAsset(card.image)}
+                        alt={card.title || "Feature"}
+                        fill
+                        sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+                  {card.description && (
+                    <p className="text-base leading-[120%] tracking-[-0.64px] text-white/90">
+                      {card.description}
+                    </p>
+                  )}
+                </>
+              );
+              return (
+                <ScrollReveal key={i} delay={i + 1}>
+                  {/* Card vira link quando o conteúdo define "link"; sem link, render igual ao anterior. */}
+                  {card.link ? (
+                    <SmartLink
+                      href={card.link}
+                      className="group flex flex-col gap-3 transition-opacity hover:opacity-95"
+                    >
+                      {body}
+                    </SmartLink>
+                  ) : (
+                    <div className="flex flex-col gap-3">{body}</div>
+                  )}
+                </ScrollReveal>
+              );
+            })}
           </div>
         )}
       </Container>

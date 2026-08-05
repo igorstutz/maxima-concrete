@@ -147,56 +147,6 @@
       }
     },
     {
-      "key": "custom_concrete_vs_pavers_ol",
-      "label": "Concrete vs Pavers",
-      "type": "concrete-vs-pavers",
-      "content": {
-        "cards": [
-          {
-            "image": "/images/cms/uploads/1773675476535-6qxzrd.webp",
-            "title": "Concrete:",
-            "description": "Sleek, continuous, and low-maintenance. Options include <b>stamped, colored, or stained</b> finishes to match your design vision."
-          },
-          {
-            "image": "/images/cms/uploads/1773675500642-vjo7l.webp",
-            "title": "Pavers:",
-            "description": "Available in many colors, shapes, and patterns. Easy to repair and ideal for decorative or modular layouts."
-          }
-        ],
-        "title": "<b>Concrete vs. Pavers</b> — Choosing the Right Base",
-        "bottomText": "Whether you choose the timeless strength of <b>concrete</b> or the creative flexibility of <b>pavers</b>, Maxima ensures flawless integration with your lighting design.",
-        "backgroundColor": "#494948"
-      }
-    },
-    {
-      "key": "custom_trust_maxima_ol",
-      "label": "Trust Maxima",
-      "type": "trust-maxima",
-      "content": {
-        "items": [
-          {
-            "label": "Design Expertise",
-            "description": "Tailored lighting plans that balance function and aesthetics."
-          },
-          {
-            "label": "Premium Fixtures",
-            "description": "Energy-efficient, weather-resistant systems built to last."
-          },
-          {
-            "label": "End-to-End Service",
-            "description": "Tailored lighting plans that balance function and aesthetics."
-          },
-          {
-            "label": "Local Experience",
-            "description": "Serving Columbus, Delaware, and surrounding Central Ohio communities."
-          }
-        ],
-        "titleLine1": "Why Homeowners",
-        "titleLine2": "Trust Maxima",
-        "titleLine3": "Concrete"
-      }
-    },
-    {
       "key": "custom_1773675803581_3tr6g",
       "label": "Related Services",
       "type": "related-services",
@@ -226,16 +176,6 @@
         ],
         "_sourceLabel": "Related Services",
         "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp.webp"
-      }
-    },
-    {
-      "key": "custom_1773676014214_rza16o",
-      "label": "More Than Concrete",
-      "type": "more-than-concrete",
-      "content": {
-        "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
-        "_sourceLabel": "More Than Concrete"
       }
     },
     {

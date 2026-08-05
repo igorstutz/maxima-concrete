@@ -16,7 +16,8 @@
         "backgroundImage": "/images/cms/uploads/1780688206618-nf0yl.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1780688206618-nf0yl-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1780688206618-nf0yl-mobile.webp",
+        "overlayOpacity": 62
       }
     },
     {

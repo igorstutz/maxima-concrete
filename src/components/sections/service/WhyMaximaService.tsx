@@ -42,7 +42,19 @@ export default function WhyMaximaService({ content }: { content: Record<string, 
         )}
         <div
           className="absolute inset-0"
-          style={{ backgroundColor: `rgba(0, 0, 0, ${overlayOpacity / 100})` }}
+          style={
+            // overlayGradient: tinge o fundo com o azul da marca (navy -> ocean)
+            // em vez do preto padrão, como nas demais seções azuis do site.
+            content?.overlayGradient
+              ? {
+                  background: `linear-gradient(135deg, rgba(4, 28, 45, ${
+                    overlayOpacity / 100
+                  }) 0%, rgba(13, 93, 147, ${
+                    (overlayOpacity / 100) * 0.85
+                  }) 100%)`,
+                }
+              : { backgroundColor: `rgba(0, 0, 0, ${overlayOpacity / 100})` }
+          }
         />
       </div>
 

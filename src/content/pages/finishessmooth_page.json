@@ -16,7 +16,8 @@
         "backgroundImage": "/images/cms/uploads/1772214127546-fsb5zk_copy_1773271864478_h87jpd_copy_1773272697162_utdi2.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1772214127546-fsb5zk-mobile_copy_1773271864257_v6kail_copy_1773272697417_lp2i88.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1772214127546-fsb5zk-mobile_copy_1773271864257_v6kail_copy_1773272697417_lp2i88.webp",
+        "overlayOpacity": 62
       }
     },
     {
@@ -119,42 +120,12 @@
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
-        "title": "Where to Use Broom-Finished Concrete",
+        "title": "Where to Use Smooth Finish Concrete",
         "ctaLink": "#contact",
         "ctaText": "Get Inspired",
         "subtitle": "This finish is suitable for virtually any flatwork application:",
         "finalText": "No matter the project, Maxima Concrete ensures every broom-finished surface is perfectly graded, properly cured, and beautifully detailed.",
         "_sourceLabel": "Where to Use"
-      }
-    },
-    {
-      "key": "custom_1773272713974_ia1oc",
-      "label": "Maxima Advantage",
-      "type": "maxima-advantage",
-      "content": {
-        "title": "The Maxima Concrete Advantage",
-        "benefits": [
-          {
-            "text": "for superior durability.",
-            "boldText": "6.5-bag high-strength concrete mix"
-          },
-          {
-            "text": "for crack control and added toughness.",
-            "boldText": "Fiber reinforcement"
-          },
-          {
-            "text": "where needed for structural support.",
-            "boldText": "10-gauge wire mesh"
-          },
-          {
-            "text": "to achieve consistent, high-quality texture.",
-            "boldText": "Expert finishing techniques"
-          }
-        ],
-        "pillText": "From small patios to expansive driveways, our team delivers reliable, professional results — every time.",
-        "rightTitle": "Our broom-finished projects are built with:",
-        "description": "When you choose Maxima Concrete, you're not just getting a surface — you're getting decades of experience, technical precision, and craftsmanship.",
-        "_sourceLabel": "Maxima Advantage"
       }
     },
     {

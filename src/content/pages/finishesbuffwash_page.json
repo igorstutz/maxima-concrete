@@ -16,7 +16,8 @@
         "backgroundImage": "/images/cms/uploads/1778533291033-fl6wv.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1778533291033-fl6wv-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1778533291033-fl6wv-mobile.webp",
+        "overlayOpacity": 62
       }
     },
     {
@@ -79,7 +80,7 @@
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
-        "title": "Where to Use Broom-Finished Concrete",
+        "title": "Where to Use Buff Wash & Exposed Aggregate Concrete",
         "ctaLink": "#contact",
         "ctaText": "Get Inspired",
         "subtitle": "This finish is suitable for virtually any flatwork application:",

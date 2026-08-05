@@ -48,7 +48,8 @@
         "description": "Create the perfect outdoor gathering area with a custom paver fire pit from Maxima Concrete. Designed to combine durability, safety, and style, our fire pits serve as a functional centerpiece for patios and backyard spaces.\n\nBuilt with high-quality materials and expert craftsmanship, each fire pit is designed to withstand weather conditions and long-term use while maintaining its appearance over time. Available in a variety of shapes, colors, and paver styles, every project is customized to match your outdoor design and personal preferences.\n\nA paver fire pit adds warmth, comfort, and value to your property, transforming your backyard into a welcoming space for relaxation, entertainment, and lasting memories with family and friends.",
         "_sourceLabel": "Why Maxima",
         "overlayOpacity": 76,
-        "backgroundImage": "/images/cms/uploads/1773709287908-kkglvl.webp"
+        "backgroundImage": "/images/cms/uploads/1773709287908-kkglvl.webp",
+        "overlayGradient": true
       }
     },
     {

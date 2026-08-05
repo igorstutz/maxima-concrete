@@ -16,7 +16,8 @@
         "backgroundImage": "/images/cms/uploads/1780688148132-4wqr7h.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1780688148132-4wqr7h-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1780688148132-4wqr7h-mobile.webp",
+        "overlayOpacity": 62
       }
     },
     {
@@ -160,6 +161,44 @@
         ],
         "processTitle": "The Maxima Process",
         "benefitsTitle": "Benefits of Stamped & Colored Concrete"
+      }
+    },
+    {
+      "key": "custom_where_to_use_stamped",
+      "label": "Where to Use",
+      "type": "where-to-use",
+      "content": {
+        "title": "Where to Use Stamped Concrete",
+        "subtitle": "Stamped and colored concrete works anywhere you want the look of stone, brick, or tile with the durability of concrete:",
+        "cards": [
+          {
+            "link": "/services/driveways/driveways-concrete",
+            "image": "/images/cms/uploads/1780688435290-2hwsiv.webp",
+            "title": "Driveways",
+            "description": "Bold patterns and rich color that make the entrance to your home stand out."
+          },
+          {
+            "link": "/services/patios/patios-concrete",
+            "image": "/images/cms/uploads/1780688464795-80yx5f.webp",
+            "title": "Patios",
+            "description": "Stone, slate, or wood-look textures that turn a patio into a finished outdoor room."
+          },
+          {
+            "link": "/services/pool-decks-surrounds",
+            "image": "/images/cms/uploads/1780688626325-y0rpz.webp",
+            "title": "Pool Decks & Surrounds",
+            "description": "Decorative texture with reliable grip and a surface that stays comfortable underfoot."
+          },
+          {
+            "link": "/services/porches",
+            "image": "/images/cms/uploads/1780688608701-qe4ktk.webp",
+            "title": "Porches & Steps",
+            "description": "A refined, high-end entryway without the cost of natural stone."
+          }
+        ],
+        "ctaText": "Get Inspired",
+        "ctaLink": "#contact",
+        "finalText": "No matter the project, Maxima Concrete ensures every stamped surface is properly colored, cured, and sealed for a finish that holds its detail for years."
       }
     },
     {
