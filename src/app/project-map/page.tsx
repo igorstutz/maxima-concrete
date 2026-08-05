@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { ArrowRight, MapPin } from "lucide-react";
 import page from "@/content/pages/projectmap_page.json";
+import projects from "@/content/data/projects.json";
 import { PageSections } from "@/components/sections/PageSections";
 import { Container } from "@/components/Container";
 import Image from "@/components/Image";
@@ -21,8 +22,12 @@ const explorerContent =
   page.sections.find((s) => s.type === "explorer")?.content ?? {};
 const faqSections = page.sections.filter((s) => s.type === "faq");
 
+// Contado do próprio projects.json em build — não envelhece quando entram
+// novos projetos no mapa.
+const PROJECTS_MAPPED = projects.length.toLocaleString("en-US");
+
 const STATS = [
-  { value: "1,825+", label: "Projects Mapped" },
+  { value: `${PROJECTS_MAPPED}+`, label: "Projects Mapped" },
   { value: "9,000+", label: "Happy Clients" },
   { value: "A+", label: "BBB Rating" },
   { value: "2011", label: "Serving Since" },

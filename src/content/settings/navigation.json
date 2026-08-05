@@ -223,6 +223,11 @@
           "icon": "Info"
         },
         {
+          "label": "Concrete Specifications",
+          "href": "/why-maxima/concrete-specifications",
+          "icon": "Ruler"
+        },
+        {
           "label": "Licensing & Insured",
           "href": "/licensing-insured",
           "icon": "ShieldCheck"
@@ -261,6 +266,11 @@
           "label": "Join Our Team",
           "href": "/join-our-team",
           "icon": "Users"
+        },
+        {
+          "label": "Blog",
+          "href": "/blog",
+          "icon": "Newspaper"
         }
       ]
     }

@@ -43,13 +43,28 @@ export default function HeroMinimal({ content }: { content: Record<string, any> 
         />
       )}
 
-      {/* Overlay escuro (controlado pelo CMS) */}
+      {/* Overlay: preto por padrão; azul da marca quando o conteúdo pede. */}
       <div
-        className="pointer-events-none absolute inset-0 bg-black"
-        style={{ opacity: clamped }}
+        className="pointer-events-none absolute inset-0"
+        style={
+          content?.overlayGradient
+            ? {
+                background: `linear-gradient(135deg, rgba(4, 28, 45, ${Math.max(
+                  clamped,
+                  0.82,
+                )}) 0%, rgba(13, 93, 147, ${Math.max(clamped, 0.82) * 0.8}) 100%)`,
+              }
+            : { backgroundColor: "#000", opacity: clamped }
+        }
       />
       {/* Gradiente inferior para legibilidade do texto */}
-      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+      <div
+        className={`absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t ${
+          content?.overlayGradient
+            ? "from-navy/70 via-navy/25 to-transparent"
+            : "from-black/70 via-black/30 to-transparent"
+        }`}
+      />
 
       {/* Título + voltar */}
       <div className="absolute inset-x-0 bottom-0 pb-8 lg:pb-10">

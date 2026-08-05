@@ -1,12 +1,22 @@
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import projects from "@/content/data/projects.json";
+
+/**
+ * "auto:projects" no valor de um stat vira a contagem real de projetos
+ * (projects.json, resolvida no build) em vez de um número fixo.
+ */
+const AUTO_VALUES: Record<string, string> = {
+  "auto:projects": `${projects.length.toLocaleString("en-US")}+`,
+};
 
 /** Intro da página Join Our Team — type "joinourteam-sec-intro". */
 export default function JoinOurTeamIntro({ content }: { content: Record<string, any> }) {
+  const resolve = (v?: string) => (v && AUTO_VALUES[v]) || v;
   const stats = [
-    { v: content?.stat1Value, l: content?.stat1Label },
-    { v: content?.stat2Value, l: content?.stat2Label },
-    { v: content?.stat3Value, l: content?.stat3Label },
+    { v: resolve(content?.stat1Value), l: content?.stat1Label },
+    { v: resolve(content?.stat2Value), l: content?.stat2Label },
+    { v: resolve(content?.stat3Value), l: content?.stat3Label },
   ].filter((s) => s.v || s.l);
 
   return (

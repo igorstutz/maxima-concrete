@@ -12,8 +12,8 @@
         "paragraph2": "We are a tight-knit team that takes pride in the craft, shows up on time, and treats every customer like a neighbor. If that sounds like you, we want to meet you.",
         "stat1Label": "Years in business",
         "stat1Value": "15+",
-        "stat2Label": "Projects completed",
-        "stat2Value": "500+",
+        "stat2Label": "Projects mapped",
+        "stat2Value": "auto:projects",
         "stat3Label": "BBB rated",
         "stat3Value": "A+"
       }

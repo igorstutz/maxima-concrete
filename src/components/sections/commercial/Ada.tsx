@@ -1,6 +1,9 @@
+import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { SmartLink } from "@/components/sections/home/SmartLink";
 import { sanitizeHtml } from "./sanitize";
+import LogoMarquee from "./LogoMarquee";
 
 interface AdaItem {
   title?: string;
@@ -13,6 +16,11 @@ interface CommercialAdaContent {
   items?: AdaItem[];
   closing1?: string;
   closing2?: string;
+  ctaText?: string;
+  ctaLink?: string;
+  /** Logos de clientes exibidos em carrossel contínuo (opcional). */
+  logos?: string[];
+  logosTitle?: string;
 }
 
 const CheckIcon = () => (
@@ -81,6 +89,34 @@ export default function Ada({ content }: { content: Record<string, any> }) {
               className="w-full text-[22px] font-normal leading-[130%] tracking-[-0.88px] text-white lg:max-w-[719px]"
               dangerouslySetInnerHTML={{ __html: sanitizeHtml(c.closing2) }}
             />
+          )}
+
+          {(c.ctaText || c.logos?.length) && (
+            <div className="mt-10 flex flex-col gap-10">
+              {c.ctaText && (
+                <div>
+                  <SmartLink
+                    href={c.ctaLink || "#contact"}
+                    className="inline-flex items-center gap-2 rounded-[10px] bg-white px-6 py-3 text-sm font-medium text-navy transition-opacity hover:opacity-90"
+                  >
+                    {c.ctaText}
+                    <ArrowUpRight className="h-4 w-4" />
+                  </SmartLink>
+                </div>
+              )}
+
+              {/* Logos dos clientes, em branco, rolando continuamente */}
+              {c.logos?.length ? (
+                <div>
+                  {c.logosTitle && (
+                    <p className="mb-6 text-sm font-medium uppercase tracking-[0.12em] text-white/60">
+                      {c.logosTitle}
+                    </p>
+                  )}
+                  <LogoMarquee logos={c.logos} variant="light" />
+                </div>
+              ) : null}
+            </div>
           )}
         </ScrollReveal>
       </Container>

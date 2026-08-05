@@ -1,9 +1,10 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmartLink } from "@/components/sections/home/SmartLink";
 import { legacyAsset, internalLink } from "@/components/sections/home/legacy";
+import { photoCountFor } from "./counts";
 
 interface ServiceItem {
   name: string;
@@ -92,19 +93,40 @@ export default function AllServices({
           <div className="grid grid-cols-2 justify-start gap-3 md:flex md:flex-wrap md:gap-4">
             {items.map((item, index) => {
               const split = SPLIT_MAP[(item.name || "").trim().toLowerCase()];
+              const photos = photoCountFor(item.link);
               return (
+                /* Card no formato aprovado: moldura azul degradê, foto em cima e
+                   faixa com o nome embaixo. A contagem de fotos vem do conteúdo. */
                 <div
                   key={index}
-                  className="group relative h-[clamp(180px,45vw,376px)] w-full shrink-0 overflow-hidden rounded-[14px] transition-transform duration-300 hover:scale-[1.03] md:w-[260px]"
+                  className="gradient-blue group relative w-full shrink-0 overflow-hidden rounded-[16px] p-[3px] transition-transform duration-300 hover:scale-[1.03] md:w-[260px]"
                 >
-                  <Image
-                    src={legacyAsset(item.image)}
-                    alt={item.name}
-                    fill
-                    sizes="(min-width: 768px) 260px, 50vw"
-                    className="object-cover"
-                  />
-                  <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_0%,rgba(0,0,0,0.70)_100%)]" />
+                  <div className="overflow-hidden rounded-[13px] bg-navy">
+                    <div className="relative h-[clamp(150px,38vw,300px)] w-full">
+                      <Image
+                        src={legacyAsset(item.image)}
+                        alt={item.name}
+                        fill
+                        sizes="(min-width: 768px) 260px, 50vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                      {photos ? (
+                        <span className="absolute right-2 top-2 z-10 rounded-full bg-black/55 px-2.5 py-1 text-[10px] font-medium text-white backdrop-blur-sm md:text-[11px]">
+                          {photos} photos
+                        </span>
+                      ) : null}
+                    </div>
+
+                    {/* Faixa inferior com o nome */}
+                    <div className="flex items-center justify-between gap-2 px-3 py-2.5 md:px-4 md:py-3">
+                      <span className="text-[13px] font-medium leading-tight text-white md:text-[15px]">
+                        {item.name}
+                      </span>
+                      <span className="flex h-4 w-4 shrink-0 items-center justify-center rounded-[3px] bg-white/90 transition-colors group-hover:bg-white">
+                        <ArrowUpRight className="h-3 w-3 text-navy" />
+                      </span>
+                    </div>
+                  </div>
 
                   {/* Stretched link covering the whole card */}
                   <SmartLink
@@ -115,16 +137,9 @@ export default function AllServices({
                     <span className="sr-only">{item.name}</span>
                   </SmartLink>
 
-                  {/* Centered name */}
-                  <div className="pointer-events-none absolute inset-0 z-10 flex items-center justify-center px-2 md:px-4">
-                    <span className="text-center text-sm font-normal uppercase tracking-[1.68px] text-white/80 md:text-lg lg:text-2xl">
-                      {item.name}
-                    </span>
-                  </div>
-
-                  {/* Bottom action(s) */}
-                  {split ? (
-                    <div className="absolute bottom-4 left-0 right-0 z-20 flex justify-center gap-2 md:bottom-6">
+                  {/* Atalhos Concrete/Paver, quando a categoria tem as duas versões */}
+                  {split && (
+                    <div className="absolute bottom-[52px] left-0 right-0 z-20 flex justify-center gap-2 md:bottom-[60px]">
                       <SmartLink href={split.concrete} className={PILL_CLASS}>
                         Concrete
                         <ArrowUpRight className="h-3 w-3" />
@@ -133,13 +148,6 @@ export default function AllServices({
                         Paver
                         <ArrowUpRight className="h-3 w-3" />
                       </SmartLink>
-                    </div>
-                  ) : (
-                    <div className="pointer-events-none absolute bottom-4 left-0 right-0 z-10 flex justify-center md:bottom-6">
-                      <span className={PILL_CLASS}>
-                        View
-                        <ArrowRight className="h-3 w-3" />
-                      </span>
                     </div>
                   )}
                 </div>
