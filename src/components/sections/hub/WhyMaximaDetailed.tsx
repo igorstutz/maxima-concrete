@@ -82,7 +82,7 @@ export default function WhyMaximaDetailed({
                       <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-6">
                         {checkItems.map((item, j) => (
                           <div key={j} className="flex items-start gap-3">
-                            <div className="mt-0.5 shrink-0">
+                            <div className="shrink-0">
                               <div className="flex h-8 w-8 items-center justify-center rounded-md bg-white/10 sm:h-9 sm:w-9">
                                 {benefit.icon ? (
                                   <Image
@@ -97,7 +97,11 @@ export default function WhyMaximaDetailed({
                                 )}
                               </div>
                             </div>
-                            <span className="text-[13px] font-semibold leading-snug text-white/90">
+                            {/* O padding-top centra a PRIMEIRA linha do texto
+                                (13px × leading-snug ≈ 17,9px) no meio do badge
+                                (32px, 36px no sm); as linhas seguintes continuam
+                                recuadas na coluna do texto. */}
+                            <span className="pt-[7px] text-[13px] font-semibold leading-snug text-white/90 sm:pt-[9px]">
                               {item}
                             </span>
                           </div>

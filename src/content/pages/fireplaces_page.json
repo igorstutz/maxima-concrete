@@ -8,7 +8,7 @@
       "content": {
         "title": "Fireplaces",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "The Heart of Every Outdoor Gathering",
         "subtitle": "Bringing warmth and comfort to the heart of your home.",
         "_sourceLabel": "Hero",
@@ -199,6 +199,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

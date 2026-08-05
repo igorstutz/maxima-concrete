@@ -8,7 +8,7 @@
       "content": {
         "title": "Footers, Piers & Structural Support",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "Strength From the Ground Up",
         "subtitle": "Code-compliant concrete footings, piers, and structural support built to last. Maxima Concrete engineers strength, stability, and peace of mind. Free estimate.",
         "_sourceLabel": "Hero",
@@ -101,12 +101,12 @@
           },
           {
             "link": "/finishes/paver",
-            "image": "/images/cms/uploads/1780947083450-f3xzei.webp",
+            "image": "/images/cms/uploads/1784044541984-0dbar.webp",
             "title": "Paver, Brick or Natural Stone",
             "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
           }
         ],
-        "description": "Step Finish Options",
+        "description": "Footers stay out of sight, but the finish above them does not. Explore the finishes we pair with our structural work.",
         "_sourceLabel": "Style Options"
       }
     },
@@ -115,7 +115,7 @@
       "label": "Inspiration",
       "type": "inspiration",
       "content": {
-        "title": "Inspiration for Your Sidewalks & Walkways",
+        "title": "Inspiration for Your Footers",
         "images": [
           "/images/cms/uploads/1782842057456-zgeyoc.webp",
           "/images/cms/uploads/1782842053359-lnuqx.webp",
@@ -298,6 +298,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

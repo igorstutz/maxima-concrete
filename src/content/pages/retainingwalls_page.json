@@ -8,7 +8,7 @@
       "content": {
         "title": "Retaining Walls",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "Strength, Structure, and Timeless Design",
         "subtitle": "Strength, Structure, and Timeless Outdoor Design",
         "_sourceLabel": "Hero",
@@ -271,6 +271,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

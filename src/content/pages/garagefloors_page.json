@@ -8,7 +8,7 @@
       "content": {
         "title": "Garage Floors",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "Durable, Functional, and Built for Every Season",
         "subtitle": "Durable, low-maintenance garage Floors by Maxima Concrete. Perfect for Ohio weather, built to last, and designed to look great. Free estimate.",
         "_sourceLabel": "Hero",
@@ -73,7 +73,7 @@
       "label": "Advantage",
       "type": "why-choose",
       "content": {
-        "title": "The Maxima Concrete advantage",
+        "title": "Materials \nthat make \nthe difference",
         "benefits": [
           {
             "title": "",
@@ -233,6 +233,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

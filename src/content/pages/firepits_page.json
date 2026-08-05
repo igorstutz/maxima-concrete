@@ -8,7 +8,7 @@
       "content": {
         "title": "Fire Pits",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "Timeless Warmth. Built to Gather. Designed to Last.",
         "subtitle": "",
         "_sourceLabel": "Hero",
@@ -188,6 +188,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

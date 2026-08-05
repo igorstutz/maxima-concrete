@@ -5,6 +5,7 @@ import { Container } from "@/components/Container";
 import ElfsightWidget from "@/components/ElfsightWidget";
 import Contact from "@/components/sections/home/Contact";
 import FindWork from "@/components/sections/home/FindWork";
+import Instagram from "@/components/sections/home/Instagram";
 import home from "@/content/pages/home.json";
 import googleReviews from "@/content/data/google-reviews.json";
 import ReviewsMarquee from "./ReviewsMarquee";
@@ -24,6 +25,13 @@ const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
 const findWorkContent =
   home.sections.find((s) => s.type === "find-work")?.content ?? {};
+// Bloco "Follow Us — On Instagram" reaproveitado do home.json (fallback se ausente).
+const instagramContent =
+  home.sections.find((s) => s.type === "instagram")?.content ?? {
+    handle: "@maximaconcrete",
+    titlePart1: "Follow Us",
+    titlePart2: "— On Instagram",
+  };
 const profileUrl =
   (home.sections.find((s) => s.type === "reviews")?.content as
     | { profileUrl?: string }
@@ -173,6 +181,7 @@ export default function Page() {
       </section>
 
       <FindWork content={findWorkContent} />
+      <Instagram content={instagramContent} />
       <Contact content={contactContent} />
     </div>
   );

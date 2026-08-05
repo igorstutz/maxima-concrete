@@ -63,7 +63,7 @@ export default function WhyChoose({ content }: { content: Record<string, any> })
       style={{ background: "linear-gradient(270deg, #034673 -7.67%, #041826 98.82%), #000" }}
     >
       <Container>
-        <div className="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:gap-16">
+        <div className="flex flex-col gap-6 sm:gap-8 lg:flex-row lg:items-center lg:gap-16">
           {/* Bloco esquerdo — título e descrição */}
           <ScrollReveal className="flex flex-shrink-0 flex-col lg:w-[340px] xl:w-[400px]">
             <h2 className="mb-4 whitespace-pre-line text-2xl font-light leading-[1.2] tracking-[-1px] text-white sm:mb-6 md:text-[32px] lg:text-[42px]">

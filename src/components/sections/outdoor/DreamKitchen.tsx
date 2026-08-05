@@ -22,8 +22,8 @@ export default function DreamKitchen({
   const title = content?.title || "Build Your Dream Outdoor Kitchen";
   const sideText = content?.sideText || "";
   const cards: Card[] = content?.cards || [];
-  const ctaText = content?.ctaText || "Design My Outdoor Kitchen";
-  const ctaLink = content?.ctaLink || "#contact";
+  const ctaText = content?.ctaText || "Explore more in Gallery";
+  const ctaLink = content?.ctaLink || "/gallery";
   const bgGradient =
     content?.bgGradient ||
     "linear-gradient(263deg, #06253A 46.16%, #000D16 68.33%)";
@@ -64,7 +64,7 @@ export default function DreamKitchen({
                     loading="lazy"
                   />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/65 to-black/30" />
 
                 <div className="relative z-10">
                   {card.title && (

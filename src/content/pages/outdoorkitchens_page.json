@@ -123,8 +123,8 @@
           }
         ],
         "title": "Build Your Dream Outdoor Kitchen",
-        "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Kitchen",
+        "ctaLink": "/gallery",
+        "ctaText": "Explore more in Gallery",
         "sideText": "With Maxima Concrete, you can integrate a range of custom features to create the perfect outdoor culinary hub:",
         "bgGradient": "linear-gradient(263deg, #06253A 46.16%, #000D16 68.33%)",
         "_sourceLabel": "Build Your Dream"

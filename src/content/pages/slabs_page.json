@@ -8,7 +8,7 @@
       "content": {
         "title": "Slabs",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "The Foundation for Every Possibility",
         "subtitle": "Durable, level, and versatile concrete slabs by Maxima Concrete. From homes to industrial sites, we build the strong foundations every project needs.",
         "_sourceLabel": "Hero",
@@ -119,7 +119,7 @@
           },
           {
             "link": "/finishes/paver",
-            "image": "/images/cms/uploads/1780943483233-ka62kd.webp",
+            "image": "/images/cms/uploads/1784044541984-0dbar.webp",
             "title": "Paver, Brick or Natural Stone",
             "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
           }
@@ -142,7 +142,9 @@
           "/images/cms/uploads/1782841583293-p7nz9j.webp",
           "/images/cms/uploads/1782841584261-qvh1lb.webp"
         ],
-        "_sourceLabel": "Inspiration"
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {
@@ -299,6 +301,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

@@ -8,7 +8,7 @@
       "content": {
         "title": "Sports Courts",
         "ctaLink": "#contact",
-        "ctaText": "Design My Outdoor Space",
+        "ctaText": "Get Your Free Estimate",
         "tagline": "Play, Compete, and Create Memories at Home",
         "subtitle": "Durable, customizable sports Courts by Maxima Concrete. Perfect for basketball, tennis, pickleball, and more. Built for performance and fun.",
         "_sourceLabel": "Hero",
@@ -118,7 +118,9 @@
           "/images/cms/uploads/1782842169447-yy3i7f.webp",
           "/images/cms/uploads/1782842170649-bb92j9.webp"
         ],
-        "_sourceLabel": "Inspiration"
+        "_sourceLabel": "Inspiration",
+        "ctaText": "Explore more in our Gallery",
+        "ctaLink": "/gallery/sport-court"
       }
     },
     {
@@ -278,6 +280,17 @@
           39.9612,
           -82.9988
         ]
+      }
+    },
+    {
+      "key": "custom_ig_follow",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram",
+        "_sourceLabel": "Instagram"
       }
     },
     {

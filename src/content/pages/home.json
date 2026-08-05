@@ -195,10 +195,10 @@
       "type": "pool-decks",
       "content": {
         "title": "Pool Decks & Surrounds",
-        "ctaLink": "https://maximapools.com/",
-        "ctaText": "Visit Maxima Pools Website",
-        "cta2Link": "/services/pool-decks-surrounds",
-        "cta2Text": "Explore Pool Decks Page",
+        "ctaLink": "/services/pool-decks-surrounds",
+        "ctaText": "Explore Pool Decks Page",
+        "cta2Link": "https://maximapools.com/",
+        "cta2Text": "Visit Maxima Pools Website",
         "videoUrl": "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/videos/1780599076392-m4n1g7.MOV",
         "description": "Beautiful, functional, and slip-resistant pool decks crafted from decorative concrete and pavers to complement your pool perfectly.",
         "backgroundImage": ""
