@@ -47,7 +47,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773314404302-biat0j.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Concrete is virtually indestructible—resisting heavy traffic, scratches, stains, and tears. It won’t warp or rot like other materials and provides a long-lasting, stable base for any finish (sealed, polished, stained, epoxy, LVP overlay, area rugs).",
@@ -57,7 +57,7 @@
             "title": "Durability you can rely on"
           },
           {
-            "icon": "/images/cms/uploads/1773314383991-8b1vmq.webp",
+            "icon": "droplets",
             "items": [
               {
                 "text": "Naturally moisture-resistant, concrete helps deter mold and mildew—crucial for basements with humidity or occasional water intrusion. When combined with proper sub-base prep, vapor barrier, and the right sealer, you get everyday protection and healthier air.",
@@ -67,7 +67,7 @@
             "title": "Moisture & mold resistance"
           },
           {
-            "icon": "/images/cms/uploads/1773314339091-dpv72h.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "Simple routine: sweep and mop. Quality sealers make cleaning easier and help reduce staining. Less upkeep, more use of the space.",
@@ -77,7 +77,7 @@
             "title": "Low maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1773314303437-hzjfd.webp",
+            "icon": "zap",
             "items": [
               {
                 "text": "Concrete’s thermal mass absorbs and releases heat slowly, helping keep the basement warmer in winter and cooler in summer—which can support lower energy bills. It also pairs perfectly with radiant heating for all-season comfort.",

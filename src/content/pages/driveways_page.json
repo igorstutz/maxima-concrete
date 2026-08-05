@@ -45,7 +45,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1768607612932-fo0vu8.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Creates a stronger, more durable surface that handles heavy vehicles, changing weather conditions, and years of daily use with ease, offering lasting beauty and performance that far exceeds asphalt alternatives.",
@@ -63,7 +63,7 @@
             "title": "Durability and Longevity"
           },
           {
-            "icon": "/images/cms/uploads/1768607604517-r9e35s.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "The reinforced concrete mix significantly reduces cracking caused by shrinkage, stress, and temperature changes, helping maintain a stronger, smoother surface over time. By minimizing damage and wear, it lowers maintenance needs and reduces costly repairs throughout the life of your driveway.",
@@ -77,7 +77,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1768607580426-xmmv8q.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "Choose from a wide range of styles, colors, textures, and finishes to create a custom look that perfectly complements your home’s architecture. From modern designs to timeless patterns, our options help you enhance curb appeal and create a driveway that reflects your personal style.",

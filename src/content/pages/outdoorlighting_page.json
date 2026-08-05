@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773666458932-w1piq.webp",
+            "icon": "hard-hat",
             "items": [
               {
                 "text": "Improve visibility around walkways, stairs, driveways, and outdoor living areas, helping create a safer environment after dark.",
@@ -57,7 +57,7 @@
             "description": "Soft yet bright illumination improves nighttime visibility, preventing slips and deterring unwanted visitors"
           },
           {
-            "icon": "/images/cms/uploads/1773666478265-9mswow.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "Highlight your home’s architecture, landscaping, patios, and outdoor features with professionally placed lighting that adds depth and elegance.",
@@ -68,7 +68,7 @@
             "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape."
           },
           {
-            "icon": "/images/cms/uploads/1773666496187-ey8wjl.webp",
+            "icon": "zap",
             "items": [
               {
                 "text": "Low-voltage LED lighting consumes less energy, requires minimal maintenance, and provides reliable, long-lasting performance.",
@@ -79,7 +79,7 @@
             "description": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
           },
           {
-            "icon": "/images/cms/uploads/1773666513369-v7vcqhi.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "Every lighting system is designed to complement your property, creating the perfect balance of functionality, ambiance, and style.",

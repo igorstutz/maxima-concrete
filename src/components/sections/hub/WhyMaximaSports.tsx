@@ -3,6 +3,7 @@ import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { legacyAsset } from "@/components/sections/home/legacy";
 import { WhyMaximaCtaButton, sanitizeHtml } from "./shared";
+import { namedBenefitIcon } from "@/components/sections/service/benefit-icons";
 
 interface WhyMaximaSportsBenefit {
   icon?: string;
@@ -76,13 +77,21 @@ export default function WhyMaximaSports({
             {/* Grade de ícones em 5 colunas */}
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-8 lg:grid-cols-5">
               {benefits.map((benefit, i) => {
+                // Nome curto => ícone vetorial; caminho => imagem.
+                const NamedIcon = namedBenefitIcon(benefit.icon);
                 const iconSrc =
-                  benefit.icon && benefit.icon !== "/placeholder.svg"
+                  !NamedIcon && benefit.icon && benefit.icon !== "/placeholder.svg"
                     ? legacyAsset(benefit.icon)
                     : null;
                 return (
                   <div key={i} className="flex flex-col items-start">
-                    {iconSrc && (
+                    {NamedIcon ? (
+                      <div className="mb-3">
+                        <NamedIcon
+                          className="h-8 w-8 stroke-[1.5] text-white sm:h-10 sm:w-10"
+                        />
+                      </div>
+                    ) : iconSrc ? (
                       <div className="mb-3">
                         <Image
                           src={iconSrc}
@@ -92,7 +101,7 @@ export default function WhyMaximaSports({
                           className="h-8 w-8 object-contain brightness-0 invert sm:h-10 sm:w-10"
                         />
                       </div>
-                    )}
+                    ) : null}
                     <h4 className="mb-1.5 text-[13px] font-bold text-white">
                       {benefit.title}
                     </h4>

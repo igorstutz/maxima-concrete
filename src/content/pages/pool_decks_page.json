@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773697788895-gyo8uo.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Built to withstand pool chemicals, freeze-thaw cycles, and constant moisture for decades of performance.",
@@ -56,7 +56,7 @@
             "title": "Durability and Longevity"
           },
           {
-            "icon": "/images/cms/uploads/1773699156947-rtse3.webp",
+            "icon": "hard-hat",
             "items": [
               {
                 "text": "Broom, exposed aggregate, and stamped textures give wet feet the grip they need around the pool.",
@@ -66,7 +66,7 @@
             "title": "Slip Resistance & Safety"
           },
           {
-            "icon": "/images/cms/uploads/1768777652386-dseslw.webp",
+            "icon": "thermometer",
             "items": [
               {
                 "text": "Light tones and decorative finishes keep your deck comfortable on the hottest summer days.",
@@ -76,7 +76,7 @@
             "title": "Cool-to-the-Touch Design"
           },
           {
-            "icon": "/images/cms/uploads/1768777710208-0cfaxq.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "A beautifully finished pool deck elevates curb appeal and increases your property value.",
@@ -175,25 +175,25 @@
           {
             "title": "6.5-Bag Mix Concrete",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773699438648-dynlyv.webp",
+            "customIcon": "package",
             "description": "Stronger and denser for a durable foundation."
           },
           {
             "title": "Fiber Mesh Reinforcement",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773699474063-2mfasg.webp",
+            "customIcon": "layers",
             "description": "Reduces cracking and adds internal strength."
           },
           {
             "title": "10-Gauge Wire Mesh",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773699498502-gdlyhk.webp",
+            "customIcon": "grid",
             "description": "Provides superior stability and long-term support."
           },
           {
             "title": "Full-Service Experience",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773699532840-275u69.webp",
+            "customIcon": "users",
             "description": "From consultation to final finish — we handle it all."
           }
         ],

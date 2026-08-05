@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "Strong, sealed, and level.",
@@ -56,7 +56,7 @@
             "title": "Basements & garages"
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj.webp",
+            "icon": "dumbbell",
             "items": [
               {
                 "text": "Durable under daily use.",
@@ -66,7 +66,7 @@
             "title": "Home gyms, workshops, or storage areas"
           },
           {
-            "icon": "/images/cms/uploads/1769038441272-qsgu5s.webp",
+            "icon": "tree",
             "items": [
               {
                 "text": "Patios, garden walkways, or seating zones that stay beautiful year-round.",
@@ -76,7 +76,7 @@
             "title": "Outdoor living spaces"
           },
           {
-            "icon": "/images/cms/uploads/1769038489866-xcswlt.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
@@ -172,7 +172,7 @@
           {
             "title": "Accurate leveling & finishing",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1769039531501-m9hbb.webp",
+            "customIcon": "ruler",
             "description": "for a flawless, even surface."
           }
         ],

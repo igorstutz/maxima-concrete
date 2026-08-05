@@ -43,7 +43,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1778129082984-tqf6a.webp",
+            "icon": "users",
             "items": [
               {
                 "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
@@ -54,7 +54,7 @@
             "description": "Our specialists bring years of hands-on experience in high-quality concrete pool construction that adheres to all local safety and regulatory standards."
           },
           {
-            "icon": "/images/cms/uploads/1778129074410-5fjb1b.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
@@ -65,7 +65,7 @@
             "description": "Every property is different — and so is every pool. We collaborate closely with you to design a pool that complements your brand and environment, ensuring beauty, safety, and efficiency."
           },
           {
-            "icon": "/images/cms/uploads/1778129064774-6slje.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
@@ -76,7 +76,7 @@
             "description": "Using premium-grade concrete and advanced reinforcement methods, we ensure each pool withstands heavy use, seasonal shifts, and years of enjoyment."
           },
           {
-            "icon": "/images/cms/uploads/1778129053182-5vsw1v.webp",
+            "icon": "clipboard-check",
             "items": [
               {
                 "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",

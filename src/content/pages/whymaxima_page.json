@@ -6,7 +6,7 @@
       "label": "Hero Image",
       "type": "hero-image-only",
       "content": {
-        "image": "/images/cms/uploads/1772676001289-sekkr.webp",
+        "image": "/images/cms/uploads/ajuste-whymaxima-hero.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You"
       }
@@ -17,8 +17,8 @@
       "type": "why-maxima-intro",
       "content": {
         "title": "Built on Trust. \nDriven by\nPrecision.",
-        "image1": "/images/cms/uploads/1772675743580-grztir.webp",
-        "image2": "/images/cms/uploads/1772675764399-c8f59.webp",
+        "image1": "/images/cms/uploads/ajuste-team-1.webp",
+        "image2": "/images/cms/uploads/ajuste-team-2.webp",
         "ctaLink": "",
         "ctaText": "",
         "subtitle": "Why Maxima?",

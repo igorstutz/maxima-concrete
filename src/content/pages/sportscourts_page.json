@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Withstands years of competitive play, weather exposure, and high activity.",
@@ -56,7 +56,7 @@
             "title": "Unmatched Durability:"
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "Simply rinse and clean occasionally — no resurfacing or repainting required.",
@@ -66,7 +66,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Performs flawlessly through Ohio's hot summers and freezing winters.",
@@ -76,7 +76,7 @@
             "title": "Weather Resistance:"
           },
           {
-            "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc_copy_1771979884304_mooive_copy_1771980227680_puf0y.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "We'll tailor your court to fit your space, sport, and style preferences.",
@@ -86,7 +86,7 @@
             "title": "Customizable Design:"
           },
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "Multiple finishes to create a court that enhances your outdoor space.",
@@ -133,25 +133,25 @@
           {
             "title": "6.5-Bag High-Strength Mix:",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773702792516-gr43j5.webp",
+            "customIcon": "package",
             "description": "Denser, more durable concrete foundation for long-term stability."
           },
           {
             "title": "Fiber reinforcement",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773702820914-yyez0f.webp",
+            "customIcon": "layers",
             "description": "Prevents cracking and strengthens the slab against constant impact."
           },
           {
             "title": "10-Gauge Wire Mesh",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773702877887-cgpsnmj.webp",
+            "customIcon": "grid",
             "description": "Adds another layer of structural support to handle intense activity."
           },
           {
             "title": "Full-Service Process:",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773702890707-3hbaw.webp",
+            "customIcon": "users",
             "description": "From consultation to completion, our expert team handles design, permits, pouring, finishing, and cleanup."
           }
         ],

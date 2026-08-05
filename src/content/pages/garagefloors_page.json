@@ -32,7 +32,13 @@
         "paragraph2": "Every garage floor is installed with proper site preparation, precision finishing, and attention to every detail to ensure a smooth, level surface built to last. Designed for low maintenance and long-term reliability, our concrete floors provide the performance and quality homeowners can count on for years to come.",
         "titleLine2": "",
         "_sourceLabel": "Intro",
-        "imageTopRight": "/images/cms/uploads/1780681052328-ukunq.webp"
+        "imageTopRight": "/images/cms/uploads/1780681052328-ukunq.webp",
+        "images": [
+          "/images/cms/uploads/ajuste-garage-1.webp",
+          "/images/cms/uploads/ajuste-garage-2.webp",
+          "/images/cms/uploads/ajuste-garage-3.webp",
+          "/images/cms/uploads/ajuste-garage-4.webp"
+        ]
       }
     },
     {
@@ -78,25 +84,25 @@
           {
             "title": "",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773274229065-r7hdst.webp",
+            "customIcon": "package",
             "description": "6.5-bag high-strength concrete mix"
           },
           {
             "title": "",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773274360506-ihhs49.webp",
+            "customIcon": "layers",
             "description": "Fiber reinforcement for crack resistance"
           },
           {
             "title": "",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773273913371-fncx3v.webp",
+            "customIcon": "grid",
             "description": "10-gauge wire mesh for added stability"
           },
           {
             "title": "",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773274399427-i6v8cb.webp",
+            "customIcon": "check-circle",
             "description": "Proper grading and sealing for long-term protection"
           }
         ],

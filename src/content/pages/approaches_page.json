@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773312894276-em1y0h.webp",
+            "icon": "route",
             "items": [
               {
                 "text": "Provides a safe and comfortable drive between the street and your driveway. ",
@@ -56,7 +56,7 @@
             "title": "Smooth Transition:"
           },
           {
-            "icon": "/images/cms/uploads/1773312923542-ik3q8b.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Built with the same 6.5-bag fiber-reinforced concrete mix and 10-gauge wire mesh used in our driveways, ensuring long-term strength. ",
@@ -66,7 +66,7 @@
             "title": "Durability:"
           },
           {
-            "icon": "/images/cms/uploads/1773312935125-trtzx.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "Clean lines, professional finishing, and design alignment with your driveway and sidewalk.",
@@ -76,7 +76,7 @@
             "title": "Enhanced Curb Appeal:"
           },
           {
-            "icon": "/images/cms/uploads/1773312951598-drmst.webp",
+            "icon": "clipboard-check",
             "items": [
               {
                 "text": "We handle all required permits and inspections — no paperwork headaches for you. ",
@@ -101,19 +101,19 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773338397093-4jrmrq.webp",
+            "image": "/images/cms/uploads/ajuste-approach-inspection.webp",
             "title": "Inspection Coordination:",
             "description": "We schedule and handle inspections as required by your local municipality."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773338433230-6k5ije.webp",
+            "image": "/images/cms/uploads/ajuste-approach-installation.webp",
             "title": "Professional installation:",
             "description": "Our team ensures all work meets or exceeds state and local standards. "
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773338462198-ntcls.webp",
+            "image": "/images/cms/uploads/ajuste-approach-hasslefree.webp",
             "title": "Hassle-Free Experience:",
             "description": " You relax while we take care of everything — from start to finish. "
           }

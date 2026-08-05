@@ -32,7 +32,13 @@
         "paragraph2": "At Maxima Concrete, we build every foundation component to meet local codes and site requirements. Using quality materials, proper reinforcement, and proven construction methods, we deliver dependable support that helps protect your investment for years to come.",
         "titleLine2": "",
         "_sourceLabel": "Intro",
-        "imageTopRight": "/images/cms/uploads/1781010025999-5wk5v.webp"
+        "imageTopRight": "/images/cms/uploads/1781010025999-5wk5v.webp",
+        "images": [
+          "/images/cms/uploads/ajuste-footers-1.webp",
+          "/images/cms/uploads/ajuste-footers-2.webp",
+          "/images/cms/uploads/ajuste-footers-3.webp",
+          "/images/cms/uploads/ajuste-footers-4.webp"
+        ]
       }
     },
     {
@@ -135,25 +141,25 @@
           {
             "title": "6.5-Bag Mix Concrete",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773700234749-1jcg3e.webp",
+            "customIcon": "package",
             "description": "for dense, durable support"
           },
           {
             "title": "Fiber Mesh Reinforcement",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773700245743-dbi8ysj.webp",
+            "customIcon": "layers",
             "description": "to help control micro-cracking"
           },
           {
             "title": "10-Gauge Wire Mesh",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773700254289-zmxo6.webp",
+            "customIcon": "grid",
             "description": "Provides superior stability and long-term support."
           },
           {
             "title": "10-gauge wire mesh / rebar",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773700321144-4txjmt.webp",
+            "customIcon": "grid",
             "description": " per plan for structural integrity"
           }
         ],

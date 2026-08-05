@@ -12,10 +12,10 @@
         "tagline": "The Perfect Welcome to Your Home",
         "subtitle": "Transform your home’s entryway with a durable, elegant porch by Maxima Concrete. Built to last, designed to impress. Free consultation.",
         "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1784036986356-y3gbuf.webp",
+        "backgroundImage": "/images/cms/uploads/ajuste-porches-hero.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1784036986356-y3gbuf-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/ajuste-porches-hero-mobile.webp"
       }
     },
     {
@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
@@ -56,7 +56,7 @@
             "title": "Durability & Longevity"
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
@@ -66,7 +66,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1769043273182-7z0h78.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
@@ -76,7 +76,7 @@
             "title": "Versatility & Design Freedom"
           },
           {
-            "icon": "/images/cms/uploads/1769043299653-kd6n8.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",
@@ -170,7 +170,7 @@
           {
             "title": "Accurate leveling & finishing",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1769039531501-m9hbb.webp",
+            "customIcon": "ruler",
             "description": "for a flawless, even surface."
           }
         ],

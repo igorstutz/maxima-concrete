@@ -33,7 +33,13 @@
         "_sourceLabel": "Intro",
         "imageVertical": "/images/cms/uploads/1782843346868-pr8lebe.webp",
         "imageBottomLeft": "/images/cms/uploads/1773677431287-cgnxi.webp",
-        "imageHorizontal": "/images/cms/uploads/1780684578739-3hnhfm.webp"
+        "imageHorizontal": "/images/cms/uploads/1780684578739-3hnhfm.webp",
+        "images": [
+          "/images/cms/uploads/ajuste-okitchen-1.webp",
+          "/images/cms/uploads/ajuste-okitchen-2.webp",
+          "/images/cms/uploads/ajuste-okitchen-3.webp",
+          "/images/cms/uploads/ajuste-okitchen-4.webp"
+        ]
       }
     },
     {
@@ -47,7 +53,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773676660107-9ffpfl.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
@@ -58,7 +64,7 @@
             "description": "Resists heat, weather, and heavy use."
           },
           {
-            "icon": "/images/cms/uploads/1773666478265-9mswow_copy_1773676494410_hf2ig5.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
@@ -69,7 +75,7 @@
             "description": "Adapted to your outdoor area, cooking style, and entertainment needs."
           },
           {
-            "icon": "/images/cms/uploads/1773676755555-bjweo.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
@@ -80,7 +86,7 @@
             "description": "Choose from textures, colors, and patterns to match your home’s style."
           },
           {
-            "icon": "/images/cms/uploads/1773676782261-v2oq2v.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
@@ -198,7 +204,7 @@
         "listTitle": "What We Handle:",
         "description": "Our expert team ensures your outdoor kitchen is as <b>safe and functional</b> as it is beautiful.",
         "overlayOpacity": 35,
-        "backgroundImage": "/images/cms/uploads/1773681104661-qbeu4e.webp"
+        "backgroundImage": "/images/cms/uploads/ajuste-ok-prodesign-bg.webp"
       }
     },
     {

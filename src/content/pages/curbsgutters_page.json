@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773276105651-ahr0qg.webp",
+            "icon": "droplets",
             "items": [
               {
                 "text": "Curbs and gutters channel rainwater runoff from roofs, driveways, and yards — directing it toward storm drains instead of letting it pool or erode your landscape. This prevents flooding, soil erosion, and road damage, while helping protect nearby sidewalks and driveways.",
@@ -56,7 +56,7 @@
             "title": "Stormwater management"
           },
           {
-            "icon": "/images/cms/uploads/1773276119231-2rnrh.webp",
+            "icon": "hard-hat",
             "items": [
               {
                 "text": "Curbs act as physical barriers, separating traffic lanes from sidewalks and residential driveways. This creates safe zones for pedestrians, prevents cars from veering off-road, and ensures smoother vehicle flow in residential and commercial areas.",
@@ -66,7 +66,7 @@
             "title": "Pedestrian and traffic safety"
           },
           {
-            "icon": "/images/cms/uploads/1773276418531-ppl1i9.webp",
+            "icon": "map",
             "items": [
               {
                 "text": "Beyond functionality, curbs help define the edges of driveways and walkways, creating a cleaner visual boundary. They also make parking and maneuvering easier, guiding vehicles while protecting lawns and landscaping.",
@@ -76,7 +76,7 @@
             "title": "Property definition and usability"
           },
           {
-            "icon": "/images/cms/uploads/1773276387321-cuccm.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "Well-maintained curbs and gutters enhance curb appeal and signal pride of ownership. Cracked or neglected curbs can create a sense of disrepair — while clean, uniform ones increase property value and contribute to the neighborhood's visual harmony.",
@@ -101,25 +101,25 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773277438270-4p93le.webp",
+            "image": "/images/cms/uploads/ajuste-curbs-permit.webp",
             "title": "Permit Compliance:",
             "description": "We coordinate the required Right-of-Way (ROW) permits and help ensure your project meets local municipal requirements throughout Ohio."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773703586351-djiv8v.webp",
+            "image": "/images/cms/uploads/ajuste-curbs-installation.webp",
             "title": "Precision Installation:",
             "description": "Our experienced team follows proper grading, forming, and finishing techniques to deliver curbs and gutters built for long-term performance."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773703596218-r1wcdn.webp",
+            "image": "/images/cms/uploads/ajuste-curbs-materials.webp",
             "title": "Premium Materials:",
             "description": "We use high-strength concrete, proper reinforcement when required, and proven construction methods to maximize durability and structural integrity."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773703648441-05gz7.webp",
+            "image": "/images/cms/uploads/ajuste-curbs-inspection.webp",
             "title": "Quality Assurance:",
             "description": "Every project is inspected throughout the installation process to ensure proper workmanship, code compliance, and lasting performance."
           }

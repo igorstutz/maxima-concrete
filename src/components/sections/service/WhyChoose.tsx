@@ -2,6 +2,7 @@ import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
 import { legacyAsset } from "@/components/sections/home/legacy";
+import { namedBenefitIcon } from "./benefit-icons";
 
 const ICON_CLASS = "w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 text-white";
 
@@ -81,10 +82,17 @@ export default function WhyChoose({ content }: { content: Record<string, any> })
           {/* Bloco direito — grade de benefícios */}
           <ScrollReveal direction="right" className="flex-1">
             <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8 lg:grid-cols-4">
-              {benefits.map((benefit: any, index: number) => (
+              {benefits.map((benefit: any, index: number) => {
+                // Nome curto => ícone vetorial; caminho => imagem; senão, SVG legado.
+                const NamedIcon = namedBenefitIcon(benefit.customIcon || benefit.icon);
+                return (
                 <div key={index} className="flex flex-col items-center text-center">
                   <div className="mb-2 sm:mb-4">
-                    {benefit.customIcon ? (
+                    {NamedIcon ? (
+                      <div className="flex h-10 w-10 items-center justify-center sm:h-12 sm:w-12 md:h-14 md:w-14">
+                        <NamedIcon className={ICON_CLASS} strokeWidth={1.5} />
+                      </div>
+                    ) : benefit.customIcon ? (
                       <Image
                         src={legacyAsset(benefit.customIcon)}
                         alt={benefit.title || ""}
@@ -107,7 +115,8 @@ export default function WhyChoose({ content }: { content: Record<string, any> })
                     {benefit.description}
                   </p>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </ScrollReveal>
         </div>

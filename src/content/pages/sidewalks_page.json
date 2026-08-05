@@ -32,7 +32,11 @@
         "titleLine2": "Designed for Everyday Living.",
         "_sourceLabel": "Intro",
         "imageTopRight": "/images/cms/uploads/1782841848504-o1t85m.webp",
-        "paragraph2": "Built with premium materials and expert craftsmanship, our sidewalks and walkways are designed for lasting durability, safety, and everyday use. The result is a clean, reliable surface that enhances your property’s appearance and adds long-term value."
+        "paragraph2": "Built with premium materials and expert craftsmanship, our sidewalks and walkways are designed for lasting durability, safety, and everyday use. The result is a clean, reliable surface that enhances your property’s appearance and adds long-term value.",
+        "images": [
+          "/images/cms/uploads/ajuste-sidewalks-1.webp",
+          "/images/cms/uploads/ajuste-sidewalks-2.webp"
+        ]
       }
     },
     {
@@ -46,7 +50,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
@@ -56,7 +60,7 @@
             "title": "Durable & Long-Lasting:"
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "Just an occasional rinse to keep it clean and pristine.",
@@ -66,7 +70,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
@@ -76,7 +80,7 @@
             "title": "Versatile Design:"
           },
           {
-            "icon": "/images/cms/uploads/1769043299653-kd6n8_copy_1769563710274_eps6gc.webp",
+            "icon": "home",
             "items": [
               {
                 "text": "A well-designed sidewalk or walkway creates a welcoming first impression.",

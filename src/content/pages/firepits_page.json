@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773708309569-ikgzlb.webp",
+            "icon": "hard-hat",
             "items": [
               {
                 "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
@@ -58,7 +58,7 @@
             "description": "Paver fire pits sit on a properly prepared base, eliminating uneven ground, shifting stones, or instability. This creates a safer environment for family and guests while containing fire in a controlled, durable structure."
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp_copy_1771981982523_pi12gs_copy_1771982028656_ey68t3_copy_1771982046778_j9rgpd.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Just an occasional rinse to keep it clean and pristine.",
@@ -69,7 +69,7 @@
             "description": "High-quality concrete pavers resist heat, moisture, and freeze-thaw cycles — making them ideal for Central Ohio’s changing seasons. No warping, rusting, or premature wear."
           },
           {
-            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob_copy_1771981982870_nomhy_copy_1771982028657_8eesle_copy_1771982046779_yo1qcs.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
@@ -80,7 +80,7 @@
             "description": "Non-porous pavers are easy to clean and maintain. Occasional sweeping and simple upkeep keep your fire pit looking pristine year after year."
           },
           {
-            "icon": "/images/cms/uploads/1773315543405-l8rfvl.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "From rustic earth tones to modern charcoal and gray blends, paver fire pits integrate seamlessly with:\n\n- Paver patios\n- Outdoor kitchens\n- Seating walls\n- Walkways and steps\n\nThey can be circular, square, or custom-shaped to match your outdoor layout.",
@@ -95,6 +95,28 @@
         "_sourceLabel": "Why Maxima",
         "overlayOpacity": 76,
         "backgroundImage": "/images/cms/uploads/1773315491100-zfhpc.webp"
+      }
+    },
+    {
+      "key": "custom_inspiration_firepits",
+      "label": "Inspiration",
+      "type": "inspiration",
+      "content": {
+        "title": "Inspiration for Your Fire Pit",
+        "images": [
+          "/images/cms/uploads/ajuste-firepit-1.webp",
+          "/images/cms/uploads/ajuste-firepit-2.webp",
+          "/images/cms/uploads/ajuste-firepit-3.webp",
+          "/images/cms/uploads/ajuste-firepit-4.webp",
+          "/images/cms/uploads/ajuste-firepit-5.webp",
+          "/images/cms/uploads/ajuste-firepit-6.webp",
+          "/images/cms/uploads/ajuste-firepit-7.webp",
+          "/images/cms/uploads/ajuste-firepit-8.webp"
+        ],
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your backyard.",
+        "descriptionBold": "Every project is unique.",
+        "ctaText": "Explore more in our Gallery",
+        "ctaLink": "/gallery"
       }
     },
     {

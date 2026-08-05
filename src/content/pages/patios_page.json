@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1773697788895-gyo8uo.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
@@ -56,7 +56,7 @@
             "title": "Durability and Longevity"
           },
           {
-            "icon": "/images/cms/uploads/1773699156947-rtse3.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
@@ -66,7 +66,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1768777652386-dseslw.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
@@ -76,7 +76,7 @@
             "title": "Versatility"
           },
           {
-            "icon": "/images/cms/uploads/1768777710208-0cfaxq.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
@@ -154,25 +154,25 @@
           {
             "title": "6.5-Bag Mix Concrete",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773699438648-dynlyv.webp",
+            "customIcon": "package",
             "description": "Stronger and denser for a durable foundation."
           },
           {
             "title": "Fiber Mesh Reinforcement",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773699474063-2mfasg.webp",
+            "customIcon": "layers",
             "description": "Reduces cracking and adds internal strength."
           },
           {
             "title": "10-Gauge Wire Mesh",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773699498502-gdlyhk.webp",
+            "customIcon": "grid",
             "description": "Provides superior stability and long-term support."
           },
           {
             "title": "Full-Service Experience",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773699532840-275u69.webp",
+            "customIcon": "users",
             "description": "From consultation to final finish — we handle it all."
           }
         ],

@@ -45,7 +45,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1768607612932-fo0vu8.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Provides a denser, tougher surface that withstands heavy loads and decades of use — far outperforming asphalt alternatives.",
@@ -63,7 +63,7 @@
             "title": "Durability and Longevity"
           },
           {
-            "icon": "/images/cms/uploads/1768607604517-r9e35s.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "The reinforced mix significantly minimizes cracks, reducing repair costs over time.",
@@ -77,7 +77,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1768607580426-xmmv8q.webp",
+            "icon": "trending-up",
             "items": [
               {
                 "text": "Multiple styles, colors, and finishes let you complement your home's architecture perfectly.",

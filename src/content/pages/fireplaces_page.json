@@ -32,7 +32,13 @@
         "paragraph2": "Every outdoor fireplace is custom-built to fit your space, lifestyle, and design preferences. With expert craftsmanship, precision installation, and attention to every detail, we create durable, low-maintenance fireplaces that enhance your outdoor living experience and add lasting value to your property.",
         "titleLine2": "With a Custom Fireplace",
         "_sourceLabel": "Intro",
-        "imageTopRight": "/images/cms/uploads/1773398149473-wjj4k9.webp"
+        "imageTopRight": "/images/cms/uploads/1773398149473-wjj4k9.webp",
+        "images": [
+          "/images/cms/uploads/ajuste-fireplace-1.webp",
+          "/images/cms/uploads/ajuste-fireplace-2.webp",
+          "/images/cms/uploads/ajuste-fireplace-3.webp",
+          "/images/cms/uploads/ajuste-fireplace-4.webp"
+        ]
       }
     },
     {

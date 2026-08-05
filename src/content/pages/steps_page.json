@@ -46,7 +46,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1769038267587-tfuz2_copy_1769563710239_3hyux5q_copy_1771979884167_xkhatq_copy_1771980227655_98dvjb_copy_1771981975871_a9qoja_copy_1771981982823_8zd0bi_copy_1771981987862_athnsn_copy_1771981993330_gk5qy.webp",
+            "icon": "shield",
             "items": [
               {
                 "text": "Engineered to handle heavy foot traffic and weather exposure without warping or rotting.",
@@ -56,7 +56,7 @@
             "title": "Durability"
           },
           {
-            "icon": "/images/cms/uploads/1769038401984-34yknj_copy_1769563710290_z26kj_copy_1771979885306_747v6v_copy_1771980227731_puh8t_copy_1771981975472_w2iffp_copy_1771981982523_pi12gs_copy_1771981988114_v41vpg_copy_1771981993430_lrtm1f.webp",
+            "icon": "sparkles",
             "items": [
               {
                 "text": "Occasional cleaning and sealing keep them looking new for decades. ",
@@ -66,7 +66,7 @@
             "title": "Low Maintenance"
           },
           {
-            "icon": "/images/cms/uploads/1769043273182-7z0h78_copy_1769563709995_8agrn5_copy_1771979884858_3ruru_copy_1771980227667_1yd1w5_copy_1771981975819_hs2pob_copy_1771981982870_nomhy_copy_1771981987292_eyosoc_copy_1771981992981_lrk178.webp",
+            "icon": "palette",
             "items": [
               {
                 "text": "Multiple styles and finishes to match any architecture — from modern to traditional.",
@@ -76,7 +76,7 @@
             "title": "Versatility"
           },
           {
-            "icon": "/images/cms/uploads/1773703127259-nmvccd.webp",
+            "icon": "hard-hat",
             "items": [
               {
                 "text": "Excellent traction options like broom finishes or exposed aggregate to reduce slip risk.",
@@ -179,25 +179,25 @@
           {
             "title": "6.5-Bag High-Strength Concrete Mix:",
             "iconType": "package",
-            "customIcon": "/images/cms/uploads/1773703244211-pj0h69.webp",
+            "customIcon": "package",
             "description": "Superior to standard blends, offering increased load-bearing capacity."
           },
           {
             "title": "Fiber Reinforcement",
             "iconType": "layers",
-            "customIcon": "/images/cms/uploads/1773703258479-2kl96n.webp",
+            "customIcon": "layers",
             "description": "Microfibers dispersed throughout the mix minimize cracking and improve resilience."
           },
           {
             "title": "10-Gauge Wire Mesh:",
             "iconType": "grid",
-            "customIcon": "/images/cms/uploads/1773703268926-q4x38s.webp",
+            "customIcon": "grid",
             "description": "Additional reinforcement that distributes weight and prevents structural fractures."
           },
           {
             "title": "Comprehensive Service:",
             "iconType": "clipboard",
-            "customIcon": "/images/cms/uploads/1773703281308-p2l38j.webp",
+            "customIcon": "users",
             "description": "From consultation to finishing, we manage everything — including design, permits, pouring, and cleanup."
           }
         ],

@@ -40,7 +40,7 @@
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
-            "icon": "/images/cms/uploads/1778127546773-780ogn.webp",
+            "icon": "layers",
             "items": [
               {
                 "text": "Concrete outlasts wood and composite materials, resisting rot, insects, and weather damage. With proper care, your porch can look beautiful for decades.",
@@ -51,7 +51,7 @@
             "description": "A solid beginning for every structure. Our reinforced concrete footers distribute weight evenly, ensuring long-term stability and strength."
           },
           {
-            "icon": "/images/cms/uploads/1778127566192-lmn2pe.webp",
+            "icon": "square",
             "items": [
               {
                 "text": "No sanding, staining, or frequent repairs — just simple cleaning and occasional resealing to keep it pristine.",
@@ -62,7 +62,7 @@
             "description": "Perfectly level and engineered for durability, our slabs create the ideal foundation for commercial floors, warehouses, and industrial buildings."
           },
           {
-            "icon": "/images/cms/uploads/1778127585835-415hb.webp",
+            "icon": "route",
             "items": [
               {
                 "text": "From modern lines to rustic charm, we offer custom forms, colors, and stamps to match your home’s architecture and style.",
@@ -73,7 +73,7 @@
             "description": "Designed for safety, accessibility, and longevity, our curbs and sidewalks meet all ADA and local municipality standards."
           },
           {
-            "icon": "/images/cms/uploads/1778127604159-lvqnbp.webp",
+            "icon": "lightbulb",
             "items": [
               {
                 "text": "A high-quality porch immediately elevates your home’s exterior, adding sophistication and boosting resale value.",

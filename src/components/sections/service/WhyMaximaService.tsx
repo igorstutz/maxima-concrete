@@ -1,4 +1,5 @@
 import { ArrowRight, Package } from "lucide-react";
+import { namedBenefitIcon } from "./benefit-icons";
 import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
@@ -80,11 +81,18 @@ export default function WhyMaximaService({ content }: { content: Record<string, 
               /* Grade com ícones */
               <div className="mt-8 grid grid-cols-2 gap-6 sm:mt-12 sm:gap-8 md:gap-10 lg:grid-cols-4">
                 {benefits.map((benefit: any, index: number) => {
-                  const iconSrc = legacyAsset(benefit.icon || benefit.customIcon);
+                  const rawIcon: string = benefit.icon || benefit.customIcon || "";
+                  // Nome curto (ex.: "shield") => ícone vetorial; caminho => imagem.
+                  const NamedIcon = namedBenefitIcon(rawIcon);
+                  const iconSrc = NamedIcon ? "" : legacyAsset(rawIcon);
                   return (
                     <div key={index} className="flex flex-col items-center text-center">
                       <div className="mb-3 sm:mb-4">
-                        {iconSrc ? (
+                        {NamedIcon ? (
+                          <div className="flex h-10 w-10 items-center justify-center sm:h-12 sm:w-12 md:h-14 md:w-14">
+                            <NamedIcon className="h-full w-full stroke-[1.5] text-white" />
+                          </div>
+                        ) : iconSrc ? (
                           <Image
                             src={iconSrc}
                             alt={benefit.title || ""}
