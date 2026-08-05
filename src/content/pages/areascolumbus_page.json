@@ -25,8 +25,8 @@
         ],
         "title": "Trusted Concrete Contractor in",
         "cityName": "Columbus, Ohio",
-        "subtitle": "Start your project with confidence.",
-        "description": "At Maxima Concrete, we deliver high-quality concrete solutions for homeowners across Columbus and Central Ohio. From durable driveways to patios and custom flatwork, our family-owned, in-house team provides expert guidance and craftsmanship built to last.",
+        "subtitle": "Professional Concrete Services in Columbus, OH",
+        "description": "Maxima Concrete proudly serves homeowners throughout Columbus with custom driveways, patios, sidewalks, retaining walls, and outdoor living solutions. Using premium materials and proven installation techniques, our in-house team delivers durable concrete projects built to withstand Ohio’s climate and enhance your property’s value.",
         "_sourceLabel": "City Hero"
       }
     },
@@ -39,37 +39,37 @@
           {
             "icon": "hammer",
             "title": "Demolition & Site Prep",
+            "description": "We remove the old surface, set the proper grading, and make sure water drains away from your home.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate",
-            "description": "We remove old material, set proper grading, and ensure correct drainage."
+            "ctaText": "Get Your Free Estimate"
           },
           {
             "icon": "layers",
-            "title": "Solid Gravel Base",
+            "title": "Compacted Gravel Base",
+            "description": "We install and compact a gravel base that carries the load and keeps water from undermining the slab.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate",
-            "description": "We install a compacted gravel base for structural strength and water control."
+            "ctaText": "Get Your Free Estimate"
           },
           {
-            "icon": "thumbs-up",
-            "title": "Final Walkthrough",
+            "icon": "grid",
+            "title": "Forms & Reinforcement",
+            "description": "We set the forms and place fiber mesh and 10-gauge wire mesh — then you approve the layout before anything is poured.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate",
-            "description": "You approve layout and details before we pour."
+            "ctaText": "Get Your Free Estimate"
           },
           {
             "icon": "droplets",
             "title": "Professional Concrete Pour",
+            "description": "We pour our 6.5-bag high-strength mix, protecting your yard and driveway throughout the process.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate",
-            "description": "We transport concrete carefully and protect your yard during installation."
+            "ctaText": "Get Your Free Estimate"
           },
           {
             "icon": "sparkles",
-            "title": "Finish & Cure",
+            "title": "Finish, Cure & Final Walkthrough",
+            "description": "We apply the finish you chose, monitor curing, and walk the finished project with you before we leave.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate",
-            "description": "We apply the selected finish and monitor curing until ready for use."
+            "ctaText": "Get Your Free Estimate"
           }
         ],
         "ctaLink": "/why-maxima",
@@ -106,30 +106,29 @@
           {
             "icon": "home",
             "title": "Family-Owned & Operated",
-            "description": "We treat every home like it's our own."
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
           },
           {
             "icon": "users",
-            "title": "No Subcontractors",
-            "description": "Every project is completed by our trained, in-house team."
+            "title": "In-House Professionals",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
           },
           {
             "icon": "shield",
             "title": "Built for Decades",
-            "description": "High-strength concrete systems designed for long-term durability."
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
           },
           {
             "icon": "filecheck",
-            "title": "Licensed & Fully Insured",
-            "description": "Professional, compliant, and reliable from start to finish."
+            "title": "Licensed, Fully Insured & Registered in your City",
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete",
-        "ctaLink": "#contact",
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
         "ctaText": "Get a Free Estimate",
-        "_sourceLabel": "Trust (Global)",
-        "projectsText": "[XXX+] Projects Delivered",
-        "backgroundImage": "/images/cms/uploads/1778515585911-9ykf1_copy_1779129456493_guwolm.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
       }
     },
     {

@@ -41,9 +41,7 @@ const DEFAULT_FINISHES: FinishItem[] = [
     name: "Stamped & Colored",
     description:
       "Decorative stamped concrete that mimics stone, brick and wood with rich color.",
-    // Not downloaded locally yet — still served from the old CMS storage
-    image:
-      "https://hehehpxwazvtvattiyxl.supabase.co/storage/v1/object/public/cms-images/uploads/1778531676044-vjf95k.webp",
+    image: "/images/cms/uploads/1778531676044-vjf95k.webp",
   },
   {
     slug: "smooth",

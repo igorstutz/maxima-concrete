@@ -6,6 +6,7 @@ import {
   Building2,
   Check,
   Droplets,
+  Grid3x3,
   Hammer,
   Home,
   Layers,
@@ -42,6 +43,7 @@ interface ApproachStep {
 const ICONS: Record<string, LucideIcon> = {
   hammer: Hammer,
   layers: Layers,
+  grid: Grid3x3,
   "thumbs-up": ThumbsUp,
   droplets: Droplets,
   sparkles: Sparkles,

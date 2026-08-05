@@ -56,10 +56,23 @@ export default async function CityPage({
   const area = cities.find((a) => a.slug === citySlug);
   if (!area) notFound();
 
-  const sections = base.sections.map((s) => ({
-    ...s,
-    content: replaceCity(s.content, area.name),
-  }));
+  const sections = base.sections.map((s) => {
+    const content = replaceCity(s.content, area.name);
+    // Cidades com texto próprio (service-areas.json) sobrescrevem o texto
+    // genérico herdado de Columbus; as demais seguem com a versão substituída.
+    if (s.type === "city-hero" && ("headline" in area || "intro" in area)) {
+      const a = area as { headline?: string; intro?: string };
+      return {
+        ...s,
+        content: {
+          ...content,
+          ...(a.headline ? { subtitle: a.headline } : {}),
+          ...(a.intro ? { description: a.intro } : {}),
+        },
+      };
+    }
+    return { ...s, content };
+  });
 
   return <PageSections sections={sections} />;
 }

@@ -82,24 +82,27 @@ export default function AreasGrid({ content }: { content: Record<string, any> })
           <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 md:gap-x-8 md:gap-y-14 lg:grid-cols-3">
             {filteredAreas.map((area) => (
               <article key={area.slug} className="flex flex-col">
+                {/* Moldura com o degradê azul da marca ao redor da imagem */}
                 <Link
                   href={`/areas-we-serve/${area.slug}/`}
-                  className="group relative aspect-[4/3] w-full overflow-hidden rounded-2xl bg-gray-100"
+                  className="gradient-blue group block w-full rounded-2xl p-[3px] transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/20"
                   aria-label={`See concrete services in ${area.name}, OH`}
                 >
-                  {area.image ? (
-                    <Image
-                      src={area.image}
-                      alt={`Concrete work in ${area.name}, OH`}
-                      fill
-                      sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  ) : (
-                    <div className="flex h-full w-full items-center justify-center text-xs text-gray-300">
-                      No image
-                    </div>
-                  )}
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[13px] bg-gray-100">
+                    {area.image ? (
+                      <Image
+                        src={area.image}
+                        alt={`Concrete work in ${area.name}, OH`}
+                        fill
+                        sizes="(min-width: 1024px) 368px, (min-width: 640px) 50vw, 100vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center text-xs text-gray-300">
+                        No image
+                      </div>
+                    )}
+                  </div>
                 </Link>
                 <h3 className="mt-5 text-xl font-semibold text-ocean md:text-2xl">
                   {area.name}
