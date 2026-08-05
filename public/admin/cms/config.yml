@@ -318,7 +318,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -1011,7 +1011,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -1244,6 +1244,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -1345,7 +1354,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -1458,6 +1467,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -1505,16 +1518,16 @@ collections:
                             label: title
                             required: false
                             widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
                           - name: ctaLink
                             label: ctaLink
                             required: false
                             widget: string
                           - name: ctaText
                             label: ctaText
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
                             required: false
                             widget: string
                       - name: ctaLink
@@ -2009,7 +2022,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -2363,7 +2376,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -2596,6 +2609,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -2697,7 +2719,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -2800,8 +2822,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -2860,6 +2889,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -2925,6 +2958,27 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: logos
+                        label: logos
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: logosTitle
+                        label: logosTitle
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
               - label: commercial-categories
@@ -3541,6 +3595,14 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: cta2Text
+                        label: cta2Text
+                        required: false
+                        widget: string
+                      - name: cta2Link
+                        label: cta2Link
+                        required: false
+                        widget: string
               - label: commercial-ada
                 name: commercial-ada
                 widget: object
@@ -3588,6 +3650,27 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: logos
+                        label: logos
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: logosTitle
+                        label: logosTitle
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
               - label: commercial-hero
@@ -4093,6 +4176,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -4154,6 +4241,14 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: cta2Text
+                        label: cta2Text
+                        required: false
+                        widget: string
+                      - name: cta2Link
+                        label: cta2Link
                         required: false
                         widget: string
               - label: commercial-hero
@@ -4705,6 +4800,388 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: bottomText
+                        label: bottomText
+                        required: false
+                        widget: text
+      - name: concretespecs_page
+        label: Concretespecs
+        file: src/content/pages/concretespecs_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: contact
+                name: contact
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: nameSectionLabel
+                        label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: faq
+                name: faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: hero-minimal
+                name: hero-minimal
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: string
+                      - name: backLink
+                        label: backLink
+                        required: false
+                        widget: string
+                      - name: backLabel
+                        label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: intro
+                name: intro
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: imageLarge
+                        label: imageLarge
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: paragraph1
+                        label: paragraph1
+                        required: false
+                        widget: text
+                      - name: paragraph2
+                        label: paragraph2
+                        required: false
+                        widget: text
+                      - name: titleLine2
+                        label: titleLine2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: imageTopRight
+                        label: imageTopRight
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: paragraphLayout
+                        label: paragraphLayout
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: why-choose
+                name: why-choose
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: benefits
+                        label: benefits
+                        required: false
+                        widget: list
+                        fields:
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: iconType
+                            label: iconType
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                          - name: customIcon
+                            label: customIcon
+                            required: false
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: why-maxima-service
+                name: why-maxima-service
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: benefits
+                        label: benefits
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -5262,7 +5739,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -5401,6 +5878,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -5463,6 +5972,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -5564,7 +6082,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -5623,56 +6141,6 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-              - label: why-choose
-                name: why-choose
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: benefits
-                        label: benefits
-                        required: false
-                        widget: list
-                        fields:
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: iconType
-                            label: iconType
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: string
-                          - name: customIcon
-                            label: customIcon
-                            required: false
-                            widget: image
-                            choose_url: true
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: why-maxima-service
                 name: why-maxima-service
                 widget: object
@@ -5727,6 +6195,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -5890,7 +6362,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -6091,6 +6563,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -6192,7 +6673,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -6305,6 +6786,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -7149,7 +7634,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -7467,20 +7952,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -7489,10 +7987,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -7507,11 +8001,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -8019,20 +8508,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -8041,10 +8543,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -8059,11 +8557,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: reviews
                 name: reviews
                 widget: object
@@ -8273,6 +8766,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -8465,20 +8962,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -8487,10 +8997,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -8505,11 +9011,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -9102,20 +9603,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -9124,10 +9638,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -9142,11 +9652,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -9690,20 +10195,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -9712,10 +10230,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -9730,11 +10244,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -9763,55 +10272,6 @@ collections:
                         label: titlePart2
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-              - label: maxima-advantage
-                name: maxima-advantage
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: benefits
-                        label: benefits
-                        required: false
-                        widget: list
-                        fields:
-                          - name: text
-                            label: text
-                            required: false
-                            widget: string
-                          - name: boldText
-                            label: boldText
-                            required: false
-                            widget: string
-                      - name: pillText
-                        label: pillText
-                        required: false
-                        widget: text
-                      - name: rightTitle
-                        label: rightTitle
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -10457,20 +10917,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -10479,10 +10952,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -10497,11 +10966,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -10697,6 +11161,67 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+              - label: where-to-use
+                name: where-to-use
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: cards
+                        label: cards
+                        required: false
+                        widget: list
+                        fields:
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
+                          - name: image
+                            label: image
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: finalText
+                        label: finalText
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: why-maxima-service
                 name: why-maxima-service
                 widget: object
@@ -10751,6 +11276,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -10914,7 +11443,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -11004,6 +11533,87 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+              - label: inspiration
+                name: inspiration
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: descriptionBold
+                        label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -11066,6 +11676,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -11214,6 +11833,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -11377,7 +12000,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -11467,6 +12090,38 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -11529,6 +12184,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -11677,6 +12341,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -11981,7 +12649,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -12120,6 +12788,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -12182,6 +12882,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -12283,7 +12992,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -12386,8 +13095,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -12657,20 +13373,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -12679,10 +13408,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -12697,11 +13422,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: instagram
                 name: instagram
                 widget: object
@@ -13004,20 +13724,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -13026,10 +13759,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -13044,11 +13773,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -13455,20 +14179,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -13477,10 +14214,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -13495,11 +14228,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -13906,20 +14634,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -13928,10 +14669,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -13946,11 +14683,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -14357,20 +15089,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -14379,10 +15124,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -14397,11 +15138,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -14808,20 +15544,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -14830,10 +15579,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -14848,11 +15593,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -15259,20 +15999,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -15281,10 +16034,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -15299,11 +16048,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -15710,20 +16454,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -15732,10 +16489,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -15750,11 +16503,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -16161,20 +16909,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -16183,10 +16944,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -16201,11 +16958,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -16612,20 +17364,33 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: string
                       - name: backLink
                         label: backLink
                         required: false
                         widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: backLabel
                         label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
                       - name: description
@@ -16634,10 +17399,6 @@ collections:
                         widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
                         required: false
                         widget: string
                       - name: secondaryCtaLink
@@ -16652,11 +17413,6 @@ collections:
                         label: backgroundImageMobile
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
               - label: inspiration-gallery
                 name: inspiration-gallery
                 widget: object
@@ -17139,7 +17895,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -17278,6 +18034,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -17340,6 +18128,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -17478,8 +18275,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -17538,6 +18342,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -18024,7 +18832,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -18146,34 +18954,6 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-              - label: more-than-concrete
-                name: more-than-concrete
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: ok-intro
                 name: ok-intro
                 widget: object
@@ -18238,6 +19018,15 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: pro-design
                 name: pro-design
                 widget: object
@@ -18435,7 +19224,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -18523,6 +19312,10 @@ collections:
                             label: description
                             required: false
                             widget: string
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
                       - name: titleLine1
                         label: titleLine1
                         required: false
@@ -18539,6 +19332,11 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: why-maxima-service
                 name: why-maxima-service
                 widget: object
@@ -18593,6 +19391,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -18657,52 +19459,6 @@ collections:
                         label: description
                         required: false
                         widget: text
-              - label: concrete-vs-pavers
-                name: concrete-vs-pavers
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: cards
-                        label: cards
-                        required: false
-                        widget: list
-                        fields:
-                          - name: image
-                            label: image
-                            required: false
-                            widget: image
-                            choose_url: true
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: text
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: bottomText
-                        label: bottomText
-                        required: false
-                        widget: text
-                      - name: backgroundColor
-                        label: backgroundColor
-                        required: false
-                        widget: string
               - label: contact
                 name: contact
                 widget: object
@@ -18848,7 +19604,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -18966,34 +19722,6 @@ collections:
                         label: titlePart2
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-              - label: more-than-concrete
-                name: more-than-concrete
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -19181,7 +19909,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -19240,51 +19968,6 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-              - label: trust-maxima
-                name: trust-maxima
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: items
-                        label: items
-                        required: false
-                        widget: list
-                        fields:
-                          - name: label
-                            label: label
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: string
-                      - name: titleLine1
-                        label: titleLine1
-                        required: false
-                        widget: string
-                      - name: titleLine2
-                        label: titleLine2
-                        required: false
-                        widget: string
-                      - name: titleLine3
-                        label: titleLine3
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: why-maxima-service
                 name: why-maxima-service
                 widget: object
@@ -19339,6 +20022,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -19535,7 +20222,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -20236,7 +20923,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -20437,6 +21124,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -20538,7 +21234,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -20641,8 +21337,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -20701,6 +21404,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -21434,7 +22141,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -21635,6 +22342,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -21783,6 +22499,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -22011,7 +22731,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -22212,6 +22932,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-offer
                 name: paver-offer
                 widget: object
@@ -22410,6 +23139,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -22638,7 +23371,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -22839,6 +23572,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -22940,7 +23682,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -23043,8 +23785,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -23103,6 +23852,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -23331,7 +24084,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -23532,6 +24285,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -23696,7 +24458,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -23799,8 +24561,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -23859,6 +24628,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -24191,7 +24964,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -24281,6 +25054,38 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: integrated-features
                 name: integrated-features
                 widget: object
@@ -24355,6 +25160,10 @@ collections:
                             widget: string
                           - name: description
                             label: description
+                            required: false
+                            widget: string
+                          - name: link
+                            label: link
                             required: false
                             widget: string
                       - name: title
@@ -24435,6 +25244,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -24583,6 +25401,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -24800,7 +25622,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -24924,6 +25746,10 @@ collections:
                             label: description
                             required: false
                             widget: string
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -25002,6 +25828,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -25150,6 +25985,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -25313,7 +26152,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -25431,34 +26270,6 @@ collections:
                         label: titlePart2
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-              - label: more-than-concrete
-                name: more-than-concrete
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -25581,72 +26392,6 @@ collections:
                         label: viewAllText
                         required: false
                         widget: string
-              - label: style-options
-                name: style-options
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: styles
-                        label: styles
-                        required: false
-                        widget: list
-                        fields:
-                          - name: link
-                            label: link
-                            required: false
-                            widget: string
-                          - name: image
-                            label: image
-                            required: false
-                            widget: image
-                            choose_url: true
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: variant
-                        label: variant
-                        required: false
-                        widget: string
-                      - name: closingText
-                        label: closingText
-                        required: false
-                        widget: text
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -25734,6 +26479,10 @@ collections:
                             label: description
                             required: false
                             widget: string
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
                       - name: titleLine1
                         label: titleLine1
                         required: false
@@ -25750,6 +26499,11 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: unleash
                 name: unleash
                 widget: object
@@ -26012,7 +26766,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -26151,6 +26905,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -26213,6 +26999,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -26377,7 +27172,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -26490,6 +27285,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -26718,7 +27517,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -26857,6 +27656,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -26919,6 +27750,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -27020,7 +27860,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -27123,8 +27963,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -27183,6 +28030,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
@@ -27411,7 +28262,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -27550,6 +28401,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -27612,6 +28495,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -27750,8 +28642,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -27796,8 +28695,7 @@ collections:
                           - name: icon
                             label: icon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
                           - name: items
                             label: items
                             required: false
@@ -28061,7 +28959,7 @@ collections:
                       - name: tagline
                         label: tagline
                         required: false
-                        widget: string
+                        widget: text
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -28200,6 +29098,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -28262,6 +29192,15 @@ collections:
                         label: paragraphLayout
                         required: false
                         widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -28363,7 +29302,7 @@ collections:
                       - name: closingText
                         label: closingText
                         required: false
-                        widget: text
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -28466,8 +29405,15 @@ collections:
                           - name: customIcon
                             label: customIcon
                             required: false
-                            widget: image
-                            choose_url: true
+                            widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -28526,6 +29472,10 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
                       - name: bottomText
                         label: bottomText
                         required: false
