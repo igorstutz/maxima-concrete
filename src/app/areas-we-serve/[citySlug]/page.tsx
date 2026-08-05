@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import base from "@/content/pages/areascolumbus_page.json";
 import serviceAreas from "@/content/data/service-areas.json";
 import { PageSections } from "@/components/sections/PageSections";
+import { cityMetadata } from "../city-metadata";
+import type { ServiceArea } from "@/components/sections/areas/service-areas";
 
 /**
  * Páginas de cidade (/areas-we-serve/<cidade>) — mesmo mecanismo do site
@@ -40,11 +42,7 @@ export async function generateMetadata({
   const { citySlug } = await params;
   const area = cities.find((a) => a.slug === citySlug);
   if (!area) return {};
-  return {
-    title: `Maxima Concrete - Concrete Contractor in ${area.name}, OH`,
-    description: `Maxima Concrete delivers premium concrete driveways, patios, and outdoor living spaces across ${area.name}, Ohio.`,
-    alternates: { canonical: `/areas-we-serve/${citySlug}/` },
-  };
+  return cityMetadata(area);
 }
 
 export default async function CityPage({

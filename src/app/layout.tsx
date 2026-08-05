@@ -12,6 +12,13 @@ const GTM_ID = tracking.gtmId;
 // vazio na Hostinger, "/maxima-concrete" no preview do GitHub Pages.
 const BP = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
+// Base das URLs absolutas (canonical e imagens de compartilhamento). É sempre o
+// domínio final, inclusive no preview do GitHub Pages: assim o preview continua
+// apontando o canonical para o site de verdade, em vez de competir com ele.
+// Efeito colateral: o preview de link só exibe a imagem depois que o domínio
+// passar a servir este site.
+const SITE_URL = "https://maximaconcrete.com";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -19,7 +26,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://maximaconcrete.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Maxima Concrete — Premium Patios & Driveways in Ohio",
     template: "%s",
