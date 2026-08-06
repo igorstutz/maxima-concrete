@@ -71,6 +71,10 @@ export default function Areas({ content }: { content: Record<string, any> }) {
 
           {trustIcons.length > 0 && (
             <div className="mb-10 flex flex-wrap items-center gap-6 md:mb-14 md:gap-10">
+              {/* Sem filtro de cor: os selos já são desenhados para fundo
+                  escuro. Silhuetá-los transformava o "Licensed & Insured" num
+                  borrão branco. A largura também é limitada, senão selos mais
+                  largos (Angi) ficavam gigantes ao lado dos demais. */}
               {trustIcons.map((icon, i) => (
                 <Image
                   key={i}
@@ -78,7 +82,7 @@ export default function Areas({ content }: { content: Record<string, any> }) {
                   alt="Trust badge"
                   width={120}
                   height={48}
-                  className="h-8 w-auto object-contain brightness-0 invert sm:h-10 md:h-12"
+                  className="h-8 w-auto max-w-[120px] object-contain sm:h-10 sm:max-w-[140px] md:h-12 md:max-w-[160px]"
                 />
               ))}
             </div>

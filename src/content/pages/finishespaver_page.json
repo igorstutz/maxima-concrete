@@ -13,10 +13,10 @@
         "backLabel": "Back to Finishes",
         "description": "Interlocking pavers, brick, and natural stone bring rich texture, color, and old-world character to driveways, patios, and outdoor living spaces — with the strength to endure Ohio's seasons.",
         "_sourceLabel": "Hero",
-        "backgroundImage": "",
+        "backgroundImage": "/images/cms/uploads/1781035448875-8irjce.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "",
+        "backgroundImageMobile": "/images/cms/uploads/1781035448875-8irjce.webp",
         "overlayOpacity": 62
       }
     },
@@ -25,7 +25,7 @@
       "label": "Intro",
       "type": "finishes-intro",
       "content": {
-        "image": "",
+        "image": "/images/cms/uploads/1781035455845-cqeuys.webp",
         "title": "The Beauty and Strength of Pavers, Brick & Natural Stone",
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
@@ -58,7 +58,7 @@
         "description": "Instead of a single poured slab, this finish uses <b>individual pavers, bricks, or stones</b> set over a compacted, properly prepared base. That construction delivers:",
         "_sourceLabel": "What Is",
         "overlayOpacity": 50,
-        "backgroundImage": ""
+        "backgroundImage": "/images/cms/uploads/1781035452665-k7pdfc.webp"
       }
     },
     {
@@ -95,25 +95,25 @@
         "cards": [
           {
             "link": "/services/driveways/driveways-paver",
-            "image": "",
+            "image": "/images/cms/uploads/1784039565339-vsd2ph.webp",
             "title": "Driveways",
             "description": "A bold, high-end entrance built to handle vehicles and weather."
           },
           {
             "link": "/services/patios/patios-paver",
-            "image": "",
+            "image": "/images/cms/uploads/1781035451185-xbftgb.webp",
             "title": "Patios",
             "description": "A distinctive outdoor living space with rich texture and color."
           },
           {
             "link": "/services/approaches",
-            "image": "",
+            "image": "/images/cms/uploads/1781035457516-bc6uli.webp",
             "title": "Approaches & Walkways",
             "description": "Elegant, durable paths that welcome guests to your home."
           },
           {
             "link": "/services/porches",
-            "image": "",
+            "image": "/images/cms/uploads/1781035458395-unqoej.webp",
             "title": "Porches & Steps",
             "description": "Timeless character and safe footing at your entryway."
           }
@@ -158,7 +158,7 @@
             "label": "Paver Patios"
           }
         ],
-        "backgroundImage": ""
+        "backgroundImage": "/images/cms/uploads/1781035449826-ubrl5c.webp"
       }
     },
     {

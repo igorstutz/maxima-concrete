@@ -7,6 +7,7 @@ import projects from "@/content/data/projects.json";
 import { PageSections } from "@/components/sections/PageSections";
 import { Container } from "@/components/Container";
 import Image from "@/components/Image";
+import CountUp from "@/components/CountUp";
 import ProjectMapExplorer from "./ProjectMapExplorer";
 
 export const metadata: Metadata = {
@@ -84,7 +85,7 @@ export default function Page() {
             {STATS.map((s) => (
               <div key={s.label} className="text-center md:text-left">
                 <dt className="text-3xl font-bold tracking-tight text-ocean md:text-4xl">
-                  {s.value}
+                  <CountUp value={s.value} />
                 </dt>
                 <dd className="mt-1 text-sm text-gray-600">{s.label}</dd>
               </div>
