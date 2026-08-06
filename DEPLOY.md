@@ -24,6 +24,24 @@ Em Settings → Secrets and variables → Actions, criar (mesmos nomes e valores
 Push na `main` → `.github/workflows/deploy-hostinger.yml` builda e publica (~3 min).
 `deploy-pages.yml` publica um preview no GitHub Pages em paralelo.
 
+### Quando o preview do GitHub Pages falha
+
+Sintoma: o job `build` passa, o `deploy` cria o deployment e o GitHub o cancela
+poucos segundos depois (`Deployment cancelled`) ou fica em `deployment_queued`
+até estourar o timeout. `gh api repos/<owner>/<repo>/pages` devolve
+`"status": null`. É um travamento do lado do GitHub, preso ao SHA do commit —
+o deploy para a Hostinger (produção) não é afetado e continua publicando.
+
+O que costuma resolver, em ordem:
+
+1. Re-run do workflow (Actions → Deploy preview to GitHub Pages → Re-run).
+   Não dispare um run novo enquanto outro está ativo: o Pages aceita um
+   deployment por vez e um cancela o outro.
+2. Cancelar o deployment preso:
+   `gh api -X POST repos/<owner>/<repo>/pages/deployments/<SHA>/cancel`
+3. Um commit novo — o deployment usa o SHA como ID, então um SHA diferente
+   costuma liberar a fila.
+
 ## 2b. Domínio na Hostinger + DNS (uma vez)
 
 O maximaconcrete.com hoje aponta para a Wix. Para o site novo entrar no ar:
