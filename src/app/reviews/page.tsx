@@ -143,7 +143,12 @@ export default function Page() {
           </div>
         </Container>
 
-        {/* CTA */}
+        {/* Reviews ao vivo do Google (Elfsight) */}
+        <Container>
+          <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
+        </Container>
+
+        {/* CTA — fecha a seção, depois de o visitante ver os depoimentos */}
         <Container>
           <div className="mt-10 flex flex-col items-start gap-4 rounded-2xl bg-navy px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:mt-12 md:px-8">
             <p className="text-base font-medium text-white md:text-lg">
@@ -156,13 +161,6 @@ export default function Page() {
               Get Your Free Estimate
               <ArrowUpRight className="h-4 w-4" />
             </Link>
-          </div>
-        </Container>
-
-        {/* Reviews ao vivo do Google (Elfsight) */}
-        <Container>
-          <div className="mt-12">
-            <ElfsightWidget widgetId={REVIEWS_WIDGET_ID} hideHeadings={HIDE_HEADINGS} />
           </div>
         </Container>
       </section>
