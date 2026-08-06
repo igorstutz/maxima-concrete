@@ -282,24 +282,17 @@ const config = {
           ],
         },
         {
-          name: "google_reviews",
-          label: "Google Reviews (destacados)",
-          file: "src/content/data/google-reviews.json",
+          // Os depoimentos vêm do widget Elfsight (reviews reais do Google).
+          // Aqui ficam só os números que a página precisa exibir e que o
+          // widget não expõe.
+          name: "reviews_settings",
+          label: "Reviews — números do Google",
+          file: "src/content/settings/reviews.json",
           fields: [
-            {
-              name: "reviews",
-              label: "Reviews",
-              widget: "list",
-              root: true,
-              fields: [
-                { name: "name", label: "Reviewer name", widget: "string" },
-                { name: "rating", label: "Rating (1-5)", widget: "number", value_type: "int", min: 1, max: 5 },
-                { name: "comment", label: "Comment", widget: "text", required: false },
-                { name: "date", label: "Date (ISO)", widget: "string", required: false },
-                { name: "featured", label: "Featured", widget: "boolean", required: false },
-                { name: "photo", label: "Photo", widget: "image", required: false, choose_url: true },
-              ],
-            },
+            { name: "totalReviews", label: "Total de avaliações no Google", widget: "number", value_type: "int", min: 0 },
+            { name: "averageRating", label: "Nota média (ex.: 4.9)", widget: "number", value_type: "float", min: 0, max: 5, step: 0.1 },
+            { name: "profileUrl", label: "Link do perfil no Google", widget: "string", required: false },
+            { name: "_comment", label: "Nota interna", widget: "text", required: false },
           ],
         },
       ],

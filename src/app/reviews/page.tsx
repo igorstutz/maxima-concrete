@@ -7,8 +7,7 @@ import Contact from "@/components/sections/home/Contact";
 import FindWork from "@/components/sections/home/FindWork";
 import Instagram from "@/components/sections/home/Instagram";
 import home from "@/content/pages/home.json";
-import googleReviews from "@/content/data/google-reviews.json";
-import ReviewsMarquee from "./ReviewsMarquee";
+import reviewsSettings from "@/content/settings/reviews.json";
 
 export const metadata: Metadata = {
   title: "Maxima Concrete - Customer Reviews | Maxima Concrete",
@@ -37,20 +36,12 @@ const profileUrl =
     | { profileUrl?: string }
     | undefined)?.profileUrl ?? "";
 
-interface GoogleReview {
-  name: string;
-  rating: number;
-  comment: string;
-  date: string;
-  featured?: boolean;
-  photo: string | null;
-}
-
-const reviews = googleReviews as GoogleReview[];
-const totalReviews = reviews.length;
-const positiveReviews = reviews.filter((r) => r.rating >= 5).length;
-const averageRating =
-  reviews.reduce((sum, r) => sum + r.rating, 0) / Math.max(totalReviews, 1);
+// Total e média do perfil do Google (src/content/settings/reviews.json). Os
+// depoimentos em si vêm do widget Elfsight, que não expõe esses números para a
+// página — antes eles eram calculados de uma lista de reviews de exemplo
+// herdada da migração, e a página anunciava "8 Verified Reviews".
+const totalReviews = reviewsSettings.totalReviews;
+const averageRating = reviewsSettings.averageRating;
 
 function StarRating({ rating, size = "h-4 w-4" }: { rating: number; size?: string }) {
   return (
@@ -137,7 +128,7 @@ export default function Page() {
         </Container>
       </section>
 
-      {/* CARROSSEL INFINITO DE REVIEWS + WIDGET ELFSIGHT (mesma faixa, sem gap) */}
+      {/* DEPOIMENTOS — só os reviews reais do Google, via widget */}
       <section className="bg-surface-soft pb-16 pt-16 sm:pt-24 lg:pb-20">
         <Container>
           <div className="mb-8 md:mb-10">
@@ -145,15 +136,11 @@ export default function Page() {
               What Our Customers <span className="text-ocean">Are Saying</span>
             </h2>
             <p className="max-w-xl text-sm text-[#5A6B7B] md:text-base">
-              Join the <strong className="text-navy">{positiveReviews}+</strong> homeowners who
-              rated Maxima Concrete 5 stars on Google.
+              <strong className="text-navy">{totalReviews}</strong> homeowners and businesses have
+              reviewed Maxima Concrete on Google, averaging{" "}
+              <strong className="text-navy">{averageRating.toFixed(1)} stars</strong>.
             </p>
           </div>
-        </Container>
-
-        {/* Carrossel infinito (client component) */}
-        <Container>
-          <ReviewsMarquee reviews={reviews} />
         </Container>
 
         {/* CTA */}
