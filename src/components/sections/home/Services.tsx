@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { SnapCarousel } from "@/components/SnapCarousel";
@@ -37,7 +38,10 @@ export default function Services({ content }: { content: Record<string, any> }) 
         }}
       />
       <Container className="relative">
-        <div className="flex flex-col gap-8 px-0 py-10 md:gap-14 md:py-16">
+        {/* O cartão azul começa a 16px da viewport (inset-x-4). O conteúdo
+            precisa de um respiro dentro dele — o mesmo px-6 da seção Gallery —
+            senão encosta na borda azul. */}
+        <div className="flex flex-col gap-8 px-6 py-10 md:gap-14 md:px-8 md:py-16">
           {/* Título */}
           <h2 className="m-0 text-left text-2xl font-medium leading-tight md:leading-[43.2px] lg:text-[36px]">
             <span className="flex flex-wrap items-center gap-2 text-white">
@@ -56,12 +60,18 @@ export default function Services({ content }: { content: Record<string, any> }) 
           </h2>
 
           {/* Carrossel de serviços */}
-          <SnapCarousel controls="below" trackClassName="gap-4 px-1 py-4">
+          {/* No mobile o card fica centralizado (o padding lateral é metade da
+              sobra) e as setas vão para as laterais; no desktop volta ao
+              alinhamento à esquerda. */}
+          <SnapCarousel
+            controls="overlay-sides"
+            trackClassName="gap-4 py-4 px-[max(0.25rem,calc(50%-125px))] md:px-1"
+          >
             {items.map((item, index) => (
               <SmartLink
                 key={index}
                 href={item.link}
-                className="group relative block h-[220px] w-[160px] shrink-0 snap-start overflow-hidden rounded-[14px] border border-white/60 shadow-[1px_6px_11.1px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[298px] md:w-[220px]"
+                className="group relative block h-[320px] w-[250px] shrink-0 snap-center overflow-hidden rounded-[14px] border border-white/60 shadow-[1px_6px_11.1px_rgba(0,0,0,0.15)] transition-all duration-300 hover:scale-105 hover:shadow-xl md:h-[360px] md:w-[268px] md:snap-start"
               >
                 {item.image && (
                   <Image
@@ -77,7 +87,7 @@ export default function Services({ content }: { content: Record<string, any> }) 
                   <span className="text-center text-sm font-normal text-white md:text-base">
                     {item.name}
                   </span>
-                  <span className="h-2 w-2 shrink-0 bg-white" aria-hidden="true" />
+                  <ArrowUpRight className="h-4 w-4 shrink-0 text-white" />
                 </div>
               </SmartLink>
             ))}
@@ -95,10 +105,10 @@ export default function Services({ content }: { content: Record<string, any> }) 
             </div>
             <SmartLink
               href={c.ctaLink}
-              className="flex w-fit items-center justify-center gap-2.5 rounded-[5px] bg-[linear-gradient(90deg,#FFFFFF_0%,#E8E8E8_100%)] px-5 py-2.5 text-center text-sm font-medium text-[#1D3F5E] transition-all hover:brightness-95"
+              className="flex w-fit items-center justify-center gap-2.5 whitespace-nowrap rounded-[5px] bg-[linear-gradient(90deg,#FFFFFF_0%,#E8E8E8_100%)] px-5 py-2.5 text-center text-sm font-medium text-[#1D3F5E] transition-all hover:brightness-95"
             >
               {c.ctaText}
-              <span className="h-2 w-2 shrink-0 bg-[#1D3F5E]" aria-hidden="true" />
+              <ArrowUpRight className="h-4 w-4 shrink-0" />
             </SmartLink>
           </div>
         </div>

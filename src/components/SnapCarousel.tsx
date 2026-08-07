@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 /**
@@ -17,6 +17,11 @@ interface SnapCarouselProps {
   controls?: "below" | "overlay-bottom" | "overlay-sides";
   /** classes extras no wrapper dos botões (modo "below"/"overlay-bottom") */
   controlsClassName?: string;
+  /**
+   * Avança sozinho a cada N milissegundos. Pausa quando o ponteiro está sobre
+   * o carrossel, quando ele sai da tela e se o sistema pede menos animação.
+   */
+  autoplayMs?: number;
 }
 
 const LIGHT_BTN =
@@ -30,8 +35,11 @@ export function SnapCarousel({
   trackClassName = "",
   controls = "below",
   controlsClassName = "",
+  autoplayMs,
 }: SnapCarouselProps) {
   const trackRef = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const paused = useRef(false);
 
   const scrollByStep = (dir: 1 | -1) => {
     const track = trackRef.current;
@@ -46,6 +54,36 @@ export function SnapCarousel({
     else if (dir === -1 && track.scrollLeft <= 4) next = maxScroll;
     track.scrollTo({ left: next, behavior: "smooth" });
   };
+
+  useEffect(() => {
+    if (!autoplayMs) return;
+    const root = rootRef.current;
+    const track = trackRef.current;
+    // Um slide só não tem para onde avançar.
+    if (!root || !track || track.children.length < 2) return;
+    if (window.matchMedia?.("(prefers-reduced-motion: reduce)").matches) return;
+
+    // Fora da tela não faz sentido girar (e evita trabalho à toa).
+    let visible = false;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        visible = entry.isIntersecting;
+      },
+      { threshold: 0.35 },
+    );
+    io.observe(root);
+
+    const id = window.setInterval(() => {
+      if (visible && !paused.current) scrollByStep(1);
+    }, autoplayMs);
+
+    return () => {
+      io.disconnect();
+      window.clearInterval(id);
+    };
+    // scrollByStep é estável para o ciclo de vida deste componente
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [autoplayMs]);
 
   const prev = (
     <button
@@ -68,8 +106,21 @@ export function SnapCarousel({
     </button>
   );
 
+  // Enquanto o visitante interage (mouse em cima, dedo arrastando ou foco no
+  // teclado), o autoplay espera a vez.
+  const pauseProps = autoplayMs
+    ? {
+        onMouseEnter: () => (paused.current = true),
+        onMouseLeave: () => (paused.current = false),
+        onFocusCapture: () => (paused.current = true),
+        onBlurCapture: () => (paused.current = false),
+        onTouchStart: () => (paused.current = true),
+        onTouchEnd: () => (paused.current = false),
+      }
+    : {};
+
   return (
-    <div className={`relative ${className}`}>
+    <div ref={rootRef} className={`relative ${className}`} {...pauseProps}>
       <div
         ref={trackRef}
         className={`scrollbar-hide touch-scroll-x flex snap-x snap-mandatory overflow-x-auto ${trackClassName}`}

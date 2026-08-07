@@ -55,7 +55,9 @@ export default function TrustGlobal({ content }: { content: Record<string, any> 
         <Container>
           <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
             {/* Esquerda: título + contagem + CTA */}
-            <ScrollReveal className="flex flex-col items-center gap-6 text-center md:items-start md:text-left">
+            {/* Alinhado à esquerda também no mobile — o restante da home segue
+                esse alinhamento, e centralizar só aqui destoava. */}
+            <ScrollReveal className="flex flex-col items-start gap-6 text-left">
               <h2 className="whitespace-pre-line text-3xl font-semibold leading-tight text-white md:text-4xl">
                 {c.title}
               </h2>

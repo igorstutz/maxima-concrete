@@ -118,6 +118,7 @@ export default function ServiceIntro({
               <SnapCarousel
                 className="w-full max-w-[500px] overflow-hidden rounded-2xl"
                 controls="overlay-sides"
+                autoplayMs={5000}
               >
                 {images.map((src, i) => (
                   <div key={i} className="relative aspect-square w-full shrink-0 snap-start">
