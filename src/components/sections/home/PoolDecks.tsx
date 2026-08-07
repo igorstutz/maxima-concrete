@@ -22,10 +22,18 @@ export default function PoolDecks({ content }: { content: Record<string, any> })
     legacyAsset(c.backgroundImage) || "/images/assets/pool-decks.webp";
   const poster = legacyAsset(c.posterImage) || backgroundImage;
 
+  // O vídeo é servido do próprio site, então precisa do basePath (o preview do
+  // GitHub Pages roda sob /maxima-concrete). URLs absolutas passam intactas.
+  const videoSrc = c.videoUrl
+    ? /^https?:\/\//i.test(c.videoUrl)
+      ? c.videoUrl
+      : asset(c.videoUrl)
+    : "";
+
   // Vídeo em HTML bruto: garante o atributo `muted` no HTML estático
   // (necessário para autoplay) sem transformar a seção em client component.
-  const videoHtml = c.videoUrl
-    ? `<video autoplay loop muted playsinline preload="metadata" poster="${asset(poster)}" class="absolute inset-0 h-full w-full object-cover"><source src="${c.videoUrl}" type="video/mp4" /></video>`
+  const videoHtml = videoSrc
+    ? `<video autoplay loop muted playsinline preload="metadata" poster="${asset(poster)}" class="absolute inset-0 h-full w-full object-cover"><source src="${videoSrc}" type="video/mp4" /></video>`
     : "";
 
   return (
