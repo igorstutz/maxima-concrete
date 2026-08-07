@@ -12,29 +12,6 @@ interface ServiceItem {
   link?: string;
 }
 
-/** Patios/Driveways cards split into Concrete/Paver deep links on the gallery hub. */
-const SPLIT_MAP: Record<string, { concrete: string; paver: string }> = {
-  driveways: {
-    concrete: "/gallery/driveways?variant=concrete",
-    paver: "/gallery/driveways?variant=paver",
-  },
-  driveway: {
-    concrete: "/gallery/driveways?variant=concrete",
-    paver: "/gallery/driveways?variant=paver",
-  },
-  patios: {
-    concrete: "/gallery/patios?variant=concrete",
-    paver: "/gallery/patios?variant=paver",
-  },
-  patio: {
-    concrete: "/gallery/patios?variant=concrete",
-    paver: "/gallery/patios?variant=paver",
-  },
-};
-
-const PILL_CLASS =
-  "gradient-navy inline-flex h-7 items-center justify-center gap-1.5 rounded-[5px] px-3.5 text-[10px] font-medium text-white transition-all hover:brightness-110 md:text-xs";
-
 /**
  * Gallery hub — "All our Services": title, description, card grid linking to
  * each gallery category, plus bottom text + gradient line + CTA.
@@ -92,7 +69,6 @@ export default function AllServices({
         {items.length > 0 && (
           <div className="grid grid-cols-2 justify-start gap-3 md:flex md:flex-wrap md:gap-4">
             {items.map((item, index) => {
-              const split = SPLIT_MAP[(item.name || "").trim().toLowerCase()];
               const photos = photoCountFor(item.link);
               return (
                 /* Card no formato aprovado: moldura azul degradê, foto em cima e
@@ -137,19 +113,6 @@ export default function AllServices({
                     <span className="sr-only">{item.name}</span>
                   </SmartLink>
 
-                  {/* Atalhos Concrete/Paver, quando a categoria tem as duas versões */}
-                  {split && (
-                    <div className="absolute bottom-[52px] left-0 right-0 z-20 flex justify-center gap-2 md:bottom-[60px]">
-                      <SmartLink href={split.concrete} className={PILL_CLASS}>
-                        Concrete
-                        <ArrowUpRight className="h-3 w-3" />
-                      </SmartLink>
-                      <SmartLink href={split.paver} className={PILL_CLASS}>
-                        Paver
-                        <ArrowUpRight className="h-3 w-3" />
-                      </SmartLink>
-                    </div>
-                  )}
                 </div>
               );
             })}
