@@ -26748,6 +26748,11 @@ collections:
                         label: description
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: whatis
                 name: whatis
                 widget: object

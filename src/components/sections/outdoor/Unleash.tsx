@@ -1,6 +1,8 @@
 import { Check } from "lucide-react";
+import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { ScrollReveal } from "@/components/ScrollReveal";
+import { legacyAsset } from "@/components/sections/home/legacy";
 
 interface UnleashItem {
   boldTitle?: string;
@@ -9,17 +11,37 @@ interface UnleashItem {
 
 /**
  * Section type: `unleash` — dark band, title + lead, checklist with bold
- * titles and a closing sentence.
+ * titles and a closing sentence. Aceita `backgroundImage` (com sombreado por
+ * cima); sem o campo, mantém o fundo cinza escuro sólido.
  */
 export default function Unleash({ content }: { content: Record<string, any> }) {
   const title = content?.title || "";
   const description = content?.description || "";
   const items: UnleashItem[] = content?.items || [];
   const closingText = content?.closingText || "";
+  const background = legacyAsset(content?.backgroundImage);
 
   return (
-    <section className="bg-[#2A2A2A] py-12 sm:py-16 md:py-20 lg:py-24">
-      <Container>
+    <section
+      className={`relative overflow-hidden py-12 sm:py-16 md:py-20 lg:py-24 ${
+        background ? "" : "bg-[#2A2A2A]"
+      }`}
+    >
+      {background && (
+        <>
+          <Image
+            src={background}
+            alt=""
+            aria-hidden
+            fill
+            sizes="100vw"
+            className="object-cover"
+          />
+          {/* Sombreado forte: o texto e a lista ficam por cima da foto */}
+          <div className="absolute inset-0 bg-[#1A1A1A]/85" />
+        </>
+      )}
+      <Container className="relative">
         <ScrollReveal className="mx-auto max-w-3xl">
           <h2 className="mb-4 text-[32px] font-medium leading-[120%] tracking-tight text-white">
             {title}
