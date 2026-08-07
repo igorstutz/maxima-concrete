@@ -4,9 +4,13 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { legacyAsset } from "@/components/sections/home/legacy";
 import { CtaButton, sanitizeHtml } from "./shared";
 
+/**
+ * O disco usa `currentColor`, então a cor vem do `text-*` de quem chama — é
+ * assim que ele muda no hover. O check fica branco para manter o contraste.
+ */
 const CheckBadge = ({ className }: { className: string }) => (
   <svg className={className} viewBox="0 0 20 20" fill="none" aria-hidden="true">
-    <circle cx="10" cy="10" r="10" fill="white" fillOpacity="0.2" />
+    <circle cx="10" cy="10" r="10" fill="currentColor" />
     <path
       d="M6 10.5L8.5 13L14 7.5"
       stroke="white"
@@ -16,6 +20,10 @@ const CheckBadge = ({ className }: { className: string }) => (
     />
   </svg>
 );
+
+/** branco translúcido em repouso; azul da marca ao passar o mouse no item */
+const BADGE_CLASS =
+  "shrink-0 text-white/20 transition-colors duration-300 group-hover/benefit:text-primary";
 
 /**
  * Section type: `why-choose-outdoor` — big image with dark overlay, benefits
@@ -63,8 +71,8 @@ export default function WhyChooseOutdoor({
           <div className="rounded-b-[14px] bg-[#1A1A1A] px-5 py-5">
             <div className="mb-5 space-y-2.5">
               {benefits.map((benefit, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <CheckBadge className="mt-0.5 h-4 w-4 shrink-0" />
+                <div key={index} className="group/benefit flex items-start gap-2">
+                  <CheckBadge className={`mt-0.5 h-4 w-4 ${BADGE_CLASS}`} />
                   <p
                     className="text-[13px] font-medium leading-[140%] text-white/90"
                     dangerouslySetInnerHTML={{ __html: sanitizeHtml(benefit.text || "") }}
@@ -107,8 +115,8 @@ export default function WhyChooseOutdoor({
                 </h2>
                 <div className="mb-6 space-y-3 sm:mb-8 sm:space-y-4">
                   {benefits.map((benefit, index) => (
-                    <div key={index} className="flex items-start gap-2.5">
-                      <CheckBadge className="mt-0.5 h-5 w-5 shrink-0" />
+                    <div key={index} className="group/benefit flex items-start gap-2.5">
+                      <CheckBadge className={`mt-0.5 h-5 w-5 ${BADGE_CLASS}`} />
                       <p
                         className="text-[14px] font-medium leading-[120%] text-white lg:text-[16px]"
                         dangerouslySetInnerHTML={{

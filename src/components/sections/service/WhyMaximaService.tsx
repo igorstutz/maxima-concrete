@@ -71,8 +71,10 @@ export default function WhyMaximaService({ content }: { content: Record<string, 
               {title}
             </h2>
             {description && (
-              <p
-                className="mb-6 max-w-2xl whitespace-pre-line text-sm font-medium tracking-[-0.56px] text-white sm:mb-8"
+              // <div> (e não <p>) porque o texto pode trazer <ul>/<li>; os
+              // seletores abaixo dão o estilo da lista, já que o reset zera.
+              <div
+                className="mb-6 max-w-2xl whitespace-pre-line text-sm font-medium tracking-[-0.56px] text-white sm:mb-8 [&_li]:mt-1.5 [&_ul]:mt-3 [&_ul]:list-disc [&_ul]:whitespace-normal [&_ul]:pl-5 [&_ul]:marker:text-white/60"
                 dangerouslySetInnerHTML={{ __html: sanitizeHtml(description) }}
               />
             )}
