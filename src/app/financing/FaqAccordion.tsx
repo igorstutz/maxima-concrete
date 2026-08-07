@@ -25,7 +25,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
               <span
                 className={`shrink-0 font-mono text-2xl font-black tracking-tight transition-colors md:text-3xl ${
                   isOpen
-                    ? "text-[hsl(180_85%_60%)]"
+                    ? "text-[hsl(210_100%_56%)]"
                     : "text-white/20 group-hover:text-white/40"
                 }`}
               >
@@ -37,7 +37,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
               <span
                 className={`mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all ${
                   isOpen
-                    ? "rotate-180 border-[hsl(180_85%_60%)] bg-[hsl(180_85%_60%)] text-[hsl(218_50%_10%)]"
+                    ? "rotate-180 border-[hsl(210_100%_56%)] bg-[hsl(210_100%_56%)] text-[hsl(218_50%_10%)]"
                     : "border-white/20 text-white/70 group-hover:border-white/40"
                 }`}
               >

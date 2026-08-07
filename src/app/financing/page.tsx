@@ -324,8 +324,8 @@ export default function Page() {
                       <div
                         className={`relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl text-lg font-bold transition-all duration-300 ${
                           isLast
-                            ? "bg-gradient-to-br from-[hsl(210_100%_55%)] to-[hsl(210_100%_50%)] text-[hsl(218_60%_8%)] shadow-[0_0_30px_rgba(34,211,238,0.35)]"
-                            : "border border-[hsl(210_100%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(210_100%_56%)] shadow-[0_0_20px_rgba(34,211,238,0.18)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+                            ? "bg-gradient-to-br from-[hsl(210_100%_55%)] to-[hsl(210_100%_50%)] text-[hsl(218_60%_8%)] shadow-[0_0_30px_rgba(30,144,255,0.35)]"
+                            : "border border-[hsl(210_100%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(210_100%_56%)] shadow-[0_0_20px_rgba(30,144,255,0.18)] group-hover:shadow-[0_0_30px_rgba(30,144,255,0.4)]"
                         }`}
                       >
                         0{i + 1}
@@ -454,7 +454,7 @@ export default function Page() {
             <div className="relative col-span-2 row-span-2 flex flex-col justify-between overflow-hidden rounded-2xl border border-[hsl(210_100%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8">
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-white/90">
                   <Zap className="h-3 w-3" /> Most chosen
                 </div>
                 <p className="mt-6 text-6xl font-black leading-none text-white md:text-7xl">

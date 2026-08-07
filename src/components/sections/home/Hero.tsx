@@ -20,6 +20,15 @@ interface HeroContent {
 const HERO_ALT =
   "Custom concrete driveway and outdoor living space by Maxima Concrete in Ohio";
 
+
+/** MIME do <source> a partir da extensão do arquivo. */
+function mimeFromPath(path: string): string {
+  if (/\.jpe?g($|\?)/i.test(path)) return "image/jpeg";
+  if (/\.png($|\?)/i.test(path)) return "image/png";
+  if (/\.avif($|\?)/i.test(path)) return "image/avif";
+  return "image/webp";
+}
+
 export default function Hero({ content }: { content: Record<string, any> }) {
   const c = content as HeroContent;
 
@@ -55,7 +64,10 @@ export default function Hero({ content }: { content: Record<string, any> }) {
             <source
               media="(max-width: 768px)"
               srcSet={asset(c.backgroundImageMobile)}
-              type="image/webp"
+              // O type vem da extensão: as hubs de driveways/patios usam .jpg e,
+              // com "image/webp" fixo, um navegador sem webp descartaria este
+              // candidato e baixaria o desktop no lugar do mobile.
+              type={mimeFromPath(c.backgroundImageMobile)}
               width={768}
               height={1024}
             />

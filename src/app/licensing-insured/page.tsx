@@ -203,7 +203,7 @@ export default function Page() {
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_56%)]" />
                   Verified · Active
                 </div>
@@ -282,11 +282,11 @@ export default function Page() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218_60%_4%)]/95 via-[hsl(218_60%_6%)]/55 to-[hsl(218_60%_6%)]/25" />
                 {/* Carimbo */}
                 <div className="absolute right-6 top-6 -rotate-12 md:right-8 md:top-8">
-                  <div className="relative flex h-24 w-24 items-center justify-center rounded-full border-[3px] border-[hsl(210_100%_56%)]/80 bg-[hsl(214_100%_20%)]/40 backdrop-blur-sm md:h-32 md:w-32">
+                  <div className="relative flex h-24 w-24 items-center justify-center rounded-full border-[3px] border-[hsl(210_100%_56%)]/80 bg-[hsl(214_100%_14%)]/75 backdrop-blur-sm md:h-32 md:w-32">
                     <div className="absolute inset-1.5 rounded-full border border-[hsl(210_100%_56%)]/50" />
                     <div className="text-center">
-                      <Stamp className="mx-auto h-5 w-5 text-[hsl(210_100%_56%)] md:h-6 md:w-6" />
-                      <p className="mt-1 text-[9px] font-black leading-tight tracking-[0.15em] text-[hsl(210_100%_56%)] md:text-[10px]">
+                      <Stamp className="mx-auto h-5 w-5 text-white md:h-6 md:w-6" />
+                      <p className="mt-1 text-[9px] font-black leading-tight tracking-[0.15em] text-white md:text-[10px]">
                         VERIFIED
                         <br />
                         2026

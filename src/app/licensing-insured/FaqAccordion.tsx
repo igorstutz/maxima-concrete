@@ -22,7 +22,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
               onClick={() => setOpenFaq(isOpen ? null : i)}
               className="-mx-2 flex w-full items-start gap-6 rounded-lg px-2 py-6 text-left transition-colors hover:bg-white/[0.02]"
             >
-              <span className="mt-1 shrink-0 font-mono text-xs font-bold tracking-wider text-[hsl(180_85%_60%)]/70">
+              <span className="mt-1 shrink-0 font-mono text-xs font-bold tracking-wider text-[hsl(210_100%_56%)]/70">
                 0{i + 1}
               </span>
               <h3 className="flex-1 text-lg font-bold leading-snug text-white md:text-xl">
@@ -31,7 +31,7 @@ export default function FaqAccordion({ faqs }: { faqs: FaqItem[] }) {
               <span
                 className={`mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all ${
                   isOpen
-                    ? "border-[hsl(180_85%_60%)] bg-[hsl(180_85%_60%)] text-[hsl(218_50%_10%)]"
+                    ? "border-[hsl(210_100%_56%)] bg-[hsl(210_100%_56%)] text-[hsl(218_50%_10%)]"
                     : "border-white/20 text-white/70 group-hover:border-white/40"
                 }`}
               >
