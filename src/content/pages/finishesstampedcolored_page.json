@@ -30,7 +30,11 @@
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
         "description": "<b>Stamped and colored concrete</b> isn’t just a surface treatment — it’s artistry in motion.\n\nBy combining pattern, texture, and color, <b>Maxima Concrete</b> transforms ordinary slabs into breathtaking, durable designs that mimic premium materials like stone, slate, tile, or brick, all while maintaining the strength and longevity of concrete.",
-        "_sourceLabel": "Intro"
+        "_sourceLabel": "Intro",
+        "images": [
+          "/images/cms/uploads/1781007119051-t2dyxd.webp",
+          "/images/cms/uploads/1781007382860-o8179.webp"
+        ]
       }
     },
     {

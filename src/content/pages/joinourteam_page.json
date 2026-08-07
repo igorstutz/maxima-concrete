@@ -15,7 +15,27 @@
         "stat2Label": "Projects mapped",
         "stat2Value": "auto:projects",
         "stat3Label": "BBB rated",
-        "stat3Value": "A+"
+        "stat3Value": "A+",
+        "backgroundImage": "/images/cms/uploads/ajuste-team-1.webp"
+      }
+    },
+    {
+      "key": "joinourteam_gallery",
+      "label": "Inside Maxima",
+      "type": "inspiration",
+      "content": {
+        "title": "Inside Maxima Concrete",
+        "images": [
+          "/images/cms/uploads/1766260199815-jhga35.webp",
+          "/images/cms/uploads/ajuste-team-3.webp",
+          "/images/cms/uploads/ajuste-team-2.webp",
+          "/images/cms/uploads/ajuste-team-4.webp",
+          "/images/cms/uploads/ajuste-team-1.webp"
+        ],
+        "descriptionBold": "Same crew, every job.",
+        "description": "Same crew, every job. Our people, our trucks and our shop in Delaware, Ohio.",
+        "ctaText": "See Our Openings",
+        "ctaLink": "#contact"
       }
     },
     {

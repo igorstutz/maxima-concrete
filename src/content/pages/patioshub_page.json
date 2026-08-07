@@ -4,16 +4,16 @@
     {
       "key": "patioshub_page_hero",
       "label": "Hero",
-      "type": "hub-hero",
+      "type": "hero",
       "content": {
         "title": "Patios",
-        "ctaLink": "#contact",
+        "tagline": "Over 1,000 Patios Installed",
+        "subtitle": "Transform your backyard with a Maxima Patio — durable, elegant, and built to last. Free estimates available.",
         "ctaText": "Get Your Free Estimate",
-        "subtitle": "Over 1,000 Patios Installed",
-        "description": "Transform your backyard with a Maxima Patio — durable, elegant, and built to last. Free estimates available.",
-        "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.jpg",
-        "secondaryCtaLink": "/project-map",
+        "ctaLink": "#contact",
         "secondaryCtaText": "Find Our Work Near You",
+        "secondaryCtaLink": "/project-map",
+        "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.jpg",
         "backgroundImageMobile": "/images/cms/hub/patioshub_hero_mobile.jpg"
       }
     },

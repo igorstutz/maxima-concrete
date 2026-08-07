@@ -30,7 +30,11 @@
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
         "description": "A sleek, polished concrete finish designed for durability, functionality, and a clean professional appearance. Smooth finish concrete is carefully installed and expertly troweled to create a level, uniform surface with minimal texture or imperfections.\n\nIdeal for garages, barns, basements, workshops, and other interior spaces, this finish provides a refined look while maintaining the strength and longevity concrete is known for. Its smooth surface is easy to clean, low maintenance, and built to withstand daily use.",
-        "_sourceLabel": "Intro"
+        "_sourceLabel": "Intro",
+        "images": [
+          "/images/cms/uploads/1781007924595-unyt6g.webp",
+          "/images/cms/uploads/1781008057635-y7q69g.webp"
+        ]
       }
     },
     {

@@ -4,16 +4,16 @@
     {
       "key": "drivewayshub_page_hero",
       "label": "Hero",
-      "type": "hub-hero",
+      "type": "hero",
       "content": {
         "title": "Driveways",
-        "ctaLink": "#contact",
+        "tagline": "Over 2,000 Driveways Installed",
+        "subtitle": "Transform your home's entrance with a Maxima Driveway — durable, elegant, and built to last. Free estimates available.",
         "ctaText": "Get Your Free Estimate",
-        "subtitle": "Over 2,000 Driveways Installed",
-        "description": "Transform your home's entrance with a Maxima Driveway — durable, elegant, and built to last. Free estimates available.",
-        "backgroundImage": "/images/cms/hub/drivewayshub_hero_desktop.jpg",
-        "secondaryCtaLink": "/project-map",
+        "ctaLink": "#contact",
         "secondaryCtaText": "Find Our Work Near You",
+        "secondaryCtaLink": "/project-map",
+        "backgroundImage": "/images/cms/hub/drivewayshub_hero_desktop.jpg",
         "backgroundImageMobile": "/images/cms/hub/drivewayshub_hero_mobile.jpg"
       }
     },

@@ -85,10 +85,10 @@ function Divider({ label }: { label: string }) {
     <div className="bg-[hsl(218_45%_8%)]">
       <Container className="flex items-center gap-6 py-4 md:py-5">
         <div className="h-px flex-1 bg-gradient-to-r from-transparent via-white/15 to-white/5" />
-        <div className="flex items-center gap-2 text-[hsl(210_100%_70%)]">
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_70%)]" />
+        <div className="flex items-center gap-2 text-[hsl(210_100%_56%)]">
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_56%)]" />
           <span className="text-[10px] font-semibold uppercase tracking-[0.3em]">{label}</span>
-          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_70%)]" />
+          <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_56%)]" />
         </div>
         <div className="h-px flex-1 bg-gradient-to-l from-transparent via-white/15 to-white/5" />
       </Container>
@@ -118,7 +118,7 @@ export default function Page() {
             className="absolute inset-0"
             style={{
               background:
-                "linear-gradient(115deg, hsl(218 60% 5% / 0.9) 0%, hsl(216 55% 8% / 0.78) 40%, hsl(216 45% 12% / 0.6) 65%, hsl(28 80% 22% / 0.4) 100%)",
+                "linear-gradient(115deg, hsl(218 60% 5% / 0.9) 0%, hsl(216 55% 8% / 0.78) 40%, hsl(216 45% 12% / 0.6) 65%, hsl(216 45% 12% / 0.4) 100%)",
             }}
           />
           {/* Fades superior/inferior */}
@@ -129,13 +129,13 @@ export default function Page() {
             className="absolute right-[-5%] top-[-10%] h-[600px] w-[600px] animate-pulse rounded-full bg-[radial-gradient(circle,hsl(210_100%_55%/0.35),transparent_65%)] blur-2xl"
             style={{ animationDuration: "6s" }}
           />
-          <div className="absolute bottom-[-15%] left-[5%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,hsl(28_100%_55%/0.22),transparent_70%)] blur-3xl" />
+          <div className="absolute bottom-[-15%] left-[5%] h-[500px] w-[500px] rounded-full bg-[radial-gradient(circle,hsl(210_100%_50%/0.22),transparent_70%)] blur-3xl" />
           {/* Grade */}
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.22]"
             style={{
               backgroundImage:
-                "linear-gradient(hsl(210 100% 85% / 1) 1px, transparent 1px), linear-gradient(90deg, hsl(210 100% 85% / 1) 1px, transparent 1px)",
+                "linear-gradient(hsl(0 0% 100% / 1) 1px, transparent 1px), linear-gradient(90deg, hsl(0 0% 100% / 1) 1px, transparent 1px)",
               backgroundSize: "64px 64px",
               maskImage: "radial-gradient(ellipse 80% 70% at 60% 40%, black 20%, transparent 80%)",
               WebkitMaskImage:
@@ -147,7 +147,7 @@ export default function Page() {
             className="pointer-events-none absolute inset-0 opacity-[0.12]"
             style={{
               backgroundImage:
-                "repeating-linear-gradient(45deg, transparent 0 22px, hsl(210 100% 75% / 0.5) 22px 23px)",
+                "repeating-linear-gradient(45deg, transparent 0 22px, hsl(210 100% 56% / 0.5) 22px 23px)",
               maskImage: "linear-gradient(115deg, transparent 30%, black 70%, transparent 100%)",
               WebkitMaskImage:
                 "linear-gradient(115deg, transparent 30%, black 70%, transparent 100%)",
@@ -157,7 +157,7 @@ export default function Page() {
           <div
             className="pointer-events-none absolute inset-0 opacity-[0.25]"
             style={{
-              backgroundImage: "radial-gradient(hsl(210 100% 85% / 0.6) 1px, transparent 1.5px)",
+              backgroundImage: "radial-gradient(hsl(0 0% 100% / 0.6) 1px, transparent 1.5px)",
               backgroundSize: "22px 22px",
               maskImage: "radial-gradient(circle at 15% 25%, black 0%, transparent 35%)",
               WebkitMaskImage: "radial-gradient(circle at 15% 25%, black 0%, transparent 35%)",
@@ -181,13 +181,15 @@ export default function Page() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(210_100%_60%)] opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(210_100%_60%)]" />
                 </span>
-                <CreditCard className="h-4 w-4 text-[hsl(210_100%_75%)]" />
+                <CreditCard className="h-4 w-4 text-[hsl(210_100%_56%)]" />
                 Financing by Hearth · Ohio
               </span>
               <h1 className="mt-6 text-4xl font-bold leading-[1.02] tracking-tight text-white drop-shadow-[0_4px_30px_rgba(0,0,0,0.5)] md:text-5xl lg:text-[68px]">
                 Build Now.
                 <br />
-                <span className="bg-gradient-to-r from-[hsl(210_100%_75%)] via-[hsl(210_100%_72%)] to-[hsl(205_90%_70%)] bg-clip-text text-transparent">
+                {/* Branco -> azul da marca. As três paradas anteriores eram
+                    tons de azul claro que não existem na identidade. */}
+                <span className="bg-gradient-to-r from-white to-[hsl(210_100%_56%)] bg-clip-text text-transparent">
                   Pay Over Time.
                 </span>
               </h1>
@@ -291,7 +293,7 @@ export default function Page() {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[hsl(210_100%_60%)] opacity-75" />
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-[hsl(210_100%_60%)]" />
                 </span>
-                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(210_100%_70%)]">
+                <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[hsl(210_100%_56%)]">
                   Rates from 7.99% APR
                 </span>
               </div>
@@ -299,7 +301,7 @@ export default function Page() {
               <h2 className="text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl">
                 How it
                 <br />
-                <span className="bg-gradient-to-r from-[hsl(210_100%_75%)] to-[hsl(209_100%_60%)] bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-[hsl(210_100%_56%)] to-[hsl(209_100%_60%)] bg-clip-text text-transparent">
                   works
                 </span>
               </h2>
@@ -323,7 +325,7 @@ export default function Page() {
                         className={`relative z-10 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-2xl text-lg font-bold transition-all duration-300 ${
                           isLast
                             ? "bg-gradient-to-br from-[hsl(210_100%_55%)] to-[hsl(210_100%_50%)] text-[hsl(218_60%_8%)] shadow-[0_0_30px_rgba(34,211,238,0.35)]"
-                            : "border border-[hsl(210_100%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(210_100%_70%)] shadow-[0_0_20px_rgba(34,211,238,0.18)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
+                            : "border border-[hsl(210_100%_55%)]/50 bg-[hsl(217_50%_11%)] text-[hsl(210_100%_56%)] shadow-[0_0_20px_rgba(34,211,238,0.18)] group-hover:shadow-[0_0_30px_rgba(34,211,238,0.4)]"
                         }`}
                       >
                         0{i + 1}
@@ -391,7 +393,7 @@ export default function Page() {
                   $189<span className="text-sm font-medium text-white/50">/mo</span>
                 </div>
                 <p className="mt-1 text-xs text-white/55">vs $12,000 upfront</p>
-                <div className="mt-3 flex items-center gap-1.5 border-t border-dashed border-white/15 pt-3 text-[11px] font-semibold text-[hsl(150_80%_60%)]">
+                <div className="mt-3 flex items-center gap-1.5 border-t border-dashed border-white/15 pt-3 text-[11px] font-semibold text-[hsl(210_100%_56%)]">
                   <TrendingUp className="h-3 w-3" /> Approved in 47s
                 </div>
               </div>
@@ -404,7 +406,7 @@ export default function Page() {
               </span>
               <p className="-mt-6 text-2xl font-bold leading-[1.2] text-white md:text-3xl lg:text-[2rem]">
                 We didn&apos;t have to wait years to{" "}
-                <span className="font-serif italic text-[hsl(210_100%_70%)]">finally</span> redo
+                <span className="font-serif italic text-[hsl(210_100%_56%)]">finally</span> redo
                 our driveway.
               </p>
               <p className="mt-6 leading-relaxed text-white/65">
@@ -452,7 +454,7 @@ export default function Page() {
             <div className="relative col-span-2 row-span-2 flex flex-col justify-between overflow-hidden rounded-2xl border border-[hsl(210_100%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8">
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
                   <Zap className="h-3 w-3" /> Most chosen
                 </div>
                 <p className="mt-6 text-6xl font-black leading-none text-white md:text-7xl">
@@ -482,7 +484,7 @@ export default function Page() {
                 className="relative flex flex-col justify-between overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(210_100%_60%)]/50"
               >
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(210_100%_50%)]/20">
-                  <h.icon className="h-4 w-4 text-[hsl(210_100%_70%)]" />
+                  <h.icon className="h-4 w-4 text-[hsl(210_100%_56%)]" />
                 </div>
                 <div>
                   <h3 className="text-sm font-bold text-white">{h.title}</h3>
@@ -501,7 +503,7 @@ export default function Page() {
               "Funds released after work starts",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-sm text-white/80">
-                <CheckCircle2 className="h-4 w-4 text-[hsl(150_80%_60%)]" />
+                <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_56%)]" />
                 <span>{item}</span>
               </div>
             ))}

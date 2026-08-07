@@ -29,6 +29,9 @@ export const metadata: Metadata = {
   alternates: { canonical: "/licensing-insured/" },
 };
 
+// Foto da equipe em frente ao escritorio — usada no hero (fundo) e no card.
+const TEAM_PHOTO = "/images/cms/uploads/1766260199815-jhga35.webp";
+
 const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
 const findWorkContent =
@@ -105,9 +108,11 @@ export default function Page() {
     <div className="bg-[hsl(218_45%_8%)] text-white">
       {/* HERO */}
       <section className="relative flex min-h-[100svh] items-center overflow-hidden pb-16 pt-28 lg:h-screen lg:max-h-[900px] lg:min-h-0 lg:pt-24">
+        {/* Mesma foto da equipe que aparece no card ao lado, agora também como
+            fundo do hero. */}
         <div className="absolute inset-0">
           <Image
-            src="/images/assets/licensing-hero.jpg"
+            src={TEAM_PHOTO}
             alt=""
             aria-hidden
             fill
@@ -153,7 +158,7 @@ export default function Page() {
             <div className="relative hidden lg:block">
               <div className="absolute -inset-4 rounded-3xl bg-[hsl(209_100%_56%)]/20 blur-2xl" />
               <Image
-                src="/images/cms/uploads/1766260199815-jhga35.webp"
+                src={TEAM_PHOTO}
                 alt="The Maxima Concrete team"
                 width={1024}
                 height={1280}
@@ -172,7 +177,7 @@ export default function Page() {
           className="pointer-events-none absolute inset-0 opacity-[0.06]"
           style={{
             backgroundImage:
-              "linear-gradient(hsl(210 100% 70%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 100% 70%) 1px, transparent 1px)",
+              "linear-gradient(hsl(210 100% 56%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 100% 56%) 1px, transparent 1px)",
             backgroundSize: "60px 60px",
           }}
         />
@@ -198,8 +203,8 @@ export default function Page() {
               <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[hsl(210_100%_50%)]/15 blur-3xl" />
               <div className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/5" />
               <div className="relative">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
-                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(150_80%_55%)]" />
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_56%)]" />
                   Verified · Active
                 </div>
                 <div className="mt-8 flex items-end gap-3">
@@ -243,11 +248,11 @@ export default function Page() {
                     0{i + 1}
                   </span>
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(210_100%_50%)]/20 shadow-[0_0_30px_-10px_hsl(210_100%_50%/0.5)]">
-                    <c.icon className="h-5 w-5 text-[hsl(210_100%_70%)]" />
+                    <c.icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
                   </div>
                   <h3 className="mt-5 text-lg font-bold text-white">{c.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-white/65">{c.text}</p>
-                  <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[hsl(150_80%_60%)]">
+                  <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[hsl(210_100%_56%)]">
                     <CheckCircle2 className="h-3.5 w-3.5" />
                     <span>Verifiable</span>
                   </div>
@@ -277,11 +282,11 @@ export default function Page() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[hsl(218_60%_4%)]/95 via-[hsl(218_60%_6%)]/55 to-[hsl(218_60%_6%)]/25" />
                 {/* Carimbo */}
                 <div className="absolute right-6 top-6 -rotate-12 md:right-8 md:top-8">
-                  <div className="relative flex h-24 w-24 items-center justify-center rounded-full border-[3px] border-[hsl(150_80%_55%)]/80 bg-[hsl(150_80%_15%)]/40 backdrop-blur-sm md:h-32 md:w-32">
-                    <div className="absolute inset-1.5 rounded-full border border-[hsl(150_80%_55%)]/50" />
+                  <div className="relative flex h-24 w-24 items-center justify-center rounded-full border-[3px] border-[hsl(210_100%_56%)]/80 bg-[hsl(214_100%_20%)]/40 backdrop-blur-sm md:h-32 md:w-32">
+                    <div className="absolute inset-1.5 rounded-full border border-[hsl(210_100%_56%)]/50" />
                     <div className="text-center">
-                      <Stamp className="mx-auto h-5 w-5 text-[hsl(150_80%_60%)] md:h-6 md:w-6" />
-                      <p className="mt-1 text-[9px] font-black leading-tight tracking-[0.15em] text-[hsl(150_80%_70%)] md:text-[10px]">
+                      <Stamp className="mx-auto h-5 w-5 text-[hsl(210_100%_56%)] md:h-6 md:w-6" />
+                      <p className="mt-1 text-[9px] font-black leading-tight tracking-[0.15em] text-[hsl(210_100%_56%)] md:text-[10px]">
                         VERIFIED
                         <br />
                         2026
@@ -335,7 +340,7 @@ export default function Page() {
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(210_100%_45%)] text-xs font-bold text-white">
                     C
                   </div>
-                  <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(150_80%_45%)] text-xs font-bold text-white">
+                  <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(214_100%_40%)] text-xs font-bold text-white">
                     +
                   </div>
                 </div>
@@ -377,8 +382,8 @@ export default function Page() {
                   {/* Nó */}
                   <div className="relative flex items-center gap-4 lg:block">
                     <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[hsl(210_100%_60%)]/60 bg-[hsl(218_45%_8%)] shadow-[0_0_30px_-5px_hsl(210_100%_50%/0.6)]">
-                      <p.icon className="h-5 w-5 text-[hsl(210_100%_70%)]" />
-                      <span className="absolute -right-1.5 -top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-[hsl(150_80%_50%)] text-[10px] font-black text-[hsl(218_50%_10%)]">
+                      <p.icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
+                      <span className="absolute -right-1.5 -top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-[hsl(210_100%_56%)] text-[10px] font-black text-[hsl(218_50%_10%)]">
                         0{i + 1}
                       </span>
                     </div>
@@ -405,7 +410,7 @@ export default function Page() {
               "Permits handled when required",
             ].map((item) => (
               <div key={item} className="flex items-center gap-2 text-sm text-white/80">
-                <CheckCircle2 className="h-4 w-4 text-[hsl(150_80%_60%)]" />
+                <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_56%)]" />
                 <span>{item}</span>
               </div>
             ))}
@@ -420,7 +425,7 @@ export default function Page() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
             {/* Painel de introdução */}
             <div className="lg:sticky lg:top-28 lg:self-start">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_70%)]">
+              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[hsl(210_100%_60%)]" />
                 FAQ
               </div>

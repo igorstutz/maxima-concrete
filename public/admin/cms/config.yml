@@ -6927,6 +6927,77 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+              - label: hero
+                name: hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: text
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: string
+                      - name: heightVh
+                        label: heightVh
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: videoUrl
+                        label: videoUrl
+                        required: false
+                        widget: string
               - label: hub-durability
                 name: hub-durability
                 widget: object
@@ -7083,60 +7154,6 @@ collections:
                         label: relatedTitle
                         required: false
                         widget: string
-              - label: hub-hero
-                name: hub-hero
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: secondaryCtaLink
-                        label: secondaryCtaLink
-                        required: false
-                        widget: string
-                      - name: secondaryCtaText
-                        label: secondaryCtaText
-                        required: false
-                        widget: string
-                      - name: backgroundImageMobile
-                        label: backgroundImageMobile
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: hub-intro
                 name: hub-intro
                 widget: object
@@ -7934,6 +7951,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -8496,6 +8522,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -8954,6 +8989,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -9601,6 +9645,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -10199,6 +10252,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -10927,6 +10989,15 @@ collections:
                         label: description
                         required: false
                         widget: text
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -18500,6 +18571,55 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+              - label: inspiration
+                name: inspiration
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: descriptionBold
+                        label: descriptionBold
+                        required: false
+                        widget: string
               - label: joinourteam-sec-benefits
                 name: joinourteam-sec-benefits
                 widget: object
@@ -18669,6 +18789,11 @@ collections:
                         label: stat3Value
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
       - name: outdoorkitchens_page
         label: Outdoorkitchens
         file: src/content/pages/outdoorkitchens_page.json
@@ -21600,6 +21725,77 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+              - label: hero
+                name: hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: text
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: string
+                      - name: heightVh
+                        label: heightVh
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: videoUrl
+                        label: videoUrl
+                        required: false
+                        widget: string
               - label: hub-durability
                 name: hub-durability
                 widget: object
@@ -21756,60 +21952,6 @@ collections:
                         label: relatedTitle
                         required: false
                         widget: string
-              - label: hub-hero
-                name: hub-hero
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: secondaryCtaLink
-                        label: secondaryCtaLink
-                        required: false
-                        widget: string
-                      - name: secondaryCtaText
-                        label: secondaryCtaText
-                        required: false
-                        widget: string
-                      - name: backgroundImageMobile
-                        label: backgroundImageMobile
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: hub-intro
                 name: hub-intro
                 widget: object

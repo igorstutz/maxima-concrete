@@ -30,7 +30,11 @@
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
         "description": "<b>Buff Wash and Exposed Aggregate</b> finishes elevate standard concrete into tactile, visually rich surfaces that celebrate texture, color, and natural beauty.\n\nBy using <b>specialized chemical techniques</b>, Maxima Concrete transforms plain slabs into stunning, slip-resistant surfaces — <b>perfect for patios, pool decks, walkways, and entryways.</b>",
-        "_sourceLabel": "Intro"
+        "_sourceLabel": "Intro",
+        "images": [
+          "/images/cms/uploads/1781008734451-sh8t9q.webp",
+          "/images/cms/uploads/1778539493855-dg58n8.webp"
+        ]
       }
     },
     {
