@@ -73,7 +73,7 @@ export default function HeroAreas({ content }: { content: Record<string, any> })
           {ctaText && (
             <SmartLink
               href={ctaLink}
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#2563eb] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#1d4ed8]"
+              className="gradient-navy mt-6 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-white transition-all hover:brightness-110"
             >
               {ctaText}
               <ArrowUpRight className="h-4 w-4" />

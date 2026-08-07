@@ -81,9 +81,11 @@ export default function Page() {
               className="mb-4 text-3xl text-white md:mb-6 md:text-5xl lg:text-[56px]"
               style={{ fontWeight: 600, lineHeight: "108%", letterSpacing: "-1.6px" }}
             >
-              Real Reviews from
+              {/* O hero já é azul da marca: destacar em azul daria 2,2:1. A
+                  hierarquia vem da opacidade, não de outra cor. */}
+              <span className="text-white/70">Real Reviews from</span>
               <br />
-              <span className="text-[#7DD3FC]">Real Customers</span>
+              Real Customers
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
               Every project we deliver is backed by honest feedback from homeowners and

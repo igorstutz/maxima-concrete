@@ -79,7 +79,7 @@ export default function Inspiration({ content }: { content: Record<string, any> 
                   key={`${thumb}-${index}`}
                   onClick={() => handleThumbnailClick(index)}
                   className={`relative aspect-square overflow-hidden rounded-lg transition-opacity focus:outline-none lg:aspect-auto lg:flex-1 ${
-                    isLastThumbnail ? "ring-2 ring-[#9b59b6]" : "opacity-90 hover:opacity-100"
+                    isLastThumbnail ? "ring-2 ring-primary" : "opacity-90 hover:opacity-100"
                   }`}
                 >
                   <Image
