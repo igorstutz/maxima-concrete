@@ -1,0 +1,152 @@
+{
+  "pageKey": "licensinginsured_page",
+  "sections": [
+    {
+      "key": "licensing_hero",
+      "label": "Hero",
+      "type": "licensing-hero",
+      "content": {
+        "badge": "Credentials & Protection",
+        "titleLine1": "Licensed. Insured.",
+        "titleHighlight": "Accountable.",
+        "description": "Hiring a concrete contractor is a long-term investment in your property. Maxima Concrete carries the full credentials and coverage that protect your home, your wallet, and your peace of mind.",
+        "ctaText": "Contact Us",
+        "ctaLink": "/contact-us/#contact",
+        "phone": "(614) 384-5917",
+        "phoneHref": "tel:+16143845917",
+        "image": "/images/cms/uploads/1766260199815-jhga35.webp",
+        "imageAlt": "The Maxima Concrete team"
+      }
+    },
+    {
+      "key": "licensing_credentials",
+      "label": "Credentials",
+      "type": "licensing-credentials",
+      "content": {
+        "eyebrow": "Our credentials",
+        "title": "Every layer of protection a homeowner should expect",
+        "description": "Four credentials. Zero exposure. Each one independently verifiable before we break ground.",
+        "cardBadge": "Verified · Active",
+        "cardNumber": "100",
+        "cardNumberSuffix": "%",
+        "cardTitle": "Covered, licensed & insured",
+        "cardDescription": "Every job. Every crew. Every pour. We supply current Certificates of Insurance on request — no exceptions.",
+        "cardStats": [
+          { "value": "8+", "label": "Years operating" },
+          { "value": "$2M", "label": "Liability coverage" },
+          { "value": "0", "label": "Client claims" }
+        ],
+        "verifiableLabel": "Verifiable",
+        "items": [
+          {
+            "icon": "FileBadge",
+            "title": "Fully Licensed",
+            "text": "Registered and licensed to operate as a concrete contractor across the State of Ohio, in full compliance with local municipal requirements."
+          },
+          {
+            "icon": "ShieldCheck",
+            "title": "General Liability Insured",
+            "text": "Comprehensive general liability coverage protects your property throughout every phase of your project."
+          },
+          {
+            "icon": "Users",
+            "title": "Workers' Compensation",
+            "text": "Every crew member is covered by workers' comp, so homeowners are never exposed to liability for on-site injuries."
+          },
+          {
+            "icon": "HardHat",
+            "title": "OSHA-Aligned Safety",
+            "text": "Our teams follow OSHA-aligned safety protocols on every residential and commercial job site."
+          }
+        ]
+      }
+    },
+    {
+      "key": "licensing_feature",
+      "label": "Certificate feature",
+      "type": "licensing-feature",
+      "content": {
+        "image": "/images/assets/licensing-feature.webp",
+        "imageAlt": "Skilled hands finishing concrete",
+        "stampLine1": "VERIFIED",
+        "stampLine2": "2026",
+        "issuedLabel": "Issued · Ohio",
+        "companyName": "Maxima Concrete LLC",
+        "licenseLabel": "License",
+        "licenseNumber": "MC-OH-2026",
+        "eyebrow": "Craftsmanship you can verify",
+        "titlePart1": "Paperwork is the easy part.",
+        "titleHighlight": "Standing behind it",
+        "titlePart2": "is the rest.",
+        "description": "Anyone can print a logo. We carry verifiable Ohio licensing, active liability and workers' comp policies, and we pull the permits the city requires — on every single job.",
+        "teamNoteLine1": "Project manager & crew lead",
+        "teamNoteLine2": "named on every COI"
+      }
+    },
+    {
+      "key": "licensing_protection",
+      "label": "What it means for you",
+      "type": "licensing-protection",
+      "content": {
+        "eyebrow": "What it means for you",
+        "titlePart1": "Real protection,",
+        "titleHighlight": "not just paperwork.",
+        "description": "Three concrete ways our credentials translate into outcomes that show up the day a shovel hits dirt — and the day a claim could've blown up your week.",
+        "items": [
+          {
+            "icon": "Lock",
+            "title": "Your Property is Protected",
+            "text": "Liability coverage means accidental damage is covered — not paid out of your pocket."
+          },
+          {
+            "icon": "Scale",
+            "title": "No Legal Exposure for You",
+            "text": "If a crew member is injured on your property, workers' comp covers it. You're never named."
+          },
+          {
+            "icon": "Award",
+            "title": "Code-Compliant Work",
+            "text": "Licensed status means every pour is permitted and built to code where required."
+          }
+        ],
+        "alsoIncludedLabel": "Also included",
+        "alsoIncluded": [
+          "Certificates of Insurance on request",
+          "Licensed across Columbus metro",
+          "Permits handled when required"
+        ]
+      }
+    },
+    {
+      "key": "licensing_faq",
+      "label": "FAQ",
+      "type": "licensing-faq",
+      "content": {
+        "badge": "FAQ",
+        "titlePart1": "Common questions,",
+        "titleHighlight": "straight answers.",
+        "description": "Don't see your question? We're happy to walk you through anything — including emailing you a current COI before you sign.",
+        "ctaText": "Ask us directly",
+        "ctaLink": "/contact-us/#contact",
+        "items": [
+          {
+            "question": "Can I see proof of insurance before signing?",
+            "answer": "Absolutely. We provide current Certificates of Insurance (COI) on request before any project begins."
+          },
+          {
+            "question": "Are you bonded?",
+            "answer": "Bonding is available for qualifying projects, particularly commercial and municipal contracts. Ask your project manager for details."
+          },
+          {
+            "question": "Why does hiring a licensed contractor matter?",
+            "answer": "Unlicensed contractors leave you exposed to code violations, fines, and liability for any injury on your property. Licensed work also protects resale value."
+          },
+          {
+            "question": "Do you pull permits when required?",
+            "answer": "Yes. When a municipality requires a permit for the scope of work, we handle the application as part of our service."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -31,9 +31,8 @@ interface ApproachFeature {
   text?: string;
 }
 
+/** Os cards de passo mostram só título, descrição e botão — sem ícone. */
 interface ApproachStep {
-  icon?: string;
-  iconImage?: string;
   title?: string;
   description?: string;
   ctaText?: string;
@@ -168,26 +167,13 @@ export default function CityApproach({ content }: { content: Record<string, any>
           </ScrollReveal>
 
           {/* Cards de passo */}
-          {steps.map((step, i) => {
-            const Icon = ICONS[step.icon || "hammer"] || Hammer;
-            return (
+          {steps.map((step, i) => (
               <ScrollReveal
                 key={i}
                 delay={Math.min(i % 3, 2)}
                 className="flex"
               >
                 <div className="flex flex-col rounded-[15px] border-[3px] border-ocean bg-white p-6">
-                  {step.iconImage ? (
-                    <Image
-                      src={legacyAsset(step.iconImage)}
-                      alt={step.title || `Step ${i + 1}`}
-                      width={48}
-                      height={48}
-                      className="mb-4 h-12 w-12 object-contain"
-                    />
-                  ) : (
-                    <Icon className="mb-4 h-9 w-9 text-ocean" strokeWidth={1.75} />
-                  )}
                   {step.title && (
                     <h3 className="mb-2 whitespace-pre-line text-xl font-semibold leading-6 text-navy">
                       {step.title}
@@ -209,8 +195,7 @@ export default function CityApproach({ content }: { content: Record<string, any>
                   )}
                 </div>
               </ScrollReveal>
-            );
-          })}
+            ))}
         </div>
       </Container>
     </section>

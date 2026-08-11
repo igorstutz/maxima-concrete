@@ -11,24 +11,57 @@
       }
     },
     {
+      "key": "contact_choice",
+      "label": "How to reach us (toggle)",
+      "type": "contact-choice",
+      "content": {
+        "title": "Two ways to reach us",
+        "description": "Call us and talk to a real person, or send your project details through the estimate form — the form is the best option, since it gives our team everything needed to prepare an accurate quote.",
+        "phoneLabel": "Call us",
+        "formLabel": "Form",
+        "formBadge": "Best option",
+        "stickyLabel": "How would you like to get in touch?"
+      }
+    },
+    {
+      "key": "contact_phone_cta",
+      "label": "Phone (call CTA)",
+      "type": "contact-phone",
+      "content": {
+        "phone": "(614) 384-5917",
+        "message": "Call to speak with a live person and schedule your estimate.",
+        "hours": "8:00 AM – 5:00 PM, Monday–Friday",
+        "ctaText": "Call now",
+        "eyebrow": "Call us"
+      }
+    },
+    {
+      "key": "custom_1778125297540_2un2d",
+      "label": "Contact",
+      "type": "contact",
+      "content": {
+        "title": "Ready to Transform Your Space? Let's Get Started.",
+        "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
+      }
+    },
+    {
       "key": "custom_contactus_info_map_default",
       "label": "Contact Info & Map",
       "type": "contact-info-map",
       "content": {
         "email": "info@maximaconcrete.com",
-        "intro": "Tell us about your project, ask a question, or request your free estimate.",
-        "phone": "(614) 384-5917",
-        "title": "Contact Us",
+        "title": "Visit Our Office",
         "subtitle": "Your Trusted Concrete Contractor in Central Ohio",
         "emailLabel": "Email:",
         "hoursLabel": "Business Hours:",
         "hoursLine1": "Monday – Friday: 8 AM – 5 PM",
         "hoursLine2": "Saturday: By Appointment",
         "hoursLine3": "Sunday: Closed",
-        "phoneLabel": "Phone:",
         "twitterUrl": "",
         "youtubeUrl": "",
-        "description": "Our experts will review your details and get back to you quickly with insights, timelines, and recommendations.",
         "facebookUrl": "https://www.facebook.com/maximaconcrete/",
         "mapEmbedUrl": "https://www.google.com/maps?q=4059+State+Route+37+E,+Delaware,+OH+43015&output=embed",
         "_sourceLabel": "Contact Info & Map",
@@ -62,18 +95,6 @@
           39.9612,
           -82.9988
         ]
-      }
-    },
-    {
-      "key": "custom_1778125297540_2un2d",
-      "label": "Contact",
-      "type": "contact",
-      "content": {
-        "title": "Ready to Transform Your Space? Let's Get Started.",
-        "ctaText": "Send Request",
-        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
-        "_sourceLabel": "Contact",
-        "nameSectionLabel": ""
       }
     },
     {

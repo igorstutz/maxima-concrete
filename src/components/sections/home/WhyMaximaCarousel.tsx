@@ -10,7 +10,7 @@ import Image from "@/components/Image";
  * As imagens vêm do CMS (campo `images`); com uma única imagem, os dots somem.
  */
 export default function WhyMaximaCarousel({ images }: { images: string[] }) {
-  const slides = images.length ? images : ["/images/assets/why-maxima.png"];
+  const slides = images.length ? images : ["/images/assets/why-maxima.webp"];
   const count = slides.length;
   const [index, setIndex] = useState(0);
   const paused = useRef(false);

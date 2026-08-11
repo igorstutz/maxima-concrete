@@ -101,6 +101,15 @@ npm run build  # export estático em out/
 
 - `generate-cms-config.mjs` — regenera o config.yml do painel a partir dos JSONs
   (rodar sempre que a estrutura de `src/content` mudar).
+- `generate-image-variants.mjs` — gera as versões 480/828/1280px das fotos e o
+  manifesto `src/lib/image-variants.json`. **Roda sozinho no `npm run build`**
+  (script `prebuild`), inclusive no GitHub Actions. As variantes são derivadas e
+  estão no `.gitignore`; só o manifesto é versionado. Sem `--apply` ele apenas
+  simula (`npm run images`). Ao subir fotos novas pelo painel, o próximo build
+  gera as variantes delas automaticamente.
+- `images-to-webp.mjs` — converte JPG/PNG novos para WebP e atualiza as
+  referências. Não toca em `public/images/og/**` (previews de compartilhamento
+  precisam ser JPG) nem nos ícones da raiz de `public/`.
 - `check-coverage.mjs` — confere se todo tipo de seção tem componente.
 - `generate-pages.mjs` — regenera as rotas dirigidas por JSON.
 - Demais scripts (`dump-*`, `transform-*`, `download-*`) foram usados na migração

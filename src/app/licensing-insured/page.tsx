@@ -13,12 +13,14 @@ import {
   ShieldCheck,
   Stamp,
   Users,
+  type LucideIcon,
 } from "lucide-react";
 import { Container } from "@/components/Container";
 import Image from "@/components/Image";
 import Contact from "@/components/sections/home/Contact";
 import FindWork from "@/components/sections/home/FindWork";
 import home from "@/content/pages/home.json";
+import page from "@/content/pages/licensinginsured_page.json";
 import FaqAccordion from "./FaqAccordion";
 
 export const metadata: Metadata = {
@@ -29,73 +31,42 @@ export const metadata: Metadata = {
   alternates: { canonical: "/licensing-insured/" },
 };
 
-// Foto da equipe em frente ao escritorio — usada no hero (fundo) e no card.
-const TEAM_PHOTO = "/images/cms/uploads/1766260199815-jhga35.webp";
-
 const contactContent =
   home.sections.find((s) => s.type === "contact")?.content ?? {};
 const findWorkContent =
   home.sections.find((s) => s.type === "find-work")?.content ?? {};
 
-const credentials = [
-  {
-    icon: FileBadge,
-    title: "Fully Licensed",
-    text: "Registered and licensed to operate as a concrete contractor across the State of Ohio, in full compliance with local municipal requirements.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "General Liability Insured",
-    text: "Comprehensive general liability coverage protects your property throughout every phase of your project.",
-  },
-  {
-    icon: Users,
-    title: "Workers' Compensation",
-    text: "Every crew member is covered by workers' comp, so homeowners are never exposed to liability for on-site injuries.",
-  },
-  {
-    icon: HardHat,
-    title: "OSHA-Aligned Safety",
-    text: "Our teams follow OSHA-aligned safety protocols on every residential and commercial job site.",
-  },
-];
+// Conteúdo da página (editável no CMS em Pages › Licensinginsured).
+const sectionContent = (key: string): Record<string, any> =>
+  page.sections.find((s) => s.key === key)?.content ?? {};
+const hero = sectionContent("licensing_hero");
+const credentialsSection = sectionContent("licensing_credentials");
+const feature = sectionContent("licensing_feature");
+const protection = sectionContent("licensing_protection");
+const faqSection = sectionContent("licensing_faq");
 
-const protections = [
-  {
-    icon: Lock,
-    title: "Your Property is Protected",
-    text: "Liability coverage means accidental damage is covered — not paid out of your pocket.",
-  },
-  {
-    icon: Scale,
-    title: "No Legal Exposure for You",
-    text: "If a crew member is injured on your property, workers' comp covers it. You're never named.",
-  },
-  {
-    icon: Award,
-    title: "Code-Compliant Work",
-    text: "Licensed status means every pour is permitted and built to code where required.",
-  },
-];
+/** Nomes de ícone aceitos no JSON de conteúdo. */
+const ICONS: Record<string, LucideIcon> = {
+  FileBadge,
+  ShieldCheck,
+  Users,
+  HardHat,
+  Lock,
+  Scale,
+  Award,
+};
 
-const faqs = [
-  {
-    q: "Can I see proof of insurance before signing?",
-    a: "Absolutely. We provide current Certificates of Insurance (COI) on request before any project begins.",
-  },
-  {
-    q: "Are you bonded?",
-    a: "Bonding is available for qualifying projects, particularly commercial and municipal contracts. Ask your project manager for details.",
-  },
-  {
-    q: "Why does hiring a licensed contractor matter?",
-    a: "Unlicensed contractors leave you exposed to code violations, fines, and liability for any injury on your property. Licensed work also protects resale value.",
-  },
-  {
-    q: "Do you pull permits when required?",
-    a: "Yes. When a municipality requires a permit for the scope of work, we handle the application as part of our service.",
-  },
-];
+interface IconItem {
+  icon: string;
+  title: string;
+  text: string;
+}
+
+const credentials: IconItem[] = credentialsSection.items ?? [];
+const protections: IconItem[] = protection.items ?? [];
+const faqs: { q: string; a: string }[] = (faqSection.items ?? []).map(
+  (item: { question: string; answer: string }) => ({ q: item.question, a: item.answer }),
+);
 
 const PRIMARY_BTN =
   "gradient-navy inline-flex items-center justify-center gap-2 rounded-lg px-7 py-3.5 font-semibold text-white shadow-md transition-all hover:shadow-[0_8px_20px_-8px_rgba(13,93,147,0.45)] hover:brightness-110";
@@ -112,7 +83,7 @@ export default function Page() {
             fundo do hero. */}
         <div className="absolute inset-0">
           <Image
-            src={TEAM_PHOTO}
+            src={hero.image}
             alt=""
             aria-hidden
             fill
@@ -135,31 +106,29 @@ export default function Page() {
             <div>
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
                 <ShieldCheck className="h-4 w-4 text-[hsl(210_100%_60%)]" />
-                Credentials &amp; Protection
+                {hero.badge}
               </span>
               <h1 className="mt-6 text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl lg:text-6xl">
-                Licensed. Insured.{" "}
-                <span className="text-[hsl(210_100%_60%)]">Accountable.</span>
+                {hero.titleLine1}{" "}
+                <span className="text-[hsl(210_100%_60%)]">{hero.titleHighlight}</span>
               </h1>
               <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/80 md:text-xl">
-                Hiring a concrete contractor is a long-term investment in your property. Maxima
-                Concrete carries the full credentials and coverage that protect your home, your
-                wallet, and your peace of mind.
+                {hero.description}
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Link href="/contact-us/#contact" className={PRIMARY_BTN}>
-                  Contact Us
+                <Link href={hero.ctaLink} className={PRIMARY_BTN}>
+                  {hero.ctaText}
                 </Link>
-                <a href="tel:+16143845917" className={SECONDARY_BTN}>
-                  <Phone className="h-4 w-4" /> (614) 384-5917
+                <a href={hero.phoneHref} className={SECONDARY_BTN}>
+                  <Phone className="h-4 w-4" /> {hero.phone}
                 </a>
               </div>
             </div>
             <div className="relative hidden lg:block">
               <div className="absolute -inset-4 rounded-3xl bg-[hsl(209_100%_56%)]/20 blur-2xl" />
               <Image
-                src={TEAM_PHOTO}
-                alt="The Maxima Concrete team"
+                src={hero.image}
+                alt={hero.imageAlt}
                 width={1024}
                 height={1280}
                 className="relative aspect-[4/5] w-full rounded-2xl border border-white/15 object-cover shadow-2xl"
@@ -186,15 +155,14 @@ export default function Page() {
           <div className="flex items-center gap-3">
             <span className="h-px w-10 bg-[hsl(210_100%_60%)]/60" />
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
-              Our credentials
+              {credentialsSection.eyebrow}
             </p>
           </div>
           <h2 className="mt-4 max-w-2xl text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-5xl">
-            Every layer of protection a homeowner should expect
+            {credentialsSection.title}
           </h2>
           <p className="mt-4 max-w-xl leading-relaxed text-white/60">
-            Four credentials. Zero exposure. Each one independently verifiable before we break
-            ground.
+            {credentialsSection.description}
           </p>
 
           <div className="mt-14 grid grid-cols-1 gap-5 lg:grid-cols-12">
@@ -205,40 +173,40 @@ export default function Page() {
               <div className="relative">
                 <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-white/90">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[hsl(210_100%_56%)]" />
-                  Verified · Active
+                  {credentialsSection.cardBadge}
                 </div>
                 <div className="mt-8 flex items-end gap-3">
                   <span className="text-7xl font-black leading-none tracking-tight text-white md:text-8xl">
-                    100<span className="text-[hsl(210_100%_60%)]">%</span>
+                    {credentialsSection.cardNumber}
+                    <span className="text-[hsl(210_100%_60%)]">
+                      {credentialsSection.cardNumberSuffix}
+                    </span>
                   </span>
                 </div>
                 <h3 className="mt-4 text-2xl font-bold text-white">
-                  Covered, licensed &amp; insured
+                  {credentialsSection.cardTitle}
                 </h3>
                 <p className="mt-3 leading-relaxed text-white/65">
-                  Every job. Every crew. Every pour. We supply current Certificates of Insurance
-                  on request — no exceptions.
+                  {credentialsSection.cardDescription}
                 </p>
                 <div className="mt-8 grid grid-cols-3 gap-4 border-t border-white/10 pt-6">
-                  <div>
-                    <p className="text-2xl font-bold text-white">8+</p>
-                    <p className="mt-1 text-xs leading-tight text-white/55">Years operating</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-white">$2M</p>
-                    <p className="mt-1 text-xs leading-tight text-white/55">Liability coverage</p>
-                  </div>
-                  <div>
-                    <p className="text-2xl font-bold text-white">0</p>
-                    <p className="mt-1 text-xs leading-tight text-white/55">Client claims</p>
-                  </div>
+                  {(credentialsSection.cardStats ?? []).map(
+                    (stat: { value: string; label: string }) => (
+                      <div key={stat.label}>
+                        <p className="text-2xl font-bold text-white">{stat.value}</p>
+                        <p className="mt-1 text-xs leading-tight text-white/55">{stat.label}</p>
+                      </div>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
 
             {/* Lista de credenciais */}
             <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:col-span-7">
-              {credentials.map((c, i) => (
+              {credentials.map((c, i) => {
+                const Icon = ICONS[c.icon] ?? ShieldCheck;
+                return (
                 <div
                   key={c.title}
                   className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] p-7 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-[hsl(210_100%_60%)]/50 hover:bg-white/[0.06]"
@@ -248,16 +216,17 @@ export default function Page() {
                     0{i + 1}
                   </span>
                   <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-gradient-to-br from-[hsl(209_100%_56%)]/30 to-[hsl(210_100%_50%)]/20 shadow-[0_0_30px_-10px_hsl(210_100%_50%/0.5)]">
-                    <c.icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
+                    <Icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
                   </div>
                   <h3 className="mt-5 text-lg font-bold text-white">{c.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-white/65">{c.text}</p>
                   <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[hsl(210_100%_56%)]">
                     <CheckCircle2 className="h-3.5 w-3.5" />
-                    <span>Verifiable</span>
+                    <span>{credentialsSection.verifiableLabel}</span>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </Container>
@@ -272,8 +241,8 @@ export default function Page() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-2xl">
                 <Image
-                  src="/images/assets/licensing-feature.jpg"
-                  alt="Skilled hands finishing concrete"
+                  src={feature.image}
+                  alt={feature.imageAlt}
                   width={1280}
                   height={960}
                   className="h-[380px] w-full object-cover md:h-[480px]"
@@ -287,9 +256,9 @@ export default function Page() {
                     <div className="text-center">
                       <Stamp className="mx-auto h-5 w-5 text-white md:h-6 md:w-6" />
                       <p className="mt-1 text-[9px] font-black leading-tight tracking-[0.15em] text-white md:text-[10px]">
-                        VERIFIED
+                        {feature.stampLine1}
                         <br />
-                        2026
+                        {feature.stampLine2}
                       </p>
                     </div>
                   </div>
@@ -298,18 +267,18 @@ export default function Page() {
                 <div className="absolute bottom-0 left-0 right-0 flex items-end justify-between gap-4 p-5 md:p-7">
                   <div>
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/50">
-                      Issued · Ohio
+                      {feature.issuedLabel}
                     </p>
                     <p className="mt-1 text-lg font-bold text-white md:text-xl">
-                      Maxima Concrete LLC
+                      {feature.companyName}
                     </p>
                   </div>
                   <div className="text-right">
                     <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/50">
-                      License
+                      {feature.licenseLabel}
                     </p>
                     <p className="mt-1 font-mono text-sm font-semibold text-[hsl(210_100%_60%)] md:text-base">
-                      MC-OH-2026
+                      {feature.licenseNumber}
                     </p>
                   </div>
                 </div>
@@ -320,18 +289,14 @@ export default function Page() {
             <div className="relative">
               <FileText className="h-10 w-10 text-[hsl(210_100%_60%)]/70" />
               <p className="mt-5 text-xs font-semibold uppercase tracking-[0.3em] text-[hsl(210_100%_60%)]">
-                Craftsmanship you can verify
+                {feature.eyebrow}
               </p>
               <h2 className="mt-4 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-[2.75rem]">
-                Paperwork is the easy part.{" "}
-                <span className="font-serif italic text-white/55">Standing behind it</span> is
-                the rest.
+                {feature.titlePart1}{" "}
+                <span className="font-serif italic text-white/55">{feature.titleHighlight}</span>{" "}
+                {feature.titlePart2}
               </h2>
-              <p className="mt-6 leading-relaxed text-white/65">
-                Anyone can print a logo. We carry verifiable Ohio licensing, active liability
-                and workers&apos; comp policies, and we pull the permits the city requires — on
-                every single job.
-              </p>
+              <p className="mt-6 leading-relaxed text-white/65">{feature.description}</p>
               <div className="mt-8 flex items-center gap-6 border-t border-white/10 pt-6">
                 <div className="flex -space-x-2">
                   <div className="flex h-9 w-9 items-center justify-center rounded-full border-2 border-[hsl(218_45%_8%)] bg-[hsl(209_100%_45%)] text-xs font-bold text-white">
@@ -345,9 +310,9 @@ export default function Page() {
                   </div>
                 </div>
                 <p className="text-xs leading-snug text-white/55">
-                  Project manager &amp; crew lead
+                  {feature.teamNoteLine1}
                   <br />
-                  named on every COI
+                  {feature.teamNoteLine2}
                 </p>
               </div>
             </div>
@@ -361,28 +326,27 @@ export default function Page() {
         <Container className="relative">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[hsl(210_100%_60%)]">
-              What it means for you
+              {protection.eyebrow}
             </p>
             <h2 className="mt-3 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-5xl">
-              Real protection,{" "}
-              <span className="font-serif italic text-white/55">not just paperwork.</span>
+              {protection.titlePart1}{" "}
+              <span className="font-serif italic text-white/55">{protection.titleHighlight}</span>
             </h2>
-            <p className="mt-5 text-lg leading-relaxed text-white/65">
-              Three concrete ways our credentials translate into outcomes that show up the day a
-              shovel hits dirt — and the day a claim could&apos;ve blown up your week.
-            </p>
+            <p className="mt-5 text-lg leading-relaxed text-white/65">{protection.description}</p>
           </div>
 
           {/* Timeline com conectores */}
           <div className="relative mt-16">
             <div className="absolute left-0 right-0 top-7 hidden h-px bg-gradient-to-r from-transparent via-[hsl(210_100%_60%)]/30 to-transparent lg:block" />
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:gap-6">
-              {protections.map((p, i) => (
+              {protections.map((p, i) => {
+                const Icon = ICONS[p.icon] ?? ShieldCheck;
+                return (
                 <div key={p.title} className="relative">
                   {/* Nó */}
                   <div className="relative flex items-center gap-4 lg:block">
                     <div className="relative flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-[hsl(210_100%_60%)]/60 bg-[hsl(218_45%_8%)] shadow-[0_0_30px_-5px_hsl(210_100%_50%/0.6)]">
-                      <p.icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
+                      <Icon className="h-5 w-5 text-[hsl(210_100%_56%)]" />
                       <span className="absolute -right-1.5 -top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-[hsl(210_100%_56%)] text-[10px] font-black text-[hsl(218_50%_10%)]">
                         0{i + 1}
                       </span>
@@ -395,20 +359,17 @@ export default function Page() {
                     <p className="mt-3 leading-relaxed text-white/65">{p.text}</p>
                   </div>
                 </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
           {/* Faixa de garantias */}
           <div className="mt-16 flex flex-wrap items-center gap-x-8 gap-y-4 border-t border-white/10 pt-8">
             <p className="text-xs font-semibold uppercase tracking-[0.25em] text-white/40">
-              Also included
+              {protection.alsoIncludedLabel}
             </p>
-            {[
-              "Certificates of Insurance on request",
-              "Licensed across Columbus metro",
-              "Permits handled when required",
-            ].map((item) => (
+            {(protection.alsoIncluded ?? []).map((item: string) => (
               <div key={item} className="flex items-center gap-2 text-sm text-white/80">
                 <CheckCircle2 className="h-4 w-4 text-[hsl(210_100%_56%)]" />
                 <span>{item}</span>
@@ -427,21 +388,20 @@ export default function Page() {
             <div className="lg:sticky lg:top-28 lg:self-start">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-[hsl(210_100%_56%)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-[hsl(210_100%_60%)]" />
-                FAQ
+                {faqSection.badge}
               </div>
               <h2 className="mt-5 text-3xl font-bold leading-[1.1] text-white md:text-4xl lg:text-5xl">
-                Common questions, <br className="hidden md:block" />
-                <span className="font-serif italic text-white/55">straight answers.</span>
+                {faqSection.titlePart1} <br className="hidden md:block" />
+                <span className="font-serif italic text-white/55">
+                  {faqSection.titleHighlight}
+                </span>
               </h2>
-              <p className="mt-5 leading-relaxed text-white/60">
-                Don&apos;t see your question? We&apos;re happy to walk you through anything —
-                including emailing you a current COI before you sign.
-              </p>
+              <p className="mt-5 leading-relaxed text-white/60">{faqSection.description}</p>
               <Link
-                href="/contact-us/#contact"
+                href={faqSection.ctaLink}
                 className="mt-7 inline-flex items-center gap-2 font-semibold text-[hsl(210_100%_60%)] transition-all hover:gap-3"
               >
-                Ask us directly <ArrowUpRight className="h-4 w-4" />
+                {faqSection.ctaText} <ArrowUpRight className="h-4 w-4" />
               </Link>
             </div>
 

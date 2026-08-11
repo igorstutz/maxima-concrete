@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prebuild": "node _extraction/generate-image-variants.mjs --apply",
+    "images": "node _extraction/generate-image-variants.mjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.2",

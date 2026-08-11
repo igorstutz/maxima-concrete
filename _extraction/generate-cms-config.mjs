@@ -201,7 +201,17 @@ const config = {
       deleteMedia: "content: delete {{path}} (via CMS)",
     },
   },
+  // Edição local: rodando em localhost, o Sveltia oferece "Work with Local
+  // Repository" e grava direto nos arquivos do projeto (File System Access
+  // API), sem GitHub nem OAuth. Fora de localhost a opção é ignorada, então
+  // em produção o painel continua autenticando pelo GitHub normalmente.
+  local_backend: true,
   site_url: "https://maximaconcrete.com",
+  // Marca do painel (tela de login e cabeçalho), no lugar do logo/nome padrão
+  // do Sveltia. O CMS mostra a imagem ao lado de um <h1> com o app_title, por
+  // isso o logo aqui é só o símbolo — a logo cheia repetiria o nome escrito.
+  logo_url: "/images/logo/maxima-cms-mark.png",
+  app_title: "Maxima Concrete",
   media_folder: "public/images",
   public_folder: "/images",
   collections: [
@@ -277,6 +287,71 @@ const config = {
                 { name: "name", label: "Name", widget: "string" },
                 { name: "description", label: "Description", widget: "text", required: false },
                 { name: "image", label: "Image", widget: "image", required: false, choose_url: true },
+              ],
+            },
+          ],
+        },
+        {
+          // Posts do blog. O corpo é uma lista de blocos tipados (mesmo
+          // esquema das seções), para o editor montar o texto sem HTML.
+          name: "blog_posts",
+          label: "Blog — posts",
+          file: "src/content/data/blog-posts.json",
+          fields: [
+            {
+              name: "posts",
+              label: "Posts",
+              widget: "list",
+              root: true,
+              fields: [
+                { name: "title", label: "Title", widget: "string" },
+                { name: "slug", label: "Slug (URL, sem barras)", widget: "string" },
+                { name: "excerpt", label: "Excerpt (resumo na listagem)", widget: "text" },
+                { name: "date", label: "Date (AAAA-MM-DD)", widget: "string" },
+                { name: "author", label: "Author", widget: "string", required: false },
+                {
+                  name: "readingMinutes",
+                  label: "Tempo de leitura (min)",
+                  widget: "number",
+                  value_type: "int",
+                  min: 1,
+                  required: false,
+                },
+                { name: "image", label: "Cover image", widget: "image", choose_url: true, required: false },
+                {
+                  name: "body",
+                  label: "Body",
+                  label_singular: "block",
+                  widget: "list",
+                  typeKey: "type",
+                  types: [
+                    {
+                      name: "p",
+                      label: "Paragraph",
+                      widget: "object",
+                      fields: [{ name: "text", label: "Text", widget: "text" }],
+                    },
+                    {
+                      name: "h2",
+                      label: "Subtitle (H2)",
+                      widget: "object",
+                      fields: [{ name: "text", label: "Text", widget: "string" }],
+                    },
+                    {
+                      name: "ul",
+                      label: "Bullet list",
+                      widget: "object",
+                      fields: [
+                        {
+                          name: "items",
+                          label: "Items",
+                          widget: "list",
+                          field: { name: "item", label: "Item", widget: "string" },
+                        },
+                      ],
+                    },
+                  ],
+                },
               ],
             },
           ],

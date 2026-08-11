@@ -37,35 +37,30 @@
       "content": {
         "steps": [
           {
-            "icon": "hammer",
             "title": "Demolition & Site Prep",
             "description": "We remove the old surface, set the proper grading, and make sure water drains away from your home.",
             "ctaLink": "#contact",
             "ctaText": "Get Your Free Estimate"
           },
           {
-            "icon": "layers",
             "title": "Compacted Gravel Base",
             "description": "We install and compact a gravel base that carries the load and keeps water from undermining the slab.",
             "ctaLink": "#contact",
             "ctaText": "Get Your Free Estimate"
           },
           {
-            "icon": "grid",
             "title": "Forms & Reinforcement",
             "description": "We set the forms and place fiber mesh and 10-gauge wire mesh — then you approve the layout before anything is poured.",
             "ctaLink": "#contact",
             "ctaText": "Get Your Free Estimate"
           },
           {
-            "icon": "droplets",
             "title": "Professional Concrete Pour",
             "description": "We pour our 6.5-bag high-strength mix, protecting your yard and driveway throughout the process.",
             "ctaLink": "#contact",
             "ctaText": "Get Your Free Estimate"
           },
           {
-            "icon": "sparkles",
             "title": "Finish, Cure & Final Walkthrough",
             "description": "We apply the finish you chose, monitor curing, and walk the finished project with you before we leave.",
             "ctaLink": "#contact",

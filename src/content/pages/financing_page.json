@@ -1,0 +1,203 @@
+{
+  "pageKey": "financing_page",
+  "sections": [
+    {
+      "key": "financing_hero",
+      "label": "Hero",
+      "type": "financing-hero",
+      "content": {
+        "badge": "Financing by Hearth & Lyon Financial · Ohio",
+        "titleLine1": "Build Now.",
+        "titleHighlight": "Pay Over Time.",
+        "description": "Affordable monthly payments on your concrete project — driveways, patios, pool decks and outdoor living. Choose between our lending partners <strong>Hearth</strong> and <strong>Lyon Financial</strong> and get pre-qualified in minutes with no impact to your credit.",
+        "image": "/images/assets/financing-hero.webp",
+        "ctaText": "Get Pre-Qualified",
+        "phone": "(614) 384-5917",
+        "phoneHref": "tel:+16143845917",
+        "trustItems": ["Soft credit check", "Decision in 60s", "$0 down options"],
+        "cardBadge": "From 7.99% APR",
+        "cardLabel": "Sample Payment",
+        "cardAmount": "$189",
+        "cardAmountSuffix": "/mo",
+        "cardNote": "on a $12,000 driveway · 84 mo · subject to credit approval",
+        "cardStats": [
+          { "label": "Down", "value": "$0" },
+          { "label": "Term", "value": "Up to 144 mo" }
+        ],
+        "cardCtaText": "Check My Rate"
+      }
+    },
+    {
+      "key": "financing_partners",
+      "label": "Lending partners",
+      "type": "financing-partners",
+      "content": {
+        "eyebrow": "Our lending partners",
+        "titlePart1": "Two ways to finance,",
+        "titleHighlight": "one simple choice.",
+        "description": "Both are U.S. lenders we work with every day. Apply to either one — or to both — and take the offer that fits your budget.",
+        "items": [
+          {
+            "name": "Hearth",
+            "logo": "",
+            "tagline": "Fastest path",
+            "description": "Best for most concrete work — driveways, patios, walkways and repairs. Pre-qualify online with a soft credit check and get an answer in about a minute.",
+            "facts": [
+              { "label": "Decision", "value": "Under 60s" },
+              { "label": "Down payment", "value": "$0 options" },
+              { "label": "Terms", "value": "Up to 144 mo" }
+            ],
+            "ctaLabel": "Get Pre-Qualified",
+            "partner": "hearth"
+          },
+          {
+            "name": "Lyon Financial",
+            "logo": "/images/partners/lyon-financial-logo.webp",
+            "tagline": "Larger projects",
+            "description": "Financing outdoor living since 1979 — pool decks, pergolas, patios, landscaping and full backyard builds. Higher amounts and the longest terms available.",
+            "facts": [
+              { "label": "Amounts", "value": "Up to $250K" },
+              { "label": "Terms", "value": "Up to 30 years" },
+              { "label": "Lending since", "value": "1979" }
+            ],
+            "ctaLabel": "Apply with Lyon",
+            "partner": "lyon"
+          }
+        ]
+      }
+    },
+    {
+      "key": "financing_steps",
+      "label": "How it works",
+      "type": "financing-steps",
+      "content": {
+        "eyebrow": "Rates from 7.99% APR",
+        "titlePart1": "How it",
+        "titleHighlight": "works",
+        "description": "A simple three-step process designed to get your concrete project moving fast — with flexible financing tailored to your budget.",
+        "items": [
+          {
+            "title": "Apply in Minutes",
+            "text": "Quick online pre-qualification with a soft credit check — no impact to your score."
+          },
+          {
+            "title": "Choose Your Plan",
+            "text": "Pick the term and monthly payment that fits your budget. Competitive rates available."
+          },
+          {
+            "title": "Start Your Project",
+            "text": "Once approved, we schedule your build and you pay over time — not all at once."
+          }
+        ]
+      }
+    },
+    {
+      "key": "financing_quote",
+      "label": "Customer quote",
+      "type": "financing-quote",
+      "content": {
+        "dividerLabel": "Real homeowners",
+        "image": "/images/assets/financing-feature.webp",
+        "imageAlt": "Happy homeowners enjoying their new concrete project",
+        "rating": "5.0",
+        "verifiedLabel": "Verified review",
+        "customerName": "The Johnson Family",
+        "customerCity": "Columbus, OH",
+        "receiptLabel": "Monthly",
+        "receiptAmount": "$189",
+        "receiptSuffix": "/mo",
+        "receiptNote": "vs $12,000 upfront",
+        "receiptApproved": "Approved in 47s",
+        "quotePart1": "We didn't have to wait years to",
+        "quoteHighlight": "finally",
+        "quotePart2": "redo our driveway.",
+        "description": "A simple soft credit check, a payment that fit our budget, and the project started the next week. No drama, no hidden fees — just our new driveway.",
+        "authorInitial": "J",
+        "authorName": "The Johnson Family",
+        "authorNote": "Driveway project · Financed over 84 months"
+      }
+    },
+    {
+      "key": "financing_highlights",
+      "label": "Why finance with Maxima",
+      "type": "financing-highlights",
+      "content": {
+        "eyebrow": "Why finance with Maxima",
+        "titlePart1": "Designed for real homeowners,",
+        "titleHighlight": "not just the perfect-credit few.",
+        "tileBadge": "Most chosen",
+        "tileAmount": "$0",
+        "tileAmountSuffix": "down",
+        "tileText": "Qualified homeowners start with nothing out of pocket — the project begins and you pay over time.",
+        "tileStats": [
+          { "label": "Avg approval", "value": "< 60s" },
+          { "label": "Terms up to", "value": "144 mo" }
+        ],
+        "items": [
+          {
+            "icon": "Clock",
+            "title": "Fast Decisions",
+            "text": "Most applications receive an answer in under 60 seconds."
+          },
+          {
+            "icon": "DollarSign",
+            "title": "$0 Down Options",
+            "text": "Qualified homeowners can start with no down payment."
+          },
+          {
+            "icon": "ShieldCheck",
+            "title": "Trusted Lenders",
+            "text": "We partner with vetted U.S. financing institutions."
+          },
+          {
+            "icon": "Sparkles",
+            "title": "No Prepayment Fees",
+            "text": "Pay off your loan early with zero penalties."
+          }
+        ],
+        "guarantees": [
+          "No application fees",
+          "Fixed monthly payments",
+          "Covers labor + materials",
+          "Funds released after work starts"
+        ]
+      }
+    },
+    {
+      "key": "financing_faq",
+      "label": "FAQ",
+      "type": "financing-faq",
+      "content": {
+        "dividerLabel": "Questions & answers",
+        "eyebrow": "Frequently asked",
+        "titlePart1": "Financing,",
+        "titleHighlight": "explained simply.",
+        "items": [
+          {
+            "question": "What types of projects can I finance?",
+            "answer": "Driveways, patios, pool decks, walkways, stamped concrete, outdoor living areas, and any other residential or commercial concrete service Maxima offers."
+          },
+          {
+            "question": "Which financing partner should I choose?",
+            "answer": "Hearth is the quickest route for most concrete work — a soft credit check and an answer in about a minute. Lyon Financial is built for larger outdoor living investments, with amounts up to $250,000 and terms up to 30 years. You can apply to both and take whichever offer fits your budget."
+          },
+          {
+            "question": "Will applying affect my credit score?",
+            "answer": "No. Pre-qualification uses a soft credit pull. A hard inquiry only happens if you accept a loan offer."
+          },
+          {
+            "question": "What credit score do I need?",
+            "answer": "Programs are available for a wide range of credit profiles. Our lending partners review each application individually."
+          },
+          {
+            "question": "How long does approval take?",
+            "answer": "Most homeowners receive a decision within minutes of submitting their application."
+          }
+        ],
+        "footerText": "Still have a question? We're here to help.",
+        "ctaText": "Talk to financing",
+        "ctaLink": "/contact-us/#contact"
+      }
+    }
+  ]
+}

@@ -29,12 +29,12 @@ interface Project {
 
 // Selos de confiança exibidos no rodapé da seção (iguais em todas as páginas).
 const TRUST_BADGES = [
-  { src: "/images/assets/badges/google-reviews.png", alt: "Google Reviews", width: 115, height: 64 },
-  { src: "/images/assets/badges/bbb.png", alt: "BBB A+ Accredited Business", width: 88, height: 61 },
-  { src: "/images/assets/badges/homeadvisor-screened.png", alt: "HomeAdvisor Screened & Approved", width: 51, height: 58 },
-  { src: "/images/assets/badges/homeadvisor-elite.png", alt: "HomeAdvisor Elite Service", width: 61, height: 58 },
-  { src: "/images/assets/badges/homeadvisor-toprated.png", alt: "HomeAdvisor Top Rated", width: 51, height: 58 },
-  { src: "/images/assets/badges/angies-list.png", alt: "Angie's List", width: 57, height: 62 },
+  { src: "/images/assets/badges/google-reviews.webp", alt: "Google Reviews", width: 115, height: 64 },
+  { src: "/images/assets/badges/bbb.webp", alt: "BBB A+ Accredited Business", width: 88, height: 61 },
+  { src: "/images/assets/badges/homeadvisor-screened.webp", alt: "HomeAdvisor Screened & Approved", width: 51, height: 58 },
+  { src: "/images/assets/badges/homeadvisor-elite.webp", alt: "HomeAdvisor Elite Service", width: 61, height: 58 },
+  { src: "/images/assets/badges/homeadvisor-toprated.webp", alt: "HomeAdvisor Top Rated", width: 51, height: 58 },
+  { src: "/images/assets/badges/angies-list.webp", alt: "Angie's List", width: 57, height: 62 },
 ];
 
 const RADII = ["3", "4", "5", "6", "10", "20", "40", "100"];
@@ -296,7 +296,7 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
                   {title}
                 </h2>
                 <Image
-                  src="/images/assets/maxima-logo-icon.png"
+                  src="/images/assets/maxima-logo-icon.webp"
                   alt="Maxima Concrete"
                   width={40}
                   height={40}

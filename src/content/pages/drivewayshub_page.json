@@ -13,8 +13,8 @@
         "ctaLink": "#contact",
         "secondaryCtaText": "Find Our Work Near You",
         "secondaryCtaLink": "/project-map",
-        "backgroundImage": "/images/cms/hub/drivewayshub_hero_desktop.jpg",
-        "backgroundImageMobile": "/images/cms/hub/drivewayshub_hero_mobile.jpg"
+        "backgroundImage": "/images/cms/hub/drivewayshub_hero_desktop.webp",
+        "backgroundImageMobile": "/images/cms/hub/drivewayshub_hero_mobile.webp"
       }
     },
     {
@@ -40,14 +40,14 @@
         "title": "Two Ways to Build Your\nPerfect Driveway",
         "options": [
           {
-            "image": "/images/cms/hub/drivewayshub_option_concrete.jpg",
+            "image": "/images/cms/hub/drivewayshub_option_concrete.webp",
             "title": "Concrete Driveways",
             "ctaLink": "/services/driveways/driveways-concrete",
             "ctaText": "Explore Concrete Driveways",
             "description": "Clean, durable, and endlessly customizable. From broom finishes to stamped and colored designs, concrete delivers strength that lasts for decades."
           },
           {
-            "image": "/images/cms/hub/drivewayshub_option_paver.jpg",
+            "image": "/images/cms/hub/drivewayshub_option_paver.webp",
             "title": "Paver Driveways",
             "ctaLink": "/services/driveways/driveways-paver",
             "ctaText": "Explore Paver Driveways",
@@ -72,7 +72,7 @@
           "Beyond looks, paver driveways offer superior drainage. Rainwater flows naturally through the joints, reducing pooling, preventing surface damage, and protecting your foundation. And when life happens — spills, stains, or localized wear — individual pavers can be replaced with ease, keeping your driveway looking pristine for years to come.",
           "Choose from classic cobblestone patterns for timeless elegance, sleek modern concrete pavers for a clean, contemporary feel, or custom layouts with borders and accents that reflect your personal style. The design flexibility is virtually limitless."
         ],
-        "backgroundImage": "/images/cms/hub/drivewayshub_paver_bg.jpg",
+        "backgroundImage": "/images/cms/hub/drivewayshub_paver_bg.webp",
         "taglineDescription": "Upgrade your driveway with a surface that performs as beautifully as it looks."
       }
     },
@@ -165,7 +165,7 @@
         "ctaText": "Contact Us",
         "eyebrow": "by Maxima Concrete",
         "description": "At Maxima Concrete, we don't compromise on quality. Our driveways are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
-        "backgroundImage": "/images/cms/hub/drivewayshub_whymaxima_bg.jpg"
+        "backgroundImage": "/images/cms/hub/drivewayshub_whymaxima_bg.webp"
       }
     },
     {
@@ -216,7 +216,7 @@
         "title": "Engineered for Durability",
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/hub/drivewayshub_durability_bg.jpg"
+        "backgroundImage": "/images/cms/hub/drivewayshub_durability_bg.webp"
       }
     },
     {

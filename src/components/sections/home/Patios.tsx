@@ -25,7 +25,7 @@ export default function Patios({ content }: { content: Record<string, any> }) {
         <ScrollReveal>
           <div className="mb-4 flex items-center gap-3">
             <Image
-              src="/images/assets/driveways-icon.png"
+              src="/images/assets/driveways-icon.webp"
               alt=""
               width={32}
               height={32}

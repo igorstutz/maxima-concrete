@@ -65,6 +65,21 @@
             "link": "/gallery/porches-steps",
             "name": "Porches & Steps",
             "image": "/images/cms/uploads/1782830334542-cnpoot.webp"
+          },
+          {
+            "name": "Fire Pits & Fireplaces",
+            "image": "/images/cms/uploads/1773315426841-ae08oq.webp",
+            "link": "/gallery/fire-pits-fireplaces"
+          },
+          {
+            "name": "Outdoor Living & Outdoor Kitchen",
+            "image": "/images/cms/uploads/1784042023396-2dsref.webp",
+            "link": "/gallery/outdoor-living-kitchen"
+          },
+          {
+            "name": "Retaining & City Walls",
+            "image": "/images/cms/uploads/1782842879795-trotyg.webp",
+            "link": "/gallery/retaining-city-walls"
           }
         ],
         "title": "All our Services",

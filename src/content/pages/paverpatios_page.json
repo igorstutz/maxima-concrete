@@ -41,7 +41,7 @@
       "type": "paver-offer",
       "content": {
         "title": "Paver patios offer:",
-        "icon": "/images/assets/patios-icon.png",
+        "icon": "/images/assets/patios-icon.webp",
         "items": [
           "Flexible, crack-resistant performance",
           "Easy repair with individual paver replacement",
@@ -51,7 +51,7 @@
         "paragraph": "Whether you envision a modern entertainment space or a warm, inviting retreat with a fire feature and seating walls, our in-house team brings precision craftsmanship and premium materials together to create something truly lasting.",
         "ctaText": "Contact Us",
         "ctaLink": "#contact",
-        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.jpg"
+        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp"
       }
     },
     {

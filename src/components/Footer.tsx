@@ -230,7 +230,7 @@ export default function Footer() {
               <Link
                 href={licensedUrl}
                 className="transition-opacity hover:opacity-80"
-                aria-label="Licensing & Insurance"
+                aria-label="Licensed & Insured"
               >
                 <Image
                   src={licensedInsuredImage}

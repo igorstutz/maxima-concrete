@@ -7,6 +7,7 @@ import Contact from "@/components/sections/home/Contact";
 import FindWork from "@/components/sections/home/FindWork";
 import Instagram from "@/components/sections/home/Instagram";
 import home from "@/content/pages/home.json";
+import page from "@/content/pages/reviews_page.json";
 import reviewsSettings from "@/content/settings/reviews.json";
 
 export const metadata: Metadata = {
@@ -43,6 +44,34 @@ const profileUrl =
 const totalReviews = reviewsSettings.totalReviews;
 const averageRating = reviewsSettings.averageRating;
 
+// Textos da página (editáveis no CMS em Pages › Reviews).
+const sectionContent = (key: string): Record<string, string> =>
+  (page.sections.find((s) => s.key === key)?.content ?? {}) as Record<string, string>;
+const hero = sectionContent("reviews_hero");
+const testimonials = sectionContent("reviews_testimonials");
+
+/**
+ * Monta a frase-resumo trocando {total} e {rating} pelos números reais, em
+ * negrito. O texto fica editável sem que o CMS precise saber dos números.
+ */
+function summaryNodes(template: string) {
+  return template.split(/(\{total\}|\{rating\})/g).map((part, i) => {
+    if (part === "{total}")
+      return (
+        <strong key={i} className="text-navy">
+          {totalReviews}
+        </strong>
+      );
+    if (part === "{rating}")
+      return (
+        <strong key={i} className="text-navy">
+          {averageRating.toFixed(1)}
+        </strong>
+      );
+    return <span key={i}>{part}</span>;
+  });
+}
+
 function StarRating({ rating, size = "h-4 w-4" }: { rating: number; size?: string }) {
   return (
     <div className="flex items-center gap-0.5">
@@ -74,7 +103,7 @@ export default function Page() {
                 Home
               </Link>
               <ChevronRight className="h-3.5 w-3.5" />
-              <span className="text-white">Reviews</span>
+              <span className="text-white">{hero.breadcrumbLabel}</span>
             </nav>
 
             <h1
@@ -83,14 +112,12 @@ export default function Page() {
             >
               {/* O hero já é azul da marca: destacar em azul daria 2,2:1. A
                   hierarquia vem da opacidade, não de outra cor. */}
-              <span className="text-white/70">Real Reviews from</span>
+              <span className="text-white/70">{hero.titleLine1}</span>
               <br />
-              Real Customers
+              {hero.titleLine2}
             </h1>
             <p className="max-w-2xl text-base leading-relaxed text-white/80 md:text-lg">
-              Every project we deliver is backed by honest feedback from homeowners and
-              businesses across Ohio. Here is what our clients say about working with Maxima
-              Concrete.
+              {hero.description}
             </p>
 
             {/* Cartão de estatísticas */}
@@ -101,7 +128,7 @@ export default function Page() {
                 </span>
                 <div className="flex flex-col">
                   <StarRating rating={Math.round(averageRating)} size="h-5 w-5" />
-                  <span className="mt-1 text-xs text-white/70">Google Rating</span>
+                  <span className="mt-1 text-xs text-white/70">{hero.ratingLabel}</span>
                 </div>
               </div>
               <div className="hidden h-12 w-px bg-white/20 sm:block" />
@@ -109,7 +136,7 @@ export default function Page() {
                 <span className="text-2xl font-semibold text-white md:text-3xl">
                   {totalReviews}
                 </span>
-                <span className="text-xs text-white/70">Verified Reviews</span>
+                <span className="text-xs text-white/70">{hero.reviewsLabel}</span>
               </div>
               {profileUrl && (
                 <>
@@ -120,7 +147,7 @@ export default function Page() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 text-sm font-medium text-navy transition-colors hover:bg-white/90"
                   >
-                    Leave a Review
+                    {hero.ctaText}
                     <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </>
@@ -135,12 +162,11 @@ export default function Page() {
         <Container>
           <div className="mb-8 md:mb-10">
             <h2 className="mb-3 text-2xl font-semibold leading-[115%] tracking-[-1.2px] text-navy md:text-3xl lg:text-[40px]">
-              What Our Customers <span className="text-ocean">Are Saying</span>
+              {testimonials.titlePart1}
+              <span className="text-ocean">{testimonials.titlePart2}</span>
             </h2>
             <p className="max-w-xl text-sm text-[#5A6B7B] md:text-base">
-              <strong className="text-navy">{totalReviews}</strong> homeowners and businesses have
-              reviewed Maxima Concrete on Google, averaging{" "}
-              <strong className="text-navy">{averageRating.toFixed(1)} stars</strong>.
+              {summaryNodes(testimonials.summary ?? "")}
             </p>
           </div>
         </Container>
@@ -154,13 +180,13 @@ export default function Page() {
         <Container>
           <div className="mt-10 flex flex-col items-start gap-4 rounded-2xl bg-navy px-6 py-6 sm:flex-row sm:items-center sm:justify-between md:mt-12 md:px-8">
             <p className="text-base font-medium text-white md:text-lg">
-              Impressed by all these happy customers? Become one of them.
+              {testimonials.ctaText}
             </p>
             <Link
-              href="/contact-us/#contact"
+              href={testimonials.ctaButtonLink ?? "/contact-us/#contact"}
               className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-white px-6 py-3 text-sm font-medium text-navy transition-colors hover:bg-white/90"
             >
-              Get Your Free Estimate
+              {testimonials.ctaButtonText}
               <ArrowUpRight className="h-4 w-4" />
             </Link>
           </div>

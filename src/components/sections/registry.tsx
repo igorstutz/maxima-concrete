@@ -94,6 +94,8 @@ import CityApproach from "./areas/CityApproach";
 import AreasGrid from "./areas/AreasGrid";
 import HeroAreas from "./areas/HeroAreas";
 import ContactInfoMap from "./areas/ContactInfoMap";
+import ContactPhoneCta from "./areas/ContactPhoneCta";
+import ContactChoice from "./areas/ContactChoice";
 import JoinOurTeamIntro from "./areas/JoinOurTeamIntro";
 import JoinOurTeamBenefits from "./areas/JoinOurTeamBenefits";
 import JoinOurTeamPositions from "./areas/JoinOurTeamPositions";
@@ -200,6 +202,8 @@ export const SECTION_REGISTRY: Record<string, SectionComponent> = {
   "areas-grid": AreasGrid,
   "hero-areas": HeroAreas,
   "contact-info-map": ContactInfoMap,
+  "contact-phone": ContactPhoneCta,
+  "contact-choice": ContactChoice,
   "joinourteam-sec-intro": JoinOurTeamIntro,
   "joinourteam-sec-benefits": JoinOurTeamBenefits,
   "joinourteam-sec-positions": JoinOurTeamPositions,

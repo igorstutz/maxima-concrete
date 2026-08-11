@@ -1,0 +1,32 @@
+{
+  "pageKey": "reviews_page",
+  "sections": [
+    {
+      "key": "reviews_hero",
+      "label": "Hero",
+      "type": "reviews-hero",
+      "content": {
+        "breadcrumbLabel": "Reviews",
+        "titleLine1": "Real Reviews from",
+        "titleLine2": "Real Customers",
+        "description": "Every project we deliver is backed by honest feedback from homeowners and businesses across Ohio. Here is what our clients say about working with Maxima Concrete.",
+        "ratingLabel": "Google Rating",
+        "reviewsLabel": "Verified Reviews",
+        "ctaText": "Leave a Review"
+      }
+    },
+    {
+      "key": "reviews_testimonials",
+      "label": "Testimonials (Google widget)",
+      "type": "reviews-testimonials",
+      "content": {
+        "titlePart1": "What Our Customers ",
+        "titlePart2": "Are Saying",
+        "summary": "{total} homeowners and businesses have reviewed Maxima Concrete on Google, averaging {rating} stars.",
+        "ctaText": "Impressed by all these happy customers? Become one of them.",
+        "ctaButtonText": "Get Your Free Estimate",
+        "ctaButtonLink": "/contact-us/#contact"
+      }
+    }
+  ]
+}

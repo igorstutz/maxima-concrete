@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/project-map/" },
 };
 
-const HERO_IMAGE = "/images/assets/project-map-hero.jpg";
+const HERO_IMAGE = "/images/assets/project-map-hero.webp";
 
 const explorerContent =
   page.sections.find((s) => s.type === "explorer")?.content ?? {};

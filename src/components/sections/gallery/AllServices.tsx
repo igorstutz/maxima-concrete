@@ -71,11 +71,12 @@ export default function AllServices({
             {items.map((item, index) => {
               const photos = photoCountFor(item.link);
               return (
-                /* Card no formato aprovado: moldura azul degradê, foto em cima e
-                   faixa com o nome embaixo. A contagem de fotos vem do conteúdo. */
+                /* Card no formato aprovado: moldura navy (mesmo tom da faixa do
+                   nome, no pé do card), foto em cima e nome embaixo. A contagem
+                   de fotos vem do conteúdo. */
                 <div
                   key={index}
-                  className="gradient-blue group relative w-full shrink-0 overflow-hidden rounded-[16px] p-[3px] transition-transform duration-300 hover:scale-[1.03] md:w-[260px]"
+                  className="group relative w-full shrink-0 overflow-hidden rounded-[16px] bg-navy p-[3px] transition-transform duration-300 hover:scale-[1.03] md:w-[260px]"
                 >
                   <div className="overflow-hidden rounded-[13px] bg-navy">
                     <div className="relative h-[clamp(150px,38vw,300px)] w-full">

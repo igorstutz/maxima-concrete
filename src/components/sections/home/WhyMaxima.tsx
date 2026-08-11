@@ -93,14 +93,14 @@ export default function WhyMaxima({ content }: { content: Record<string, any> })
 
             <div className="flex w-full items-center justify-center gap-5 md:justify-start">
               <Image
-                src="/images/assets/licensed-insured.png"
+                src="/images/assets/licensed-insured.webp"
                 alt="Licensed & Insured badge"
                 width={112}
                 height={56}
                 className="h-14 w-28 object-contain"
               />
               <Image
-                src="/images/assets/rating_A+.png"
+                src="/images/assets/rating_A+.webp"
                 alt="BBB A+ rating badge"
                 width={64}
                 height={56}

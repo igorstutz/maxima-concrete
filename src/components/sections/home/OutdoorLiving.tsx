@@ -31,7 +31,7 @@ export default function OutdoorLiving({ content }: { content: Record<string, any
         <ScrollReveal>
           <div className="mb-4 flex items-center gap-3">
             <Image
-              src="/images/assets/outdoor-living-icon.png"
+              src="/images/assets/outdoor-living-icon.webp"
               alt=""
               width={32}
               height={32}

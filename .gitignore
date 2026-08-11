@@ -26,3 +26,12 @@ AJUSTES.md
 
 # Assets brutos enviados pelo cliente (nao entram no site)
 ajustes-assets/
+
+# Variantes responsivas das imagens (derivadas). Geradas no build por
+# _extraction/generate-image-variants.mjs; o manifesto em src/lib é versionado.
+public/images/**/*-480w.webp
+public/images/**/*-828w.webp
+public/images/**/*-1280w.webp
+
+# Documentos de ajustes enviados pelo cliente
+Maxima Concrete - Ajustes*

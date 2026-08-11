@@ -1,6 +1,9 @@
 import commercial from "@/content/pages/gallerycommercial_page.json";
 import driveways from "@/content/pages/gallerydriveways_page.json";
+import firePitsFireplaces from "@/content/pages/galleryfirepitsfireplaces_page.json";
 import garageBarn from "@/content/pages/gallerygaragebarn_page.json";
+import outdoorLivingKitchen from "@/content/pages/galleryoutdoorlivingkitchen_page.json";
+import retainingCityWalls from "@/content/pages/galleryretainingcitywalls_page.json";
 import patios from "@/content/pages/gallerypatios_page.json";
 import pavers from "@/content/pages/gallerypavers_page.json";
 import pools from "@/content/pages/gallerypools_page.json";
@@ -39,11 +42,14 @@ function countPhotos(page: Page): number {
 export const GALLERY_PHOTO_COUNTS: Record<string, number> = {
   "/gallery/commercial": countPhotos(commercial as Page),
   "/gallery/driveways": countPhotos(driveways as Page),
+  "/gallery/fire-pits-fireplaces": countPhotos(firePitsFireplaces as Page),
   "/gallery/garage-floor-barn": countPhotos(garageBarn as Page),
+  "/gallery/outdoor-living-kitchen": countPhotos(outdoorLivingKitchen as Page),
   "/gallery/patios": countPhotos(patios as Page),
   "/gallery/pavers": countPhotos(pavers as Page),
   "/gallery/pools": countPhotos(pools as Page),
   "/gallery/porches-steps": countPhotos(porchesSteps as Page),
+  "/gallery/retaining-city-walls": countPhotos(retainingCityWalls as Page),
   "/gallery/sidewalks": countPhotos(sidewalks as Page),
   "/gallery/sport-court": countPhotos(sportCourt as Page),
 };

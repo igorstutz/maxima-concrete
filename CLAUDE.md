@@ -44,7 +44,12 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 ## Performance (por que o site é rápido — manter)
 - Zero fetch em runtime: JSON importado estaticamente, texto embutido no HTML no build.
 - `"use client"` cirúrgico; sem bibliotecas de animação (IntersectionObserver via ScrollReveal).
-- Imagens locais WebP quando possível; `priority` apenas no hero; `sizes` corretos.
+- Imagens locais WebP; `priority` apenas no hero; **`sizes` corretos são obrigatórios**
+  (é por eles que o navegador escolhe a variante certa — sem `sizes` ele baixa a maior).
+- Variantes responsivas: o export estático não otimiza imagem em runtime, então
+  `_extraction/generate-image-variants.mjs` gera versões em 480/828/1280px e
+  `src/lib/image-loader.ts` monta o srcset. Roda sozinho no `npm run build`
+  (script `prebuild`); as variantes são derivadas e não vão para o Git.
 - Widgets externos (Elfsight reviews/instagram) só carregam ao entrar na viewport.
 
 ## Comandos

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Mail, Phone, Menu, X, ChevronRight } from "lucide-react";
+import { Mail, Phone, Menu, X, ChevronRight, ArrowUpRight } from "lucide-react";
 import Image from "@/components/Image";
 import navigation from "@/content/settings/navigation.json";
 import ServicesModal, { type SubmenuMode } from "@/components/ServicesModal";
@@ -26,10 +26,19 @@ interface NavItem {
 }
 
 const navItems = navigation.items as NavItem[];
-const { logo, phone, email, social } = navigation;
+const { logo, phone, email, social, cta } = navigation;
 
 const btnStyle = {
   background: "linear-gradient(90deg, #0D5D93 0%, #041C2D 100%)",
+};
+
+/**
+ * CTA do menu. Recorte do gradiente azul da marca (#1e90ff → #003b8b) num
+ * ponto claro o bastante para destacar dos botões navy ao redor e ainda
+ * manter contraste AA (4.7:1) com o texto branco.
+ */
+const ctaStyle = {
+  background: "linear-gradient(90deg, #0B74D6 0%, #003B8B 100%)",
 };
 
 /** Normalizes trailing slashes so active-state works with trailingSlash: true. */
@@ -93,14 +102,25 @@ const Navigation = () => {
               priority
             />
           </Link>
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 rounded-lg text-white"
-            style={btnStyle}
-            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-          >
-            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </button>
+          <div className="flex items-center gap-2">
+            {/* CTA sempre à vista, também com o menu fechado */}
+            <Link
+              href={cta.href}
+              onClick={closeMobileMenu}
+              className="rounded-lg px-3 py-2.5 text-xs font-semibold text-white shadow-sm transition-all active:scale-[0.98]"
+              style={ctaStyle}
+            >
+              {cta.label}
+            </Link>
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="p-2 rounded-lg text-white"
+              style={btnStyle}
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            >
+              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
+          </div>
         </div>
       </header>
 
@@ -185,6 +205,18 @@ const Navigation = () => {
             {/* Divider */}
             <div className="mb-3 h-px bg-white/10" />
 
+            {/* Free Estimate — sobre o fundo escuro do drawer o azul precisa
+                de um contorno claro para não se fundir com o degradê. */}
+            <Link
+              href={cta.href}
+              onClick={closeMobileMenu}
+              className="mb-2.5 w-full py-3 flex items-center justify-center gap-1.5 text-sm font-semibold text-white rounded-lg border border-white/25 shadow-md transition-all hover:brightness-110 active:scale-[0.98]"
+              style={ctaStyle}
+            >
+              {cta.label}
+              <ArrowUpRight className="h-4 w-4" />
+            </Link>
+
             {/* Call Button */}
             <a
               href={phone.href}
@@ -240,7 +272,7 @@ const Navigation = () => {
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
-              className="h-[72px] w-auto"
+              className="h-[86px] w-auto"
             />
           </Link>
           <button
@@ -253,6 +285,16 @@ const Navigation = () => {
             <span className="block h-[3px] w-7 rounded-sm bg-[#0D5D93]" />
             <span className="block h-[3px] w-7 rounded-sm bg-[#0D5D93]" />
           </button>
+
+          {/* CTA continua visível com o menu recolhido */}
+          <Link
+            href={cta.href}
+            className="flex items-center justify-center gap-1 text-[13px] font-semibold text-white shadow-sm transition-all hover:brightness-110"
+            style={{ width: "150px", height: "38px", borderRadius: "4px", ...ctaStyle }}
+          >
+            {cta.label}
+            <ArrowUpRight className="h-4 w-4" />
+          </Link>
 
           <div className="flex flex-col items-center" style={{ gap: "10px" }}>
             <div className="flex justify-center gap-2">
@@ -309,7 +351,7 @@ const Navigation = () => {
             alt={logo.alt}
             width={logo.width}
             height={logo.height}
-            className="h-[72px] w-auto"
+            className="h-[86px] w-auto"
             priority
           />
         </Link>
@@ -363,6 +405,16 @@ const Navigation = () => {
             );
           })}
         </div>
+
+        {/* Free Estimate — CTA principal, fecha o bloco de navegação */}
+        <Link
+          href={cta.href}
+          className="flex items-center justify-center gap-1.5 text-sm font-semibold text-white shadow-md transition-all hover:brightness-110"
+          style={{ width: "150px", height: "42px", borderRadius: "4px", ...ctaStyle }}
+        >
+          {cta.label}
+          <ArrowUpRight className="h-4 w-4" />
+        </Link>
 
         {/* Call Now */}
         <a

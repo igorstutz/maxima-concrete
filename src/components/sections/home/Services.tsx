@@ -25,23 +25,16 @@ export default function Services({ content }: { content: Record<string, any> }) 
   const items = c.items ?? [];
 
   return (
-    <section id="services" className="relative py-6">
-      {/* Fundo do cartão azul: sangra até ~16px das bordas da viewport,
-          passando POR TRÁS do menu flutuante (como no site original).
-          Só o fundo sangra — o conteúdo permanece na coluna padrão. */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-4 inset-y-6 rounded-xl"
-        style={{
-          background:
-            "linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, #034673 0%, #041826 100%)",
-        }}
-      />
-      <Container className="relative">
-        {/* O cartão azul começa a 16px da viewport (inset-x-4). O conteúdo
-            precisa de um respiro dentro dele — o mesmo px-6 da seção Gallery —
-            senão encosta na borda azul. */}
-        <div className="flex flex-col gap-8 px-6 py-10 md:gap-14 md:px-8 md:py-16">
+    // Fundo full-bleed, sem margem lateral nem cantos arredondados, com o
+    // mesmo gradiente da seção "Lighting Solutions" (style-options) — diagonal
+    // em 263deg, sem a camada preta que a home usava antes.
+    <section
+      id="services"
+      className="relative w-full"
+      style={{ background: "linear-gradient(263deg, #06253A 46.16%, #000D16 68.33%)" }}
+    >
+      <Container>
+        <div className="flex flex-col gap-8 py-10 md:gap-14 md:py-16">
           {/* Título */}
           <h2 className="m-0 text-left text-2xl font-medium leading-tight md:leading-[43.2px] lg:text-[36px]">
             <span className="flex flex-wrap items-center gap-2 text-white">

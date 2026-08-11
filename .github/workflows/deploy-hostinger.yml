@@ -24,7 +24,7 @@ jobs:
         run: npm ci
 
       - name: Build static export (root-domain build, no basePath)
-        run: npx next build
+        run: npm run build
 
       # O SSH da Hostinger falha de forma intermitente (rsync exit 255) —
       # é instabilidade transitória, não problema de build. Repetimos até

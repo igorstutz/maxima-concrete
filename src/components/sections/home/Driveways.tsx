@@ -25,7 +25,7 @@ export default function Driveways({ content }: { content: Record<string, any> })
         <ScrollReveal>
           <div className="mb-4 flex items-center gap-3">
             <Image
-              src="/images/assets/patios-icon.png"
+              src="/images/assets/patios-icon.webp"
               alt=""
               width={32}
               height={32}

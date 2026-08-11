@@ -1,9 +1,13 @@
 {
   "logo": {
-    "src": "/images/logo/maxima-logo-icon.png",
+    "src": "/images/logo/maxima-logo-icon.webp",
     "alt": "Maxima Concrete",
     "width": 137,
     "height": 115
+  },
+  "cta": {
+    "label": "Free Estimate",
+    "href": "/contact-us"
   },
   "phone": {
     "label": "(614) 384-5917",
@@ -16,11 +20,6 @@
     "google": "https://search.google.com/local/writereview?placeid=ChIJ15ONBZf6OIgRPydowIItn-Q"
   },
   "items": [
-    {
-      "label": "Home",
-      "href": "/",
-      "icon": "Home"
-    },
     {
       "label": "Services",
       "submenu": "services",
@@ -63,12 +62,32 @@
         {
           "label": "Driveways",
           "href": "/services/driveways",
-          "icon": "CarFront"
+          "icon": "CarFront",
+          "children": [
+            {
+              "label": "Concrete",
+              "href": "/services/driveways/driveways-concrete"
+            },
+            {
+              "label": "Paver",
+              "href": "/services/driveways/driveways-paver"
+            }
+          ]
         },
         {
           "label": "Patios",
           "href": "/services/patios",
-          "icon": "Trees"
+          "icon": "Trees",
+          "children": [
+            {
+              "label": "Concrete",
+              "href": "/services/patios/patios-concrete"
+            },
+            {
+              "label": "Paver",
+              "href": "/services/patios/patios-paver"
+            }
+          ]
         },
         {
           "label": "Porches",
@@ -99,6 +118,11 @@
           "label": "Commercial Pools",
           "href": "/commercial-pools",
           "icon": "Waves"
+        },
+        {
+          "label": "Commercial Projects",
+          "href": "/commercial",
+          "icon": "Briefcase"
         },
         {
           "label": "Curbs & Gutters",
@@ -228,7 +252,7 @@
           "icon": "Ruler"
         },
         {
-          "label": "Licensing & Insured",
+          "label": "Licensed & Insured",
           "href": "/licensing-insured",
           "icon": "ShieldCheck"
         },
@@ -256,11 +280,6 @@
           "label": "Financing",
           "href": "/financing",
           "icon": "DollarSign"
-        },
-        {
-          "label": "Commercial Projects",
-          "href": "/commercial",
-          "icon": "Building2"
         },
         {
           "label": "Join Our Team",

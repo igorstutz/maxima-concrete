@@ -12,6 +12,8 @@ interface SubmenuItem {
   label: string;
   href: string;
   icon: string;
+  /** Sub-escolhas do serviço (ex.: Driveways → Concrete / Paver). */
+  children?: { label: string; href: string }[];
 }
 
 interface ServicesModalProps {
@@ -19,6 +21,11 @@ interface ServicesModalProps {
   onClose: () => void;
   mode?: SubmenuMode;
 }
+
+const CARD_SHELL =
+  "rounded-lg sm:rounded-xl bg-white/8 border border-white/10 transition-all duration-200 hover:bg-white/15 hover:border-white/25 hover:shadow-lg";
+const CARD_FACE =
+  "flex flex-col items-center gap-1.5 sm:gap-2.5 px-2 py-3 sm:px-3 sm:py-5 text-center";
 
 const ServiceCard = ({
   item,
@@ -28,12 +35,10 @@ const ServiceCard = ({
   onSelect: () => void;
 }) => {
   const Icon = NAV_ICONS[item.icon];
-  return (
-    <Link
-      href={item.href}
-      onClick={onSelect}
-      className="group flex flex-col items-center gap-1.5 sm:gap-2.5 rounded-lg sm:rounded-xl bg-white/8 border border-white/10 px-2 py-3 sm:px-3 sm:py-5 text-center transition-all duration-200 hover:bg-white/15 hover:border-white/25 hover:scale-[1.03] hover:shadow-lg"
-    >
+  const children = item.children ?? [];
+
+  const face = (
+    <>
       <div className="flex h-8 w-8 sm:h-11 sm:w-11 items-center justify-center rounded-md sm:rounded-lg bg-white/10 group-hover:bg-white/20 transition-colors">
         {Icon && (
           <Icon className="h-4 w-4 sm:h-5 sm:w-5 text-white/80 group-hover:text-white transition-colors" />
@@ -42,7 +47,42 @@ const ServiceCard = ({
       <span className="text-[10px] sm:text-xs font-semibold text-white/85 group-hover:text-white leading-tight transition-colors">
         {item.label}
       </span>
-    </Link>
+    </>
+  );
+
+  if (children.length === 0) {
+    return (
+      <Link
+        href={item.href}
+        onClick={onSelect}
+        className={`group ${CARD_SHELL} ${CARD_FACE} hover:scale-[1.03]`}
+      >
+        {face}
+      </Link>
+    );
+  }
+
+  // Com sub-escolha o card deixa de ser um link único: o topo abre a página do
+  // serviço e as duas opções levam direto para concreto ou paver (um <a> não
+  // pode ficar dentro de outro <a>).
+  return (
+    <div className={`group flex flex-col ${CARD_SHELL}`}>
+      <Link href={item.href} onClick={onSelect} className={`flex-1 ${CARD_FACE}`}>
+        {face}
+      </Link>
+      <div className="flex gap-1 px-1.5 pb-1.5 sm:px-2 sm:pb-2">
+        {children.map((child) => (
+          <Link
+            key={child.href}
+            href={child.href}
+            onClick={onSelect}
+            className="flex-1 rounded-md bg-white/10 px-1 py-1.5 text-center text-[9px] sm:text-[10px] font-semibold text-white/80 transition-colors hover:bg-white/25 hover:text-white"
+          >
+            {child.label}
+          </Link>
+        ))}
+      </div>
+    </div>
   );
 };
 
@@ -70,9 +110,12 @@ const ServicesModal = ({ isOpen, onClose, mode = "services" }: ServicesModalProp
   const { title, subtitle } = submenu;
   const items = submenu.items as SubmenuItem[];
 
-  const filteredItems = searchQuery.trim()
-    ? items.filter((item) =>
-        item.label.toLowerCase().includes(searchQuery.toLowerCase())
+  const query = searchQuery.trim().toLowerCase();
+  const filteredItems = query
+    ? items.filter(
+        (item) =>
+          item.label.toLowerCase().includes(query) ||
+          item.children?.some((c) => c.label.toLowerCase().includes(query)),
       )
     : items;
 

@@ -37,7 +37,7 @@ export default function Instagram({ content }: { content: Record<string, any> })
             >
               <span className="relative block h-10 w-10 overflow-hidden rounded-full border-2 border-navy md:h-12 md:w-12">
                 <Image
-                  src="/images/assets/instagram-profile.png"
+                  src="/images/assets/instagram-profile.webp"
                   alt="Maxima Concrete Instagram"
                   fill
                   sizes="48px"

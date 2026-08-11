@@ -62,26 +62,25 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
     };
   }, [areasOpen]);
 
+  // Telefone, horário, intro e CTA saem quando o conteúdo não traz o campo —
+  // na página Contact Us eles agora vivem no bloco de telefone, no topo, e
+  // repetir tudo aqui embaixo só alongaria a página.
   const title: string = content?.title || "Contact Us";
-  const subtitle: string =
-    content?.subtitle || "Your Trusted Concrete Contractor in Central Ohio";
-  const intro: string =
-    content?.intro ||
-    "Tell us about your project, ask a question, or request your free estimate.";
-  const description: string =
-    content?.description ||
-    "Our experts will review your details and get back to you quickly with insights, timelines, and recommendations.";
+  const subtitle: string = content?.subtitle || "";
+  const intro: string = content?.intro || "";
+  const description: string = content?.description || "";
   const addressLabel: string = content?.addressLabel || "Office Address:";
   const addressLine1: string = content?.addressLine1 || "4059 State Route 37 E, Suite A";
   const addressLine2: string = content?.addressLine2 || "Delaware, OH 43015";
   const phoneLabel: string = content?.phoneLabel || "Phone:";
-  const phone: string = content?.phone || "(614) 384-5917";
+  const phone: string = content?.phone || "";
   const emailLabel: string = content?.emailLabel || "Email:";
   const email: string = content?.email || "info@maximaconcrete.com";
   const hoursLabel: string = content?.hoursLabel || "Business Hours:";
-  const hoursLine1: string = content?.hoursLine1 || "Monday – Friday: 8 AM – 5 PM";
-  const hoursLine2: string = content?.hoursLine2 || "Saturday: By Appointment";
-  const hoursLine3: string = content?.hoursLine3 || "Sunday: Closed";
+  const hoursLine1: string = content?.hoursLine1 || "";
+  const hoursLine2: string = content?.hoursLine2 || "";
+  const hoursLine3: string = content?.hoursLine3 || "";
+  const ctaText: string = content?.ctaText || "";
   const facebookUrl: string = content?.facebookUrl || "";
   const instagramUrl: string = content?.instagramUrl || "";
   const twitterUrl: string = content?.twitterUrl || "";
@@ -106,9 +105,11 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
           {/* Coluna esquerda — informações */}
           <div className="space-y-6">
             <h2 className="text-3xl font-semibold text-navy md:text-4xl">{title}</h2>
-            <p className="border-b border-navy/15 pb-6 text-base text-navy/70 md:text-lg">
-              {subtitle}
-            </p>
+            {subtitle && (
+              <p className="border-b border-navy/15 pb-6 text-base text-navy/70 md:text-lg">
+                {subtitle}
+              </p>
+            )}
 
             {socials.length > 0 && (
               <div className="flex items-center gap-3 pt-1">
@@ -131,19 +132,23 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
               </div>
             )}
 
-            <div className="space-y-3 text-sm text-navy/80 md:text-base">
-              <p>{intro}</p>
-              <p>{description}</p>
-            </div>
+            {(intro || description) && (
+              <div className="space-y-3 text-sm text-navy/80 md:text-base">
+                {intro && <p>{intro}</p>}
+                {description && <p>{description}</p>}
+              </div>
+            )}
 
             <div className="flex flex-wrap gap-3">
-              <a
-                href="#contact"
-                className="gradient-navy inline-flex items-center gap-2 rounded-[10px] px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-[1.02] hover:opacity-90"
-              >
-                {content?.ctaText || "Request a Free Estimate"}
-                <ArrowRight size={18} />
-              </a>
+              {ctaText && (
+                <a
+                  href="#contact"
+                  className="gradient-navy inline-flex items-center gap-2 rounded-[10px] px-6 py-3 font-medium text-white transition-all duration-300 hover:scale-[1.02] hover:opacity-90"
+                >
+                  {ctaText}
+                  <ArrowRight size={18} />
+                </a>
+              )}
               <button
                 type="button"
                 onClick={() => setAreasOpen(true)}
@@ -164,15 +169,17 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <Phone size={18} className="mt-0.5 flex-shrink-0 text-navy" />
-                <p className="text-sm text-navy/80 md:text-base">
-                  <span className="font-medium text-navy">{phoneLabel} </span>
-                  <a href={phoneHref} className="transition-colors hover:text-ocean">
-                    {phone}
-                  </a>
-                </p>
-              </div>
+              {phone && (
+                <div className="flex items-start gap-3">
+                  <Phone size={18} className="mt-0.5 flex-shrink-0 text-navy" />
+                  <p className="text-sm text-navy/80 md:text-base">
+                    <span className="font-medium text-navy">{phoneLabel} </span>
+                    <a href={phoneHref} className="transition-colors hover:text-ocean">
+                      {phone}
+                    </a>
+                  </p>
+                </div>
+              )}
 
               <div className="flex items-start gap-3">
                 <Mail size={18} className="mt-0.5 flex-shrink-0 text-navy" />
@@ -187,15 +194,17 @@ export default function ContactInfoMap({ content }: { content: Record<string, an
                 </p>
               </div>
 
-              <div className="flex items-start gap-3 border-t border-navy/15 pt-2">
-                <Clock size={18} className="mt-3 flex-shrink-0 text-navy" />
-                <div className="pt-2 text-sm text-navy/80 md:text-base">
-                  <p className="font-medium text-navy">{hoursLabel}</p>
-                  <p>{hoursLine1}</p>
-                  <p>{hoursLine2}</p>
-                  <p>{hoursLine3}</p>
+              {(hoursLine1 || hoursLine2 || hoursLine3) && (
+                <div className="flex items-start gap-3 border-t border-navy/15 pt-2">
+                  <Clock size={18} className="mt-3 flex-shrink-0 text-navy" />
+                  <div className="pt-2 text-sm text-navy/80 md:text-base">
+                    <p className="font-medium text-navy">{hoursLabel}</p>
+                    {hoursLine1 && <p>{hoursLine1}</p>}
+                    {hoursLine2 && <p>{hoursLine2}</p>}
+                    {hoursLine3 && <p>{hoursLine3}</p>}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
 

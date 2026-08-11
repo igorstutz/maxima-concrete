@@ -9,7 +9,10 @@ backend:
     update: "content: update {{collection}} \"{{slug}}\" (via CMS)"
     uploadMedia: "content: upload {{path}} (via CMS)"
     deleteMedia: "content: delete {{path}} (via CMS)"
+local_backend: true
 site_url: "https://maximaconcrete.com"
+logo_url: /images/logo/maxima-cms-mark.png
+app_title: "Maxima Concrete"
 media_folder: public/images
 public_folder: /images
 collections:
@@ -1510,10 +1513,6 @@ collections:
                         required: false
                         widget: list
                         fields:
-                          - name: icon
-                            label: icon
-                            required: false
-                            widget: string
                           - name: title
                             label: title
                             required: false
@@ -5241,6 +5240,46 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
+              - label: contact-choice
+                name: contact-choice
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: phoneLabel
+                        label: phoneLabel
+                        required: false
+                        widget: string
+                      - name: formLabel
+                        label: formLabel
+                        required: false
+                        widget: string
+                      - name: formBadge
+                        label: formBadge
+                        required: false
+                        widget: string
+                      - name: stickyLabel
+                        label: stickyLabel
+                        required: false
+                        widget: string
               - label: contact-info-map
                 name: contact-info-map
                 widget: object
@@ -5259,14 +5298,6 @@ collections:
                     fields:
                       - name: email
                         label: email
-                        required: false
-                        widget: string
-                      - name: intro
-                        label: intro
-                        required: false
-                        widget: string
-                      - name: phone
-                        label: phone
                         required: false
                         widget: string
                       - name: title
@@ -5297,20 +5328,12 @@ collections:
                         label: hoursLine3
                         required: false
                         widget: string
-                      - name: phoneLabel
-                        label: phoneLabel
-                        required: false
-                        widget: string
                       - name: twitterUrl
                         label: twitterUrl
                         required: false
                         widget: string
                       - name: youtubeUrl
                         label: youtubeUrl
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
                         required: false
                         widget: string
                       - name: facebookUrl
@@ -5339,6 +5362,42 @@ collections:
                         widget: string
                       - name: instagramUrl
                         label: instagramUrl
+                        required: false
+                        widget: string
+              - label: contact-phone
+                name: contact-phone
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: phone
+                        label: phone
+                        required: false
+                        widget: string
+                      - name: message
+                        label: message
+                        required: false
+                        widget: string
+                      - name: hours
+                        label: hours
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: eyebrow
+                        label: eyebrow
                         required: false
                         widget: string
               - label: faq
@@ -7469,6 +7528,465 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+      - name: financing_page
+        label: Financing
+        file: src/content/pages/financing_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: financing-faq
+                name: financing-faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: dividerLabel
+                        label: dividerLabel
+                        required: false
+                        widget: string
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+                      - name: footerText
+                        label: footerText
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+              - label: financing-hero
+                name: financing-hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: badge
+                        label: badge
+                        required: false
+                        widget: string
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: phone
+                        label: phone
+                        required: false
+                        widget: string
+                      - name: phoneHref
+                        label: phoneHref
+                        required: false
+                        widget: string
+                      - name: trustItems
+                        label: trustItems
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: cardBadge
+                        label: cardBadge
+                        required: false
+                        widget: string
+                      - name: cardLabel
+                        label: cardLabel
+                        required: false
+                        widget: string
+                      - name: cardAmount
+                        label: cardAmount
+                        required: false
+                        widget: string
+                      - name: cardAmountSuffix
+                        label: cardAmountSuffix
+                        required: false
+                        widget: string
+                      - name: cardNote
+                        label: cardNote
+                        required: false
+                        widget: string
+                      - name: cardStats
+                        label: cardStats
+                        required: false
+                        widget: list
+                        fields:
+                          - name: label
+                            label: label
+                            required: false
+                            widget: string
+                          - name: value
+                            label: value
+                            required: false
+                            widget: string
+                      - name: cardCtaText
+                        label: cardCtaText
+                        required: false
+                        widget: string
+              - label: financing-highlights
+                name: financing-highlights
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: tileBadge
+                        label: tileBadge
+                        required: false
+                        widget: string
+                      - name: tileAmount
+                        label: tileAmount
+                        required: false
+                        widget: string
+                      - name: tileAmountSuffix
+                        label: tileAmountSuffix
+                        required: false
+                        widget: string
+                      - name: tileText
+                        label: tileText
+                        required: false
+                        widget: string
+                      - name: tileStats
+                        label: tileStats
+                        required: false
+                        widget: list
+                        fields:
+                          - name: label
+                            label: label
+                            required: false
+                            widget: string
+                          - name: value
+                            label: value
+                            required: false
+                            widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: string
+                      - name: guarantees
+                        label: guarantees
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+              - label: financing-partners
+                name: financing-partners
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: name
+                            label: name
+                            required: false
+                            widget: string
+                          - name: logo
+                            label: logo
+                            required: false
+                            widget: string
+                          - name: tagline
+                            label: tagline
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: facts
+                            label: facts
+                            required: false
+                            widget: list
+                            fields:
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                              - name: value
+                                label: value
+                                required: false
+                                widget: string
+                          - name: ctaLabel
+                            label: ctaLabel
+                            required: false
+                            widget: string
+                          - name: partner
+                            label: partner
+                            required: false
+                            widget: string
+              - label: financing-quote
+                name: financing-quote
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: dividerLabel
+                        label: dividerLabel
+                        required: false
+                        widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: imageAlt
+                        label: imageAlt
+                        required: false
+                        widget: string
+                      - name: rating
+                        label: rating
+                        required: false
+                        widget: string
+                      - name: verifiedLabel
+                        label: verifiedLabel
+                        required: false
+                        widget: string
+                      - name: customerName
+                        label: customerName
+                        required: false
+                        widget: string
+                      - name: customerCity
+                        label: customerCity
+                        required: false
+                        widget: string
+                      - name: receiptLabel
+                        label: receiptLabel
+                        required: false
+                        widget: string
+                      - name: receiptAmount
+                        label: receiptAmount
+                        required: false
+                        widget: string
+                      - name: receiptSuffix
+                        label: receiptSuffix
+                        required: false
+                        widget: string
+                      - name: receiptNote
+                        label: receiptNote
+                        required: false
+                        widget: string
+                      - name: receiptApproved
+                        label: receiptApproved
+                        required: false
+                        widget: string
+                      - name: quotePart1
+                        label: quotePart1
+                        required: false
+                        widget: string
+                      - name: quoteHighlight
+                        label: quoteHighlight
+                        required: false
+                        widget: string
+                      - name: quotePart2
+                        label: quotePart2
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: authorInitial
+                        label: authorInitial
+                        required: false
+                        widget: string
+                      - name: authorName
+                        label: authorName
+                        required: false
+                        widget: string
+                      - name: authorNote
+                        label: authorNote
+                        required: false
+                        widget: string
+              - label: financing-steps
+                name: financing-steps
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: string
       - name: finishes_page
         label: Finishes
         file: src/content/pages/finishes_page.json
@@ -14601,6 +15119,426 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+      - name: galleryfirepitsfireplaces_page
+        label: Galleryfirepitsfireplaces
+        file: src/content/pages/galleryfirepitsfireplaces_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: contact
+                name: contact
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: nameSectionLabel
+                        label: nameSectionLabel
+                        required: false
+                        widget: string
+              - label: find-work
+                name: find-work
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: mapZoom
+                        label: mapZoom
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: mapCenter
+                        label: mapCenter
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: hero-minimal
+                name: hero-minimal
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: backLink
+                        label: backLink
+                        required: false
+                        widget: string
+                      - name: backLabel
+                        label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: image
+                        choose_url: true
+              - label: inspiration-gallery
+                name: inspiration-gallery
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: more-than-concrete
+                name: more-than-concrete
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: projects-grid
+                name: projects-grid
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: imageTypes
+                        label: imageTypes
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: reviews
+                name: reviews
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: profileUrl
+                        label: profileUrl
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: viewAllText
+                        label: viewAllText
+                        required: false
+                        widget: string
+              - label: trust-global
+                name: trust-global
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: projectsText
+                        label: projectsText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
       - name: gallerygaragebarn_page
         label: Gallerygaragebarn
         file: src/content/pages/gallerygaragebarn_page.json
@@ -14686,6 +15624,426 @@ collections:
                         widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: find-work
+                name: find-work
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: mapZoom
+                        label: mapZoom
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: mapCenter
+                        label: mapCenter
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: hero-minimal
+                name: hero-minimal
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: backLink
+                        label: backLink
+                        required: false
+                        widget: string
+                      - name: backLabel
+                        label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: image
+                        choose_url: true
+              - label: inspiration-gallery
+                name: inspiration-gallery
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: more-than-concrete
+                name: more-than-concrete
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: projects-grid
+                name: projects-grid
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: imageTypes
+                        label: imageTypes
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: reviews
+                name: reviews
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: profileUrl
+                        label: profileUrl
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: viewAllText
+                        label: viewAllText
+                        required: false
+                        widget: string
+              - label: trust-global
+                name: trust-global
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: projectsText
+                        label: projectsText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+      - name: galleryoutdoorlivingkitchen_page
+        label: Galleryoutdoorlivingkitchen
+        file: src/content/pages/galleryoutdoorlivingkitchen_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: contact
+                name: contact
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: nameSectionLabel
+                        label: nameSectionLabel
                         required: false
                         widget: string
               - label: find-work
@@ -16514,6 +17872,426 @@ collections:
                         widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: find-work
+                name: find-work
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: mapZoom
+                        label: mapZoom
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: text
+                      - name: mapCenter
+                        label: mapCenter
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: hero-minimal
+                name: hero-minimal
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: overlayGradient
+                        label: overlayGradient
+                        required: false
+                        widget: boolean
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: backLink
+                        label: backLink
+                        required: false
+                        widget: string
+                      - name: backLabel
+                        label: backLabel
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: backgroundImageMobile
+                        label: backgroundImageMobile
+                        required: false
+                        widget: image
+                        choose_url: true
+              - label: inspiration-gallery
+                name: inspiration-gallery
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: more-than-concrete
+                name: more-than-concrete
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+              - label: projects-grid
+                name: projects-grid
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: imageTypes
+                        label: imageTypes
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: paverImages
+                        label: paverImages
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+              - label: reviews
+                name: reviews
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: profileUrl
+                        label: profileUrl
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: viewAllText
+                        label: viewAllText
+                        required: false
+                        widget: string
+              - label: trust-global
+                name: trust-global
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: projectsText
+                        label: projectsText
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+      - name: galleryretainingcitywalls_page
+        label: Galleryretainingcitywalls
+        file: src/content/pages/galleryretainingcitywalls_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: contact
+                name: contact
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: nameSectionLabel
+                        label: nameSectionLabel
                         required: false
                         widget: string
               - label: find-work
@@ -18794,6 +20572,350 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+      - name: licensinginsured_page
+        label: Licensinginsured
+        file: src/content/pages/licensinginsured_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: licensing-credentials
+                name: licensing-credentials
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: cardBadge
+                        label: cardBadge
+                        required: false
+                        widget: string
+                      - name: cardNumber
+                        label: cardNumber
+                        required: false
+                        widget: string
+                      - name: cardNumberSuffix
+                        label: cardNumberSuffix
+                        required: false
+                        widget: string
+                      - name: cardTitle
+                        label: cardTitle
+                        required: false
+                        widget: string
+                      - name: cardDescription
+                        label: cardDescription
+                        required: false
+                        widget: string
+                      - name: cardStats
+                        label: cardStats
+                        required: false
+                        widget: list
+                        fields:
+                          - name: value
+                            label: value
+                            required: false
+                            widget: string
+                          - name: label
+                            label: label
+                            required: false
+                            widget: string
+                      - name: verifiableLabel
+                        label: verifiableLabel
+                        required: false
+                        widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: text
+              - label: licensing-faq
+                name: licensing-faq
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: badge
+                        label: badge
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: question
+                            label: question
+                            required: false
+                            widget: string
+                          - name: answer
+                            label: answer
+                            required: false
+                            widget: text
+              - label: licensing-feature
+                name: licensing-feature
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: imageAlt
+                        label: imageAlt
+                        required: false
+                        widget: string
+                      - name: stampLine1
+                        label: stampLine1
+                        required: false
+                        widget: string
+                      - name: stampLine2
+                        label: stampLine2
+                        required: false
+                        widget: string
+                      - name: issuedLabel
+                        label: issuedLabel
+                        required: false
+                        widget: string
+                      - name: companyName
+                        label: companyName
+                        required: false
+                        widget: string
+                      - name: licenseLabel
+                        label: licenseLabel
+                        required: false
+                        widget: string
+                      - name: licenseNumber
+                        label: licenseNumber
+                        required: false
+                        widget: string
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: teamNoteLine1
+                        label: teamNoteLine1
+                        required: false
+                        widget: string
+                      - name: teamNoteLine2
+                        label: teamNoteLine2
+                        required: false
+                        widget: string
+              - label: licensing-hero
+                name: licensing-hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: badge
+                        label: badge
+                        required: false
+                        widget: string
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: phone
+                        label: phone
+                        required: false
+                        widget: string
+                      - name: phoneHref
+                        label: phoneHref
+                        required: false
+                        widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: imageAlt
+                        label: imageAlt
+                        required: false
+                        widget: string
+              - label: licensing-protection
+                name: licensing-protection
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: string
+                      - name: alsoIncludedLabel
+                        label: alsoIncludedLabel
+                        required: false
+                        widget: string
+                      - name: alsoIncluded
+                        label: alsoIncluded
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
       - name: outdoorkitchens_page
         label: Outdoorkitchens
         file: src/content/pages/outdoorkitchens_page.json
@@ -25611,6 +27733,104 @@ collections:
                         label: bottomText
                         required: false
                         widget: text
+      - name: reviews_page
+        label: Reviews
+        file: src/content/pages/reviews_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: reviews-hero
+                name: reviews-hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: breadcrumbLabel
+                        label: breadcrumbLabel
+                        required: false
+                        widget: string
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: titleLine2
+                        label: titleLine2
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: ratingLabel
+                        label: ratingLabel
+                        required: false
+                        widget: string
+                      - name: reviewsLabel
+                        label: reviewsLabel
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+              - label: reviews-testimonials
+                name: reviews-testimonials
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: summary
+                        label: summary
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaButtonText
+                        label: ctaButtonText
+                        required: false
+                        widget: string
+                      - name: ctaButtonLink
+                        label: ctaButtonLink
+                        required: false
+                        widget: string
       - name: seatingwalls_page
         label: Seatingwalls
         file: src/content/pages/seatingwalls_page.json
@@ -30268,6 +32488,73 @@ collections:
                 widget: image
                 required: false
                 choose_url: true
+      - name: blog_posts
+        label: "Blog — posts"
+        file: src/content/data/blog-posts.json
+        fields:
+          - name: posts
+            label: Posts
+            widget: list
+            root: true
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: slug
+                label: "Slug (URL, sem barras)"
+                widget: string
+              - name: excerpt
+                label: "Excerpt (resumo na listagem)"
+                widget: text
+              - name: date
+                label: "Date (AAAA-MM-DD)"
+                widget: string
+              - name: author
+                label: Author
+                widget: string
+                required: false
+              - name: readingMinutes
+                label: "Tempo de leitura (min)"
+                widget: number
+                value_type: int
+                min: 1
+                required: false
+              - name: image
+                label: "Cover image"
+                widget: image
+                choose_url: true
+                required: false
+              - name: body
+                label: Body
+                label_singular: block
+                widget: list
+                typeKey: type
+                types:
+                  - name: p
+                    label: Paragraph
+                    widget: object
+                    fields:
+                      - name: text
+                        label: Text
+                        widget: text
+                  - name: h2
+                    label: "Subtitle (H2)"
+                    widget: object
+                    fields:
+                      - name: text
+                        label: Text
+                        widget: string
+                  - name: ul
+                    label: "Bullet list"
+                    widget: object
+                    fields:
+                      - name: items
+                        label: Items
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
       - name: reviews_settings
         label: "Reviews — números do Google"
         file: src/content/settings/reviews.json

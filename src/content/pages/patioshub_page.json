@@ -13,8 +13,8 @@
         "ctaLink": "#contact",
         "secondaryCtaText": "Find Our Work Near You",
         "secondaryCtaLink": "/project-map",
-        "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.jpg",
-        "backgroundImageMobile": "/images/cms/hub/patioshub_hero_mobile.jpg"
+        "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.webp",
+        "backgroundImageMobile": "/images/cms/hub/patioshub_hero_mobile.webp"
       }
     },
     {
@@ -25,11 +25,11 @@
         "title": "A Patio That Redefines\nOutdoor Living",
         "ctaLink": "#contact",
         "ctaText": "Inspired? Request your Free Estimate now!",
-        "imageTop": "/images/cms/hub/patioshub_intro_top.jpg",
+        "imageTop": "/images/cms/hub/patioshub_intro_top.webp",
         "leadText": "With over 1,000 patios installed, Maxima Concrete transforms ordinary backyards into beautiful, functional outdoor spaces.",
         "paragraph1": "We work with you from concept to completion, designing and building a patio that fits your lifestyle and complements your home. Using premium materials, proven installation methods, and expert craftsmanship, we create patios that are built to last and made to enjoy for years.",
         "paragraph2": "Every patio is engineered for long-term performance with proper site preparation, quality materials, and precision installation. Whether you’re creating a space for entertaining, relaxing, or spending time with family, our team delivers a custom outdoor living area that adds lasting value, beauty, and functionality to your home.",
-        "imageBottom": "/images/cms/hub/patioshub_intro_bottom.jpg"
+        "imageBottom": "/images/cms/hub/patioshub_intro_bottom.webp"
       }
     },
     {
@@ -40,14 +40,14 @@
         "title": "Two Ways to Build Your\nPerfect Patio",
         "options": [
           {
-            "image": "/images/cms/hub/patioshub_option_concrete.jpg",
+            "image": "/images/cms/hub/patioshub_option_concrete.webp",
             "title": "Concrete Patios",
             "ctaLink": "/services/patios/patios-concrete",
             "ctaText": "Explore Concrete Patios",
             "description": "Clean, durable, and endlessly customizable. From broom finishes to stamped and colored designs, concrete delivers strength that lasts for decades."
           },
           {
-            "image": "/images/cms/hub/patioshub_option_paver.jpg",
+            "image": "/images/cms/hub/patioshub_option_paver.webp",
             "title": "Paver Patios",
             "ctaLink": "/services/patios/patios-paver",
             "ctaText": "Explore Paver Patios",
@@ -69,7 +69,7 @@
         "paragraphs": [
           "Create an outdoor space that’s built to last and designed to impress. Maxima Concrete installs custom paver patios using premium materials, expert craftsmanship, and proven installation techniques. Whether you’re creating a space for entertaining or relaxing, we’ll build a patio that enhances your home’s beauty, functionality, and value."
         ],
-        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.jpg",
+        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp",
         "taglineDescription": "Upgrade your patio with a surface that performs as beautifully as it looks."
       }
     },
@@ -103,7 +103,7 @@
         "title": "Engineered for Durability",
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.jpg"
+        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.webp"
       }
     },
     {
@@ -164,7 +164,7 @@
         "ctaText": "Contact Us",
         "eyebrow": "by Maxima Concrete",
         "description": "At Maxima Concrete, we don't compromise on quality. Our patios are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
-        "backgroundImage": "/images/cms/hub/patioshub_whymaxima_bg.jpg"
+        "backgroundImage": "/images/cms/hub/patioshub_whymaxima_bg.webp"
       }
     },
     {
