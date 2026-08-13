@@ -2,51 +2,59 @@
   "pageKey": "home",
   "sections": [
     {
+      "type": "hero",
       "key": "hero",
       "label": "Hero",
-      "type": "hero",
       "content": {
-        "title": "Your Vision. Our Expertise. Exceptional Results.",
-        "ctaLink": "/contact-us",
+        "title": "Your Vision. Our Expertise. Exceptional Results..",
         "ctaText": "Get Your Free Estimate!",
         "subtitle": "Beautiful Outdoor Spaces Start Here!\nPremium Concrete, Paver & Stone Solutions Built to Last.",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "tagline": "",
         "backgroundImage": "/assets/hero-background-DbZPbLNr.jpg",
         "secondaryCtaLink": "/project-map",
         "secondaryCtaText": "Find Our Work Near You!",
-        "backgroundImageMobile": "/images/cms/uploads/1771987267398-vbp5kh-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1771987267398-vbp5kh-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "why-maxima",
       "key": "why_maxima",
       "label": "Why Maxima",
-      "type": "why-maxima",
       "content": {
-        "ctaLink": "/why-maxima",
         "ctaText": "Why Maxima Concrete?",
-        "tagline": "Built with Expertise. Finished with Excellence. Maxima Concrete.",
-        "benefit1": "100+Years of Combined Experience",
-        "benefit2": "Fully Licensed, Bonded and Insured ",
-        "benefit3": "Expert In-House Team",
-        "mainImage": "/images/cms/uploads/1766260199815-jhga35.webp",
-        "description1": "Maxima Concrete is a locally owned, licensed, bonded, insured, and registered contractor serving Central Ohio. We specialize in custom concrete, pavers, natural stone, and outdoor living spaces, delivering quality craftsmanship and lasting results that enhance your home or business.",
-        "description2": "Choose Right. Choose Maxima Concrete.",
-        "questionTitle": "What sets Maxima Concrete apart?",
         "images": [
           "/images/cms/uploads/1766260199815-jhga35.webp",
           "/images/cms/uploads/1772675743580-grztir.webp",
           "/images/cms/uploads/1772675764399-c8f59.webp"
-        ]
+        ],
+        "ctaLink": "/why-maxima",
+        "tagline": "Built with Expertise. Finished with Excellence. Maxima Concrete.",
+        "benefit1": "100+Years of Combined Experience",
+        "benefit2": "Fully Licensed, Bonded and Insured",
+        "benefit3": "Expert In-House Team",
+        "mainImage": "/images/cms/uploads/1766260199815-jhga35.webp",
+        "description1": "Maxima Concrete is a locally owned, licensed, bonded, insured, and registered contractor serving Central Ohio. We specialize in custom concrete, pavers, natural stone, and outdoor living spaces, delivering quality craftsmanship and lasting results that enhance your home or business.",
+        "description2": "Choose Right. Choose Maxima Concrete.",
+        "questionTitle": "What sets Maxima Concrete apart?"
       }
     },
     {
+      "type": "services",
       "key": "services",
       "label": "Services",
-      "type": "services",
       "content": {
+        "ctaText": "Get your free estimate!",
+        "ctaLink": "/contact-us",
+        "description": "From durable foundations to stunning finishes, we deliver complete construction and hardscaping solutions for homes, businesses, and outdoor living spaces.",
         "items": [
           {
             "link": "/services/driveways/driveways-concrete",
-            "name": "Driveways l Concrete ",
+            "name": "Driveways l Concrete",
             "image": "/images/cms/uploads/1782418764534-lilnfu.webp"
           },
           {
@@ -111,7 +119,7 @@
           },
           {
             "link": "/services/outdoor-lighting",
-            "name": "Outdoor Lighting ",
+            "name": "Outdoor Lighting",
             "image": "/images/cms/uploads/1782483966243-jk99q.webp"
           },
           {
@@ -121,7 +129,7 @@
           },
           {
             "link": "/services/seating-walls",
-            "name": "Seating Walls ",
+            "name": "Seating Walls",
             "image": "/images/cms/uploads/1782484174171-6sdgu.webp"
           },
           {
@@ -150,20 +158,18 @@
             "image": "/images/cms/uploads/1782829745840-qddfwo.webp"
           }
         ],
-        "ctaLink": "/contact-us",
-        "ctaText": "Get your free estimate!",
         "heading": "Quality. Craftsmanship. Stunning Results.",
         "titleGray": "and discover the custom solutions we can create for your home or business.",
-        "titleWhite": "Browse our services",
-        "description": "From durable foundations to stunning finishes, we deliver complete construction and hardscaping solutions for homes, businesses, and outdoor living spaces."
+        "titleWhite": "Browse our services"
       }
     },
     {
+      "type": "gallery",
       "key": "gallery",
       "label": "Gallery",
-      "type": "gallery",
       "content": {
         "title": "Gallery",
+        "ctaText": "Explore our gallery",
         "images": [
           "/images/cms/uploads/1780932767066-qva86k.webp",
           "/images/cms/uploads/1780932749042-fszq3.webp",
@@ -185,93 +191,93 @@
           "/images/cms/uploads/1782829794898-r3zxn.webp"
         ],
         "ctaLink": "/gallery",
-        "ctaText": "Explore our gallery",
         "description": "Explore our completed projects and experience the precision, craftsmanship, and attention to detail we bring to every concrete, paver, and outdoor living space. More than just construction, we transform our clients’ visions into beautifully designed spaces built to last."
       }
     },
     {
+      "type": "pool-decks",
       "key": "pool_decks",
       "label": "Pool Decks",
-      "type": "pool-decks",
       "content": {
         "title": "Pool Decks & Surrounds",
-        "ctaLink": "/services/pool-decks-surrounds",
         "ctaText": "Explore Pool Decks Page",
-        "cta2Link": "https://maximapools.com/",
-        "cta2Text": "Visit Maxima Pools Website",
-        "videoUrl": "/videos/pool-decks.mp4",
+        "ctaLink": "/services/pool-decks-surrounds",
         "description": "Beautiful, functional, and slip-resistant pool decks crafted from decorative concrete and pavers to complement your pool perfectly.",
-        "backgroundImage": ""
+        "backgroundImage": "",
+        "videoUrl": "/videos/pool-decks.mp4",
+        "cta2Link": "https://maximapools.com/",
+        "cta2Text": "Visit Maxima Pools Website"
       }
     },
     {
+      "type": "driveways",
       "key": "driveways",
       "label": "Driveways",
-      "type": "driveways",
       "content": {
-        "label": "Driveways",
         "title": "Make Every Arrival Feel Like Home",
+        "ctaText": "Learn more",
+        "label": "Driveways",
         "images": [
           "/images/cms/uploads/1782829843244-fd9yca.webp",
           "/images/cms/uploads/1781096504594-828gde.webp",
           "/images/cms/uploads/1782829834121-tay59.webp"
         ],
         "ctaLink": "/services/driveways",
-        "ctaText": "Learn more",
         "description": "Upgrade your home's curb appeal with a durable, high-quality concrete driveway from Maxima Concrete. Built with 6.5-bag fiber-reinforced concrete and wire mesh, our driveways are made for strength, durability, and lasting performance. From preparation to installation, we deliver a clean, low-maintenance driveway that adds value to your property."
       }
     },
     {
+      "type": "patios",
       "key": "patios",
       "label": "Patios",
-      "type": "patios",
       "content": {
-        "label": "Patios",
         "title": "Where Style Meets the Outdoors",
+        "ctaText": "Learn More",
+        "label": "Patios",
         "images": [
           "/images/cms/uploads/1784047095848-frwu8f.webp",
           "/images/cms/uploads/1784047071534-2kjna.webp"
         ],
         "ctaLink": "/services/patios",
-        "ctaText": "Learn More",
         "description": "Transform your backyard with a custom patio from Maxima Concrete. Built with durable materials and expert craftsmanship, our patios are designed to last. Choose from broom-finished, stamped, colored, exposed aggregate, buff wash or pavers finishes. From design to installation, we create beautiful, low-maintenance outdoor spaces perfect for relaxing and entertaining."
       }
     },
     {
+      "type": "outdoor-living",
       "key": "outdoor_living",
       "label": "Outdoor Living",
-      "type": "outdoor-living",
       "content": {
-        "label": "Outdoor Living Spaces",
         "title": "Transform Your Backyard Into a Functional and Elegant Retreat",
+        "ctaText": "Explore more!",
+        "label": "Outdoor Living Spaces",
         "images": [
           "/images/cms/uploads/1784046866164-gbz4hj.webp",
           "/images/cms/uploads/1784046889896-l5jms5.webp",
           "/images/cms/uploads/1784047814576-9ol3l.webp"
         ],
         "ctaLink": "/services/outdoor-living",
-        "ctaText": "Explore more! ",
         "description": "Create the perfect outdoor living space with Maxima Concrete. We design and build custom patios, outdoor kitchens, fire features, pergolas, pavilions, lighting, and entertainment areas. Our team handles every step, from design to installation, delivering beautiful, durable, and functional spaces tailored to your lifestyle."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "recent-projects",
       "key": "recent_projects",
       "label": "Recent Projects",
-      "type": "recent-projects",
       "content": {
         "title": "Recent Projects",
+        "ctaText": "Start your project today",
         "images": [
           "/images/cms/uploads/1782830003604-v1gfc.webp",
           "/images/cms/uploads/1782830069409-dvvxak.webp",
@@ -285,15 +291,19 @@
           "/images/cms/uploads/1784047258872-lrm4et.webp"
         ],
         "ctaLink": "/contact-us",
-        "ctaText": "Start your project today",
         "description": "Explore our latest concrete projects across Central Ohio and see the craftsmanship that defines Maxima Concrete."
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -303,7 +313,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n"
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality."
           },
           {
             "icon": "shield",
@@ -316,43 +326,43 @@
             "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "contact",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let’s Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability. Schedule your consultation today and take the first step toward transforming your outdoor space.",
+        "_sourceLabel": "",
         "nameSectionLabel": ""
       }
     },
     {
+      "type": "faq",
       "key": "custom_home_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Maxima Concrete",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What services does Maxima Concrete offer?",
@@ -374,25 +384,24 @@
             "question": "Do you offer financing?",
             "answer": "Yes. We offer flexible financing options to help make your project affordable."
           }
-        ],
-        "title": "FAQ — Maxima Concrete",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
         "titlePart2": "— On Instagram"
       }
     },
     {
+      "type": "footer",
       "key": "footer",
       "label": "Footer",
-      "type": "footer",
       "content": {
         "phone": "(614) 384-5917",
         "copyright": "© 2025 | All Rights Reserved Maxima Concrete LLC",
