@@ -28,17 +28,9 @@ interface NavItem {
 const navItems = navigation.items as NavItem[];
 const { logo, phone, email, social, cta } = navigation;
 
+/** Gradiente ocean → navy dos botões do site (mesmo de `.gradient-navy`). */
 const btnStyle = {
   background: "linear-gradient(90deg, #0D5D93 0%, #041C2D 100%)",
-};
-
-/**
- * CTA do menu. Recorte do gradiente azul da marca (#1e90ff → #003b8b) num
- * ponto claro o bastante para destacar dos botões navy ao redor e ainda
- * manter contraste AA (4.7:1) com o texto branco.
- */
-const ctaStyle = {
-  background: "linear-gradient(90deg, #0B74D6 0%, #003B8B 100%)",
 };
 
 /** Normalizes trailing slashes so active-state works with trailingSlash: true. */
@@ -108,7 +100,7 @@ const Navigation = () => {
               href={cta.href}
               onClick={closeMobileMenu}
               className="rounded-lg px-3 py-2.5 text-xs font-semibold text-white shadow-sm transition-all active:scale-[0.98]"
-              style={ctaStyle}
+              style={btnStyle}
             >
               {cta.label}
             </Link>
@@ -211,7 +203,7 @@ const Navigation = () => {
               href={cta.href}
               onClick={closeMobileMenu}
               className="mb-2.5 w-full py-3 flex items-center justify-center gap-1.5 text-sm font-semibold text-white rounded-lg border border-white/25 shadow-md transition-all hover:brightness-110 active:scale-[0.98]"
-              style={ctaStyle}
+              style={btnStyle}
             >
               {cta.label}
               <ArrowUpRight className="h-4 w-4" />
@@ -290,7 +282,7 @@ const Navigation = () => {
           <Link
             href={cta.href}
             className="flex items-center justify-center gap-1 text-[13px] font-semibold text-white shadow-sm transition-all hover:brightness-110"
-            style={{ width: "150px", height: "38px", borderRadius: "4px", ...ctaStyle }}
+            style={{ width: "150px", height: "38px", borderRadius: "4px", ...btnStyle }}
           >
             {cta.label}
             <ArrowUpRight className="h-4 w-4" />
@@ -410,7 +402,7 @@ const Navigation = () => {
         <Link
           href={cta.href}
           className="flex items-center justify-center gap-1.5 text-sm font-semibold text-white shadow-md transition-all hover:brightness-110"
-          style={{ width: "150px", height: "42px", borderRadius: "4px", ...ctaStyle }}
+          style={{ width: "150px", height: "42px", borderRadius: "4px", ...btnStyle }}
         >
           {cta.label}
           <ArrowUpRight className="h-4 w-4" />
