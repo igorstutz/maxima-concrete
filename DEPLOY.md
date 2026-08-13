@@ -70,7 +70,10 @@ Como está montado na VPS (`187.77.251.75`):
   na internet diretamente).
 - `/opt/maximaconcrete/site/` — docroot, alvo do rsync. Dono: `maximadeploy`.
 - `/opt/maximaconcrete/site/.private/` — volume separado (uid 33/www-data) com
-  `oauth-config.php` e `submissions.log`. O rsync exclui `/.private/`.
+  `oauth-config.php`, `submissions.log` e `mail-outbox.log`. O rsync exclui
+  `/.private/`. Aqui a pasta fica **dentro** do docroot, então o Apache do
+  container nega `/.private` explicitamente (`Require all denied`) — sem isso
+  os leads ficariam públicos.
 - Túnel `maxima` (`cloudflared-maxima.service`) → `maximaconcrete.igorstutz.online`.
   HTTPS é do Cloudflare; não há porta 80/443 aberta na VPS.
 - `X-Robots-Tag: noindex, nofollow` em todo o host (conf do Apache) — homologação
@@ -84,9 +87,11 @@ Como está montado na VPS (`187.77.251.75`):
 Operação: `docker compose {ps,restart,logs}` em `/opt/maximaconcrete`,
 `systemctl {status,restart} cloudflared-maxima`.
 
-> `mail()` não funciona na VPS (sem MTA): na homologação o formulário grava em
-> `/.private/submissions.log`, que é o que valida o envio. O e-mail real só é
-> testável na Hostinger.
+> `mail()` não funciona na VPS (não há MTA). Em vez de o formulário falhar, o
+> `sendmail_path` aponta para `fake-sendmail`, que grava o e-mail que seria
+> enviado em `/.private/mail-outbox.log` — o site responde sucesso e dá para
+> conferir destinatário, assunto e corpo. Cada envio também entra em
+> `/.private/submissions.log`. O envio real só é testável na Hostinger.
 
 ## 3. OAuth do painel (uma vez por host)
 
@@ -111,7 +116,10 @@ return [
 ];
 ```
 
-3. Criar também `public_html/.private/.htaccess` com `Require all denied`.
+3. Na Hostinger, criar também `public_html/.private/.htaccess` com
+   `Require all denied` — **obrigatório**: a pasta fica dentro do docroot e sem
+   isso `submissions.log` (leads) fica acessível pela web. Na VPS o bloqueio já
+   está na configuração do Apache do container.
 
 O rsync do deploy **exclui** apenas `/.private/` — os segredos do servidor nunca são
 sobrescritos. Os PHPs de `/api/` (submit e oauth) não contêm segredos e são publicados
