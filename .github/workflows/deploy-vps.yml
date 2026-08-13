@@ -1,0 +1,52 @@
+name: Deploy to VPS (homologação)
+
+# Publica o mesmo build da produção em maximaconcrete.igorstutz.online
+# (VPS Hostinger, container Apache+PHP exposto por Cloudflare Tunnel).
+# É lá que o painel do CMS é usado antes de o domínio real entrar no ar:
+# o GitHub Pages não executa PHP, então o login OAuth não funciona por lá.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-vps
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build static export (root-domain build, no basePath)
+        run: npm run build
+
+      # O config.yml versionado aponta para produção; na homologação o
+      # base_url precisa ser o host de lá, senão o GitHub recusa o
+      # redirect_uri do OAuth.
+      - name: Point CMS panel to the staging host
+        run: node _extraction/set-cms-host.mjs https://maximaconcrete.igorstutz.online
+
+      # EXCLUDE: /.private/ não é enviado NEM apagado — é onde vivem o
+      # oauth-config.php e o submissions.log do servidor.
+      - name: Deploy to VPS
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_SSH_USER }}
+          REMOTE_PORT: "22"
+          SOURCE: "out/"
+          TARGET: "/opt/maximaconcrete/site/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"

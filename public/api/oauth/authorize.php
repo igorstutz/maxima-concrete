@@ -8,9 +8,12 @@ declare(strict_types=1);
  *  GitHub. client_id/secret vivem SOMENTE em /.private/oauth-config.php
  *  no servidor (nunca no repositório público).
  *
- *  A "Authorization callback URL" do OAuth App do GitHub deve ser:
- *      https://maximaconcrete.com/api/oauth/callback.php
+ *  A "Authorization callback URL" do OAuth App do GitHub deve ser o
+ *  callback.php do host em que o painel está sendo aberto — ver
+ *  redirect-uri.php.
  * ---------------------------------------------------------------------- */
+
+require __DIR__ . '/redirect-uri.php';
 
 $cfg = @include __DIR__ . '/../../.private/oauth-config.php';
 if (!is_array($cfg) || empty($cfg['client_id'])) {
@@ -28,7 +31,7 @@ $_SESSION['oauth_state'] = $state;
 
 $params = http_build_query([
     'client_id'    => $cfg['client_id'],
-    'redirect_uri' => 'https://maximaconcrete.com/api/oauth/callback.php',
+    'redirect_uri' => maxima_oauth_redirect_uri(),
     'scope'        => $cfg['scope'] ?? 'public_repo',
     'state'        => $state,
     'allow_signup' => 'false',

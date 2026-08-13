@@ -55,12 +55,52 @@ O maximaconcrete.com hoje aponta para a Wix. Para o site novo entrar no ar:
 4. hPanel → SSL → instalar Let's Encrypt para `maximaconcrete.com` e `www`.
 5. SPF do e-mail: garantir `include:_spf.mail.hostinger.com` no registro SPF.
 
-## 3. OAuth do painel (uma vez)
+## 2c. Homologação com painel: VPS + Cloudflare Tunnel
+
+`https://maximaconcrete.igorstutz.online` — ambiente onde o CMS pode ser usado
+enquanto o domínio real ainda aponta para a Wix. O GitHub Pages continua
+existindo como preview, mas **o painel não funciona lá** (Pages não executa PHP,
+e o login OAuth depende de `api/oauth/*.php`).
+
+Como está montado na VPS (`187.77.251.75`):
+
+- `/opt/maximaconcrete/` — `Dockerfile` (php:8.3-apache com rewrite/headers/
+  expires/deflate/remoteip e `AllowOverride All`) + `docker-compose.yml`.
+  Container `maximaconcrete-web` escutando em `127.0.0.1:8090` (nada exposto
+  na internet diretamente).
+- `/opt/maximaconcrete/site/` — docroot, alvo do rsync. Dono: `maximadeploy`.
+- `/opt/maximaconcrete/site/.private/` — volume separado (uid 33/www-data) com
+  `oauth-config.php` e `submissions.log`. O rsync exclui `/.private/`.
+- Túnel `maxima` (`cloudflared-maxima.service`) → `maximaconcrete.igorstutz.online`.
+  HTTPS é do Cloudflare; não há porta 80/443 aberta na VPS.
+- `X-Robots-Tag: noindex, nofollow` em todo o host (conf do Apache) — homologação
+  não pode ser indexada e competir com o site real.
+- Deploy: `.github/workflows/deploy-vps.yml`, secrets `VPS_SSH_PRIVATE_KEY`,
+  `VPS_SSH_HOST`, `VPS_SSH_USER` (usuário sem sudo, só escreve no docroot).
+- `_extraction/set-cms-host.mjs` reescreve `base_url`/`site_url` do config.yml
+  no build da homologação — o arquivo do repositório segue apontando para
+  produção.
+
+Operação: `docker compose {ps,restart,logs}` em `/opt/maximaconcrete`,
+`systemctl {status,restart} cloudflared-maxima`.
+
+> `mail()` não funciona na VPS (sem MTA): na homologação o formulário grava em
+> `/.private/submissions.log`, que é o que valida o envio. O e-mail real só é
+> testável na Hostinger.
+
+## 3. OAuth do painel (uma vez por host)
+
+Um OAuth App do GitHub aceita **uma** callback URL, então produção e homologação
+precisam de um App cada. `public/api/oauth/redirect-uri.php` escolhe o
+`redirect_uri` pelo host da requisição (com whitelist).
 
 1. GitHub → Settings → Developer settings → OAuth Apps → New OAuth App
-   - Homepage: `https://maximaconcrete.com`
-   - Callback: `https://maximaconcrete.com/api/oauth/callback.php`
-2. No servidor Hostinger, criar `public_html/.private/oauth-config.php`:
+   - Produção — Homepage: `https://maximaconcrete.com`,
+     Callback: `https://maximaconcrete.com/api/oauth/callback.php`
+   - Homologação — Homepage: `https://maximaconcrete.igorstutz.online`,
+     Callback: `https://maximaconcrete.igorstutz.online/api/oauth/callback.php`
+2. No servidor (Hostinger `public_html/.private/` ou VPS
+   `/opt/maximaconcrete/site/.private/`), criar `oauth-config.php`:
 
 ```php
 <?php
@@ -80,6 +120,7 @@ normalmente a partir do repositório.
 ## 4. Painel de edição
 
 - URL: `https://maximaconcrete.com/admin/cms/`
+  (homologação: `https://maximaconcrete.igorstutz.online/admin/cms/`)
 - Login com a conta GitHub que tem acesso ao repositório.
 - Salvar = commit na `main` = rebuild + publicação automática (~3 min).
 - Media library = `public/images` (upload pelo painel vira commit).

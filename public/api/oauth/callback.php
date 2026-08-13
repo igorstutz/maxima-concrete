@@ -10,6 +10,8 @@ declare(strict_types=1);
  *  "authorization:github:...").
  * ---------------------------------------------------------------------- */
 
+require __DIR__ . '/redirect-uri.php';
+
 $cfg = @include __DIR__ . '/../../.private/oauth-config.php';
 if (!is_array($cfg) || empty($cfg['client_id'])) {
     http_response_code(500);
@@ -42,7 +44,7 @@ curl_setopt_array($ch, [
         'client_id'     => $cfg['client_id'],
         'client_secret' => $cfg['client_secret'],
         'code'          => $code,
-        'redirect_uri'  => 'https://maximaconcrete.com/api/oauth/callback.php',
+        'redirect_uri'  => maxima_oauth_redirect_uri(),
     ]),
     CURLOPT_TIMEOUT        => 15,
 ]);
