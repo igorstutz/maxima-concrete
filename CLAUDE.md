@@ -52,6 +52,18 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   (script `prebuild`); as variantes são derivadas e não vão para o Git.
 - Widgets externos (Elfsight reviews/instagram) só carregam ao entrar na viewport.
 
+## Ambientes (detalhes e operação em `DEPLOY.md`)
+- **Homologação, com painel:** https://maximaconcrete.igorstutz.online — VPS +
+  Cloudflare Tunnel servindo Apache+PHP num container, mesmo ambiente da
+  Hostinger. É onde o CMS é usado hoje, e o único lugar onde o login funciona.
+- **Produção:** maximaconcrete.com na Hostinger — já recebe cada deploy, mas o
+  DNS ainda aponta para a Wix.
+- **Preview:** GitHub Pages — estático puro, **sem PHP**: o painel abre e o
+  login OAuth nunca completa.
+- Push na `main` (inclusive commit feito pelo painel) publica nos três em
+  ~1-3 min. Este repositório é **público**: nada de endereço de servidor,
+  usuário, chave ou credencial em arquivo versionado — só nos secrets.
+
 ## Comandos
 - `npm run dev` · `npm run build` (export estático em `out/`)
 - Dados brutos da extração: `_extraction/` (scripts reexecutáveis; dumps gitignored)

@@ -62,13 +62,15 @@ enquanto o domínio real ainda aponta para a Wix. O GitHub Pages continua
 existindo como preview, mas **o painel não funciona lá** (Pages não executa PHP,
 e o login OAuth depende de `api/oauth/*.php`).
 
-Como está montado na VPS (`187.77.251.75`):
+Como está montado na VPS (este repositório é público: endereço, usuário e chave
+do servidor vivem só nos secrets do GitHub Actions, nunca aqui):
 
 - `/opt/maximaconcrete/` — `Dockerfile` (php:8.3-apache com rewrite/headers/
   expires/deflate/remoteip e `AllowOverride All`) + `docker-compose.yml`.
   Container `maximaconcrete-web` escutando em `127.0.0.1:8090` (nada exposto
   na internet diretamente).
-- `/opt/maximaconcrete/site/` — docroot, alvo do rsync. Dono: `maximadeploy`.
+- `/opt/maximaconcrete/site/` — docroot, alvo do rsync. Dono: o usuário de
+  deploy (sem sudo, sem acesso a nada fora dessa pasta).
 - `/opt/maximaconcrete/site/.private/` — volume separado (uid 33/www-data) com
   `oauth-config.php`, `submissions.log` e `mail-outbox.log`. O rsync exclui
   `/.private/`. Aqui a pasta fica **dentro** do docroot, então o Apache do
@@ -79,7 +81,8 @@ Como está montado na VPS (`187.77.251.75`):
 - `X-Robots-Tag: noindex, nofollow` em todo o host (conf do Apache) — homologação
   não pode ser indexada e competir com o site real.
 - Deploy: `.github/workflows/deploy-vps.yml`, secrets `VPS_SSH_PRIVATE_KEY`,
-  `VPS_SSH_HOST`, `VPS_SSH_USER` (usuário sem sudo, só escreve no docroot).
+  `VPS_SSH_HOST`, `VPS_SSH_USER` — chave dedicada a este deploy, criada só para
+  o Actions e sem relação com a chave pessoal de acesso à VPS.
 - `_extraction/set-cms-host.mjs` reescreve `base_url`/`site_url` do config.yml
   no build da homologação — o arquivo do repositório segue apontando para
   produção.
