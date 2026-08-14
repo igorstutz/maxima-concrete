@@ -90,6 +90,20 @@ do servidor vivem só nos secrets do GitHub Actions, nunca aqui):
 Operação: `docker compose {ps,restart,logs}` em `/opt/maximaconcrete`,
 `systemctl {status,restart} cloudflared-maxima`.
 
+> **Barra final e o túnel.** A partir do cloudflared 2026.8.0 o túnel remove a
+> barra final do path antes de entregar ao origin: `/reviews/` chega como
+> `/reviews`. Como o export do Next usa `trailingSlash: true`, o Apache
+> responderia 301 recolocando a barra, o túnel a removeria de novo — loop
+> infinito, o site inteiro fora do ar (foi o que aconteceu em 14/08). O vhost do
+> container resolve servindo o `index.html` do diretório direto, sem redirect
+> (`DirectorySlash Off` + `RewriteRule ^(.*[^/])$ $1/index.html [PT]`). Só afeta
+> a homologação; a Hostinger não passa por túnel.
+>
+> O cloudflared **se auto-atualiza e reinicia sozinho** — foi assim que a versão
+> nova entrou de madrugada. Se o site quebrar sem que nada tenha sido publicado,
+> comparar `cloudflared --version` com o horário de
+> `systemctl show cloudflared-maxima -p ActiveEnterTimestamp`.
+
 > `mail()` não funciona na VPS (não há MTA). Em vez de o formulário falhar, o
 > `sendmail_path` aponta para `fake-sendmail`, que grava o e-mail que seria
 > enviado em `/.private/mail-outbox.log` — o site responde sucesso e dá para
