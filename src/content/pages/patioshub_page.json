@@ -2,40 +2,44 @@
   "pageKey": "patioshub_page",
   "sections": [
     {
+      "type": "hero",
       "key": "patioshub_page_hero",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Patios",
-        "tagline": "Over 1,000 Patios Installed",
-        "subtitle": "Transform your backyard with a Maxima Patio — durable, elegant, and built to last. Free estimates available.",
         "ctaText": "Get Your Free Estimate",
+        "subtitle": "Transform your backyard with a Maxima Patio — durable, elegant, and built to last. Free estimates available.",
+        "_sourceLabel": "",
         "ctaLink": "#contact",
-        "secondaryCtaText": "Find Our Work Near You",
-        "secondaryCtaLink": "/project-map",
+        "tagline": "Over 2,000 Patios Installed",
         "backgroundImage": "/images/cms/hub/patioshub_hero_desktop.webp",
-        "backgroundImageMobile": "/images/cms/hub/patioshub_hero_mobile.webp"
+        "secondaryCtaLink": "/project-map",
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": "/images/cms/hub/patioshub_hero_mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "hub-intro",
       "key": "patioshub_page_intro",
       "label": "Intro",
-      "type": "hub-intro",
       "content": {
         "title": "A Patio That Redefines\nOutdoor Living",
-        "ctaLink": "#contact",
         "ctaText": "Inspired? Request your Free Estimate now!",
-        "imageTop": "/images/cms/hub/patioshub_intro_top.webp",
-        "leadText": "With over 1,000 patios installed, Maxima Concrete transforms ordinary backyards into beautiful, functional outdoor spaces.",
+        "ctaLink": "#contact",
         "paragraph1": "We work with you from concept to completion, designing and building a patio that fits your lifestyle and complements your home. Using premium materials, proven installation methods, and expert craftsmanship, we create patios that are built to last and made to enjoy for years.",
         "paragraph2": "Every patio is engineered for long-term performance with proper site preparation, quality materials, and precision installation. Whether you’re creating a space for entertaining, relaxing, or spending time with family, our team delivers a custom outdoor living area that adds lasting value, beauty, and functionality to your home.",
+        "imageTop": "/images/cms/hub/patioshub_intro_top.webp",
+        "leadText": "With over 1,000 patios installed, Maxima Concrete transforms ordinary backyards into beautiful, functional outdoor spaces.",
         "imageBottom": "/images/cms/hub/patioshub_intro_bottom.webp"
       }
     },
     {
+      "type": "hub-options",
       "key": "patioshub_page_options",
       "label": "Patio Options",
-      "type": "hub-options",
       "content": {
         "title": "Two Ways to Build Your\nPerfect Patio",
         "options": [
@@ -58,26 +62,30 @@
       }
     },
     {
+      "type": "hub-feature",
       "key": "patioshub_page_paver",
       "label": "Paver Patios",
-      "type": "hub-feature",
       "content": {
         "title": "Paver Patios That\nCombine Strength and Style",
-        "ctaLink": "/services/patios/patios-paver",
         "ctaText": "Explore Paver Patio",
+        "ctaLink": "/services/patios/patios-paver",
         "tagline": "Durable. Repairable. Built to last.",
+        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp",
         "paragraphs": [
           "Create an outdoor space that’s built to last and designed to impress. Maxima Concrete installs custom paver patios using premium materials, expert craftsmanship, and proven installation techniques. Whether you’re creating a space for entertaining or relaxing, we’ll build a patio that enhances your home’s beauty, functionality, and value."
         ],
-        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp",
         "taglineDescription": "Upgrade your patio with a surface that performs as beautifully as it looks."
       }
     },
     {
+      "type": "hub-durability",
       "key": "patioshub_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.webp",
         "cards": [
           {
             "icon": "",
@@ -99,19 +107,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.webp"
+        ]
       }
     },
     {
+      "type": "hub-why-maxima",
       "key": "patioshub_page_why_maxima",
       "label": "Why Maxima",
-      "type": "hub-why-maxima",
       "content": {
         "title": "The Maxima Advantage: The Perfect Choice for Your Patio",
+        "ctaText": "Contact Us",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/hub/patioshub_whymaxima_bg.webp",
+        "description": "At Maxima Concrete, we don't compromise on quality. Our patios are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
         "groups": [
           {
             "icon": "",
@@ -160,21 +168,17 @@
             "title": "Added Home Value"
           }
         ],
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "eyebrow": "by Maxima Concrete",
-        "description": "At Maxima Concrete, we don't compromise on quality. Our patios are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
-        "backgroundImage": "/images/cms/hub/patioshub_whymaxima_bg.webp"
+        "eyebrow": "by Maxima Concrete"
       }
     },
     {
+      "type": "hub-final-cta",
       "key": "patioshub_page_final_cta",
       "label": "Related Services",
-      "type": "hub-final-cta",
       "content": {
         "title": "Don't Settle for Ordinary —\nLive Outdoor Excellence",
-        "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
         "services": [
           {
             "link": "/services/driveways",
@@ -196,23 +200,24 @@
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "patioshub_page_contact",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -222,25 +227,26 @@
       }
     },
     {
+      "type": "faq",
       "key": "patioshub_page_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Patios",
+        "_sourceLabel": "",
         "items": [
           {
-            "answer": "With proper installation and maintenance, a Maxima Concrete patio can last 30 years or more.",
-            "question": "How long will my patio last?"
+            "question": "How long will my patio last?",
+            "answer": "With proper installation and maintenance, a Maxima Concrete patio can last 30 years or more."
           },
           {
-            "answer": "We handle everything — from design consultation and demolition to pouring, finishing, and cleanup.",
-            "question": "What's included in your patio installation?"
+            "question": "What's included in your patio installation?",
+            "answer": "We handle everything — from design consultation and demolition to pouring, finishing, and cleanup."
           },
           {
-            "answer": "Yes, we offer stamped, colored, and bordered patios, all tailored to your home's look and outdoor style.",
-            "question": "Do you offer design or decorative options?"
+            "question": "Do you offer design or decorative options?",
+            "answer": "Yes, we offer stamped, colored, and bordered patios, all tailored to your home's look and outdoor style."
           }
-        ],
-        "title": "FAQ — Patios"
+        ]
       }
     }
   ]
