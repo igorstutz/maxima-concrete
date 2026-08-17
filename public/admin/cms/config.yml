@@ -88,12 +88,16 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: label
-                        label: label
-                        required: false
-                        widget: string
                       - name: title
                         label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: label
+                        label: label
                         required: false
                         widget: string
                       - name: images
@@ -107,10 +111,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: description
@@ -269,6 +269,10 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -280,10 +284,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: description
@@ -409,12 +409,16 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: label
-                        label: label
-                        required: false
-                        widget: string
                       - name: title
                         label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: label
+                        label: label
                         required: false
                         widget: string
                       - name: images
@@ -428,10 +432,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: description
@@ -454,12 +454,16 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: label
-                        label: label
-                        required: false
-                        widget: string
                       - name: title
                         label: title
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: label
+                        label: label
                         required: false
                         widget: string
                       - name: images
@@ -473,10 +477,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: description
@@ -503,24 +503,12 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
-                      - name: cta2Link
-                        label: cta2Link
-                        required: false
-                        widget: string
-                      - name: cta2Text
-                        label: cta2Text
-                        required: false
-                        widget: string
-                      - name: videoUrl
-                        label: videoUrl
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: description
@@ -529,6 +517,18 @@ collections:
                         widget: text
                       - name: backgroundImage
                         label: backgroundImage
+                        required: false
+                        widget: string
+                      - name: videoUrl
+                        label: videoUrl
+                        required: false
+                        widget: string
+                      - name: cta2Link
+                        label: cta2Link
+                        required: false
+                        widget: string
+                      - name: cta2Text
+                        label: cta2Text
                         required: false
                         widget: string
               - label: recent-projects
@@ -551,6 +551,10 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -562,10 +566,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: description
@@ -624,6 +624,18 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: items
                         label: items
                         required: false
@@ -642,14 +654,6 @@ collections:
                             required: false
                             widget: image
                             choose_url: true
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
                       - name: heading
                         label: heading
                         required: false
@@ -662,10 +666,6 @@ collections:
                         label: titleWhite
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -699,6 +699,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -740,12 +744,21 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: images
+                        label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: tagline
@@ -781,15 +794,6 @@ collections:
                         label: questionTitle
                         required: false
                         widget: string
-                      - name: images
-                        label: images
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
       - name: approaches_page
         label: Approaches
         file: src/content/pages/approaches_page.json
@@ -1391,6 +1395,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -1813,6 +1821,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -2126,6 +2138,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -2752,6 +2768,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -3511,6 +3531,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -4052,6 +4076,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -4677,6 +4705,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -6180,6 +6212,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -6771,6 +6807,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -7503,6 +7543,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -8279,6 +8323,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -8724,6 +8772,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -9193,6 +9245,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -9811,6 +9867,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -10418,6 +10478,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -11025,6 +11089,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -11762,6 +11830,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -12381,6 +12453,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -12889,6 +12965,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -13653,6 +13733,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -14180,6 +14264,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -14637,6 +14725,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -15094,6 +15186,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -15514,6 +15610,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -15971,6 +16071,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -16391,6 +16495,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -16848,6 +16956,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -17305,6 +17417,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -17762,6 +17878,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -18219,6 +18339,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -18639,6 +18763,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -19096,6 +19224,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -19553,6 +19685,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -20113,6 +20249,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -21564,6 +21704,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -22250,6 +22394,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -22922,6 +23070,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -23575,6 +23727,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -24744,6 +24900,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -25384,6 +25544,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -26040,6 +26204,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -26816,6 +26984,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -27646,6 +27818,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -28328,6 +28504,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -28848,6 +29028,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -29635,6 +29819,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -30323,6 +30511,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -31002,6 +31194,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -31765,6 +31961,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false
@@ -32291,6 +32491,10 @@ collections:
                             label: description
                             required: false
                             widget: text
+                          - name: link
+                            label: link
+                            required: false
+                            widget: string
                       - name: title
                         label: title
                         required: false

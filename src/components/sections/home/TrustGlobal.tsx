@@ -15,6 +15,8 @@ interface TrustItem {
   icon?: string;
   title?: string;
   description?: string;
+  /** Opcional: com link, o item inteiro vira clicável. */
+  link?: string;
 }
 
 interface TrustGlobalContent {
@@ -76,19 +78,31 @@ export default function TrustGlobal({ content }: { content: Record<string, any> 
               <ul className="flex flex-col gap-6">
                 {items.map((item, idx) => {
                   const Icon = ICONS[item.icon || ""] || Home;
-                  return (
-                    <li key={idx} className="flex items-start gap-4">
-                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
+                  const inner = (
+                    <>
+                      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10 transition-colors group-hover:bg-white/20">
                         <Icon className="h-5 w-5 text-white" />
                       </span>
                       <span className="flex flex-col">
-                        <span className="text-base font-semibold text-white">
+                        <span className="text-base font-semibold text-white group-hover:underline">
                           {item.title}
                         </span>
                         <span className="text-sm leading-snug text-white/80">
                           {item.description}
                         </span>
                       </span>
+                    </>
+                  );
+
+                  return (
+                    <li key={idx}>
+                      {item.link ? (
+                        <SmartLink href={item.link} className="group flex items-start gap-4">
+                          {inner}
+                        </SmartLink>
+                      ) : (
+                        <span className="flex items-start gap-4">{inner}</span>
+                      )}
                     </li>
                   );
                 })}

@@ -20,8 +20,13 @@ function mergeSchemas(a, b) {
   if (!a) return b;
   if (!b) return a;
   if (a.kind !== b.kind) {
-    // conflito (ex.: string vs objeto) → texto bruto para não perder dado
-    return { kind: a.kind === "unknown" ? b.kind : "mixed" };
+    // `unknown` vem de null/ausente — é neutro, não conflito: quem tem tipo
+    // manda. (Sem isso, um único campo esvaziado pelo painel rebaixava o
+    // widget de todas as instâncias do tipo — number virava string.)
+    if (a.kind === "unknown") return b;
+    if (b.kind === "unknown") return a;
+    // conflito real (ex.: string vs objeto) → texto bruto para não perder dado
+    return { kind: "mixed" };
   }
   if (a.kind === "object" || a.kind === "list-object") {
     const fields = { ...a.fields };

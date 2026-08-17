@@ -37,22 +37,26 @@
           {
             "icon": "home",
             "title": "Family-Owned & Operated",
-            "description": "We treat every home like it's our own."
+            "description": "We treat every home like it's our own.",
+            "link": "/why-maxima/"
           },
           {
             "icon": "users",
             "title": "No Subcontractors",
-            "description": "Every project is completed by our trained, in-house team."
+            "description": "Every project is completed by our trained, in-house team.",
+            "link": "/why-maxima/"
           },
           {
             "icon": "shield",
             "title": "Built for Decades",
-            "description": "High-strength concrete systems designed for long-term durability."
+            "description": "High-strength concrete systems designed for long-term durability.",
+            "link": "/why-maxima/"
           },
           {
             "icon": "filecheck",
             "title": "Licensed & Fully Insured",
-            "description": "Professional, compliant, and reliable from start to finish."
+            "description": "Professional, compliant, and reliable from start to finish.",
+            "link": "/licensing-insured/"
           }
         ],
         "title": "Why Homeowners\nTrust Maxima Concrete",
