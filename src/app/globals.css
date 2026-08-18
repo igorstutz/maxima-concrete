@@ -94,6 +94,20 @@ body {
 }
 
 /* ===== Reveal on scroll (padrão Maxima Pools: IntersectionObserver + classes) ===== */
+/* As animações de entrada deslocam o elemento 32px na horizontal
+   (.reveal-left / .reveal-right). Enquanto a seção não é revelada esse
+   deslocamento empurra a largura da página e o celular ganha um rolamento
+   lateral que some sozinho quando a seção entra na tela — foi o que aconteceu
+   em Curbs & Gutters e Footers. `overflow-x: clip` corta o transbordo sem criar
+   contexto de rolagem: `position: sticky` e os carrosséis internos
+   (overflow-x: auto) continuam funcionando, o que `hidden` quebraria.
+   O `overflow-x: hidden` do body não resolve porque o Chrome no celular expande
+   o layout viewport antes de aplicá-lo. */
+section,
+footer {
+  overflow-x: clip;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
