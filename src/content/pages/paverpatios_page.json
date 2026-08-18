@@ -32,7 +32,7 @@
         "_sourceLabel": "Intro",
         "ctaLink": "#contact",
         "titleLine2": "Outdoor Living",
-        "images": "",
+        "images": [],
         "imageLarge": "/images/cms/uploads/1784041502059-ihd5m8.webp",
         "paragraph1": "Transform your backyard with a custom <b>paver patio</b> designed for beauty, durability, and everyday enjoyment. With <b>over 1,000 patios installed</b>, Maxima Concrete combines premium pavers, expert craftsmanship, and precise installation to create outdoor spaces that match your style, increase your home’s value, and stand the test of time.",
         "paragraph2": "Every paver patio is constructed with proper base preparation, precision grading, and expert craftsmanship to ensure long-term durability and performance. Whether you’re creating a space for entertaining, outdoor dining, or relaxing with family, we build patios that are low-maintenance, structurally sound, and designed to complement your home for years to come.",
@@ -72,7 +72,48 @@
         "description": "Our patios combine strength, style, and simplicity. Whether you envision a sleek modern retreat or a warm rustic escape, we’ll bring it to life — built for beauty and made to last.",
         "backgroundImage": "/images/cms/uploads/1784041545687-bkwksk.webp",
         "overlayOpacity": 70,
-        "benefits": "",
+        "benefits": [
+          {
+            "icon": "shield",
+            "items": [
+              {
+                "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              }
+            ],
+            "title": "Durability and Longevity"
+          },
+          {
+            "icon": "sparkles",
+            "items": [
+              {
+                "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
+                "label": "Crack Resistance:"
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "palette",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
+                "label": "Style:"
+              }
+            ],
+            "title": "Versatility"
+          },
+          {
+            "icon": "trending-up",
+            "items": [
+              {
+                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
         "eyebrow": "by Maxima Concrete",
         "overlayGradient": false
       }
@@ -90,7 +131,7 @@
         "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
         "backgroundImage": "/images/cms/uploads/1784041583591-tlmvw.webp",
         "overlayOpacity": 90,
-        "benefits": "",
+        "benefits": [],
         "eyebrow": "",
         "overlayGradient": false
       }

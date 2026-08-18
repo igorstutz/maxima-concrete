@@ -54,7 +54,62 @@
         "backgroundImage": "/images/cms/uploads/1778516680546-k826.webp",
         "overlayOpacity": 64,
         "eyebrow": "by Maxima Concrete",
-        "benefits": "",
+        "benefits": [
+          {
+            "icon": "shield",
+            "items": [
+              {
+                "text": "Provides a denser, tougher surface that withstands heavy loads and decades of use — far outperforming asphalt alternatives.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              },
+              {
+                "text": "Tiny structural fibers dispersed through the mix act like micro-rebar, reducing shrinkage cracks and enhancing resistance to impact.",
+                "label": "Fiber Reinforcement:"
+              },
+              {
+                "text": "Adds another layer of reinforcement, distributing weight evenly to prevent large cracks and deformation — ideal for freeze-thaw climates.",
+                "label": "10-Gauge Wire Mesh:"
+              }
+            ],
+            "title": "Durability and Longevity"
+          },
+          {
+            "icon": "sparkles",
+            "items": [
+              {
+                "text": "The reinforced mix significantly minimizes cracks, reducing repair costs over time.",
+                "label": "Crack Resistance:"
+              },
+              {
+                "text": "A quick rinse and mild detergent keep it looking brand-new — stains don't easily penetrate the sealed surface.",
+                "label": "Easy to Clean:"
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "trending-up",
+            "items": [
+              {
+                "text": "Multiple styles, colors, and finishes let you complement your home's architecture perfectly.",
+                "label": "Curb Appeal:"
+              },
+              {
+                "text": "A high-quality concrete driveway is a lasting investment that enhances your property's market appeal.",
+                "label": "Increased Resale Value:"
+              },
+              {
+                "text": "",
+                "label": ""
+              },
+              {
+                "text": "",
+                "label": ""
+              }
+            ],
+            "title": "Added Home Value"
+          }
+        ],
         "overlayGradient": false
       }
     },
@@ -72,7 +127,7 @@
         "backgroundImage": "/images/cms/uploads/1778518925112-ubzab.webp",
         "overlayOpacity": 87,
         "eyebrow": "",
-        "benefits": "",
+        "benefits": [],
         "overlayGradient": false
       }
     },

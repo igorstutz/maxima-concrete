@@ -56,7 +56,48 @@
         "overlayOpacity": 76,
         "description": "<b>Concrete offers a perfect balance of strength, aesthetics, and ease</b> \n— an investment that improves your daily comfort and your property’s value. \n\n<b>Key Benefits:</b>",
         "eyebrow": "by Maxima Concrete",
-        "benefits": "",
+        "benefits": [
+          {
+            "icon": "shield",
+            "items": [
+              {
+                "text": "Withstands Ohio’s changing seasons without cracking, fading, or warping.",
+                "label": ""
+              }
+            ],
+            "title": "Durable & Long-Lasting:"
+          },
+          {
+            "icon": "sparkles",
+            "items": [
+              {
+                "text": "Just an occasional rinse to keep it clean and pristine.",
+                "label": ""
+              }
+            ],
+            "title": "Low Maintenance"
+          },
+          {
+            "icon": "palette",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to suit your home’s style.",
+                "label": ""
+              }
+            ],
+            "title": "Versatile Design:"
+          },
+          {
+            "icon": "home",
+            "items": [
+              {
+                "text": "A well-designed sidewalk or walkway creates a welcoming first impression.",
+                "label": ""
+              }
+            ],
+            "title": "Enhanced Curb Appeal:"
+          }
+        ],
         "overlayGradient": false,
         "bottomText": ""
       }

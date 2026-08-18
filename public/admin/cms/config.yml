@@ -346,7 +346,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -1043,7 +1044,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -1254,7 +1256,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -1454,7 +1461,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -1689,7 +1734,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -2411,7 +2457,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -2622,7 +2669,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -2879,7 +2931,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -3060,6 +3150,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3078,22 +3184,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: commercial-intro
                 name: commercial-intro
                 widget: object
@@ -3703,6 +3793,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3721,22 +3827,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: contact
                 name: contact
                 widget: object
@@ -4176,7 +4266,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -4286,6 +4414,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -4304,22 +4448,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
               - label: contact
                 name: contact
                 widget: object
@@ -4805,7 +4933,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -5470,7 +5636,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -5681,7 +5848,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -5881,7 +6053,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -6092,7 +6302,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -6766,7 +6977,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -6945,7 +7157,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -7145,7 +7362,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -7421,7 +7676,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -7600,7 +7856,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -7734,7 +7995,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -8052,7 +8351,8 @@ collections:
                           - name: logo
                             label: logo
                             required: false
-                            widget: string
+                            widget: image
+                            choose_url: true
                           - name: tagline
                             label: tagline
                             required: false
@@ -8432,7 +8732,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -9560,7 +9861,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -12145,7 +12484,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -12356,7 +12733,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -12567,7 +12945,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -12701,7 +13084,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -12912,7 +13333,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -13074,7 +13496,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -13208,7 +13635,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -13560,7 +14025,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -13771,7 +14237,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -14037,7 +14508,11 @@ collections:
                           - name: checkItems
                             label: checkItems
                             required: false
-                            widget: string
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                           - name: description
                             label: description
                             required: false
@@ -14714,7 +15189,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -14819,7 +15299,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -15165,7 +15650,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -15270,7 +15760,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -15579,7 +16074,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -15684,7 +16184,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16030,7 +16535,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -16135,7 +16645,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16444,7 +16959,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -16549,7 +17069,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16895,7 +17420,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -17000,7 +17530,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -17346,7 +17881,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -17451,7 +17991,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -17797,7 +18342,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -17902,7 +18452,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -18248,7 +18803,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -18353,7 +18913,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -18662,7 +19227,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -18767,7 +19337,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -19113,7 +19688,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -19218,7 +19798,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -19564,7 +20149,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: instagram
                 name: instagram
                 widget: object
@@ -19669,7 +20259,12 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -20017,7 +20612,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -20228,7 +20824,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -20419,7 +21020,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -21351,7 +21990,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -21871,7 +22511,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -22128,7 +22806,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -22507,7 +23186,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -22751,7 +23468,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -23391,7 +24109,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -23978,7 +24697,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -24157,7 +24877,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -24414,7 +25139,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -24690,7 +25453,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -24869,7 +25633,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-offer
                 name: paver-offer
                 widget: object
@@ -25110,7 +25879,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -25386,7 +26193,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -25565,7 +26373,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -25822,7 +26635,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -26098,7 +26949,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -26277,7 +27129,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -26597,7 +27454,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -26977,7 +27872,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -27235,7 +28131,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -27369,7 +28270,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -27732,7 +28671,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -27916,7 +28856,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -28050,7 +28995,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -28261,7 +29244,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -28886,7 +29870,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -29097,7 +30082,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -29360,7 +30350,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -29636,7 +30664,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -29847,7 +30876,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -30104,7 +31138,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -30380,7 +31452,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -30591,7 +31664,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -31076,7 +32154,8 @@ collections:
                       - name: backgroundImageMobile
                         label: backgroundImageMobile
                         required: false
-                        widget: string
+                        widget: image
+                        choose_url: true
                       - name: heightVh
                         label: heightVh
                         required: false
@@ -31287,7 +32366,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -31544,7 +32628,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -31718,64 +32840,6 @@ collections:
                         widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
-                        required: false
-                        widget: string
-              - label: financing
-                name: financing
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: benefits
-                        label: benefits
-                        required: false
-                        widget: list
-                        field:
-                          name: item
-                          label: Item
-                          widget: string
-                      - name: cardImage
-                        label: cardImage
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: bottomText
-                        label: bottomText
-                        required: false
-                        widget: string
-                      - name: dollarIcon
-                        label: dollarIcon
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: benefitsTitle
-                        label: benefitsTitle
                         required: false
                         widget: string
               - label: find-work
@@ -32345,7 +33409,12 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: string
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
               - label: why-choose
                 name: why-choose
                 widget: object
@@ -32438,7 +33507,45 @@ collections:
                       - name: benefits
                         label: benefits
                         required: false
-                        widget: string
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: items
+                            label: items
+                            required: false
+                            widget: list
+                            fields:
+                              - name: text
+                                label: text
+                                required: false
+                                widget: text
+                              - name: label
+                                label: label
+                                required: false
+                                widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
+                          - name: closingText
+                            label: closingText
+                            required: false
+                            widget: string
+                          - name: bullets
+                            label: bullets
+                            required: false
+                            widget: list
+                            field:
+                              name: item
+                              label: Item
+                              widget: string
                       - name: description
                         label: description
                         required: false
@@ -33490,6 +34597,8 @@ collections:
                 value: "paverpatios_page::custom_1762901000005_paverpat"
               - label: "Patios — Paver › Inspiration"
                 value: "paverpatios_page::custom_1762901000006_paverpat"
+              - label: "Patios — Paver › Why Choose"
+                value: "paverpatios_page::custom_1787061439149_7jiwgk"
               - label: "Patios — Paver › Reviews"
                 value: "paverpatios_page::reviews"
               - label: "Patios — Paver › Related Services"
@@ -33504,8 +34613,6 @@ collections:
                 value: "paverpatios_page::custom_1762901000009_paverpat"
               - label: "Patios — Paver › FAQ"
                 value: "paverpatios_page::custom_1762901000010_paverpat"
-              - label: "Patios — Paver › Why Choose"
-                value: "paverpatios_page::custom_1787061439149_7jiwgk"
               - label: "Pool Decks & Surrounds › Hero"
                 value: "pool_decks_page::custom_1762902000001_pooldeck"
               - label: "Pool Decks & Surrounds › Intro"
@@ -33764,8 +34871,6 @@ collections:
                 value: "whymaxima_page::custom_areas_seed"
               - label: "Why Maxima › Values"
                 value: "whymaxima_page::custom_values_seed"
-              - label: "Why Maxima › Financing"
-                value: "whymaxima_page::custom_financing_seed"
               - label: "Why Maxima › Reviews"
                 value: "whymaxima_page::reviews"
               - label: "Why Maxima › Trust (Global)"

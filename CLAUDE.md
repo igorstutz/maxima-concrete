@@ -40,6 +40,15 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   `ScrollReveal` para animações de entrada.
 - Conteúdo global fora de páginas (footer etc.): `_extraction/orphan-content.json` →
   mover para `src/content/settings/`.
+- **Tipos dos campos no painel (cuidado — já apagou conteúdo):** o `config.yml` infere
+  o widget de cada campo pela UNIÃO de todas as instâncias daquele tipo de seção. Se um
+  campo de lista aparecer como `""` em alguma página, o campo inteiro vira `widget: string`
+  em TODAS as páginas, e o próximo save pelo painel grava uma string por cima do array —
+  o conteúdo da lista some. Foi assim que os "Key Benefits" de sidewalks, paverpatios e
+  paverdriveways sumiram em 2026-08-18 (recuperados do histórico do Git). Por isso
+  `inferSchema` trata `""` como neutro e `mergeSchemas` faz a lista sempre vencer.
+  Ao mexer nessas funções, rode a auditoria: nenhum array nos JSONs pode corresponder a
+  um campo com widget diferente de `list`.
 - **Copiar seção entre páginas:** o Sveltia só duplica dentro do mesmo arquivo, e o
   `config.yml` lista por página apenas os tipos que ela já usa — então o painel sozinho
   não leva uma seção para outra página. A coleção "Copiar seção" grava a escolha em

@@ -17,15 +17,26 @@ const isImagePath = (s) =>
   typeof s === "string" && (s.startsWith("/images/") || IMG_RE.test(s));
 
 // ---------- inferência de schema ----------
+const isList = (kind) => kind === "list-string" || kind === "list-image" || kind === "list-object";
+
 function mergeSchemas(a, b) {
   if (!a) return b;
   if (!b) return a;
   if (a.kind !== b.kind) {
-    // `unknown` vem de null/ausente — é neutro, não conflito: quem tem tipo
-    // manda. (Sem isso, um único campo esvaziado pelo painel rebaixava o
-    // widget de todas as instâncias do tipo — number virava string.)
+    // `unknown` vem de null/ausente/string vazia — é neutro, não conflito: quem
+    // tem tipo manda. (Sem isso, um único campo esvaziado pelo painel rebaixava
+    // o widget de todas as instâncias do tipo — number virava string.)
     if (a.kind === "unknown") return b;
     if (b.kind === "unknown") return a;
+    // Lista vazia também é neutra diante de qualquer lista com conteúdo.
+    if (a.kind === "unknown-list" && isList(b.kind)) return b;
+    if (b.kind === "unknown-list" && isList(a.kind)) return a;
+    // Lista contra qualquer outra coisa: a lista vence. Rebaixar para texto faz
+    // o painel gravar uma string no lugar do array, e o conteúdo da lista some
+    // no primeiro save — foi o que apagou os "Key Benefits" de três páginas em
+    // 2026-08-18.
+    if (isList(a.kind)) return a;
+    if (isList(b.kind)) return b;
     // conflito real (ex.: string vs objeto) → texto bruto para não perder dado
     return { kind: "mixed" };
   }
@@ -51,6 +62,9 @@ function inferSchema(value) {
   if (typeof value === "boolean") return { kind: "boolean" };
   if (typeof value === "number") return { kind: "number" };
   if (typeof value === "string") {
+    // Texto vazio não diz nada sobre o tipo do campo (pode ser uma lista que
+    // ficou vazia): tratar como neutro para não rebaixar as outras instâncias.
+    if (value === "") return { kind: "unknown" };
     return {
       kind: "string",
       image: isImagePath(value),
