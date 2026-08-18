@@ -18,8 +18,11 @@ interface PoolDecksContent {
 
 export default function PoolDecks({ content }: { content: Record<string, any> }) {
   const c = content as PoolDecksContent;
-  const backgroundImage =
-    legacyAsset(c.backgroundImage) || "/images/assets/pool-decks.webp";
+  // Sem imagem escolhida no painel não entra imagem nenhuma: o fundo navy da
+  // seção cobre o intervalo até o vídeo pintar. (Antes havia um
+  // /images/assets/pool-decks.webp fixo aqui, que virava o poster do vídeo e
+  // aparecia no desktop sem nunca ter sido escolhido no CMS.)
+  const backgroundImage = legacyAsset(c.backgroundImage);
   const poster = legacyAsset(c.posterImage) || backgroundImage;
 
   // O vídeo é servido do próprio site, então precisa do basePath (o preview do
@@ -33,13 +36,15 @@ export default function PoolDecks({ content }: { content: Record<string, any> })
   // Vídeo em HTML bruto: garante o atributo `muted` no HTML estático
   // (necessário para autoplay) sem transformar a seção em client component.
   const videoHtml = videoSrc
-    ? `<video autoplay loop muted playsinline preload="metadata" poster="${asset(poster)}" class="absolute inset-0 h-full w-full object-cover"><source src="${videoSrc}" type="video/mp4" /></video>`
+    ? `<video autoplay loop muted playsinline preload="metadata"${
+        poster ? ` poster="${asset(poster)}"` : ""
+      } class="absolute inset-0 h-full w-full object-cover"><source src="${videoSrc}" type="video/mp4" /></video>`
     : "";
 
   return (
     <section
       id="pool-decks"
-      className="relative mt-6 h-[70vh] overflow-hidden md:h-[80vh] lg:h-screen"
+      className="relative mt-6 h-[70vh] overflow-hidden bg-navy md:h-[80vh] lg:h-screen"
     >
       {/* Fundo: vídeo ou imagem */}
       {c.videoUrl ? (
@@ -47,12 +52,12 @@ export default function PoolDecks({ content }: { content: Record<string, any> })
           className="absolute inset-0"
           dangerouslySetInnerHTML={{ __html: videoHtml }}
         />
-      ) : (
+      ) : backgroundImage ? (
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${asset(backgroundImage)})` }}
         />
-      )}
+      ) : null}
 
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-black/40" />
