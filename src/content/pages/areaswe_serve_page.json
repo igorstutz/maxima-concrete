@@ -2,37 +2,44 @@
   "pageKey": "areaswe_serve_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1779129010350_bsuipj",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Trusted Concrete Contractor  in Columbus & Central Ohio",
-        "ctaLink": "",
         "ctaText": "",
-        "heightVh": 65,
-        "subtitle": "Built on experience. Backed by family values. Installed by our own crew.\n",
+        "subtitle": "Built on experience. Backed by family values. Installed by our own crew.",
         "_sourceLabel": "Hero",
-        "overlayOpacity": 0.6,
-        "backgroundImage": "/images/cms/uploads/1779129056289-d84ids.webp",
+        "ctaLink": "",
+        "tagline": "",
+        "backgroundImage": "",
         "secondaryCtaLink": "",
         "secondaryCtaText": "",
-        "backgroundImageMobile": "/images/cms/uploads/1779129056289-d84ids-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1779129056289-d84ids-mobile.webp",
+        "heightVh": 65,
+        "overlayOpacity": 0.6,
+        "videoUrl": ""
       }
     },
     {
+      "type": "areas-grid",
       "key": "areaswe_serve_page_areas_grid",
       "label": "Areas Grid",
-      "type": "areas-grid",
       "content": {
         "heading": "Cities We Serve",
         "subheading": "Premium concrete services across Central Ohio"
       }
     },
     {
+      "type": "trust-global",
       "key": "custom_1779129455133_r1plcb",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "Trust (Global)",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1778515585911-9ykf1_copy_1779129456493_guwolm.webp",
         "items": [
           {
             "icon": "home",
@@ -59,33 +66,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "_sourceLabel": "Trust (Global)",
-        "projectsText": "[XXX+] Projects Delivered",
-        "backgroundImage": "/images/cms/uploads/1778515585911-9ykf1_copy_1779129456493_guwolm.webp"
+        "projectsText": "[XXX+] Projects Delivered"
       }
     },
     {
+      "type": "find-work",
       "key": "custom_1779129440214_c6lski",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
+        "_sourceLabel": "Find Our Work Near You",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
-        ],
-        "_sourceLabel": "Find Our Work Near You"
+          "39.9612",
+          "-82.9988"
+        ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1779129468090_53p5v5",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -95,10 +97,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_areaswe_serve_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Service Areas",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What areas does Maxima Concrete serve?",
@@ -116,20 +120,18 @@
             "question": "How soon can you start a project in my area?",
             "answer": "Scheduling depends on the season and project size. Reach out early to secure your spot, especially for spring and summer work."
           }
-        ],
-        "title": "FAQ — Service Areas",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1779129478407_8vbti",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
