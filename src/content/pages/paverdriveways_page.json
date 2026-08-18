@@ -12,7 +12,7 @@
         "_sourceLabel": "Hero",
         "ctaLink": "#contact",
         "tagline": "Elegance That Lasts a Lifetime",
-        "backgroundImage": "/images/maxima-concrete-4-1-jpeg-202608180937.webp",
+        "backgroundImage": "/images/driveway - paver (2).jpeg",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1784039565339-vsd2ph-mobile.webp",
@@ -71,7 +71,10 @@
                 "label": "10-Gauge Wire Mesh:"
               }
             ],
-            "title": "Durability and Longevity"
+            "title": "Durability and Longevity",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "sparkles",
@@ -85,7 +88,10 @@
                 "label": "Easy to Clean:"
               }
             ],
-            "title": "Low Maintenance"
+            "title": "Low Maintenance",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "trending-up",
@@ -107,7 +113,10 @@
                 "label": ""
               }
             ],
-            "title": "Added Home Value"
+            "title": "Added Home Value",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           }
         ],
         "overlayGradient": false
@@ -157,9 +166,9 @@
       "label": "Reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
@@ -316,10 +325,11 @@
       }
     },
     {
+      "type": "instagram",
       "key": "instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
         "titlePart2": "— On Instagram"
