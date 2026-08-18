@@ -2,10 +2,11 @@
   "pageKey": "areascolumbus_page",
   "sections": [
     {
+      "type": "city-hero",
       "key": "custom_1779130922_columbus_hero",
       "label": "Hero",
-      "type": "city-hero",
       "content": {
+        "subtitle": "Professional Concrete Services in Columbus, OH",
         "cards": [
           {
             "icon": "handshake",
@@ -25,15 +26,14 @@
         ],
         "title": "Trusted Concrete Contractor in",
         "cityName": "Columbus, Ohio",
-        "subtitle": "Professional Concrete Services in Columbus, OH",
         "description": "Maxima Concrete proudly serves homeowners throughout Columbus with custom driveways, patios, sidewalks, retaining walls, and outdoor living solutions. Using premium materials and proven installation techniques, our in-house team delivers durable concrete projects built to withstand Ohio’s climate and enhance your property’s value.",
         "_sourceLabel": "City Hero"
       }
     },
     {
+      "type": "city-approach",
       "key": "custom_1779200000_columbus_approach",
       "label": "5-Step Approach",
-      "type": "city-approach",
       "content": {
         "steps": [
           {
@@ -85,7 +85,7 @@
           }
         ],
         "subtitle": "From the first walkthrough to the final inspection, the same process\nruns on every job we pour.",
-        "mainImage": "/images/cms/uploads/1779134967160-j51d3.webp",
+        "mainImage": "/images/HERO.jpg",
         "titleBlue": "Our 5-Step Approach",
         "titleDark": "to Every Columbus Project",
         "badge1Image": "/images/cms/uploads/1779137021862-ixwxje.webp",
@@ -93,10 +93,14 @@
       }
     },
     {
+      "type": "trust-global",
       "key": "custom_1779195015061_0m1v8p",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "_sourceLabel": "",
         "items": [
           {
             "icon": "home",
@@ -107,7 +111,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -123,45 +127,44 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
         "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
         "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
       }
     },
     {
+      "type": "find-work",
       "key": "custom_1779195004103_9ahovi",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
-        "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our completed projects in your neighborhood and see the quality for yourself.",
+        "title": "Find Our Work Near You",
+        "_sourceLabel": "Find Our Work Near You",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
-        ],
-        "_sourceLabel": "Find Our Work Near You"
+          "39.9612",
+          "-82.9988"
+        ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1779195023900_nzbjxp",
       "label": "Contact",
-      "type": "contact",
       "content": {
-        "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "title": "Ready to Transform Your Space? Let's Get Started.",
         "_sourceLabel": "Contact",
         "nameSectionLabel": ""
       }
     },
     {
+      "type": "faq",
       "key": "custom_areascolumbus_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Columbus Concrete",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "Does Maxima Concrete work throughout the Columbus area?",
@@ -179,20 +182,18 @@
             "question": "Are estimates free in Columbus?",
             "answer": "Absolutely. We provide free on-site consultations and estimates throughout the Columbus area."
           }
-        ],
-        "title": "FAQ — Columbus Concrete",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1779195032654_fhcojm",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
