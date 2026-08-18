@@ -2,54 +2,60 @@
   "pageKey": "outdoorliving_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1773588267131_pwbj8",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Custom Outdoor Living Spaces Designed Around Your Lifestyle",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Designed Around Your Lifestyle",
         "subtitle": "From outdoor kitchens and fire features to pergolas, lighting, and entertainment areas, We design and builds custom outdoor living spaces that bring comfort, beauty, and value to your space.",
         "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1784042023396-2dsref.webp",
+        "ctaLink": "#contact",
+        "tagline": "Designed Around Your Lifestyle",
+        "backgroundImage": "/images/Captura_de_tela_2026-06-05_114445.png_202608181615.jpeg",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1784042023396-2dsref-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1784042023396-2dsref-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "outdoor-intro",
       "key": "custom_outdoorliving_outdoor_intro",
       "label": "Outdoor Intro",
-      "type": "outdoor-intro",
       "content": {
-        "image": "/images/cms/uploads/1784037460087-w6tuvq.webp",
         "title": "Transform Your Backyard Into a Functional and Elegant Retreat",
-        "ctaLink": "#contact",
         "ctaText": "Inspired? Request your Free Estimate now!",
-        "description": "Transform your backyard into a <b>custom outdoor living destination</b> designed around the way you live. From outdoor kitchens and fire features to pergolas, pavilions, lighting, and entertainment areas, Maxima Concrete provides complete <b>design-build solutions</b> that blend beauty, comfort, and functionality. Our experienced in-house team handles every step of the process, creating outdoor spaces that enhance your lifestyle and add lasting value to your home."
+        "_sourceLabel": "",
+        "image": "/images/cms/uploads/1784037460087-w6tuvq.webp",
+        "description": "Transform your backyard into a <b>custom outdoor living destination</b> designed around the way you live. From outdoor kitchens and fire features to pergolas, pavilions, lighting, and entertainment areas, Maxima Concrete provides complete <b>design-build solutions</b> that blend beauty, comfort, and functionality. Our experienced in-house team handles every step of the process, creating outdoor spaces that enhance your lifestyle and add lasting value to your home.",
+        "ctaLink": "#contact"
       }
     },
     {
+      "type": "custom-outdoor-living",
       "key": "custom_outdoorliving_custom_outdoor_living",
       "label": "Custom Outdoor Living",
-      "type": "custom-outdoor-living",
       "content": {
-        "image": "/images/cms/uploads/1782843224247-ama9ud.webp",
         "title": "Custom Outdoor Living Design & Construction",
         "subtitle": "Built Around Your Lifestyle",
+        "image": "/images/cms/uploads/1782843224247-ama9ud.webp",
         "description": "Every outdoor space we create is designed around how you live, entertain, and relax. Our experienced designers help you plan every detail, ensuring your yard becomes an extension of your home.<br><br>We handle everything — from the initial design consultation to final installation — making the entire process smooth, efficient, and stress-free.<br><br><b>Our Outdoor Living Solutions Include:</b><br><br>• <b>Custom Outdoor Kitchens</b> — fully equipped with built-in grills, pizza ovens, and weatherproof concrete countertops.<br><br>• <b>Professional Outdoor Lighting</b> — modern systems that enhance safety and ambiance for nighttime entertaining. Fire Features & Ambiance — fireplaces, fire pits, and lighting that create warmth and atmosphere.<br><br>• <b>Shelters & Shade Structures</b> — pergolas, gazebos, and pavilions designed for comfort and protection year-round.<br><br>• <b>Hardscapes & Patios</b> — durable, elegant concrete finishes that define and elevate your backyard."
       }
     },
     {
+      "type": "why-choose-outdoor",
       "key": "custom_outdoorliving_why_choose_outdoor",
       "label": "Why Choose Maxima",
-      "type": "why-choose-outdoor",
       "content": {
-        "image": "/images/cms/uploads/1782843197230-oz1exj.webp",
         "title": "Why Choose Maxima Concrete for Outdoor Living Projects",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "_sourceLabel": "Why Choose Maxima",
+        "image": "/images/cms/uploads/1782843197230-oz1exj.webp",
+        "ctaLink": "#contact",
+        "overlayOpacity": 40,
         "benefits": [
           {
             "text": "<b>15+ Years of Expertise</b> in Central Ohio."
@@ -68,20 +74,19 @@
           }
         ],
         "bottomTitle": "Outdoor Kitchens:",
-        "_sourceLabel": "Why Choose Maxima",
-        "overlayOpacity": 40,
         "bottomTitleLight": "Culinary Excellence Under the Sky"
       }
     },
     {
+      "type": "outdoor-kitchen",
       "key": "custom_outdoorkitchens_outdoor_kitchen",
       "label": "Outdoor Kitchen",
-      "type": "outdoor-kitchen",
       "content": {
-        "image": "/images/cms/uploads/1782842998468-p6ft3.webp",
         "title": "Enjoy the full experience of outdoor cooking and dining with a <b>custom concrete outdoor kitchen.</b>",
-        "ctaLink": "/services/fire-pits",
         "ctaText": "Explore Fire Pits",
+        "image": "/images/cms/uploads/1782842998468-p6ft3.webp",
+        "description": "We integrate high-performance materials like marine-grade stainless steel and sealed concrete countertops that resist weather and wear.",
+        "ctaLink": "/services/fire-pits",
         "options": [
           "Built-in grills and wood-fired pizza ovens",
           "Outdoor sinks with hot and cold water",
@@ -89,16 +94,19 @@
           "Weatherproof cabinetry and lighting integration"
         ],
         "bottomText": "With Maxima Concrete, every outdoor kitchen is designed to be both functional and visually stunning — a centerpiece for entertainment and everyday living.",
-        "description": "We integrate high-performance materials like marine-grade stainless steel and sealed concrete countertops that resist weather and wear.",
         "optionsTitle": "Options Include:"
       }
     },
     {
+      "type": "outdoor-lightning",
       "key": "custom_outdoorliving_outdoor_lightning",
       "label": "Outdoor Lightning",
-      "type": "outdoor-lightning",
       "content": {
+        "title": "Lighting, Shelters &\nYear-Round Comfort",
+        "ctaText": "Explore Fireplaces",
         "image": "/images/cms/uploads/1782843113778-vaa1aa.webp",
+        "description": "A beautiful outdoor space should shine day and night. Our outdoor lighting systems combine function and style, illuminating paths, patios, and architecture with energy-efficient solutions.<br><br>\n\nWe also design <b>shelters and shade structures</b> — pergolas, gazebos, and pavilions — that enhance comfort while protecting against the elements. Each is engineered for durability and crafted to complement your home's design.",
+        "ctaLink": "/services/fireplaces",
         "steps": [
           {
             "title": "Consultation & Design",
@@ -119,44 +127,44 @@
             "highlighted": false
           }
         ],
-        "title": "Lighting, Shelters &\nYear-Round Comfort",
-        "ctaLink": "/services/fireplaces",
-        "ctaText": "Explore Fireplaces",
         "rightTitle": "Your Complete\nOutdoor Living Partner",
-        "description": "A beautiful outdoor space should shine day and night. Our outdoor lighting systems combine function and style, illuminating paths, patios, and architecture with energy-efficient solutions.<br><br>\n\nWe also design <b>shelters and shade structures</b> — pergolas, gazebos, and pavilions — that enhance comfort while protecting against the elements. Each is engineered for durability and crafted to complement your home's design.",
         "rightDescription": "Extend the beauty and functionality of your outdoor space long after the sun goes down. Professionally designed outdoor lighting enhances safety, improves visibility, and creates a warm, inviting atmosphere for entertaining and relaxing. Our custom lighting solutions highlight architectural features, walkways, patios, landscaping, and outdoor living areas while adding security and curb appeal. Whether you're looking for subtle accent lighting or a complete outdoor illumination system, we create solutions tailored to your property and lifestyle.\n\nOur process is simple:"
       }
     },
     {
+      "type": "outdoor-space",
       "key": "custom_outdoorliving_outdoor_space",
       "label": "Outdoor Space",
-      "type": "outdoor-space",
       "content": {
-        "image": "/images/cms/uploads/1784042530315-x2p22m.webp",
         "title": "Start Your Outdoor\nLiving Journey Today",
-        "ctaLink": "/gallery",
         "ctaText": "Explore Our Gallery",
+        "image": "/images/cms/uploads/1784042530315-x2p22m.webp",
         "description": "Ready to elevate your home with a custom-designed outdoor space?\n\nOur team is here to turn your vision into a reality that lasts for years to come.",
+        "ctaLink": "/gallery",
         "backgroundImage": "/images/cms/uploads/1784042537489-uho6q.webp"
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "outdoorliving_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1784042023396-2dsref.webp",
         "cards": [
           {
             "icon": "",
@@ -178,18 +186,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1784042023396-2dsref.webp"
+        ]
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -200,7 +209,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -216,31 +225,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773599857519_hkkx9q",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -250,37 +256,37 @@
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773599863080_3ji93d",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     },
     {
+      "type": "faq",
       "key": "custom_1773590987517_5ivzxx",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Outdoor Living",
+        "_sourceLabel": "FAQ",
         "items": [
           {
-            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house.",
-            "question": "How long does an outdoor living project take?"
+            "question": "How long does an outdoor living project take?",
+            "answer": "Most projects take 2–6 weeks depending on size and features. We handle all permits and scheduling in-house."
           },
           {
-            "answer": "Regular sealing every 2-3 years and prompt crack repair.",
-            "question": "What maintenance is required?"
+            "question": "What maintenance is required?",
+            "answer": "Regular sealing every 2-3 years and prompt crack repair."
           },
           {
-            "answer": "Yes, we offer flexible payment options.",
-            "question": "Do you offer financing?"
+            "question": "Do you offer financing?",
+            "answer": "Yes, we offer flexible payment options."
           }
-        ],
-        "title": "FAQ — Outdoor Living",
-        "_sourceLabel": "FAQ"
+        ]
       }
     }
   ]
