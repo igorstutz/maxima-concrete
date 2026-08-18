@@ -2,31 +2,40 @@
   "pageKey": "gallerysidewalks_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_1773694472561_0rx6hr",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Sidewalks",
-        "backLabel": "Back to Gallery",
+        "subtitle": "",
         "_sourceLabel": "Hero",
+        "overlayGradient": false,
+        "overlayOpacity": null,
         "backgroundImage": "/images/cms/uploads/1781034166434-omv5ns.webp",
+        "backLink": "",
+        "backLabel": "Back to Gallery",
+        "tagline": "",
+        "description": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1781034166434-omv5ns-mobile.webp"
       }
     },
     {
+      "type": "inspiration-gallery",
       "key": "custom_1773694480722_inprk",
       "label": "Inspiration",
-      "type": "inspiration-gallery",
       "content": {
         "title": "Inspiration for Your Sidewalks",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "_sourceLabel": "Inspiration",
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
         "images": [
           "/images/cms/uploads/1781034245771-byszq7.webp",
           "/images/cms/uploads/1781034252516-ablgi.webp",
           "/images/cms/uploads/1781034242440-0r539.webp",
           "/images/cms/uploads/1781034246803-rg4fvd.webp",
-          "/images/cms/uploads/1781034241578-or2hy8.webp",
+          "/images/Sidewalk (4).jpeg",
           "/images/cms/uploads/1781034251509-gsr8r.webp",
           "/images/cms/uploads/1781034243234-o530uk.webp",
           "/images/cms/uploads/1782830784317-emmhpr.webp",
@@ -36,17 +45,16 @@
           "/images/cms/uploads/1782830787518-9tr5y.webp"
         ],
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
-        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
-        "_sourceLabel": "Inspiration"
+        "paverImages": []
       }
     },
     {
+      "type": "projects-grid",
       "key": "custom_1773694488146_li4ea",
       "label": "Projects",
-      "type": "projects-grid",
       "content": {
         "title": "",
+        "_sourceLabel": "Projects",
         "images": [
           "/images/cms/uploads/1781034374470-6dh9s1.webp",
           "/images/cms/uploads/1782830831070-g0cn05.webp",
@@ -55,6 +63,7 @@
           "/images/cms/uploads/1782830871221-a0bhhu.webp",
           "/images/cms/uploads/1781034440927-ysdxp.webp"
         ],
+        "paverImages": [],
         "imageTypes": [
           "concrete",
           "concrete",
@@ -62,37 +71,41 @@
           "concrete",
           "concrete",
           "concrete"
-        ],
-        "_sourceLabel": "Projects"
+        ]
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_1773694496057_03j1kv",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
-        "_sourceLabel": "More Than Concrete"
+        "_sourceLabel": "More Than Concrete",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "ctaLink": "/contact-us",
         "items": [
           {
             "icon": "home",
@@ -103,7 +116,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -119,31 +132,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773694503745_v9vtdl",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -153,10 +163,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_gallerysidewalks_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Sidewalks",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "How long does a concrete sidewalk last?",
@@ -174,20 +186,18 @@
             "question": "Do you handle permits for sidewalk work?",
             "answer": "Yes. When a permit is required, we handle the paperwork and ensure the work meets local codes."
           }
-        ],
-        "title": "FAQ — Sidewalks",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773694510106_gk9w08",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
