@@ -1,0 +1,66 @@
+name: Otimizar imagens
+
+# Roda sozinho quando entra imagem nova pelo painel e também sob demanda, pela
+# ferramenta "Otimizar imagens" (src/content/settings/optimize-images.json).
+# Converte JPEG/PNG para WebP, troca as referências no conteúdo, regenera as
+# variantes responsivas e o config.yml do painel.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public/images/**"
+      - "src/content/settings/optimize-images.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write # commitar as imagens convertidas
+  actions: write # disparar os deploys (ver nota no fim)
+
+concurrency:
+  group: optimize-images
+  cancel-in-progress: false
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # A carência das sobras usa a data do commit que trouxe cada arquivo.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Converter imagens e atualizar referências
+        run: node _extraction/optimize-images.mjs --apply
+
+      - name: Commitar o resultado
+        id: commit
+        run: |
+          git config user.name "maxima-cms-bot"
+          git config user.email "bot@maximaconcrete.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nada a otimizar."
+          else
+            git commit -m "content: otimizar imagens (WebP)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Commits feitos com o GITHUB_TOKEN não disparam outros workflows (trava
+      # anti-loop do Actions) — o que também evita este workflow chamar a si
+      # mesmo ao commitar dentro de public/images.
+      - name: Publicar (dispara os deploys)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy-hostinger.yml --ref main
+          gh workflow run deploy-vps.yml --ref main

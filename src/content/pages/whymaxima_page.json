@@ -7,7 +7,7 @@
       "label": "Hero Image",
       "content": {
         "_sourceLabel": "",
-        "image": "/images/concrete (1).jpeg",
+        "image": "/images/concrete-1.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You"
       }
@@ -21,8 +21,8 @@
         "ctaLink": "",
         "ctaText": "",
         "subtitle": "Why Maxima?",
-        "image1": "/images/Captura de tela 2026-08-18 094451.png",
-        "image2": "/images/MAXIMA TEAM.jpg",
+        "image1": "/images/captura-de-tela-2026-08-18-094451.webp",
+        "image2": "/images/maxima-team.webp",
         "buttonLink": "#contact",
         "buttonText": "Contact Us",
         "paragraph1": "At <b>Maxima Concrete</b>, we believe great construction starts with great trust. For over 15 years, we’ve been the <b>concrete contractor in Central Ohio</b> that homeowners and businesses rely on for precision, accountability, and lasting results.",
@@ -61,7 +61,7 @@
       "content": {
         "ctaLink": "#contact",
         "ctaText": "Contact Us",
-        "image": "/images/MAXIMA TEAM.jpg",
+        "image": "/images/maxima-team.webp",
         "pillars": [
           {
             "title": "Transparency",

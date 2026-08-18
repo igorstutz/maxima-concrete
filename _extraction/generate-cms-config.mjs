@@ -334,6 +334,38 @@ const config = {
       ],
     },
     {
+      name: "optimize_images",
+      label: "Otimizar imagens",
+      description:
+        "As fotos enviadas pelo painel são convertidas sozinhas para o formato leve (WebP) alguns " +
+        "minutos depois do envio. Use esta tela só se quiser rodar na hora.",
+      editor: { preview: false },
+      files: [
+        {
+          name: "optimize_images",
+          label: "Otimizar imagens agora",
+          file: "src/content/settings/optimize-images.json",
+          fields: [
+            {
+              name: "run",
+              label: "Executar agora",
+              widget: "boolean",
+              default: false,
+              required: false,
+              hint: "Ligue e clique em Save. Em 2-5 minutos as fotos ficam mais leves, sem perder qualidade visível.",
+            },
+            {
+              name: "status",
+              label: "Resultado",
+              widget: "text",
+              required: false,
+              hint: "Preenchido automaticamente. Recarregue a página (F5) depois de alguns minutos para ler.",
+            },
+          ],
+        },
+      ],
+    },
+    {
       name: "settings",
       label: "Site Settings",
       editor: { preview: false },

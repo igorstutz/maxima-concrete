@@ -11,6 +11,7 @@ on:
     # Ver nota em copy-section.yml: o pedido de cópia sozinho não gera deploy.
     paths-ignore:
       - "src/content/settings/copy-section.json"
+      - "src/content/settings/optimize-images.json"
   workflow_dispatch:
 
 concurrency:
