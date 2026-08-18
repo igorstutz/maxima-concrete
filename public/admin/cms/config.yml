@@ -3150,22 +3150,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3184,6 +3168,22 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: commercial-intro
                 name: commercial-intro
                 widget: object
@@ -3793,22 +3793,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3827,6 +3811,22 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: contact
                 name: contact
                 widget: object
@@ -4414,22 +4414,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: tagline
-                        label: tagline
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -4448,6 +4432,22 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: tagline
+                        label: tagline
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: contact
                 name: contact
                 widget: object
