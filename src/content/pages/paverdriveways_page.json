@@ -2,130 +2,90 @@
   "pageKey": "paverdriveways_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1762900000001_paverdrv",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Driveways l Paver, Brick and Stone",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Elegance That Lasts a Lifetime",
         "subtitle": "Enhance your home’s exterior with a beautifully crafted paver driveway designed for lasting style, durability, and curb appeal with a strong, low-maintenance surface built to last.",
         "_sourceLabel": "Hero",
+        "ctaLink": "#contact",
+        "tagline": "Elegance That Lasts a Lifetime",
         "backgroundImage": "/images/cms/uploads/1784039565339-vsd2ph.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1784039565339-vsd2ph-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1784039565339-vsd2ph-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "intro",
       "key": "custom_1762900000002_paverdrv",
       "label": "Intro",
-      "type": "intro",
       "content": {
         "title": "Where Design Meets Durability",
-        "ctaLink": "#contact",
         "ctaText": "Schedule Your Free Estimate!",
         "subtitle": "Enhance the beauty, durability, and value of your property with custom driveway pavers installed by Maxima Concrete. Our paver driveways are designed to provide long-lasting performance while creating an elegant and welcoming entrance that complements your home's style.",
-        "imageLarge": "/images/cms/uploads/1782839918417-xnk57.webp",
-        "paragraph1": "A paver driveway combines beauty, durability, and functionality. Available in a variety of colors, patterns, and textures, pavers can be customized to complement any home. Their jointed design allows for natural drainage, helping reduce water pooling, while individual pavers can be easily replaced if damaged, making maintenance simple and cost-effective for years to come.\n",
-        "paragraph2": "Beyond their durability, pavers offer endless design possibilities. From classic cobblestone-inspired looks to modern layouts, decorative borders, and custom patterns, pavers can be tailored to match your home's architecture and style. The result is a driveway that not only performs well but also enhances curb appeal and creates a lasting first impression for your property.\n",
+        "_sourceLabel": "",
+        "ctaLink": "#contact",
         "titleLine2": "",
-        "imageTopRight": "/images/cms/uploads/1778516594121-5c4zj9.webp"
+        "images": [],
+        "imageLarge": "/images/cms/uploads/1782839918417-xnk57.webp",
+        "paragraph1": "A paver driveway combines beauty, durability, and functionality. Available in a variety of colors, patterns, and textures, pavers can be customized to complement any home. Their jointed design allows for natural drainage, helping reduce water pooling, while individual pavers can be easily replaced if damaged, making maintenance simple and cost-effective for years to come.",
+        "paragraph2": "Beyond their durability, pavers offer endless design possibilities. From classic cobblestone-inspired looks to modern layouts, decorative borders, and custom patterns, pavers can be tailored to match your home's architecture and style. The result is a driveway that not only performs well but also enhances curb appeal and creates a lasting first impression for your property.",
+        "imageTopRight": "/images/cms/uploads/1778516594121-5c4zj9.webp",
+        "paragraphLayout": ""
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1762900000003_paverdrv",
       "label": "Why Maxima",
-      "type": "why-maxima-service",
       "content": {
         "title": "Why Maxima Is the Right\nChoice for Your Paver Driveways?",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
-        "eyebrow": "by Maxima Concrete",
-        "benefits": [
-          {
-            "icon": "shield",
-            "items": [
-              {
-                "text": "Provides a denser, tougher surface that withstands heavy loads and decades of use — far outperforming asphalt alternatives.",
-                "label": "High-Strength Mix (6.5-Bag Concrete):"
-              },
-              {
-                "text": "Tiny structural fibers dispersed through the mix act like micro-rebar, reducing shrinkage cracks and enhancing resistance to impact.",
-                "label": "Fiber Reinforcement:"
-              },
-              {
-                "text": "Adds another layer of reinforcement, distributing weight evenly to prevent large cracks and deformation — ideal for freeze-thaw climates.",
-                "label": "10-Gauge Wire Mesh:"
-              }
-            ],
-            "title": "Durability and Longevity"
-          },
-          {
-            "icon": "sparkles",
-            "items": [
-              {
-                "text": "The reinforced mix significantly minimizes cracks, reducing repair costs over time.",
-                "label": "Crack Resistance:"
-              },
-              {
-                "text": "A quick rinse and mild detergent keep it looking brand-new — stains don't easily penetrate the sealed surface.",
-                "label": "Easy to Clean:"
-              }
-            ],
-            "title": "Low Maintenance"
-          },
-          {
-            "icon": "trending-up",
-            "items": [
-              {
-                "text": "Multiple styles, colors, and finishes let you complement your home's architecture perfectly.",
-                "label": "Curb Appeal:"
-              },
-              {
-                "text": "A high-quality concrete driveway is a lasting investment that enhances your property's market appeal.",
-                "label": "Increased Resale Value:"
-              },
-              {
-                "text": "",
-                "label": ""
-              },
-              {
-                "text": "",
-                "label": ""
-              }
-            ],
-            "title": "Added Home Value"
-          }
-        ],
+        "_sourceLabel": "",
+        "ctaLink": "#contact",
+        "bottomText": "",
         "description": "At Maxima Concrete, we don't compromise on quality. Our driveways are engineered using 6.5-bag fiber-reinforced concrete and 10-gauge wire mesh, delivering unmatched strength and reliability.",
+        "backgroundImage": "/images/cms/uploads/1778516680546-k826.webp",
         "overlayOpacity": 64,
-        "backgroundImage": "/images/cms/uploads/1778516680546-k826.webp"
+        "eyebrow": "by Maxima Concrete",
+        "benefits": "",
+        "overlayGradient": false
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1762900000005_paverdrv",
       "label": "Design Paver Driveway",
-      "type": "why-maxima-service",
       "content": {
         "title": "Paver Driveways That\nCombine Strength and Style",
-        "ctaLink": "#contact",
-        "ctaText": " Design My Paver Driveway",
-        "eyebrow": "",
-        "benefits": [],
-        "description": "A paver driveway is more than a place to park — it’s a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver driveways are engineered to handle heavy loads, extreme weather, and daily use without cracking, crumbling, or fading over time.\n\nAt Maxima, we design paver driveways that balance aesthetic impact with structural resilience. Each project is built with precision grading, proper base preparation, and premium paver materials selected to complement your home’s architecture and elevate curb appeal from the very first glance.\n\nBeyond looks, paver driveways offer superior drainage. Rainwater flows naturally through the joints, reducing pooling, preventing surface damage, and protecting your foundation. And when life happens — spills, stains, or localized wear — individual pavers can be replaced with ease, keeping your driveway looking pristine for years to come.\n\nChoose from classic cobblestone patterns for timeless elegance, sleek modern concrete pavers for a clean, contemporary feel, or custom layouts with borders and accents that reflect your personal style. The design flexibility is virtually limitless.\n\nDurable. Repairable. Built to last. \nUpgrade your driveway with a surface that performs as beautifully as it looks.",
+        "ctaText": "Design My Paver Driveway",
         "_sourceLabel": "Why Maxima",
+        "ctaLink": "#contact",
+        "bottomText": "",
+        "description": "A paver driveway is more than a place to park — it’s a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver driveways are engineered to handle heavy loads, extreme weather, and daily use without cracking, crumbling, or fading over time.\n\nAt Maxima, we design paver driveways that balance aesthetic impact with structural resilience. Each project is built with precision grading, proper base preparation, and premium paver materials selected to complement your home’s architecture and elevate curb appeal from the very first glance.\n\nBeyond looks, paver driveways offer superior drainage. Rainwater flows naturally through the joints, reducing pooling, preventing surface damage, and protecting your foundation. And when life happens — spills, stains, or localized wear — individual pavers can be replaced with ease, keeping your driveway looking pristine for years to come.\n\nChoose from classic cobblestone patterns for timeless elegance, sleek modern concrete pavers for a clean, contemporary feel, or custom layouts with borders and accents that reflect your personal style. The design flexibility is virtually limitless.\n\nDurable. Repairable. Built to last. \nUpgrade your driveway with a surface that performs as beautifully as it looks.",
+        "backgroundImage": "/images/cms/uploads/1778518925112-ubzab.webp",
         "overlayOpacity": 87,
-        "backgroundImage": "/images/cms/uploads/1778518925112-ubzab.webp"
+        "eyebrow": "",
+        "benefits": "",
+        "overlayGradient": false
       }
     },
     {
+      "type": "inspiration",
       "key": "custom_1762900000007_paverdrv",
       "label": "Inspiration",
-      "type": "inspiration",
       "content": {
         "title": "Inspiration for Your Paver Driveways",
+        "ctaText": "",
+        "_sourceLabel": "Inspiration",
+        "ctaLink": "",
+        "description": "",
         "images": [
           "/images/cms/uploads/1778519035088-w5q4gi.webp",
           "/images/cms/uploads/1778519037199-v50m4d.webp",
@@ -133,27 +93,30 @@
           "/images/cms/uploads/1782839950184-edm72i.webp",
           "/images/cms/uploads/1782839980852-f76nhm.webp"
         ],
-        "ctaText": "",
-        "_sourceLabel": "Inspiration"
+        "descriptionBold": ""
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
         "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "paverdriveways_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1784039565339-vsd2ph.webp",
         "cards": [
           {
             "icon": "",
@@ -175,25 +138,21 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1784039565339-vsd2ph.webp"
+        ]
       }
     },
     {
+      "type": "final-cta",
       "key": "custom_1762900000009_paverdrv",
       "label": "Related Services",
-      "type": "final-cta",
       "content": {
+        "_sourceLabel": "Related Services",
         "ctaLink": "#contact",
-        "bottomText": "Licensed & Insured • 30+ Years Experience",
+        "bottomText": "Licensed & Insured • 15+ Years Experience",
         "titleLine1": "Don't Settle for Ordinary —",
         "titleLine2": "Drive Home Excellence",
         "contactText": "📞 Contact us today for a free consultation and discover how we can turn your driveway vision into a reality that redefines your home's first impression.",
         "description": "Your paver driveway deserves more than standard concrete. Let Maxima Concrete pave the way to a strong, stylish, and expressive entrance that lasts for decades.",
-        "_sourceLabel": "Related Services",
         "relatedTitle": "Related Services",
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
@@ -213,10 +172,15 @@
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -227,7 +191,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -243,31 +207,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1762900000010_paverdrv",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -277,26 +238,26 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1762900000011_paverdrv",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Paver Driveways",
+        "_sourceLabel": "FAQ",
         "items": [
           {
-            "answer": "With proper installation and maintenance, a Maxima paver driveway can last 30+ years, and individual pavers can be replaced if damaged.",
-            "question": "How long will my paver driveway last?"
+            "question": "How long will my paver driveway last?",
+            "answer": "With proper installation and maintenance, a Maxima paver driveway can last 30+ years, and individual pavers can be replaced if damaged."
           },
           {
-            "answer": "We handle everything — from design consultation and excavation to base preparation, paver installation, edging, jointing, and cleanup.",
-            "question": "What is included in your paver driveway installation?"
+            "question": "What is included in your paver driveway installation?",
+            "answer": "We handle everything — from design consultation and excavation to base preparation, paver installation, edging, jointing, and cleanup."
           },
           {
-            "answer": "Yes, we offer cobblestone patterns, modern concrete pavers, custom borders, and accent designs tailored to your home.",
-            "question": "Do you offer design or decorative options?"
+            "question": "Do you offer design or decorative options?",
+            "answer": "Yes, we offer cobblestone patterns, modern concrete pavers, custom borders, and accent designs tailored to your home."
           }
-        ],
-        "title": "FAQ — Paver Driveways",
-        "_sourceLabel": "FAQ"
+        ]
       }
     }
   ]
