@@ -40,6 +40,15 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   `ScrollReveal` para animações de entrada.
 - Conteúdo global fora de páginas (footer etc.): `_extraction/orphan-content.json` →
   mover para `src/content/settings/`.
+- **Copiar seção entre páginas:** o Sveltia só duplica dentro do mesmo arquivo, e o
+  `config.yml` lista por página apenas os tipos que ela já usa — então o painel sozinho
+  não leva uma seção para outra página. A coleção "Copiar seção" grava a escolha em
+  `src/content/settings/copy-section.json`; o workflow `copy-section.yml` roda
+  `_extraction/apply-copy-section.mjs`, que copia o bloco (key nova, conteúdo junto,
+  no fim da página de destino), escreve o resultado no campo `status`, regenera o
+  `config.yml` e dispara os deploys. Os deploys ignoram pushes que só mexem nesse
+  arquivo de pedido (`paths-ignore`), e o commit do bot não dispara workflow sozinho —
+  por isso o `gh workflow run` no fim do copy-section.yml.
 
 ## Performance (por que o site é rápido — manter)
 - Zero fetch em runtime: JSON importado estaticamente, texto embutido no HTML no build.

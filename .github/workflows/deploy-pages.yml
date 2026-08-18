@@ -3,6 +3,9 @@ name: Deploy preview to GitHub Pages
 on:
   push:
     branches: [main]
+    # Ver nota em copy-section.yml: o pedido de cópia sozinho não gera deploy.
+    paths-ignore:
+      - "src/content/settings/copy-section.json"
   workflow_dispatch:
 
 permissions:

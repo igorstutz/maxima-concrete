@@ -5,6 +5,7 @@
 import { readFileSync, readdirSync, writeFileSync, mkdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { labelFor } from "./page-labels.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, "..");
@@ -157,7 +158,12 @@ const pages = [];
 
 for (const file of pageFiles) {
   const page = JSON.parse(readFileSync(join(PAGES_DIR, file), "utf8"));
-  pages.push({ file, pageKey: page.pageKey, types: [...new Set(page.sections.map((s) => s.type))] });
+  pages.push({
+    file,
+    pageKey: page.pageKey,
+    types: [...new Set(page.sections.map((s) => s.type))],
+    sections: page.sections.map((s) => ({ key: s.key, label: s.label, type: s.type })),
+  });
   for (const s of page.sections) {
     const cur = typeSchemas.get(s.type);
     typeSchemas.set(s.type, mergeSchemas(cur, inferSchema(s.content)));
@@ -186,12 +192,40 @@ const sectionTypes = [...typeSchemas.entries()]
     ],
   }));
 
-const PAGE_LABELS = {
-  home: "Home",
-};
-const labelFor = (pageKey) =>
-  PAGE_LABELS[pageKey] ??
-  pageKey.replace(/_page$/, "").replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+// Home primeiro, o resto em ordem alfabética PELO NOME exibido — é assim que
+// as páginas filhas ficam logo abaixo da mãe ("Gallery — Pools" embaixo de
+// "Gallery"), o que não aconteceria ordenando pelo pageKey
+// (paverpatios_page cairia no meio das galerias).
+const byMenuOrder = (a, b) =>
+  a.pageKey === "home"
+    ? -1
+    : b.pageKey === "home"
+      ? 1
+      : labelFor(a.pageKey).localeCompare(labelFor(b.pageKey), "en");
+const orderedPages = [...pages].sort(byMenuOrder);
+
+// ---------- ferramenta "copiar seção entre páginas" ----------
+// O painel só grava a escolha em src/content/settings/copy-section.json; quem
+// executa a cópia é _extraction/apply-copy-section.mjs pelo GitHub Actions.
+// Tipos que não fazem sentido copiar: o footer é global (vem do layout) e o
+// explorer é a implementação própria do /project-map.
+const NOT_COPYABLE = new Set(["footer", "explorer"]);
+
+const copyFromOptions = [];
+for (const p of orderedPages) {
+  const usedLabels = new Map();
+  for (const s of p.sections) {
+    if (NOT_COPYABLE.has(s.type)) continue;
+    const base = (s.label || "").trim() || s.type;
+    const n = (usedLabels.get(base) || 0) + 1;
+    usedLabels.set(base, n);
+    copyFromOptions.push({
+      label: `${labelFor(p.pageKey)} › ${base}${n > 1 ? ` (${n})` : ""}`,
+      value: `${p.pageKey}::${s.key}`,
+    });
+  }
+}
+const copyToOptions = orderedPages.map((p) => ({ label: labelFor(p.pageKey), value: p.pageKey }));
 
 const config = {
   backend: {
@@ -225,8 +259,7 @@ const config = {
       label: "Pages",
       description: "Todas as páginas do site — textos, imagens e seções.",
       editor: { preview: false },
-      files: pages
-        .sort((a, b) => (a.pageKey === "home" ? -1 : b.pageKey === "home" ? 1 : a.pageKey.localeCompare(b.pageKey)))
+      files: orderedPages
         .map((p) => ({
           name: p.pageKey,
           label: labelFor(p.pageKey),
@@ -243,6 +276,48 @@ const config = {
             },
           ],
         })),
+    },
+    {
+      name: "copy_section",
+      label: "Copiar seção",
+      description:
+        "Leva uma seção pronta de uma página para outra, com o conteúdo junto. " +
+        "Escolha a seção, escolha a página que vai recebê-la e clique em Save.",
+      editor: { preview: false },
+      files: [
+        {
+          name: "copy_section",
+          label: "Copiar seção entre páginas",
+          file: "src/content/settings/copy-section.json",
+          fields: [
+            {
+              name: "from",
+              label: "1. Seção que você quer copiar",
+              widget: "select",
+              required: false,
+              options: copyFromOptions,
+              hint: "A lista mostra Página › Seção. A página de origem não muda nada.",
+            },
+            {
+              name: "to",
+              label: "2. Página que vai receber a cópia",
+              widget: "select",
+              required: false,
+              options: copyToOptions,
+              hint: "A cópia entra no FIM da lista de seções dessa página — depois é só arrastar para o lugar certo.",
+            },
+            {
+              name: "status",
+              label: "Resultado",
+              widget: "text",
+              required: false,
+              hint:
+                "Preenchido automaticamente. Depois de salvar, espere 1-3 minutos, recarregue a página " +
+                "(F5) e leia aqui se a cópia deu certo.",
+            },
+          ],
+        },
+      ],
     },
     {
       name: "settings",

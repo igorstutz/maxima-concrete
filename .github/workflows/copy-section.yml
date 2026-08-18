@@ -1,0 +1,59 @@
+name: Copiar seção entre páginas
+
+# Dispara quando o painel salva a ferramenta "Copiar seção"
+# (src/content/settings/copy-section.json). O script faz a cópia de verdade,
+# escreve o resultado no campo `status` e regenera o config.yml do painel.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/settings/copy-section.json"
+  workflow_dispatch:
+
+permissions:
+  contents: write # commitar a página alterada
+  actions: write # disparar os deploys (ver nota no fim)
+
+concurrency:
+  group: copy-section
+  cancel-in-progress: false
+
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Aplicar a cópia pedida no painel
+        run: node _extraction/apply-copy-section.mjs
+
+      - name: Commitar o resultado
+        id: commit
+        run: |
+          git config user.name "maxima-cms-bot"
+          git config user.email "bot@maximaconcrete.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Nada a commitar."
+          else
+            git commit -m "content: copiar seção entre páginas (via painel)"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Commits feitos com o GITHUB_TOKEN não disparam outros workflows (trava
+      # anti-loop do Actions), então os deploys precisam ser chamados na mão —
+      # sem isso a cópia ficaria só no repositório, sem ir para o ar.
+      - name: Publicar (dispara os deploys)
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy-hostinger.yml --ref main
+          gh workflow run deploy-vps.yml --ref main
+          gh workflow run deploy-pages.yml --ref main

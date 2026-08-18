@@ -8,6 +8,9 @@ name: Deploy to VPS (homologação)
 on:
   push:
     branches: [main]
+    # Ver nota em copy-section.yml: o pedido de cópia sozinho não gera deploy.
+    paths-ignore:
+      - "src/content/settings/copy-section.json"
   workflow_dispatch:
 
 concurrency:

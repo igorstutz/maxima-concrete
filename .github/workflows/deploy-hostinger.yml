@@ -3,6 +3,10 @@ name: Deploy to Hostinger
 on:
   push:
     branches: [main]
+    # O pedido de cópia de seção não muda o site — quem publica o resultado é o
+    # workflow copy-section.yml, depois de aplicar a cópia.
+    paths-ignore:
+      - "src/content/settings/copy-section.json"
   workflow_dispatch:
 
 concurrency:
