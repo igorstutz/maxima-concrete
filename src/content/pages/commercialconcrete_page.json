@@ -9,7 +9,7 @@
         "title": "Commercial Concrete",
         "_sourceLabel": "Hero",
         "subtitle": "Built for Strength, Function, and Precision",
-        "backgroundImage": "/images/HERO.jpeg",
+        "backgroundImage": "/images/hero-2.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1782843445995-mgugfo-mobile.webp",
@@ -21,7 +21,7 @@
       "key": "custom_building_central_cc_001",
       "label": "Building Central",
       "content": {
-        "image": "/images/Commercial_Concrete_(2).png_202606261423 (1).jpeg",
+        "image": "/images/commercial-concrete-2-png-202606261423-1.webp",
         "title": "Building Central Ohio,\nOne Project at a Time",
         "ctaLink": "#contact",
         "ctaText": "Contact Us",

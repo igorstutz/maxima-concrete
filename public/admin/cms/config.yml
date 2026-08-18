@@ -1348,12 +1348,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -2761,12 +2761,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -3055,6 +3055,14 @@ collections:
                         label: subtitle
                         required: false
                         widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -3070,14 +3078,6 @@ collections:
                           choose_url: true
                       - name: logosTitle
                         label: logosTitle
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
                         required: false
                         widget: string
               - label: commercial-categories
@@ -3172,16 +3172,16 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: subtitle
                         label: subtitle
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
               - label: commercial-intro
@@ -3752,6 +3752,14 @@ collections:
                         label: subtitle
                         required: false
                         widget: text
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
@@ -3767,14 +3775,6 @@ collections:
                           choose_url: true
                       - name: logosTitle
                         label: logosTitle
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
                         required: false
                         widget: string
               - label: commercial-hero
@@ -3815,16 +3815,16 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: subtitle
                         label: subtitle
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
               - label: contact
@@ -4029,6 +4029,10 @@ collections:
                         label: ctaText
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -4039,10 +4043,6 @@ collections:
                         widget: string
                       - name: contactTitle
                         label: contactTitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: related-services
@@ -4206,6 +4206,14 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: items
                         label: items
                         required: false
@@ -4219,16 +4227,8 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
                       - name: subtitle
                         label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: why-maxima-service
@@ -4436,16 +4436,16 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: tagline
-                        label: tagline
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: subtitle
                         label: subtitle
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
+                      - name: tagline
+                        label: tagline
                         required: false
                         widget: string
               - label: contact
@@ -4696,6 +4696,10 @@ collections:
                         label: ctaText
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: subtitle
                         label: subtitle
                         required: false
@@ -4706,10 +4710,6 @@ collections:
                         widget: string
                       - name: contactTitle
                         label: contactTitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: related-services
@@ -4873,6 +4873,14 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: items
                         label: items
                         required: false
@@ -4886,16 +4894,8 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
                       - name: subtitle
                         label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: why-maxima-service
@@ -5940,12 +5940,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -7313,12 +7313,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -13848,14 +13848,28 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
                       - name: eyebrow
                         label: eyebrow
                         required: false
@@ -13890,20 +13904,6 @@ collections:
                         label: description
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
       - name: footers_page
         label: Footers
         file: src/content/pages/footers_page.json
@@ -14457,12 +14457,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -22472,12 +22472,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -23201,12 +23201,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -25161,12 +25161,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -26721,12 +26721,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -27572,12 +27572,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -30557,12 +30557,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -31288,12 +31288,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
@@ -32778,12 +32778,12 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: variant
