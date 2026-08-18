@@ -68,9 +68,10 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 - **Produção:** maximaconcrete.com na Hostinger — já recebe cada deploy, mas o
   DNS ainda aponta para a Wix.
 - **Preview:** GitHub Pages — estático puro, **sem PHP**: o painel abre e o
-  login OAuth nunca completa.
-- Push na `main` (inclusive commit feito pelo painel) publica nos três em
-  ~1-3 min. Este repositório é **público**: nada de endereço de servidor,
+  login OAuth nunca completa. Deploy automático desligado em 2026-08-18 (a
+  homologação cobre o papel); roda só sob demanda pelo `workflow_dispatch`.
+- Push na `main` (inclusive commit feito pelo painel) publica nos dois primeiros
+  em ~1-3 min. Este repositório é **público**: nada de endereço de servidor,
   usuário, chave ou credencial em arquivo versionado — só nos secrets.
 
 ## Comandos

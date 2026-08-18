@@ -21,8 +21,13 @@ gh repo create igorstutz/maxima-concrete --private --source . --push
 Em Settings → Secrets and variables → Actions, criar (mesmos nomes e valores do maxima-pools):
 `HOSTINGER_SSH_PRIVATE_KEY`, `HOSTINGER_SSH_HOST`, `HOSTINGER_SSH_USER`, `HOSTINGER_SSH_PORT`.
 
-Push na `main` → `.github/workflows/deploy-hostinger.yml` builda e publica (~3 min).
-`deploy-pages.yml` publica um preview no GitHub Pages em paralelo.
+Push na `main` → `.github/workflows/deploy-hostinger.yml` builda e publica (~3 min),
+junto com `deploy-vps.yml` (homologação).
+
+`deploy-pages.yml` **não roda mais a cada push** (desligado em 2026-08-18): a
+homologação na VPS virou o preview de verdade, por ter o painel funcionando. O
+site do Pages segue no ar parado na última versão; para atualizá-lo, rodar o
+workflow à mão em Actions → Deploy preview to GitHub Pages → Run workflow.
 
 ### Quando o preview do GitHub Pages falha
 

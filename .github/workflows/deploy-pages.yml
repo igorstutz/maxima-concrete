@@ -1,11 +1,12 @@
 name: Deploy preview to GitHub Pages
 
+# Deploy automático DESLIGADO em 2026-08-18: a homologação na VPS
+# (maximaconcrete.igorstutz.online) assumiu o papel de preview e, diferente do
+# Pages, roda PHP — ou seja, tem o painel funcionando. O Pages virava só mais um
+# build a cada push. Continua disponível sob demanda: Actions → este workflow →
+# "Run workflow" (ou `gh workflow run deploy-pages.yml --ref main`); enquanto
+# ninguém rodar, o site do Pages fica parado na última versão publicada.
 on:
-  push:
-    branches: [main]
-    # Ver nota em copy-section.yml: o pedido de cópia sozinho não gera deploy.
-    paths-ignore:
-      - "src/content/settings/copy-section.json"
   workflow_dispatch:
 
 permissions:
