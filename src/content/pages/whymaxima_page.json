@@ -2,36 +2,37 @@
   "pageKey": "whymaxima_page",
   "sections": [
     {
+      "type": "hero-image-only",
       "key": "custom_whymaxima_hero",
       "label": "Hero Image",
-      "type": "hero-image-only",
       "content": {
+        "_sourceLabel": "",
         "image": "/images/cms/uploads/ajuste-whymaxima-hero.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You"
       }
     },
     {
+      "type": "why-maxima-intro",
       "key": "custom_whymaxima_intro",
       "label": "Why Maxima",
-      "type": "why-maxima-intro",
       "content": {
         "title": "Built on Trust. \nDriven by\nPrecision.",
-        "image1": "/images/cms/uploads/ajuste-team-1.webp",
-        "image2": "/images/cms/uploads/ajuste-team-2.webp",
         "ctaLink": "",
         "ctaText": "",
         "subtitle": "Why Maxima?",
+        "image1": "/images/maxima team (3).jpeg",
+        "image2": "/images/maxima team (2).jpeg",
         "buttonLink": "#contact",
         "buttonText": "Contact Us",
-        "paragraph1": "At <b>Maxima Concrete</b>, we believe great construction starts with great trust. For over 15 years, we’ve been the <b>concrete contractor in Central Ohio</b> that homeowners and businesses rely on for precision, accountability, and lasting results.  ",
+        "paragraph1": "At <b>Maxima Concrete</b>, we believe great construction starts with great trust. For over 15 years, we’ve been the <b>concrete contractor in Central Ohio</b> that homeowners and businesses rely on for precision, accountability, and lasting results.",
         "paragraph2": "From <b>driveways</b> and <b>patios</b> to <b>outdoor living spaces</b> and <b>pools</b>, we handle every step of your project with our own equipment and our own expert team — no middlemen, no outsourcing, and no excuses."
       }
     },
     {
+      "type": "areas",
       "key": "custom_areas_seed",
       "label": "Areas",
-      "type": "areas",
       "content": {
         "areas": [
           "Delaware County: Delaware, Powell, Galena, Lewis Center, Sunbury, Dublin, and more.",
@@ -54,13 +55,13 @@
       }
     },
     {
+      "type": "values",
       "key": "custom_values_seed",
       "label": "Values",
-      "type": "values",
       "content": {
-        "image": "/images/cms/uploads/1772680164186-wbdtn.webp",
         "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "image": "/images/cms/uploads/1772680164186-wbdtn.webp",
         "pillars": [
           {
             "title": "Transparency",
@@ -91,9 +92,9 @@
       }
     },
     {
+      "type": "financing",
       "key": "custom_financing_seed",
       "label": "Financing",
-      "type": "financing",
       "content": {
         "title": "Financing Options\nThat Fit Your Budget",
         "ctaLink": "/financing",
@@ -114,22 +115,27 @@
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "_sourceLabel": "",
         "items": [
           {
             "icon": "home",
@@ -140,7 +146,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -156,31 +162,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773689121091_usp26a",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -190,21 +193,23 @@
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773689112171_tu7nc",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     },
     {
+      "type": "faq",
       "key": "custom_whymaxima_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — About Maxima Concrete",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "How long has Maxima Concrete been in business?",
@@ -222,9 +227,7 @@
             "question": "What areas do you serve?",
             "answer": "We serve Columbus, Delaware, and surrounding Central Ohio communities across Franklin, Union, Licking, and Fairfield Counties."
           }
-        ],
-        "title": "FAQ — About Maxima Concrete",
-        "_sourceLabel": "FAQ"
+        ]
       }
     }
   ]
