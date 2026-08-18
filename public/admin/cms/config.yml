@@ -1254,12 +1254,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -1922,6 +1917,10 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
                       - name: cards
                         label: cards
                         required: false
@@ -1945,10 +1944,6 @@ collections:
                         widget: string
                       - name: cityName
                         label: cityName
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
                         required: false
                         widget: string
                       - name: description
@@ -2627,12 +2622,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -5691,12 +5681,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -6192,18 +6177,23 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: tagline
                         label: tagline
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: paragraphs
                         label: paragraphs
                         required: false
@@ -6212,11 +6202,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: taglineDescription
                         label: taglineDescription
                         required: false
@@ -6241,12 +6226,12 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: services
@@ -6298,14 +6283,22 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: paragraph1
+                        label: paragraph1
+                        required: false
+                        widget: text
+                      - name: paragraph2
+                        label: paragraph2
+                        required: false
+                        widget: text
                       - name: imageTop
                         label: imageTop
                         required: false
@@ -6313,14 +6306,6 @@ collections:
                         choose_url: true
                       - name: leadText
                         label: leadText
-                        required: false
-                        widget: text
-                      - name: paragraph1
-                        label: paragraph1
-                        required: false
-                        widget: text
-                      - name: paragraph2
-                        label: paragraph2
                         required: false
                         widget: text
                       - name: imageBottom
@@ -6394,6 +6379,14 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: text
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: items
                         label: items
                         required: false
@@ -6411,14 +6404,6 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
               - label: hub-why-maxima
                 name: hub-why-maxima
                 widget: object
@@ -6439,6 +6424,23 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: groups
                         label: groups
                         required: false
@@ -6465,27 +6467,10 @@ collections:
                             label: title
                             required: false
                             widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
                       - name: eyebrow
                         label: eyebrow
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: inspiration
                 name: inspiration
                 widget: object
@@ -6960,12 +6945,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -7620,12 +7600,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -11627,6 +11602,10 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
                       - name: patterns
                         label: patterns
                         required: false
@@ -11645,10 +11624,6 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: bottomNote
                         label: bottomNote
                         required: false
@@ -12592,12 +12567,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -13104,12 +13074,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -13806,12 +13771,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -14754,12 +14714,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -14864,12 +14819,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -15215,12 +15165,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -15325,12 +15270,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -15639,12 +15579,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -15749,12 +15684,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -16100,12 +16030,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -16210,12 +16135,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -16524,12 +16444,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -16634,12 +16549,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -16985,12 +16895,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -17095,12 +17000,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -17446,12 +17346,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -17556,12 +17451,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -17907,12 +17797,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -18017,12 +17902,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -18368,12 +18248,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -18478,12 +18353,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -18792,12 +18662,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -18902,12 +18767,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -19253,12 +19113,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -19363,12 +19218,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -19714,12 +19564,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: instagram
                 name: instagram
                 widget: object
@@ -19824,12 +19669,7 @@ collections:
                       - name: paverImages
                         label: paverImages
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -20388,12 +20228,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -23641,18 +23476,23 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: tagline
                         label: tagline
                         required: false
                         widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: paragraphs
                         label: paragraphs
                         required: false
@@ -23661,11 +23501,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: taglineDescription
                         label: taglineDescription
                         required: false
@@ -23690,12 +23525,12 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
                         required: false
                         widget: string
                       - name: services
@@ -23747,14 +23582,22 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: paragraph1
+                        label: paragraph1
+                        required: false
+                        widget: text
+                      - name: paragraph2
+                        label: paragraph2
+                        required: false
+                        widget: text
                       - name: imageTop
                         label: imageTop
                         required: false
@@ -23762,14 +23605,6 @@ collections:
                         choose_url: true
                       - name: leadText
                         label: leadText
-                        required: false
-                        widget: text
-                      - name: paragraph1
-                        label: paragraph1
-                        required: false
-                        widget: text
-                      - name: paragraph2
-                        label: paragraph2
                         required: false
                         widget: text
                       - name: imageBottom
@@ -23847,6 +23682,23 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: groups
                         label: groups
                         required: false
@@ -23873,27 +23725,10 @@ collections:
                             label: title
                             required: false
                             widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
                       - name: eyebrow
                         label: eyebrow
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
       - name: patios_page
         label: "Patios — Concrete"
         file: src/content/pages/patios_page.json
@@ -24322,12 +24157,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -25039,12 +24869,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: paver-offer
                 name: paver-offer
                 widget: object
@@ -25065,6 +24890,19 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: icon
                         label: icon
                         required: false
@@ -25082,19 +24920,6 @@ collections:
                         label: paragraph
                         required: false
                         widget: text
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -25683,12 +25508,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -26400,12 +26220,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -27363,12 +27178,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -28049,12 +27859,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -29235,12 +29040,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: paver-intro
                 name: paver-intro
                 widget: object
@@ -29990,12 +29790,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -30739,12 +30534,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -31440,12 +31230,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -32156,11 +31941,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: image
-                        label: image
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: ctaLink
                         label: ctaLink
                         required: false
@@ -32169,6 +31949,11 @@ collections:
                         label: ctaText
                         required: false
                         widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: pillars
                         label: pillars
                         required: false
@@ -32210,16 +31995,6 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: image1
-                        label: image1
-                        required: false
-                        widget: image
-                        choose_url: true
-                      - name: image2
-                        label: image2
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: ctaLink
                         label: ctaLink
                         required: false
@@ -32232,6 +32007,16 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: image1
+                        label: image1
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: image2
+                        label: image2
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: buttonLink
                         label: buttonLink
                         required: false
@@ -32503,12 +32288,7 @@ collections:
                       - name: images
                         label: images
                         required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
+                        widget: string
               - label: why-choose
                 name: why-choose
                 widget: object
@@ -32891,10 +32671,10 @@ collections:
                 value: "drivewayshub_page::drivewayshub_page_intro"
               - label: "Driveways › Driveway Options"
                 value: "drivewayshub_page::drivewayshub_page_options"
-              - label: "Driveways › Paver Driveways"
-                value: "drivewayshub_page::drivewayshub_page_paver"
               - label: "Driveways › Why Choose"
                 value: "drivewayshub_page::drivewayshub_page_why_choose"
+              - label: "Driveways › Paver, Stone and Brick Driveways"
+                value: "drivewayshub_page::drivewayshub_page_paver"
               - label: "Driveways › Why Maxima"
                 value: "drivewayshub_page::drivewayshub_page_why_maxima"
               - label: "Driveways › Inspiration"
@@ -33599,12 +33379,12 @@ collections:
                 value: "patioshub_page::patioshub_page_intro"
               - label: "Patios › Patio Options"
                 value: "patioshub_page::patioshub_page_options"
+              - label: "Patios › Why Maxima"
+                value: "patioshub_page::patioshub_page_why_maxima"
               - label: "Patios › Paver Patios"
                 value: "patioshub_page::patioshub_page_paver"
               - label: "Patios › Engineered for Durability"
                 value: "patioshub_page::patioshub_page_durability"
-              - label: "Patios › Why Maxima"
-                value: "patioshub_page::patioshub_page_why_maxima"
               - label: "Patios › Related Services"
                 value: "patioshub_page::patioshub_page_final_cta"
               - label: "Patios › Find Our Work Near You"
