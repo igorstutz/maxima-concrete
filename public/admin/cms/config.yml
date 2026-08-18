@@ -23048,11 +23048,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: image
-                        label: image
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: title
                         label: title
                         required: false
@@ -23073,6 +23068,11 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: related-services
                 name: related-services
                 widget: object
@@ -23710,11 +23710,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: image
-                        label: image
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: title
                         label: title
                         required: false
@@ -23735,6 +23730,11 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: outdoor-kitchen
                 name: outdoor-kitchen
                 widget: object
@@ -29678,11 +29678,6 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: image
-                        label: image
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: title
                         label: title
                         required: false
@@ -29703,6 +29698,11 @@ collections:
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
               - label: related-services
                 name: related-services
                 widget: object
