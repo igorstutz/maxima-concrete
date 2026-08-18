@@ -32,7 +32,7 @@
         "_sourceLabel": "Intro",
         "ctaLink": "#contact",
         "titleLine2": "Outdoor Living",
-        "images": [],
+        "images": "",
         "imageLarge": "/images/cms/uploads/1784041502059-ihd5m8.webp",
         "paragraph1": "Transform your backyard with a custom <b>paver patio</b> designed for beauty, durability, and everyday enjoyment. With <b>over 1,000 patios installed</b>, Maxima Concrete combines premium pavers, expert craftsmanship, and precise installation to create outdoor spaces that match your style, increase your home’s value, and stand the test of time.",
         "paragraph2": "Every paver patio is constructed with proper base preparation, precision grading, and expert craftsmanship to ensure long-term durability and performance. Whether you’re creating a space for entertaining, outdoor dining, or relaxing with family, we build patios that are low-maintenance, structurally sound, and designed to complement your home for years to come.",
@@ -72,8 +72,8 @@
         "description": "Our patios combine strength, style, and simplicity. Whether you envision a sleek modern retreat or a warm rustic escape, we’ll bring it to life — built for beauty and made to last.",
         "backgroundImage": "/images/cms/uploads/1784041545687-bkwksk.webp",
         "overlayOpacity": 70,
-        "eyebrow": "by Maxima Concrete",
         "benefits": "",
+        "eyebrow": "by Maxima Concrete",
         "overlayGradient": false
       }
     },
@@ -90,8 +90,8 @@
         "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
         "backgroundImage": "/images/cms/uploads/1784041583591-tlmvw.webp",
         "overlayOpacity": 90,
-        "eyebrow": "",
         "benefits": "",
+        "eyebrow": "",
         "overlayGradient": false
       }
     },
@@ -117,6 +117,44 @@
           "/images/stamped concrete (patio) (14).jpeg"
         ],
         "descriptionBold": ""
+      }
+    },
+    {
+      "type": "why-choose",
+      "key": "custom_1787061439149_7jiwgk",
+      "label": "Why Choose",
+      "content": {
+        "title": "Our Commitment\nto Quality",
+        "ctaText": "",
+        "_sourceLabel": "Why Choose",
+        "ctaLink": "",
+        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
+        "benefits": [
+          {
+            "title": "6.5-Bag Mix Concrete",
+            "iconType": "package",
+            "description": "Stronger and denser for a durable foundation.",
+            "customIcon": "package"
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "description": "Reduces cracking and adds internal strength.",
+            "customIcon": "layers"
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "description": "Provides superior stability and long-term support.",
+            "customIcon": "grid"
+          },
+          {
+            "title": "Full-Service Experience",
+            "iconType": "clipboard",
+            "description": "From consultation to final finish — we handle it all.",
+            "customIcon": "users"
+          }
+        ]
       }
     },
     {
@@ -285,42 +323,6 @@
             "answer": "Yes — we provide free on-site consultations and design estimates anywhere in Central Ohio."
           }
         ]
-      }
-    },
-    {
-      "key": "custom_1787061439149_7jiwgk",
-      "label": "Why Choose",
-      "type": "why-choose",
-      "content": {
-        "title": "Our Commitment\nto Quality",
-        "benefits": [
-          {
-            "title": "6.5-Bag Mix Concrete",
-            "iconType": "package",
-            "customIcon": "package",
-            "description": "Stronger and denser for a durable foundation."
-          },
-          {
-            "title": "Fiber Mesh Reinforcement",
-            "iconType": "layers",
-            "customIcon": "layers",
-            "description": "Reduces cracking and adds internal strength."
-          },
-          {
-            "title": "10-Gauge Wire Mesh",
-            "iconType": "grid",
-            "customIcon": "grid",
-            "description": "Provides superior stability and long-term support."
-          },
-          {
-            "title": "Full-Service Experience",
-            "iconType": "clipboard",
-            "customIcon": "users",
-            "description": "From consultation to final finish — we handle it all."
-          }
-        ],
-        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
-        "_sourceLabel": "Why Choose"
       }
     }
   ]
