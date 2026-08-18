@@ -159,6 +159,7 @@
         "ctaLink": "#contact",
         "description": "",
         "images": [
+          "/images/Captura_de_tela_2026-08-17_142526.png_202608181434.jpeg",
           "/images/cms/uploads/1782840441394-6t8fhw.webp",
           "/images/cms/uploads/1781096872590-do65p6.webp",
           "/images/Captura de tela 2026-06-05 114610.png",
@@ -375,16 +376,6 @@
             "answer": "Yes — we provide free on-site consultations and design estimates anywhere in Central Ohio."
           }
         ]
-      }
-    },
-    {
-      "key": "instagram",
-      "label": "Instagram",
-      "type": "instagram",
-      "content": {
-        "handle": "@maximaconcrete",
-        "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram"
       }
     }
   ]
