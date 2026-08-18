@@ -6731,6 +6731,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -7090,6 +7122,38 @@ collections:
                         widget: string
                       - name: descriptionBold
                         label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: intro
@@ -7789,6 +7853,38 @@ collections:
                         widget: string
                       - name: descriptionBold
                         label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: intro
@@ -9666,6 +9762,38 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: reviews
                 name: reviews
                 widget: object
@@ -24448,6 +24576,38 @@ collections:
                         label: eyebrow
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
       - name: patios_page
         label: "Patios — Concrete"
         file: src/content/pages/patios_page.json
@@ -24810,6 +24970,38 @@ collections:
                         widget: string
                       - name: descriptionBold
                         label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: intro
@@ -25568,6 +25760,38 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -26306,6 +26530,38 @@ collections:
                         widget: string
                       - name: descriptionBold
                         label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: intro
@@ -27062,6 +27318,38 @@ collections:
                         widget: string
                       - name: descriptionBold
                         label: descriptionBold
+                        required: false
+                        widget: string
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
               - label: intro
@@ -28737,6 +29025,38 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
+              - label: instagram
+                name: instagram
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: handle
+                        label: handle
+                        required: false
+                        widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titlePart2
+                        label: titlePart2
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
               - label: integrated-features-2
                 name: integrated-features-2
                 widget: object
@@ -33855,6 +34175,8 @@ collections:
                 value: "drivewayshub_page::custom_1784214332763_x286il"
               - label: "Driveways › FAQ"
                 value: "drivewayshub_page::custom_1784214278861_e4flwd"
+              - label: "Driveways › Instagram"
+                value: "drivewayshub_page::instagram"
               - label: "Driveways — Concrete › Hero"
                 value: "driveways_page::custom_1766273483523_e1zxbj"
               - label: "Driveways — Concrete › Intro"
@@ -33879,6 +34201,8 @@ collections:
                 value: "driveways_page::custom_1766273464841_2vtztl"
               - label: "Driveways — Concrete › FAQ"
                 value: "driveways_page::driveways_page_faq"
+              - label: "Driveways — Concrete › Instagram"
+                value: "driveways_page::instagram"
               - label: "Driveways — Paver › Hero"
                 value: "paverdriveways_page::custom_1762900000001_paverdrv"
               - label: "Driveways — Paver › Intro"
@@ -33903,6 +34227,8 @@ collections:
                 value: "paverdriveways_page::custom_1762900000010_paverdrv"
               - label: "Driveways — Paver › FAQ"
                 value: "paverdriveways_page::custom_1762900000011_paverdrv"
+              - label: "Driveways — Paver › Instagram"
+                value: "paverdriveways_page::instagram"
               - label: "Financing › Hero"
                 value: "financing_page::financing_hero"
               - label: "Financing › Lending partners"
@@ -33971,6 +34297,8 @@ collections:
                 value: "finishesbuffwash_page::find_work"
               - label: "Finishes — Buff Wash & Exposed › FAQ"
                 value: "finishesbuffwash_page::custom_finishesbuffwash_faq"
+              - label: "Finishes — Buff Wash & Exposed › Instagram"
+                value: "finishesbuffwash_page::instagram"
               - label: "Finishes — Colored Broom › Hero"
                 value: "finishescoloredbroom_page::custom_1773271861664_80nv47"
               - label: "Finishes — Colored Broom › Intro"
@@ -34557,6 +34885,8 @@ collections:
                 value: "patioshub_page::patioshub_page_contact"
               - label: "Patios › FAQ"
                 value: "patioshub_page::patioshub_page_faq"
+              - label: "Patios › Instagram"
+                value: "patioshub_page::instagram"
               - label: "Patios — Concrete › Hero"
                 value: "patios_page::custom_1768773909977_mad62e"
               - label: "Patios — Concrete › Intro"
@@ -34585,6 +34915,8 @@ collections:
                 value: "patios_page::custom_1768776165154_r7uvm6"
               - label: "Patios — Concrete › FAQ"
                 value: "patios_page::custom_1768776180340_3b96n"
+              - label: "Patios — Concrete › Instagram"
+                value: "patios_page::instagram"
               - label: "Patios — Paver › Hero"
                 value: "paverpatios_page::custom_1762901000001_paverpat"
               - label: "Patios — Paver › Intro"
@@ -34613,6 +34945,8 @@ collections:
                 value: "paverpatios_page::custom_1762901000009_paverpat"
               - label: "Patios — Paver › FAQ"
                 value: "paverpatios_page::custom_1762901000010_paverpat"
+              - label: "Patios — Paver › Instagram"
+                value: "paverpatios_page::instagram"
               - label: "Pool Decks & Surrounds › Hero"
                 value: "pool_decks_page::custom_1762902000001_pooldeck"
               - label: "Pool Decks & Surrounds › Intro"
@@ -34641,6 +34975,8 @@ collections:
                 value: "pool_decks_page::custom_1762902000009_pooldeck"
               - label: "Pool Decks & Surrounds › FAQ"
                 value: "pool_decks_page::custom_1762902000010_pooldeck"
+              - label: "Pool Decks & Surrounds › Instagram"
+                value: "pool_decks_page::instagram"
               - label: "Porches › Hero"
                 value: "porches_page::custom_1769042537173_xjy49g"
               - label: "Porches › Intro"
@@ -34669,6 +35005,8 @@ collections:
                 value: "porches_page::custom_porches_contact"
               - label: "Porches › FAQ"
                 value: "porches_page::custom_porches_faq"
+              - label: "Porches › Instagram"
+                value: "porches_page::instagram"
               - label: "Project Map › FAQ"
                 value: "projectmap_page::custom_projectmap_faq"
               - label: "Retaining Walls › Hero"
@@ -34727,6 +35065,8 @@ collections:
                 value: "seatingwalls_page::custom_1771982544615_jomzpt"
               - label: "Seating Walls › FAQ"
                 value: "seatingwalls_page::custom_1771982608961_epgvkc"
+              - label: "Seating Walls › Instagram"
+                value: "seatingwalls_page::instagram"
               - label: "Shelters › Hero"
                 value: "shelters_page::custom_1773681730635_7hf018"
               - label: "Shelters › Intro"

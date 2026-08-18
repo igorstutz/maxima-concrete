@@ -359,6 +359,16 @@
         "title": "FAQ — Porches",
         "_sourceLabel": "FAQ"
       }
+    },
+    {
+      "key": "instagram",
+      "label": "Instagram",
+      "type": "instagram",
+      "content": {
+        "handle": "@maximaconcrete",
+        "titlePart1": "Follow Us",
+        "titlePart2": "— On Instagram"
+      }
     }
   ]
 }
