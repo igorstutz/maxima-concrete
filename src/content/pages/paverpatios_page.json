@@ -36,7 +36,7 @@
         "imageLarge": "/images/cms/uploads/1784041502059-ihd5m8.webp",
         "paragraph1": "Transform your backyard with a custom <b>paver patio</b> designed for beauty, durability, and everyday enjoyment. With <b>over 1,000 patios installed</b>, Maxima Concrete combines premium pavers, expert craftsmanship, and precise installation to create outdoor spaces that match your style, increase your home’s value, and stand the test of time.",
         "paragraph2": "Every paver patio is constructed with proper base preparation, precision grading, and expert craftsmanship to ensure long-term durability and performance. Whether you’re creating a space for entertaining, outdoor dining, or relaxing with family, we build patios that are low-maintenance, structurally sound, and designed to complement your home for years to come.",
-        "imageTopRight": "/images/cms/uploads/1784041491315-s8eamk.webp",
+        "imageTopRight": "/images/Captura de tela 2026-06-05 114610.png",
         "paragraphLayout": ""
       }
     },
@@ -74,6 +74,8 @@
         "overlayOpacity": 70,
         "benefits": [
           {
+            "title": "Durability and Longevity",
+            "description": "",
             "icon": "shield",
             "items": [
               {
@@ -81,9 +83,12 @@
                 "label": "High-Strength Mix (6.5-Bag Concrete):"
               }
             ],
-            "title": "Durability and Longevity"
+            "closingText": "",
+            "bullets": []
           },
           {
+            "title": "Low Maintenance",
+            "description": "",
             "icon": "sparkles",
             "items": [
               {
@@ -91,9 +96,12 @@
                 "label": "Crack Resistance:"
               }
             ],
-            "title": "Low Maintenance"
+            "closingText": "",
+            "bullets": []
           },
           {
+            "title": "Versatility",
+            "description": "",
             "icon": "palette",
             "items": [
               {
@@ -101,9 +109,12 @@
                 "label": "Style:"
               }
             ],
-            "title": "Versatility"
+            "closingText": "",
+            "bullets": []
           },
           {
+            "title": "Added Home Value",
+            "description": "",
             "icon": "trending-up",
             "items": [
               {
@@ -111,7 +122,8 @@
                 "label": ""
               }
             ],
-            "title": "Added Home Value"
+            "closingText": "",
+            "bullets": []
           }
         ],
         "eyebrow": "by Maxima Concrete",
