@@ -2,47 +2,57 @@
   "pageKey": "curbsgutters_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1771529827645_lf169",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Curbs & Gutters",
-        "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
-        "tagline": "Protecting Your Property, Enhancing Your Street",
         "subtitle": "Durable, code-compliant curbs and gutters that manage stormwater, improve safety, and boost curb appeal. Installed by Maxima Concrete.",
         "_sourceLabel": "Hero",
+        "ctaLink": "#contact",
+        "tagline": "Protecting Your Property, Enhancing Your Street",
         "backgroundImage": "/images/cms/uploads/1773275640522-a3r6kk.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1773275640522-a3r6kk-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1773275640522-a3r6kk-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "intro",
       "key": "custom_1771981390751_wwx2ql",
       "label": "Intro",
-      "type": "intro",
       "content": {
         "title": "Why Are Curbs and Gutters Important?",
-        "ctaLink": "#contact",
         "ctaText": "Inspired? Let's Build Your Vision",
         "subtitle": "",
+        "_sourceLabel": "Intro",
+        "ctaLink": "#contact",
+        "titleLine2": "",
+        "images": [],
         "imageLarge": "/images/cms/uploads/1773275795307-y07ab.webp",
         "paragraph1": "Curbs and gutters do more than define the edge of a roadway — they play a critical role in protecting your property. Properly installed systems improve drainage, direct water away from pavement, reduce erosion, and help extend the life of your concrete surfaces. At Maxima Concrete, we use proven construction methods and quality materials to deliver durable, long-lasting results for residential and commercial projects.",
         "paragraph2": "",
-        "titleLine2": "",
-        "_sourceLabel": "Intro",
-        "imageTopRight": "/images/cms/uploads/1782842389993-hpp1f.webp"
+        "imageTopRight": "/images/images (4).jpeg",
+        "paragraphLayout": ""
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1771981980849_kzj5n",
       "label": "Why Maxima",
-      "type": "why-maxima-service",
       "content": {
         "title": "The role of Curbs and Gutters",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "_sourceLabel": "Why Maxima",
+        "ctaLink": "#contact",
+        "bottomText": "",
+        "description": "",
+        "backgroundImage": "/images/cms/uploads/1773275984945-n69qz.webp",
+        "overlayOpacity": 76,
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
@@ -53,7 +63,10 @@
                 "label": ""
               }
             ],
-            "title": "Stormwater management"
+            "title": "Stormwater management",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "hard-hat",
@@ -63,7 +76,10 @@
                 "label": ""
               }
             ],
-            "title": "Pedestrian and traffic safety"
+            "title": "Pedestrian and traffic safety",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "map",
@@ -73,7 +89,10 @@
                 "label": ""
               }
             ],
-            "title": "Property definition and usability"
+            "title": "Property definition and usability",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "trending-up",
@@ -83,21 +102,25 @@
                 "label": ""
               }
             ],
-            "title": "Aesthetic and property value"
+            "title": "Aesthetic and property value",
+            "description": "",
+            "closingText": "",
+            "bullets": []
           }
         ],
-        "description": "",
-        "_sourceLabel": "Why Maxima",
-        "overlayOpacity": 76,
-        "backgroundImage": "/images/cms/uploads/1773275984945-n69qz.webp"
+        "overlayGradient": false
       }
     },
     {
+      "type": "style-options",
       "key": "custom_1773276470214_0qt6wr",
       "label": "Style Options",
-      "type": "style-options",
       "content": {
         "title": "Built to Code. Built to Last.",
+        "ctaText": "",
+        "_sourceLabel": "Style Options",
+        "ctaLink": "",
+        "description": "Curb and gutter projects in Ohio often require compliance with local municipal codes and applicable Right-of-Way (ROW) permits. Maxima Concrete follows all local requirements and industry best practices to deliver safe, durable, and code-compliant installations.",
         "styles": [
           {
             "link": "#contact",
@@ -124,16 +147,20 @@
             "description": "Every project is inspected throughout the installation process to ensure proper workmanship, code compliance, and lasting performance."
           }
         ],
-        "description": "Curb and gutter projects in Ohio often require compliance with local municipal codes and applicable Right-of-Way (ROW) permits. Maxima Concrete follows all local requirements and industry best practices to deliver safe, durable, and code-compliant installations.",
-        "_sourceLabel": "Style Options"
+        "variant": "",
+        "closingText": ""
       }
     },
     {
+      "type": "inspiration",
       "key": "custom_1771983384387_jjnwa8",
       "label": "Inspiration",
-      "type": "inspiration",
       "content": {
         "title": "Inspiration for Your Curbs and Gutters",
+        "ctaText": "Explore more in our Gallery",
+        "_sourceLabel": "Inspiration",
+        "ctaLink": "/gallery",
+        "description": "",
         "images": [
           "/images/cms/uploads/1773278257751-2uv23f.webp",
           "/images/cms/uploads/1773278275002-cpxvlp.webp",
@@ -144,23 +171,21 @@
           "/images/cms/uploads/1782842416068-osrjzs.webp",
           "/images/cms/uploads/1782842416816-natoo9.webp"
         ],
-        "_sourceLabel": "Inspiration",
-        "ctaText": "Explore more in our Gallery",
-        "ctaLink": "/gallery"
+        "descriptionBold": ""
       }
     },
     {
+      "type": "final-cta",
       "key": "custom_1771983202229_pe16ng",
       "label": "Related Services",
-      "type": "final-cta",
       "content": {
+        "_sourceLabel": "Related Services",
         "ctaLink": "#contact",
         "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
         "titleLine1": "Ready to enhance your property’s edge?",
         "titleLine2": "",
         "contactText": "📞 Schedule your free estimate today and let’s keep your property connected, protected, and looking its best.",
         "description": "Protect your home, improve drainage, and upgrade your curb appeal with professionally installed curbs and gutters by Maxima Concrete.  We make it simple — from design to permit approval to final finish.",
-        "_sourceLabel": "Related Services",
         "relatedTitle": "Related Services",
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
@@ -184,22 +209,26 @@
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "curbsgutters_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1773275640522-a3r6kk.webp",
         "cards": [
           {
             "icon": "",
@@ -221,18 +250,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1773275640522-a3r6kk.webp"
+        ]
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -243,7 +273,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -259,42 +289,39 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_ig_follow",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     },
     {
+      "type": "contact",
       "key": "custom_1771982490610_1yddet",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -304,10 +331,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1771982617518_pant8",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Curbs & Gutters",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "Do I need a permit to install a curb or gutter?",
@@ -325,9 +354,7 @@
             "question": "Do curbs really affect property value?",
             "answer": "Yes. Clean, well-defined curbs and gutters improve drainage, protect your pavement, and boost curb appeal — all of which support property value."
           }
-        ],
-        "title": "FAQ — Curbs & Gutters",
-        "_sourceLabel": "FAQ"
+        ]
       }
     }
   ]
