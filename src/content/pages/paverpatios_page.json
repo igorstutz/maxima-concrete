@@ -286,6 +286,42 @@
           }
         ]
       }
+    },
+    {
+      "key": "custom_1787061439149_7jiwgk",
+      "label": "Why Choose",
+      "type": "why-choose",
+      "content": {
+        "title": "Our Commitment\nto Quality",
+        "benefits": [
+          {
+            "title": "6.5-Bag Mix Concrete",
+            "iconType": "package",
+            "customIcon": "package",
+            "description": "Stronger and denser for a durable foundation."
+          },
+          {
+            "title": "Fiber Mesh Reinforcement",
+            "iconType": "layers",
+            "customIcon": "layers",
+            "description": "Reduces cracking and adds internal strength."
+          },
+          {
+            "title": "10-Gauge Wire Mesh",
+            "iconType": "grid",
+            "customIcon": "grid",
+            "description": "Provides superior stability and long-term support."
+          },
+          {
+            "title": "Full-Service Experience",
+            "iconType": "clipboard",
+            "customIcon": "users",
+            "description": "From consultation to final finish — we handle it all."
+          }
+        ],
+        "description": "We build every project with precision \nand care — ensuring structural integrity and beauty that lasts.\n\nWhen you choose Maxima Concrete, you’re choosing reliability, craftsmanship, and peace of mind.",
+        "_sourceLabel": "Why Choose"
+      }
     }
   ]
 }
