@@ -2,26 +2,29 @@
   "pageKey": "outdoorlighting_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1773616889211_qijdoa",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Outdoor Lighting",
         "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Professional Outdoor Lighting Solutions That Highlight Your Landscape, Improve Safety, and Extend Your Outdoor Living Space.",
         "subtitle": "Professional Outdoor Lighting Solutions That Highlight Your Landscape, Improve Safety, and Extend Your Outdoor Living Space.",
         "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1784037529549-kzymnc.webp",
+        "tagline": "Professional Outdoor Lighting Solutions That Highlight Your Landscape, Improve Safety, and Extend Your Outdoor Living Space.",
+        "backgroundImage": "/images/OUTDOOR LIGHTING (2).jpeg",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1784037529549-kzymnc-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1784037529549-kzymnc-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "carousel-images",
       "key": "custom_outdoorlighting_carousel_images",
       "label": "Carousel Images",
-      "type": "carousel-images",
       "content": {
         "title": "Transform Your Backyard into a Nighttime Oasis",
         "ctaLink": "#contact",
@@ -36,13 +39,17 @@
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1773661896047_xun28s",
       "label": "Low-Voltage",
-      "type": "why-maxima-service",
       "content": {
         "title": "Why Choose Low-Voltage Lighting?",
         "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "description": "",
+        "_sourceLabel": "Why Maxima",
+        "backgroundImage": "/images/cms/uploads/1781011937410-5detm.webp",
+        "overlayOpacity": 70,
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
@@ -54,7 +61,9 @@
               }
             ],
             "title": "Safety & Visibility",
-            "description": "Soft yet bright illumination improves nighttime visibility, preventing slips and deterring unwanted visitors"
+            "description": "Soft yet bright illumination improves nighttime visibility, preventing slips and deterring unwanted visitors",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "home",
@@ -65,7 +74,9 @@
               }
             ],
             "title": "Enhanced Curb Appeal",
-            "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape."
+            "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape.",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "zap",
@@ -76,7 +87,9 @@
               }
             ],
             "title": "Energy Efficiency",
-            "description": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
+            "description": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "palette",
@@ -87,22 +100,25 @@
               }
             ],
             "title": "Custom Design",
-            "description": "Available in countless fixtures, styles, and beam spreads, low-voltage lights are easily installed and expanded — ideal for both homeowners and contractors."
+            "description": "Available in countless fixtures, styles, and beam spreads, low-voltage lights are easily installed and expanded — ideal for both homeowners and contractors.",
+            "closingText": "",
+            "bullets": []
           }
         ],
-        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
-        "description": "",
-        "_sourceLabel": "Why Maxima",
-        "overlayOpacity": 70,
-        "backgroundImage": "/images/cms/uploads/1781011937410-5detm.webp"
+        "overlayGradient": false,
+        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
       }
     },
     {
+      "type": "style-options",
       "key": "custom_1773670584861_ohgrpcg",
       "label": "Style Options",
-      "type": "style-options",
       "content": {
         "title": "Maxima Concrete’s Lighting Solutions",
+        "ctaLink": "",
+        "ctaText": "",
+        "description": "Every home is unique — that’s why Maxima offers a tailored selection of lighting solutions designed to fit your layout, materials, and aesthetic:",
+        "_sourceLabel": "Style Options",
         "styles": [
           {
             "link": "#contact",
@@ -129,29 +145,31 @@
             "description": "Highlight focal points such as sculptures, trees, or water features."
           }
         ],
-        "description": "Every home is unique — that’s why Maxima offers a tailored selection of lighting solutions designed to fit your layout, materials, and aesthetic:",
-        "_sourceLabel": "Style Options"
+        "variant": "",
+        "closingText": ""
       }
     },
     {
+      "type": "outdoor-intro",
       "key": "custom_1773671141537_a92olc",
       "label": "Smart Controls & Color Options",
-      "type": "outdoor-intro",
       "content": {
-        "image": "/images/cms/uploads/1781011972577-tvsjqo.webp",
         "title": "Smart Controls & Color Options",
         "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Space",
         "description": "Enhance your outdoor lighting with intelligent features that provide greater convenience, efficiency, and customization.<br><br><b>Smart Timers:</b> Automatically schedule your lighting to improve security, increase energy efficiency, and eliminate manual operation.<br><b>Color-Changing LED Systems:</b> Customize your outdoor space with adjustable colors for holidays, special occasions, or everyday ambiance, creating the perfect atmosphere for any occasion.",
-        "_sourceLabel": "Outdoor Intro"
+        "_sourceLabel": "Outdoor Intro",
+        "image": "/images/cms/uploads/1781011972577-tvsjqo.webp"
       }
     },
     {
+      "type": "related-services",
       "key": "custom_1773675803581_3tr6g",
       "label": "Related Services",
-      "type": "related-services",
       "content": {
         "title": "Related Services",
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp.webp",
         "services": [
           {
             "link": "/finishes/stamped-colored",
@@ -173,28 +191,30 @@
             "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
-        ],
-        "_sourceLabel": "Related Services",
-        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp.webp"
+        ]
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "outdoorlighting_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaLink": "#contact",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1784037529549-kzymnc.webp",
         "cards": [
           {
             "icon": "",
@@ -216,18 +236,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1784037529549-kzymnc.webp"
+        ]
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -238,7 +259,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -254,31 +275,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773676029527_k67m2f",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -288,10 +306,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1773676032610_4gz3yt",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Outdoor Lighting",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What outdoor lighting options do you offer?",
@@ -309,20 +329,18 @@
             "question": "Do you offer financing?",
             "answer": "Yes, we offer flexible payment options."
           }
-        ],
-        "title": "FAQ — Outdoor Lighting",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773676034999_96bq5y",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
