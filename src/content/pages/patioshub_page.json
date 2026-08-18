@@ -62,55 +62,6 @@
       }
     },
     {
-      "type": "hub-feature",
-      "key": "patioshub_page_paver",
-      "label": "Paver Patios",
-      "content": {
-        "title": "Paver Patios That\nCombine Strength and Style",
-        "ctaText": "Explore Paver Patio",
-        "ctaLink": "/services/patios/patios-paver",
-        "tagline": "Durable. Repairable. Built to last.",
-        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp",
-        "paragraphs": [
-          "Create an outdoor space that’s built to last and designed to impress. Maxima Concrete installs custom paver patios using premium materials, expert craftsmanship, and proven installation techniques. Whether you’re creating a space for entertaining or relaxing, we’ll build a patio that enhances your home’s beauty, functionality, and value."
-        ],
-        "taglineDescription": "Upgrade your patio with a surface that performs as beautifully as it looks."
-      }
-    },
-    {
-      "type": "hub-durability",
-      "key": "patioshub_page_durability",
-      "label": "Engineered for Durability",
-      "content": {
-        "title": "Engineered for Durability",
-        "ctaText": "Get a Free Estimate",
-        "ctaLink": "#contact",
-        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.webp",
-        "cards": [
-          {
-            "icon": "",
-            "title": "Heavy-Duty\nDurability",
-            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
-          },
-          {
-            "icon": "",
-            "title": "Weather-Ready\nConstruction",
-            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
-          },
-          {
-            "icon": "",
-            "title": "Professional\nInstallation",
-            "description": "Completed by our trained in-house team with no subcontractors involved."
-          },
-          {
-            "icon": "",
-            "title": "Long-Term Value",
-            "description": "Durable surfaces designed to enhance function, appearance, and property value."
-          }
-        ]
-      }
-    },
-    {
       "type": "hub-why-maxima",
       "key": "patioshub_page_why_maxima",
       "label": "Why Maxima",
@@ -169,6 +120,55 @@
           }
         ],
         "eyebrow": "by Maxima Concrete"
+      }
+    },
+    {
+      "type": "hub-feature",
+      "key": "patioshub_page_paver",
+      "label": "Paver Patios",
+      "content": {
+        "title": "Paver Patios That\nCombine Strength and Style",
+        "ctaText": "Explore Paver Patio",
+        "ctaLink": "/services/patios/patios-paver",
+        "tagline": "Durable. Repairable. Built to last.",
+        "backgroundImage": "/images/cms/hub/patioshub_paver_bg.webp",
+        "paragraphs": [
+          "Create an outdoor space that’s built to last and designed to impress. Maxima Concrete installs custom paver patios using premium materials, expert craftsmanship, and proven installation techniques. Whether you’re creating a space for entertaining or relaxing, we’ll build a patio that enhances your home’s beauty, functionality, and value."
+        ],
+        "taglineDescription": "Upgrade your patio with a surface that performs as beautifully as it looks."
+      }
+    },
+    {
+      "type": "hub-durability",
+      "key": "patioshub_page_durability",
+      "label": "Engineered for Durability",
+      "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/hub/patioshub_durability_bg.webp",
+        "cards": [
+          {
+            "icon": "",
+            "title": "Heavy-Duty\nDurability",
+            "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
+          },
+          {
+            "icon": "",
+            "title": "Weather-Ready\nConstruction",
+            "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
+          },
+          {
+            "icon": "",
+            "title": "Professional\nInstallation",
+            "description": "Completed by our trained in-house team with no subcontractors involved."
+          },
+          {
+            "icon": "",
+            "title": "Long-Term Value",
+            "description": "Durable surfaces designed to enhance function, appearance, and property value."
+          }
+        ]
       }
     },
     {
