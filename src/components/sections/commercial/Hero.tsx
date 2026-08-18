@@ -1,7 +1,5 @@
-import { getImageProps } from "next/image";
 import { Container } from "@/components/Container";
-import { asset } from "@/lib/base-path";
-import { legacyAsset } from "@/components/sections/home/legacy";
+import { heroPicture } from "@/lib/hero-image";
 
 interface CommercialHeroContent {
   title?: string;
@@ -18,31 +16,25 @@ export default function Hero({ content }: { content: Record<string, any> }) {
   const c = content as CommercialHeroContent;
   const title = c.title || "We Take Your Business Seriously";
   const subtitle = c.subtitle || "Commercial Concrete by Maxima";
-  const backgroundImage = legacyAsset(c.backgroundImage);
+  const { imgProps, mobileProps } = heroPicture({
+    desktop: c.backgroundImage,
+    mobile: c.backgroundImageMobile,
+  });
 
   return (
     <section className="relative flex min-h-[480px] items-end overflow-hidden bg-[#1a1a1a] md:min-h-[560px]">
-      {backgroundImage && (
+      {imgProps && (
         <picture>
-          {c.backgroundImageMobile && (
+          {mobileProps && (
             <source
               media="(max-width: 768px)"
-              srcSet={asset(c.backgroundImageMobile)}
-              width={768}
-              height={1024}
+              srcSet={mobileProps.srcSet}
+              sizes="100vw"
             />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            {...getImageProps({
-              alt: "",
-              src: asset(backgroundImage),
-              width: 1920,
-              height: 1080,
-              priority: true,
-              unoptimized: true,
-              sizes: "100vw",
-            }).props}
+            {...imgProps}
             alt=""
             fetchPriority="high"
             loading="eager"

@@ -32,6 +32,10 @@ ajustes-assets/
 public/images/**/*-480w.webp
 public/images/**/*-828w.webp
 public/images/**/*-1280w.webp
+public/images/**/*-1600w.webp
+public/images/**/*-1920w.webp
+# Recorte vertical do hero gerado a partir da imagem de desktop
+public/images/**/*-mobilecrop.webp
 
 # Documentos de ajustes enviados pelo cliente
 Maxima Concrete - Ajustes*

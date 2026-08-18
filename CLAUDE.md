@@ -56,9 +56,19 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 - Imagens locais WebP; `priority` apenas no hero; **`sizes` corretos são obrigatórios**
   (é por eles que o navegador escolhe a variante certa — sem `sizes` ele baixa a maior).
 - Variantes responsivas: o export estático não otimiza imagem em runtime, então
-  `_extraction/generate-image-variants.mjs` gera versões em 480/828/1280px e
-  `src/lib/image-loader.ts` monta o srcset. Roda sozinho no `npm run build`
-  (script `prebuild`); as variantes são derivadas e não vão para o Git.
+  `_extraction/generate-image-variants.mjs` gera versões em 480/828/1280/1600/1920px
+  e `src/lib/image-loader.ts` monta o srcset. Roda sozinho no `npm run build`
+  (script `prebuild`); as variantes são derivadas e não vão para o Git. Qualidade
+  WebP 85, e **92 nas fotos de hero** (tela cheia, é onde a compressão aparece).
+  Ao mudar qualidade ou larguras, rode uma vez com `--apply --force` localmente —
+  sem `--force` as variantes já existentes são mantidas (no CI não é preciso, lá
+  o checkout vem sem nenhuma).
+- Fundo dos heros: sempre por `src/lib/hero-image.ts` (`heroPicture` /
+  `heroMobileSource`), nunca montando o `<picture>` na mão. As imagens "-mobile"
+  do CMS antigo têm 768 px e borram no celular; o mesmo script gera
+  `src/lib/hero-mobile.json` apontando cada uma para uma fonte de resolução
+  suficiente (a foto de desktop, ou um recorte dela na proporção vertical).
+  Nunca usar `unoptimized` em hero — isso descarta o srcset.
 - Widgets externos (Elfsight reviews/instagram) só carregam ao entrar na viewport.
 
 ## Ambientes (detalhes e operação em `DEPLOY.md`)

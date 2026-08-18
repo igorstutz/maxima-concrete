@@ -1,7 +1,5 @@
-import { getImageProps } from "next/image";
 import { Container } from "@/components/Container";
-import { asset } from "@/lib/base-path";
-import { legacyAsset } from "@/components/sections/home/legacy";
+import { heroPicture } from "@/lib/hero-image";
 import { HubCtaButton } from "./shared";
 
 interface HubHeroContent {
@@ -19,30 +17,20 @@ interface HubHeroContent {
 /** Hub Hero — fundo full-bleed, título, contagem de instalações, dois CTAs. */
 export default function HubHero({ content }: { content: Record<string, any> }) {
   const c = content as HubHeroContent;
-  const backgroundImage = legacyAsset(c.backgroundImage);
-  const backgroundImageMobile = legacyAsset(c.backgroundImageMobile);
-
-  // <picture> com art direction (mobile menor) mantendo priority do next/image.
-  const { props: imgProps } = backgroundImage
-    ? getImageProps({
-        alt: "",
-        src: asset(backgroundImage),
-        width: 1920,
-        height: 1080,
-        priority: true,
-        unoptimized: true,
-        sizes: "100vw",
-      })
-    : { props: null };
+  const { imgProps, mobileProps } = heroPicture({
+    desktop: c.backgroundImage,
+    mobile: c.backgroundImageMobile,
+  });
 
   return (
     <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-[#1a1a1a] md:min-h-screen">
       {imgProps && (
         <picture>
-          {backgroundImageMobile && (
+          {mobileProps && (
             <source
               media="(max-width: 768px)"
-              srcSet={asset(backgroundImageMobile)}
+              srcSet={mobileProps.srcSet}
+              sizes="100vw"
             />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -1,8 +1,6 @@
-import { getImageProps } from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/Container";
-import { asset } from "@/lib/base-path";
-import { legacyAsset } from "@/components/sections/home/legacy";
+import { heroPicture } from "@/lib/hero-image";
 import { SmartLink } from "@/components/sections/home/SmartLink";
 
 /** Hero raso da página Areas We Serve — type "hero-areas". */
@@ -12,34 +10,23 @@ export default function HeroAreas({ content }: { content: Record<string, any> })
   const description: string = content?.description || "";
   const ctaText: string = content?.ctaText || "";
   const ctaLink: string = content?.ctaLink || "#contact";
-  const backgroundImage: string = legacyAsset(content?.backgroundImage);
-  const backgroundImageMobile: string =
-    legacyAsset(content?.backgroundImageMobile) || backgroundImage;
-
-  // <picture> com art direction (mobile menor) mantendo priority do next/image.
-  const { props: imgProps } = backgroundImage
-    ? getImageProps({
-        alt: "",
-        src: asset(backgroundImage),
-        width: 1600,
-        height: 600,
-        priority: true,
-        unoptimized: true,
-        sizes: "100vw",
-      })
-    : { props: null };
+  const { imgProps, mobileProps } = heroPicture({
+    desktop: content?.backgroundImage,
+    // Sem imagem de celular própria, o <source> repete a de desktop.
+    mobile: content?.backgroundImageMobile || content?.backgroundImage,
+    width: 1600,
+    height: 600,
+  });
 
   return (
     <section className="relative flex h-[420px] items-center overflow-hidden md:h-[480px]">
       {imgProps && (
         <picture>
-          {backgroundImageMobile && (
+          {mobileProps && (
             <source
               media="(max-width: 768px)"
-              srcSet={asset(backgroundImageMobile)}
-              type="image/webp"
-              width={768}
-              height={600}
+              srcSet={mobileProps.srcSet}
+              sizes="100vw"
             />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -2,6 +2,7 @@ import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { SmartLink } from "@/components/sections/home/SmartLink";
 import { legacyAsset } from "@/components/sections/home/legacy";
+import { heroMobileSource } from "@/lib/hero-image";
 
 /**
  * hero-minimal — imagem full-width com gradiente inferior, título, subtítulo,
@@ -12,7 +13,9 @@ export default function HeroMinimal({ content }: { content: Record<string, any> 
   const subtitle = content?.subtitle || "";
   const description = content?.description || "";
   const background = legacyAsset(content?.backgroundImage);
-  const backgroundMobile = legacyAsset(content?.backgroundImageMobile);
+  // A imagem de celular do CMS antigo tem 768 px; heroMobileSource troca por
+  // uma fonte com resolução suficiente quando existe.
+  const backgroundMobile = heroMobileSource(content?.backgroundImageMobile);
 
   const raw = content?.overlayOpacity;
   const opacity = typeof raw === "number" ? raw : raw != null ? Number(raw) : 40;

@@ -1,8 +1,6 @@
-import { getImageProps } from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Container } from "@/components/Container";
-import { asset } from "@/lib/base-path";
-import { legacyAsset } from "./legacy";
+import { heroPicture } from "@/lib/hero-image";
 import { SmartLink } from "./SmartLink";
 
 interface HeroContent {
@@ -21,34 +19,16 @@ const HERO_ALT =
   "Custom concrete driveway and outdoor living space by Maxima Concrete in Ohio";
 
 
-/** MIME do <source> a partir da extensão do arquivo. */
-function mimeFromPath(path: string): string {
-  if (/\.jpe?g($|\?)/i.test(path)) return "image/jpeg";
-  if (/\.png($|\?)/i.test(path)) return "image/png";
-  if (/\.avif($|\?)/i.test(path)) return "image/avif";
-  return "image/webp";
-}
-
 export default function Hero({ content }: { content: Record<string, any> }) {
   const c = content as HeroContent;
 
   // Algumas seções "hero" do CMS não têm imagem (ex.: projectmap_page) —
   // nesse caso usamos fundo navy sólido em vez de <picture>.
-  const backgroundSrc = asset(legacyAsset(c.backgroundImage));
-
-  // <picture> com art direction (mobile webp menor) — getImageProps mantém o
-  // comportamento de `priority` (fetchpriority=high + eager) do next/image.
-  const imgProps = backgroundSrc
-    ? getImageProps({
-        alt: HERO_ALT,
-        src: backgroundSrc,
-        width: 1920,
-        height: 1080,
-        priority: true,
-        unoptimized: true,
-        sizes: "100vw",
-      }).props
-    : null;
+  const { imgProps, mobileProps } = heroPicture({
+    desktop: c.backgroundImage,
+    mobile: c.backgroundImageMobile,
+    alt: HERO_ALT,
+  });
 
   return (
     <section
@@ -60,16 +40,15 @@ export default function Hero({ content }: { content: Record<string, any> }) {
       {/* Imagem de fundo com zoom lento (igual ao original) */}
       {imgProps && (
         <picture>
-          {c.backgroundImageMobile && (
+          {mobileProps && (
+            // Sem `type`: o srcset mistura formatos (variantes webp e, quando
+            // nenhuma cobre a largura pedida, o arquivo original .jpg), então
+            // declarar um MIME fixo faria o navegador descartar o candidato
+            // certo. O `media` sozinho já faz a seleção.
             <source
               media="(max-width: 768px)"
-              srcSet={asset(c.backgroundImageMobile)}
-              // O type vem da extensão: as hubs de driveways/patios usam .jpg e,
-              // com "image/webp" fixo, um navegador sem webp descartaria este
-              // candidato e baixaria o desktop no lugar do mobile.
-              type={mimeFromPath(c.backgroundImageMobile)}
-              width={768}
-              height={1024}
+              srcSet={mobileProps.srcSet}
+              sizes="100vw"
             />
           )}
           {/* eslint-disable-next-line @next/next/no-img-element */}
