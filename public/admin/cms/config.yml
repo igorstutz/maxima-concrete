@@ -27443,11 +27443,28 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: mainImage
-                        label: mainImage
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
                       - name: paragraph1
                         label: paragraph1
                         required: false
@@ -27456,34 +27473,17 @@ collections:
                         label: paragraph2
                         required: false
                         widget: text
+                      - name: mainImage
+                        label: mainImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: paragraph3
                         label: paragraph3
                         required: false
                         widget: text
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: complementaryText
                         label: complementaryText
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: reviews
@@ -30428,11 +30428,28 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: mainImage
-                        label: mainImage
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
                         required: false
                         widget: image
                         choose_url: true
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
                       - name: paragraph1
                         label: paragraph1
                         required: false
@@ -30441,34 +30458,17 @@ collections:
                         label: paragraph2
                         required: false
                         widget: text
+                      - name: mainImage
+                        label: mainImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: paragraph3
                         label: paragraph3
                         required: false
                         widget: text
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
                       - name: complementaryText
                         label: complementaryText
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
               - label: reviews
