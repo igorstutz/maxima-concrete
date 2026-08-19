@@ -2,45 +2,54 @@
   "pageKey": "finishesbroom_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_1772213907262_vd0jps",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Broom-Finished Concrete",
-        "tagline": "Classic, Durable, and Timeless",
-        "backLink": "/finishes",
         "subtitle": "Classic, Durable, and Timeless",
-        "backLabel": "Back to Finishes",
-        "description": "Subtle linear texture brushed into freshly poured concrete to add traction without sacrificing the clean look of a polished slab.",
         "_sourceLabel": "Hero",
+        "description": "Subtle linear texture brushed into freshly poured concrete to add traction without sacrificing the clean look of a polished slab.",
+        "overlayGradient": false,
+        "overlayOpacity": 62,
         "backgroundImage": "/images/cms/uploads/1780688206618-nf0yl.webp",
+        "backLink": "/finishes",
+        "backLabel": "Back to Finishes",
+        "tagline": "Classic, Durable, and Timeless",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1780688206618-nf0yl-mobile.webp",
-        "overlayOpacity": 62
+        "backgroundImageMobile": "/images/cms/uploads/1780688206618-nf0yl-mobile.webp"
       }
     },
     {
+      "type": "finishes-intro",
       "key": "custom_1772216000000_intro",
       "label": "Intro",
-      "type": "finishes-intro",
       "content": {
-        "image": "/images/cms/uploads/1780688330654-ocoltp.webp",
         "title": "The Most Classic and Versatile Concrete Finish",
-        "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "image": "/images/PATIO - BROOM FINISH (5).jpeg",
+        "ctaLink": "#contact",
         "description": "The most classic and versatile concrete finish for driveways, patios, sidewalks, porches, and steps. Broom-finished concrete is created using a specialized broom technique that forms light surface grooves, improving slip resistance while adding a clean, timeless look.\n\nPerfect for both residential and commercial projects, it combines durability, safety, and simplicity. Ideal for high-traffic areas, broom finish concrete is low-maintenance, long-lasting, and cost-effective making it one of the most popular choices for outdoor surfaces.\n\nAt Maxima Concrete, we deliver high-quality broom-finish!",
         "images": [
-          "/images/cms/uploads/1780688330654-ocoltp.webp",
+          "/images/PATIO - BROOM FINISH (1).jpeg",
           "/images/cms/uploads/1780688435290-2hwsiv.webp"
         ]
       }
     },
     {
+      "type": "whatis",
       "key": "custom_1772216500000_whatis",
       "label": "What Is",
-      "type": "whatis",
       "content": {
+        "title": "What Is Broom-Finished Concrete?",
+        "ctaText": "Contact Us",
+        "_sourceLabel": "What Is",
+        "ctaLink": "#contact",
+        "description": "Broom-finished concrete is achieved by <b>dragging a broom across freshly poured concrete</b>, creating fine grooves on the surface. These grooves provide:",
+        "overlayOpacity": 50,
+        "backgroundImage": "/images/BROOM FINISH.jpeg",
         "cards": [
           {
             "title": "Slip resistance,",
@@ -55,21 +64,16 @@
             "subtitle": "A subtle finish that beautifully complements any exterior."
           }
         ],
-        "title": "What Is Broom-Finished Concrete?",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "finalText": "This finishing method is ideal for <b>residential and commercial spaces</b> where both safety and aesthetics matter.",
-        "description": "Broom-finished concrete is achieved by <b>dragging a broom across freshly poured concrete</b>, creating fine grooves on the surface. These grooves provide:",
-        "_sourceLabel": "What Is",
-        "overlayOpacity": 50,
-        "backgroundImage": "/images/cms/uploads/1780688366220-w4eqw.webp"
+        "finalText": "This finishing method is ideal for <b>residential and commercial spaces</b> where both safety and aesthetics matter."
       }
     },
     {
+      "type": "why-choose-finish",
       "key": "custom_1772216600000_whychoosefinish",
       "label": "Why Choose",
-      "type": "why-choose-finish",
       "content": {
+        "title": "Why Choose a Broom Finish?",
+        "_sourceLabel": "",
         "items": [
           {
             "text": "The textured surface helps prevent slipping, making it perfect for driveways, pool decks, patios, and walkways.",
@@ -87,63 +91,66 @@
             "text": "It's one of the most cost-effective finishes, offering excellent value without compromising appearance or performance.",
             "label": "Affordable & Versatile:"
           }
-        ],
-        "title": "Why Choose a Broom Finish?"
+        ]
       }
     },
     {
+      "type": "where-to-use",
       "key": "custom_1772216700000_wheretouse",
       "label": "Where to Use",
-      "type": "where-to-use",
       "content": {
+        "title": "Where to Use Broom-Finished Concrete",
+        "ctaText": "Get Inspired",
+        "subtitle": "This finish is suitable for virtually any flatwork application:",
+        "_sourceLabel": "",
+        "ctaLink": "#contact",
         "cards": [
           {
+            "title": "Driveways",
             "link": "/services/driveways/driveways-concrete",
             "image": "/images/cms/uploads/1780688435290-2hwsiv.webp",
-            "title": "Driveways",
             "description": "Smooth to drive on, with safe traction even in rain or snow."
           },
           {
+            "title": "Patios",
             "link": "/services/patios/patios-concrete",
             "image": "/images/cms/uploads/1780688464795-80yx5f.webp",
-            "title": "Patios",
             "description": "Functional and attractive, blending with landscape design."
           },
           {
+            "title": "Sidewalks & Walkways",
             "link": "/services/sidewalks",
             "image": "/images/cms/uploads/1780688626325-y0rpz.webp",
-            "title": "Sidewalks & Walkways",
             "description": "Comfortable for walking and wheelchair access."
           },
           {
+            "title": "Porches & Steps",
             "link": "/services/porches",
             "image": "/images/cms/uploads/1780688608701-qe4ktk.webp",
-            "title": "Porches & Steps",
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
-        "title": "Where to Use Broom-Finished Concrete",
-        "ctaLink": "#contact",
-        "ctaText": "Get Inspired",
-        "subtitle": "This finish is suitable for virtually any flatwork application:",
         "finalText": "No matter the project, Maxima Concrete ensures every broom-finished surface is perfectly graded, properly cured, and beautifully detailed."
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_1772216700002_morethanconcrete",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
+        "_sourceLabel": "",
         "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time."
       }
     },
     {
+      "type": "related-services",
       "key": "custom_1772216700001_relatedservices",
       "label": "Related Services",
-      "type": "related-services",
       "content": {
         "title": "Related Services",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne.webp",
         "services": [
           {
             "link": "/finishes/stamped-colored",
@@ -165,27 +172,31 @@
             "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
-        ],
-        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne.webp"
+        ]
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -196,7 +207,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -212,31 +223,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1772599791701_63ykfr",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -246,10 +254,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1772599796138_6gjibp",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Broom Finish",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What is a broom finish?",
@@ -267,20 +277,18 @@
             "question": "How do I maintain broom-finished concrete?",
             "answer": "Simple cleaning and resealing every 2–3 years keeps it looking great and extends its life."
           }
-        ],
-        "title": "FAQ — Broom Finish",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1772599851954_lv4i15",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
