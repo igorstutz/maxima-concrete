@@ -16,9 +16,12 @@ permissions:
   contents: write # commitar as imagens convertidas
   actions: write # disparar os deploys (ver nota no fim)
 
+# Quando chegam varios saves seguidos do painel, só o último run interessa: ele
+# reprocessa tudo que estiver pendente. Deixar os anteriores rodando só produzia
+# corrida no push.
 concurrency:
   group: optimize-images
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   optimize:
@@ -32,27 +35,47 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Converter imagens e atualizar referências
-        run: node _extraction/optimize-images.mjs --apply
-
-      - name: Commitar o resultado
+      # A conversão leva minutos e o painel continua publicando enquanto isso —
+      # quando o push saía, o remoto já tinha andado e o run inteiro falhava
+      # ("[rejected] fetch first"). Cada tentativa recomeça do topo atual do
+      # remoto: nada de rebase com conflito, o script é idempotente e as
+      # variantes já geradas ficam em disco, então a repetição é rápida.
+      - name: Converter imagens e publicar
         id: commit
         run: |
           git config user.name "maxima-cms-bot"
           git config user.email "bot@maximaconcrete.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Nada a otimizar."
-          else
+          echo "changed=false" >> "$GITHUB_OUTPUT"
+
+          for tentativa in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+
+            node _extraction/optimize-images.mjs --apply
+
+            git add -A
+            if git diff --cached --quiet; then
+              echo "Nada a otimizar."
+              exit 0
+            fi
+
             git commit -m "content: otimizar imagens (WebP)"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
-          fi
+            if git push; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+
+            echo "Push rejeitado — o painel publicou algo durante a conversão. Tentativa $tentativa de 3."
+            sleep $((tentativa * 15))
+          done
+
+          echo "::error::Não consegui publicar as imagens otimizadas após 3 tentativas."
+          exit 1
 
       # Commits feitos com o GITHUB_TOKEN não disparam outros workflows (trava
       # anti-loop do Actions) — o que também evita este workflow chamar a si
