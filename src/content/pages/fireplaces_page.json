@@ -31,16 +31,16 @@
         "subtitle": "",
         "_sourceLabel": "Intro",
         "ctaLink": "#contact",
-        "imageLarge": "/images/fireplace (2).jpeg",
+        "imageLarge": "/images/fireplace-2.webp",
         "paragraph1": "A custom outdoor fireplace creates a beautiful focal point while adding warmth, comfort, and year-round enjoyment to your outdoor living space. At Maxima Concrete, we design and build fireplaces using premium materials, proper structural support, and expert masonry techniques to ensure lasting durability, safety, and timeless appeal. Whether for entertaining or relaxing, every fireplace is built to complement your home and withstand Ohio’s changing seasons.",
         "paragraph2": "Every outdoor fireplace is custom-built to fit your space, lifestyle, and design preferences. With expert craftsmanship, precision installation, and attention to every detail, we create durable, low-maintenance fireplaces that enhance your outdoor living experience and add lasting value to your property.",
         "titleLine2": "With a Custom Fireplace",
-        "imageTopRight": "/images/fireplace.jpeg",
+        "imageTopRight": "/images/fireplace.webp",
         "paragraphLayout": "",
         "images": [
-          "/images/fireplace (3).jpeg",
-          "/images/fireplace (4).jpeg",
-          "/images/fireplaces.jpeg"
+          "/images/fireplace-3.webp",
+          "/images/fireplace-4.webp",
+          "/images/fireplaces.webp"
         ]
       }
     },
@@ -139,7 +139,7 @@
         "title": "Engineered for Durability",
         "ctaText": "Get a Free Estimate",
         "ctaLink": "#contact",
-        "backgroundImage": "/images/fireplace (2).jpeg",
+        "backgroundImage": "/images/fireplace-2.webp",
         "cards": [
           {
             "icon": "",
