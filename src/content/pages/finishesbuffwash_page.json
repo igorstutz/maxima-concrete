@@ -2,62 +2,70 @@
   "pageKey": "finishesbuffwash_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_1773272999744_v73jee",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Buff Wash & Exposed Aggregate Concrete",
-        "tagline": "The Finish Made to Be Touched",
-        "backLink": "/finishes",
-        "subtitle": "The Finish Made to Be Touched",
-        "backLabel": "Back to Finishes",
-        "description": "A surface wash that reveals the natural stone embedded in the mix, giving every pour a rich, organic texture you can both see and feel.",
         "_sourceLabel": "Hero",
+        "subtitle": "The Finish Made to Be Touched",
+        "description": "A surface wash that reveals the natural stone embedded in the mix, giving every pour a rich, organic texture you can both see and feel.",
+        "overlayGradient": false,
+        "overlayOpacity": 62,
         "backgroundImage": "/images/cms/uploads/1778533291033-fl6wv.webp",
+        "backLink": "/finishes",
+        "backLabel": "Back to Finishes",
+        "tagline": "The Finish Made to Be Touched",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1778533291033-fl6wv-mobile.webp",
-        "overlayOpacity": 62
+        "backgroundImageMobile": "/images/cms/uploads/1778533291033-fl6wv-mobile.webp"
       }
     },
     {
+      "type": "finishes-intro",
       "key": "custom_1773273005013_323yuk",
       "label": "Intro",
-      "type": "finishes-intro",
       "content": {
-        "image": "/images/cms/uploads/1781008734451-sh8t9q.webp",
         "title": "The Concrete Finish Made to Be Touched",
+        "_sourceLabel": "Intro",
+        "image": "/images/cms/uploads/1781008734451-sh8t9q.webp",
         "ctaLink": "#contact",
         "ctaText": "Get a Free Estimate",
         "description": "<b>Buff Wash and Exposed Aggregate</b> finishes elevate standard concrete into tactile, visually rich surfaces that celebrate texture, color, and natural beauty.\n\nBy using <b>specialized chemical techniques</b>, Maxima Concrete transforms plain slabs into stunning, slip-resistant surfaces — <b>perfect for patios, pool decks, walkways, and entryways.</b>",
-        "_sourceLabel": "Intro",
         "images": [
-          "/images/cms/uploads/1781008734451-sh8t9q.webp",
-          "/images/cms/uploads/1780690097574-hzfl1.webp"
+          "/images/broom finish (3).jpeg",
+          "/images/broom finish (2).jpeg"
         ]
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1778534114090_6gmwxi",
       "label": "How It Works",
-      "type": "why-maxima-service",
       "content": {
         "title": "Crafting Beauty Beneath the Surface",
+        "_sourceLabel": "What is",
         "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "description": "These finishes begin with freshly poured, high-quality concrete.\n\nA <b>chemical surface retarder</b> is applied to slow down the curing of the topmost “cream” layer.\nAfter a controlled period, our team carefully removes this thin layer using a high-pressure washer, revealing the fine sands and stones hidden within the concrete.\n\nThe result is a <b>naturally slip-resistant, multi-textured surface</b> that’s as beautiful as it is durable.",
+        "overlayGradient": false,
+        "overlayOpacity": 87,
+        "backgroundImage": "/images/cms/uploads/1780944904976-ab4qi7.webp",
         "eyebrow": "How It Works",
         "benefits": [],
-        "description": "These finishes begin with freshly poured, high-quality concrete.\n\nA <b>chemical surface retarder</b> is applied to slow down the curing of the topmost “cream” layer.\nAfter a controlled period, our team carefully removes this thin layer using a high-pressure washer, revealing the fine sands and stones hidden within the concrete.\n\nThe result is a <b>naturally slip-resistant, multi-textured surface</b> that’s as beautiful as it is durable.",
-        "_sourceLabel": "What is",
-        "overlayOpacity": 87,
-        "backgroundImage": "/images/cms/uploads/1780944904976-ab4qi7.webp"
+        "bottomText": ""
       }
     },
     {
+      "type": "where-to-use",
       "key": "custom_1778539735711_i7nry",
       "label": "Where to Use",
-      "type": "where-to-use",
       "content": {
+        "title": "Where to Use Buff Wash & Exposed Aggregate Concrete",
+        "_sourceLabel": "Where to Use",
+        "subtitle": "This finish is suitable for virtually any flatwork application:",
+        "ctaLink": "#contact",
+        "ctaText": "Get Inspired",
         "cards": [
           {
             "link": "/services/driveways/driveways-concrete",
@@ -84,31 +92,31 @@
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
-        "title": "Where to Use Buff Wash & Exposed Aggregate Concrete",
-        "ctaLink": "#contact",
-        "ctaText": "Get Inspired",
-        "subtitle": "This finish is suitable for virtually any flatwork application:",
-        "finalText": "No matter the project, Maxima Concrete ensures every broom-finished surface is perfectly graded, properly cured, and beautifully detailed.",
-        "_sourceLabel": "Where to Use"
+        "finalText": "No matter the project, Maxima Concrete ensures every broom-finished surface is perfectly graded, properly cured, and beautifully detailed."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "ctaText": "Get a Free Estimate",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -119,7 +127,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -135,31 +143,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
+        "_sourceLabel": "",
         "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "faq",
       "key": "custom_finishesbuffwash_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
         "items": [
           {
@@ -184,10 +189,11 @@
       }
     },
     {
+      "type": "instagram",
       "key": "instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
         "titlePart2": "— On Instagram"
