@@ -5104,16 +5104,20 @@ collections:
                     label: Content
                     widget: object
                     fields:
-                      - name: email
-                        label: email
-                        required: false
-                        widget: string
                       - name: title
                         label: title
                         required: false
                         widget: string
                       - name: subtitle
                         label: subtitle
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: email
+                        label: email
                         required: false
                         widget: string
                       - name: emailLabel
@@ -5152,10 +5156,6 @@ collections:
                         label: mapEmbedUrl
                         required: false
                         widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: addressLabel
                         label: addressLabel
                         required: false
@@ -5188,6 +5188,10 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
                       - name: phone
                         label: phone
                         required: false
@@ -5198,10 +5202,6 @@ collections:
                         widget: string
                       - name: hours
                         label: hours
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
                         required: false
                         widget: string
                       - name: eyebrow
@@ -5302,15 +5302,15 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: image
                         label: image
                         required: false
                         widget: image
                         choose_url: true
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
@@ -33219,15 +33219,15 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: image
                         label: image
                         required: false
                         widget: image
                         choose_url: true
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: secondaryCtaLink
                         label: secondaryCtaLink
                         required: false
