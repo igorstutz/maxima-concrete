@@ -11837,68 +11837,6 @@ collections:
                         label: finalText
                         required: false
                         widget: string
-              - label: where-to-use
-                name: where-to-use
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: cards
-                        label: cards
-                        required: false
-                        widget: list
-                        fields:
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: link
-                            label: link
-                            required: false
-                            widget: string
-                          - name: image
-                            label: image
-                            required: false
-                            widget: image
-                            choose_url: true
-                          - name: description
-                            label: description
-                            required: false
-                            widget: string
-                      - name: finalText
-                        label: finalText
-                        required: false
-                        widget: text
               - label: why-choose-finish
                 name: why-choose-finish
                 widget: object
@@ -34361,8 +34299,6 @@ collections:
                 value: "finishessmooth_page::custom_1773272702147_9yi8l"
               - label: "Finishes — Smooth › Why Choose"
                 value: "finishessmooth_page::custom_1773272705492_2tg0yq"
-              - label: "Finishes — Smooth › Where to Use"
-                value: "finishessmooth_page::custom_1773272708429_00m4u"
               - label: "Finishes — Smooth › Related Services"
                 value: "finishessmooth_page::custom_1773272717174_c14wrj"
               - label: "Finishes — Smooth › More Than Concrete"
