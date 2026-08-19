@@ -2,40 +2,49 @@
   "pageKey": "shelters_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1773681730635_7hf018",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Shelters, Pergolas & Shade Structures",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Comfort and Style for Every Season",
         "subtitle": "",
         "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1782843400732-ruvv0f.webp",
+        "ctaLink": "#contact",
+        "tagline": "Comfort and Style for Every Season",
+        "backgroundImage": "/images/Improve_architectural_photograph…_202608191020.jpeg",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1782843400732-ruvv0f-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1782843400732-ruvv0f-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "outdoor-intro",
       "key": "custom_1773681775653_21k9lm",
       "label": "Intro",
-      "type": "outdoor-intro",
       "content": {
-        "image": "/images/cms/uploads/1773682235616-91ktbs.webp",
         "title": "Shelters, Pergolas & Shade Structures",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
+        "_sourceLabel": "Outdoor Intro",
+        "ctaLink": "#contact",
         "description": "<b>Create a Comfortable Outdoor Space for Every Season</b><br><br>Enhance your outdoor living area with a custom shelter, pergola, or shade structure designed for comfort, durability, and style. Maxima Concrete combines premium materials, expert craftsmanship, and precision installation to create functional outdoor spaces that provide protection from the elements while complementing your patio and landscape.<br><br>Every structure is custom-built to fit your space, lifestyle, and outdoor design. Using proven construction methods and quality materials, we create durable, low-maintenance shade solutions that expand your outdoor living area and provide lasting comfort through Ohio’s changing seasons.",
-        "_sourceLabel": "Outdoor Intro"
+        "image": "/images/image.png_202608191020.jpeg"
       }
     },
     {
+      "type": "whatis",
       "key": "custom_1773681815170_xm7ko",
       "label": "Possibilities",
-      "type": "whatis",
       "content": {
+        "title": "A World of Design Possibilities",
+        "ctaText": "Contact Us",
+        "_sourceLabel": "What Is",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1772217053065-7booac_copy_1773681816362_rppbe.webp",
+        "overlayOpacity": 0,
         "cards": [
           {
             "title": "Pergolas",
@@ -50,21 +59,18 @@
             "subtitle": "Easy to clean, resilient against stains and moisture."
           }
         ],
-        "title": "A World of Design Possibilities",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "finalText": "From cozy corners to grand backyard destinations, your shelter becomes a reflection of how you live outdoors.",
         "description": "<b>Every outdoor space has its own personality — and Maxima Concrete brings it to life.</b>\n<br><br>\nWhether you want a shaded escape for lounging, a covered hot tub retreat, or a statement canopy over your outdoor kitchen, we’ll design and build the perfect structure to fit your space and style.",
-        "_sourceLabel": "What Is",
-        "overlayOpacity": 0,
-        "backgroundImage": "/images/cms/uploads/1772217053065-7booac_copy_1773681816362_rppbe.webp"
+        "finalText": "From cozy corners to grand backyard destinations, your shelter becomes a reflection of how you live outdoors."
       }
     },
     {
+      "type": "unleash",
       "key": "custom_shelters_unleash",
       "label": "Unleash",
-      "type": "unleash",
       "content": {
+        "title": "Unleash Your Outdoor Potential",
+        "backgroundImage": "/images/cms/uploads/1782843113778-vaa1aa.webp",
+        "description": "Your shelter can be much more than shade — it's a platform for comfort, technology, and creativity.",
         "items": [
           {
             "text": "kitchens, bars, lounges, hammocks, and hot tubs.",
@@ -83,47 +89,51 @@
             "boldTitle": "Customize the atmosphere:"
           }
         ],
-        "title": "Unleash Your Outdoor Potential",
-        "closingText": "Whether you're hosting a party, relaxing solo, or sharing dinner under the stars — your pergola or pavilion becomes the heart of your backyard experience.",
-        "description": "Your shelter can be much more than shade — it's a platform for comfort, technology, and creativity.",
-        "backgroundImage": "/images/cms/uploads/1782843113778-vaa1aa.webp"
+        "closingText": "Whether you're hosting a party, relaxing solo, or sharing dinner under the stars — your pergola or pavilion becomes the heart of your backyard experience."
       }
     },
     {
+      "type": "trust-maxima",
       "key": "custom_1773682950051_ef6tko",
       "label": "Why Invest",
-      "type": "trust-maxima",
       "content": {
+        "_sourceLabel": "Why Invest",
+        "backgroundImage": "",
         "items": [
           {
-            "label": "Romantic evenings under glowing lights.",
-            "description": ""
+            "icon": "",
+            "description": "",
+            "label": "Romantic evenings under glowing lights."
           },
           {
-            "label": "Cookouts and celebrations with family and friends.",
-            "description": ""
+            "icon": "",
+            "description": "",
+            "label": "Cookouts and celebrations with family and friends."
           },
           {
-            "label": "Peaceful mornings with coffee and fresh air.",
-            "description": ""
+            "icon": "",
+            "description": "",
+            "label": "Peaceful mornings with coffee and fresh air."
           },
           {
-            "label": "Add value, comfort, and beauty to your home with a ",
-            "description": "custom outdoor structure designed to inspire."
+            "icon": "",
+            "description": "custom outdoor structure designed to inspire.",
+            "label": "Add value, comfort, and beauty to your home with a"
           }
         ],
-        "titleLine1": "More Than Just ",
-        "titleLine2": "Shade — It’s a ",
-        "titleLine3": "Lifestyle",
-        "_sourceLabel": "Why Invest"
+        "titleLine1": "More Than Just",
+        "titleLine2": "Shade — It’s a",
+        "titleLine3": "Lifestyle"
       }
     },
     {
+      "type": "related-services",
       "key": "custom_1773686622265_wvs5pa",
       "label": "Related Services",
-      "type": "related-services",
       "content": {
         "title": "Related Services",
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/banner-shelters-commercial.webp",
         "services": [
           {
             "link": "/finishes/stamped-colored",
@@ -145,28 +155,30 @@
             "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
-        ],
-        "_sourceLabel": "Related Services",
-        "backgroundImage": "/images/cms/uploads/banner-shelters-commercial.webp"
+        ]
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "shelters_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1782843400732-ruvv0f.webp",
         "cards": [
           {
             "icon": "",
@@ -188,18 +200,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1782843400732-ruvv0f.webp"
+        ]
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -210,7 +223,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -226,31 +239,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773686631692_icyy5p",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -260,10 +270,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1773686636654_yjcykg",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Shelters & Pavilions",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What types of shelters do you build?",
@@ -281,20 +293,18 @@
             "question": "Do you offer financing?",
             "answer": "Yes, we offer flexible payment options."
           }
-        ],
-        "title": "FAQ — Shelters & Pavilions",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773686640415_t31vmr",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
