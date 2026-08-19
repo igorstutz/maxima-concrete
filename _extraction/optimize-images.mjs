@@ -26,6 +26,11 @@ const MAX_WIDTH = 2560;
 const ORFA_DIAS = 7;
 
 const STATUS_FILE = join(ROOT, "src", "content", "settings", "optimize-images.json");
+// Histórico de "arquivo antigo -> arquivo novo". A biblioteca de mídia do
+// painel fica em cache no navegador: depois de uma conversão, ela ainda mostra
+// o nome antigo e quem escolher aquela foto grava um caminho que não existe
+// mais. Com este mapa, a rodada seguinte conserta a referência sozinha.
+const RENAMES_FILE = join(ROOT, "src", "lib", "image-renames.json");
 
 // Fora do processo, de propósito:
 // - /images/og: prévia de link das 46 páginas de cidade, montada por template
@@ -74,11 +79,16 @@ const sanitizar = (nome) =>
 // ---------- onde o conteúdo cita imagens ----------
 // Além de src/, entram o painel (config.yml cita o logo) e os scripts de
 // _extraction — um arquivo citado só ali seria tratado como sobra e apagado.
+// Arquivos gerados por script ficam de fora da busca-e-troca: image-variants e
+// hero-mobile são refeitos no fim do processo, e image-renames é justamente o
+// mapa de nomes antigos — trocar dentro dele apagaria a própria memória.
+const DERIVADOS = /src[\\/]lib[\\/](image-variants|hero-mobile|image-renames)\.json$/i;
+
 const arquivosTexto = [
   ...collect(join(ROOT, "src"), /\.(tsx?|json|css|md)$/i),
   ...collect(join(ROOT, "public/admin"), /\.(yml|yaml|html)$/i),
   ...collect(join(ROOT, "_extraction"), /\.(mjs|json)$/i),
-];
+].filter((f) => !DERIVADOS.test(f));
 const textos = new Map(arquivosTexto.map((f) => [f, readFileSync(f, "utf8")]));
 const haystack = [...textos.values()].join("\n");
 
@@ -87,6 +97,32 @@ const usada = (file) => {
   const nome = file.split("/").pop();
   return haystack.includes(u) || haystack.includes(encodeURI(u)) || haystack.includes(nome);
 };
+
+// ---------- conserto de referências para arquivos já convertidos ----------
+const renames = existsSync(RENAMES_FILE) ? JSON.parse(readFileSync(RENAMES_FILE, "utf8")) : {};
+let consertadas = 0;
+
+const trocarReferencias = (antigo, novo) => {
+  let n = 0;
+  for (const [arquivo, conteudo] of textos) {
+    if (!conteudo.includes(antigo) && !conteudo.includes(encodeURI(antigo))) continue;
+    const atualizado = conteudo.split(encodeURI(antigo)).join(novo).split(antigo).join(novo);
+    textos.set(arquivo, atualizado);
+    if (APPLY) writeFileSync(arquivo, atualizado);
+    n++;
+  }
+  return n;
+};
+
+for (const [antigo, novo] of Object.entries(renames)) {
+  if (existsSync(join(ROOT, "public") + antigo)) continue; // o arquivo antigo voltou a existir
+  if (!existsSync(join(ROOT, "public") + novo)) continue; // destino sumiu: não mexe
+  const n = trocarReferencias(antigo, novo);
+  if (n) {
+    consertadas += n;
+    console.log(`  conserto: ${antigo.split("/").pop()} -> ${novo.split("/").pop()} (${n} arquivo(s))`);
+  }
+}
 
 // ---------- imagens candidatas ----------
 const pesadas = collect(join(ROOT, "public/images"), /\.(jpe?g|png)$/i).filter(
@@ -142,14 +178,8 @@ for (const file of pesadas) {
     // dois formatos dependendo de onde o nome tem espaço).
     const antigo = url(file);
     const novo = url(destino);
-    let trocas = 0;
-    for (const [arquivo, conteudo] of textos) {
-      if (!conteudo.includes(antigo) && !conteudo.includes(encodeURI(antigo))) continue;
-      const atualizado = conteudo.split(encodeURI(antigo)).join(novo).split(antigo).join(novo);
-      textos.set(arquivo, atualizado);
-      writeFileSync(arquivo, atualizado);
-      trocas++;
-    }
+    const trocas = trocarReferencias(antigo, novo);
+    renames[antigo] = novo;
     // Se a imagem está em uso mas nenhuma referência mudou, algo não bate — e
     // apagar o original aqui deixaria a página apontando para um arquivo que
     // não existe. Melhor parar e deixar tudo como está.
@@ -165,6 +195,20 @@ for (const file of pesadas) {
   }
 }
 
+// ---------- páginas apontando para imagem que não existe ----------
+// Acontece quando o envio da foto pelo painel não chega ao repositório: a página
+// guarda o caminho e o site mostra o ícone de imagem quebrada. Quem edita não
+// tem como perceber, então o aviso vai para o campo Resultado do painel.
+const faltando = [];
+for (const [arquivo, conteudo] of textos) {
+  if (!arquivo.includes("/content/pages/")) continue;
+  const pageKey = arquivo.split("/").pop().replace(/\.json$/, "");
+  for (const m of conteudo.matchAll(/"(\/images\/[^"]+\.(?:webp|jpe?g|png|svg))"/gi)) {
+    const u = decodeURI(m[1]);
+    if (!existsSync(join(ROOT, "public") + u)) faltando.push({ pageKey, arquivo: u.split("/").pop() });
+  }
+}
+
 // ---------- relatório ----------
 const mb = (b) => (b / 1048576).toFixed(1);
 console.log(`${APPLY ? "APLICANDO" : "SIMULAÇÃO"}`);
@@ -172,8 +216,13 @@ console.log(`  convertidas para WebP: ${convertidas.length} (${mb(convertidas.re
 for (const c of convertidas) console.log(`    ${c.de.split("/").pop()} -> ${c.para.split("/").pop()}  (${mb(c.antes)} -> ${mb(c.depois)} MB)`);
 console.log(`  sobras apagadas: ${apagadas.length} (${mb(apagadas.reduce((s, a) => s + a.tamanho, 0))} MB)`);
 console.log(`  sobras recentes mantidas (< ${ORFA_DIAS} dias): ${mantidas.length}`);
+console.log(`  referências consertadas (nome antigo escolhido no painel): ${consertadas}`);
+if (faltando.length) {
+  console.log(`  ⚠ páginas apontando para imagem que não está no site: ${faltando.length}`);
+  for (const f of faltando) console.log(`      ${f.pageKey}: ${f.arquivo}`);
+}
 
-if (APPLY && (convertidas.length || apagadas.length)) {
+if (APPLY && (convertidas.length || apagadas.length || consertadas)) {
   // As variantes e o painel precisam refletir os arquivos novos.
   execFileSync("node", [join(HERE, "generate-image-variants.mjs"), "--apply"], { stdio: "inherit", cwd: ROOT });
   execFileSync("node", [join(HERE, "generate-cms-config.mjs")], { stdio: "inherit", cwd: ROOT });
@@ -186,12 +235,22 @@ if (APPLY) {
     timeStyle: "short",
   }).format(new Date());
   const economia = bytesAntes - bytesDepois;
-  const status = convertidas.length || apagadas.length
+  let status = convertidas.length || apagadas.length || consertadas
     ? `✅ ${agora} — ${convertidas.length} imagem(ns) convertida(s) para WebP e ${apagadas.length} sobra(s) removida(s). ` +
       `Economia: ${mb(economia)} MB.` +
+      (consertadas ? ` ${consertadas} referência(s) de foto antiga foram corrigidas sozinhas.` : "") +
       (mantidas.length ? ` ${mantidas.length} imagem(ns) enviada(s) nos últimos ${ORFA_DIAS} dias foram mantidas, mesmo sem uso em nenhuma página.` : "")
     : `✅ ${agora} — nada a fazer: todas as imagens já estão otimizadas.`;
+
+  if (faltando.length) {
+    const lista = faltando.map((f) => `${f.pageKey} (${f.arquivo})`).join("; ");
+    status +=
+      `\n\n⚠ ATENÇÃO: ${faltando.length} foto(s) não estão no site — a página aponta para elas, mas o arquivo ` +
+      `não chegou no envio. Abra as páginas abaixo e envie a foto de novo: ${lista}`;
+  }
+
   writeJson(STATUS_FILE, { run: false, status });
+  writeJson(RENAMES_FILE, renames);
   console.log(`  ${status}`);
 }
 
