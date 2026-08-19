@@ -2,18 +2,20 @@
   "pageKey": "contactus_page",
   "sections": [
     {
+      "type": "hero-image-only",
       "key": "custom_1778125190194_lhxpr",
       "label": "Hero Image",
-      "type": "hero-image-only",
       "content": {
-        "image": "/images/cms/uploads/ajuste-contact-hero.webp",
-        "_sourceLabel": "Hero Image"
+        "_sourceLabel": "Hero Image",
+        "image": "/images/Maxima Concrete - Degradê.jpg",
+        "secondaryCtaLink": "",
+        "secondaryCtaText": ""
       }
     },
     {
+      "type": "contact-choice",
       "key": "contact_choice",
       "label": "How to reach us (toggle)",
-      "type": "contact-choice",
       "content": {
         "title": "Two ways to reach us",
         "description": "Call us and talk to a real person, or send your project details through the estimate form — the form is the best option, since it gives our team everything needed to prepare an accurate quote.",
@@ -24,21 +26,21 @@
       }
     },
     {
+      "type": "contact-phone",
       "key": "contact_phone_cta",
       "label": "Phone (call CTA)",
-      "type": "contact-phone",
       "content": {
+        "ctaText": "Call now",
         "phone": "(614) 384-5917",
         "message": "Call to speak with a live person and schedule your estimate.",
         "hours": "8:00 AM – 5:00 PM, Monday–Friday",
-        "ctaText": "Call now",
         "eyebrow": "Call us"
       }
     },
     {
+      "type": "contact",
       "key": "custom_1778125297540_2un2d",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -48,13 +50,14 @@
       }
     },
     {
+      "type": "contact-info-map",
       "key": "custom_contactus_info_map_default",
       "label": "Contact Info & Map",
-      "type": "contact-info-map",
       "content": {
-        "email": "info@maximaconcrete.com",
         "title": "Visit Our Office",
         "subtitle": "Your Trusted Concrete Contractor in Central Ohio",
+        "_sourceLabel": "Contact Info & Map",
+        "email": "info@maximaconcrete.com",
         "emailLabel": "Email:",
         "hoursLabel": "Business Hours:",
         "hoursLine1": "Monday – Friday: 8 AM – 5 PM",
@@ -64,7 +67,6 @@
         "youtubeUrl": "",
         "facebookUrl": "https://www.facebook.com/maximaconcrete/",
         "mapEmbedUrl": "https://www.google.com/maps?q=4059+State+Route+37+E,+Delaware,+OH+43015&output=embed",
-        "_sourceLabel": "Contact Info & Map",
         "addressLabel": "Office Address:",
         "addressLine1": "4059 State Route 37 E, Suite A",
         "addressLine2": "Delaware, OH 43015",
@@ -72,36 +74,39 @@
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "faq",
       "key": "custom_contactus_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Contact Maxima",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "How can I reach Maxima Concrete?",
@@ -119,20 +124,18 @@
             "question": "How soon will you respond to my request?",
             "answer": "We aim to respond within one business day, often sooner during business hours."
           }
-        ],
-        "title": "FAQ — Contact Maxima",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1778125311186_0wruyd",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
