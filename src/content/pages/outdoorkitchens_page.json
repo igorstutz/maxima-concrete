@@ -2,38 +2,41 @@
   "pageKey": "outdoorkitchens_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1773676356367_q368ea",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Outdoor Kitchens & Bars",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Cook, Entertain, and Live Outdoors",
         "subtitle": "Design a custom outdoor kitchen built for cooking, entertaining, and enjoying the outdoors year-round.",
         "_sourceLabel": "Hero",
+        "ctaLink": "#contact",
+        "tagline": "Cook, Entertain, and Live Outdoors",
         "backgroundImage": "/images/cms/uploads/1782843333584-kpet4.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1782843333584-kpet4-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1782843333584-kpet4-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "ok-intro",
       "key": "custom_ok_intro_okitchens",
       "label": "Intro",
-      "type": "ok-intro",
       "content": {
-        "ctaLink": "#contact",
         "ctaText": "Design My Outdoor Kitchen",
+        "_sourceLabel": "Intro",
+        "ctaLink": "#contact",
         "imageLeft": "",
         "imageRight": "/images/cms/uploads/1773677418085-oaahj.webp",
         "titleLine1": "Built for Outdoor Living",
         "titleLine2": "",
         "description": "Transform your backyard with a custom outdoor kitchen or bar designed for functionality, durability, and lasting performance. At <b>Maxima Concrete</b>, we combine premium materials, expert craftsmanship, and precision installation to create outdoor spaces that are built to entertain, withstand Ohio’s changing seasons, and add lasting value to your home.",
-        "_sourceLabel": "Intro",
-        "imageVertical": "/images/cms/uploads/1782843346868-pr8lebe.webp",
-        "imageBottomLeft": "/images/cms/uploads/1773677431287-cgnxi.webp",
-        "imageHorizontal": "/images/cms/uploads/1780684578739-3hnhfm.webp",
+        "imageVertical": "/images/outdoor kitchen (7).jpeg",
+        "imageBottomLeft": "/images/outdoor kitchen (4).jpeg",
+        "imageHorizontal": "/images/outdoor kitchen (3).jpeg",
         "images": [
           "/images/cms/uploads/ajuste-okitchen-1.webp",
           "/images/cms/uploads/ajuste-okitchen-2.webp",
@@ -43,13 +46,17 @@
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "custom_1773676493407_jl1uer",
       "label": "Concrete or Paver",
-      "type": "why-maxima-service",
       "content": {
         "title": "Why Choose Concrete or \nPavers for Outdoor Kitchens",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "_sourceLabel": "Low-Voltage",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1773676590339-mpk9a5.webp",
+        "overlayOpacity": 89,
+        "description": "Concrete and pavers are the perfect foundation for any outdoor kitchen. They provide unmatched strength, longevity, and design versatility, ensuring your space remains beautiful and low-maintenance for years to come.",
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
@@ -61,7 +68,9 @@
               }
             ],
             "title": "Durability:",
-            "description": "Resists heat, weather, and heavy use."
+            "description": "Resists heat, weather, and heavy use.",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "palette",
@@ -72,7 +81,9 @@
               }
             ],
             "title": "Customizable Layouts:",
-            "description": "Adapted to your outdoor area, cooking style, and entertainment needs."
+            "description": "Adapted to your outdoor area, cooking style, and entertainment needs.",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "palette",
@@ -83,7 +94,9 @@
               }
             ],
             "title": "Design Flexibility:",
-            "description": "Choose from textures, colors, and patterns to match your home’s style."
+            "description": "Choose from textures, colors, and patterns to match your home’s style.",
+            "closingText": "",
+            "bullets": []
           },
           {
             "icon": "sparkles",
@@ -94,21 +107,23 @@
               }
             ],
             "title": "Low Maintenance:",
-            "description": "Easy to clean, resilient against stains and moisture."
+            "description": "Easy to clean, resilient against stains and moisture.",
+            "closingText": "",
+            "bullets": []
           }
         ],
-        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
-        "description": "Concrete and pavers are the perfect foundation for any outdoor kitchen. They provide unmatched strength, longevity, and design versatility, ensuring your space remains beautiful and low-maintenance for years to come.",
-        "_sourceLabel": "Low-Voltage",
-        "overlayOpacity": 89,
-        "backgroundImage": "/images/cms/uploads/1773676590339-mpk9a5.webp"
+        "overlayGradient": false,
+        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
       }
     },
     {
+      "type": "dream-kitchen",
       "key": "custom_dream_kitchen_okitchens",
       "label": "Build Your Dream",
-      "type": "dream-kitchen",
       "content": {
+        "title": "Build Your Dream Outdoor Kitchen",
+        "ctaText": "Explore more in Gallery",
+        "_sourceLabel": "Build Your Dream",
         "cards": [
           {
             "image": "/images/cms/uploads/1773678999993-jxbugi.webp",
@@ -128,20 +143,21 @@
             "title": "Convenience & Storage"
           }
         ],
-        "title": "Build Your Dream Outdoor Kitchen",
         "ctaLink": "/gallery",
-        "ctaText": "Explore more in Gallery",
         "sideText": "With Maxima Concrete, you can integrate a range of custom features to create the perfect outdoor culinary hub:",
-        "bgGradient": "linear-gradient(263deg, #06253A 46.16%, #000D16 68.33%)",
-        "_sourceLabel": "Build Your Dream"
+        "bgGradient": "linear-gradient(263deg, #06253A 46.16%, #000D16 68.33%)"
       }
     },
     {
+      "type": "style-options",
       "key": "custom_1773679110070_nwad",
       "label": "Style",
-      "type": "style-options",
       "content": {
         "title": "Design Beyond Cooking — Complete the Experience",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "Style Options",
+        "ctaLink": "#contact",
+        "description": "A custom outdoor kitchen adds function, value, and convenience to your backyard. Built with premium materials and expert craftsmanship, our outdoor kitchens and bars are designed for durability, easy maintenance, and years of outdoor entertaining.",
         "styles": [
           {
             "link": "#contact",
@@ -168,19 +184,19 @@
             "description": "Mix materials for a custom aesthetic that matches your home’s architecture."
           }
         ],
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
         "variant": "light",
-        "closingText": "Create a space that transitions effortlessly from **daytime cookouts** to **nighttime gatherings under the stars**.",
-        "description": "A custom outdoor kitchen adds function, value, and convenience to your backyard. Built with premium materials and expert craftsmanship, our outdoor kitchens and bars are designed for durability, easy maintenance, and years of outdoor entertaining.",
-        "_sourceLabel": "Style Options"
+        "closingText": "Create a space that transitions effortlessly from **daytime cookouts** to **nighttime gatherings under the stars**."
       }
     },
     {
+      "type": "pro-design",
       "key": "custom_pro_design_okitchens",
       "label": "Professional Design",
-      "type": "pro-design",
       "content": {
+        "title": "Professional Design & Installation",
+        "backgroundImage": "/images/cms/uploads/ajuste-ok-prodesign-bg.webp",
+        "overlayOpacity": 60,
+        "description": "Our expert team ensures your outdoor kitchen is as <b>safe and functional</b> as it is beautiful.",
         "items": [
           {
             "bold": "Drainage & Grading:",
@@ -199,54 +215,52 @@
             "text": "Built with reinforced concrete or precision-laid pavers."
           }
         ],
-        "title": "Professional Design & Installation",
         "eyebrow": "by Maxima Concrete",
-        "listTitle": "What We Handle:",
-        "description": "Our expert team ensures your outdoor kitchen is as <b>safe and functional</b> as it is beautiful.",
-        "overlayOpacity": 60,
-        "backgroundImage": "/images/cms/uploads/ajuste-ok-prodesign-bg.webp"
+        "listTitle": "What We Handle:"
       }
     },
     {
+      "type": "trust-maxima",
       "key": "custom_1773681297911_xnbwfl",
       "label": "Why Invest",
-      "type": "trust-maxima",
       "content": {
-        "items": [
-          {
-            "label": "Grilling with family and friends on sunny weekends.",
-            "description": "",
-            "icon": "flame"
-          },
-          {
-            "label": "Sharing cocktails under the stars.",
-            "description": "",
-            "icon": "drink"
-          },
-          {
-            "label": "Hosting movie nights and creating lasting memories outdoors.",
-            "description": "",
-            "icon": "film"
-          },
-          {
-            "label": "An outdoor kitchen is not just an upgrade ",
-            "description": "— it’s an investment in your home and lifestyle.",
-            "icon": "value"
-          }
-        ],
+        "_sourceLabel": "Trust Maxima",
+        "backgroundImage": "/images/cms/uploads/1782843346868-pr8lebe.webp",
         "titleLine1": "Why Invest",
         "titleLine2": "in an Outdoor",
-        "titleLine3": "Kitchen",
-        "_sourceLabel": "Trust Maxima",
-        "backgroundImage": "/images/cms/uploads/1782843346868-pr8lebe.webp"
+        "items": [
+          {
+            "icon": "flame",
+            "description": "",
+            "label": "Grilling with family and friends on sunny weekends."
+          },
+          {
+            "icon": "drink",
+            "description": "",
+            "label": "Sharing cocktails under the stars."
+          },
+          {
+            "icon": "film",
+            "description": "",
+            "label": "Hosting movie nights and creating lasting memories outdoors."
+          },
+          {
+            "icon": "value",
+            "description": "— it’s an investment in your home and lifestyle.",
+            "label": "An outdoor kitchen is not just an upgrade"
+          }
+        ],
+        "titleLine3": "Kitchen"
       }
     },
     {
+      "type": "related-services",
       "key": "custom_1773681562032_hvkwb",
       "label": "Related Services",
-      "type": "related-services",
       "content": {
         "title": "Related Services",
+        "_sourceLabel": "Related Services",
+        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp.webp",
         "services": [
           {
             "link": "/finishes/stamped-colored",
@@ -268,61 +282,64 @@
             "link": "/services/patios/patios-concrete",
             "label": "Patios"
           }
-        ],
-        "_sourceLabel": "Related Services",
-        "backgroundImage": "/images/cms/uploads/1772585747949-2gxgne_copy_1773675805161_r5s9tp_copy_1773681563546_yaysfp.webp"
+        ]
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "outdoorkitchens_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
         "cards": [
           {
-            "icon": "",
             "title": "Heavy-Duty\nDurability",
+            "icon": "",
             "description": "Installed with proper base preparation and structural reinforcement for long-lasting strength."
           },
           {
-            "icon": "",
             "title": "Weather-Ready\nConstruction",
+            "icon": "",
             "description": "Engineered to withstand Ohio's freeze-thaw cycles and seasonal ground movement."
           },
           {
-            "icon": "",
             "title": "Professional\nInstallation",
+            "icon": "",
             "description": "Completed by our trained in-house team with no subcontractors involved."
           },
           {
-            "icon": "",
             "title": "Long-Term Value",
+            "icon": "",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
         ],
-        "title": "Engineered for Durability",
         "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
         "backgroundImage": "/images/cms/uploads/1782843333584-kpet4.webp"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -333,7 +350,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -349,31 +366,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773681582385_pcbw6f",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -383,10 +397,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1773681607824_v3nhcn",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Outdoor Kitchens",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "How long does an outdoor kitchen project take?",
@@ -404,20 +420,18 @@
             "question": "Do you offer financing?",
             "answer": "Yes, we offer flexible payment options."
           }
-        ],
-        "title": "FAQ — Outdoor Kitchens",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773681612657_ga75pu",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
