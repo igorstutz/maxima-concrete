@@ -34,7 +34,7 @@
         "description": "<b>Stamped and colored concrete</b> isn’t just a surface treatment — it’s artistry in motion.\n\nBy combining pattern, texture, and color, <b>Maxima Concrete</b> transforms ordinary slabs into breathtaking, durable designs that mimic premium materials like stone, slate, tile, or brick, all while maintaining the strength and longevity of concrete.",
         "images": [
           "/images/stamped concrete (patio) (7).jpeg",
-          "/images/dji-fly-20250326-002834-0225-1761682284535-photo.webp"
+          "/images/dji_fly_20250326_002834_0225_1761682284535_photo.jpg"
         ]
       }
     },
@@ -184,25 +184,25 @@
           {
             "title": "Driveways",
             "link": "/services/driveways/driveways-concrete",
-            "image": "/images/dji-fly-20250326-002834-0225-1761682284535-photo.webp",
+            "image": "/images/dji_fly_20250326_002834_0225_1761682284535_photo.jpg",
             "description": "Bold patterns and rich color that make the entrance to your home stand out."
           },
           {
             "title": "Patios",
             "link": "/services/patios/patios-concrete",
-            "image": "/images/stamped-concrete-patio-6-2.webp",
+            "image": "/images/stamped concrete (patio) (6).jpeg",
             "description": "Stone, slate, or wood-look textures that turn a patio into a finished outdoor room."
           },
           {
             "title": "Pool Decks & Surrounds",
             "link": "/services/pool-decks-surrounds",
-            "image": "/images/cms/uploads/1780688626325-y0rpz.webp",
+            "image": "/images/pool deck - stamped.jpeg",
             "description": "Decorative texture with reliable grip and a surface that stays comfortable underfoot."
           },
           {
             "title": "Porches & Steps",
             "link": "/services/porches",
-            "image": "/images/steps-5.webp",
+            "image": "/images/steps (5).jpeg",
             "description": "A refined, high-end entryway without the cost of natural stone."
           }
         ],
