@@ -34,9 +34,9 @@
         "titleLine1": "Built for Outdoor Living",
         "titleLine2": "",
         "description": "Transform your backyard with a custom outdoor kitchen or bar designed for functionality, durability, and lasting performance. At <b>Maxima Concrete</b>, we combine premium materials, expert craftsmanship, and precision installation to create outdoor spaces that are built to entertain, withstand Ohio’s changing seasons, and add lasting value to your home.",
-        "imageVertical": "/images/outdoor-kitchen-7.webp",
-        "imageBottomLeft": "/images/outdoor-kitchen-4.webp",
-        "imageHorizontal": "/images/outdoor-kitchen-3.webp",
+        "imageVertical": "/images/outdoor kitchen (7).jpeg",
+        "imageBottomLeft": "/images/outdoor kitchen (4).jpeg",
+        "imageHorizontal": "/images/outdoor kitchen (3).jpeg",
         "images": [
           "/images/cms/uploads/ajuste-okitchen-1.webp",
           "/images/cms/uploads/ajuste-okitchen-2.webp",
@@ -58,6 +58,7 @@
         "overlayOpacity": 89,
         "description": "Concrete and pavers are the perfect foundation for any outdoor kitchen. They provide unmatched strength, longevity, and design versatility, ensuring your space remains beautiful and low-maintenance for years to come.",
         "eyebrow": "by Maxima Concrete",
+        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
         "benefits": [
           {
             "icon": "shield",
@@ -112,8 +113,7 @@
             "bullets": []
           }
         ],
-        "overlayGradient": false,
-        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
+        "overlayGradient": false
       }
     },
     {
@@ -161,25 +161,25 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773679927107-upao2.webp",
+            "image": "/images/wood.png",
             "title": "Wood",
             "description": "Classic warmth and natural texture for timeless appeal."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773679951349-3wtbi.webp",
+            "image": "/images/metal.png",
             "title": "Metal",
             "description": "Modern durability and sleek design."
           },
           {
             "link": "/finishes/paver",
-            "image": "/images/cms/uploads/1773679981534-w053kf.webp",
+            "image": "/images/paver.png",
             "title": "Pavers & Concrete",
             "description": "Solid, low-maintenance bases that tie into your patio or walkway."
           },
           {
             "link": "#contact",
-            "image": "/images/cms/uploads/1773680013801-fh4urk.webp",
+            "image": "/images/combinations.png",
             "title": "Combinations",
             "description": "Mix materials for a custom aesthetic that matches your home’s architecture."
           }
