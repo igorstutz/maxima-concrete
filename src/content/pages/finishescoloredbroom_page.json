@@ -33,7 +33,7 @@
         "ctaLink": "#contact",
         "description": "Looking to go beyond the standard gray? Colored broom-finished concrete adds vibrance, safety, and style to your outdoor spaces — a perfect balance of practical texture and visual appeal.\n\nIdeal for patios, driveways, sidewalks, porches, and steps, this finish combines a rich palette of colors with a slip-resistant broom texture, creating surfaces that are both stunning and functional.",
         "images": [
-          "/images/patio colored.jpeg",
+          "/images/patio-colored.webp",
           "/images/cms/uploads/1781006763871-ugdtj.webp"
         ]
       }
@@ -49,7 +49,7 @@
         "ctaLink": "#contact",
         "description": "This technique merges two of the most reliable finishing methods — <b>integral coloring and broom texturing.</b>",
         "overlayOpacity": 0,
-        "backgroundImage": "/images/patio colored.jpeg",
+        "backgroundImage": "/images/patio-colored.webp",
         "cards": [
           {
             "title": "Color Integration:",
