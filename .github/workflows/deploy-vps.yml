@@ -43,7 +43,14 @@ jobs:
 
       # EXCLUDE: /.private/ não é enviado NEM apagado — é onde vivem o
       # oauth-config.php e o submissions.log do servidor.
-      - name: Deploy to VPS
+      #
+      # Três tentativas, como no deploy da Hostinger: em dia de edição intensa o
+      # painel dispara dezenas de deploys e o SSH começa a recusar conexão
+      # ("connect to host port 22: Connection timed out"). Sem as tentativas
+      # extras este workflow falhava 3x mais que o da Hostinger, que já as tinha.
+      - name: Deploy to VPS (attempt 1)
+        id: deploy1
+        continue-on-error: true
         uses: easingthemes/ssh-deploy@v5.1.0
         with:
           SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
@@ -54,3 +61,47 @@ jobs:
           TARGET: "/opt/maximaconcrete/site/"
           ARGS: "-rltzv --delete"
           EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Wait before retry 1
+        if: steps.deploy1.outcome == 'failure'
+        run: sleep 30
+
+      - name: Deploy to VPS (attempt 2)
+        id: deploy2
+        if: steps.deploy1.outcome == 'failure'
+        continue-on-error: true
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_SSH_USER }}
+          REMOTE_PORT: "22"
+          SOURCE: "out/"
+          TARGET: "/opt/maximaconcrete/site/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Wait before retry 2
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        run: sleep 60
+
+      - name: Deploy to VPS (attempt 3)
+        id: deploy3
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure'
+        continue-on-error: true
+        uses: easingthemes/ssh-deploy@v5.1.0
+        with:
+          SSH_PRIVATE_KEY: ${{ secrets.VPS_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.VPS_SSH_HOST }}
+          REMOTE_USER: ${{ secrets.VPS_SSH_USER }}
+          REMOTE_PORT: "22"
+          SOURCE: "out/"
+          TARGET: "/opt/maximaconcrete/site/"
+          ARGS: "-rltzv --delete"
+          EXCLUDE: "/.private/, .git*, node_modules/"
+
+      - name: Fail if all deploy attempts failed
+        if: steps.deploy1.outcome == 'failure' && steps.deploy2.outcome == 'failure' && steps.deploy3.outcome == 'failure'
+        run: |
+          echo "As 3 tentativas de deploy falharam (SSH da VPS recusando conexão)."
+          exit 1
