@@ -124,19 +124,19 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/inspeção.jpeg",
+            "image": "/images/inspecao.webp",
             "title": "Inspection Coordination:",
             "description": "We schedule and handle inspections as required by your local municipality."
           },
           {
             "link": "#contact",
-            "image": "/images/professional instaltion.jpeg",
+            "image": "/images/professional-instaltion.webp",
             "title": "Professional installation:",
             "description": "Our team ensures all work meets or exceeds state and local standards."
           },
           {
             "link": "#contact",
-            "image": "/images/Hassle Free.png",
+            "image": "/images/hassle-free.webp",
             "title": "Hassle-Free Experience:",
             "description": "You relax while we take care of everything — from start to finish."
           }
