@@ -15227,6 +15227,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -15238,18 +15250,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -15341,8 +15341,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -15358,19 +15371,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -15688,6 +15688,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -15699,18 +15711,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -15802,8 +15802,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -15819,19 +15832,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16112,6 +16112,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -16123,18 +16135,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -16226,8 +16226,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -16243,19 +16256,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16573,6 +16573,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -16584,18 +16596,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -16687,8 +16687,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -16704,19 +16717,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -16997,6 +16997,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -17008,18 +17020,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -17111,8 +17111,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -17128,19 +17141,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -17458,6 +17458,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -17469,18 +17481,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -17572,8 +17572,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -17589,19 +17602,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -17919,6 +17919,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -17930,18 +17942,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -18033,8 +18033,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -18050,19 +18063,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -18380,6 +18380,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -18391,18 +18403,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -18494,8 +18494,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -18511,19 +18524,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -18841,6 +18841,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -18852,18 +18864,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -18955,8 +18955,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -18972,19 +18985,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -19265,6 +19265,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -19276,18 +19288,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -19379,8 +19379,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -19396,19 +19409,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -19726,6 +19726,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -19737,18 +19749,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -19840,8 +19840,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -19857,19 +19870,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -20187,6 +20187,18 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: images
                         label: images
                         required: false
@@ -20198,18 +20210,6 @@ collections:
                           choose_url: true
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: paverImages
@@ -20301,8 +20301,21 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: images
                         label: images
+                        required: false
+                        widget: list
+                        field:
+                          name: image
+                          label: Image
+                          widget: image
+                          choose_url: true
+                      - name: paverImages
+                        label: paverImages
                         required: false
                         widget: list
                         field:
@@ -20318,19 +20331,6 @@ collections:
                           name: item
                           label: Item
                           widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: paverImages
-                        label: paverImages
-                        required: false
-                        widget: list
-                        field:
-                          name: image
-                          label: Image
-                          widget: image
-                          choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
