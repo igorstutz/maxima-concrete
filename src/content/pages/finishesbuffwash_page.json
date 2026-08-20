@@ -12,13 +12,13 @@
         "description": "A surface wash that reveals the natural stone embedded in the mix, giving every pour a rich, organic texture you can both see and feel.",
         "overlayGradient": false,
         "overlayOpacity": 62,
-        "backgroundImage": "/images/cms/uploads/1778533291033-fl6wv.webp",
+        "backgroundImage": "/images/buff wash (4).jpeg",
         "backLink": "/finishes",
         "backLabel": "Back to Finishes",
         "tagline": "The Finish Made to Be Touched",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/broom-finish-4.webp"
+        "backgroundImageMobile": "/images/buff wash (4).jpeg"
       }
     },
     {
@@ -70,25 +70,25 @@
           {
             "title": "Driveways",
             "link": "/services/driveways/driveways-concrete",
-            "image": "/images/buff-wash-exposed-aggregate.webp",
+            "image": "/images/Buff Wash & Exposed Aggregate.jpg",
             "description": "Add curb appeal with rich color and reliable traction."
           },
           {
             "title": "Patios",
             "link": "/services/patios/patios-concrete",
-            "image": "/images/buff-wash-patio-1.webp",
+            "image": "/images/buff wash - patio (1).jpeg",
             "description": "Create cozy, inviting areas with earthy tones or bold accents."
           },
           {
             "title": "Sidewalks & Walkways",
             "link": "/services/sidewalks",
-            "image": "/images/buff-wash.webp",
+            "image": "/images/buff wash.jpeg",
             "description": "Blend functionality with design, enhancing both safety and beauty."
           },
           {
             "title": "Porches & Steps",
             "link": "/services/steps",
-            "image": "/images/cms/uploads/1778531313983-q6dzn_copy_1778539737615_1i427n.webp",
+            "image": "/images/buff wash (2).jpeg",
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
