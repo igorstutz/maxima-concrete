@@ -2,41 +2,55 @@
   "pageKey": "gallerysportcourt_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_sportcourt_hero",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Sport Courts",
-        "backLabel": "Back to Gallery",
+        "subtitle": "",
         "_sourceLabel": "Hero",
+        "overlayGradient": false,
+        "overlayOpacity": null,
         "backgroundImage": "/images/cms/uploads/1782832616877-pgw3dzb.webp",
+        "backLink": "",
+        "backLabel": "Back to Gallery",
+        "description": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1782832616877-pgw3dzb-mobile.webp"
       }
     },
     {
+      "type": "inspiration-gallery",
       "key": "gallerysportcourt-sec-inspiration-gallery",
       "label": "Inspiration",
-      "type": "inspiration-gallery",
       "content": {
         "title": "Inspiration for Your Sport Courts",
+        "ctaText": "",
+        "_sourceLabel": "Inspiration",
+        "description": "",
         "images": [
           "/images/cms/uploads/1782832640597-zx3u1u.webp",
           "/images/cms/uploads/1782832642456-iwnn6w.webp",
           "/images/cms/uploads/1782832638546-4gbe3.webp",
           "/images/cms/uploads/1782832639613-gyc2v5.webp",
-          "/images/cms/uploads/1782832641620-wbjlxr.webp"
+          "/images/cms/uploads/1782832641620-wbjlxr.webp",
+          "/images/sports (3).jpeg",
+          "/images/sports (2).jpeg",
+          "/images/sports (1).jpeg"
         ],
-        "_sourceLabel": "Inspiration"
+        "ctaLink": "",
+        "paverImages": []
       }
     },
     {
+      "type": "projects-grid",
       "key": "gallerysportcourt-sec-projects-grid",
       "label": "Projects",
-      "type": "projects-grid",
       "content": {
         "title": "Our Projects",
+        "_sourceLabel": "Projects",
         "images": [
           "/images/cms/uploads/1782832715136-z92iht.webp",
           "/images/cms/uploads/1782832681004-d4r0mb.webp",
@@ -45,6 +59,7 @@
           "/images/cms/uploads/1782832697748-ix873q.webp",
           "/images/cms/uploads/1773704406843-dm72w8.webp"
         ],
+        "paverImages": [],
         "imageTypes": [
           "concrete",
           "concrete",
@@ -52,37 +67,41 @@
           "concrete",
           "concrete",
           "concrete"
-        ],
-        "_sourceLabel": "Projects"
+        ]
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_sportcourt_morethan",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\n\nWith 20+ years of experience, licensed & insured professionals, and a commitment to quality — we build spaces that stand the test of time.",
-        "_sourceLabel": "More Than Concrete"
+        "_sourceLabel": "More Than Concrete",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\n\nWith 20+ years of experience, licensed & insured professionals, and a commitment to quality — we build spaces that stand the test of time."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "ctaLink": "/contact-us",
         "items": [
           {
             "icon": "home",
@@ -93,7 +112,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -109,43 +128,43 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_sportcourt_contact",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
-        "_sourceLabel": "Contact"
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
       }
     },
     {
+      "type": "faq",
       "key": "custom_gallerysportcourt_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Sport Courts",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What sports can a concrete court be used for?",
@@ -163,20 +182,18 @@
             "question": "Do you offer free sport court estimates?",
             "answer": "Yes. We provide free consultations and estimates throughout Central Ohio."
           }
-        ],
-        "title": "FAQ — Sport Courts",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_sportcourt_instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
