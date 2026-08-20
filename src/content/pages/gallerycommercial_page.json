@@ -2,26 +2,34 @@
   "pageKey": "gallerycommercial_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_1773699194272_vluxee",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Commercial",
+        "subtitle": "",
+        "_sourceLabel": "Hero",
+        "overlayGradient": false,
+        "overlayOpacity": null,
+        "backgroundImage": "/images/cms/uploads/1782831953548-zw9a6.webp",
         "backLink": "/gallery",
         "backLabel": "Back to Gallery",
-        "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1782831953548-zw9a6.webp",
+        "description": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1782831953548-zw9a6-mobile.webp"
       }
     },
     {
+      "type": "inspiration-gallery",
       "key": "custom_1773699376997_5ub39",
       "label": "Inspiration",
-      "type": "inspiration-gallery",
       "content": {
         "title": "Inspiration for Your Commercial",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "_sourceLabel": "Inspiration",
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
         "images": [
           "/images/cms/uploads/1782831991615-7ra2cd.webp",
           "/images/cms/uploads/1782831990755-s0ges.webp",
@@ -30,28 +38,33 @@
           "/images/cms/uploads/1782831994644-7k3kk.webp",
           "/images/cms/uploads/1782831995549-gpn08c.webp",
           "/images/cms/uploads/1782831990200-a5uxu.webp",
-          "/images/cms/uploads/1782831992504-4l5ra.webp"
+          "/images/cms/uploads/1782831992504-4l5ra.webp",
+          "/images/Commercial Project.png",
+          "/images/commercial.jpeg",
+          "/images/commercial concrete (2) (1).jpeg",
+          "/images/commercial concrete (1) (1).jpeg",
+          "/images/commercial_concrete_(5)_(1).jpeg_202606261456 (1).jpeg"
         ],
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
-        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
-        "_sourceLabel": "Inspiration"
+        "paverImages": []
       }
     },
     {
+      "type": "projects-grid",
       "key": "custom_1773699384399_rzu6a",
       "label": "Projects",
-      "type": "projects-grid",
       "content": {
         "title": "Our Projects",
+        "_sourceLabel": "Projects",
         "images": [
           "/images/cms/uploads/1782832070189-a8552f.webp",
           "/images/cms/uploads/1782832049301-y6zerc.webp",
-          "/images/cms/uploads/1782832059489-5ot4pt.webp",
+          "/images/Commercial Project.png",
           "/images/cms/uploads/1782832075263-t7wju.webp",
           "/images/cms/uploads/1782832106714-zz4vvo.webp",
           "/images/cms/uploads/1781185733888-1yknek.webp"
         ],
+        "paverImages": [],
         "imageTypes": [
           "concrete",
           "concrete",
@@ -59,37 +72,41 @@
           "concrete",
           "concrete",
           "concrete"
-        ],
-        "_sourceLabel": "Projects"
+        ]
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_1773699387972_xrcjbr",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
-        "_sourceLabel": "More Than Concrete"
+        "_sourceLabel": "More Than Concrete",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "ctaLink": "/contact-us",
         "items": [
           {
             "icon": "home",
@@ -100,7 +117,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -116,31 +133,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773699401500_y877c",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -150,10 +164,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_gallerycommercial_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Commercial Projects",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What types of commercial concrete work do you handle?",
@@ -171,20 +187,18 @@
             "question": "How do I request a commercial estimate?",
             "answer": "Contact us with your project details and we'll provide a free, detailed estimate."
           }
-        ],
-        "title": "FAQ — Commercial Projects",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773699409249_w3n8ri",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
