@@ -2,75 +2,96 @@
   "pageKey": "galleryretainingcitywalls_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_galleryretainingcitywalls_page_hero",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Retaining & City Walls",
-        "backLabel": "Back to Gallery",
+        "subtitle": "",
+        "_sourceLabel": "",
+        "overlayGradient": false,
+        "overlayOpacity": null,
         "backgroundImage": "/images/cms/uploads/1782842879795-trotyg.webp",
+        "backLink": "",
+        "backLabel": "Back to Gallery",
+        "description": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
-        "secondaryCtaText": "Find Our Work Near You"
+        "secondaryCtaText": "Find Our Work Near You",
+        "backgroundImageMobile": ""
       }
     },
     {
+      "type": "inspiration-gallery",
       "key": "galleryretainingcitywalls_page-sec-inspiration-gallery",
       "label": "Inspiration",
-      "type": "inspiration-gallery",
       "content": {
         "title": "Inspiration for Your Retaining & City Walls",
+        "ctaText": "",
+        "_sourceLabel": "",
+        "description": "",
         "images": [
-          "/images/cms/uploads/1782842820455-a9z3rg.webp",
-          "/images/cms/uploads/1781010525962-y2w187.webp",
-          "/images/cms/uploads/1782842801560-e9yyn.webp",
-          "/images/cms/uploads/1773338731654-00xi8h.webp",
-          "/images/cms/uploads/1782842793670-2u8rft.webp"
-        ]
+          "/images/seating walls (3).jpeg",
+          "/images/seating walls (2).jpeg",
+          "/images/seating walls (1).jpeg",
+          "/images/seating walls.jpeg",
+          "/images/seating walls.png"
+        ],
+        "ctaLink": "",
+        "paverImages": []
       }
     },
     {
+      "type": "projects-grid",
       "key": "galleryretainingcitywalls_page-sec-projects-grid",
       "label": "Projects",
-      "type": "projects-grid",
       "content": {
         "title": "Our Projects",
+        "_sourceLabel": "",
         "images": [
-          "/images/cms/uploads/1773319547103-0vjynl.webp",
-          "/images/cms/uploads/1773316150359-1p20pk.webp",
-          "/images/cms/uploads/1773342662588-auzc7.webp",
-          "/images/cms/uploads/1773620720621-g6zumi.webp",
-          "/images/cms/uploads/1773342541430-mqcgu.webp",
-          "/images/cms/uploads/1773620740714-dcp3n.webp"
-        ]
+          "/images/seating walls (3).jpeg",
+          "/images/seating walls.png",
+          "/images/firepit-3.webp",
+          "/images/seating walls.jpeg",
+          "/images/image.png_202608190913.jpeg",
+          "/images/seating walls (2).jpeg"
+        ],
+        "paverImages": [],
+        "imageTypes": []
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_galleryretainingcitywalls_page_morethan",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\n\nWith 20+ years of experience, licensed & insured professionals, and a commitment to quality — we build spaces that stand the test of time.",
-        "_sourceLabel": "More Than Concrete"
+        "_sourceLabel": "More Than Concrete",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\n\nWith 20+ years of experience, licensed & insured professionals, and a commitment to quality — we build spaces that stand the test of time."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "ctaLink": "/contact-us",
         "items": [
           {
             "icon": "home",
@@ -81,7 +102,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -97,47 +118,45 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_galleryretainingcitywalls_page_contact",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
         "subtitle": "Limited availability for the upcoming season. Secure your spot.",
-        "_sourceLabel": "Contact"
+        "_sourceLabel": "Contact",
+        "nameSectionLabel": ""
       }
     },
     {
+      "type": "instagram",
       "key": "custom_galleryretainingcitywalls_page_instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
