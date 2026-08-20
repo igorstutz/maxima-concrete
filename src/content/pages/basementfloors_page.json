@@ -12,10 +12,10 @@
         "_sourceLabel": "Hero",
         "ctaLink": "#contact",
         "tagline": "Durable, Comfortable, and Built to Last",
-        "backgroundImage": "/images/basement floor (1).jpeg",
+        "backgroundImage": "/images/basement-floor-1.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/basement floor (1).jpeg",
+        "backgroundImageMobile": "/images/basement-floor-1.webp",
         "heightVh": null,
         "overlayOpacity": null,
         "videoUrl": ""
@@ -33,10 +33,10 @@
         "ctaLink": "#contact",
         "titleLine2": "",
         "images": [],
-        "imageLarge": "/images/basement floor (5).jpeg",
+        "imageLarge": "/images/basement-floor-5.webp",
         "paragraph1": "A professionally installed concrete basement floor creates a stable foundation for storage, living spaces, workshops, and more. Using quality materials and proven installation methods, we deliver a floor that is durable, moisture-resistant, and built for long-lasting performance.",
         "paragraph2": "",
-        "imageTopRight": "/images/basement floor (2).jpeg",
+        "imageTopRight": "/images/basement-floor-2.webp",
         "paragraphLayout": "spaced"
       }
     },
@@ -51,7 +51,7 @@
         "ctaLink": "#contact",
         "bottomText": "",
         "description": "",
-        "backgroundImage": "/images/basement floor (4).jpeg",
+        "backgroundImage": "/images/basement-floor-4.webp",
         "overlayOpacity": 76,
         "benefits": [
           {
@@ -200,12 +200,12 @@
         "ctaLink": "/gallery",
         "description": "Browse our gallery and imagine the possibilities for your home.",
         "images": [
-          "/images/basement floor (6).jpeg",
-          "/images/basement floor (2).jpeg",
-          "/images/basement floor (4).jpeg",
-          "/images/basement floor (7).jpeg",
-          "/images/basement floor.jpeg",
-          "/images/basement floor (8).jpeg"
+          "/images/basement-floor-6.webp",
+          "/images/basement-floor-2.webp",
+          "/images/basement-floor-4.webp",
+          "/images/basement-floor-7.webp",
+          "/images/basement-floor.webp",
+          "/images/basement-floor-8.webp"
         ],
         "descriptionBold": ""
       }
