@@ -32,6 +32,18 @@ jobs:
         env:
           GITHUB_PAGES: "true"
       - run: touch out/.nojekyll
+
+      # Documentos internos (plano de virada etc.) entram só no preview do
+      # GitHub Pages. Ficam FORA de public/, de propósito: assim não vão para a
+      # Hostinger nem aparecem em maximaconcrete.com.
+      - name: Anexar documentos internos ao preview
+        run: |
+          if [ -d docs ]; then
+            cp -r docs/. out/
+            echo "docs anexados:"
+            find out -maxdepth 2 -path "out/_next" -prune -o -name "index.html" -newer package.json -print | head
+          fi
+
       - uses: actions/upload-pages-artifact@v4
         with:
           path: out
