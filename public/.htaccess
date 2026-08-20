@@ -4,9 +4,17 @@
 Options -Indexes -MultiViews +FollowSymLinks
 DirectoryIndex index.html
 
-# ── Force HTTPS + canonical (non-www) host ──────────────────────────────
 RewriteEngine On
 
+# ── .private nunca é servido ────────────────────────────────────────────
+# Ali vivem o client_secret do OAuth e o log de leads. Sem esta regra, a única
+# coisa que impedia a leitura era o PHP ser executado no caminho (o arquivo
+# responde vazio em vez de mostrar o código) — proteção que cai junto se o PHP
+# for desativado nessa pasta, entregando o segredo em texto puro. Vem antes de
+# tudo, para nenhum [L] anterior deixar a regra de fora.
+RewriteRule (^|/)\.private(/|$) - [F,L]
+
+# ── Force HTTPS + canonical (non-www) host ──────────────────────────────
 RewriteCond %{HTTP_HOST} ^www\.maximaconcrete\.com$ [NC]
 RewriteRule ^(.*)$ https://maximaconcrete.com/$1 [L,R=301]
 
