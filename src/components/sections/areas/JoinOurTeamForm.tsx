@@ -4,6 +4,7 @@ import { useState } from "react";
 import { ArrowRight, Upload } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
+import { newLeadId, pushLeadEvent } from "@/lib/analytics";
 
 /**
  * joinourteam-sec-form — formulário de candidatura/currículo. Envia (multipart,
@@ -33,6 +34,8 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
     const form = e.currentTarget;
     const data = new FormData(form);
     data.set("form_type", "resume");
+    const leadId = newLeadId();
+    data.set("lead_id", leadId);
     setStatus("sending");
     setErrorMsg("");
     try {
@@ -40,6 +43,7 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
       const json = await res.json().catch(() => ({ ok: res.ok }));
       if (res.ok && json.ok) {
         setStatus("sent");
+        pushLeadEvent({ form: "join_our_team", page: window.location.pathname, leadId });
         form.reset();
         setFileName("");
       } else {

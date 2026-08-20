@@ -4,6 +4,7 @@ import { useState, type FormEvent } from "react";
 import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
+import { newLeadId, pushLeadEvent } from "@/lib/analytics";
 
 interface ContactContent {
   title?: string;
@@ -88,6 +89,11 @@ export default function Contact({ content }: { content: Record<string, any> }) {
       return;
     }
 
+    // Vai junto no envio para o servidor poder usar o MESMO identificador ao
+    // reportar o lead à API de Conversões do Meta (evita contar duas vezes).
+    const leadId = newLeadId();
+    data.set("lead_id", leadId);
+
     setStatus("sending");
     setErrorMessage("");
     try {
@@ -97,6 +103,7 @@ export default function Contact({ content }: { content: Record<string, any> }) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setStatus("success");
+      pushLeadEvent({ form: "contact", page: window.location.pathname, leadId });
       form.reset();
       setSelectedOption("");
       setSelectedServices([]);
