@@ -124,25 +124,25 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/Permit Compliance.jpeg",
+            "image": "/images/permit-compliance.webp",
             "title": "Permit Compliance:",
             "description": "We coordinate the required Right-of-Way (ROW) permits and help ensure your project meets local municipal requirements throughout Ohio."
           },
           {
             "link": "#contact",
-            "image": "/images/professional instaltion.jpeg",
+            "image": "/images/professional-instaltion-2.webp",
             "title": "Precision Installation:",
             "description": "Our experienced team follows proper grading, forming, and finishing techniques to deliver curbs and gutters built for long-term performance."
           },
           {
             "link": "#contact",
-            "image": "/images/premium materials.jpeg",
+            "image": "/images/premium-materials.webp",
             "title": "Premium Materials:",
             "description": "We use high-strength concrete, proper reinforcement when required, and proven construction methods to maximize durability and structural integrity."
           },
           {
             "link": "#contact",
-            "image": "/images/quality assurance.jpeg",
+            "image": "/images/quality-assurance.webp",
             "title": "Quality Assurance:",
             "description": "Every project is inspected throughout the installation process to ensure proper workmanship, code compliance, and lasting performance."
           }
