@@ -11,14 +11,14 @@
         "_sourceLabel": "Hero",
         "overlayGradient": false,
         "overlayOpacity": null,
-        "backgroundImage": "/images/patio colored.jpeg",
+        "backgroundImage": "/images/patio-colored-2.webp",
         "backLink": "",
         "backLabel": "Back to Gallery",
         "description": "",
         "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/patio colored.jpeg"
+        "backgroundImageMobile": "/images/patio-colored-2.webp"
       }
     },
     {
@@ -33,13 +33,13 @@
           "/images/cms/uploads/1781031382612-av9w0t.webp",
           "/images/cms/uploads/1781031270629-l4phj.webp",
           "/images/cms/uploads/1781014525481-zjwafp.webp",
-          "/images/stamped concrete (patio) (14).jpeg",
-          "/images/stamped concrete (patio) (6).jpeg"
+          "/images/stamped-concrete-patio-14-2.webp",
+          "/images/stamped-concrete-patio-6-3.webp"
         ],
         "paverImages": [
-          "/images/patio paver (3).jpeg",
-          "/images/paver patio.jpeg",
-          "/images/patio paver (2) (2).jpeg"
+          "/images/patio-paver-3.webp",
+          "/images/paver-patio.webp",
+          "/images/patio-paver-2-2.webp"
         ],
         "imageTypes": [
           "concrete",
@@ -65,19 +65,19 @@
           "/images/cms/uploads/1781031465144-9nxa2e.webp",
           "/images/cms/uploads/1782830642770-olqmvt.webp",
           "/images/cms/uploads/1782830669247-l6ve.webp",
-          "/images/BROOM FINISH.jpeg",
-          "/images/PATIO - BROOM FINISH (2).jpeg",
-          "/images/PATIO - BROOM FINISH (5).jpeg",
-          "/images/PATIO - BROOM FINISH (1).jpeg",
-          "/images/Captura_de_tela_2026-08-17_142343.png_202608171436.jpeg"
+          "/images/broom-finish-5.webp",
+          "/images/patio-broom-finish-2.webp",
+          "/images/patio-broom-finish-5-3.webp",
+          "/images/patio-broom-finish-1-2.webp",
+          "/images/captura-de-tela-2026-08-17-142343-png-202608171436.webp"
         ],
         "ctaLink": "#contact",
         "paverImages": [
           "/images/cms/uploads/1781031558918-ce4npm.webp",
-          "/images/paver patio.jpeg",
+          "/images/paver-patio.webp",
           "/images/cms/uploads/1781034066419-akxdkp.webp",
-          "/images/patio paver (3).jpeg",
-          "/images/485137860_1056076806541330_828217895562597147_n_(1).jpg_2K_202608201001.jpeg",
+          "/images/patio-paver-3.webp",
+          "/images/485137860-1056076806541330-828217895562597147-n-1-jpg-2k-202608201001.webp",
           "/images/cms/uploads/1778081875256-h7amq.webp",
           "/images/cms/uploads/1781034128448-5tpcx6.webp",
           "/images/cms/uploads/1778081875256-h7amq.webp"
