@@ -33,8 +33,8 @@
         "ctaLink": "#contact",
         "description": "<b>Stamped and colored concrete</b> isn’t just a surface treatment — it’s artistry in motion.\n\nBy combining pattern, texture, and color, <b>Maxima Concrete</b> transforms ordinary slabs into breathtaking, durable designs that mimic premium materials like stone, slate, tile, or brick, all while maintaining the strength and longevity of concrete.",
         "images": [
-          "/images/stamped concrete (patio) (7).jpeg",
-          "/images/stamped concrete (patio) (3).jpeg"
+          "/images/stamped-concrete-patio-7.webp",
+          "/images/stamped-concrete-patio-3.webp"
         ]
       }
     },
@@ -142,7 +142,7 @@
           }
         ],
         "bottomQuote": "The result is a surface that's as **functional as it is stunning** — built to endure, designed to impress.",
-        "processImage": "/images/stamped concrete (patio) (4).jpeg",
+        "processImage": "/images/stamped-concrete-patio-4.webp",
         "processIntro": "At **Maxima Concrete**, we ensure every stamped and colored surface is crafted to perfection:",
         "processSteps": [
           {
@@ -184,7 +184,7 @@
           {
             "title": "Driveways",
             "link": "/services/driveways/driveways-concrete",
-            "image": "/images/driveway - buff and wash_stamped.png",
+            "image": "/images/driveway-buff-and-wash-stamped.webp",
             "description": "Bold patterns and rich color that make the entrance to your home stand out."
           },
           {
