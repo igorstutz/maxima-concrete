@@ -34,7 +34,7 @@
         "description": "The most classic and versatile concrete finish for driveways, patios, sidewalks, porches, and steps. Broom-finished concrete is created using a specialized broom technique that forms light surface grooves, improving slip resistance while adding a clean, timeless look.\n\nPerfect for both residential and commercial projects, it combines durability, safety, and simplicity. Ideal for high-traffic areas, broom finish concrete is low-maintenance, long-lasting, and cost-effective making it one of the most popular choices for outdoor surfaces.\n\nAt Maxima Concrete, we deliver high-quality broom-finish!",
         "images": [
           "/images/patio-broom-finish-1.webp",
-          "/images/PATIO - BROOM FINISH (4).jpeg"
+          "/images/patio-broom-finish-4.webp"
         ]
       }
     },
@@ -108,25 +108,25 @@
           {
             "title": "Driveways",
             "link": "/services/driveways/driveways-concrete",
-            "image": "/images/broom finish - driveway.png",
+            "image": "/images/broom-finish-driveway.webp",
             "description": "Smooth to drive on, with safe traction even in rain or snow."
           },
           {
             "title": "Patios",
             "link": "/services/patios/patios-concrete",
-            "image": "/images/PATIO - BROOM FINISH (5).jpeg",
+            "image": "/images/patio-broom-finish-5-2.webp",
             "description": "Functional and attractive, blending with landscape design."
           },
           {
             "title": "Sidewalks & Walkways",
             "link": "/services/sidewalks",
-            "image": "/images/sidewalk (8).jpeg",
+            "image": "/images/sidewalk-8.webp",
             "description": "Comfortable for walking and wheelchair access."
           },
           {
             "title": "Porches & Steps",
             "link": "/services/porches",
-            "image": "/images/PORCHERS (4).jpeg",
+            "image": "/images/porchers-4-2.webp",
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
