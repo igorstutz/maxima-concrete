@@ -2,65 +2,80 @@
   "pageKey": "gallerypavers_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "custom_1773698493876_8q3l28",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Pavers",
+        "subtitle": "",
+        "_sourceLabel": "Hero",
+        "overlayGradient": false,
+        "overlayOpacity": null,
+        "backgroundImage": "/images/cms/uploads/1781035509623-3855i.webp",
         "backLink": "/gallery",
         "backLabel": "Back to Gallery",
-        "_sourceLabel": "Hero",
-        "backgroundImage": "/images/cms/uploads/1781035509623-3855i.webp",
+        "description": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1781035509623-3855i-mobile.webp"
       }
     },
     {
+      "type": "inspiration-gallery",
       "key": "custom_1773698516396_p53437",
       "label": "Inspiration",
-      "type": "inspiration-gallery",
       "content": {
         "title": "Inspiration for Your Pavers",
+        "ctaText": "Inspired? Let's Build Your Vision",
+        "_sourceLabel": "Inspiration",
+        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
         "images": [
           "/images/cms/uploads/1781035456743-cg9wfc.webp",
           "/images/cms/uploads/1773698868298-0cak5f.webp",
           "/images/cms/uploads/1773698869262-7q7t7.webp",
           "/images/cms/uploads/1773698870044-ocmb1.webp",
-          "/images/cms/uploads/1773698870781-bt33qk.webp",
+          "/images/driveway-paver-2.webp",
           "/images/cms/uploads/1773698872210-z8btn4.webp",
           "/images/cms/uploads/1773698873164-bx7dth.webp",
           "/images/cms/uploads/1781035448875-8irjce.webp",
           "/images/cms/uploads/1781035449826-ubrl5c.webp",
-          "/images/cms/uploads/1781035451185-xbftgb.webp",
-          "/images/cms/uploads/1781035452665-k7pdfc.webp",
-          "/images/cms/uploads/1781035454115-21910a.webp",
+          "/images/patio-paver-3.webp",
+          "/images/patio-paver.webp",
+          "/images/porch-paver-1-2.webp",
           "/images/cms/uploads/1781035455077-6zhuc.webp",
           "/images/cms/uploads/1781035455845-cqeuys.webp",
           "/images/cms/uploads/1781035457516-bc6uli.webp",
-          "/images/cms/uploads/1781035458395-unqoej.webp",
-          "/images/cms/uploads/1781035459469-vmyagg.webp"
+          "/images/paver-patio.webp",
+          "/images/cms/uploads/1781035459469-vmyagg.webp",
+          "/images/sidewalk-paver.webp",
+          "/images/steps-2.webp",
+          "/images/Captura de tela 2026-06-05 114628.png",
+          "/images/captura-de-tela-2026-06-05-114610.webp",
+          "/images/captura-de-tela-2026-08-17-142526-png-202608181434.webp",
+          "/images/captura-de-tela-2026-08-17-142343-png-202608171436.webp",
+          "/images/outdoor-kitchen-7-2.webp"
         ],
         "ctaLink": "#contact",
-        "ctaText": "Inspired? Let's Build Your Vision",
-        "description": "Every project is unique. Browse our gallery and imagine the possibilities for your home.",
-        "_sourceLabel": "Inspiration"
+        "paverImages": []
       }
     },
     {
+      "type": "projects-grid",
       "key": "custom_1773698519730_kql8v",
       "label": "Projects",
-      "type": "projects-grid",
       "content": {
         "title": "",
+        "_sourceLabel": "Projects",
         "images": [
           "/images/cms/uploads/1782831915562-fds2sj.webp",
           "/images/cms/uploads/1773699027128-hgr6ho.webp",
           "/images/cms/uploads/1773699048653-aqxx4k.webp",
           "/images/cms/uploads/1782831834944-wya3wr.webp",
-          "/images/cms/uploads/1782831855038-bzx48.webp",
+          "/images/paver-patio.webp",
           "/images/cms/uploads/1773699063205-xzbvf.webp"
         ],
+        "paverImages": [],
         "imageTypes": [
           "concrete",
           "concrete",
@@ -68,37 +83,41 @@
           "concrete",
           "concrete",
           "concrete"
-        ],
-        "_sourceLabel": "Projects"
+        ]
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "custom_1773698523708_urhpfi",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
-        "_sourceLabel": "More Than Concrete"
+        "_sourceLabel": "More Than Concrete",
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time."
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "ctaLink": "/contact-us",
         "items": [
           {
             "icon": "home",
@@ -109,7 +128,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -125,31 +144,28 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1773698531723_ccxfdv",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -159,10 +175,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_gallerypavers_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Pavers",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "How long do paver installations last?",
@@ -180,20 +198,18 @@
             "question": "Can I match the paver designs shown here?",
             "answer": "Yes. We offer a wide range of colors, patterns, and styles to create the look you want."
           }
-        ],
-        "title": "FAQ — Pavers",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1773698534590_eij2ge",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
