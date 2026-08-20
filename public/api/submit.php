@@ -20,6 +20,7 @@ $RECIPIENT  = implode(', ', [
     'info@maximaconcrete.com',
     'jackie@maximaconcrete.com',
     'elderpw@gmail.com',
+    'advertising@melaniesconsulting.com',
 ]);
 $FROM_NAME  = 'Maxima Concrete Website';
 $FROM_EMAIL = 'no-reply@maximaconcrete.com';
