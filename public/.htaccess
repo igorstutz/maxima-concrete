@@ -21,6 +21,100 @@ RewriteRule ^services/patios-concrete/?$ /services/patios/patios-concrete/ [L,R=
 RewriteRule ^services/patios-paver/?$ /services/patios/patios-paver/ [L,R=301]
 RewriteRule ^real-reviews/?$ /reviews/ [L,R=301]
 
+# ── Redirects do site Wix (70 endereços indexados) ─────────────────────
+# Gerados a partir do sitemap do site antigo. Sem eles, todo resultado de
+# Google apontando para o site da Wix cairia em página inexistente e o
+# histórico de posicionamento desses endereços se perderia.
+# Fonte do mapa e da conferência: _extraction/check-redirects.mjs
+<IfModule mod_rewrite.c>
+  # Institucionais
+  RewriteRule ^about/contact/thank-you/?$ /contact-us/ [L,R=301,NC]
+  RewriteRule ^about/areas-served/?$ /areas-we-serve/ [L,R=301,NC]
+  RewriteRule ^about/contact/?$ /contact-us/ [L,R=301,NC]
+  RewriteRule ^about/delewareohio/?$ /areas-we-serve/delaware/ [L,R=301,NC]
+  RewriteRule ^about/financing/?$ /financing/ [L,R=301,NC]
+  RewriteRule ^about/newalbanyohio/?$ /areas-we-serve/new-albany/ [L,R=301,NC]
+  RewriteRule ^about/reviews/?$ /reviews/ [L,R=301,NC]
+  RewriteRule ^about/?$ /why-maxima/ [L,R=301,NC]
+  RewriteRule ^career/?$ /join-our-team/ [L,R=301,NC]
+  RewriteRule ^copy-of-thanks/?$ / [L,R=301,NC]
+  RewriteRule ^outdoor-living-thank-you/?$ / [L,R=301,NC]
+  RewriteRule ^thanks/?$ / [L,R=301,NC]
+
+  # Concreto
+  RewriteRule ^concrete/approaches/?$ /services/approaches/ [L,R=301,NC]
+  RewriteRule ^concrete/basement/?$ /services/basement-floors/ [L,R=301,NC]
+  RewriteRule ^concrete/curbandgutter/?$ /services/curbs-gutters/ [L,R=301,NC]
+  RewriteRule ^concrete/driveway/?$ /services/driveways/ [L,R=301,NC]
+  RewriteRule ^concrete/garages/?$ /services/garage-floors/ [L,R=301,NC]
+  RewriteRule ^concrete/patios/?$ /services/patios/ [L,R=301,NC]
+  RewriteRule ^concrete/porches/?$ /services/porches/ [L,R=301,NC]
+  RewriteRule ^concrete/sidewalks/?$ /services/sidewalks/ [L,R=301,NC]
+  RewriteRule ^concrete/slabs/?$ /services/slabs/ [L,R=301,NC]
+  RewriteRule ^concrete/steps/?$ /services/steps/ [L,R=301,NC]
+  RewriteRule ^concrete/structuralsupport/?$ /services/footers/ [L,R=301,NC]
+  RewriteRule ^concrete/?$ /why-maxima/ [L,R=301,NC]
+  RewriteRule ^driveways-and-patios/?$ /services/driveways/ [L,R=301,NC]
+
+  # Acabamentos
+  RewriteRule ^concretefinishes/broomfinish/?$ /finishes/broom/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/buffwashfinish/?$ /finishes/buff-wash-exposed/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/coloredfinish/?$ /finishes/colored-broom/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/concretespecs/?$ /why-maxima/concrete-specifications/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/smoothfinish/?$ /finishes/smooth/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/stampedfinish/?$ /finishes/stamped-colored/ [L,R=301,NC]
+  RewriteRule ^concretefinishes/?$ /finishes/ [L,R=301,NC]
+
+  # Comercial
+  RewriteRule ^commercial/commercial-concrete/?$ /commercial-concrete/ [L,R=301,NC]
+  RewriteRule ^commercial/commercial-pavers/?$ /commercial/ [L,R=301,NC]
+  RewriteRule ^commercial/commercial-pools/?$ /commercial-pools/ [L,R=301,NC]
+
+  # Outdoor living
+  RewriteRule ^outdoor-living/lighting/?$ /services/outdoor-lighting/ [L,R=301,NC]
+  RewriteRule ^outdoor-living/outdoorkitchens/?$ /services/outdoor-kitchens/ [L,R=301,NC]
+  RewriteRule ^outdoor-living/shelters/?$ /services/shelters/ [L,R=301,NC]
+  RewriteRule ^outdoor-living/?$ /services/outdoor-living/ [L,R=301,NC]
+  RewriteRule ^outdoorlivinglandingpage/?$ /services/outdoor-living/ [L,R=301,NC]
+
+  # Pavers e pedras
+  RewriteRule ^paverandstones/paverapproach/?$ /services/approaches/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverdriveway/?$ /services/driveways/driveways-paver/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverfirepit/?$ /services/fire-pits/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverfireplaces/?$ /services/fireplaces/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverpatio/?$ /services/patios/patios-paver/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverporch/?$ /services/porches/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paversidewalk/?$ /services/sidewalks/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paversteps/?$ /services/steps/ [L,R=301,NC]
+  RewriteRule ^paverandstones/pavertypes/?$ /finishes/paver/ [L,R=301,NC]
+  RewriteRule ^paverandstones/retainingwall/?$ /services/retaining-walls/ [L,R=301,NC]
+  RewriteRule ^paverandstones/walls/?$ /services/seating-walls/ [L,R=301,NC]
+  RewriteRule ^paverandstones/?$ /finishes/paver/ [L,R=301,NC]
+
+  # Piscinas
+  RewriteRule ^pools/contractorservices/?$ /commercial-pools/ [L,R=301,NC]
+  RewriteRule ^pools/subcontract-services/?$ /commercial-pools/ [L,R=301,NC]
+  RewriteRule ^pools/?$ /services/pool-decks-surrounds/ [L,R=301,NC]
+  RewriteRule ^pools-landing-page/?$ /services/pool-decks-surrounds/ [L,R=301,NC]
+
+  # Portfólio → Galeria
+  RewriteRule ^portfolio/patios-photos/broomfinishconcretepatio-photos/?$ /gallery/patios/ [L,R=301,NC]
+  RewriteRule ^portfolio/patios-photos/stampedandcoloredpatio-photos/?$ /gallery/patios/ [L,R=301,NC]
+  RewriteRule ^portfolio/commercial-photos/?$ /gallery/commercial/ [L,R=301,NC]
+  RewriteRule ^portfolio/driveways/?$ /gallery/driveways/ [L,R=301,NC]
+  RewriteRule ^portfolio/garagesandbarns-photos/?$ /gallery/garage-floor-barn/ [L,R=301,NC]
+  RewriteRule ^portfolio/patios-photos/?$ /gallery/patios/ [L,R=301,NC]
+  RewriteRule ^portfolio/pavers/?$ /gallery/pavers/ [L,R=301,NC]
+  RewriteRule ^portfolio/pools-photos/?$ /gallery/pools/ [L,R=301,NC]
+  RewriteRule ^portfolio/porchandsteps-photos/?$ /gallery/porches-steps/ [L,R=301,NC]
+  RewriteRule ^portfolio/sportcourt-photos/?$ /gallery/sport-court/ [L,R=301,NC]
+  RewriteRule ^portfolio/walkways-photos/?$ /gallery/sidewalks/ [L,R=301,NC]
+  RewriteRule ^portfolio/?$ /gallery/ [L,R=301,NC]
+
+  # Outras
+  RewriteRule ^sportcourts/?$ /services/sports-courts/ [L,R=301,NC]
+</IfModule>
+
 # ── Pretty URLs for the Next.js static export ──────────────────────────
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
@@ -29,7 +123,15 @@ RewriteRule ^ - [L]
 RewriteCond %{DOCUMENT_ROOT}/$1/index.html -f
 RewriteRule ^(.+?)/?$ $1/index.html [L]
 
-# ── Unknown pages → home ───────────────────────────────────────────────
+# ── Página desconhecida → home ─────────────────────────────────────────
+# Endereço que não corresponde a nenhuma página vai para a home, em vez de
+# mostrar tela de erro para o visitante.
+#
+# A condição exclui requisições de ARQUIVO (imagem, css, js, xml, pdf): essas
+# precisam continuar respondendo 404 de verdade. Sem a condição, uma foto
+# faltando recebia a home como resposta — o navegador ficava com HTML no lugar
+# da imagem e o problema não aparecia em nenhum diagnóstico.
+RewriteCond %{REQUEST_URI} !\.[a-z0-9]{2,5}$ [NC]
 RewriteRule ^ / [R=301,L]
 
 ErrorDocument 404 /404.html
