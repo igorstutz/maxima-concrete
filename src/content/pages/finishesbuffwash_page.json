@@ -28,9 +28,9 @@
       "content": {
         "title": "The Concrete Finish Made to Be Touched",
         "_sourceLabel": "Intro",
+        "ctaText": "Get a Free Estimate",
         "image": "/images/cms/uploads/1781008734451-sh8t9q.webp",
         "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
         "description": "<b>Buff Wash and Exposed Aggregate</b> finishes elevate standard concrete into tactile, visually rich surfaces that celebrate texture, color, and natural beauty.\n\nBy using <b>specialized chemical techniques</b>, Maxima Concrete transforms plain slabs into stunning, slip-resistant surfaces — <b>perfect for patios, pool decks, walkways, and entryways.</b>",
         "images": [
           "/images/broom-finish-3.webp",
@@ -45,15 +45,15 @@
       "content": {
         "title": "Crafting Beauty Beneath the Surface",
         "_sourceLabel": "What is",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
+        "ctaLink": "#contact",
         "description": "These finishes begin with freshly poured, high-quality concrete.\n\nA <b>chemical surface retarder</b> is applied to slow down the curing of the topmost “cream” layer.\nAfter a controlled period, our team carefully removes this thin layer using a high-pressure washer, revealing the fine sands and stones hidden within the concrete.\n\nThe result is a <b>naturally slip-resistant, multi-textured surface</b> that’s as beautiful as it is durable.",
         "overlayGradient": false,
         "overlayOpacity": 87,
         "backgroundImage": "/images/cms/uploads/1780944904976-ab4qi7.webp",
+        "bottomText": "",
         "eyebrow": "How It Works",
-        "benefits": [],
-        "bottomText": ""
+        "benefits": []
       }
     },
     {
@@ -64,31 +64,31 @@
         "title": "Where to Use Buff Wash & Exposed Aggregate Concrete",
         "_sourceLabel": "Where to Use",
         "subtitle": "This finish is suitable for virtually any flatwork application:",
-        "ctaLink": "#contact",
         "ctaText": "Get Inspired",
+        "ctaLink": "#contact",
         "cards": [
           {
-            "link": "/services/driveways/driveways-concrete",
-            "image": "/images/cms/uploads/1778531244973-wj8e5g_copy_1778539737484_10fces.webp",
             "title": "Driveways",
+            "link": "/services/driveways/driveways-concrete",
+            "image": "/images/Buff Wash & Exposed Aggregate.jpg",
             "description": "Add curb appeal with rich color and reliable traction."
           },
           {
-            "link": "/services/patios/patios-concrete",
-            "image": "/images/cms/uploads/1778531266783-mczm0e_copy_1778539737263_sg0z08.webp",
             "title": "Patios",
+            "link": "/services/patios/patios-concrete",
+            "image": "/images/buff wash - patio (1).jpeg",
             "description": "Create cozy, inviting areas with earthy tones or bold accents."
           },
           {
-            "link": "/services/sidewalks",
-            "image": "/images/cms/uploads/1778531290978-xxlxv_copy_1778539737096_tapb4.webp",
             "title": "Sidewalks & Walkways",
+            "link": "/services/sidewalks",
+            "image": "/images/buff wash.jpeg",
             "description": "Blend functionality with design, enhancing both safety and beauty."
           },
           {
+            "title": "Porches & Steps",
             "link": "/services/steps",
             "image": "/images/cms/uploads/1778531313983-q6dzn_copy_1778539737615_1i427n.webp",
-            "title": "Porches & Steps",
             "description": "Slip-resistant and long-lasting under daily use."
           }
         ],
@@ -114,8 +114,8 @@
       "content": {
         "title": "Why Homeowners\nTrust Maxima Concrete?",
         "_sourceLabel": "",
-        "ctaLink": "/contact-us",
         "ctaText": "Get a Free Estimate",
+        "ctaLink": "/contact-us",
         "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
@@ -153,8 +153,8 @@
       "content": {
         "title": "Find Our Work Near You",
         "_sourceLabel": "",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "mapZoom": 8,
         "mapCenter": [
           "39.9612",
           "-82.9988"
@@ -166,6 +166,8 @@
       "key": "custom_finishesbuffwash_faq",
       "label": "FAQ",
       "content": {
+        "title": "FAQ — Buff Wash & Exposed Aggregate",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What's the difference between buff wash and exposed aggregate?",
@@ -183,9 +185,7 @@
             "question": "Can I choose the color and stone?",
             "answer": "Absolutely. We offer a range of aggregate types and integral colors so your finish complements your home and landscape."
           }
-        ],
-        "title": "FAQ — Buff Wash & Exposed Aggregate",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
