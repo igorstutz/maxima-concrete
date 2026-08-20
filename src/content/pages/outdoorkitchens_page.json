@@ -161,25 +161,25 @@
         "styles": [
           {
             "link": "#contact",
-            "image": "/images/wood.png",
+            "image": "/images/wood.webp",
             "title": "Wood",
             "description": "Classic warmth and natural texture for timeless appeal."
           },
           {
             "link": "#contact",
-            "image": "/images/metal.png",
+            "image": "/images/metal.webp",
             "title": "Metal",
             "description": "Modern durability and sleek design."
           },
           {
             "link": "/finishes/paver",
-            "image": "/images/paver.png",
+            "image": "/images/paver.webp",
             "title": "Pavers & Concrete",
             "description": "Solid, low-maintenance bases that tie into your patio or walkway."
           },
           {
             "link": "#contact",
-            "image": "/images/combinations.png",
+            "image": "/images/combinations.webp",
             "title": "Combinations",
             "description": "Mix materials for a custom aesthetic that matches your home’s architecture."
           }
