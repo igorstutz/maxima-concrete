@@ -41,6 +41,16 @@ jobs:
       - name: Point CMS panel to the staging host
         run: node _extraction/set-cms-host.mjs https://maximaconcrete.igorstutz.online
 
+      # Documentos internos (plano de virada) e o endpoint que guarda o estado
+      # compartilhado do checklist. Entram só aqui e no preview do GitHub Pages —
+      # docs/ fica FORA de public/, então o deploy de produção não os leva.
+      - name: Anexar documentos internos
+        run: |
+          if [ -d docs ]; then
+            cp -r docs/. out/
+            ls -la out/golive/ 2>/dev/null || true
+          fi
+
       # EXCLUDE: /.private/ não é enviado NEM apagado — é onde vivem o
       # oauth-config.php e o submissions.log do servidor.
       #

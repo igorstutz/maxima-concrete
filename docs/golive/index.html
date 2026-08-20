@@ -271,6 +271,30 @@
 
   footer.page { border-top: 1px solid var(--line); padding-top: 1.5rem; color: var(--ink-faint); font-size: 0.85rem; display: flex; flex-direction: column; gap: 0.4rem; }
 
+
+  .syncbar { display: flex; align-items: center; gap: 0.9rem; flex-wrap: wrap; font-size: 0.82rem; color: var(--ink-soft); }
+  .whoami { display: inline-flex; align-items: center; gap: 0.45rem; }
+  .whoami input {
+    font: inherit;
+    padding: 0.22rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    background: var(--surface);
+    color: var(--ink);
+    width: 8.5rem;
+  }
+  .whoami input:focus-visible { outline: 2px solid var(--accent-bright); outline-offset: 1px; }
+  .syncstate { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.04em; color: var(--ink-faint); }
+  .syncstate[data-state="erro"] { color: var(--critical); }
+  .by {
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+    color: var(--ok);
+    white-space: nowrap;
+    margin-left: 0.5rem;
+  }
+
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 </head>
@@ -283,6 +307,13 @@
       <span class="en">Language</span><span class="pt">Idioma</span>
       <button type="button" data-set-lang="en" aria-pressed="true">English</button>
       <button type="button" data-set-lang="pt" aria-pressed="false">Português</button>
+    </div>
+    <div class="syncbar">
+      <label class="whoami">
+        <span class="en">You are</span><span class="pt">Você é</span>
+        <input type="text" id="quem" maxlength="24" placeholder="Igor / Paul" autocomplete="off">
+      </label>
+      <span class="syncstate" id="syncstate" role="status" aria-live="polite"></span>
     </div>
 
     <div class="eyebrow">
@@ -404,43 +435,43 @@
         <span class="phase-when"><span class="en">before the window</span><span class="pt">antes da janela</span></span>
       </header>
       <ul class="checks">
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="forwarding-for-all-70-old-addresses-built-an"><span class="check-body">
           <span class="en"><span class="check-title">Forwarding for all 70 old addresses built and tested <span class="who">our team</span></span><span class="check-note">Every address on the current site must reach its equivalent page on the new one. Tested one by one on staging before the switch.</span></span>
           <span class="pt"><span class="check-title">Encaminhamento dos 70 endereços antigos implementado e testado <span class="who">técnico</span></span><span class="check-note">Cada endereço do site atual precisa chegar à página equivalente no novo. Testado um a um em homologação antes da virada.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="decide-on-the-address-with-or-without-www-ma"><span class="check-body">
           <span class="en"><span class="check-title">Decide on the address: with or without "www" <span class="who maxima">Maxima</span></span><span class="check-note">See the note above. Everything else is configured to follow this choice.</span></span>
           <span class="pt"><span class="check-title">Decidir o endereço: com ou sem "www" <span class="who maxima">Maxima</span></span><span class="check-note">Ver o ponto acima. O resto da configuração segue essa escolha.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="confirm-who-has-access-to-the-domain-setting"><span class="check-body">
           <span class="en"><span class="check-title">Confirm who has access to the domain settings <span class="who maxima">Maxima</span></span><span class="check-note">The switch happens in the account where the domain is registered. Without that access on the night, nothing can be done.</span></span>
           <span class="pt"><span class="check-title">Confirmar quem tem acesso ao painel do domínio <span class="who maxima">Maxima</span></span><span class="check-note">A virada é feita na conta onde o domínio está registrado. Sem esse acesso na hora, nada acontece.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="record-the-current-dns-settings-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Record the current DNS settings <span class="who">our team</span></span><span class="check-note">Screenshots of every record before touching anything. This is what makes going back a matter of minutes.</span></span>
           <span class="pt"><span class="check-title">Registrar a configuração de DNS atual <span class="who">técnico</span></span><span class="check-note">Captura de tela de todos os registros antes de mexer em qualquer coisa. É o que faz o retorno levar minutos.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="lower-the-dns-cache-time-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Lower the DNS cache time <span class="who">our team</span></span><span class="check-note">Setting it to 5 minutes a few hours ahead makes both the switch and any rollback propagate quickly.</span></span>
           <span class="pt"><span class="check-title">Reduzir o tempo de cache do DNS <span class="who">técnico</span></span><span class="check-note">Baixar para 5 minutos algumas horas antes faz a virada — e um eventual retorno — propagar rápido.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="send-the-google-analytics-tag-manager-code-m"><span class="check-body">
           <span class="en"><span class="check-title">Send the Google Analytics / Tag Manager code <span class="who maxima">Maxima</span></span><span class="check-note">The new site has no traffic measurement yet. Without this code, the first day live is not measured.</span></span>
           <span class="pt"><span class="check-title">Enviar o código do Google Analytics / Tag Manager <span class="who maxima">Maxima</span></span><span class="check-note">O site novo ainda não tem medição de acessos. Sem esse código, o primeiro dia no ar não é medido.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="confirm-which-inbox-receives-the-contact-for"><span class="check-body">
           <span class="en"><span class="check-title">Confirm which inbox receives the contact forms <span class="who maxima">Maxima</span></span><span class="check-note">Where estimate requests from the website should land. Tested before the switch.</span></span>
           <span class="pt"><span class="check-title">Confirmar o e-mail que recebe os formulários <span class="who maxima">Maxima</span></span><span class="check-note">Para onde vão os pedidos de orçamento do site. Testado antes da virada.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="check-that-the-reviews-and-instagram-widgets"><span class="check-body">
           <span class="en"><span class="check-title">Check that the reviews and Instagram widgets allow the new address <span class="who">our team</span></span><span class="check-note">Some third-party services restrict which addresses they run on. Checking ahead avoids empty sections going live.</span></span>
           <span class="pt"><span class="check-title">Conferir se os widgets de avaliações e Instagram aceitam o domínio novo <span class="who">técnico</span></span><span class="check-note">Alguns serviços externos limitam em quais endereços funcionam. Verificar antes evita seções vazias no ar.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="prepare-the-content-panel-for-the-new-addres"><span class="check-body">
           <span class="en"><span class="check-title">Prepare the content panel for the new address <span class="who">our team</span></span><span class="check-note">Sign-in for the editing panel is tied to the website address and needs to be reconfigured for maximaconcrete.com.</span></span>
           <span class="pt"><span class="check-title">Preparar o painel de conteúdo para o domínio novo <span class="who">técnico</span></span><span class="check-note">O login do painel é ligado ao endereço do site e precisa ser reconfigurado para maximaconcrete.com.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="ask-the-team-not-to-edit-during-the-window-m"><span class="check-body">
           <span class="en"><span class="check-title">Ask the team not to edit during the window <span class="who maxima">Maxima</span></span><span class="check-note">Edits saved in the panel mid-switch trigger publishes in the middle of the process and make problems harder to read.</span></span>
           <span class="pt"><span class="check-title">Avisar a equipe para não editar durante a janela <span class="who maxima">Maxima</span></span><span class="check-note">Edições salvas no painel no meio da virada geram publicações fora de hora e dificultam o diagnóstico.</span></span>
         </span></label></li>
@@ -454,35 +485,35 @@
         <span class="phase-when"><span class="en">overnight · ~30 min</span><span class="pt">madrugada · ~30 min</span></span>
       </header>
       <ul class="checks">
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="point-the-domain-to-the-new-server-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Point the domain to the new server <span class="who">our team</span></span><span class="check-note">Change the destination for the domain and for www, preserving everything email-related.</span></span>
           <span class="pt"><span class="check-title">Apontar o domínio para o servidor novo <span class="who">técnico</span></span><span class="check-note">Alterar o destino do domínio e do www, preservando tudo que se refere a e-mail.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="confirm-the-change-has-propagated-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Confirm the change has propagated <span class="who">our team</span></span><span class="check-note">Checked from outside, not just on one computer: the domain must answer on the new server.</span></span>
           <span class="pt"><span class="check-title">Confirmar que a mudança propagou <span class="who">técnico</span></span><span class="check-note">Conferido por fora, não só num computador: o domínio precisa responder no servidor novo.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="issue-the-security-certificate-https-our-tea"><span class="check-body">
           <span class="en"><span class="check-title">Issue the security certificate (HTTPS) <span class="who">our team</span></span><span class="check-note">For the domain and for www. It can only be issued after the domain points to the new server.</span></span>
           <span class="pt"><span class="check-title">Emitir o certificado de segurança (HTTPS) <span class="who">técnico</span></span><span class="check-note">Para o domínio e para o www. Só pode ser emitido depois que o domínio aponta para o servidor novo.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="force-https-and-the-chosen-official-address-"><span class="check-body">
           <span class="en"><span class="check-title">Force HTTPS and the chosen official address <span class="who">our team</span></span><span class="check-note">Every variation (http, www, missing trailing slash) must end on the same address, with no "not secure" warning.</span></span>
           <span class="pt"><span class="check-title">Forçar HTTPS e o endereço oficial escolhido <span class="who">técnico</span></span><span class="check-note">Qualquer variação (http, www, sem barra final) deve terminar no mesmo endereço, sem aviso de site não seguro.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="test-the-main-pages-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Test the main pages <span class="who">our team</span></span><span class="check-note">Home, a service, a gallery, a finish, a city page, /commercial and /reviews — on desktop and on a phone.</span></span>
           <span class="pt"><span class="check-title">Testar as páginas principais <span class="who">técnico</span></span><span class="check-note">Home, um serviço, uma galeria, um acabamento, uma cidade, /commercial e /reviews — no computador e no celular.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="test-the-old-addresses-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Test the old addresses <span class="who">our team</span></span><span class="check-note">Open a sample of the 70 and confirm each one reaches the right new page.</span></span>
           <span class="pt"><span class="check-title">Testar os endereços antigos <span class="who">técnico</span></span><span class="check-note">Abrir uma amostra dos 70 e confirmar que cada um chega à página nova correta.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="send-a-test-estimate-request-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Send a test estimate request <span class="who">our team</span></span><span class="check-note">Fill in the live form and confirm the email actually arrives in Maxima's inbox.</span></span>
           <span class="pt"><span class="check-title">Enviar um pedido de orçamento de teste <span class="who">técnico</span></span><span class="check-note">Preencher o formulário no ar e confirmar que o e-mail chega de verdade na caixa da Maxima.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="sign-in-to-the-content-panel-on-the-new-addr"><span class="check-body">
           <span class="en"><span class="check-title">Sign in to the content panel on the new address <span class="who">our team</span></span><span class="check-note">Confirm login, editing and publishing all work on the final address.</span></span>
           <span class="pt"><span class="check-title">Entrar no painel de conteúdo pelo domínio novo <span class="who">técnico</span></span><span class="check-note">Confirmar login, edição e publicação funcionando no endereço definitivo.</span></span>
         </span></label></li>
@@ -496,23 +527,23 @@
         <span class="phase-when"><span class="en">same night</span><span class="pt">mesma madrugada</span></span>
       </header>
       <ul class="checks">
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="register-the-site-in-google-search-console-a"><span class="check-body">
           <span class="en"><span class="check-title">Register the site in Google Search Console and submit the sitemap <span class="who">our team</span></span><span class="check-note">This is what speeds up Google recognizing the new structure and the forwarding.</span></span>
           <span class="pt"><span class="check-title">Cadastrar o site no Google Search Console e enviar o mapa do site <span class="who">técnico</span></span><span class="check-note">É o que acelera o Google a reconhecer a estrutura nova e os encaminhamentos.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="check-the-sitemap-and-robots-file-live-our-t"><span class="check-body">
           <span class="en"><span class="check-title">Check the sitemap and robots file live <span class="who">our team</span></span><span class="check-note">They must list the new pages and allow indexing.</span></span>
           <span class="pt"><span class="check-title">Conferir mapa do site e arquivo de robôs no ar <span class="who">técnico</span></span><span class="check-note">Precisam listar as páginas novas e liberar a indexação.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="publish-the-traffic-measurement-code-our-tea"><span class="check-body">
           <span class="en"><span class="check-title">Publish the traffic measurement code <span class="who">our team</span></span><span class="check-note">As soon as Maxima sends the code, it goes in through the panel and applies to the whole site.</span></span>
           <span class="pt"><span class="check-title">Publicar o código de medição de acessos <span class="who">técnico</span></span><span class="check-note">Assim que a Maxima enviar o código, entra pelo painel e passa a valer para todo o site.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="update-the-website-address-on-google-busines"><span class="check-body">
           <span class="en"><span class="check-title">Update the website address on Google Business Profile and social media <span class="who maxima">Maxima</span></span><span class="check-note">If the official address changed from www to without www, updating the profiles keeps everything consistent.</span></span>
           <span class="pt"><span class="check-title">Atualizar o endereço do site no Google Meu Negócio e nas redes <span class="who maxima">Maxima</span></span><span class="check-note">Se o endereço oficial mudou de www para sem www, atualizar os perfis mantém tudo coerente.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="restore-the-dns-cache-time-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Restore the DNS cache time <span class="who">our team</span></span><span class="check-note">Once everything is confirmed live, put the cache time back to its normal value.</span></span>
           <span class="pt"><span class="check-title">Restaurar o tempo de cache do DNS <span class="who">técnico</span></span><span class="check-note">Depois de confirmar tudo no ar, voltar o cache ao valor normal.</span></span>
         </span></label></li>
@@ -526,19 +557,19 @@
         <span class="phase-when"><span class="en">1 to 30 days</span><span class="pt">1 a 30 dias</span></span>
       </header>
       <ul class="checks">
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="confirm-email-is-still-sending-and-receiving"><span class="check-body">
           <span class="en"><span class="check-title">Confirm email is still sending and receiving <span class="who maxima">Maxima</span></span><span class="check-note">Next morning: send and receive a message from outside the company. The single most important check of the week.</span></span>
           <span class="pt"><span class="check-title">Confirmar que o e-mail continua entrando e saindo <span class="who maxima">Maxima</span></span><span class="check-note">Na manhã seguinte: enviar e receber uma mensagem de fora da empresa. A verificação mais importante da semana.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="watch-for-error-pages-in-search-console-our-"><span class="check-body">
           <span class="en"><span class="check-title">Watch for error pages in Search Console <span class="who">our team</span></span><span class="check-note">Any old address missing from the mapping shows up here and is fixed with one more forwarding rule.</span></span>
           <span class="pt"><span class="check-title">Acompanhar páginas com erro no Search Console <span class="who">técnico</span></span><span class="check-note">Endereço antigo que ficou fora do mapeamento aparece aqui e se resolve com um encaminhamento novo.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="watch-rankings-and-traffic-our-team"><span class="check-body">
           <span class="en"><span class="check-title">Watch rankings and traffic <span class="who">our team</span></span><span class="check-note">Some movement in the first weeks is expected when addresses change. What is not normal is a drop that does not recover.</span></span>
           <span class="pt"><span class="check-title">Acompanhar posições e acessos <span class="who">técnico</span></span><span class="check-note">Oscilação nas primeiras semanas é esperada quando os endereços mudam. O que não é normal é queda que não se recupera.</span></span>
         </span></label></li>
-        <li><label class="check"><input type="checkbox"><span class="check-body">
+        <li><label class="check"><input type="checkbox" data-id="only-then-close-the-wix-account-maxima"><span class="check-body">
           <span class="en"><span class="check-title">Only then close the Wix account <span class="who maxima">Maxima</span></span><span class="check-note">Keep the subscription active for at least 30 days. While it exists, going back is quick; once cancelled, there is no return.</span></span>
           <span class="pt"><span class="check-title">Só então encerrar a conta da Wix <span class="who maxima">Maxima</span></span><span class="check-note">Manter a assinatura ativa por pelo menos 30 dias. Enquanto ela existe, voltar atrás é rápido; depois de cancelada, não há retorno.</span></span>
         </span></label></li>
@@ -656,31 +687,31 @@
   <section>
     <h2><span class="en">What we need from Maxima Concrete</span><span class="pt">O que depende da Maxima Concrete</span></h2>
     <ul class="checks boxed">
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="access-to-the-account-where-the-domain-is-re"><span class="check-body">
         <span class="en"><span class="check-title">Access to the account where the domain is registered</span><span class="check-note">Without it the switch cannot be made.</span></span>
         <span class="pt"><span class="check-title">Acesso à conta onde o domínio está registrado</span><span class="check-note">Sem isso a virada não pode ser feita.</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="decision-address-with-or-without-www"><span class="check-body">
         <span class="en"><span class="check-title">Decision: address with or without "www"</span></span>
         <span class="pt"><span class="check-title">Decisão: endereço com ou sem "www"</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="google-analytics-tag-manager-code"><span class="check-body">
         <span class="en"><span class="check-title">Google Analytics / Tag Manager code</span></span>
         <span class="pt"><span class="check-title">Código do Google Analytics / Tag Manager</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="the-inbox-that-should-receive-estimate-reque"><span class="check-body">
         <span class="en"><span class="check-title">The inbox that should receive estimate requests</span></span>
         <span class="pt"><span class="check-title">O e-mail que deve receber os pedidos de orçamento</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="confirmation-that-company-email-is-managed-o"><span class="check-body">
         <span class="en"><span class="check-title">Confirmation that company email is managed outside Wix</span><span class="check-note">So the mail routing is preserved through the switch.</span></span>
         <span class="pt"><span class="check-title">Confirmação de que o e-mail corporativo é gerenciado fora da Wix</span><span class="check-note">Para que a configuração de e-mail seja preservada na virada.</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="review-of-the-forwarding-table"><span class="check-body">
         <span class="en"><span class="check-title">Review of the forwarding table</span><span class="check-note">Confirm each old page points to the most suitable new page.</span></span>
         <span class="pt"><span class="check-title">Revisão da tabela de encaminhamentos</span><span class="check-note">Confirmar se cada página antiga aponta para a página nova mais adequada.</span></span>
       </span></label></li>
-      <li><label class="check"><input type="checkbox"><span class="check-body">
+      <li><label class="check"><input type="checkbox" data-id="keep-the-wix-subscription-active-for-30-days"><span class="check-body">
         <span class="en"><span class="check-title">Keep the Wix subscription active for 30 days after the switch</span></span>
         <span class="pt"><span class="check-title">Manter a assinatura da Wix ativa por 30 dias após a virada</span></span>
       </span></label></li>
@@ -699,7 +730,7 @@
     var CHAVE_LANG = "maxima-golive-lang";
     var botoes = Array.prototype.slice.call(document.querySelectorAll("[data-set-lang]"));
 
-    function aplicar(lang) {
+    function aplicarIdioma(lang) {
       document.body.setAttribute("data-lang", lang);
       botoes.forEach(function (b) {
         b.setAttribute("aria-pressed", String(b.getAttribute("data-set-lang") === lang));
@@ -709,23 +740,122 @@
 
     var inicial = "en";
     try { inicial = localStorage.getItem(CHAVE_LANG) || "en"; } catch (e) {}
-    aplicar(inicial === "pt" ? "pt" : "en");
-
+    aplicarIdioma(inicial === "pt" ? "pt" : "en");
     botoes.forEach(function (b) {
-      b.addEventListener("click", function () { aplicar(b.getAttribute("data-set-lang")); });
+      b.addEventListener("click", function () { aplicarIdioma(b.getAttribute("data-set-lang")); });
     });
 
-    // Marcações sobrevivem a um recarregamento no meio da madrugada.
-    var CHAVE_CHECK = "maxima-golive-v2";
-    var caixas = Array.prototype.slice.call(document.querySelectorAll('input[type="checkbox"]'));
-    var salvo;
-    try { salvo = JSON.parse(localStorage.getItem(CHAVE_CHECK) || "[]"); } catch (e) { salvo = []; }
-    caixas.forEach(function (caixa, i) {
-      caixa.checked = Boolean(salvo[i]);
-      caixa.addEventListener("change", function () {
-        try { localStorage.setItem(CHAVE_CHECK, JSON.stringify(caixas.map(function (c) { return c.checked; }))); } catch (e) {}
-      });
+    // ---- estado compartilhado ----
+    // As marcações ficam num arquivo no servidor, para que as duas pontas vejam
+    // o mesmo checklist. Sem servidor disponível, a página continua funcionando
+    // com as marcações apenas locais.
+    var API = "https://maximaconcrete.igorstutz.online/golive/state.php";
+    var INTERVALO = 12000;
+    var caixas = Array.prototype.slice.call(document.querySelectorAll('input[data-id]'));
+    var estado = document.getElementById("syncstate");
+    var campoQuem = document.getElementById("quem");
+    var localOnly = false;
+    var enviando = 0;
+
+    try { campoQuem.value = localStorage.getItem("maxima-golive-quem") || ""; } catch (e) {}
+    campoQuem.addEventListener("change", function () {
+      try { localStorage.setItem("maxima-golive-quem", campoQuem.value.trim()); } catch (e) {}
     });
+
+    function texto(en, pt) {
+      return document.body.getAttribute("data-lang") === "pt" ? pt : en;
+    }
+
+    function status(msg, tipo) {
+      estado.textContent = msg;
+      if (tipo) { estado.setAttribute("data-state", tipo); } else { estado.removeAttribute("data-state"); }
+    }
+
+    function marcarAutor(caixa, by) {
+      var corpo = caixa.parentElement.querySelector(".check-body");
+      if (!corpo) return;
+      var atual = corpo.querySelector(".by");
+      if (!by || !caixa.checked) { if (atual) atual.remove(); return; }
+      if (!atual) {
+        atual = document.createElement("span");
+        atual.className = "by";
+        (corpo.querySelector('.en .check-title') || corpo).appendChild(atual);
+        var pt = corpo.querySelector('.pt .check-title');
+        if (pt) { var copia = atual.cloneNode(true); pt.appendChild(copia); }
+      }
+      corpo.querySelectorAll(".by").forEach(function (el) { el.textContent = "✓ " + by; });
+    }
+
+    function aplicar(dados) {
+      var itens = (dados && dados.items) || {};
+      caixas.forEach(function (caixa) {
+        var reg = itens[caixa.getAttribute("data-id")];
+        caixa.checked = Boolean(reg && reg.done);
+        marcarAutor(caixa, reg && reg.by);
+      });
+    }
+
+    function buscar() {
+      if (localOnly || enviando > 0) return;
+      fetch(API, { cache: "no-store" })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (dados) {
+          aplicar(dados);
+          status(texto("shared · synced", "compartilhado · sincronizado"));
+        })
+        .catch(function () {
+          status(texto("offline — marks saved on this device only", "offline — marcações só neste aparelho"), "erro");
+        });
+    }
+
+    function enviar(caixa) {
+      if (localOnly) { salvarLocal(); return; }
+      enviando++;
+      status(texto("saving…", "salvando…"));
+      fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: caixa.getAttribute("data-id"),
+          done: caixa.checked,
+          by: campoQuem.value.trim(),
+        }),
+      })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+        .then(function (dados) {
+          aplicar(dados);
+          status(texto("shared · synced", "compartilhado · sincronizado"));
+        })
+        .catch(function () {
+          status(texto("offline — marks saved on this device only", "offline — marcações só neste aparelho"), "erro");
+          salvarLocal();
+        })
+        .then(function () { enviando = Math.max(0, enviando - 1); });
+    }
+
+    function salvarLocal() {
+      try {
+        var mapa = {};
+        caixas.forEach(function (c) { mapa[c.getAttribute("data-id")] = c.checked; });
+        localStorage.setItem("maxima-golive-local", JSON.stringify(mapa));
+      } catch (e) {}
+    }
+
+    function carregarLocal() {
+      try {
+        var mapa = JSON.parse(localStorage.getItem("maxima-golive-local") || "{}");
+        caixas.forEach(function (c) { c.checked = Boolean(mapa[c.getAttribute("data-id")]); });
+      } catch (e) {}
+    }
+
+    caixas.forEach(function (caixa) {
+      caixa.addEventListener("change", function () { enviar(caixa); });
+    });
+
+    carregarLocal();
+    buscar();
+    setInterval(buscar, INTERVALO);
+    document.addEventListener("visibilitychange", function () { if (!document.hidden) buscar(); });
   })();
 </script>
 
