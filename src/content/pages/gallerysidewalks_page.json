@@ -14,8 +14,8 @@
         "backgroundImage": "/images/cms/uploads/1781034166434-omv5ns.webp",
         "backLink": "",
         "backLabel": "Back to Gallery",
-        "tagline": "",
         "description": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1781034166434-omv5ns-mobile.webp"
@@ -42,7 +42,13 @@
           "/images/cms/uploads/1781034250315-c2ew.webp",
           "/images/cms/uploads/1782830782690-pyaiua.webp",
           "/images/cms/uploads/1782830786701-eha3m8.webp",
-          "/images/cms/uploads/1782830787518-9tr5y.webp"
+          "/images/cms/uploads/1782830787518-9tr5y.webp",
+          "/images/sidewalk paver.jpeg",
+          "/images/Sidewalk (6).jpeg",
+          "/images/sidewalk-8.webp",
+          "/images/sidewalk (9).jpeg",
+          "/images/Sidewalk (1).jpeg",
+          "/images/Sidewalk (5).jpeg"
         ],
         "ctaLink": "#contact",
         "paverImages": []
