@@ -12,10 +12,28 @@ declare(strict_types=1);
  * ---------------------------------------------------------------------- */
 
 // === Configuration ====================================================
-$RECIPIENT  = 'info@maximaconcrete.com';
+// Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
+// Ordem: quem responde o lead primeiro, depois as caixas de acompanhamento.
+$RECIPIENT  = implode(', ', [
+    'paul@maximaconcrete.com',
+    'flavio@maximaconcrete.com',
+    'info@maximaconcrete.com',
+    'jackie@maximaconcrete.com',
+    'elderpw@gmail.com',
+]);
 $FROM_NAME  = 'Maxima Concrete Website';
 $FROM_EMAIL = 'no-reply@maximaconcrete.com';
 // ======================================================================
+//
+// ATENÇÃO — SPF do domínio (verificado em 2026-08-20):
+//   v=spf1 include:spf.protection.outlook.com a:dispatch-us.ppe-hosted.com
+//          include:secureserver.net include:_spf.wix.com -all
+// A Hostinger NÃO está nessa lista e o registro termina em `-all` (rejeição
+// dura). Enquanto isso não mudar, mensagem enviada daqui com remetente
+// @maximaconcrete.com falha na verificação e tende a ser recusada ou cair em
+// spam — inclusive no Gmail do elderpw@ e no Microsoft 365 dos demais.
+// Caminho correto: acrescentar `include:_spf.hostinger.com` ao TXT de SPF no
+// DNS. Até lá, todo lead continua registrado em /.private/submissions.log.
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
