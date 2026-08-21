@@ -33,38 +33,38 @@
     {
       "type": "city-approach",
       "key": "custom_1779200000_columbus_approach",
-      "label": "5-Step Approach",
+      "label": "Our Exceptional Services",
       "content": {
         "steps": [
           {
-            "title": "Demolition & Site Prep",
-            "description": "We remove the old surface, set the proper grading, and make sure water drains away from your home.",
-            "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate"
+            "title": "Driveways",
+            "description": "Create a durable and beautiful driveway with Maxima Concrete. We offer concrete, paver, brick, and natural stone driveway options, with a variety of styles, colors, and finishes to complement your property. Our team delivers quality installation and lasting results built for everyday use.",
+            "ctaLink": "#driveways",
+            "ctaText": "Explore our Driveways Options"
           },
           {
-            "title": "Compacted Gravel Base",
-            "description": "We install and compact a gravel base that carries the load and keeps water from undermining the slab.",
+            "title": "Patios",
+            "description": "Transform your outdoor space with a beautiful, durable patio from Maxima Concrete. We offer concrete, paver, brick, and natural stone patio options, customized to match your style and complement your home. From simple gathering areas to detailed outdoor living spaces, we provide quality installation built to last.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate"
+            "ctaText": "Explore our Patios Options"
           },
           {
-            "title": "Forms & Reinforcement",
-            "description": "We set the forms and place fiber mesh and 10-gauge wire mesh — then you approve the layout before anything is poured.",
+            "title": "Outdoor Living Services",
+            "description": "Create an outdoor space designed for relaxing, entertaining, and enjoying your home. Maxima Concrete offers concrete, paver, brick, and natural stone solutions for patios, walkways, seating areas, and custom outdoor features. We combine quality materials and expert craftsmanship to create beautiful outdoor living spaces built to last.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate"
+            "ctaText": "Explore Outdoor Living Options"
           },
           {
-            "title": "Professional Concrete Pour",
-            "description": "We pour our 6.5-bag high-strength mix, protecting your yard and driveway throughout the process.",
+            "title": "Porch",
+            "description": "Enhance your home with a durable and welcoming porch designed to fit your style and property. Maxima Concrete offers concrete, paver, brick, and natural stone porch options, with custom designs and quality installation to create a beautiful entrance or outdoor space built to last.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate"
+            "ctaText": "Explore Porch Options"
           },
           {
-            "title": "Finish, Cure & Final Walkthrough",
-            "description": "We apply the finish you chose, monitor curing, and walk the finished project with you before we leave.",
+            "title": "Pool Decks & Surrounds",
+            "description": "Create a beautiful, comfortable space around your pool with a professionally installed deck or surround. Maxima Concrete offers concrete, paver, brick, and natural stone options designed for durability, style, and outdoor enjoyment. We create custom pool areas that complement your home and are built to handle everyday use and outdoor conditions.",
             "ctaLink": "#contact",
-            "ctaText": "Get Your Free Estimate"
+            "ctaText": "Explore Pools Decks Options"
           }
         ],
         "ctaLink": "/why-maxima",
@@ -101,6 +101,7 @@
         "ctaText": "Get a Free Estimate",
         "title": "Why Homeowners\nTrust Maxima Concrete?",
         "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -127,8 +128,7 @@
             "link": "/licensing-insured/"
           }
         ],
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
