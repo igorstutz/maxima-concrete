@@ -115,12 +115,6 @@
         "description": "Engineered for maximum support. Our footers utilize high-density materials and reinforced steel to provide the unwavering structural base necessary for a professional-grade, durable court.",
         "benefits": [
           {
-            "title": "6.5-Bag Mix Concrete",
-            "iconType": "package",
-            "description": "for dense, durable support",
-            "customIcon": "package"
-          },
-          {
             "title": "Fiber Mesh Reinforcement",
             "iconType": "layers",
             "description": "to help control micro-cracking",
