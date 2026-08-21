@@ -266,6 +266,27 @@ log_submission([
 
 if ($ok) {
     echo json_encode(['ok' => true]);
+
+    // Responde ao visitante ANTES de falar com o Meta: a tela de agradecimento
+    // não deve esperar por uma chamada externa. Onde a função existe, a conexão
+    // é encerrada aqui e o resto roda depois.
+    if (function_exists('litespeed_finish_request')) {
+        litespeed_finish_request();
+    } elseif (function_exists('fastcgi_finish_request')) {
+        fastcgi_finish_request();
+    }
+
+    require __DIR__ . '/meta-capi.php';
+    meta_capi_send_lead([
+        'lead_id'    => field('lead_id'),
+        'form'       => 'contact',
+        'email'      => $email,
+        'phone'      => $phone,
+        'first_name' => $firstName,
+        'last_name'  => $lastName,
+        'zip_code'   => $zip,
+        'page_url'   => $pageUrl,
+    ]);
     exit;
 }
 
