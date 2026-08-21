@@ -2,26 +2,26 @@
   "pageKey": "licensinginsured_page",
   "sections": [
     {
+      "type": "licensing-hero",
       "key": "licensing_hero",
       "label": "Hero",
-      "type": "licensing-hero",
       "content": {
-        "badge": "Credentials & Protection",
-        "titleLine1": "Licensed. Insured.",
-        "titleHighlight": "Accountable.",
         "description": "Hiring a concrete contractor is a long-term investment in your property. Maxima Concrete carries the full credentials and coverage that protect your home, your wallet, and your peace of mind.",
+        "badge": "Credentials & Protection",
+        "titleHighlight": "Accountable.",
         "ctaText": "Contact Us",
         "ctaLink": "/contact-us/#contact",
-        "phone": "(614) 384-5917",
-        "phoneHref": "tel:+16143845917",
         "image": "/images/cms/uploads/1766260199815-jhga35.webp",
-        "imageAlt": "The Maxima Concrete team"
+        "imageAlt": "The Maxima Concrete team",
+        "titleLine1": "Licensed. Insured.",
+        "phone": "(614) 384-5917",
+        "phoneHref": "tel:+16143845917"
       }
     },
     {
+      "type": "licensing-credentials",
       "key": "licensing_credentials",
       "label": "Credentials",
-      "type": "licensing-credentials",
       "content": {
         "eyebrow": "Our credentials",
         "title": "Every layer of protection a homeowner should expect",
@@ -32,9 +32,18 @@
         "cardTitle": "Covered, licensed & insured",
         "cardDescription": "Every job. Every crew. Every pour. We supply current Certificates of Insurance on request — no exceptions.",
         "cardStats": [
-          { "value": "8+", "label": "Years operating" },
-          { "value": "$2M", "label": "Liability coverage" },
-          { "value": "0", "label": "Client claims" }
+          {
+            "value": "15+",
+            "label": "Years operating"
+          },
+          {
+            "value": "$2M",
+            "label": "Liability coverage"
+          },
+          {
+            "value": "0",
+            "label": "Client claims"
+          }
         ],
         "verifiableLabel": "Verifiable",
         "items": [
@@ -55,17 +64,21 @@
           },
           {
             "icon": "HardHat",
-            "title": "OSHA-Aligned Safety",
-            "text": "Our teams follow OSHA-aligned safety protocols on every residential and commercial job site."
+            "title": "Registered in your City",
+            "text": "Properly registered in your city, bonded, and fully insured for your peace of mind."
           }
         ]
       }
     },
     {
+      "type": "licensing-feature",
       "key": "licensing_feature",
       "label": "Certificate feature",
-      "type": "licensing-feature",
       "content": {
+        "eyebrow": "Craftsmanship you can verify",
+        "description": "Anyone can print a logo. We carry verifiable Ohio licensing, active liability and workers' comp policies, and we pull the permits the city requires — on every single job.",
+        "titlePart1": "Paperwork is the easy part.",
+        "titleHighlight": "Standing behind it",
         "image": "/images/assets/licensing-feature.webp",
         "imageAlt": "Skilled hands finishing concrete",
         "stampLine1": "VERIFIED",
@@ -74,23 +87,17 @@
         "companyName": "Maxima Concrete LLC",
         "licenseLabel": "License",
         "licenseNumber": "MC-OH-2026",
-        "eyebrow": "Craftsmanship you can verify",
-        "titlePart1": "Paperwork is the easy part.",
-        "titleHighlight": "Standing behind it",
         "titlePart2": "is the rest.",
-        "description": "Anyone can print a logo. We carry verifiable Ohio licensing, active liability and workers' comp policies, and we pull the permits the city requires — on every single job.",
         "teamNoteLine1": "Project manager & crew lead",
         "teamNoteLine2": "named on every COI"
       }
     },
     {
+      "type": "licensing-protection",
       "key": "licensing_protection",
       "label": "What it means for you",
-      "type": "licensing-protection",
       "content": {
         "eyebrow": "What it means for you",
-        "titlePart1": "Real protection,",
-        "titleHighlight": "not just paperwork.",
         "description": "Three concrete ways our credentials translate into outcomes that show up the day a shovel hits dirt — and the day a claim could've blown up your week.",
         "items": [
           {
@@ -109,6 +116,8 @@
             "text": "Licensed status means every pour is permitted and built to code where required."
           }
         ],
+        "titlePart1": "Real protection,",
+        "titleHighlight": "not just paperwork.",
         "alsoIncludedLabel": "Also included",
         "alsoIncluded": [
           "Certificates of Insurance on request",
@@ -118,14 +127,14 @@
       }
     },
     {
+      "type": "licensing-faq",
       "key": "licensing_faq",
       "label": "FAQ",
-      "type": "licensing-faq",
       "content": {
+        "description": "Don't see your question? We're happy to walk you through anything — including emailing you a current COI before you sign.",
         "badge": "FAQ",
         "titlePart1": "Common questions,",
         "titleHighlight": "straight answers.",
-        "description": "Don't see your question? We're happy to walk you through anything — including emailing you a current COI before you sign.",
         "ctaText": "Ask us directly",
         "ctaLink": "/contact-us/#contact",
         "items": [
