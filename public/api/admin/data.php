@@ -18,8 +18,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
 
 admin_require_auth();
 
-/** Read a JSON-lines log into an array of records (newest last). */
-function read_jsonl(string $path, int $cap = 0): array {
+/**
+ * Read a JSON-lines log into an array of records (newest last).
+ *
+ * Com $comId, cada registro recebe um `id` derivado do texto original da linha.
+ * É assim que o painel consegue apagar um lead específico: o log não tem chave
+ * própria, e usar a posição na lista quebraria assim que outro fosse removido.
+ */
+function read_jsonl(string $path, int $cap = 0, bool $comId = false): array {
     if (!is_file($path)) return [];
     $out   = [];
     $lines = file($path, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
@@ -29,12 +35,14 @@ function read_jsonl(string $path, int $cap = 0): array {
     }
     foreach ($lines as $line) {
         $row = json_decode($line, true);
-        if (is_array($row)) $out[] = $row;
+        if (!is_array($row)) continue;
+        if ($comId) $row['id'] = substr(sha1($line), 0, 16);
+        $out[] = $row;
     }
     return $out;
 }
 
-$submissions = read_jsonl(ADMIN_PRIVATE_DIR . '/submissions.log');
+$submissions = read_jsonl(ADMIN_PRIVATE_DIR . '/submissions.log', 0, true);
 $callsRaw    = read_jsonl(ADMIN_PRIVATE_DIR . '/call-clicks.log', 20000);
 
 // Trim call records to just what the panel needs (no I/UA payload).

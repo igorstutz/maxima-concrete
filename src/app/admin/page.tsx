@@ -12,6 +12,7 @@ import {
   MapPin,
   ChevronDown,
   AlertCircle,
+  Trash2,
 } from "lucide-react";
 
 /**
@@ -23,6 +24,8 @@ import {
  * pelo mesmo log com outros campos (`name`, `position`, `resume`).
  */
 type Submission = {
+  /** Identificador do registro, calculado pelo servidor a partir da linha do log. */
+  id?: string;
   ts: string;
   type?: string;
   first_name?: string;
@@ -123,6 +126,7 @@ export default function AdminDashboardPage() {
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
   const [tab, setTab] = useState<"submissions" | "calls">("submissions");
+  const [excluindo, setExcluindo] = useState<string | null>(null);
 
   async function load(isRefresh = false) {
     if (isRefresh) setRefreshing(true);
@@ -142,6 +146,40 @@ export default function AdminDashboardPage() {
       setStatus("error");
     } finally {
       setRefreshing(false);
+    }
+  }
+
+  /**
+   * Remove um lead da listagem. O registro vai para uma lixeira no servidor,
+   * não é destruído — apagar por engano o pedido de um cliente de verdade seria
+   * pior do que conviver com um envio de teste na lista.
+   */
+  async function excluirLead(s: Submission) {
+    if (!s.id) return;
+    const nome = nomeDoLead(s);
+    const confirma = window.confirm(
+      "Delete the lead from " + nome + "?\n\nIt leaves this list but stays recoverable on the server.",
+    );
+    if (!confirma) return;
+
+    setExcluindo(s.id);
+    try {
+      const res = await fetch("/api/admin/delete.php", {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: s.id }),
+      });
+      if (res.status === 401) {
+        router.replace("/admin/login/");
+        return;
+      }
+      if (!res.ok) throw new Error(String(res.status));
+      await load(true);
+    } catch {
+      window.alert("Could not delete. Please try again.");
+    } finally {
+      setExcluindo(null);
     }
   }
 
@@ -448,6 +486,23 @@ export default function AdminDashboardPage() {
                             <span className="text-xs bg-gray-100 text-gray-600 font-medium rounded-full px-2.5 py-1">
                               via {s.hear_about}
                             </span>
+                          )}
+                          {s.id && (
+                            <button
+                              type="button"
+                              onClick={() => excluirLead(s)}
+                              disabled={excluindo === s.id}
+                              title="Delete this lead"
+                              aria-label={"Delete the lead from " + nomeDoLead(s)}
+                              className="inline-flex items-center gap-1 rounded-[10px] border border-gray-200 px-2.5 py-1 text-xs font-medium text-gray-500 transition hover:border-red-300 hover:text-red-600 disabled:opacity-50"
+                            >
+                              {excluindo === s.id ? (
+                                <Loader2 size={13} className="animate-spin" />
+                              ) : (
+                                <Trash2 size={13} />
+                              )}
+                              Delete
+                            </button>
                           )}
                           {s.email_status === "failed" && (
                             <span className="text-xs bg-amber-100 text-amber-700 font-medium rounded-full px-2.5 py-1">
