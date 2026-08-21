@@ -31,17 +31,17 @@
         "subtitle": "",
         "_sourceLabel": "Intro",
         "ctaLink": "#contact",
-        "imageLarge": "/images/fireplace-2.webp",
-        "paragraph1": "A custom outdoor fireplace creates a beautiful focal point while adding warmth, comfort, and year-round enjoyment to your outdoor living space. At Maxima Concrete, we design and build fireplaces using premium materials, proper structural support, and expert masonry techniques to ensure lasting durability, safety, and timeless appeal. Whether for entertaining or relaxing, every fireplace is built to complement your home and withstand Ohio’s changing seasons.",
-        "paragraph2": "Every outdoor fireplace is custom-built to fit your space, lifestyle, and design preferences. With expert craftsmanship, precision installation, and attention to every detail, we create durable, low-maintenance fireplaces that enhance your outdoor living experience and add lasting value to your property.",
         "titleLine2": "With a Custom Fireplace",
-        "imageTopRight": "/images/fireplace.webp",
-        "paragraphLayout": "",
         "images": [
           "/images/fireplace-3.webp",
           "/images/fireplace-4.webp",
           "/images/fireplaces.webp"
-        ]
+        ],
+        "imageLarge": "/images/fireplace-2.webp",
+        "paragraph1": "A custom outdoor fireplace creates a beautiful focal point while adding warmth, comfort, and year-round enjoyment to your outdoor living space. At Maxima Concrete, we design and build fireplaces using premium materials, proper structural support, and expert masonry techniques to ensure lasting durability, safety, and timeless appeal. Whether for entertaining or relaxing, every fireplace is built to complement your home and withstand Ohio’s changing seasons.",
+        "paragraph2": "Every outdoor fireplace is custom-built to fit your space, lifestyle, and design preferences. With expert craftsmanship, precision installation, and attention to every detail, we create durable, low-maintenance fireplaces that enhance your outdoor living experience and add lasting value to your property.",
+        "imageTopRight": "/images/fireplace.webp",
+        "paragraphLayout": ""
       }
     },
     {
@@ -49,17 +49,17 @@
       "key": "custom_1771982073134_cq66b",
       "label": "Why Maxima",
       "content": {
-        "title": "Design Your Outdoor Space with a Custom Fire Pit",
+        "title": "Design Your Outdoor Space with a Custom Fireplace",
         "ctaText": "Contact Us",
         "_sourceLabel": "Why Maxima",
         "ctaLink": "#contact",
         "backgroundImage": "/images/cms/uploads/1773709287908-kkglvl.webp",
         "overlayOpacity": 76,
+        "bottomText": "",
+        "description": "Create the perfect outdoor gathering area with a custom paver fire pit from Maxima Concrete. Designed to combine durability, safety, and style, our fire pits serve as a functional centerpiece for patios and backyard spaces.\n\nBuilt with high-quality materials and expert craftsmanship, each fire pit is designed to withstand weather conditions and long-term use while maintaining its appearance over time. Available in a variety of shapes, colors, and paver styles, every project is customized to match your outdoor design and personal preferences.\n\nA paver fire pit adds warmth, comfort, and value to your property, transforming your backyard into a welcoming space for relaxation, entertainment, and lasting memories with family and friends.",
         "eyebrow": "by Maxima Concrete",
         "benefits": [],
-        "description": "Create the perfect outdoor gathering area with a custom paver fire pit from Maxima Concrete. Designed to combine durability, safety, and style, our fire pits serve as a functional centerpiece for patios and backyard spaces.\n\nBuilt with high-quality materials and expert craftsmanship, each fire pit is designed to withstand weather conditions and long-term use while maintaining its appearance over time. Available in a variety of shapes, colors, and paver styles, every project is customized to match your outdoor design and personal preferences.\n\nA paver fire pit adds warmth, comfort, and value to your property, transforming your backyard into a welcoming space for relaxation, entertainment, and lasting memories with family and friends.",
-        "overlayGradient": true,
-        "bottomText": ""
+        "overlayGradient": true
       }
     },
     {
@@ -73,6 +73,7 @@
         "ctaLink": "#contact",
         "backgroundImage": "/images/cms/uploads/1773398434365-nn94c7.webp",
         "overlayOpacity": 76,
+        "description": "",
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
@@ -115,8 +116,7 @@
             ],
             "title": "Flexible Building Options"
           }
-        ],
-        "description": ""
+        ]
       }
     },
     {
