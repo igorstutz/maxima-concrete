@@ -43,7 +43,16 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
       const json = await res.json().catch(() => ({ ok: res.ok }));
       if (res.ok && json.ok) {
         setStatus("sent");
-        pushLeadEvent({ form: "join_our_team", page: window.location.pathname, leadId });
+        pushLeadEvent({
+          form: "join_our_team",
+          page: window.location.pathname,
+          leadId,
+          fields: {
+            email: String(data.get("email") || ""),
+            phone: String(data.get("phone") || ""),
+            firstName: String(data.get("name") || data.get("first_name") || ""),
+          },
+        });
         form.reset();
         setFileName("");
       } else {

@@ -116,7 +116,20 @@ export default function Contact({ content }: { content: Record<string, any> }) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setStatus("success");
-      pushLeadEvent({ form: "contact", page: window.location.pathname, leadId });
+      // Lido do envio, antes do form.reset() abaixo: depois disso os campos já
+      // não existem mais na tela.
+      pushLeadEvent({
+        form: "contact",
+        page: window.location.pathname,
+        leadId,
+        fields: {
+          email: String(data.get("email") || ""),
+          phone: String(data.get("phone") || ""),
+          firstName: String(data.get("first_name") || ""),
+          lastName: String(data.get("last_name") || ""),
+          zip: String(data.get("zip_code") || ""),
+        },
+      });
       form.reset();
       setSelectedOption("");
       setSelectedServices([]);
