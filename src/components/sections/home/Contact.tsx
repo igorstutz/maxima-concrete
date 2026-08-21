@@ -50,6 +50,14 @@ const INPUT_CLASS =
   "w-full rounded-lg border border-gray-200 bg-white px-4 py-4 text-navy placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-ocean/30";
 const LABEL_CLASS = "mb-3 block font-medium text-navy";
 
+// Asterisco de campo obrigatório. aria-hidden porque a obrigatoriedade já é
+// anunciada aos leitores de tela pelo atributo required do campo.
+const Req = () => (
+  <span aria-hidden="true" className="ml-1 text-red-600">
+    *
+  </span>
+);
+
 type Status = "idle" | "sending" | "success" | "error";
 
 export default function Contact({ content }: { content: Record<string, any> }) {
@@ -79,13 +87,18 @@ export default function Contact({ content }: { content: Record<string, any> }) {
     selectedServices.forEach((s) => data.append("services[]", s));
     data.set("page_url", window.location.pathname);
 
-    if (
-      !String(data.get("first_name") || "").trim() &&
-      !String(data.get("email") || "").trim() &&
-      !String(data.get("phone") || "").trim()
-    ) {
+    // Todos os campos são obrigatórios. Os campos de texto já são barrados pelo
+    // próprio navegador (required); aqui ficam os dois controles feitos à mão —
+    // a lista "how did you hear about us" e os serviços — que o navegador não
+    // valida sozinho.
+    if (!selectedOption) {
       setStatus("error");
-      setErrorMessage("Please fill in at least your name, email or phone.");
+      setErrorMessage("Please tell us how you heard about us.");
+      return;
+    }
+    if (selectedServices.length === 0) {
+      setStatus("error");
+      setErrorMessage("Please choose at least one service.");
       return;
     }
 
@@ -144,35 +157,41 @@ export default function Contact({ content }: { content: Record<string, any> }) {
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Nome */}
             <div>
-              <label className={LABEL_CLASS}>{c.nameSectionLabel || "Your Name"}</label>
+              <label className={LABEL_CLASS}>{c.nameSectionLabel || "Your Name"}<Req /></label>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <input type="text" name="first_name" placeholder="First Name" className={INPUT_CLASS} />
-                <input type="text" name="last_name" placeholder="Last Name" className={INPUT_CLASS} />
+                <input type="text" name="first_name" placeholder="First Name" required
+                  className={INPUT_CLASS} />
+                <input type="text" name="last_name" placeholder="Last Name" required
+                  className={INPUT_CLASS} />
               </div>
             </div>
 
             {/* Contato */}
             <div>
-              <label className={LABEL_CLASS}>{c.contactSectionLabel || "Your Contact"}</label>
+              <label className={LABEL_CLASS}>{c.contactSectionLabel || "Your Contact"}<Req /></label>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <input type="tel" name="phone" placeholder="Phone Number" className={INPUT_CLASS} />
-                <input type="email" name="email" placeholder="E-mail Address" className={INPUT_CLASS} />
+                <input type="tel" name="phone" placeholder="Phone Number" required
+                  className={INPUT_CLASS} />
+                <input type="email" name="email" placeholder="E-mail Address" required
+                  className={INPUT_CLASS} />
               </div>
             </div>
 
             {/* Endereço */}
             <div>
-              <label className={LABEL_CLASS}>{c.addressSectionLabel || "Address"}</label>
+              <label className={LABEL_CLASS}>{c.addressSectionLabel || "Address"}<Req /></label>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <input type="text" name="street" placeholder="Street" className={INPUT_CLASS} />
-                <input type="text" name="zip_code" placeholder="Zip Code" className={INPUT_CLASS} />
+                <input type="text" name="street" placeholder="Street" required
+                  className={INPUT_CLASS} />
+                <input type="text" name="zip_code" placeholder="Zip Code" required
+                  className={INPUT_CLASS} />
               </div>
             </div>
 
             {/* Como nos conheceu */}
             <div>
               <label className={LABEL_CLASS}>
-                {c.hearAboutLabel || "How Did You Hear About Us"}
+                {c.hearAboutLabel || "How Did You Hear About Us"}<Req />
               </label>
               <div className="relative">
                 <button
@@ -212,7 +231,7 @@ export default function Contact({ content }: { content: Record<string, any> }) {
             {/* Serviços */}
             <div>
               <label className={LABEL_CLASS}>
-                {c.servicesSectionLabel || "Choose a Service"}
+                {c.servicesSectionLabel || "Choose a Service"}<Req />
               </label>
               <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
                 {services.map((service) => {
@@ -245,10 +264,11 @@ export default function Contact({ content }: { content: Record<string, any> }) {
             {/* Mensagem */}
             <div>
               <label className={LABEL_CLASS}>
-                {c.messageSectionLabel || "Enter Your Message Here"}
+                {c.messageSectionLabel || "Enter Your Message Here"}<Req />
               </label>
               <textarea
                 name="message"
+                required
                 placeholder="Type Here"
                 rows={6}
                 className={`${INPUT_CLASS} resize-none`}

@@ -193,11 +193,23 @@ if (isset($_POST['services']) && is_array($_POST['services'])) {
     }
 }
 
+// Todos os campos do formulário de contato são obrigatórios (definido em
+// 2026-08-21). A verificação é repetida aqui porque a validação do navegador
+// protege o visitante, não o servidor: um POST direto ignora o `required`.
 $errors = [];
 if (strlen($firstName) < 2) $errors['first_name'] = 'Please enter your first name';
+if (strlen($lastName) < 2)  $errors['last_name']  = 'Please enter your last name';
+
 $hasPhone = strlen(preg_replace('/\D/', '', $phone)) >= 10;
 $hasEmail = filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
-if (!$hasPhone && !$hasEmail) $errors['contact'] = 'Please enter a valid phone number or email';
+if (!$hasPhone) $errors['phone'] = 'Please enter a valid phone number';
+if (!$hasEmail) $errors['email'] = 'Please enter a valid email';
+
+if ($street === '')            $errors['street']     = 'Please enter your street';
+if ($zip === '')               $errors['zip_code']   = 'Please enter your zip code';
+if ($hearAbout === '')         $errors['hear_about'] = 'Please tell us how you heard about us';
+if (count($services) === 0)    $errors['services']   = 'Please choose at least one service';
+if (trim($message) === '')     $errors['message']    = 'Please enter your message';
 
 if ($errors) {
     http_response_code(400);
