@@ -2,132 +2,163 @@
   "pageKey": "concretespecs_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "concretespecs_hero",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Concrete Specifications",
         "subtitle": "The mix, the reinforcement and the base we use on every job — and why they matter in Ohio.",
+        "_sourceLabel": "",
         "overlayGradient": true,
         "overlayOpacity": 70,
         "backgroundImage": "/images/cms/uploads/ajuste-footers-2.webp",
         "backLink": "/why-maxima",
-        "backLabel": "Why Maxima"
+        "backLabel": "Why Maxima",
+        "description": "",
+        "tagline": "",
+        "secondaryCtaLink": "",
+        "secondaryCtaText": "",
+        "backgroundImageMobile": ""
       }
     },
     {
+      "type": "intro",
       "key": "concretespecs_intro",
       "label": "Intro",
-      "type": "intro",
       "content": {
         "title": "Specs You Can Ask About",
-        "titleLine2": "Before You Sign",
-        "paragraph1": "Most concrete quotes look the same on paper. The difference shows up years later — in the cracks, the settling and the surface wear. What separates one driveway from another is the mix, the reinforcement and the base underneath it.",
-        "paragraph2": "These are the specifications Maxima Concrete uses as standard on residential work. Bring them to any estimate you receive: if a contractor cannot tell you the bag count, the reinforcement and the base preparation, you are not comparing the same product.",
         "ctaText": "Ask Us About Your Project",
+        "subtitle": "",
+        "_sourceLabel": "",
         "ctaLink": "#contact",
+        "titleLine2": "Before You Sign",
         "images": [
           "/images/cms/uploads/ajuste-footers-1.webp",
           "/images/cms/uploads/ajuste-footers-3.webp"
-        ]
+        ],
+        "imageLarge": "",
+        "paragraph1": "Most concrete quotes look the same on paper. The difference shows up years later — in the cracks, the settling and the surface wear. What separates one driveway from another is the mix, the reinforcement and the base underneath it.",
+        "paragraph2": "These are the specifications Maxima Concrete uses as standard on residential work. Bring them to any estimate you receive: if a contractor cannot tell you the bag count, the reinforcement and the base preparation, you are not comparing the same product.",
+        "imageTopRight": "",
+        "paragraphLayout": ""
       }
     },
     {
+      "type": "why-maxima-service",
       "key": "concretespecs_standards",
       "label": "Our Standards",
-      "type": "why-maxima-service",
       "content": {
-        "eyebrow": "by Maxima Concrete",
         "title": "What We Pour, \nAs Standard",
-        "description": "Every residential pour leaves our team with the same build sheet. \n\n<b>Key specifications:</b>",
+        "ctaText": "Get Your Free Estimate",
+        "_sourceLabel": "",
         "overlayGradient": true,
         "overlayOpacity": 82,
         "backgroundImage": "/images/cms/uploads/ajuste-footers-3.webp",
-        "ctaText": "Get Your Free Estimate",
+        "description": "Every residential pour leaves our team with the same build sheet. \n\n<b>Key specifications:</b>",
         "ctaLink": "#contact",
         "benefits": [
           {
-            "icon": "package",
             "title": "6.5-Bag Mix (4500 PSI)",
+            "description": "",
+            "icon": "package",
             "items": [
               {
-                "label": "",
-                "text": "A high-strength mix with 6.5 bags of cement per cubic yard, rated at 4500 PSI — well above the minimum used on budget work."
+                "text": "A high-strength mix with 6.5 bags of cement per cubic yard, rated at 4500 PSI — well above the minimum used on budget work.",
+                "label": ""
               }
-            ]
+            ],
+            "closingText": "",
+            "bullets": []
           },
           {
-            "icon": "layers",
             "title": "Fiber Mesh Reinforcement",
+            "description": "",
+            "icon": "layers",
             "items": [
               {
-                "label": "",
-                "text": "Structural fibers dispersed through the mix act like micro-rebar, controlling shrinkage cracks as the slab cures."
+                "text": "Structural fibers dispersed through the mix act like micro-rebar, controlling shrinkage cracks as the slab cures.",
+                "label": ""
               }
-            ]
+            ],
+            "closingText": "",
+            "bullets": []
           },
           {
-            "icon": "grid",
             "title": "10-Gauge Wire Mesh",
+            "description": "",
+            "icon": "grid",
             "items": [
               {
-                "label": "",
-                "text": "Steel mesh distributes load across the slab, preventing the large cracks and deformation that come from freeze-thaw movement."
+                "text": "Steel mesh distributes load across the slab, preventing the large cracks and deformation that come from freeze-thaw movement.",
+                "label": ""
               }
-            ]
+            ],
+            "closingText": "",
+            "bullets": []
           },
           {
-            "icon": "shield",
             "title": "Compacted Gravel Base",
+            "description": "",
+            "icon": "shield",
             "items": [
               {
-                "label": "",
-                "text": "A properly graded and compacted base carries the load and keeps water from washing out the ground under the slab."
+                "text": "A properly graded and compacted base carries the load and keeps water from washing out the ground under the slab.",
+                "label": ""
               }
-            ]
+            ],
+            "closingText": "",
+            "bullets": []
           }
-        ]
+        ],
+        "bottomText": "",
+        "eyebrow": "by Maxima Concrete"
       }
     },
     {
+      "type": "why-choose",
       "key": "concretespecs_ohio",
       "label": "Built for Ohio",
-      "type": "why-choose",
       "content": {
         "title": "Built for \nOhio Winters",
-        "description": "Ohio puts concrete through dozens of freeze-thaw cycles every year. Water gets into the surface, freezes, expands and forces the slab apart from the inside. Everything in our build sheet exists to slow that down.",
         "ctaText": "Talk to Our Team",
+        "_sourceLabel": "",
+        "description": "Ohio puts concrete through dozens of freeze-thaw cycles every year. Water gets into the surface, freezes, expands and forces the slab apart from the inside. Everything in our build sheet exists to slow that down.",
         "ctaLink": "#contact",
         "benefits": [
           {
-            "customIcon": "droplets",
             "title": "Drainage First",
-            "description": "Grading moves water away from the slab and the foundation before it can pool or soak in."
+            "iconType": "",
+            "description": "Grading moves water away from the slab and the foundation before it can pool or soak in.",
+            "customIcon": "droplets"
           },
           {
-            "customIcon": "ruler",
             "title": "Control Joints",
-            "description": "Joints are cut where the slab is expected to move, so cracking happens on a straight line instead of at random."
+            "iconType": "",
+            "description": "Joints are cut where the slab is expected to move, so cracking happens on a straight line instead of at random.",
+            "customIcon": "ruler"
           },
           {
-            "customIcon": "shield",
             "title": "Proper Curing",
-            "description": "The slab is protected and monitored while it cures — strength comes from curing, not just from the mix."
+            "iconType": "",
+            "description": "The slab is protected and monitored while it cures — strength comes from curing, not just from the mix.",
+            "customIcon": "shield"
           },
           {
-            "customIcon": "clipboard-check",
             "title": "Inspected Throughout",
-            "description": "Base, reinforcement and finish are each checked before the crew moves on to the next stage."
+            "iconType": "",
+            "description": "Base, reinforcement and finish are each checked before the crew moves on to the next stage.",
+            "customIcon": "clipboard-check"
           }
         ]
       }
     },
     {
+      "type": "faq",
       "key": "concretespecs_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
         "title": "FAQ — Concrete Specifications",
+        "_sourceLabel": "",
         "items": [
           {
             "question": "What does \"6.5-bag mix\" mean?",
@@ -139,7 +170,7 @@
           },
           {
             "question": "How thick should the slab be?",
-            "answer": "It depends on what the surface has to carry. Most residential basement floors are poured 3–4 inches thick, with additional reinforcement where extra durability is needed. Driveways and slabs that take vehicle or equipment loads are built heavier, and we size them during the estimate."
+            "answer": "It depends on what the surface has to carry. Most residential projects are poured 4 inches thick, with additional reinforcement where extra durability is needed. Driveways and slabs that take vehicle or equipment loads are built heavier, and we size them during the estimate."
           },
           {
             "question": "Why does the base matter as much as the concrete?",
@@ -153,21 +184,23 @@
       }
     },
     {
+      "type": "contact",
       "key": "concretespecs_contact",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
-        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
         "ctaText": "Send Request",
+        "subtitle": "Limited availability for the upcoming season. Secure your spot.",
+        "_sourceLabel": "",
         "nameSectionLabel": ""
       }
     },
     {
+      "type": "instagram",
       "key": "concretespecs_instagram",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
         "titlePart2": "— On Instagram"
