@@ -30,31 +30,6 @@
       }
     },
     {
-      "type": "areas",
-      "key": "custom_areas_seed",
-      "label": "Areas",
-      "content": {
-        "areas": [
-          "Delaware County: Delaware, Powell, Galena, Lewis Center, Sunbury, Dublin, and more.",
-          "Franklin County: Columbus, Westerville, Upper Arlington, Grove City, Gahanna, Worthington, and nearby suburbs.",
-          "Licking County: Granville, Johnstown, Pataskala, Hebron, and others.",
-          "Knox, Fairfield, Marion, Madison, Morrow, Pickaway, and Union Counties: Select projects available upon request."
-        ],
-        "title": "Serving Central Ohio and Beyond",
-        "ctaLink": "#contact",
-        "ctaText": "Contact Us",
-        "subtitle": "We proudly serve homeowners and businesses across the following counties:",
-        "trustIcons": [
-          "/images/assets/footer/licensed-insured.svg",
-          "/images/assets/footer/bbb-rating.svg",
-          "/images/assets/footer/angies-list.webp"
-        ],
-        "bottomTitle": "Not sure if we serve your area?",
-        "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8.webp",
-        "bottomDescription": "Contact us to discuss your project — we often travel beyond our main service radius for select installations."
-      }
-    },
-    {
       "type": "values",
       "key": "custom_values_seed",
       "label": "Values",
@@ -89,6 +64,31 @@
           }
         ],
         "overlayTitle": "Transparency.\nAccountability.\nEfficiency."
+      }
+    },
+    {
+      "type": "areas",
+      "key": "custom_areas_seed",
+      "label": "Areas",
+      "content": {
+        "areas": [
+          "Delaware County: Delaware, Powell, Galena, Lewis Center, Sunbury, Dublin, and more.",
+          "Franklin County: Columbus, Westerville, Upper Arlington, Grove City, Gahanna, Worthington, and nearby suburbs.",
+          "Licking County: Granville, Johnstown, Pataskala, Hebron, and others.",
+          "Knox, Fairfield, Marion, Madison, Morrow, Pickaway, and Union Counties: Select projects available upon request."
+        ],
+        "title": "Serving Central Ohio and Beyond",
+        "ctaLink": "#contact",
+        "ctaText": "Contact Us",
+        "subtitle": "We proudly serve homeowners and businesses across the following counties:",
+        "trustIcons": [
+          "/images/assets/footer/licensed-insured.svg",
+          "/images/assets/footer/bbb-rating.svg",
+          "/images/assets/footer/angies-list.webp"
+        ],
+        "bottomTitle": "Not sure if we serve your area?",
+        "backgroundImage": "/images/cms/uploads/1772678702773-2fkbw8.webp",
+        "bottomDescription": "Contact us to discuss your project — we often travel beyond our main service radius for select installations."
       }
     },
     {
