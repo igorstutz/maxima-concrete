@@ -12,7 +12,7 @@
         "_sourceLabel": "Hero",
         "ctaLink": "#contact",
         "tagline": "Designed Around Your Lifestyle",
-        "backgroundImage": "/images/outdoor-living-2.webp",
+        "backgroundImage": "/images/cms/uploads/1784042023396-2dsref.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
         "backgroundImageMobile": "/images/cms/uploads/1784042023396-2dsref-mobile.webp",
@@ -29,7 +29,7 @@
         "title": "Transform Your Backyard Into a Functional and Elegant Retreat",
         "ctaText": "Inspired? Request your Free Estimate now!",
         "_sourceLabel": "",
-        "image": "/images/2.webp",
+        "image": "/images/cms/uploads/1784037460087-w6tuvq.webp",
         "description": "Transform your backyard into a <b>custom outdoor living destination</b> designed around the way you live. From outdoor kitchens and fire features to pergolas, pavilions, lighting, and entertainment areas, Maxima Concrete provides complete <b>design-build solutions</b> that blend beauty, comfort, and functionality. Our experienced in-house team handles every step of the process, creating outdoor spaces that enhance your lifestyle and add lasting value to your home.",
         "ctaLink": "#contact"
       }
@@ -41,7 +41,7 @@
       "content": {
         "title": "Custom Outdoor Living Design & Construction",
         "subtitle": "Built Around Your Lifestyle",
-        "image": "/images/outdoor-living-maxima-concrete.webp",
+        "image": "/images/cms/uploads/1782843224247-ama9ud.webp",
         "description": "Every outdoor space we create is designed around how you live, entertain, and relax. Our experienced designers help you plan every detail, ensuring your yard becomes an extension of your home.<br><br>We handle everything — from the initial design consultation to final installation — making the entire process smooth, efficient, and stress-free.<br><br><b>Our Outdoor Living Solutions Include:</b><br><br>• <b>Custom Outdoor Kitchens</b> — fully equipped with built-in grills, pizza ovens, and weatherproof concrete countertops.<br><br>• <b>Professional Outdoor Lighting</b> — modern systems that enhance safety and ambiance for nighttime entertaining. Fire Features & Ambiance — fireplaces, fire pits, and lighting that create warmth and atmosphere.<br><br>• <b>Shelters & Shade Structures</b> — pergolas, gazebos, and pavilions designed for comfort and protection year-round.<br><br>• <b>Hardscapes & Patios</b> — durable, elegant concrete finishes that define and elevate your backyard."
       }
     },
@@ -61,7 +61,7 @@
             "text": "<b>15+ Years of Expertise</b> in Central Ohio."
           },
           {
-            "text": "<b>All In-House Team</b> — no subcontractors."
+            "text": "<b>In-House Hardscaping & Landscaping</b> — no subcontractors."
           },
           {
             "text": "<b>Licensed & Insured</b> for total peace of mind."
@@ -104,7 +104,7 @@
       "content": {
         "title": "Lighting, Shelters &\nYear-Round Comfort",
         "ctaText": "Explore Fireplaces",
-        "image": "/images/outdoor-lighting-2.webp",
+        "image": "/images/cms/uploads/1782843113778-vaa1aa.webp",
         "description": "A beautiful outdoor space should shine day and night. Our outdoor lighting systems combine function and style, illuminating paths, patios, and architecture with energy-efficient solutions.<br><br>\n\nWe also design <b>shelters and shade structures</b> — pergolas, gazebos, and pavilions — that enhance comfort while protecting against the elements. Each is engineered for durability and crafted to complement your home's design.",
         "ctaLink": "/services/fireplaces",
         "steps": [
@@ -138,10 +138,10 @@
       "content": {
         "title": "Start Your Outdoor\nLiving Journey Today",
         "ctaText": "Explore Our Gallery",
-        "image": "/images/captura-de-tela-2026-06-05-114445.webp",
+        "image": "/images/cms/uploads/1784042530315-x2p22m.webp",
         "description": "Ready to elevate your home with a custom-designed outdoor space?\n\nOur team is here to turn your vision into a reality that lasts for years to come.",
         "ctaLink": "/gallery",
-        "backgroundImage": "/images/outdoor-living-2-2.webp"
+        "backgroundImage": "/images/cms/uploads/1784042537489-uho6q.webp"
       }
     },
     {
@@ -164,7 +164,7 @@
         "title": "Engineered for Durability",
         "ctaText": "Get a Free Estimate",
         "ctaLink": "#contact",
-        "backgroundImage": "/images/outdoor-living-2-2.webp",
+        "backgroundImage": "/images/cms/uploads/1784042023396-2dsref.webp",
         "cards": [
           {
             "icon": "",
