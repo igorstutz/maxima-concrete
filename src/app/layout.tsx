@@ -88,7 +88,13 @@ export default function RootLayout({
       <head>
         {GTM_ID ? (
           <Script id="gtm" strategy="afterInteractive">
-            {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            {`(function(w,d,s,l,i){
+// Painéis internos (/admin e /admin/cms) ficam fora da medição: visita da
+// própria equipe entraria como visualização de página e sujaria o GA4, o Pixel
+// e as listas do Google Ads. Barrar aqui vale para todas as tags de uma vez,
+// inclusive as que a equipe de marketing adicionar depois.
+if (w.location.pathname.indexOf('/admin') === 0) { return; }
+w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
