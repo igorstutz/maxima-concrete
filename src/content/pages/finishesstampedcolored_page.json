@@ -57,68 +57,6 @@
       }
     },
     {
-      "type": "design-options",
-      "key": "custom_1772216800001_designoptions",
-      "label": "Design Options",
-      "content": {
-        "title": "Design Options That Inspire",
-        "subtitle": "Stamped and colored concrete opens a world of design possibilities — from classic to contemporary, subtle to bold.",
-        "patterns": [
-          {
-            "image": "/images/cms/uploads/1772587034540-jd65u.webp",
-            "title": "Popular Pattern Choices",
-            "description": "Old-world charm with timeless appeal."
-          },
-          {
-            "image": "/images/cms/uploads/1772587076763-w5gqqo.webp",
-            "title": "Brick or Herringbone",
-            "description": "Perfect for walkways, porches, and patios."
-          },
-          {
-            "image": "/images/cms/uploads/1772587133829-krg8a.webp",
-            "title": "Wood Grain",
-            "description": "Warm, organic character with the durability of concrete."
-          },
-          {
-            "image": "/images/cms/uploads/1772587143566-wpoiz.webp",
-            "title": "Slate or Flagstone",
-            "description": "Natural texture with elegant irregularity."
-          }
-        ],
-        "bottomNote": "Maxima's color systems are UV-stable and fade-resistant, ensuring your design remains vibrant for years.",
-        "colorGroups": [
-          {
-            "label": "Earthy tones",
-            "colors": [
-              "#8B5E3C",
-              "#D2B48C",
-              "#444444",
-              "#C4A484"
-            ]
-          },
-          {
-            "label": "Warm Reds & Terracottas",
-            "colors": [
-              "#A0522D",
-              "#B22222",
-              "#B66E41",
-              "#C36241"
-            ]
-          },
-          {
-            "label": "Modern Grays & Blacks",
-            "colors": [
-              "#6E6E6E",
-              "#2F2F2F",
-              "#9E9E9E",
-              "#1B1B1B"
-            ]
-          }
-        ],
-        "colorPaletteTitle": "Color Palette:"
-      }
-    },
-    {
       "type": "benefits-process",
       "key": "stampedcolored-sec-benefits-process",
       "label": "Benefits & Process",
