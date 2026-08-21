@@ -37,6 +37,20 @@ type LeadEvent = {
   fields?: LeadFields;
 };
 
+/**
+ * Clique em telefone. Vale como conversão: boa parte do cliente liga em vez de
+ * preencher formulário. O GTM decide o que fazer com isso (Meta, Google Ads).
+ */
+export function pushPhoneClick({ location, page }: { location: string; page: string }): void {
+  try {
+    const w = window as unknown as { dataLayer?: Record<string, unknown>[] };
+    w.dataLayer = w.dataLayer || [];
+    w.dataLayer.push({ event: "phone_click", click_location: location, page_path: page });
+  } catch {
+    /* silêncio de propósito */
+  }
+}
+
 /** Identificador do envio. Usa a API do navegador quando disponível. */
 export function newLeadId(): string {
   try {
