@@ -25698,38 +25698,6 @@ collections:
                         label: descriptionBold
                         required: false
                         widget: string
-              - label: instagram
-                name: instagram
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: handle
-                        label: handle
-                        required: false
-                        widget: string
-                      - name: titlePart1
-                        label: titlePart1
-                        required: false
-                        widget: string
-                      - name: titlePart2
-                        label: titlePart2
-                        required: false
-                        widget: string
               - label: intro
                 name: intro
                 widget: object
@@ -25949,63 +25917,6 @@ collections:
                         label: projectsText
                         required: false
                         widget: string
-              - label: why-choose
-                name: why-choose
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: text
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: benefits
-                        label: benefits
-                        required: false
-                        widget: list
-                        fields:
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: iconType
-                            label: iconType
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: string
-                          - name: customIcon
-                            label: customIcon
-                            required: false
-                            widget: string
               - label: why-maxima-service
                 name: why-maxima-service
                 widget: object
@@ -34865,8 +34776,6 @@ collections:
                 value: "paverpatios_page::custom_1762901000005_paverpat"
               - label: "Patios — Paver › Inspiration"
                 value: "paverpatios_page::custom_1762901000006_paverpat"
-              - label: "Patios — Paver › Why Choose"
-                value: "paverpatios_page::custom_1787061439149_7jiwgk"
               - label: "Patios — Paver › Reviews"
                 value: "paverpatios_page::reviews"
               - label: "Patios — Paver › Related Services"
@@ -34881,8 +34790,6 @@ collections:
                 value: "paverpatios_page::custom_1762901000009_paverpat"
               - label: "Patios — Paver › FAQ"
                 value: "paverpatios_page::custom_1762901000010_paverpat"
-              - label: "Patios — Paver › Instagram"
-                value: "paverpatios_page::instagram"
               - label: "Pool Decks & Surrounds › Hero"
                 value: "pool_decks_page::custom_1762902000001_pooldeck"
               - label: "Pool Decks & Surrounds › Intro"
