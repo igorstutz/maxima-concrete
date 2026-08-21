@@ -41,7 +41,7 @@ export default function AdminLoginPage() {
       <div className="w-full max-w-sm">
         <div className="rounded-3xl border border-gray-100 bg-white shadow-xl shadow-gray-200/60 p-8 sm:p-10">
           <div className="flex flex-col items-center text-center mb-8">
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary-light flex items-center justify-center shadow-lg shadow-primary/20 mb-5">
+            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primary flex items-center justify-center shadow-lg shadow-primary/20 mb-5">
               <Lock size={24} className="text-white" />
             </div>
             <h1 className="text-2xl font-bold text-gray-900">Admin Access</h1>
@@ -65,7 +65,7 @@ export default function AdminLoginPage() {
                 autoFocus
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 focus:border-accent focus:ring-2 focus:ring-accent/20 outline-none transition"
+                className="w-full rounded-xl border border-gray-200 px-4 py-3 text-gray-900 focus:border-ocean focus:ring-2 focus:ring-accent/20 outline-none transition"
                 placeholder="••••••••"
               />
             </div>
@@ -80,7 +80,7 @@ export default function AdminLoginPage() {
             <button
               type="submit"
               disabled={loading || !password}
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-accent to-accent-light text-white font-semibold rounded-full shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-ocean to-primary text-white font-semibold rounded-full shadow-lg shadow-accent/25 hover:shadow-xl hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:hover:scale-100 disabled:cursor-not-allowed"
             >
               {loading ? (
                 <>

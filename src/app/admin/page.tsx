@@ -14,20 +14,39 @@ import {
   AlertCircle,
 } from "lucide-react";
 
+/**
+ * Um envio como o formulário deste site grava em submissions.log. Os nomes são
+ * os mesmos campos do formulário — daí `first_name`/`last_name` separados e
+ * `services` como lista.
+ *
+ * `type: "resume"` marca as candidaturas da página Join Our Team, que chegam
+ * pelo mesmo log com outros campos (`name`, `position`, `resume`).
+ */
 type Submission = {
   ts: string;
-  name?: string;
+  type?: string;
+  first_name?: string;
+  last_name?: string;
+  name?: string; // candidaturas gravam o nome em um campo só
   email?: string;
   phone?: string;
-  address?: string;
-  city?: string;
-  state?: string;
-  zip?: string;
-  poolSize?: string;
-  source?: string;
+  street?: string;
+  zip_code?: string;
+  services?: string[];
+  hear_about?: string;
+  page_url?: string;
+  position?: string;
+  resume?: string;
   message?: string;
   email_status?: string;
+  email_error?: string | null;
 };
+
+/** Nome para exibição, venha do formulário de contato ou de uma candidatura. */
+function nomeDoLead(s: Submission): string {
+  const completo = [s.first_name, s.last_name].filter(Boolean).join(" ").trim();
+  return completo || (s.name ?? "").trim() || "—";
+}
 
 type Call = { ts: string; location: string; page: string };
 
@@ -214,7 +233,7 @@ export default function AdminDashboardPage() {
   if (status === "loading") {
     return (
       <div className="min-h-[70vh] flex items-center justify-center">
-        <Loader2 size={32} className="animate-spin text-accent" />
+        <Loader2 size={32} className="animate-spin text-ocean" />
       </div>
     );
   }
@@ -228,7 +247,7 @@ export default function AdminDashboardPage() {
         </p>
         <button
           onClick={() => load(true)}
-          className="px-5 py-2.5 bg-accent text-white font-semibold rounded-full"
+          className="px-5 py-2.5 bg-ocean text-white font-semibold rounded-full"
         >
           Try again
         </button>
@@ -251,7 +270,7 @@ export default function AdminDashboardPage() {
             <button
               onClick={() => load(true)}
               disabled={refreshing}
-              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-accent/40 hover:text-primary transition disabled:opacity-50"
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-ocean/40 hover:text-primary transition disabled:opacity-50"
             >
               <RefreshCcw
                 size={15}
@@ -271,15 +290,15 @@ export default function AdminDashboardPage() {
 
         {/* Period filter */}
         <div className="flex flex-wrap items-center gap-3 mb-8">
-          <div className="inline-flex rounded-full bg-white border border-gray-200 p-1">
+          <div className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1">
             {PRESETS.map((p) => (
               <button
                 key={p.value}
                 onClick={() => setPreset(p.value)}
-                className={`px-4 py-1.5 rounded-full text-sm font-medium transition ${
+                className={`px-4 py-1.5 rounded-[10px] text-sm font-medium transition ${
                   preset === p.value
-                    ? "bg-primary text-white"
-                    : "text-gray-600 hover:text-primary"
+                    ? "gradient-navy text-white shadow-sm"
+                    : "text-navy/70 hover:text-ocean"
                 }`}
               >
                 {p.label}
@@ -294,7 +313,7 @@ export default function AdminDashboardPage() {
                 setCustomFrom(e.target.value);
                 setPreset("custom");
               }}
-              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-accent outline-none"
+              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-ocean outline-none"
             />
             <span className="text-gray-400">to</span>
             <input
@@ -304,7 +323,7 @@ export default function AdminDashboardPage() {
                 setCustomTo(e.target.value);
                 setPreset("custom");
               }}
-              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-accent outline-none"
+              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-ocean outline-none"
             />
           </div>
         </div>
@@ -315,12 +334,12 @@ export default function AdminDashboardPage() {
             onClick={() => setTab("submissions")}
             className={`rounded-2xl bg-white border p-6 flex items-center gap-4 shadow-sm text-left transition ${
               tab === "submissions"
-                ? "border-accent ring-1 ring-accent/30"
-                : "border-gray-100 hover:border-accent/40"
+                ? "border-ocean ring-1 ring-accent/30"
+                : "border-gray-100 hover:border-ocean/40"
             }`}
           >
-            <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center shrink-0">
-              <Inbox size={22} className="text-accent" />
+            <div className="w-12 h-12 rounded-xl bg-ocean/10 flex items-center justify-center shrink-0">
+              <Inbox size={22} className="text-ocean" />
             </div>
             <div>
               <p className="text-3xl font-bold text-gray-900">
@@ -348,13 +367,13 @@ export default function AdminDashboardPage() {
         </div>
 
         {/* Tabs */}
-        <div className="inline-flex rounded-full bg-white border border-gray-200 p-1 mb-8">
+        <div className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1 mb-8">
           <button
             onClick={() => setTab("submissions")}
-            className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition ${
+            className={`inline-flex items-center gap-2 px-5 py-2 rounded-[10px] text-sm font-medium transition ${
               tab === "submissions"
-                ? "bg-primary text-white"
-                : "text-gray-600 hover:text-primary"
+                ? "gradient-navy text-white shadow-sm"
+                : "text-navy/70 hover:text-ocean"
             }`}
           >
             <Inbox size={15} />
@@ -362,10 +381,10 @@ export default function AdminDashboardPage() {
           </button>
           <button
             onClick={() => setTab("calls")}
-            className={`inline-flex items-center gap-2 px-5 py-2 rounded-full text-sm font-medium transition ${
+            className={`inline-flex items-center gap-2 px-5 py-2 rounded-[10px] text-sm font-medium transition ${
               tab === "calls"
-                ? "bg-primary text-white"
-                : "text-gray-600 hover:text-primary"
+                ? "gradient-navy text-white shadow-sm"
+                : "text-navy/70 hover:text-ocean"
             }`}
           >
             <PhoneCall size={15} />
@@ -400,22 +419,34 @@ export default function AdminDashboardPage() {
                     >
                       <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                         <div>
-                          <p className="font-semibold text-gray-900">
-                            {s.name || "—"}
-                          </p>
+                          <p className="font-semibold text-navy">{nomeDoLead(s)}</p>
                           <p className="text-xs text-gray-400">
                             {fmtTime(s.ts)}
+                            {s.page_url ? ` · ${s.page_url}` : ""}
                           </p>
                         </div>
                         <div className="flex flex-wrap gap-2">
-                          {s.poolSize && (
-                            <span className="text-xs bg-accent/10 text-accent font-medium rounded-full px-2.5 py-1">
-                              {s.poolSize}
+                          {s.type === "resume" && (
+                            <span className="text-xs bg-navy/10 text-navy font-medium rounded-full px-2.5 py-1">
+                              résumé
                             </span>
                           )}
-                          {s.source && (
+                          {s.position && (
+                            <span className="text-xs bg-ocean/10 text-ocean font-medium rounded-full px-2.5 py-1">
+                              {s.position}
+                            </span>
+                          )}
+                          {(s.services ?? []).map((servico) => (
+                            <span
+                              key={servico}
+                              className="text-xs bg-ocean/10 text-ocean font-medium rounded-full px-2.5 py-1"
+                            >
+                              {servico}
+                            </span>
+                          ))}
+                          {s.hear_about && (
                             <span className="text-xs bg-gray-100 text-gray-600 font-medium rounded-full px-2.5 py-1">
-                              via {s.source}
+                              via {s.hear_about}
                             </span>
                           )}
                           {s.email_status === "failed" && (
@@ -430,7 +461,7 @@ export default function AdminDashboardPage() {
                         {s.phone && (
                           <a
                             href={`tel:${s.phone}`}
-                            className="flex items-center gap-2 text-gray-700 hover:text-accent"
+                            className="flex items-center gap-2 text-gray-700 hover:text-ocean"
                           >
                             <PhoneCall size={14} className="text-gray-400" />
                             {s.phone}
@@ -439,25 +470,29 @@ export default function AdminDashboardPage() {
                         {s.email && (
                           <a
                             href={`mailto:${s.email}`}
-                            className="flex items-center gap-2 text-gray-700 hover:text-accent break-all"
+                            className="flex items-center gap-2 text-gray-700 hover:text-ocean break-all"
                           >
                             <Mail size={14} className="text-gray-400 shrink-0" />
                             {s.email}
                           </a>
                         )}
-                        {(s.address || s.city || s.state) && (
+                        {(s.street || s.zip_code) && (
                           <span className="flex items-center gap-2 text-gray-700">
                             <MapPin size={14} className="text-gray-400 shrink-0" />
-                            {[s.address, s.city, s.state, s.zip]
-                              .filter(Boolean)
-                              .join(", ")}
+                            {[s.street, s.zip_code].filter(Boolean).join(", ")}
+                          </span>
+                        )}
+                        {s.resume && s.resume !== "no file attached" && (
+                          <span className="flex items-center gap-2 text-gray-700">
+                            <Inbox size={14} className="text-gray-400 shrink-0" />
+                            {s.resume}
                           </span>
                         )}
                       </div>
 
                       {s.message && (
                         <details className="mt-3 group">
-                          <summary className="flex items-center gap-1 text-sm text-accent font-medium cursor-pointer list-none">
+                          <summary className="flex items-center gap-1 text-sm text-ocean font-medium cursor-pointer list-none">
                             <ChevronDown
                               size={14}
                               className="group-open:rotate-180 transition-transform"
@@ -497,7 +532,7 @@ export default function AdminDashboardPage() {
                     </span>
                     <div className="flex-1 h-5 bg-gray-100 rounded-full overflow-hidden">
                       <div
-                        className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
+                        className="h-full bg-gradient-to-r from-primary to-ocean rounded-full"
                         style={{
                           width: `${(v.count / maxDayCalls) * 100}%`,
                         }}
