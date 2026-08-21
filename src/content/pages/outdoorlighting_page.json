@@ -50,6 +50,7 @@
         "_sourceLabel": "Why Maxima",
         "backgroundImage": "/images/cms/uploads/1781011937410-5detm.webp",
         "overlayOpacity": 70,
+        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings.",
         "eyebrow": "by Maxima Concrete",
         "benefits": [
           {
@@ -73,7 +74,7 @@
                 "label": ""
               }
             ],
-            "title": "Enhanced Curb Appeal",
+            "title": "Enhanced Visual Aesthetics",
             "description": "Strategically placed fixtures highlight textures, colors, and architectural details — creating warmth and depth throughout your landscape.",
             "closingText": "",
             "bullets": []
@@ -105,8 +106,7 @@
             "bullets": []
           }
         ],
-        "overlayGradient": false,
-        "bottomText": "Low-voltage lighting consumes up to 80% less energy than traditional systems, delivering eco-friendly beauty and cost savings."
+        "overlayGradient": false
       }
     },
     {
@@ -135,7 +135,7 @@
           {
             "link": "/finishes/paver",
             "image": "/images/cms/uploads/1773670770604-danyrk.webp",
-            "title": "Paver Lights:",
+            "title": "Up Lights:",
             "description": "Flush-mounted LEDs embedded in patios, steps, and driveways for a seamless glow."
           },
           {
