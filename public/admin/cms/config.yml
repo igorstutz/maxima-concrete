@@ -11987,73 +11987,6 @@ collections:
                         label: nameSectionLabel
                         required: false
                         widget: string
-              - label: design-options
-                name: design-options
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
-                      - name: patterns
-                        label: patterns
-                        required: false
-                        widget: list
-                        fields:
-                          - name: image
-                            label: image
-                            required: false
-                            widget: image
-                            choose_url: true
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: string
-                      - name: bottomNote
-                        label: bottomNote
-                        required: false
-                        widget: string
-                      - name: colorGroups
-                        label: colorGroups
-                        required: false
-                        widget: list
-                        fields:
-                          - name: label
-                            label: label
-                            required: false
-                            widget: string
-                          - name: colors
-                            label: colors
-                            required: false
-                            widget: list
-                            field:
-                              name: item
-                              label: Item
-                              widget: string
-                      - name: colorPaletteTitle
-                        label: colorPaletteTitle
-                        required: false
-                        widget: string
               - label: faq
                 name: faq
                 widget: object
@@ -31948,23 +31881,45 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
-                      - name: eyebrow
-                        label: eyebrow
+                      - name: subtitle
+                        label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
                       - name: benefits
                         label: benefits
                         required: false
                         widget: list
                         fields:
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
                           - name: icon
                             label: icon
                             required: false
@@ -31982,32 +31937,10 @@ collections:
                                 label: label
                                 required: false
                                 widget: string
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                      - name: subtitle
-                        label: subtitle
+                      - name: eyebrow
+                        label: eyebrow
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
       - name: steps_page
         label: Steps
         file: src/content/pages/steps_page.json
@@ -34166,8 +34099,6 @@ collections:
                 value: "finishesstampedcolored_page::custom_1772599655565_vy4nlm"
               - label: "Finishes — Stamped Colored › What is"
                 value: "finishesstampedcolored_page::custom_1778531888055_n35yhq"
-              - label: "Finishes — Stamped Colored › Design Options"
-                value: "finishesstampedcolored_page::custom_1772216800001_designoptions"
               - label: "Finishes — Stamped Colored › Benefits & Process"
                 value: "finishesstampedcolored_page::stampedcolored-sec-benefits-process"
               - label: "Finishes — Stamped Colored › Where to Use"
