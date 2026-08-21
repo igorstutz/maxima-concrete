@@ -6,6 +6,7 @@ import tracking from "@/content/settings/tracking.json";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { PhoneClickTracker } from "@/components/PhoneClickTracker";
+import { SiteChrome } from "@/components/SiteChrome";
 
 const GTM_ID = tracking.gtmId;
 
@@ -144,9 +145,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           </noscript>
         ) : null}
         <PhoneClickTracker />
-        <Navigation />
-        {children}
-        <Footer />
+        <SiteChrome nav={<Navigation />} footer={<Footer />}>
+          {children}
+        </SiteChrome>
         {tracking.extraBodyCode ? (
           <div
             suppressHydrationWarning
