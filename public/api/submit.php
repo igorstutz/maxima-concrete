@@ -237,14 +237,48 @@ $body .= str_repeat('-', 60) . "\n";
 $body .= "Submitted:   " . gmdate('Y-m-d H:i:s') . " UTC\n";
 $body .= "From IP:     " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 
-$headers   = [];
-$headers[] = "From: $FROM_NAME <$FROM_EMAIL>";
-if ($hasEmail) $headers[] = "Reply-To: $fullName <$email>";
-$headers[] = "MIME-Version: 1.0";
-$headers[] = "Content-Type: text/plain; charset=utf-8";
-$headers[] = "X-Mailer: Maxima Concrete Website";
+// Um envio POR destinatário, não os seis juntos no To.
+//
+// Seis endereços de três domínios diferentes num único To é assinatura de
+// disparo em massa e pesa contra a entrega — foi o que estava mandando todo
+// formulário para a caixa de spam. Separado, cada mensagem parece o que é (um
+// aviso individual) e um endereço com problema não contamina os outros.
+//
+// Message-ID e Date entram explicitamente: sem eles, filtros corporativos
+// (Microsoft 365 e Proofpoint, o caso aqui) tratam a mensagem como suspeita.
+$hostRemetente = substr($FROM_EMAIL, strpos($FROM_EMAIL, '@') + 1);
+$ok = false;
+$falhas = [];
 
-$ok = @mail($RECIPIENT, $subject, $body, implode("\r\n", $headers), '-f ' . $FROM_EMAIL);
+foreach (array_map('trim', explode(',', $RECIPIENT)) as $destinatario) {
+    if ($destinatario === '') continue;
+
+    $headers   = [];
+    $headers[] = "From: $FROM_NAME <$FROM_EMAIL>";
+    if ($hasEmail) $headers[] = "Reply-To: $fullName <$email>";
+    $headers[] = "Date: " . date('r');
+    $headers[] = sprintf(
+        'Message-ID: <%s.%s@%s>',
+        gmdate('YmdHis'),
+        bin2hex(random_bytes(8)),
+        $hostRemetente
+    );
+    $headers[] = "MIME-Version: 1.0";
+    $headers[] = "Content-Type: text/plain; charset=utf-8";
+    $headers[] = "Content-Transfer-Encoding: 8bit";
+    $headers[] = "X-Mailer: Maxima Concrete Website";
+
+    $enviado = @mail($destinatario, $subject, $body, implode("\r\n", $headers), '-f ' . $FROM_EMAIL);
+    if ($enviado) {
+        $ok = true; // basta um aceito para o visitante ver confirmação
+    } else {
+        $falhas[] = $destinatario;
+    }
+}
+
+if ($falhas) {
+    @error_log('[submit.php] mail() recusou: ' . implode(', ', $falhas));
+}
 
 log_submission([
     'ts'           => gmdate('Y-m-d\TH:i:s\Z'),
@@ -261,7 +295,7 @@ log_submission([
     'page_url'     => $pageUrl,
     'message'      => $message,
     'email_status' => $ok ? 'sent' : 'failed',
-    'email_error'  => $ok ? null : 'mail() returned false',
+    'email_error'  => $falhas ? ('recusado para: ' . implode(', ', $falhas)) : null,
 ]);
 
 if ($ok) {
