@@ -13808,6 +13808,10 @@ collections:
                         required: false
                         widget: number
                         value_type: float
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
                       - name: eyebrow
                         label: eyebrow
                         required: false
@@ -13838,10 +13842,6 @@ collections:
                             label: title
                             required: false
                             widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: string
       - name: footers_page
         label: Footers
         file: src/content/pages/footers_page.json
@@ -14345,72 +14345,6 @@ collections:
                         label: viewAllText
                         required: false
                         widget: string
-              - label: style-options
-                name: style-options
-                widget: object
-                fields:
-                  - name: key
-                    label: "Key (não alterar)"
-                    widget: string
-                    required: true
-                  - name: label
-                    label: Label
-                    widget: string
-                    required: false
-                  - name: content
-                    label: Content
-                    widget: object
-                    fields:
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
-                      - name: styles
-                        label: styles
-                        required: false
-                        widget: list
-                        fields:
-                          - name: link
-                            label: link
-                            required: false
-                            widget: string
-                          - name: image
-                            label: image
-                            required: false
-                            widget: image
-                            choose_url: true
-                          - name: title
-                            label: title
-                            required: false
-                            widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: text
-                      - name: variant
-                        label: variant
-                        required: false
-                        widget: string
-                      - name: closingText
-                        label: closingText
-                        required: false
-                        widget: string
               - label: trust-global
                 name: trust-global
                 widget: object
@@ -14550,18 +14484,28 @@ collections:
                         label: title
                         required: false
                         widget: string
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
-                      - name: eyebrow
-                        label: eyebrow
+                      - name: _sourceLabel
+                        label: _sourceLabel
                         required: false
                         widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: overlayOpacity
+                        label: overlayOpacity
+                        required: false
+                        widget: number
+                        value_type: float
                       - name: benefits
                         label: benefits
                         required: false
@@ -14571,6 +14515,10 @@ collections:
                             label: title
                             required: false
                             widget: string
+                          - name: description
+                            label: description
+                            required: false
+                            widget: text
                           - name: checkItems
                             label: checkItems
                             required: false
@@ -14579,24 +14527,10 @@ collections:
                               name: item
                               label: Item
                               widget: string
-                          - name: description
-                            label: description
-                            required: false
-                            widget: text
-                      - name: _sourceLabel
-                        label: _sourceLabel
+                      - name: eyebrow
+                        label: eyebrow
                         required: false
                         widget: string
-                      - name: overlayOpacity
-                        label: overlayOpacity
-                        required: false
-                        widget: number
-                        value_type: float
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
       - name: gallery_page
         label: Gallery
         file: src/content/pages/gallery_page.json
@@ -34304,8 +34238,6 @@ collections:
                 value: "footers_page::custom_1771979856670_sjrm5"
               - label: "Footers › Why Maxima"
                 value: "footers_page::custom_1771979882777_pxskin"
-              - label: "Footers › Style Options"
-                value: "footers_page::custom_1773271985108_u6qdom"
               - label: "Footers › Inspiration"
                 value: "footers_page::custom_1771979929588_sudiif"
               - label: "Footers › Why Choose"
