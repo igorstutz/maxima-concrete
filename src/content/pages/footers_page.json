@@ -2,183 +2,157 @@
   "pageKey": "footers_page",
   "sections": [
     {
+      "type": "hero",
       "key": "custom_1771529664083_cz5l9q",
       "label": "Hero",
-      "type": "hero",
       "content": {
         "title": "Footers, Piers & Structural Support",
-        "ctaLink": "#contact",
         "ctaText": "Get Your Free Estimate",
-        "tagline": "Strength From the Ground Up",
         "subtitle": "Code-compliant concrete footings, piers, and structural support built to last. Maxima Concrete engineers strength, stability, and peace of mind. Free estimate.",
         "_sourceLabel": "Hero",
+        "ctaLink": "#contact",
+        "tagline": "Strength From the Ground Up",
         "backgroundImage": "/images/cms/uploads/1784037779206-y1vebv.webp",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1784037779206-y1vebv-mobile.webp"
+        "backgroundImageMobile": "/images/cms/uploads/1784037779206-y1vebv-mobile.webp",
+        "heightVh": null,
+        "overlayOpacity": null,
+        "videoUrl": ""
       }
     },
     {
+      "type": "intro",
       "key": "custom_1771979856670_sjrm5",
       "label": "Intro",
-      "type": "intro",
       "content": {
         "title": "Why foundations matter",
-        "ctaLink": "#contact",
         "ctaText": "Schedule Your Free Estimate!",
         "subtitle": "A strong foundation is essential to the success of any project. Maxima Concrete provides expertly built footings, piers, and structural support systems designed to ensure stability, durability, and long-term performance for residential and commercial applications.",
-        "imageLarge": "/images/cms/uploads/1774812580017-z6ekzj.webp",
-        "paragraph1": "Concrete footings and piers provide the structural support needed to safely transfer weight into the ground. They help prevent settling, shifting, and structural issues while creating a stable base for patios, retaining walls, garages, pergolas, and other concrete structures.",
-        "paragraph2": "At Maxima Concrete, we build every foundation component to meet local codes and site requirements. Using quality materials, proper reinforcement, and proven construction methods, we deliver dependable support that helps protect your investment for years to come.",
-        "titleLine2": "",
         "_sourceLabel": "Intro",
-        "imageTopRight": "/images/cms/uploads/1781010025999-5wk5v.webp",
+        "ctaLink": "#contact",
+        "titleLine2": "",
         "images": [
           "/images/cms/uploads/ajuste-footers-1.webp",
           "/images/cms/uploads/ajuste-footers-2.webp",
           "/images/cms/uploads/ajuste-footers-3.webp",
           "/images/cms/uploads/ajuste-footers-4.webp"
-        ]
+        ],
+        "imageLarge": "/images/cms/uploads/1774812580017-z6ekzj.webp",
+        "paragraph1": "Concrete footings and piers provide the structural support needed to safely transfer weight into the ground. They help prevent settling, shifting, and structural issues while creating a stable base for patios, retaining walls, garages, pergolas, and other concrete structures.",
+        "paragraph2": "At Maxima Concrete, we build every foundation component to meet local codes and site requirements. Using quality materials, proper reinforcement, and proven construction methods, we deliver dependable support that helps protect your investment for years to come.",
+        "imageTopRight": "/images/cms/uploads/1781010025999-5wk5v.webp",
+        "paragraphLayout": ""
       }
     },
     {
+      "type": "why-maxima-detailed",
       "key": "custom_1771979882777_pxskin",
       "label": "Why Maxima",
-      "type": "why-maxima-detailed",
       "content": {
         "title": "What we build (and when)",
-        "ctaLink": "#contact",
         "ctaText": "Contact Us",
-        "eyebrow": "by Maxima Concrete",
+        "_sourceLabel": "Why Maxima",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1781010047223-3e3lep.webp",
+        "overlayOpacity": 76,
         "benefits": [
           {
             "title": "Concrete Footings (Footers) — Your load-spreading anchors",
+            "description": "Footings <b>distribute structural loads</b> into the soil, preventing settlement. We size them to code and conditions (load, soil bearing, frost depth), perfect for:",
             "checkItems": [
               "Garage foundations & additions",
               "Retaining walls / seat walls",
               "Patio edges on slopes where the patio face is tall"
-            ],
-            "description": "Footings <b>distribute structural loads</b> into the soil, preventing settlement. We size them to code and conditions (load, soil bearing, frost depth), perfect for:"
+            ]
           },
           {
             "title": "Concrete Piers — Vertical strength where you need it",
+            "description": "Piers transfer loads upward from footings, ideal when slopes or point loads demand extra support:",
             "checkItems": [
               "Elevated or sloped patios / decks",
               "Pergolas and outdoor structures",
               "Column bases and point-load support"
-            ],
-            "description": "Piers transfer loads upward from footings, ideal when slopes or point loads demand extra support:"
+            ]
           },
           {
             "title": "Steel Reinforcement — The invisible safety net",
-            "checkItems": [],
-            "description": "We place <b>rebar and mesh</b> per plan/spec to resist tension, control cracking, and ensure <b>rock-solid performance</b> for decades."
+            "description": "We place <b>rebar and mesh</b> per plan/spec to resist tension, control cracking, and ensure <b>rock-solid performance</b> for decades.",
+            "checkItems": []
           }
         ],
-        "_sourceLabel": "Why Maxima",
-        "overlayOpacity": 76,
-        "backgroundImage": "/images/cms/uploads/1781010047223-3e3lep.webp"
+        "eyebrow": "by Maxima Concrete"
       }
     },
     {
-      "key": "custom_1773271985108_u6qdom",
-      "label": "Style Options",
-      "type": "style-options",
-      "content": {
-        "title": "Footers Finish Options",
-        "styles": [
-          {
-            "link": "/finishes/broom",
-            "image": "/images/cms/uploads/1780947067069-9mlok.webp",
-            "title": "Broom-Finish",
-            "description": "Classic slip-resistant texture with clean lines, offering all-season traction and timeless appeal."
-          },
-          {
-            "link": "/finishes/stamped-colored",
-            "image": "/images/cms/uploads/1780947071756-93305zc.webp",
-            "title": "Stamped & Colored",
-            "description": "Decorative patterns and rich colors that mimic natural stone or brick, creating a distinctive look with enhanced curb appeal."
-          },
-          {
-            "link": "/finishes/buff-wash-exposed",
-            "image": "/images/cms/uploads/1780947079489-43sfvk.webp",
-            "title": "Exposed Aggregate & Buff Wash",
-            "description": "A warm, natural finish that reveals exposed stone textures, adding depth, character, and a refined look to any concrete surface."
-          },
-          {
-            "link": "/finishes/paver",
-            "image": "/images/cms/uploads/1784044541984-0dbar.webp",
-            "title": "Paver, Brick or Natural Stone",
-            "description": "Enhance your concrete design with paver, brick, or natural stone accents that add texture, character, and timeless appeal."
-          }
-        ],
-        "description": "Footers stay out of sight, but the finish above them does not. Explore the finishes we pair with our structural work.",
-        "_sourceLabel": "Style Options"
-      }
-    },
-    {
+      "type": "inspiration",
       "key": "custom_1771979929588_sudiif",
       "label": "Inspiration",
-      "type": "inspiration",
       "content": {
         "title": "Inspiration for Your Footers",
+        "ctaText": "",
+        "_sourceLabel": "Inspiration",
+        "ctaLink": "",
+        "description": "",
         "images": [
           "/images/cms/uploads/1782842057456-zgeyoc.webp",
           "/images/cms/uploads/1782842053359-lnuqx.webp",
           "/images/cms/uploads/1782842055181-0zhe7.webp",
           "/images/cms/uploads/1782842056521-d6rnc.webp"
         ],
-        "_sourceLabel": "Inspiration"
+        "descriptionBold": ""
       }
     },
     {
+      "type": "why-choose",
       "key": "custom_1771980039236_4ravxi",
       "label": "Why Choose",
-      "type": "why-choose",
       "content": {
         "title": "Materials \nthat make \nthe difference",
+        "ctaText": "",
+        "_sourceLabel": "Why Choose",
+        "ctaLink": "",
+        "description": "Engineered for maximum support. Our footers utilize high-density materials and reinforced steel to provide the unwavering structural base necessary for a professional-grade, durable court.",
         "benefits": [
           {
             "title": "6.5-Bag Mix Concrete",
             "iconType": "package",
-            "customIcon": "package",
-            "description": "for dense, durable support"
+            "description": "for dense, durable support",
+            "customIcon": "package"
           },
           {
             "title": "Fiber Mesh Reinforcement",
             "iconType": "layers",
-            "customIcon": "layers",
-            "description": "to help control micro-cracking"
+            "description": "to help control micro-cracking",
+            "customIcon": "layers"
           },
           {
-            "title": "10-Gauge Wire Mesh",
+            "title": "Wire Mesh",
             "iconType": "grid",
-            "customIcon": "grid",
-            "description": "Provides superior stability and long-term support."
+            "description": "Provides superior stability and long-term support.",
+            "customIcon": "grid"
           },
           {
-            "title": "10-gauge wire mesh / rebar",
+            "title": "Job completed by the blue prints",
             "iconType": "clipboard",
-            "customIcon": "grid",
-            "description": " per plan for structural integrity"
+            "description": "per plan for structural integrity",
+            "customIcon": "grid"
           }
-        ],
-        "description": "Engineered for maximum support. Our footers utilize high-density materials and reinforced steel to provide the unwavering structural base necessary for a professional-grade, durable court.",
-        "_sourceLabel": "Why Choose"
+        ]
       }
     },
     {
+      "type": "final-cta",
       "key": "custom_1771980060997_f7ezu",
       "label": "Related Services",
-      "type": "final-cta",
       "content": {
+        "_sourceLabel": "Related Services",
         "ctaLink": "#contact",
         "bottomText": "Licensed & Insured · Free Estimates · We Handle All Permits",
         "titleLine1": "Ready to Create Your",
         "titleLine2": "Perfect Outdoor Retreat?",
         "contactText": "",
         "description": "A great project starts with a great foundation. Maxima Concrete delivers precision, compliance, and durability—from footing to finish.",
-        "_sourceLabel": "Related Services",
         "relatedTitle": "Related Services",
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
@@ -214,22 +188,26 @@
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "hub-durability",
       "key": "footers_page_durability",
       "label": "Engineered for Durability",
-      "type": "hub-durability",
       "content": {
+        "title": "Engineered for Durability",
+        "ctaText": "Get a Free Estimate",
+        "ctaLink": "#contact",
+        "backgroundImage": "/images/cms/uploads/1784037779206-y1vebv.webp",
         "cards": [
           {
             "icon": "",
@@ -251,18 +229,19 @@
             "title": "Long-Term Value",
             "description": "Durable surfaces designed to enhance function, appearance, and property value."
           }
-        ],
-        "title": "Engineered for Durability",
-        "ctaLink": "#contact",
-        "ctaText": "Get a Free Estimate",
-        "backgroundImage": "/images/cms/uploads/1784037779206-y1vebv.webp"
+        ]
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
+        "title": "Why Homeowners\nTrust Maxima Concrete?",
+        "ctaText": "Get a Free Estimate",
+        "_sourceLabel": "",
+        "ctaLink": "/contact-us",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
         "items": [
           {
             "icon": "home",
@@ -273,7 +252,7 @@
           {
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.",
             "link": "/why-maxima/"
           },
           {
@@ -289,42 +268,39 @@
             "link": "/licensing-insured/"
           }
         ],
-        "title": "Why Homeowners\nTrust Maxima Concrete?",
-        "ctaLink": "/contact-us",
-        "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_ig_follow",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     },
     {
+      "type": "contact",
       "key": "custom_1771980102915_5u28lt",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -334,10 +310,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_1771980120944_cu6df",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Footers",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "What is a concrete footer?",
@@ -355,9 +333,7 @@
             "question": "Do you offer free consultations?",
             "answer": "Yes — we provide free on-site consultations and estimates anywhere in Central Ohio."
           }
-        ],
-        "title": "FAQ — Footers",
-        "_sourceLabel": "FAQ"
+        ]
       }
     }
   ]
