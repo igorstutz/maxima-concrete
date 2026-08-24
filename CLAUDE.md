@@ -80,6 +80,17 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   Nunca usar `unoptimized` em hero — isso descarta o srcset.
 - Widgets externos (Elfsight reviews/instagram) só carregam ao entrar na viewport.
 
+## E-mail dos formulários
+- Sai por `public/api/mailer.php` (Resend, credenciais em `.private/resend.php`),
+  **não** por `mail()`. Motivo: a Hostinger descarta o envelope que o `-f` pede e
+  escreve o hostname do servidor no lugar, então o SPF verificado é o de
+  `main-hosting.eu` — passa, mas não ALINHA com maximaconcrete.com. Sem DKIM, o
+  DMARC falha e o Gmail estampa "via srv1537.main-hosting.eu" e manda para spam.
+  Ajustar cabeçalho não resolve; a assinatura tem de vir de quem tem a chave do
+  domínio. Sem o arquivo de credenciais, cai no `mail()` de antes.
+- Todo lead é gravado em `.private/submissions.log` antes de qualquer envio, e o
+  painel `/admin` lê desse arquivo — e-mail com problema nunca perde lead.
+
 ## Ambientes (detalhes e operação em `DEPLOY.md`)
 - **Homologação, com painel:** https://maximaconcrete.igorstutz.online — VPS +
   Cloudflare Tunnel servindo Apache+PHP num container, mesmo ambiente da
