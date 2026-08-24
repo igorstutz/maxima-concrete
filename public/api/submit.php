@@ -5,11 +5,13 @@ declare(strict_types=1);
  *  Maxima Concrete — contact form handler
  *  Receives a POST from the site contact forms and emails the lead.
  *
- *  Same delivery model as maximapools.com: mail() through Hostinger,
- *  envelope sender on the domain (`-f`) so SPF aligns. Every submission
- *  is also appended to /.private/submissions.log so the lead survives
- *  a broken email layer.
+ *  Delivery goes through mailer.php (Resend, with mail() as fallback) —
+ *  see that file for why mail() alone lands in spam. Every submission is
+ *  also appended to /.private/submissions.log so the lead survives a
+ *  broken email layer.
  * ---------------------------------------------------------------------- */
+
+require_once __DIR__ . '/mailer.php';
 
 // === Configuration ====================================================
 // Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
@@ -22,19 +24,21 @@ $RECIPIENT  = implode(', ', [
     'elderpw@gmail.com',
     'advertising@melaniesconsulting.com',
 ]);
-$FROM_NAME  = 'Maxima Concrete Website';
-$FROM_EMAIL = 'no-reply@maximaconcrete.com';
+// O remetente é definido em mailer.php (e em .private/resend.php), não aqui:
+// uma fonte só, para os dois não divergirem.
 // ======================================================================
 //
-// ATENÇÃO — SPF do domínio (verificado em 2026-08-20):
+// SPF do domínio (2026-08-21):
 //   v=spf1 include:spf.protection.outlook.com a:dispatch-us.ppe-hosted.com
-//          include:secureserver.net include:_spf.wix.com -all
-// A Hostinger NÃO está nessa lista e o registro termina em `-all` (rejeição
-// dura). Enquanto isso não mudar, mensagem enviada daqui com remetente
-// @maximaconcrete.com falha na verificação e tende a ser recusada ou cair em
-// spam — inclusive no Gmail do elderpw@ e no Microsoft 365 dos demais.
-// Caminho correto: acrescentar `include:_spf.hostinger.com` ao TXT de SPF no
-// DNS. Até lá, todo lead continua registrado em /.private/submissions.log.
+//          include:secureserver.net include:_spf.mail.hostinger.com -all
+//
+// Esse SPF sozinho não resolve a entrega, e a razão é sutil: a Hostinger
+// reescreve o envelope do remetente com o hostname do servidor, então o SPF
+// verificado é o de main-hosting.eu, não o do domínio — passa, mas não
+// ALINHA. Sem DKIM, o DMARC falha e a mensagem vai para spam.
+// Por isso o envio real acontece em mailer.php, via Resend, que assina com
+// DKIM do próprio domínio. Todo lead segue registrado em
+// /.private/submissions.log de qualquer forma.
 
 header('Content-Type: application/json; charset=utf-8');
 header('Cache-Control: no-store');
@@ -84,7 +88,7 @@ function log_submission(array $entry): void {
  * Handles a résumé submission from the Join Our Team page. Emails info@ with a
  * distinct subject and the uploaded file as an attachment (multipart/mixed).
  */
-function handle_resume(string $recipient, string $fromName, string $fromEmail): void {
+function handle_resume(string $recipient): void {
     $name     = clean_line((string)($_POST['name'] ?? ''));
     $email    = clean_line((string)($_POST['email'] ?? ''));
     $phone    = clean_line((string)($_POST['phone'] ?? ''));
@@ -127,27 +131,20 @@ function handle_resume(string $recipient, string $fromName, string $fromEmail): 
     $text .= str_repeat('-', 60) . "\nSubmitted: " . gmdate('Y-m-d H:i:s') . " UTC\n";
     $text .= "From IP:   " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 
-    if ($attachData !== null && $attachName !== null) {
-        $boundary = '=_' . md5(uniqid('', true));
-        $headers  = "From: $fromName <$fromEmail>\r\n";
-        if ($hasEmail) $headers .= "Reply-To: $name <$email>\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
-        $body  = "--$boundary\r\n";
-        $body .= "Content-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n";
-        $body .= $text . "\r\n";
-        $body .= "--$boundary\r\n";
-        $body .= "Content-Type: application/octet-stream; name=\"$attachName\"\r\n";
-        $body .= "Content-Transfer-Encoding: base64\r\n";
-        $body .= "Content-Disposition: attachment; filename=\"$attachName\"\r\n\r\n";
-        $body .= chunk_split(base64_encode($attachData)) . "\r\n";
-        $body .= "--$boundary--";
-        $ok = @mail($recipient, $subject, $body, $headers, '-f ' . $fromEmail);
-    } else {
-        $headers  = "From: $fromName <$fromEmail>\r\n";
-        if ($hasEmail) $headers .= "Reply-To: $name <$email>\r\n";
-        $headers .= "MIME-Version: 1.0\r\nContent-Type: text/plain; charset=utf-8\r\n";
-        $ok = @mail($recipient, $subject, $text, $headers, '-f ' . $fromEmail);
+    // Um envio por destinatário, mesmo motivo do formulário de contato.
+    $ok = false;
+    foreach (array_map('trim', explode(',', $recipient)) as $destinatario) {
+        if ($destinatario === '') continue;
+        $enviado = enviar_email([
+            'to'         => $destinatario,
+            'subject'    => $subject,
+            'text'       => $text,
+            'reply_to'   => $hasEmail ? "$name <$email>" : null,
+            'attachment' => ($attachData !== null && $attachName !== null)
+                ? ['name' => $attachName, 'data' => $attachData]
+                : null,
+        ]);
+        if ($enviado) $ok = true;
     }
 
     log_submission([
@@ -170,7 +167,7 @@ if (trim((string)($_POST['_gotcha'] ?? '')) !== '') {
 
 // Resume submissions (Join Our Team) use a dedicated handler.
 if (($_POST['form_type'] ?? '') === 'resume') {
-    handle_resume($RECIPIENT, $FROM_NAME, $FROM_EMAIL);
+    handle_resume($RECIPIENT);
     exit;
 }
 
@@ -244,31 +241,19 @@ $body .= "From IP:     " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 // formulário para a caixa de spam. Separado, cada mensagem parece o que é (um
 // aviso individual) e um endereço com problema não contamina os outros.
 //
-// Message-ID e Date entram explicitamente: sem eles, filtros corporativos
-// (Microsoft 365 e Proofpoint, o caso aqui) tratam a mensagem como suspeita.
-$hostRemetente = substr($FROM_EMAIL, strpos($FROM_EMAIL, '@') + 1);
+// Cabeçalhos (Message-ID, Date, MIME) ficam em mailer.php, junto do envio.
 $ok = false;
 $falhas = [];
 
 foreach (array_map('trim', explode(',', $RECIPIENT)) as $destinatario) {
     if ($destinatario === '') continue;
 
-    $headers   = [];
-    $headers[] = "From: $FROM_NAME <$FROM_EMAIL>";
-    if ($hasEmail) $headers[] = "Reply-To: $fullName <$email>";
-    $headers[] = "Date: " . date('r');
-    $headers[] = sprintf(
-        'Message-ID: <%s.%s@%s>',
-        gmdate('YmdHis'),
-        bin2hex(random_bytes(8)),
-        $hostRemetente
-    );
-    $headers[] = "MIME-Version: 1.0";
-    $headers[] = "Content-Type: text/plain; charset=utf-8";
-    $headers[] = "Content-Transfer-Encoding: 8bit";
-    $headers[] = "X-Mailer: Maxima Concrete Website";
-
-    $enviado = @mail($destinatario, $subject, $body, implode("\r\n", $headers), '-f ' . $FROM_EMAIL);
+    $enviado = enviar_email([
+        'to'       => $destinatario,
+        'subject'  => $subject,
+        'text'     => $body,
+        'reply_to' => $hasEmail ? "$fullName <$email>" : null,
+    ]);
     if ($enviado) {
         $ok = true; // basta um aceito para o visitante ver confirmação
     } else {
@@ -277,7 +262,7 @@ foreach (array_map('trim', explode(',', $RECIPIENT)) as $destinatario) {
 }
 
 if ($falhas) {
-    @error_log('[submit.php] mail() recusou: ' . implode(', ', $falhas));
+    @error_log('[submit.php] envio recusado para: ' . implode(', ', $falhas));
 }
 
 log_submission([
@@ -325,7 +310,7 @@ if ($ok) {
     exit;
 }
 
-@error_log('[submit.php] mail() returned false');
+@error_log('[submit.php] nenhum destinatário aceitou a mensagem');
 
 http_response_code(500);
 echo json_encode([
