@@ -1886,7 +1886,7 @@ collections:
                           - name: description
                             label: description
                             required: false
-                            widget: string
+                            widget: text
                           - name: ctaLink
                             label: ctaLink
                             required: false
@@ -9140,6 +9140,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -9160,10 +9164,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -9715,6 +9715,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -9735,10 +9739,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -10256,6 +10256,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -10276,10 +10280,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -10916,6 +10916,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -10936,10 +10940,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -11527,6 +11527,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -11547,10 +11551,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -12139,6 +12139,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -12159,10 +12163,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -14670,6 +14670,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -14690,10 +14694,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -15027,6 +15027,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -15047,10 +15051,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -15488,6 +15488,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -15508,10 +15512,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -15912,6 +15912,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -15932,10 +15936,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -16373,6 +16373,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -16393,10 +16397,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -16797,6 +16797,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -16817,10 +16821,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -17258,6 +17258,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -17278,10 +17282,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -17719,6 +17719,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -17739,10 +17743,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -18180,6 +18180,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -18200,10 +18204,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -18641,6 +18641,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -18661,10 +18665,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -19065,6 +19065,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -19085,10 +19089,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -19526,6 +19526,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -19546,10 +19550,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -19987,6 +19987,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -20007,10 +20011,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -21445,6 +21445,10 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: badge
                         label: badge
                         required: false
@@ -21457,10 +21461,6 @@ collections:
                         label: titleHighlight
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: ctaText
                         label: ctaText
                         required: false
@@ -21498,6 +21498,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
                       - name: image
                         label: image
                         required: false
@@ -21531,26 +21547,10 @@ collections:
                         label: licenseNumber
                         required: false
                         widget: string
-                      - name: eyebrow
-                        label: eyebrow
-                        required: false
-                        widget: string
-                      - name: titlePart1
-                        label: titlePart1
-                        required: false
-                        widget: string
-                      - name: titleHighlight
-                        label: titleHighlight
-                        required: false
-                        widget: string
                       - name: titlePart2
                         label: titlePart2
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: teamNoteLine1
                         label: teamNoteLine1
                         required: false
@@ -21575,36 +21575,24 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
                       - name: badge
                         label: badge
-                        required: false
-                        widget: string
-                      - name: titleLine1
-                        label: titleLine1
                         required: false
                         widget: string
                       - name: titleHighlight
                         label: titleHighlight
                         required: false
                         widget: string
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: ctaText
                         label: ctaText
                         required: false
                         widget: string
                       - name: ctaLink
                         label: ctaLink
-                        required: false
-                        widget: string
-                      - name: phone
-                        label: phone
-                        required: false
-                        widget: string
-                      - name: phoneHref
-                        label: phoneHref
                         required: false
                         widget: string
                       - name: image
@@ -21614,6 +21602,18 @@ collections:
                         choose_url: true
                       - name: imageAlt
                         label: imageAlt
+                        required: false
+                        widget: string
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: phone
+                        label: phone
+                        required: false
+                        widget: string
+                      - name: phoneHref
+                        label: phoneHref
                         required: false
                         widget: string
               - label: licensing-protection
@@ -21634,14 +21634,6 @@ collections:
                     fields:
                       - name: eyebrow
                         label: eyebrow
-                        required: false
-                        widget: string
-                      - name: titlePart1
-                        label: titlePart1
-                        required: false
-                        widget: string
-                      - name: titleHighlight
-                        label: titleHighlight
                         required: false
                         widget: string
                       - name: description
@@ -21665,6 +21657,14 @@ collections:
                             label: text
                             required: false
                             widget: string
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
                       - name: alsoIncludedLabel
                         label: alsoIncludedLabel
                         required: false
@@ -33301,6 +33301,10 @@ collections:
                         label: subtitle
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: overlayGradient
                         label: overlayGradient
                         required: false
@@ -33321,10 +33325,6 @@ collections:
                         widget: string
                       - name: backLabel
                         label: backLabel
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
                         required: false
                         widget: string
                       - name: description
@@ -33697,7 +33697,7 @@ collections:
                 value: "areaswe_serve_page::custom_1779129478407_8vbti"
               - label: "Areas We Serve — Columbus › Hero"
                 value: "areascolumbus_page::custom_1779130922_columbus_hero"
-              - label: "Areas We Serve — Columbus › 5-Step Approach"
+              - label: "Areas We Serve — Columbus › Our Exceptional Services"
                 value: "areascolumbus_page::custom_1779200000_columbus_approach"
               - label: "Areas We Serve — Columbus › Trust (Global)"
                 value: "areascolumbus_page::custom_1779195015061_0m1v8p"
@@ -34913,10 +34913,10 @@ collections:
                 value: "whymaxima_page::custom_whymaxima_hero"
               - label: "Why Maxima › Why Maxima"
                 value: "whymaxima_page::custom_whymaxima_intro"
-              - label: "Why Maxima › Areas"
-                value: "whymaxima_page::custom_areas_seed"
               - label: "Why Maxima › Values"
                 value: "whymaxima_page::custom_values_seed"
+              - label: "Why Maxima › Areas"
+                value: "whymaxima_page::custom_areas_seed"
               - label: "Why Maxima › Reviews"
                 value: "whymaxima_page::reviews"
               - label: "Why Maxima › Trust (Global)"
