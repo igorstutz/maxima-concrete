@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
-import { newLeadId, pushLeadEvent } from "@/lib/analytics";
+import { newLeadId, pushLeadEvent, toE164 } from "@/lib/analytics";
 import { saveVisitorData, getOrCreateExternalId } from "@/lib/visitor-data";
 
 interface ContactContent {
@@ -133,6 +133,16 @@ export default function Contact({ content }: { content: Record<string, any> }) {
           lastName: String(data.get("last_name") || ""),
           zip: String(data.get("zip_code") || ""),
         },
+      });
+      // Guarda quem é esta pessoa para as visitas seguintes: a partir daqui os
+      // PageViews dela deixam de ser anônimos. Mesma normalização usada no
+      // evento acima, para o dado não divergir entre um envio e o outro.
+      saveVisitorData({
+        email_address: String(data.get("email") || "").trim().toLowerCase(),
+        phone_number: toE164(String(data.get("phone") || "")),
+        first_name: String(data.get("first_name") || "").trim(),
+        last_name: String(data.get("last_name") || "").trim(),
+        postal_code: String(data.get("zip_code") || "").trim(),
       });
       form.reset();
       setSelectedOption("");

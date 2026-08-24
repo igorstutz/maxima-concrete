@@ -66,7 +66,7 @@ export function newLeadId(): string {
  * código do país. Sem isso a taxa de correspondência das conversões aprimoradas
  * cai — "(614) 384-5917" e "+16143845917" não casam do outro lado.
  */
-function toE164(phone: string): string {
+export function toE164(phone: string): string {
   const digits = (phone || "").replace(/\D/g, "");
   if (!digits) return "";
   if (digits.length === 10) return `+1${digits}`; // número dos EUA sem o país
