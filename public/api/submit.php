@@ -154,7 +154,7 @@ function handle_resume(string $recipient): void {
         'email_status' => $ok ? 'sent' : 'failed',
     ]);
 
-    if ($ok) { echo json_encode(['ok' => true]); return; }
+    if ($ok) { echo json_encode(['ok' => true, 'via' => mailer_ultimo_transporte()]); return; }
     http_response_code(500);
     echo json_encode(['ok' => false, 'error' => 'Send failed. Please try again or email info@maximaconcrete.com.']);
 }
@@ -284,7 +284,10 @@ log_submission([
 ]);
 
 if ($ok) {
-    echo json_encode(['ok' => true]);
+    // `via` diz por onde a mensagem saiu (brevo/resend/mail). Serve para
+    // conferir a configuração de envio sem abrir o servidor nem a caixa de
+    // entrada — os dois caminhos são idênticos vistos de fora.
+    echo json_encode(['ok' => true, 'via' => mailer_ultimo_transporte()]);
 
     // Responde ao visitante ANTES de falar com o Meta: a tela de agradecimento
     // não deve esperar por uma chamada externa. Onde a função existe, a conexão

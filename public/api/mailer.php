@@ -232,6 +232,21 @@ function mailer_send_resend(array $cfg, array $msg): bool
 }
 
 /**
+ * Por onde a última mensagem saiu: 'brevo', 'resend' ou 'mail'.
+ *
+ * Existe porque a diferença entre "saiu autenticado" e "saiu pelo caminho que
+ * cai em spam" é invisível de fora: os dois devolvem sucesso, levam o mesmo
+ * tempo e só se distinguem abrindo o e-mail que chegou ou o log no servidor.
+ * Devolver isto na resposta permite conferir a configuração com um único
+ * pedido, sem depender de acesso à hospedagem nem à caixa de entrada.
+ * Não revela nada: diz o transporte, nunca a credencial.
+ */
+function mailer_ultimo_transporte(): string
+{
+    return $GLOBALS['mailer_transporte'] ?? 'nenhum';
+}
+
+/**
  * Envia uma mensagem a UM destinatário.
  *
  * @param array $msg to, subject, text, reply_to (opcional),
@@ -260,9 +275,14 @@ function enviar_email(array $msg): bool
         $enviou = $cfg['provider'] === 'resend'
             ? mailer_send_resend($cfg, $msg)
             : mailer_send_brevo($cfg, $msg);
-        if ($enviou) return true;
+        if ($enviou) {
+            $GLOBALS['mailer_transporte'] = $cfg['provider'];
+            return true;
+        }
         $apiCaiu = true;
     }
+
+    $GLOBALS['mailer_transporte'] = 'mail';
 
     // Caminho antigo. Vale enquanto o domínio não está verificado no Resend, e
     // como rede de segurança se a API estiver fora do ar: melhor um e-mail em
