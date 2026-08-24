@@ -81,13 +81,17 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 - Widgets externos (Elfsight reviews/instagram) só carregam ao entrar na viewport.
 
 ## E-mail dos formulários
-- Sai por `public/api/mailer.php` (Resend, credenciais em `.private/resend.php`),
+- Sai por `public/api/mailer.php` (Brevo, credenciais em `.private/mailer.php`),
   **não** por `mail()`. Motivo: a Hostinger descarta o envelope que o `-f` pede e
   escreve o hostname do servidor no lugar, então o SPF verificado é o de
   `main-hosting.eu` — passa, mas não ALINHA com maximaconcrete.com. Sem DKIM, o
   DMARC falha e o Gmail estampa "via srv1537.main-hosting.eu" e manda para spam.
   Ajustar cabeçalho não resolve; a assinatura tem de vir de quem tem a chave do
   domínio. Sem o arquivo de credenciais, cai no `mail()` de antes.
+- Brevo e não Resend porque o DNS está na Wix, que não cria MX em subdomínio —
+  e o Resend precisa de um em `send` para verificar o domínio. O Brevo se
+  verifica só com TXT. O código dos dois está pronto: o provedor sai do prefixo
+  da chave (`re_` = Resend), então quando o DNS sair da Wix basta trocar a chave.
 - Todo lead é gravado em `.private/submissions.log` antes de qualquer envio, e o
   painel `/admin` lê desse arquivo — e-mail com problema nunca perde lead.
 
