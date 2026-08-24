@@ -41,13 +41,22 @@ declare(strict_types=1);
  *  quebra, só segue com o problema de entrega.
  * ---------------------------------------------------------------------- */
 
-/** Pasta .private, procurada nos dois lugares que os scripts deste site usam. */
-function mailer_private_dir(): ?string
+/**
+ * Pastas .private em uso neste site — são duas, e as duas existem.
+ *
+ * submit.php e track-call.php gravam em public_html/.private (é de onde o
+ * painel admin lê); meta-capi.php e oauth guardam credenciais um nível acima,
+ * fora da raiz web. Procurar só a primeira que exista faria o arquivo de
+ * configuração passar despercebido conforme onde tivesse sido criado — e o
+ * envio cairia no mail() sem avisar ninguém.
+ */
+function mailer_private_dirs(): array
 {
+    $dirs = [];
     foreach ([__DIR__ . '/../.private', __DIR__ . '/../../.private'] as $dir) {
-        if (is_dir($dir)) return $dir;
+        if (is_dir($dir)) $dirs[] = $dir;
     }
-    return null;
+    return $dirs;
 }
 
 /** Configuração do serviço de envio, ou null se ainda não foi instalada. */
@@ -57,20 +66,25 @@ function mailer_config(): ?array
     if ($cache !== false) return $cache;
 
     $cache = null;
-    $dir = mailer_private_dir();
-    if ($dir === null) return null;
 
-    // Aceita o nome antigo para não quebrar uma instalação já feita.
-    $cfg = @include $dir . '/mailer.php';
-    if (!is_array($cfg) || empty($cfg['api_key'])) {
-        $cfg = @include $dir . '/resend.php';
+    // Procura o ARQUIVO nas duas pastas, não a pasta. `resend.php` é o nome
+    // antigo, aceito para não quebrar uma instalação já feita.
+    $achado = null;
+    foreach (mailer_private_dirs() as $dir) {
+        foreach (['mailer.php', 'resend.php'] as $nome) {
+            $cfg = @include $dir . '/' . $nome;
+            if (is_array($cfg) && !empty($cfg['api_key'])) {
+                $achado = $cfg;
+                break 2;
+            }
+        }
     }
-    if (!is_array($cfg) || empty($cfg['api_key'])) return null;
+    if ($achado === null) return null;
 
-    $chave = (string)$cfg['api_key'];
+    $chave = (string)$achado['api_key'];
     // O provedor sai do prefixo da chave: as duas são inconfundíveis, e assim
     // trocar de serviço é só trocar a chave, sem risco de esquecer um campo.
-    $provedor = (string)($cfg['provider'] ?? '');
+    $provedor = (string)($achado['provider'] ?? '');
     if ($provedor === '') {
         // strncmp e não str_starts_with: aquela exige PHP 8 e a versão do
         // servidor não está fixada — um erro fatal aqui derruba o formulário.
@@ -79,7 +93,7 @@ function mailer_config(): ?array
 
     $cache = [
         'api_key'  => $chave,
-        'from'     => (string)($cfg['from'] ?? 'Maxima Concrete Website <no-reply@maximaconcrete.com>'),
+        'from'     => (string)($achado['from'] ?? 'Maxima Concrete Website <no-reply@maximaconcrete.com>'),
         'provider' => $provedor,
     ];
     return $cache;
@@ -100,10 +114,12 @@ function mailer_split_address(string $endereco): array
 /** Registro de falha de envio, para diagnóstico. Sem chave, sem dado pessoal. */
 function mailer_log(string $linha): void
 {
-    $dir = mailer_private_dir();
-    if ($dir === null) return;
+    $dirs = mailer_private_dirs();
+    if (!$dirs) return;
+    // Grava na primeira (public_html/.private), a mesma pasta do
+    // submissions.log — é onde já se procura quando algo dá errado.
     @file_put_contents(
-        $dir . '/mailer.log',
+        $dirs[0] . '/mailer.log',
         '[' . gmdate('Y-m-d\TH:i:s\Z') . '] ' . $linha . "\n",
         FILE_APPEND | LOCK_EX
     );
@@ -212,7 +228,16 @@ function enviar_email(array $msg): bool
     static $apiCaiu = false;
 
     $cfg = mailer_config();
-    if ($cfg !== null && !$apiCaiu) {
+    if ($cfg === null) {
+        // Sem configuração, tudo sai pelo caminho antigo e vai para spam. Isso
+        // não pode ser silencioso: foi o que fez uma instalação já feita passar
+        // por "não funcionou". Uma linha por requisição, não por destinatário.
+        if (!$apiCaiu) {
+            $apiCaiu = true;
+            mailer_log('sem configuracao: procurei mailer.php e resend.php em '
+                . implode(' e ', mailer_private_dirs() ?: ['(nenhuma pasta .private encontrada)']));
+        }
+    } elseif (!$apiCaiu) {
         $enviou = $cfg['provider'] === 'resend'
             ? mailer_send_resend($cfg, $msg)
             : mailer_send_brevo($cfg, $msg);
