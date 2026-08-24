@@ -178,8 +178,11 @@ function mailer_send_brevo(array $cfg, array $msg): bool
         'sender'      => ['name' => $de['nome'], 'email' => $de['email']],
         'to'          => [['email' => $msg['to']]],
         'subject'     => $msg['subject'],
+        // Os dois formatos juntos: o cliente escolhe o que sabe exibir, e a
+        // versão em texto ainda conta a favor da entrega.
         'textContent' => $msg['text'],
     ];
+    if (!empty($msg['html'])) $payload['htmlContent'] = $msg['html'];
     if (!empty($msg['reply_to'])) {
         $r = mailer_split_address((string)$msg['reply_to']);
         $payload['replyTo'] = array_filter(['email' => $r['email'], 'name' => $r['nome']]);
@@ -212,6 +215,7 @@ function mailer_send_resend(array $cfg, array $msg): bool
         'subject' => $msg['subject'],
         'text'    => $msg['text'],
     ];
+    if (!empty($msg['html'])) $payload['html'] = $msg['html'];
     if (!empty($msg['reply_to'])) {
         $payload['reply_to'] = $msg['reply_to'];
     }
@@ -249,7 +253,7 @@ function mailer_ultimo_transporte(): string
 /**
  * Envia uma mensagem a UM destinatário.
  *
- * @param array $msg to, subject, text, reply_to (opcional),
+ * @param array $msg to, subject, text, html (opcional), reply_to (opcional),
  *                   attachment => ['name' => ..., 'data' => ...] (opcional)
  */
 function enviar_email(array $msg): bool
@@ -304,13 +308,36 @@ function enviar_email(array $msg): bool
     $headers[] = 'MIME-Version: 1.0';
     $headers[] = 'X-Mailer: Maxima Concrete Website';
 
-    if (!empty($msg['attachment']['name']) && isset($msg['attachment']['data'])) {
-        $limite    = '=_' . md5(uniqid('', true));
+    $temHtml   = !empty($msg['html']);
+    $temAnexo  = !empty($msg['attachment']['name']) && isset($msg['attachment']['data']);
+
+    // multipart/alternative = as duas versões da MESMA mensagem, e o cliente
+    // usa a que souber exibir. Texto vem primeiro por especificação: a última
+    // parte é a preferida, então o HTML tem de ficar por último.
+    if ($temHtml) {
+        $alt   = '=_alt_' . md5(uniqid('', true));
+        $miolo = "--$alt\r\n"
+            . "Content-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n"
+            . $msg['text'] . "\r\n"
+            . "--$alt\r\n"
+            . "Content-Type: text/html; charset=utf-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n"
+            . $msg['html'] . "\r\n"
+            . "--$alt--";
+        $miolotipo = "multipart/alternative; boundary=\"$alt\"";
+    } else {
+        $miolo     = $msg['text'];
+        $miolotipo = 'text/plain; charset=utf-8';
+    }
+
+    if ($temAnexo) {
+        // O anexo envolve tudo: multipart/mixed por fora, o miolo por dentro.
+        $limite    = '=_mix_' . md5(uniqid('', true));
         $headers[] = "Content-Type: multipart/mixed; boundary=\"$limite\"";
         $nome      = $msg['attachment']['name'];
         $corpo     = "--$limite\r\n"
-            . "Content-Type: text/plain; charset=utf-8\r\nContent-Transfer-Encoding: 8bit\r\n\r\n"
-            . $msg['text'] . "\r\n"
+            . "Content-Type: $miolotipo\r\n"
+            . ($temHtml ? '' : "Content-Transfer-Encoding: 8bit\r\n")
+            . "\r\n" . $miolo . "\r\n"
             . "--$limite\r\n"
             . "Content-Type: application/octet-stream; name=\"$nome\"\r\n"
             . "Content-Transfer-Encoding: base64\r\n"
@@ -318,9 +345,9 @@ function enviar_email(array $msg): bool
             . chunk_split(base64_encode((string)$msg['attachment']['data'])) . "\r\n"
             . "--$limite--";
     } else {
-        $headers[] = 'Content-Type: text/plain; charset=utf-8';
-        $headers[] = 'Content-Transfer-Encoding: 8bit';
-        $corpo     = $msg['text'];
+        $headers[] = "Content-Type: $miolotipo";
+        if (!$temHtml) $headers[] = 'Content-Transfer-Encoding: 8bit';
+        $corpo = $miolo;
     }
 
     return @mail(

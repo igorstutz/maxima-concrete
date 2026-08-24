@@ -12,6 +12,7 @@ declare(strict_types=1);
  * ---------------------------------------------------------------------- */
 
 require_once __DIR__ . '/mailer.php';
+require_once __DIR__ . '/email-template.php';
 
 // === Configuration ====================================================
 // Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
@@ -119,7 +120,7 @@ function handle_resume(string $recipient): void {
         }
     }
 
-    $subject = 'New Resume Submitted | Maxima Concrete';
+    $subject = '🟢 New resume submitted from ' . $name;
     $text  = "New job application from the Maxima Concrete website.\n";
     $text .= str_repeat('-', 60) . "\n\n";
     $text .= "Name:      $name\n";
@@ -131,6 +132,16 @@ function handle_resume(string $recipient): void {
     $text .= str_repeat('-', 60) . "\nSubmitted: " . gmdate('Y-m-d H:i:s') . " UTC\n";
     $text .= "From IP:   " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 
+    $html = email_html_resume([
+        'name'     => $name,
+        'phone'    => $phone,
+        'email'    => $email,
+        'position' => $position,
+        'resume'   => $fileNote,
+        'message'  => $msg,
+        'ip'       => (string)($_SERVER['REMOTE_ADDR'] ?? 'unknown'),
+    ]);
+
     // Um envio por destinatário, mesmo motivo do formulário de contato.
     $ok = false;
     foreach (array_map('trim', explode(',', $recipient)) as $destinatario) {
@@ -139,6 +150,7 @@ function handle_resume(string $recipient): void {
             'to'         => $destinatario,
             'subject'    => $subject,
             'text'       => $text,
+            'html'       => $html,
             'reply_to'   => $hasEmail ? "$name <$email>" : null,
             'attachment' => ($attachData !== null && $attachName !== null)
                 ? ['name' => $attachName, 'data' => $attachData]
@@ -215,7 +227,9 @@ if ($errors) {
 }
 
 $fullName = trim("$firstName $lastName");
-$subject  = "New estimate request from $fullName";
+// O emoji faz o aviso saltar numa caixa cheia de e-mail comum. Um só, no
+// começo: vários viram cara de disparo em massa para os filtros.
+$subject  = "🔵 New estimate request from $fullName";
 
 $body  = "New estimate request from the Maxima Concrete website.\n";
 $body .= str_repeat('-', 60) . "\n\n";
@@ -241,6 +255,22 @@ $body .= "From IP:     " . ($_SERVER['REMOTE_ADDR'] ?? 'unknown') . "\n";
 // formulário para a caixa de spam. Separado, cada mensagem parece o que é (um
 // aviso individual) e um endereço com problema não contamina os outros.
 //
+// Versão em HTML, com a identidade do site. A versão em texto acima segue
+// junto na mesma mensagem: é o que aparece em cliente sem HTML, em prévia de
+// notificação, e ajuda na entrega.
+$html = email_html_lead([
+    'name'       => $fullName,
+    'phone'      => $phone,
+    'email'      => $email,
+    'street'     => $street,
+    'zip'        => $zip,
+    'services'   => $services,
+    'hear_about' => $hearAbout,
+    'message'    => $message,
+    'page'       => $pageUrl,
+    'ip'         => (string)($_SERVER['REMOTE_ADDR'] ?? 'unknown'),
+]);
+
 // Cabeçalhos (Message-ID, Date, MIME) ficam em mailer.php, junto do envio.
 $ok = false;
 $falhas = [];
@@ -252,6 +282,7 @@ foreach (array_map('trim', explode(',', $RECIPIENT)) as $destinatario) {
         'to'       => $destinatario,
         'subject'  => $subject,
         'text'     => $body,
+        'html'     => $html,
         'reply_to' => $hasEmail ? "$fullName <$email>" : null,
     ]);
     if ($enviado) {
