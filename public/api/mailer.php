@@ -81,7 +81,9 @@ function mailer_config(): ?array
     }
     if ($achado === null) return null;
 
-    $chave = (string)$achado['api_key'];
+    // trim: copiar a chave do painel costuma trazer espaço ou quebra de linha
+    // junto, e o servidor responde 401 sem dizer o porquê.
+    $chave = trim((string)$achado['api_key']);
     // O provedor sai do prefixo da chave: as duas são inconfundíveis, e assim
     // trocar de serviço é só trocar a chave, sem risco de esquecer um campo.
     $provedor = (string)($achado['provider'] ?? '');
@@ -122,6 +124,23 @@ function mailer_log(string $linha): void
         $dirs[0] . '/mailer.log',
         '[' . gmdate('Y-m-d\TH:i:s\Z') . '] ' . $linha . "\n",
         FILE_APPEND | LOCK_EX
+    );
+}
+
+/**
+ * Descreve a chave para o log sem revelá-la: só o prefixo (que é público e diz
+ * o tipo) e o tamanho. Serve para distinguir chave truncada na cópia, chave do
+ * tipo errado (a credencial de SMTP do Brevo não vale na API) e espaço
+ * sobrando — casos que dão o mesmo 401 e são indistinguíveis sem isto.
+ */
+function mailer_key_hint(string $chave): string
+{
+    $limpa = trim($chave);
+    return sprintf(
+        'chave=%s… %d chars%s',
+        substr($limpa, 0, 8),
+        strlen($limpa),
+        strlen($limpa) !== strlen($chave) ? ' (ATENCAO: tinha espaco/quebra de linha nas pontas)' : ''
     );
 }
 
@@ -177,7 +196,7 @@ function mailer_send_brevo(array $cfg, array $msg): bool
         ['api-key: ' . $cfg['api_key'], 'Accept: application/json'],
         $payload
     );
-    if (!$ok) mailer_log("brevo status=$status $detalhe");
+    if (!$ok) mailer_log("brevo status=$status $detalhe | " . mailer_key_hint($cfg['api_key']));
     return $ok;
 }
 
@@ -208,7 +227,7 @@ function mailer_send_resend(array $cfg, array $msg): bool
         ['Authorization: Bearer ' . $cfg['api_key']],
         $payload
     );
-    if (!$ok) mailer_log("resend status=$status $detalhe");
+    if (!$ok) mailer_log("resend status=$status $detalhe | " . mailer_key_hint($cfg['api_key']));
     return $ok;
 }
 
