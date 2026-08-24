@@ -312,7 +312,8 @@ if ($ok) {
 
     require __DIR__ . '/meta-capi.php';
     meta_capi_send_lead([
-        'lead_id'    => field('lead_id'),
+        'lead_id'     => field('lead_id'),
+        'external_id' => field('external_id'),
         'form'       => 'contact',
         'email'      => $email,
         'phone'      => $phone,

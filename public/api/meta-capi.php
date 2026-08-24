@@ -81,6 +81,9 @@ function meta_capi_send_lead(array $lead): void
     meta_put($userData, 'ct', (string)($lead['city'] ?? ''));
     meta_put($userData, 'st', meta_state_from_zip((string)($lead['zip_code'] ?? '')));
     meta_put($userData, 'country', 'us');
+    // Identificador anônimo do navegador, o mesmo que o Pixel envia. Liga este
+    // evento aos PageViews do mesmo visitante, inclusive os anteriores ao lead.
+    meta_put($userData, 'external_id', (string)($lead['external_id'] ?? ''));
 
     // Estes NÃO são hasheados — o Meta usa para casar com a sessão do navegador.
     $userData['client_ip_address'] = (string)($_SERVER['REMOTE_ADDR'] ?? '');

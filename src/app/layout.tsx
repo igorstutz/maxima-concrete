@@ -100,10 +100,21 @@ w[l]=w[l]||[];
 // na primeira medição da página. É o que levanta a nota de correspondência do
 // PageView, que sem isso conta só com IP, user agent e cookie.
 try {
+  // Identificador anônimo do navegador: existe desde a primeira visita e conta
+  // para a correspondência mesmo sem nenhum dado de contato.
+  var vid = w.localStorage.getItem('maxima-visitor-id');
+  if (!vid) {
+    vid = (w.crypto && w.crypto.randomUUID) ? w.crypto.randomUUID()
+        : ('v-' + Date.now() + '-' + Math.random().toString(36).slice(2, 12));
+    w.localStorage.setItem('maxima-visitor-id', vid);
+  }
+  var conhecido = { external_id: vid };
+
   var vd = JSON.parse(w.localStorage.getItem('maxima-visitor') || 'null');
   if (vd && vd.data && (Date.now() - vd.at) < 15552000000) {
-    w[l].push({ known_user_data: vd.data });
+    for (var k in vd.data) { if (vd.data[k]) conhecido[k] = vd.data[k]; }
   }
+  w[l].push({ known_user_data: conhecido });
 } catch (e) {}
 w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],

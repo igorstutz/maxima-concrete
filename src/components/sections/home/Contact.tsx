@@ -5,7 +5,7 @@ import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
 import { newLeadId, pushLeadEvent } from "@/lib/analytics";
-import { saveVisitorData } from "@/lib/visitor-data";
+import { saveVisitorData, getOrCreateExternalId } from "@/lib/visitor-data";
 
 interface ContactContent {
   title?: string;
@@ -107,6 +107,9 @@ export default function Contact({ content }: { content: Record<string, any> }) {
     // reportar o lead à API de Conversões do Meta (evita contar duas vezes).
     const leadId = newLeadId();
     data.set("lead_id", leadId);
+    // Mesmo identificador de navegador que o Pixel usa, para o evento do
+    // servidor e o do navegador falarem do mesmo visitante.
+    data.set("external_id", getOrCreateExternalId());
 
     setStatus("sending");
     setErrorMessage("");

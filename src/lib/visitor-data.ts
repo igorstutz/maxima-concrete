@@ -15,8 +15,36 @@
  */
 
 const CHAVE = "maxima-visitor";
+const CHAVE_ID = "maxima-visitor-id";
 /** Meio ano: o ciclo de decisão de uma obra é longo, e o dado envelhece pouco. */
 const VALIDADE_MS = 180 * 24 * 60 * 60 * 1000;
+
+/**
+ * Identificador anônimo e estável deste navegador.
+ *
+ * É o que o Meta chama de `external_id` e conta para a correspondência mesmo em
+ * visita anônima — sem e-mail, sem telefone, sem localização. Não é dado
+ * pessoal: um código aleatório que só diz "os eventos abaixo vêm do mesmo
+ * navegador", o que permite ao Meta ligar a visita de hoje ao lead de semana que
+ * vem, e o evento do navegador ao do servidor.
+ *
+ * Vale a pena porque não depende de nada que o visitante faça, ao contrário dos
+ * dados de contato, que só existem depois de um formulário enviado.
+ */
+export function getOrCreateExternalId(): string {
+  try {
+    const existente = localStorage.getItem(CHAVE_ID);
+    if (existente) return existente;
+    const novo =
+      typeof crypto !== "undefined" && "randomUUID" in crypto
+        ? crypto.randomUUID()
+        : `v-${Date.now()}-${Math.random().toString(36).slice(2, 12)}`;
+    localStorage.setItem(CHAVE_ID, novo);
+    return novo;
+  } catch {
+    return "";
+  }
+}
 
 export type VisitorData = {
   email_address?: string;
