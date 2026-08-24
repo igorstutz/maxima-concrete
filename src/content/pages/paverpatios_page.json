@@ -34,9 +34,9 @@
         "titleLine2": "Outdoor Living",
         "images": [],
         "imageLarge": "/images/cms/uploads/1784041502059-ihd5m8.webp",
-        "paragraph1": "Transform your backyard with a custom <b>paver patio</b> designed for beauty, durability, and everyday enjoyment. With <b>over 1,000 patios installed</b>, Maxima Concrete combines premium pavers, expert craftsmanship, and precise installation to create outdoor spaces that match your style, increase your home’s value, and stand the test of time.",
-        "paragraph2": "Every paver patio is constructed with proper base preparation, precision grading, and expert craftsmanship to ensure long-term durability and performance. Whether you’re creating a space for entertaining, outdoor dining, or relaxing with family, we build patios that are low-maintenance, structurally sound, and designed to complement your home for years to come.",
-        "imageTopRight": "/images/cms/uploads/1784041491315-s8eamk.webp",
+        "paragraph1": "Transform your backyard with a custom <b> paver, brick and stone patio</b> designed for beauty, durability, and everyday enjoyment. With <b>over 1,000 patios installed</b>, Maxima Concrete combines premium paver, brick and stone, expert craftsmanship, and precise installation to create outdoor spaces that match your style, increase your home’s value, and stand the test of time.",
+        "paragraph2": "Every paver, brick and stone patio is constructed with proper base preparation, precision grading, and expert craftsmanship to ensure long-term durability and performance. Whether you’re creating a space for entertaining, outdoor dining, or relaxing with family, we build patios that are low-maintenance, structurally sound, and designed to complement your home for years to come.",
+        "imageTopRight": "/images/stamped-concrete.webp",
         "paragraphLayout": ""
       }
     },
@@ -53,7 +53,7 @@
         "items": [
           "Flexible, crack-resistant performance",
           "Easy repair with individual paver replacement",
-          "Pavers installed over a concrete subdeck",
+          "Pavers, bricks and stones installed over a concrete subdeck",
           "Endless layout and design options"
         ],
         "paragraph": "Whether you envision a modern entertainment space or a warm, inviting retreat with a fire feature and seating walls, our in-house team brings precision craftsmanship and premium materials together to create something truly lasting."
@@ -73,7 +73,7 @@
         "backgroundImage": "/images/cms/uploads/1784041545687-bkwksk.webp",
         "overlayOpacity": 70,
         "eyebrow": "by Maxima Concrete",
-        "benefits": "",
+        "benefits": [],
         "overlayGradient": false
       }
     },
@@ -84,14 +84,14 @@
       "content": {
         "title": "Paver Patios That Bring \nYour Backyard to Life",
         "ctaText": "Design My Paver Patio",
-        "_sourceLabel": "Design Paver Driveway",
+        "_sourceLabel": "Design Paver, Brick and Stone Driveway",
         "ctaLink": "#contact",
         "bottomText": "",
-        "description": "A paver patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium paver materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
+        "description": "A  paver, brick and stone patio isn’t just a surface — it’s the heart of your outdoor living space. At Maxima Concrete, we combine artistry and engineering to design patios that blend natural beauty with long-lasting strength.\n\nOur team uses premium  paver, brick and stone materials in earthy tones, warm reds, or modern grays — creating elegant layouts that reflect your home’s character while withstanding Central Ohio’s seasons. Whether you want a cozy circular firepit area or a large entertaining zone, we’ll bring your vision to life with precision and care.",
         "backgroundImage": "/images/cms/uploads/1784041583591-tlmvw.webp",
         "overlayOpacity": 90,
         "eyebrow": "",
-        "benefits": "",
+        "benefits": [],
         "overlayGradient": false
       }
     },
@@ -125,9 +125,9 @@
       "label": "Reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
