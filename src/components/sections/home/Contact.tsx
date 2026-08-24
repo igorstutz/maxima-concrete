@@ -5,6 +5,7 @@ import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
 import { newLeadId, pushLeadEvent } from "@/lib/analytics";
+import { saveVisitorData } from "@/lib/visitor-data";
 
 interface ContactContent {
   title?: string;

@@ -45,6 +45,20 @@ function meta_put(array &$dados, string $chave, string $valor): void
 }
 
 /**
+ * Estado a partir do CEP. O formulário não pergunta o estado, mas o Meta usa
+ * esse campo para casar o lead com uma pessoa — e a área atendida é Ohio, cujos
+ * CEPs começam em 43, 44 ou 45. Fora dessa faixa devolve vazio: chutar o estado
+ * errado não ajuda a correspondência e ainda registra dado incorreto.
+ */
+function meta_state_from_zip(string $zip): string
+{
+    $d = preg_replace('/\D/', '', $zip) ?? '';
+    if (strlen($d) < 5) return '';
+    $prefixo = substr($d, 0, 2);
+    return in_array($prefixo, ['43', '44', '45'], true) ? 'oh' : '';
+}
+
+/**
  * Envia um evento "Lead". Nunca lança e nunca interrompe: se o Meta estiver
  * fora do ar ou o token expirar, o lead já foi entregue por e-mail e gravado no
  * log — a medição é o que pode falhar, não o atendimento ao cliente.
@@ -65,6 +79,7 @@ function meta_capi_send_lead(array $lead): void
     meta_put($userData, 'ln', (string)($lead['last_name'] ?? ''));
     meta_put($userData, 'zp', (string)($lead['zip_code'] ?? ''));
     meta_put($userData, 'ct', (string)($lead['city'] ?? ''));
+    meta_put($userData, 'st', meta_state_from_zip((string)($lead['zip_code'] ?? '')));
     meta_put($userData, 'country', 'us');
 
     // Estes NÃO são hasheados — o Meta usa para casar com a sessão do navegador.

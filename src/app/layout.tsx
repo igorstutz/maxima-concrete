@@ -94,7 +94,18 @@ export default function RootLayout({
 // e as listas do Google Ads. Barrar aqui vale para todas as tags de uma vez,
 // inclusive as que a equipe de marketing adicionar depois.
 if (w.location.pathname.indexOf('/admin') === 0) { return; }
-w[l]=w[l]||[];w[l].push({'gtm.start':
+w[l]=w[l]||[];
+// Quem já enviou um formulário deixa de ser anônimo nas visitas seguintes: os
+// dados vão para o dataLayer ANTES do GTM subir, para o Pixel poder usá-los já
+// na primeira medição da página. É o que levanta a nota de correspondência do
+// PageView, que sem isso conta só com IP, user agent e cookie.
+try {
+  var vd = JSON.parse(w.localStorage.getItem('maxima-visitor') || 'null');
+  if (vd && vd.data && (Date.now() - vd.at) < 15552000000) {
+    w[l].push({ known_user_data: vd.data });
+  }
+} catch (e) {}
+w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
