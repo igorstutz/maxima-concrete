@@ -41,11 +41,17 @@ async function localize(url) {
 
 mkdirSync(DATA_DIR, { recursive: true });
 
-// projects — só os campos usados pelo mapa
+// projects — só os campos usados pelo mapa.
+//
+// O endereço de rua fica FORA de propósito: este arquivo é importado pelos
+// componentes do mapa, ou seja, vai inteiro para o JavaScript que o navegador
+// baixa. Não mostrar no pin não bastaria — bastaria abrir as ferramentas do
+// desenvolvedor para ler a rua e o número da casa de 1.800 clientes de uma vez.
+// O mapa precisa de serviço, região e coordenada; a rua nunca foi usada.
 const projects = JSON.parse(readFileSync(join(HERE, "projects.json"), "utf8"))
   .filter((p) => p.lat && p.lng)
   .map((p) => ({
-    name: p.name, address: p.address, city: p.city, state: p.state,
+    name: p.name, city: p.city, state: p.state,
     zip: p.zip_code || "", lat: p.lat, lng: p.lng,
   }));
 writeFileSync(join(DATA_DIR, "projects.json"), JSON.stringify(projects));

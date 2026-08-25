@@ -17,9 +17,10 @@ interface FindWorkContent {
   mapCenter?: [number, number];
 }
 
+// Sem endereço de rua de propósito: este arquivo chega inteiro ao navegador.
+// Ver _extraction/prepare-data.mjs.
 interface Project {
   name: string;
-  address: string;
   city: string;
   state: string;
   zip: string;
@@ -50,12 +51,21 @@ function distanceMiles(lat1: number, lon1: number, lat2: number, lon2: number): 
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 }
 
+/**
+ * Conteúdo do pin: serviço e região, nunca a rua.
+ *
+ * O endereço da obra é a casa de um cliente, e o mapa é público — mostrar o
+ * número da rua expõe quem contratou. O ZIP situa o visitante igualmente
+ * ("temos obra no seu bairro"), que é para o que o mapa serve.
+ *
+ * Cerca de um quarto dos registros não tem ZIP; nesses, a cidade entra no
+ * lugar, para o pin não ficar sem nenhuma referência de lugar.
+ */
 function popupHtml(p: Project): string {
+  const local = p.zip?.trim() ? `${p.zip.trim()}, ${p.state}` : `${p.city}, ${p.state}`;
   return `<div style="font-family:Poppins,sans-serif;font-size:13px;"><strong>${
     p.name || "Project"
-  }</strong><br/>${p.address ? `${p.address}<br/>` : ""}${p.city}, ${p.state}${
-    p.zip ? ` ${p.zip}` : ""
-  }</div>`;
+  }</strong><br/>${local}</div>`;
 }
 
 /**

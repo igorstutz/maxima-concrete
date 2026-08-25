@@ -8,9 +8,10 @@ import type { Circle, Icon, LayerGroup, Map as LeafletMap, Marker } from "leafle
 import projectsData from "@/content/data/projects.json";
 import { makeProjectPin, makeUserPin } from "@/lib/leaflet-pins";
 
+// Sem endereço de rua de propósito: este arquivo chega inteiro ao navegador.
+// Ver _extraction/prepare-data.mjs.
 interface Project {
   name: string;
-  address: string;
   city: string;
   state: string;
   zip: string;
@@ -71,12 +72,16 @@ function centroidForZip(zip: string): { lat: number; lng: number } | null {
   return { lat, lng };
 }
 
+/**
+ * Conteúdo do pin: serviço e região, nunca a rua — o endereço da obra é a
+ * casa de um cliente e este mapa é público. Mesma regra da seção "Find Our
+ * Work Near You" (src/components/sections/home/FindWork.tsx).
+ */
 function popupHtml(p: Project): string {
+  const local = p.zip?.trim() ? `${p.zip.trim()}, ${p.state}` : `${p.city}, ${p.state}`;
   return `<div style="font-family:Poppins,sans-serif;font-size:13px;"><strong>${
     p.name || "Project"
-  }</strong><br/>${p.address ? `${p.address}<br/>` : ""}${p.city}, ${p.state}${
-    p.zip ? ` ${p.zip}` : ""
-  }</div>`;
+  }</strong><br/>${local}</div>`;
 }
 
 /**
