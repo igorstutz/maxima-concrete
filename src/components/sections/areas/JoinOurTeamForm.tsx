@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { ArrowRight, Upload } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
@@ -28,6 +28,24 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [fileName, setFileName] = useState("");
+
+  const sectionRef = useRef<HTMLElement>(null);
+  const sentRef = useRef<HTMLDivElement>(null);
+
+  // Mesmo caso do formulário de contato: o aviso de recebido é bem mais curto
+  // que o formulário, então a página encolhe e a confirmação fica acima do que
+  // está na tela. Ver src/components/sections/home/Contact.tsx.
+  useEffect(() => {
+    if (status !== "sent") return;
+    const suave =
+      typeof window.matchMedia === "function" &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    sectionRef.current?.scrollIntoView({
+      behavior: suave ? "smooth" : "auto",
+      block: "start",
+    });
+    sentRef.current?.focus({ preventScroll: true });
+  }, [status]);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -75,7 +93,11 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
     "w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm text-navy focus:border-ocean focus:outline-none focus:ring-2 focus:ring-ocean/40";
 
   return (
-    <section id="apply" className="scroll-mt-24 bg-surface-soft py-16 sm:py-24">
+    <section
+      id="apply"
+      ref={sectionRef}
+      className="scroll-mt-24 bg-surface-soft py-16 sm:py-24"
+    >
       <Container width="narrow">
         <div className="mb-8 text-center">
           <h2 className="text-2xl font-semibold tracking-[-1px] text-navy md:text-3xl lg:text-4xl">
@@ -85,7 +107,13 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
         </div>
 
         {status === "sent" ? (
-          <div className="rounded-2xl border border-ocean/20 bg-white p-8 text-center shadow-sm">
+          <div
+            ref={sentRef}
+            tabIndex={-1}
+            role="status"
+            aria-live="polite"
+            className="rounded-2xl border border-ocean/20 bg-white p-8 text-center shadow-sm focus:outline-none"
+          >
             <p className="text-lg font-semibold text-navy">Thank you for applying!</p>
             <p className="mt-2 text-sm text-gray-600">
               We&apos;ve received your application and will reach out if there&apos;s a fit.

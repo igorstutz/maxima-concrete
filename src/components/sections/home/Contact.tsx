@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useState, useEffect, useRef, type FormEvent } from "react";
 import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
@@ -69,6 +69,27 @@ export default function Contact({ content }: { content: Record<string, any> }) {
   const [selectedServices, setSelectedServices] = useState<string[]>([]);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMessage, setErrorMessage] = useState("");
+
+  const sectionRef = useRef<HTMLElement>(null);
+  const successRef = useRef<HTMLDivElement>(null);
+
+  // O formulário é comprido e o agradecimento é curto: ao trocar um pelo
+  // outro a página encolhe, mas a rolagem fica onde estava — quem enviou
+  // continua olhando para o rodapé, sem ver a confirmação. Traz de volta.
+  // Roda depois do render, então o agradecimento já está no DOM.
+  useEffect(() => {
+    if (status !== "success") return;
+    const suave =
+      typeof window.matchMedia === "function" &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    sectionRef.current?.scrollIntoView({
+      behavior: suave ? "smooth" : "auto",
+      block: "start",
+    });
+    // Foco no aviso para quem navega por teclado ou leitor de tela, que não
+    // percebe a troca só pela rolagem. preventScroll para não brigar com ela.
+    successRef.current?.focus({ preventScroll: true });
+  }, [status]);
 
   const hearAboutOptions = c.hearAboutOptions?.length
     ? c.hearAboutOptions
@@ -154,7 +175,11 @@ export default function Contact({ content }: { content: Record<string, any> }) {
   };
 
   return (
-    <section id="contact" className="scroll-mt-20 bg-[#EAEAEA] py-16 sm:py-24">
+    <section
+      id="contact"
+      ref={sectionRef}
+      className="scroll-mt-20 bg-[#EAEAEA] py-16 sm:py-24"
+    >
       <Container>
         {/* Cabeçalho */}
         <div className="mb-8 text-center md:mb-12 lg:text-left">
@@ -165,7 +190,13 @@ export default function Contact({ content }: { content: Record<string, any> }) {
         </div>
 
         {status === "success" ? (
-          <div className="space-y-4 py-16 text-center">
+          <div
+            ref={successRef}
+            tabIndex={-1}
+            role="status"
+            aria-live="polite"
+            className="space-y-4 py-16 text-center focus:outline-none"
+          >
             <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
               <Check className="h-8 w-8 text-green-600" />
             </div>
