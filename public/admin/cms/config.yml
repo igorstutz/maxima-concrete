@@ -1923,7 +1923,7 @@ collections:
                       - name: subtitle
                         label: subtitle
                         required: false
-                        widget: text
+                        widget: string
                       - name: mainImage
                         label: mainImage
                         required: false
@@ -33697,7 +33697,7 @@ collections:
                 value: "areaswe_serve_page::custom_1779129478407_8vbti"
               - label: "Areas We Serve — Columbus › Hero"
                 value: "areascolumbus_page::custom_1779130922_columbus_hero"
-              - label: "Areas We Serve — Columbus › Our 5-Step Approach"
+              - label: "Areas We Serve — Columbus › What We Build"
                 value: "areascolumbus_page::custom_1779200000_columbus_approach"
               - label: "Areas We Serve — Columbus › Trust (Global)"
                 value: "areascolumbus_page::custom_1779195015061_0m1v8p"

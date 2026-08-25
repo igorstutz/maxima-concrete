@@ -33,7 +33,7 @@
     {
       "type": "city-approach",
       "key": "custom_1779200000_columbus_approach",
-      "label": "Our 5-Step Approach",
+      "label": "What We Build",
       "content": {
         "steps": [
           {
@@ -84,10 +84,10 @@
             "text": "Expert In-House Team"
           }
         ],
-        "subtitle": "From the first walkthrough to the final inspection, the same process\nruns on every job we pour.",
+        "subtitle": "Driveways, patios, porches, pool decks and complete outdoor living spaces—poured and finished by our own crews.",
         "mainImage": "/images/hero.webp",
-        "titleBlue": "Our 5-Step Approach",
-        "titleDark": "to Every Columbus Project",
+        "titleBlue": "What We Build",
+        "titleDark": "in Columbus",
         "badge1Image": "/images/cms/uploads/1779137021862-ixwxje.webp",
         "badge2Image": "/images/cms/uploads/1779137089888-v3u37v.webp"
       }
