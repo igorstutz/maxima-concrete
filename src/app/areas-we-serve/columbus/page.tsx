@@ -11,6 +11,15 @@ const columbus = (serviceAreas as ServiceArea[]).find(
 
 export const metadata: Metadata = cityMetadata(columbus);
 
+// Mesma regra das demais cidades (ver ../[citySlug]/page.tsx): a foto da seção
+// vem de service-areas.json, não do JSON da página — assim as 55 páginas usam
+// a mesma fonte e Columbus não fica de fora quando a imagem for trocada.
+const sections = page.sections.map((s) =>
+  s.type === "city-approach" && columbus.image
+    ? { ...s, content: { ...s.content, mainImage: columbus.image } }
+    : s,
+);
+
 export default function Page() {
-  return <PageSections sections={page.sections} />;
+  return <PageSections sections={sections} />;
 }

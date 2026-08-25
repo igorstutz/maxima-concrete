@@ -69,6 +69,12 @@ export default async function CityPage({
         },
       };
     }
+    // A foto da seção vem de Columbus como todo o resto, mas imagem não é
+    // texto: a troca de nome não a alcança, e toda cidade acabava exibindo
+    // Columbus. Cada uma tem a sua cadastrada em service-areas.json.
+    if (s.type === "city-approach" && area.image) {
+      return { ...s, content: { ...content, mainImage: area.image } };
+    }
     return { ...s, content };
   });
 
