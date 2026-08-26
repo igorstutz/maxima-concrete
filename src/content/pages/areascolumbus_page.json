@@ -39,31 +39,31 @@
           {
             "title": "Driveways",
             "description": "Create a durable and beautiful driveway with Maxima Concrete. We offer concrete, paver, brick, and natural stone driveway options, with a variety of styles, colors, and finishes to complement your property. Our team delivers quality installation and lasting results built for everyday use.",
-            "ctaLink": "#driveways",
+            "ctaLink": "/services/driveways/",
             "ctaText": "Explore our Driveways Options"
           },
           {
             "title": "Patios",
             "description": "Transform your outdoor space with a beautiful, durable patio from Maxima Concrete. We offer concrete, paver, brick, and natural stone patio options, customized to match your style and complement your home. From simple gathering areas to detailed outdoor living spaces, we provide quality installation built to last.",
-            "ctaLink": "#contact",
+            "ctaLink": "/services/patios/",
             "ctaText": "Explore our Patios Options"
           },
           {
             "title": "Outdoor Living Services",
             "description": "Create an outdoor space designed for relaxing, entertaining, and enjoying your home. Maxima Concrete offers concrete, paver, brick, and natural stone solutions for patios, walkways, seating areas, and custom outdoor features. We combine quality materials and expert craftsmanship to create beautiful outdoor living spaces built to last.",
-            "ctaLink": "#contact",
+            "ctaLink": "/services/outdoor-living/",
             "ctaText": "Explore Outdoor Living Options"
           },
           {
             "title": "Porch",
             "description": "Enhance your home with a durable and welcoming porch designed to fit your style and property. Maxima Concrete offers concrete, paver, brick, and natural stone porch options, with custom designs and quality installation to create a beautiful entrance or outdoor space built to last.",
-            "ctaLink": "#contact",
+            "ctaLink": "/services/porches/",
             "ctaText": "Explore Porch Options"
           },
           {
             "title": "Pool Decks & Surrounds",
             "description": "Create a beautiful, comfortable space around your pool with a professionally installed deck or surround. Maxima Concrete offers concrete, paver, brick, and natural stone options designed for durability, style, and outdoor enjoyment. We create custom pool areas that complement your home and are built to handle everyday use and outdoor conditions.",
-            "ctaLink": "#contact",
+            "ctaLink": "/services/pool-decks-surrounds/",
             "ctaText": "Explore Pools Decks Options"
           }
         ],

@@ -26,6 +26,15 @@ import { ScrollReveal } from "@/components/ScrollReveal";
 import { SmartLink } from "@/components/sections/home/SmartLink";
 import { legacyAsset } from "@/components/sections/home/legacy";
 
+/**
+ * Destino de um card sem link definido.
+ *
+ * É a página de contato, e não a âncora "#contact" desta mesma página: o botão
+ * diz "Explore ... Options", e rolar a própria página até o formulário não
+ * entrega o que ele promete.
+ */
+const FALLBACK_CTA = "/contact-us/";
+
 interface ApproachFeature {
   icon?: string;
   text?: string;
@@ -99,15 +108,22 @@ export default function CityApproach({ content }: { content: Record<string, any>
           )}
         </ScrollReveal>
 
+        {/*
+          A foto entra como faixa de altura fixa, com recorte, em vez de deixar
+          a proporção do arquivo mandar. As fotos de cidade são 4:3 (800x600):
+          soltas, ocupavam 854px de altura no desktop — mais que a tela inteira
+          de um notebook, e a seção começava sem deixar ver mais nada. Como
+          faixa, a foto situa o lugar sem tomar a página.
+        */}
         {mainImage && (
           <ScrollReveal className="mb-12 overflow-hidden rounded-2xl">
             <Image
               src={legacyAsset(mainImage)}
               alt={titleBlue ? `${titleBlue} ${titleDark}`.trim() : "Our approach"}
               width={1200}
-              height={675}
+              height={420}
               sizes="(min-width: 1024px) 1136px, 100vw"
-              className="h-auto w-full object-cover"
+              className="h-[200px] w-full object-cover sm:h-[280px] lg:h-[360px]"
             />
           </ScrollReveal>
         )}
@@ -186,7 +202,7 @@ export default function CityApproach({ content }: { content: Record<string, any>
                   )}
                   {step.ctaText && (
                     <SmartLink
-                      href={step.ctaLink || "#contact"}
+                      href={step.ctaLink || FALLBACK_CTA}
                       className="gradient-navy mt-auto inline-flex w-fit items-center justify-between gap-3 rounded-[10px] px-5 py-2.5 text-sm font-semibold text-white transition-opacity hover:opacity-90"
                     >
                       <span>{step.ctaText}</span>
