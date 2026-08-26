@@ -25,8 +25,15 @@ export default function Reviews({ content }: { content: Record<string, any> }) {
         {/* Cabeçalho */}
         <div className="mb-8 flex flex-col items-start text-left md:mb-12">
           <h2 className="mb-3 text-2xl font-semibold leading-[115%] tracking-[-1.2px] text-navy md:mb-4 md:text-3xl lg:text-[40px]">
-            <span>{c.titlePart1}</span>
-            <span className="text-ocean">{c.titlePart2}</span>
+            {/*
+              O espaço entre as duas partes vem daqui, não do conteúdo. Antes
+              dependia de o texto do painel terminar com espaço — e bastava
+              alguém salvar a seção para o editor apará-lo e as palavras
+              grudarem ("...RecommendMaxima Concrete?"). O trim evita espaço
+              dobrado onde o texto antigo ainda o traz.
+            */}
+            <span>{c.titlePart1?.trim()}</span>{" "}
+            <span className="text-ocean">{c.titlePart2?.trim()}</span>
           </h2>
           <p className="max-w-xl text-sm text-[#5A6B7B] md:text-base">{c.subtitle}</p>
         </div>
