@@ -95,6 +95,22 @@ const Navigation = () => {
             />
           </Link>
           <div className="flex items-center gap-2">
+            {/*
+              Ligar em um toque, sem abrir o menu. No celular boa parte do
+              cliente prefere ligar a preencher formulário, e até aqui isso
+              custava dois toques. Só o ícone: o espaço da barra é curto e o
+              telefone já aparece por extenso dentro do menu.
+              O clique é medido pelo PhoneClickTracker, que escuta qualquer
+              link "tel:" — este entra como origem "header".
+            */}
+            <a
+              href={phone.href}
+              aria-label={`Call ${phone.label}`}
+              className="flex h-[38px] w-[38px] items-center justify-center rounded-lg text-white shadow-sm transition-all active:scale-[0.98]"
+              style={btnStyle}
+            >
+              <Phone className="h-[18px] w-[18px]" strokeWidth={2.5} />
+            </a>
             {/* CTA sempre à vista, também com o menu fechado */}
             <Link
               href={cta.href}
