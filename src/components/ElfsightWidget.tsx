@@ -2,7 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const ELFSIGHT_SCRIPT_SRC = "https://static.elfsight.com/platform/platform.js";
+/**
+ * Endereço novo do Elfsight (o antigo era static.elfsight.com/platform/).
+ * Os dois ainda servem o mesmo arquivo, mas este é o que eles publicam hoje —
+ * e o antigo, cedo ou tarde, sai do ar.
+ */
+const ELFSIGHT_SCRIPT_SRC = "https://elfsightcdn.com/platform.js";
 
 /**
  * Esconde elementos indesejados injetados pelo widget Elfsight dentro de
