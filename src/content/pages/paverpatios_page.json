@@ -73,7 +73,60 @@
         "backgroundImage": "/images/cms/uploads/1784041545687-bkwksk.webp",
         "overlayOpacity": 60,
         "eyebrow": "by Maxima Concrete",
-        "benefits": [],
+        "benefits": [
+          {
+            "title": "Durability and Longevity",
+            "description": "",
+            "icon": "shield",
+            "items": [
+              {
+                "text": "Concrete is remarkably strong, resisting time, weather, and wear — a long-term investment for your property.",
+                "label": "High-Strength Mix (6.5-Bag Concrete):"
+              }
+            ],
+            "closingText": "",
+            "bullets": []
+          },
+          {
+            "title": "Low Maintenance",
+            "description": "",
+            "icon": "sparkles",
+            "items": [
+              {
+                "text": "No rot, no fading, no hassle. A simple clean and occasional seal keep your patio looking brand new.",
+                "label": "Crack Resistance:"
+              }
+            ],
+            "closingText": "",
+            "bullets": []
+          },
+          {
+            "title": "Versatility",
+            "description": "",
+            "icon": "palette",
+            "items": [
+              {
+                "text": "Choose from multiple textures, colors, and finishes to fit your outdoor design perfectly.",
+                "label": "Style:"
+              }
+            ],
+            "closingText": "",
+            "bullets": []
+          },
+          {
+            "title": "Added Home Value",
+            "description": "",
+            "icon": "trending-up",
+            "items": [
+              {
+                "text": "A well-crafted patio enhances both your home’s appeal and resale value.",
+                "label": ""
+              }
+            ],
+            "closingText": "",
+            "bullets": []
+          }
+        ],
         "overlayGradient": false
       }
     },
