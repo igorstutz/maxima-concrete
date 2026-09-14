@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
-import { ArrowRight, MapPin } from "lucide-react";
+import { ArrowRight, CalendarRange, MapPin } from "lucide-react";
 import page from "@/content/pages/projectmap_page.json";
 import projects from "@/content/data/projects.json";
 import { PageSections } from "@/components/sections/PageSections";
@@ -97,9 +97,12 @@ export default function Page() {
                 planilha, que começa bem depois de 2011 — sem esta linha os dois
                 números parecem se contradizer. Editável pelo painel. */}
             {c.dataNote && (
-              <p className="mt-5 text-center text-xs text-gray-500 md:text-right lg:text-sm">
-                {c.dataNote}
-              </p>
+              <div className="mt-6 flex justify-center md:justify-end">
+                <p className="inline-flex items-center gap-2 rounded-full border border-ocean/25 bg-ocean/5 px-4 py-2 text-sm font-semibold text-ocean lg:text-base">
+                  <CalendarRange className="h-4 w-4 shrink-0 lg:h-[18px] lg:w-[18px]" />
+                  {c.dataNote}
+                </p>
+              </div>
             )}
           </div>
         </Container>

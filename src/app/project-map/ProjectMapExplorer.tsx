@@ -25,7 +25,7 @@ const PROJECTS = projectsData as Project[];
 const CENTER_LAT = 39.9612;
 const CENTER_LNG = -82.9988;
 const DEFAULT_ZOOM = 11;
-const RADII = ["3", "5", "10", "20", "40", "100"];
+const RADII = ["5", "10", "20", "40", "100"];
 
 // Distância em milhas (Haversine).
 function distanceMiles(lat1: number, lon1: number, lat2: number, lon2: number): number {
@@ -92,7 +92,9 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
   const [nearbyCount, setNearbyCount] = useState<number | null>(null);
   const [searching, setSearching] = useState(false);
   const [noResults, setNoResults] = useState(false);
-  const [geoError, setGeoError] = useState<string | null>(null);
+  // Recado abaixo da barra: erro da geolocalização (vermelho) ou explicação de
+  // por que o raio ainda não faz nada (cinza).
+  const [notice, setNotice] = useState<{ text: string; tone: "error" | "info" } | null>(null);
 
   const searchParams = useSearchParams();
   const zipParam = searchParams.get("zip");
@@ -189,6 +191,7 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
     if (zip.length < 5) return;
     setSearching(true);
     setNoResults(false);
+    setNotice(null);
     try {
       const res = await fetch(
         `https://nominatim.openstreetmap.org/search?format=json&q=${zip}+USA&limit=1&countrycodes=us`,
@@ -217,11 +220,11 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
    */
   const useMyLocation = () => {
     if (!("geolocation" in navigator)) {
-      setGeoError("Location isn't available on this device.");
+      setNotice({ text: "Location isn't available on this device.", tone: "error" });
       return;
     }
     setSearching(true);
-    setGeoError(null);
+    setNotice(null);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         setSearchCenter({ lat: pos.coords.latitude, lng: pos.coords.longitude });
@@ -229,12 +232,29 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
       },
       () => {
         setSearching(false);
-        setGeoError(
-          "We couldn't access your location. Allow location access in your browser, or search by ZIP code.",
-        );
+        setNotice({
+          text: "We couldn't access your location. Allow location access in your browser, or search by ZIP code.",
+          tone: "error",
+        });
       },
       { timeout: 8000 },
     );
+  };
+
+  /**
+   * O raio mede a partir de um centro de busca, que só existe depois do ZIP ou da
+   * localização. Trocar 5 mi por 10 mi antes disso não tinha efeito nenhum e o
+   * mapa ficava igual, sem dizer por quê — parecia controle quebrado. O valor
+   * escolhido vale para a próxima busca; a mensagem explica isso.
+   */
+  const changeRadius = (value: string) => {
+    setRadius(value);
+    if (!searchCenter) {
+      setNotice({
+        text: `Radius set to ${value} mi. Search a ZIP code or use your location to see the projects within it.`,
+        tone: "info",
+      });
+    }
   };
 
   // Aplica ?zip= da URL assim que o mapa estiver pronto.
@@ -252,7 +272,7 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
     setFiltered(null);
     setNearbyCount(null);
     setNoResults(false);
-    setGeoError(null);
+    setNotice(null);
     setSearchCenter(null);
     setZipCode("");
     if (map) {
@@ -309,10 +329,12 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
           <select
             aria-label="Search radius in miles"
             value={radius}
-            onChange={(e) => setRadius(e.target.value)}
+            onChange={(e) => changeRadius(e.target.value)}
             className="cursor-pointer rounded-lg border border-gray-300 bg-white px-3 py-2.5 text-sm text-navy"
           >
-            {RADII.map((r) => (
+            {/* defaultRadius vem do painel: se vier um valor fora da lista, ele
+                entra como opção, senão o select abriria em branco. */}
+            {(RADII.includes(radius) ? RADII : [radius, ...RADII]).map((r) => (
               <option key={r} value={r}>
                 {r} mi
               </option>
@@ -338,9 +360,14 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
         </div>
       </div>
 
-      {geoError && (
-        <p role="status" className="mb-4 text-xs leading-snug text-red-600 lg:text-sm">
-          {geoError}
+      {notice && (
+        <p
+          role="status"
+          className={`mb-4 text-xs leading-snug lg:text-sm ${
+            notice.tone === "error" ? "text-red-600" : "text-gray-600"
+          }`}
+        >
+          {notice.text}
         </p>
       )}
 
