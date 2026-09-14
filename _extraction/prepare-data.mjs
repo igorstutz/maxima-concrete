@@ -1,4 +1,4 @@
-// Converte projects/service_areas/google_reviews em src/content/data/*.json,
+// Converte service_areas/google_reviews em src/content/data/*.json,
 // baixando imagens que ainda não estão em public/images.
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -41,20 +41,11 @@ async function localize(url) {
 
 mkdirSync(DATA_DIR, { recursive: true });
 
-// projects — só os campos usados pelo mapa.
-//
-// O endereço de rua fica FORA de propósito: este arquivo é importado pelos
-// componentes do mapa, ou seja, vai inteiro para o JavaScript que o navegador
-// baixa. Não mostrar no pin não bastaria — bastaria abrir as ferramentas do
-// desenvolvedor para ler a rua e o número da casa de 1.800 clientes de uma vez.
-// O mapa precisa de serviço, região e coordenada; a rua nunca foi usada.
-const projects = JSON.parse(readFileSync(join(HERE, "projects.json"), "utf8"))
-  .filter((p) => p.lat && p.lng)
-  .map((p) => ({
-    name: p.name, city: p.city, state: p.state,
-    zip: p.zip_code || "", lat: p.lat, lng: p.lng,
-  }));
-writeFileSync(join(DATA_DIR, "projects.json"), JSON.stringify(projects));
+// projects — NÃO sai mais daqui. Os pinos do mapa vêm da planilha
+// _extraction/project-map.xlsx via `npm run projects`
+// (_extraction/build-projects.mjs), que é onde o conteúdo é atualizado hoje.
+// projects.json continua neste diretório só como base de coordenadas já
+// geocodificadas, aproveitada por aquele script.
 
 // service areas (ativas, ordenadas)
 const areasRaw = JSON.parse(readFileSync(join(HERE, "service_areas.json"), "utf8"))
@@ -81,4 +72,4 @@ for (const r of reviewsRaw) {
 }
 writeFileSync(join(DATA_DIR, "google-reviews.json"), JSON.stringify(reviews, null, 2));
 
-console.log(`projects: ${projects.length}; areas: ${areas.length}; reviews: ${reviews.length}`);
+console.log(`areas: ${areas.length}; reviews: ${reviews.length}`);

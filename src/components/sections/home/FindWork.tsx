@@ -8,6 +8,7 @@ import { Container } from "@/components/Container";
 import "leaflet/dist/leaflet.css";
 import type { Circle, LayerGroup, Map as LeafletMap, Marker } from "leaflet";
 import { makeProjectPin, makeUserPin } from "@/lib/leaflet-pins";
+import { projectPopupHtml, type Project } from "@/lib/projects";
 
 interface FindWorkContent {
   title?: string;
@@ -15,17 +16,6 @@ interface FindWorkContent {
   ctaText?: string;
   ctaLink?: string;
   mapCenter?: [number, number];
-}
-
-// Sem endereço de rua de propósito: este arquivo chega inteiro ao navegador.
-// Ver _extraction/prepare-data.mjs.
-interface Project {
-  name: string;
-  city: string;
-  state: string;
-  zip: string;
-  lat: number;
-  lng: number;
 }
 
 // Selos de confiança exibidos no rodapé da seção (iguais em todas as páginas).
@@ -49,23 +39,6 @@ function distanceMiles(lat1: number, lon1: number, lat2: number, lon2: number): 
     Math.sin(dLat / 2) ** 2 +
     Math.cos((lat1 * Math.PI) / 180) * Math.cos((lat2 * Math.PI) / 180) * Math.sin(dLon / 2) ** 2;
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-}
-
-/**
- * Conteúdo do pin: serviço e região, nunca a rua.
- *
- * O endereço da obra é a casa de um cliente, e o mapa é público — mostrar o
- * número da rua expõe quem contratou. O ZIP situa o visitante igualmente
- * ("temos obra no seu bairro"), que é para o que o mapa serve.
- *
- * Cerca de um quarto dos registros não tem ZIP; nesses, a cidade entra no
- * lugar, para o pin não ficar sem nenhuma referência de lugar.
- */
-function popupHtml(p: Project): string {
-  const local = p.zip?.trim() ? `${p.zip.trim()}, ${p.state}` : `${p.city}, ${p.state}`;
-  return `<div style="font-family:Poppins,sans-serif;font-size:13px;"><strong>${
-    p.name || "Project"
-  }</strong><br/>${local}</div>`;
 }
 
 /**
@@ -173,7 +146,7 @@ export default function FindWork({ content }: { content: Record<string, any> }) 
     layer.clearLayers();
     const visible = filtered ?? projects;
     for (const p of visible) {
-      L.marker([p.lat, p.lng], { icon }).addTo(layer).bindPopup(popupHtml(p));
+      L.marker([p.lat, p.lng], { icon }).addTo(layer).bindPopup(projectPopupHtml(p));
     }
   }, [ready, filtered, projects]);
 

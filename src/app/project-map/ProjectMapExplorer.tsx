@@ -7,17 +7,7 @@ import "leaflet/dist/leaflet.css";
 import type { Circle, Icon, LayerGroup, Map as LeafletMap, Marker } from "leaflet";
 import projectsData from "@/content/data/projects.json";
 import { makeProjectPin, makeUserPin } from "@/lib/leaflet-pins";
-
-// Sem endereço de rua de propósito: este arquivo chega inteiro ao navegador.
-// Ver _extraction/prepare-data.mjs.
-interface Project {
-  name: string;
-  city: string;
-  state: string;
-  zip: string;
-  lat: number;
-  lng: number;
-}
+import { projectPopupHtml, type Project } from "@/lib/projects";
 
 interface ExplorerContent {
   zipPlaceholder?: string;
@@ -73,19 +63,7 @@ function centroidForZip(zip: string): { lat: number; lng: number } | null {
 }
 
 /**
- * Conteúdo do pin: serviço e região, nunca a rua — o endereço da obra é a
- * casa de um cliente e este mapa é público. Mesma regra da seção "Find Our
- * Work Near You" (src/components/sections/home/FindWork.tsx).
- */
-function popupHtml(p: Project): string {
-  const local = p.zip?.trim() ? `${p.zip.trim()}, ${p.state}` : `${p.city}, ${p.state}`;
-  return `<div style="font-family:Poppins,sans-serif;font-size:13px;"><strong>${
-    p.name || "Project"
-  }</strong><br/>${local}</div>`;
-}
-
-/**
- * Mapa interativo dos 1825 projetos (Leaflet, client-only). Busca por ZIP
+ * Mapa interativo dos projetos (Leaflet, client-only). Busca por ZIP
  * (geocodificado via Nominatim, com fallback local) ou pela localização do
  * usuário, filtrando por raio. Pinos teardrop iguais aos do site antigo.
  */
@@ -164,7 +142,7 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
     layer.clearLayers();
     const visible = filtered ?? PROJECTS;
     for (const p of visible) {
-      L.marker([p.lat, p.lng], { icon }).addTo(layer).bindPopup(popupHtml(p));
+      L.marker([p.lat, p.lng], { icon }).addTo(layer).bindPopup(projectPopupHtml(p));
     }
   }, [ready, filtered]);
 

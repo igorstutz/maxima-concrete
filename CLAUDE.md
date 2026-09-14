@@ -59,6 +59,39 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   arquivo de pedido (`paths-ignore`), e o commit do bot não dispara workflow sozinho —
   por isso o `gh workflow run` no fim do copy-section.yml.
 
+## Project Map (os pinos dos mapas)
+- Fonte única: a planilha **`_extraction/project-map.xlsx`**, enviada pelo cliente.
+  Colunas: `A WORK FULL ADDRESS` (com número da casa), `B WORK ADDRESS` (rua sem
+  número) e `C WORK DONE` (serviços). **Atualizar o mapa = substituir a planilha e
+  rodar `npm run projects`** (`_extraction/build-projects.mjs`), que regenera
+  `src/content/data/projects.json`. Nada disso passa pelo painel: são milhares de
+  linhas, planilha é a ferramenta certa.
+- **A coluna A nunca sai do script.** `projects.json` é importado pelos componentes
+  do mapa, ou seja, chega inteiro ao navegador — guardar o número da casa ali
+  entregaria o endereço de ~2.600 clientes a quem abrir as ferramentas do
+  desenvolvedor. O pino mostra a coluna C em negrito e a coluna B embaixo; a coluna A
+  serve só para geocodificar. Por isso a planilha se chama "addresses without house
+  numbers", e por isso **o `.xlsx` é gitignored** (este repositório é público) e as
+  chaves do cache de geocodificação são hashes, não o endereço em texto.
+- Uma obra por endereço: a planilha traz uma linha por serviço, e o script une os
+  serviços do mesmo imóvel num pino só ("Driveway, Patio, Steps").
+- Coordenadas: primeiro o cache versionado `_extraction/geocode-cache.json`, depois a
+  base já geocodificada do CMS antigo (`_extraction/projects.json`), e só o que sobra
+  vai ao Nominatim — busca estruturada primeiro (`street`/`city`/`state`, bem mais
+  precisa que texto livre em endereço americano), 1 req/s, User-Agent obrigatório, e
+  resultado fora da caixa de Ohio é descartado. Com o cache versionado, uma planilha
+  nova geocodifica só os endereços inéditos. O que não resolve (uns 4%, ruas de
+  loteamento novo que ainda não estão nas bases) fica de fora do mapa, é listado em
+  `_extraction/geocode-failures.txt` (gitignored: tem nome de rua) e vai para o cache
+  como falha, para não gastar centenas de requisições de novo a cada regeração —
+  `npm run projects -- --retry-failed` força uma nova tentativa nesses.
+- Consumidores: `src/app/project-map/ProjectMapExplorer.tsx` (página do mapa) e
+  `src/components/sections/home/FindWork.tsx` (seção "Find Our Work Near You", usada
+  em várias páginas). O tipo e o HTML do popup são compartilhados em
+  `src/lib/projects.ts` — mexer no popup é mexer lá, uma vez.
+- `.xlsx` é lido por `_extraction/xlsx.mjs`, um leitor mínimo sem dependências
+  (o Node já traz o inflate; um .xlsx é um ZIP de XMLs).
+
 ## Performance (por que o site é rápido — manter)
 - Zero fetch em runtime: JSON importado estaticamente, texto embutido no HTML no build.
 - `"use client"` cirúrgico; sem bibliotecas de animação (IntersectionObserver via ScrollReveal).
@@ -110,6 +143,8 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 
 ## Comandos
 - `npm run dev` · `npm run build` (export estático em `out/`)
+- `npm run projects` — regenera os pinos do mapa a partir de `_extraction/project-map.xlsx`
+  (`--dry-run` só relata; `--offline` não chama o Nominatim)
 - Dados brutos da extração: `_extraction/` (scripts reexecutáveis; dumps gitignored)
 
 ## Idioma

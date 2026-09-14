@@ -17,6 +17,14 @@ npm-debug.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# Planilha do mapa: a coluna A tem o endereço COMPLETO dos clientes (com número
+# da casa) e este repositório é público. Fica só na máquina de quem regenera os
+# pinos (`npm run projects`); o resultado versionado, src/content/data/projects.json,
+# só leva a rua sem número. O cache de geocodificação ao lado é versionado porque
+# suas chaves são hashes — nenhum endereço legível.
+_extraction/project-map.xlsx
+_extraction/geocode-failures.txt
+
 # dados brutos da extração (mantém scripts, ignora dumps pesados)
 _extraction/site_content.json
 _extraction/url-map.json
