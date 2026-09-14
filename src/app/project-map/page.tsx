@@ -39,6 +39,7 @@ export default function Page() {
     badgeText?: string;
     title?: string;
     subtitle?: string;
+    dataNote?: string;
   };
 
   return (
@@ -81,16 +82,26 @@ export default function Page() {
       {/* STATS */}
       <section className="border-b border-gray-100 bg-white">
         <Container>
-          <dl className="grid grid-cols-2 gap-6 py-8 md:grid-cols-4 lg:py-10">
-            {STATS.map((s) => (
-              <div key={s.label} className="text-center md:text-left">
-                <dt className="text-3xl font-bold tracking-tight text-ocean md:text-4xl">
-                  <CountUp value={s.value} />
-                </dt>
-                <dd className="mt-1 text-sm text-gray-600">{s.label}</dd>
-              </div>
-            ))}
-          </dl>
+          <div className="py-8 lg:py-10">
+            <dl className="grid grid-cols-2 gap-6 md:grid-cols-4">
+              {STATS.map((s) => (
+                <div key={s.label} className="text-center md:text-left">
+                  <dt className="text-3xl font-bold tracking-tight text-ocean md:text-4xl">
+                    <CountUp value={s.value} />
+                  </dt>
+                  <dd className="mt-1 text-sm text-gray-600">{s.label}</dd>
+                </div>
+              ))}
+            </dl>
+            {/* Período coberto pelo mapa: "Projects Mapped" conta o que está na
+                planilha, que começa bem depois de 2011 — sem esta linha os dois
+                números parecem se contradizer. Editável pelo painel. */}
+            {c.dataNote && (
+              <p className="mt-5 text-center text-xs text-gray-500 md:text-right lg:text-sm">
+                {c.dataNote}
+              </p>
+            )}
+          </div>
         </Container>
       </section>
 
