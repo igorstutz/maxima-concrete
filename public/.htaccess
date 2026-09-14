@@ -171,7 +171,12 @@ ErrorDocument 404 /404.html
 <IfModule mod_headers.c>
   Header set X-Content-Type-Options "nosniff"
   Header set Referrer-Policy "strict-origin-when-cross-origin"
-  Header set Permissions-Policy "geolocation=(), camera=(), microphone=()"
+  # geolocation=(self): o mapa de projetos e a seção "Find Our Work Near You"
+  # pedem a localização para filtrar por raio. Com a lista vazia — geolocation=()
+  # — o navegador recusa mesmo depois de o visitante autorizar, e o botão
+  # "My location" não faz nada. (self) libera só este domínio; câmera e microfone
+  # seguem bloqueados, que o site não usa.
+  Header set Permissions-Policy "geolocation=(self), camera=(), microphone=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" "expr=%{HTTPS} == 'on'"
 </IfModule>
 

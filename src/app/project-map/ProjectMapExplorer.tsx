@@ -92,6 +92,7 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
   const [nearbyCount, setNearbyCount] = useState<number | null>(null);
   const [searching, setSearching] = useState(false);
   const [noResults, setNoResults] = useState(false);
+  const [geoError, setGeoError] = useState<string | null>(null);
 
   const searchParams = useSearchParams();
   const zipParam = searchParams.get("zip");
@@ -208,15 +209,30 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
     else setNoResults(true);
   }, []);
 
+  /**
+   * Localização do visitante. O erro precisa aparecer na tela: falhar calado foi
+   * o que fez o botão parecer quebrado quando o servidor bloqueava a
+   * geolocalização por Permissions-Policy (ver public/.htaccess) — o clique não
+   * produzia nem pino, nem mensagem.
+   */
   const useMyLocation = () => {
-    if (!("geolocation" in navigator)) return;
+    if (!("geolocation" in navigator)) {
+      setGeoError("Location isn't available on this device.");
+      return;
+    }
     setSearching(true);
+    setGeoError(null);
     navigator.geolocation.getCurrentPosition(
       (pos) => {
         setSearchCenter({ lat: pos.coords.latitude, lng: pos.coords.longitude });
         setSearching(false);
       },
-      () => setSearching(false),
+      () => {
+        setSearching(false);
+        setGeoError(
+          "We couldn't access your location. Allow location access in your browser, or search by ZIP code.",
+        );
+      },
       { timeout: 8000 },
     );
   };
@@ -236,6 +252,7 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
     setFiltered(null);
     setNearbyCount(null);
     setNoResults(false);
+    setGeoError(null);
     setSearchCenter(null);
     setZipCode("");
     if (map) {
@@ -320,6 +337,12 @@ export default function ProjectMapExplorer({ content }: { content: ExplorerConte
           </span>
         </div>
       </div>
+
+      {geoError && (
+        <p role="status" className="mb-4 text-xs leading-snug text-red-600 lg:text-sm">
+          {geoError}
+        </p>
+      )}
 
       {/* Mapa */}
       <div className="h-[70vh] min-h-[500px] overflow-hidden rounded-xl border border-gray-200">
