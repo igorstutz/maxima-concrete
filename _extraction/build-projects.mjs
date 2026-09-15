@@ -387,7 +387,9 @@ const missing = [];
 for (const [key, entry] of byAddress) {
   const coord = cache[key];
   if (!coord?.lat) {
-    missing.push(entry.label); // sem coordenada não há pino
+    // Com o endereço completo: o arquivo é gitignored e serve para procurar a
+    // linha na planilha, o que exige o número da casa.
+    missing.push(entry.full);
     continue;
   }
   projects.push({
