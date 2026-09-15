@@ -36,7 +36,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST' || !$refOk) {
     exit;
 }
 
-$raw  = substr((string)file_get_contents('php://input'), 0, 2000);
+// 14000 e não 2000: a jornada de atribuição vem junto agora. Continua com teto,
+// porque o corpo chega do navegador.
+$raw  = substr((string)file_get_contents('php://input'), 0, 14000);
 $body = json_decode($raw, true);
 
 function track_clean(string $v): string {
@@ -46,16 +48,29 @@ function track_clean(string $v): string {
 $location = track_clean(is_array($body) ? (string)($body['location'] ?? '') : '');
 $page     = track_clean(is_array($body) ? (string)($body['page'] ?? '') : '');
 
+/**
+ * Origem de quem clicou para ligar. Guarda menos toques que o formulário (10 e
+ * não 30): clique em telefone acontece muito mais que envio de formulário, e os
+ * dois escrevem em arquivo de log, não em banco — a jornada completa de cada
+ * clique faria o arquivo crescer rápido demais para o painel ler.
+ */
+require_once __DIR__ . '/attribution-parse.php';
+$atribuicao = attr_parse(
+    is_array($body) ? (string)($body['attribution'] ?? '') : '',
+    10,
+);
+
 $dir = __DIR__ . '/../.private';
 if (!is_dir($dir)) {
     @mkdir($dir, 0700, true);
 }
 $entry = [
-    'ts'       => gmdate('Y-m-d\TH:i:s\Z'),
-    'location' => $location !== '' ? $location : 'unknown',
-    'page'     => $page,
-    'ip'       => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
-    'ua'       => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 200),
+    'ts'          => gmdate('Y-m-d\TH:i:s\Z'),
+    'location'    => $location !== '' ? $location : 'unknown',
+    'page'        => $page,
+    'ip'          => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
+    'ua'          => substr((string)($_SERVER['HTTP_USER_AGENT'] ?? ''), 0, 200),
+    'attribution' => $atribuicao,
 ];
 @file_put_contents(
     $dir . '/call-clicks.log',

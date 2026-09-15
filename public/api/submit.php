@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/mailer.php';
 require_once __DIR__ . '/email-template.php';
+require_once __DIR__ . '/attribution-parse.php';
 
 // === Configuration ====================================================
 // Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
@@ -312,6 +313,8 @@ log_submission([
     'message'      => $message,
     'email_status' => $ok ? 'sent' : 'failed',
     'email_error'  => $falhas ? ('recusado para: ' . implode(', ', $falhas)) : null,
+    // De onde este lead veio, e por onde passou antes de escrever.
+    'attribution'  => attr_parse((string)($_POST['attribution'] ?? '')),
 ]);
 
 if ($ok) {

@@ -105,7 +105,15 @@ function StatTile({
         {icone}
         <p className="text-xs font-medium uppercase tracking-wide">{rotulo}</p>
       </div>
-      <p className="text-3xl font-bold text-gray-900">{valor}</p>
+      {/* Nome de serviço/origem é longo e no corpo de 3xl estourava o cartão:
+          texto comprido encolhe e quebra em vez de ser cortado. */}
+      <p
+        className={`font-bold leading-tight text-gray-900 ${
+          valor.length > 12 ? "text-xl" : "text-3xl"
+        }`}
+      >
+        {valor}
+      </p>
       {delta && (
         <p
           className={`mt-1.5 inline-flex items-center gap-1 text-xs font-medium ${

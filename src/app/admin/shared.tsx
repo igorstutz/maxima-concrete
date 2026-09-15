@@ -12,7 +12,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import { BarChart3, Inbox } from "lucide-react";
+import { BarChart3, Inbox, Route } from "lucide-react";
 
 /**
  * Um envio como o formulário deste site grava em submissions.log. Os nomes são
@@ -22,6 +22,49 @@ import { BarChart3, Inbox } from "lucide-react";
  * `type: "resume"` marca as candidaturas da página Join Our Team, que chegam
  * pelo mesmo log com outros campos (`name`, `position`, `resume`).
  */
+/** Uma origem medida: de onde a pessoa veio numa determinada visita. */
+export type Toque = {
+  ts?: string;
+  channel?: string;
+  source?: string;
+  medium?: string;
+  campaign?: string;
+  term?: string;
+  content?: string;
+  click_id?: string;
+  landing?: string;
+  referrer?: string;
+};
+
+/**
+ * A jornada até o contato, montada no navegador e anexada à conversão.
+ * Ver src/lib/attribution.ts — é lá que ela é construída.
+ */
+export type Atribuicao = {
+  vid?: string;
+  first?: Toque;
+  last?: Toque;
+  lastNonDirect?: Toque;
+  sessions?: number;
+  touchpoints?: Toque[];
+  pages?: { ts: string; path: string }[];
+  createdAt?: string;
+  fbp?: string;
+  fbc?: string;
+};
+
+/**
+ * Canal de crédito: a última origem que não foi acesso direto.
+ *
+ * É o padrão das ferramentas de medição, e a razão é prática: "direto" quase
+ * sempre é a pessoa voltando por um caminho que já tinha sido pago antes —
+ * creditar o direto apagaria a campanha que de fato a trouxe.
+ */
+export function canalDoLead(a?: Atribuicao | null): string {
+  if (!a) return "Unknown";
+  return a.lastNonDirect?.channel || a.last?.channel || a.first?.channel || "Unknown";
+}
+
 export type Submission = {
   /** Identificador do registro, calculado pelo servidor a partir da linha do log. */
   id?: string;
@@ -42,15 +85,28 @@ export type Submission = {
   message?: string;
   email_status?: string;
   email_error?: string | null;
+  /** De onde veio, medido — não o que a pessoa declarou em "how did you hear". */
+  attribution?: Atribuicao | null;
 };
 
-export type Call = { ts: string; location: string; page: string };
+export type Call = {
+  ts: string;
+  location: string;
+  page: string;
+  /** Versão curta da jornada: o log guarda a completa, o painel não precisa dela. */
+  attr?: { first?: Toque; last?: Toque; lastNonDirect?: Toque; sessions?: number } | null;
+};
+
+/** Sessões do site já agregadas por dia e canal no servidor. */
+export type SessaoAgregada = { day: string; channel: string; count: number; visitors: number };
 
 export type ApiData = {
   ok: boolean;
   submissions: Submission[];
   calls: Call[];
   callsCapped?: boolean;
+  sessions?: SessaoAgregada[];
+  sessionsTotal?: number;
   generatedAt?: string;
 };
 
@@ -181,13 +237,13 @@ export function useAdminData() {
 // --- pedaços de interface repetidos nas duas telas ---------------------------
 
 /** Navegação entre as telas do painel. */
-export function AdminNav({ current }: { current: "dashboard" | "insights" }) {
+export function AdminNav({ current }: { current: "dashboard" | "insights" | "attribution" }) {
   const item = (active: boolean) =>
     `inline-flex items-center gap-2 px-5 py-2 rounded-[10px] text-sm font-medium transition ${
       active ? "gradient-navy text-white shadow-sm" : "text-navy/70 hover:text-ocean"
     }`;
   return (
-    <nav className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1">
+    <nav className="inline-flex flex-wrap rounded-[12px] bg-white border border-gray-200 p-1">
       <Link href="/admin/" className={item(current === "dashboard")}>
         <Inbox size={15} />
         Leads
@@ -195,6 +251,10 @@ export function AdminNav({ current }: { current: "dashboard" | "insights" }) {
       <Link href="/admin/insights/" className={item(current === "insights")}>
         <BarChart3 size={15} />
         Insights
+      </Link>
+      <Link href="/admin/attribution/" className={item(current === "attribution")}>
+        <Route size={15} />
+        Attribution
       </Link>
     </nav>
   );

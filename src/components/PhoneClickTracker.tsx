@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { pushPhoneClick } from "@/lib/analytics";
+import { payloadAtribuicao } from "@/lib/attribution";
 
 /**
  * Registra cliques em telefone, que aqui valem tanto quanto formulário —
@@ -41,7 +42,13 @@ export function PhoneClickTracker() {
       // Envio "atire e esqueça": não pode atrasar a discagem. sendBeacon
       // sobrevive à saída da página, que é exatamente o que acontece aqui.
       try {
-        const corpo = JSON.stringify({ location: posicao, page: pagina });
+        // A jornada vai junto: ligação é conversão como o formulário, e sem isto
+        // metade dos contatos ficaria sem origem no painel.
+        const corpo = JSON.stringify({
+          location: posicao,
+          page: pagina,
+          attribution: payloadAtribuicao() || undefined,
+        });
         if (navigator.sendBeacon) {
           navigator.sendBeacon("/api/track-call.php", corpo);
         } else {

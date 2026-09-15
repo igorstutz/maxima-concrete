@@ -92,6 +92,36 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 - `.xlsx` é lido por `_extraction/xlsx.mjs`, um leitor mínimo sem dependências
   (o Node já traz o inflate; um .xlsx é um ZIP de XMLs).
 
+## Atribuição de leads (de onde vem cada contato)
+- `src/lib/attribution.ts` classifica a visita (gclid/fbclid/msclkid > UTM > referrer),
+  mantém sessão de 30 min e guarda **primeiro toque, último e último não-direto** mais a
+  lista de visitas e páginas em `localStorage`. `AttributionTracker` (no layout) liga isso
+  às trocas de rota. `/admin` fica fora, como já ficava no GTM.
+- **Navegar não gera requisição.** A jornada viaja junto da conversão: campo oculto
+  `attribution` no formulário e no corpo do beacon de `track-call.php`. É o padrão dos
+  campos ocultos de HubSpot/Marketo, e é o que mantém o site rápido — sem ele seria uma
+  requisição por página vista.
+- `public/api/track.php` recebe **uma chamada por sessão**, não por página. Serve a dois
+  fins: contar as visitas que NÃO viraram lead (sem esse denominador não existe taxa de
+  conversão por canal) e renovar o cookie `_mxvid` num `Set-Cookie` — o Safari corta para
+  7 dias o cookie escrito por JavaScript, mas não o que vem do servidor. Grava em
+  `.private/sessions-AAAA-MM.log`, um arquivo por mês porque cresce com o tráfego.
+- O identificador é o **mesmo** `maxima-visitor-id` que o Pixel já usava. Não criar outro:
+  dois identificadores contariam visitantes diferentes na mesma pessoa.
+- `public/api/attribution-parse.php` é o único lugar que lê o payload, usado pelos dois
+  pontos de conversão. Tudo ali chega do navegador: campos copiados um a um, listas
+  cortadas, `\r\n` removido (uma quebra de linha forjaria uma linha no log JSONL).
+- `data.php` **agrega as sessões por dia × canal no servidor**. Mandar uma linha por
+  sessão seria mandar o tráfego inteiro para o navegador; agregado, a resposta tem o
+  tamanho do calendário por mais tráfego que o site receba.
+- Painel: `/admin/attribution` (canal, primeiro × último toque, conversão por canal,
+  campanhas, ligações) e a jornada por lead na lista (`src/app/admin/journey.tsx`).
+- **Limite conhecido:** ligação discada à mão, fora do site, não tem origem — só o clique
+  no número é rastreável. Atribuir o resto exigiria número de telefone dinâmico (CallRail,
+  Twilio), que é serviço pago com pool de números.
+- **O histórico não é retroativo:** a medição começa quando entra no ar. Lead antigo
+  continua só com o "how did you hear about us" que a pessoa declarou.
+
 ## Performance (por que o site é rápido — manter)
 - Zero fetch em runtime: JSON importado estaticamente, texto embutido no HTML no build.
 - `"use client"` cirúrgico; sem bibliotecas de animação (IntersectionObserver via ScrollReveal).

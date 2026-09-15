@@ -6,6 +6,7 @@ import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
 import { newLeadId, pushLeadEvent, toE164 } from "@/lib/analytics";
 import { saveVisitorData, getOrCreateExternalId } from "@/lib/visitor-data";
+import { payloadAtribuicao } from "@/lib/attribution";
 
 interface ContactContent {
   title?: string;
@@ -131,6 +132,12 @@ export default function Contact({ content }: { content: Record<string, any> }) {
     // Mesmo identificador de navegador que o Pixel usa, para o evento do
     // servidor e o do navegador falarem do mesmo visitante.
     data.set("external_id", getOrCreateExternalId());
+
+    // A jornada inteira até aqui — primeira origem, última, e cada visita pelo
+    // caminho. Viaja com o lead em vez de por requisição própria: é o instante
+    // em que ela deixa de ser anônima e passa a valer alguma coisa.
+    const jornada = payloadAtribuicao();
+    if (jornada) data.set("attribution", jornada);
 
     setStatus("sending");
     setErrorMessage("");

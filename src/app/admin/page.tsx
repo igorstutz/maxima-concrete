@@ -26,6 +26,7 @@ import {
   type Preset,
   type Submission,
 } from "./shared";
+import { LeadJourney } from "./journey";
 
 const LOCATION_LABELS: Record<string, string> = {
   header: "Header",
@@ -402,6 +403,9 @@ export default function AdminDashboardPage() {
                           </p>
                         </details>
                       )}
+
+                      {/* De onde este lead veio, e por onde passou antes de escrever. */}
+                      <LeadJourney a={s.attribution} />
                     </div>
                   ))}
                 </div>
