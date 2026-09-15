@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import {
   Loader2,
@@ -14,97 +14,18 @@ import {
   AlertCircle,
   Trash2,
 } from "lucide-react";
-
-/**
- * Um envio como o formulário deste site grava em submissions.log. Os nomes são
- * os mesmos campos do formulário — daí `first_name`/`last_name` separados e
- * `services` como lista.
- *
- * `type: "resume"` marca as candidaturas da página Join Our Team, que chegam
- * pelo mesmo log com outros campos (`name`, `position`, `resume`).
- */
-type Submission = {
-  /** Identificador do registro, calculado pelo servidor a partir da linha do log. */
-  id?: string;
-  ts: string;
-  type?: string;
-  first_name?: string;
-  last_name?: string;
-  name?: string; // candidaturas gravam o nome em um campo só
-  email?: string;
-  phone?: string;
-  street?: string;
-  zip_code?: string;
-  services?: string[];
-  hear_about?: string;
-  page_url?: string;
-  position?: string;
-  resume?: string;
-  message?: string;
-  email_status?: string;
-  email_error?: string | null;
-};
-
-/** Nome para exibição, venha do formulário de contato ou de uma candidatura. */
-function nomeDoLead(s: Submission): string {
-  const completo = [s.first_name, s.last_name].filter(Boolean).join(" ").trim();
-  return completo || (s.name ?? "").trim() || "—";
-}
-
-type Call = { ts: string; location: string; page: string };
-
-type ApiData = {
-  ok: boolean;
-  submissions: Submission[];
-  calls: Call[];
-  callsCapped?: boolean;
-  generatedAt?: string;
-};
-
-type Preset = "7" | "30" | "90" | "all" | "custom";
-
-const PRESETS: { value: Preset; label: string }[] = [
-  { value: "7", label: "7 days" },
-  { value: "30", label: "30 days" },
-  { value: "90", label: "90 days" },
-  { value: "all", label: "All time" },
-];
-
-/**
- * Parse a "YYYY-MM-DD" value from <input type="date"> as LOCAL midnight.
- * `new Date("2026-06-16")` would parse as UTC midnight, which lands on the
- * previous day in negative-offset timezones — shifting the whole range back a
- * day relative to the local-time grouping/display. Building from parts avoids that.
- */
-function parseLocalDate(s: string): Date | null {
-  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(s);
-  if (!m) return null;
-  return new Date(Number(m[1]), Number(m[2]) - 1, Number(m[3]));
-}
-
-function dayKey(ts: string): string {
-  const d = new Date(ts);
-  const y = d.getFullYear();
-  const m = `${d.getMonth() + 1}`.padStart(2, "0");
-  const day = `${d.getDate()}`.padStart(2, "0");
-  return `${y}-${m}-${day}`;
-}
-
-function fmtDayLabel(ts: string): string {
-  return new Date(ts).toLocaleDateString("en-US", {
-    weekday: "long",
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  });
-}
-
-function fmtTime(ts: string): string {
-  return new Date(ts).toLocaleTimeString("en-US", {
-    hour: "numeric",
-    minute: "2-digit",
-  });
-}
+import {
+  AdminNav,
+  PeriodFilter,
+  dayKey,
+  fmtDayLabel,
+  fmtTime,
+  nomeDoLead,
+  useAdminData,
+  useDateRange,
+  type Preset,
+  type Submission,
+} from "./shared";
 
 const LOCATION_LABELS: Record<string, string> = {
   header: "Header",
@@ -116,38 +37,13 @@ const LOCATION_LABELS: Record<string, string> = {
 
 export default function AdminDashboardPage() {
   const router = useRouter();
-  const [status, setStatus] = useState<"loading" | "ready" | "error">(
-    "loading"
-  );
-  const [data, setData] = useState<ApiData | null>(null);
-  const [refreshing, setRefreshing] = useState(false);
+  const { status, data, refreshing, load, logout } = useAdminData();
 
   const [preset, setPreset] = useState<Preset>("30");
   const [customFrom, setCustomFrom] = useState("");
   const [customTo, setCustomTo] = useState("");
   const [tab, setTab] = useState<"submissions" | "calls">("submissions");
   const [excluindo, setExcluindo] = useState<string | null>(null);
-
-  async function load(isRefresh = false) {
-    if (isRefresh) setRefreshing(true);
-    try {
-      const res = await fetch("/api/admin/data.php", {
-        credentials: "include",
-        cache: "no-store",
-      });
-      if (res.status === 401) {
-        router.replace("/admin/login/");
-        return;
-      }
-      const json: ApiData = await res.json();
-      setData(json);
-      setStatus("ready");
-    } catch {
-      setStatus("error");
-    } finally {
-      setRefreshing(false);
-    }
-  }
 
   /**
    * Remove um lead da listagem. O registro vai para uma lixeira no servidor,
@@ -183,37 +79,7 @@ export default function AdminDashboardPage() {
     }
   }
 
-  useEffect(() => {
-    load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  async function logout() {
-    try {
-      await fetch("/api/admin/logout.php", {
-        method: "POST",
-        credentials: "include",
-      });
-    } catch {
-      /* ignore */
-    }
-    router.replace("/admin/login/");
-  }
-
-  // Resolve the active [from, to] window from the preset / custom inputs.
-  const [from, to] = useMemo<[number, number]>(() => {
-    const now = Date.now();
-    if (preset === "all") return [0, now + 86400000];
-    if (preset === "custom") {
-      const fd = customFrom ? parseLocalDate(customFrom) : null;
-      const td = customTo ? parseLocalDate(customTo) : null;
-      const f = fd ? fd.getTime() : 0;
-      const t = td ? td.getTime() + 86400000 - 1 : now + 86400000;
-      return [f, t];
-    }
-    const days = Number(preset);
-    return [now - days * 86400000, now + 86400000];
-  }, [preset, customFrom, customTo]);
+  const [from, to] = useDateRange(preset, customFrom, customTo);
 
   const inRange = (ts: string) => {
     const t = new Date(ts).getTime();
@@ -326,44 +192,21 @@ export default function AdminDashboardPage() {
           </div>
         </div>
 
+        {/* Navegação entre as telas do painel */}
+        <div className="mb-8">
+          <AdminNav current="dashboard" />
+        </div>
+
         {/* Period filter */}
-        <div className="flex flex-wrap items-center gap-3 mb-8">
-          <div className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1">
-            {PRESETS.map((p) => (
-              <button
-                key={p.value}
-                onClick={() => setPreset(p.value)}
-                className={`px-4 py-1.5 rounded-[10px] text-sm font-medium transition ${
-                  preset === p.value
-                    ? "gradient-navy text-white shadow-sm"
-                    : "text-navy/70 hover:text-ocean"
-                }`}
-              >
-                {p.label}
-              </button>
-            ))}
-          </div>
-          <div className="inline-flex items-center gap-2 text-sm">
-            <input
-              type="date"
-              value={customFrom}
-              onChange={(e) => {
-                setCustomFrom(e.target.value);
-                setPreset("custom");
-              }}
-              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-ocean outline-none"
-            />
-            <span className="text-gray-400">to</span>
-            <input
-              type="date"
-              value={customTo}
-              onChange={(e) => {
-                setCustomTo(e.target.value);
-                setPreset("custom");
-              }}
-              className="rounded-lg border border-gray-200 px-3 py-1.5 text-gray-700 focus:border-ocean outline-none"
-            />
-          </div>
+        <div className="mb-8">
+          <PeriodFilter
+            preset={preset}
+            setPreset={setPreset}
+            customFrom={customFrom}
+            setCustomFrom={setCustomFrom}
+            customTo={customTo}
+            setCustomTo={setCustomTo}
+          />
         </div>
 
         {/* Summary cards (click to switch tab) */}
