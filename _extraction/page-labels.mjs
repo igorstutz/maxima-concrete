@@ -76,6 +76,7 @@ export const PAGE_LABELS = {
   licensinginsured_page: "Licensed & Insured",
   areaswe_serve_page: "Areas We Serve",
   areascolumbus_page: "Areas We Serve — Columbus",
+  thankyou_page: "Thank You",
 };
 
 export const labelFor = (pageKey) =>

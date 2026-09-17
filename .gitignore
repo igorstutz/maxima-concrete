@@ -47,3 +47,8 @@ public/images/**/*-mobilecrop.webp
 
 # Documentos de ajustes enviados pelo cliente
 Maxima Concrete - Ajustes*
+
+# Dados de acesso ao servidor (hostinger.env) e qualquer outro arquivo local
+# que não pode vazar — este repositório é público. Mesmo nome da pasta que o
+# PHP usa no servidor, para não haver duas convenções na cabeça de ninguém.
+/.private/

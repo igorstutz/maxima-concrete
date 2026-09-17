@@ -332,6 +332,22 @@ if ($ok) {
         fastcgi_finish_request();
     }
 
+    // Confirma ao cliente que o pedido chegou e nomeia os números de onde a
+    // ligação pode vir — um 614 desconhecido na tela não é atendido, um número
+    // que a pessoa foi avisada para esperar é. Depois da resposta, como o
+    // resto: nada aqui pode atrasar a tela de agradecimento.
+    // include e não require: um deploy incompleto que deixe este arquivo para
+    // trás não pode derrubar o que vem depois (o `@` não impede o fatal do
+    // require). Sem o arquivo, o lead segue igual — só não recebe o e-mail.
+    @include_once __DIR__ . '/lead-autoreply.php';
+    if (function_exists('lead_autoreply')) {
+        lead_autoreply([
+            'first_name' => $firstName,
+            'last_name'  => $lastName,
+            'email'      => $email,
+        ]);
+    }
+
     require __DIR__ . '/meta-capi.php';
     meta_capi_send_lead([
         'lead_id'     => field('lead_id'),

@@ -1,0 +1,147 @@
+{
+  "pageKey": "thankyou_page",
+  "sections": [
+    {
+      "type": "thankyou-hero",
+      "key": "thankyou_hero",
+      "label": "Hero",
+      "content": {
+        "badge": "Request Received",
+        "titleLine1": "Thank You!",
+        "titleHighlight": "Your Concrete Project Starts Here.",
+        "description": "We have received your details and are excited to help upgrade your property with durable, high-quality concrete work.",
+        "trustPoints": [
+          "Your request is already with our team",
+          "Free, no-obligation estimate",
+          "Licensed, bonded & insured in Ohio"
+        ],
+        "fastTitle": "Want to move even faster?",
+        "fastText": "Be proactive and call us right now to speak directly with our scheduler!",
+        "fastPhone": "(614) 384-5917",
+        "fastExtension": "ext. 1",
+        "fastPhoneHref": "tel:+16143845917",
+        "fastCta": "Call our scheduler now",
+        "fastNote": "Monday – Friday, 8:00 AM – 5:00 PM"
+      }
+    },
+    {
+      "type": "thankyou-next",
+      "key": "thankyou_next",
+      "label": "What Happens Next",
+      "content": {
+        "eyebrow": "What happens next?",
+        "title": "It starts with a quick phone call",
+        "description": "To get you an accurate quote and clear up any questions about your project scope, our process always begins with a quick phone call. Calling you directly is the absolute fastest and most efficient way to review your site requirements and get you on our scheduling calendar.",
+        "steps": [
+          {
+            "title": "We review your submission",
+            "text": "A member of our team goes through the details and the services you just sent us."
+          },
+          {
+            "title": "We call you",
+            "text": "A short conversation covers your site requirements, your questions and the scope of the work."
+          },
+          {
+            "title": "You get on the calendar",
+            "text": "With the scope settled, we book your project on our scheduling calendar."
+          }
+        ]
+      }
+    },
+    {
+      "type": "thankyou-when",
+      "key": "thankyou_when",
+      "label": "When Will We Call",
+      "content": {
+        "eyebrow": "Timing",
+        "title": "When will we call you?",
+        "items": [
+          {
+            "icon": "Clock",
+            "title": "During business hours",
+            "hours": "Mon – Fri · 8:00 AM – 5:00 PM",
+            "text": "Our normal operating hours are Monday – Friday, 8:00 AM – 5:00 PM. A member of our team will review your submission and call you at our earliest opportunity during these hours. Occasionally, we may call after 5, but we will not answer calls after 5."
+          },
+          {
+            "icon": "Moon",
+            "title": "Nights & weekends",
+            "hours": "First thing the next business day",
+            "text": "If you are submitting this request over the weekend or outside of our regular hours, rest assured we will give you a call or text first thing on the next business day."
+          }
+        ]
+      }
+    },
+    {
+      "type": "thankyou-numbers",
+      "key": "thankyou_numbers",
+      "label": "Our Numbers",
+      "content": {
+        "eyebrow": "Save our numbers",
+        "title": "Please save our official consultation numbers",
+        "description": "So you know it's us calling or texting you — an unknown number is easy to miss.",
+        "list": [
+          { "display": "(614) 384-5917", "href": "tel:+16143845917" },
+          { "display": "(614) 769-1117", "href": "tel:+16147691117" }
+        ]
+      }
+    },
+    {
+      "type": "thankyou-explore",
+      "key": "thankyou_explore",
+      "label": "While You Wait",
+      "content": {
+        "eyebrow": "While you wait",
+        "title": "Explore our credentials and past work",
+        "description": "Everything here helps us have a shorter, sharper call when we reach you.",
+        "items": [
+          {
+            "icon": "MapPin",
+            "image": "/images/patio-viewed-from-covered-porch-202608171439.webp",
+            "title": "See work near you on our Project Map",
+            "text": "Explore our interactive Project Map to find completed driveways, patios, and commercial concrete projects right in your neighborhood.",
+            "href": "/project-map/",
+            "cta": "Open the Project Map"
+          },
+          {
+            "icon": "ShieldCheck",
+            "image": "/images/maxima-team-3-2.webp",
+            "title": "Our licensing, bonding, insurance & code compliance",
+            "text": "Your property is protected. Read about our full licensing, robust liability insurance, structural bonding, and strict adherence to local Ohio building codes.",
+            "href": "/licensing-insured/",
+            "cta": "See our credentials"
+          },
+          {
+            "icon": "Images",
+            "image": "/images/stamped-concrete.webp",
+            "title": "Browse our concrete transformation gallery",
+            "text": "Visit our Gallery for inspiration and to view the craftsmanship of our stamped concrete, smooth finishes, and structural slabs.",
+            "href": "/gallery/",
+            "cta": "Browse the gallery"
+          }
+        ]
+      }
+    },
+    {
+      "type": "thankyou-closing",
+      "key": "thankyou_closing",
+      "label": "Closing",
+      "content": {
+        "title": "Talk to you soon!",
+        "description": "Keep an eye on your inbox — we just sent you a copy of these numbers and the next steps.",
+        "ctaText": "Back to homepage",
+        "ctaLink": "/",
+        "secondaryCtaText": "Call (614) 384-5917",
+        "secondaryCtaLink": "tel:+16143845917"
+      }
+    },
+    {
+      "type": "thankyou-seo",
+      "key": "thankyou_seo",
+      "label": "SEO",
+      "content": {
+        "title": "Thank You | Maxima Concrete",
+        "description": "Your estimate request is in. Here is what happens next, when we will call, and the numbers we call from."
+      }
+    }
+  ]
+}

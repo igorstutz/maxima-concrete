@@ -32733,6 +32733,337 @@ collections:
                         label: overlayGradient
                         required: false
                         widget: boolean
+      - name: thankyou_page
+        label: "Thank You"
+        file: src/content/pages/thankyou_page.json
+        fields:
+          - name: pageKey
+            label: "Page key (não alterar)"
+            widget: string
+            required: true
+          - name: sections
+            label: Sections
+            label_singular: section
+            widget: list
+            typeKey: type
+            types:
+              - label: thankyou-closing
+                name: thankyou-closing
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: secondaryCtaText
+                        label: secondaryCtaText
+                        required: false
+                        widget: string
+                      - name: secondaryCtaLink
+                        label: secondaryCtaLink
+                        required: false
+                        widget: string
+              - label: thankyou-explore
+                name: thankyou-explore
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: image
+                            label: image
+                            required: false
+                            widget: image
+                            choose_url: true
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: text
+                          - name: href
+                            label: href
+                            required: false
+                            widget: string
+                          - name: cta
+                            label: cta
+                            required: false
+                            widget: string
+              - label: thankyou-hero
+                name: thankyou-hero
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: badge
+                        label: badge
+                        required: false
+                        widget: string
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: trustPoints
+                        label: trustPoints
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: fastTitle
+                        label: fastTitle
+                        required: false
+                        widget: string
+                      - name: fastText
+                        label: fastText
+                        required: false
+                        widget: string
+                      - name: fastPhone
+                        label: fastPhone
+                        required: false
+                        widget: string
+                      - name: fastExtension
+                        label: fastExtension
+                        required: false
+                        widget: string
+                      - name: fastPhoneHref
+                        label: fastPhoneHref
+                        required: false
+                        widget: string
+                      - name: fastCta
+                        label: fastCta
+                        required: false
+                        widget: string
+                      - name: fastNote
+                        label: fastNote
+                        required: false
+                        widget: string
+              - label: thankyou-next
+                name: thankyou-next
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
+                      - name: steps
+                        label: steps
+                        required: false
+                        widget: list
+                        fields:
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: string
+              - label: thankyou-numbers
+                name: thankyou-numbers
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: list
+                        label: list
+                        required: false
+                        widget: list
+                        fields:
+                          - name: display
+                            label: display
+                            required: false
+                            widget: string
+                          - name: href
+                            label: href
+                            required: false
+                            widget: string
+              - label: thankyou-seo
+                name: thankyou-seo
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+              - label: thankyou-when
+                name: thankyou-when
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: items
+                        label: items
+                        required: false
+                        widget: list
+                        fields:
+                          - name: icon
+                            label: icon
+                            required: false
+                            widget: string
+                          - name: title
+                            label: title
+                            required: false
+                            widget: string
+                          - name: hours
+                            label: hours
+                            required: false
+                            widget: string
+                          - name: text
+                            label: text
+                            required: false
+                            widget: text
       - name: whymaxima_page
         label: "Why Maxima"
         file: src/content/pages/whymaxima_page.json
@@ -34913,6 +35244,20 @@ collections:
                 value: "steps_page::custom_1771982498367_ifh1tq"
               - label: "Steps › FAQ"
                 value: "steps_page::custom_1771982584646_bo751e"
+              - label: "Thank You › Hero"
+                value: "thankyou_page::thankyou_hero"
+              - label: "Thank You › What Happens Next"
+                value: "thankyou_page::thankyou_next"
+              - label: "Thank You › When Will We Call"
+                value: "thankyou_page::thankyou_when"
+              - label: "Thank You › Our Numbers"
+                value: "thankyou_page::thankyou_numbers"
+              - label: "Thank You › While You Wait"
+                value: "thankyou_page::thankyou_explore"
+              - label: "Thank You › Closing"
+                value: "thankyou_page::thankyou_closing"
+              - label: "Thank You › SEO"
+                value: "thankyou_page::thankyou_seo"
               - label: "Why Maxima › Hero Image"
                 value: "whymaxima_page::custom_whymaxima_hero"
               - label: "Why Maxima › Why Maxima"
@@ -35067,6 +35412,8 @@ collections:
                 value: sportscourts_page
               - label: Steps
                 value: steps_page
+              - label: "Thank You"
+                value: thankyou_page
               - label: "Why Maxima"
                 value: whymaxima_page
               - label: "Why Maxima — Concrete Specifications"

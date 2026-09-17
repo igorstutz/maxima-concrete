@@ -254,7 +254,8 @@ function mailer_ultimo_transporte(): string
  * Envia uma mensagem a UM destinatário.
  *
  * @param array $msg to, subject, text, html (opcional), reply_to (opcional),
- *                   attachment => ['name' => ..., 'data' => ...] (opcional)
+ *                   from_name (opcional), attachment => ['name' => ..., 'data' => ...]
+ *                   (opcional)
  */
 function enviar_email(array $msg): bool
 {
@@ -276,6 +277,15 @@ function enviar_email(array $msg): bool
                 . implode(' e ', mailer_private_dirs() ?: ['(nenhuma pasta .private encontrada)']));
         }
     } elseif (!$apiCaiu) {
+        // Nome de exibição por mensagem: o aviso interno chega como "Maxima
+        // Concrete Website", a confirmação ao cliente como "Maxima Concrete".
+        // Só o NOME muda — o endereço continua o do arquivo de configuração,
+        // que é o que carrega a assinatura DKIM do domínio.
+        if (!empty($msg['from_name'])) {
+            $de = mailer_split_address($cfg['from']);
+            $cfg['from'] = $msg['from_name'] . ' <' . $de['email'] . '>';
+        }
+
         $enviou = $cfg['provider'] === 'resend'
             ? mailer_send_resend($cfg, $msg)
             : mailer_send_brevo($cfg, $msg);
@@ -291,7 +301,7 @@ function enviar_email(array $msg): bool
     // Caminho antigo. Vale enquanto o domínio não está verificado no Resend, e
     // como rede de segurança se a API estiver fora do ar: melhor um e-mail em
     // spam do que um lead perdido.
-    $fromNome  = 'Maxima Concrete Website';
+    $fromNome  = trim((string)($msg['from_name'] ?? '')) ?: 'Maxima Concrete Website';
     $fromEmail = 'no-reply@maximaconcrete.com';
     $hostFrom  = substr($fromEmail, strpos($fromEmail, '@') + 1);
 

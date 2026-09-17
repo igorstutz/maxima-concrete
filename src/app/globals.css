@@ -161,3 +161,80 @@ footer {
 @media (prefers-reduced-motion: reduce) {
   .animate-marquee { animation: none; }
 }
+
+/* ===== Superfícies líquidas (thank-you page) =====
+   Manchas de cor que se deformam devagar sob o vidro fosco dos cartões. É
+   decoração: tudo aqui é `pointer-events: none` no HTML e some inteiro em
+   prefers-reduced-motion (a mancha fica, parada — o que incomoda é o
+   movimento, não a cor). O blur pesado fica sempre em elemento próprio,
+   nunca no container do texto, para o navegador não repintar o conteúdo
+   junto. */
+.liquid-blob {
+  position: absolute;
+  border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%;
+  filter: blur(70px);
+  opacity: 0.7;
+  animation: liquidMorph 22s ease-in-out infinite alternate;
+  will-change: border-radius, transform;
+}
+.liquid-blob-slow {
+  animation-duration: 34s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes liquidMorph {
+  0% {
+    border-radius: 42% 58% 63% 37% / 41% 44% 56% 59%;
+    transform: translate3d(0, 0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+    border-radius: 63% 37% 38% 62% / 58% 63% 37% 42%;
+    transform: translate3d(3%, -4%, 0) scale(1.08) rotate(8deg);
+  }
+  100% {
+    border-radius: 34% 66% 57% 43% / 62% 38% 62% 38%;
+    transform: translate3d(-3%, 3%, 0) scale(0.96) rotate(-6deg);
+  }
+}
+
+/* Vidro escuro: o cartão padrão desta página. O gradiente de cima para baixo
+   imita a luz batendo na quina superior, que é o que faz a superfície parecer
+   sólida em vez de um retângulo translúcido. */
+.glass-panel {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.11) 0%,
+    rgba(255, 255, 255, 0.05) 45%,
+    rgba(255, 255, 255, 0.025) 100%
+  );
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.16),
+    0 24px 60px -30px rgba(2, 12, 24, 0.9);
+}
+
+/* Fio de luz atravessando a borda superior do cartão — o detalhe que separa
+   "vidro" de "transparência". */
+.liquid-sheen::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(126, 197, 255, 0.75) 35%,
+    rgba(255, 255, 255, 0.95) 50%,
+    rgba(126, 197, 255, 0.75) 65%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .liquid-blob {
+    animation: none;
+  }
+}

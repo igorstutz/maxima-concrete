@@ -157,9 +157,44 @@ normalmente a partir do repositório.
 
 ## 5. Formulário de contato
 
-`public/api/submit.php` envia para `info@maximaconcrete.com` via `mail()` da
-Hostinger e grava cada envio em `/.private/submissions.log`.
-Requisito de DNS: incluir `include:_spf.mail.hostinger.com` no SPF do domínio.
+`public/api/submit.php` avisa a equipe (um envio por destinatário) e grava cada
+envio em `/.private/submissions.log`. O transporte é o `mailer.php` — Brevo com
+as credenciais em `/.private/mailer.php`, `mail()` da Hostinger como último
+recurso. Requisito de DNS do caminho antigo: incluir
+`include:_spf.mail.hostinger.com` no SPF do domínio.
+
+Depois de responder ao navegador, o mesmo `submit.php` dispara
+`public/api/lead-autoreply.php`, a confirmação que vai para o CLIENTE com os
+números de onde ligamos. **Não precisa de nada novo no servidor**: usa o mesmo
+`mailer.php` e a mesma pasta `.private/`, onde passa a existir também um
+`lead-autoreply.log` (uma linha por tentativa; é o que evita mandar duas
+confirmações para quem envia o formulário duas vezes). Na VPS, sem credencial
+do Brevo, a mensagem aparece em `/.private/mail-outbox.log` como qualquer outra.
+
+Para mandar a mensagem de teste para uma caixa de entrada real, daqui mesmo:
+
+```bash
+bash scripts/test-autoreply.sh                                    # padrão: advertising@melaniesconsulting.com
+bash scripts/test-autoreply.sh advertising@melaniesconsulting.com:Igor
+bash scripts/test-autoreply.sh paul@maximaconcrete.com juliana@melaniesconsulting.com
+```
+
+O script confere o terreno no servidor (módulo presente, sintaxe, credencial de
+envio, se o `submit.php` de lá já chama a confirmação), manda um e-mail por
+destinatário e mostra as linhas do log. O nome depois dos dois-pontos vira o
+"Hi &lt;nome&gt;," da mensagem; sem ele, sai do começo do endereço. Quando o
+`lead-autoreply.php` daqui está diferente do que está no servidor, o script sobe
+esta versão antes de testar — dá para ajustar o layout e ver o resultado na caixa
+de entrada sem esperar um deploy a cada tentativa; o próximo deploy repõe a
+versão do repositório.
+
+Os dados de conexão ficam em `.private/hostinger.env` (**gitignorado** — este
+repositório é público), ou em `~/.maxima/hostinger.env`, ou nas variáveis
+`MAXIMA_SSH_*`. São os mesmos valores dos secrets `HOSTINGER_SSH_*`.
+
+Direto no servidor, sem o script, o comando é
+`php lead-autoreply.php test alguem@exemplo.com "First Last"` de dentro de
+`public_html/api/`.
 
 ## 6. Comandos locais
 

@@ -158,6 +158,44 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
 - Todo lead é gravado em `.private/submissions.log` antes de qualquer envio, e o
   painel `/admin` lê desse arquivo — e-mail com problema nunca perde lead.
 
+## Depois do formulário: /thank-you/ e a confirmação ao lead
+- O formulário de contato (`src/components/sections/home/Contact.tsx`, usado em
+  praticamente todas as páginas) **redireciona** para `/thank-you/` no sucesso, por
+  `router.push` e não `window.location`: a página não é descarregada, então os beacons
+  que `pushLeadEvent` acabou de enfileirar ainda saem. Um recarregamento ali cancelaria
+  a medição da conversão. O aviso verde que fica no lugar do formulário dura só o
+  instante da troca de página.
+- `/thank-you/` é **noindex, follow**: fora de contexto ela promete uma ligação que
+  ninguém pediu e competiria com `/contact-us/` pelas buscas que deveriam cair no
+  formulário. Por isso também não entra em `PAGE_ROUTES` nem em `STATIC_ROUTES`
+  (`src/lib/routes.ts`) — as duas alimentam o sitemap.
+- Conteúdo em `src/content/pages/thankyou_page.json` (painel: Pages › Thank You),
+  desenho em `src/app/thank-you/page.tsx`. O visual "líquido" sai de três utilitários
+  em `globals.css`: `.liquid-blob` (manchas que se deformam devagar, só decoração e
+  paradas em `prefers-reduced-motion`), `.glass-panel` (o cartão de vidro escuro) e
+  `.liquid-sheen` (o fio de luz na borda de cima).
+- O e-mail `public/api/lead-autoreply.php` é o PAR dessa página: mesmo conteúdo, para
+  quem fechou a aba antes de ler chegar ao mesmo lugar. **Mudou um, mude o outro** —
+  em especial a lista de números, que existe nos dois arquivos.
+- Ele existe porque a ligação de volta não é atendida quando o número é desconhecido.
+  Sai pelo mesmo `mailer.php` do resto do site (DKIM do domínio), o que importa mais
+  aqui do que nos avisos internos: o destino é a caixa que o cliente digitou (Gmail,
+  Yahoo, Outlook.com), justamente quem descarta em silêncio o que não está autenticado.
+  `enviar_email` aceita `from_name` só para esta mensagem sair como "Maxima Concrete"
+  em vez de "Maxima Concrete Website" — o ENDEREÇO não muda, é ele que carrega a
+  assinatura.
+- Roda depois de `fastcgi_finish_request()`, nunca lança e nunca imprime: o lead já
+  foi gravado e o navegador já tem a resposta. Registra em `.private/lead-autoreply.log`,
+  que também serve de trava contra reenvio (6 h para o mesmo endereço).
+- Teste sem depender de formulário: `bash scripts/test-autoreply.sh [destinatário[:Nome] ...]`
+  (par `scripts/` + `server/`, o mesmo formato do maxima-pools). Só faz sentido na
+  Hostinger — é o único ambiente com credencial de envio; na VPS o `mail()` é falso e a
+  mensagem pararia no `mail-outbox.log`. Ele sobe o módulo quando o do servidor está
+  diferente do daqui, para ajustar o layout sem um deploy por tentativa.
+- **Acesso ao servidor não entra no repositório** (que é público): `.private/hostinger.env`,
+  gitignorado, guarda usuário/host/porta/chave — os mesmos valores dos secrets
+  `HOSTINGER_SSH_*`. A mesma conta da Hostinger hospeda os dois sites da Maxima.
+
 ## Ambientes (detalhes e operação em `DEPLOY.md`)
 - **Homologação, com painel:** https://maximaconcrete.igorstutz.online — VPS +
   Cloudflare Tunnel servindo Apache+PHP num container, mesmo ambiente da
