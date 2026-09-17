@@ -118,4 +118,9 @@ echo
 
 # O script remoto vai por stdin: nada precisa ser copiado para o servidor
 # antes, e não sobra arquivo para limpar depois.
-ssh "${SSH_OPTS[@]}" "$ALVO" bash -s "$PASTA" "$@" < "$REMOTO"
+#
+# O `tr` tira o \r antes de mandar. O .gitattributes já prende os .sh a LF, mas
+# este é o tipo de coisa que volta sozinha (um zip, um editor, um clone antigo)
+# e o erro que ela dá do outro lado — "$'\r': command not found" — não parece
+# com a causa. Dois centavos aqui evitam a caçada.
+tr -d '\r' < "$REMOTO" | ssh "${SSH_OPTS[@]}" "$ALVO" bash -s "$PASTA" "$@"

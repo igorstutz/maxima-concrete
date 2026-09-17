@@ -1,0 +1,6 @@
+# Os scripts de shell rodam no bash da Hostinger. Um checkout no Windows os
+# entrega com CRLF, e o bash lê o \r como parte do comando — daí "$'\r':
+# command not found". Ficam presos a LF, não importa em que máquina o checkout
+# aconteça. (Mesma regra do repositório do maxima-pools, que aprendeu isto
+# antes.)
+*.sh text eol=lf
