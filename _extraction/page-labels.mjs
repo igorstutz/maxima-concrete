@@ -73,6 +73,7 @@ export const PAGE_LABELS = {
   projectmap_page: "Project Map",
   reviews_page: "Reviews",
   financing_page: "Financing",
+  lyonfinancing_page: "Financing — Lyon Financial",
   licensinginsured_page: "Licensed & Insured",
   areaswe_serve_page: "Areas We Serve",
   areascolumbus_page: "Areas We Serve — Columbus",

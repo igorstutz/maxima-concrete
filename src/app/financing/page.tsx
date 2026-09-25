@@ -47,6 +47,7 @@ const sectionContent = (key: string): Record<string, any> =>
   page.sections.find((s) => s.key === key)?.content ?? {};
 const hero = sectionContent("financing_hero");
 const partnersSection = sectionContent("financing_partners");
+const lyonPromo = sectionContent("financing_lyon_promo");
 const stepsSection = sectionContent("financing_steps");
 const quote = sectionContent("financing_quote");
 const highlightsSection = sectionContent("financing_highlights");
@@ -74,6 +75,10 @@ interface Partner {
   description: string;
   facts: { label: string; value: string }[];
   ctaLabel: string;
+  /** Selo de oferta e link "saiba mais" — hoje só o Lyon usa (vazios = não aparecem). */
+  promoText?: string;
+  learnMoreLabel?: string;
+  learnMoreLink?: string;
   /** Qual credor abrir — a URL fica no código porque carrega o ID da indicação. */
   partner: string;
 }
@@ -232,6 +237,20 @@ export default function Page() {
                   </div>
                 ))}
               </div>
+
+              {/* Chamada para a oferta do Lyon (página dedicada) */}
+              {hero.promoText && hero.promoLink && (
+                <Link
+                  href={hero.promoLink}
+                  className="group mt-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.06] py-1.5 pl-1.5 pr-4 text-sm text-white/85 backdrop-blur-md transition hover:border-[hsl(210_100%_60%)]/60 hover:bg-white/10 hover:text-white"
+                >
+                  <span className="rounded-full bg-[hsl(210_100%_55%)] px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider text-[hsl(218_60%_8%)]">
+                    {hero.promoLabel}
+                  </span>
+                  {hero.promoText}
+                  <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                </Link>
+              )}
             </div>
 
             {/* Cartão de simulação (vidro) */}
@@ -338,6 +357,12 @@ export default function Page() {
 
                 <p className="mt-5 leading-relaxed text-white/65">{p.description}</p>
 
+                {p.promoText && (
+                  <p className="mt-4 inline-flex w-fit items-center gap-2 rounded-lg border border-[hsl(210_100%_60%)]/30 bg-[hsl(210_100%_55%)]/10 px-3 py-1.5 text-sm font-semibold text-[hsl(210_100%_65%)]">
+                    <Sparkles className="h-4 w-4" /> {p.promoText}
+                  </p>
+                )}
+
                 {/* Absorve a sobra de altura para os dois cards alinharem os
                     números e os botões na mesma linha. */}
                 <div className="grow" />
@@ -362,6 +387,14 @@ export default function Page() {
                   {p.ctaLabel}
                   <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                 </a>
+                {p.learnMoreLabel && p.learnMoreLink && (
+                  <Link
+                    href={p.learnMoreLink}
+                    className="mt-3 inline-flex items-center justify-center gap-1.5 text-sm font-semibold text-white/70 transition hover:text-white"
+                  >
+                    {p.learnMoreLabel} <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                )}
               </div>
             ))}
           </div>
@@ -370,6 +403,73 @@ export default function Page() {
           <LyonBanner className="mt-8" />
         </Container>
       </section>
+
+      {/* OFERTA LYON — leva à página dedicada /financing/lyon/ */}
+      {lyonPromo.ctaLink && (
+        <section className="relative overflow-hidden bg-[hsl(218_45%_8%)] pb-20 md:pb-24">
+          <Container>
+            <div className="relative overflow-hidden rounded-3xl border border-[hsl(210_100%_60%)]/25 bg-gradient-to-br from-[hsl(209_100%_22%)] via-[hsl(213_60%_14%)] to-[hsl(218_50%_10%)] p-8 md:p-12">
+              <div className="pointer-events-none absolute -right-24 -top-24 h-80 w-80 rounded-full bg-[hsl(200_100%_50%)]/20 blur-3xl" />
+              <div className="relative grid grid-cols-1 items-center gap-10 lg:grid-cols-[1.3fr_1fr]">
+                <div>
+                  <span className="inline-flex items-center rounded-xl bg-white px-4 py-3">
+                    <Image
+                      src={lyonPromo.logo}
+                      alt="Lyon Financial"
+                      width={814}
+                      height={220}
+                      className="h-6 w-auto md:h-7"
+                    />
+                  </span>
+                  <p className="mt-6 text-xs font-bold uppercase tracking-[0.2em] text-[hsl(200_100%_62%)]">
+                    {lyonPromo.badge}
+                  </p>
+                  <h2 className="mt-3 text-4xl font-bold leading-[1.05] tracking-tight text-white md:text-5xl">
+                    {lyonPromo.titlePart1}{" "}
+                    <span className="bg-gradient-to-r from-white to-[hsl(200_100%_55%)] bg-clip-text text-transparent">
+                      {lyonPromo.titleHighlight}
+                    </span>
+                  </h2>
+                  <p className="mt-5 max-w-xl text-lg leading-relaxed text-white/75">
+                    {lyonPromo.description}
+                  </p>
+                  <div className="mt-8 flex flex-wrap gap-3">
+                    <Link
+                      href={lyonPromo.ctaLink}
+                      className="group inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3.5 font-semibold text-[hsl(218_60%_12%)] transition-all hover:-translate-y-0.5"
+                    >
+                      {lyonPromo.ctaText}
+                      <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                    </Link>
+                    <a
+                      href={LYON_APPLY_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-6 py-3.5 font-semibold text-white transition hover:bg-white/10"
+                    >
+                      {lyonPromo.secondaryCtaText}
+                    </a>
+                  </div>
+                </div>
+                <ul className="space-y-4">
+                  {(lyonPromo.bullets ?? []).map((item: string) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.05] p-4 font-semibold text-white"
+                    >
+                      <CheckCircle2 className="h-5 w-5 shrink-0 text-[hsl(200_100%_62%)]" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <p className="relative mt-8 border-t border-white/10 pt-5 text-xs leading-relaxed text-white/50">
+                {lyonPromo.disclaimer}
+              </p>
+            </div>
+          </Container>
+        </section>
+      )}
 
       {/* HOW IT WORKS */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[hsl(216_55%_14%)] via-[hsl(217_50%_11%)] to-[hsl(218_45%_8%)] py-24">

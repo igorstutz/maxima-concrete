@@ -14,17 +14,30 @@
         "ctaText": "Get Pre-Qualified",
         "phone": "(614) 384-5917",
         "phoneHref": "tel:+16143845917",
-        "trustItems": ["Soft credit check", "Decision in 60s", "$0 down options"],
+        "trustItems": [
+          "Soft credit check",
+          "Decision in 60s",
+          "$0 down options"
+        ],
         "cardBadge": "From 7.99% APR",
         "cardLabel": "Sample Payment",
         "cardAmount": "$189",
         "cardAmountSuffix": "/mo",
         "cardNote": "on a $12,000 driveway · 84 mo · subject to credit approval",
         "cardStats": [
-          { "label": "Down", "value": "$0" },
-          { "label": "Term", "value": "Up to 144 mo" }
+          {
+            "label": "Down",
+            "value": "$0"
+          },
+          {
+            "label": "Term",
+            "value": "Up to 144 mo"
+          }
         ],
-        "cardCtaText": "Check My Rate"
+        "cardCtaText": "Check My Rate",
+        "promoLabel": "New",
+        "promoText": "No payments for 90 days with Lyon Financial",
+        "promoLink": "/financing/lyon/"
       }
     },
     {
@@ -43,12 +56,24 @@
             "tagline": "Fastest path",
             "description": "Best for most concrete work — driveways, patios, walkways and repairs. Pre-qualify online with a soft credit check and get an answer in about a minute.",
             "facts": [
-              { "label": "Decision", "value": "Under 60s" },
-              { "label": "Down payment", "value": "$0 options" },
-              { "label": "Terms", "value": "Up to 144 mo" }
+              {
+                "label": "Decision",
+                "value": "Under 60s"
+              },
+              {
+                "label": "Down payment",
+                "value": "$0 options"
+              },
+              {
+                "label": "Terms",
+                "value": "Up to 144 mo"
+              }
             ],
             "ctaLabel": "Get Pre-Qualified",
-            "partner": "hearth"
+            "partner": "hearth",
+            "promoText": "",
+            "learnMoreLabel": "",
+            "learnMoreLink": ""
           },
           {
             "name": "Lyon Financial",
@@ -56,14 +81,47 @@
             "tagline": "Larger projects",
             "description": "Financing outdoor living since 1979 — pool decks, pergolas, patios, landscaping and full backyard builds. Higher amounts and the longest terms available.",
             "facts": [
-              { "label": "Amounts", "value": "Up to $250K" },
-              { "label": "Terms", "value": "Up to 30 years" },
-              { "label": "Lending since", "value": "1979" }
+              {
+                "label": "Amounts",
+                "value": "Up to $250K"
+              },
+              {
+                "label": "Terms",
+                "value": "Up to 30 years"
+              },
+              {
+                "label": "Lending since",
+                "value": "1979"
+              }
             ],
             "ctaLabel": "Apply with Lyon",
-            "partner": "lyon"
+            "partner": "lyon",
+            "promoText": "No payments for 90 days*",
+            "learnMoreLabel": "See the 90-day offer",
+            "learnMoreLink": "/financing/lyon/"
           }
         ]
+      }
+    },
+    {
+      "key": "financing_lyon_promo",
+      "label": "Lyon 90-day offer",
+      "type": "financing-lyon-promo",
+      "content": {
+        "logo": "/images/partners/lyon-financial-logo.webp",
+        "badge": "Now available at Maxima",
+        "titlePart1": "No payments",
+        "titleHighlight": "for 90 days.*",
+        "description": "Build now and pay later with Lyon. Move forward on your project today, lock in current project pricing and make your first payment 90 days after funding.",
+        "bullets": [
+          "Lock in current project pricing",
+          "Build the backyard you really want",
+          "Keep your cash working"
+        ],
+        "ctaText": "See the Lyon offer",
+        "ctaLink": "/financing/lyon/",
+        "secondaryCtaText": "Apply with Lyon",
+        "disclaimer": "*Subject to credit approval. Interest accrues from the date of funding, including during the 90-day deferral period. Lyon Financial is not a lender. Additional terms apply."
       }
     },
     {
@@ -130,8 +188,14 @@
         "tileAmountSuffix": "down",
         "tileText": "Qualified homeowners start with nothing out of pocket — the project begins and you pay over time.",
         "tileStats": [
-          { "label": "Avg approval", "value": "< 60s" },
-          { "label": "Terms up to", "value": "144 mo" }
+          {
+            "label": "Avg approval",
+            "value": "< 60s"
+          },
+          {
+            "label": "Terms up to",
+            "value": "144 mo"
+          }
         ],
         "items": [
           {
@@ -180,6 +244,10 @@
           {
             "question": "Which financing partner should I choose?",
             "answer": "Hearth is the quickest route for most concrete work — a soft credit check and an answer in about a minute. Lyon Financial is built for larger outdoor living investments, with amounts up to $250,000 and terms up to 30 years. You can apply to both and take whichever offer fits your budget."
+          },
+          {
+            "question": "What is Lyon Financial’s 90-day offer?",
+            "answer": "With Lyon Financial you can build now and make no payments for 90 days after your loan is funded. Interest accrues from the date of funding, including during the deferral period, and approval is subject to credit. See all the details on our Lyon Financial page."
           },
           {
             "question": "Will applying affect my credit score?",

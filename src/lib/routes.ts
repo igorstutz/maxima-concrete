@@ -58,4 +58,9 @@ export const PAGE_ROUTES: Record<string, string> = {
 };
 
 // Páginas sem JSON de seções (conteúdo próprio no código)
-export const STATIC_ROUTES = ["/reviews", "/financing", "/licensing-insured"];
+export const STATIC_ROUTES = [
+  "/reviews",
+  "/financing",
+  "/financing/lyon",
+  "/licensing-insured",
+];
