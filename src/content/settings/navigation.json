@@ -282,6 +282,11 @@
           "icon": "DollarSign"
         },
         {
+          "label": "Lyon Financing",
+          "href": "/financing/lyon",
+          "icon": "BadgePercent"
+        },
+        {
           "label": "Join Our Team",
           "href": "/join-our-team",
           "icon": "Users"
