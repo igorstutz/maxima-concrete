@@ -3,11 +3,21 @@
   "sections": [
     {
       "key": "lyon_seo",
-      "label": "SEO",
+      "label": "SEO & structured data",
       "type": "lyon-seo",
       "content": {
         "title": "No Payments for 90 Days with Lyon Financial | Maxima Concrete",
-        "description": "Build your driveway, patio, pool deck or outdoor living space now and make no payments for 90 days with Lyon Financial. Amounts up to $250K, terms up to 30 years. Subject to credit approval."
+        "description": "Build your patio, pool deck or outdoor living space now and make no payments for 90 days with Lyon Financial. Amounts up to $250K, terms up to 30 years. Subject to credit approval.",
+        "ogImage": "/images/cms/uploads/1784043223806-x9xaxq.webp",
+        "ogImageAlt": "Backyard with pool, paver patio and pergola built by Maxima Concrete",
+        "breadcrumbLabel": "Lyon Financial",
+        "offerName": "No payments for 90 days — Lyon Financial",
+        "offerDescription": "Outdoor living and concrete project financing through Lyon Financial with no payments for 90 days after funding. Interest accrues from the date of funding. Subject to credit approval.",
+        "providerName": "Lyon Financial",
+        "providerUrl": "https://www.lyonfinancial.net/",
+        "maxAmount": "250000",
+        "maxTermYears": "30",
+        "areaServed": "Central Ohio"
       }
     },
     {
@@ -16,7 +26,6 @@
       "type": "lyon-hero",
       "content": {
         "image": "/images/cms/uploads/1784043223806-x9xaxq.webp",
-        "badge": "Now available at Maxima",
         "titleLine1": "No payments for",
         "titleHighlight": "90 days.*",
         "subtitle": "Build now and pay later with Lyon.",
@@ -24,7 +33,7 @@
         "ctaText": "Apply with Lyon",
         "phone": "(614) 384-5917",
         "phoneHref": "tel:+16143845917",
-        "footnote": "*Subject to credit approval. Interest accrues from the date of funding. See full terms below.",
+        "footnote": "*Subject to credit approval. Interest accrues from the date of funding.",
         "cardBadge": "Now available at Maxima",
         "cardEyebrow": "No payments for",
         "cardAmount": "90 days*",
@@ -33,6 +42,56 @@
           { "label": "Amounts", "value": "Up to $250K" },
           { "label": "Terms", "value": "Up to 30 years" },
           { "label": "Lending since", "value": "1979" }
+        ]
+      }
+    },
+    {
+      "key": "lyon_answer",
+      "label": "Quick answer (AEO)",
+      "type": "lyon-answer",
+      "content": {
+        "eyebrow": "The short answer",
+        "question": "Can I finance my Maxima project with no payments for 90 days?",
+        "answer": "Yes. Maxima Concrete homeowners in Central Ohio can finance patios, pool decks and outdoor living projects through Lyon Financial and make no payments for the first 90 days after the loan is funded. Amounts go up to $250,000 with terms up to 30 years. Interest accrues from the date of funding, and approval is subject to credit.",
+        "facts": [
+          { "label": "First payment", "value": "90 days after funding" },
+          { "label": "Loan amounts", "value": "Up to $250,000" },
+          { "label": "Terms", "value": "Up to 30 years" },
+          { "label": "Approval", "value": "Subject to credit" }
+        ]
+      }
+    },
+    {
+      "key": "lyon_timeline",
+      "label": "How it works (timeline)",
+      "type": "lyon-timeline",
+      "content": {
+        "eyebrow": "How it works",
+        "titlePart1": "From estimate to",
+        "titleHighlight": "first payment.",
+        "description": "Here's what the 90-day window looks like in real life — your project gets built before your first payment is ever due.",
+        "windowLabel": "90 days · no payments",
+        "items": [
+          {
+            "day": "Today",
+            "title": "Get your free estimate",
+            "text": "Tell us about your patio, pool deck or outdoor living project and we'll put together a detailed quote."
+          },
+          {
+            "day": "Same week",
+            "title": "Apply with Lyon",
+            "text": "Complete Lyon Financial's secure online application. Rates and terms depend on your qualifications."
+          },
+          {
+            "day": "Day 0",
+            "title": "Loan funded, we build",
+            "text": "Once your loan is funded, we schedule your build and get to work at today's pricing."
+          },
+          {
+            "day": "Day 90",
+            "title": "First payment due",
+            "text": "Your first payment comes 90 days after funding — by then you're already enjoying the space."
+          }
         ]
       }
     },
@@ -47,43 +106,44 @@
         "description": "Waiting doesn't make your project any cheaper. Here's what financing with Lyon can do for you.",
         "items": [
           {
+            "image": "/images/cms/uploads/1782837735743-ppbdq.webp",
             "title": "Lock In Current Project Pricing",
             "text": "Moving forward now can help lock in today's prices and avoid potentially higher costs down the road."
           },
           {
+            "image": "/images/cms/uploads/1784042530315-x2p22m.webp",
             "title": "Build the Backyard You Really Want",
             "text": "Financing can make the patio, pool deck, upgrades and complete outdoor living project more attainable now, not years from now."
           },
           {
+            "image": "/images/cms/uploads/1782843113778-vaa1aa.webp",
             "title": "Keep Your Cash Working",
             "text": "Financing gives you another way to pay while keeping more of your savings and investments intact."
           }
-        ],
-        "closingLine1": "Build now.",
-        "closingLine2": "Pay later with Lyon."
+        ]
       }
     },
     {
-      "key": "lyon_steps",
-      "label": "How it works",
-      "type": "lyon-steps",
+      "key": "lyon_compare",
+      "label": "Wait vs. build now",
+      "type": "lyon-compare",
       "content": {
-        "eyebrow": "How it works",
-        "titlePart1": "Three steps to",
-        "titleHighlight": "your new project.",
-        "items": [
-          {
-            "title": "Get Your Free Estimate",
-            "text": "Tell us about your driveway, patio, pool deck or outdoor living project and we'll put together a detailed quote."
-          },
-          {
-            "title": "Apply with Lyon",
-            "text": "Complete Lyon Financial's secure online application. Rates and terms depend on your qualifications and lender requirements."
-          },
-          {
-            "title": "Build Now, Pay Later",
-            "text": "Once approved, we schedule your build. Your first payment isn't due until 90 days after funding."
-          }
+        "eyebrow": "The real cost of waiting",
+        "titlePart1": "Save up for years,",
+        "titleHighlight": "or start this season?",
+        "leftTitle": "Wait and save up",
+        "leftItems": [
+          "Project prices can rise while you save",
+          "Another season without the space you want",
+          "Savings drained in one big payment",
+          "Scope gets trimmed to fit the cash on hand"
+        ],
+        "rightTitle": "Build now with Lyon",
+        "rightItems": [
+          "Lock in today's project pricing",
+          "Enjoy your new space this season",
+          "No payments for the first 90 days*",
+          "Build the full project, upgrades included"
         ]
       }
     },
@@ -96,6 +156,12 @@
         "eyebrow": "Our lending partner",
         "title": "Financing outdoor living since 1979.",
         "text": "Lyon Financial has been helping homeowners finance pools, patios, pergolas, landscaping and complete backyard builds for more than four decades — with higher amounts and some of the longest terms available.",
+        "stats": [
+          { "value": "$250K", "label": "Maximum amount" },
+          { "value": "30 yrs", "label": "Longest term" },
+          { "value": "1979", "label": "Lending since" },
+          { "value": "ESOP", "label": "Employee owned" }
+        ],
         "ownedTitle": "Proudly Employee Owned",
         "ownedText": "Lyon Financial is an ESOP company — our people, our company.",
         "compareText": "Looking for a smaller project or a quicker decision? Maxima also works with Hearth.",
@@ -114,11 +180,19 @@
         "items": [
           {
             "question": "What does \"no payments for 90 days\" mean?",
-            "answer": "Your first payment isn't due until 90 days after your loan is funded. Interest does accrue from the date of funding, including during the 90-day deferral period."
+            "answer": "Your first payment isn't due until 90 days after your loan is funded. You can get your project built and start enjoying it before making a single payment."
+          },
+          {
+            "question": "Does interest accrue during the 90 days?",
+            "answer": "Yes. Interest accrues from the date of funding, including during the 90-day deferral period. Rates and terms vary based on your qualifications and lender requirements."
           },
           {
             "question": "What projects can I finance with Lyon?",
-            "answer": "Driveways, patios, pool decks, walkways, outdoor living spaces and complete backyard projects — amounts up to $250,000 and terms up to 30 years."
+            "answer": "Patios, pool decks, walkways, outdoor living spaces and complete backyard projects built by Maxima Concrete — with amounts up to $250,000 and terms up to 30 years. Ask us whether your project qualifies."
+          },
+          {
+            "question": "How do I apply?",
+            "answer": "Start with a free estimate from Maxima, then complete Lyon Financial's secure online application using the Apply with Lyon button on this page. Approval is subject to credit."
           },
           {
             "question": "Is Lyon Financial the lender?",
@@ -129,6 +203,20 @@
             "answer": "No. Maxima also works with Hearth, a quick option for most concrete work. You can compare both on our financing page and choose the offer that fits your budget."
           }
         ]
+      }
+    },
+    {
+      "key": "lyon_cta",
+      "label": "Final call to action",
+      "type": "lyon-cta",
+      "content": {
+        "image": "/images/outdoor-living.webp",
+        "titleLine1": "Build now.",
+        "titleLine2": "Pay later with Lyon.",
+        "text": "Get your free estimate today and make your first payment 90 days after funding.",
+        "ctaText": "Apply with Lyon",
+        "secondaryText": "Get a free estimate",
+        "secondaryLink": "/contact-us/#contact"
       }
     },
     {

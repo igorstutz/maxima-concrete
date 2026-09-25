@@ -8748,6 +8748,19 @@ collections:
                         label: text
                         required: false
                         widget: text
+                      - name: stats
+                        label: stats
+                        required: false
+                        widget: list
+                        fields:
+                          - name: value
+                            label: value
+                            required: false
+                            widget: string
+                          - name: label
+                            label: label
+                            required: false
+                            widget: string
                       - name: ownedTitle
                         label: ownedTitle
                         required: false
@@ -8768,6 +8781,47 @@ collections:
                         label: compareLink
                         required: false
                         widget: string
+              - label: lyon-answer
+                name: lyon-answer
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
+                        required: false
+                        widget: string
+                      - name: question
+                        label: question
+                        required: false
+                        widget: string
+                      - name: answer
+                        label: answer
+                        required: false
+                        widget: text
+                      - name: facts
+                        label: facts
+                        required: false
+                        widget: list
+                        fields:
+                          - name: label
+                            label: label
+                            required: false
+                            widget: string
+                          - name: value
+                            label: value
+                            required: false
+                            widget: string
               - label: lyon-benefits
                 name: lyon-benefits
                 widget: object
@@ -8805,6 +8859,11 @@ collections:
                         required: false
                         widget: list
                         fields:
+                          - name: image
+                            label: image
+                            required: false
+                            widget: image
+                            choose_url: true
                           - name: title
                             label: title
                             required: false
@@ -8813,12 +8872,101 @@ collections:
                             label: text
                             required: false
                             widget: text
-                      - name: closingLine1
-                        label: closingLine1
+              - label: lyon-compare
+                name: lyon-compare
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: eyebrow
+                        label: eyebrow
                         required: false
                         widget: string
-                      - name: closingLine2
-                        label: closingLine2
+                      - name: titlePart1
+                        label: titlePart1
+                        required: false
+                        widget: string
+                      - name: titleHighlight
+                        label: titleHighlight
+                        required: false
+                        widget: string
+                      - name: leftTitle
+                        label: leftTitle
+                        required: false
+                        widget: string
+                      - name: leftItems
+                        label: leftItems
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+                      - name: rightTitle
+                        label: rightTitle
+                        required: false
+                        widget: string
+                      - name: rightItems
+                        label: rightItems
+                        required: false
+                        widget: list
+                        field:
+                          name: item
+                          label: Item
+                          widget: string
+              - label: lyon-cta
+                name: lyon-cta
+                widget: object
+                fields:
+                  - name: key
+                    label: "Key (não alterar)"
+                    widget: string
+                    required: true
+                  - name: label
+                    label: Label
+                    widget: string
+                    required: false
+                  - name: content
+                    label: Content
+                    widget: object
+                    fields:
+                      - name: image
+                        label: image
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: titleLine1
+                        label: titleLine1
+                        required: false
+                        widget: string
+                      - name: titleLine2
+                        label: titleLine2
+                        required: false
+                        widget: string
+                      - name: text
+                        label: text
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: secondaryText
+                        label: secondaryText
+                        required: false
+                        widget: string
+                      - name: secondaryLink
+                        label: secondaryLink
                         required: false
                         widget: string
               - label: lyon-disclaimer
@@ -8903,10 +9051,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: badge
-                        label: badge
-                        required: false
-                        widget: string
                       - name: titleLine1
                         label: titleLine1
                         required: false
@@ -8992,8 +9136,49 @@ collections:
                         label: description
                         required: false
                         widget: text
-              - label: lyon-steps
-                name: lyon-steps
+                      - name: ogImage
+                        label: ogImage
+                        required: false
+                        widget: image
+                        choose_url: true
+                      - name: ogImageAlt
+                        label: ogImageAlt
+                        required: false
+                        widget: string
+                      - name: breadcrumbLabel
+                        label: breadcrumbLabel
+                        required: false
+                        widget: string
+                      - name: offerName
+                        label: offerName
+                        required: false
+                        widget: string
+                      - name: offerDescription
+                        label: offerDescription
+                        required: false
+                        widget: text
+                      - name: providerName
+                        label: providerName
+                        required: false
+                        widget: string
+                      - name: providerUrl
+                        label: providerUrl
+                        required: false
+                        widget: string
+                      - name: maxAmount
+                        label: maxAmount
+                        required: false
+                        widget: string
+                      - name: maxTermYears
+                        label: maxTermYears
+                        required: false
+                        widget: string
+                      - name: areaServed
+                        label: areaServed
+                        required: false
+                        widget: string
+              - label: lyon-timeline
+                name: lyon-timeline
                 widget: object
                 fields:
                   - name: key
@@ -9020,11 +9205,23 @@ collections:
                         label: titleHighlight
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: string
+                      - name: windowLabel
+                        label: windowLabel
+                        required: false
+                        widget: string
                       - name: items
                         label: items
                         required: false
                         widget: list
                         fields:
+                          - name: day
+                            label: day
+                            required: false
+                            widget: string
                           - name: title
                             label: title
                             required: false
@@ -9032,7 +9229,7 @@ collections:
                           - name: text
                             label: text
                             required: false
-                            widget: text
+                            widget: string
       - name: finishes_page
         label: Finishes
         file: src/content/pages/finishes_page.json
@@ -34711,18 +34908,24 @@ collections:
                 value: "financing_page::financing_highlights"
               - label: "Financing › FAQ"
                 value: "financing_page::financing_faq"
-              - label: "Financing — Lyon Financial › SEO"
+              - label: "Financing — Lyon Financial › SEO & structured data"
                 value: "lyonfinancing_page::lyon_seo"
               - label: "Financing — Lyon Financial › Hero"
                 value: "lyonfinancing_page::lyon_hero"
+              - label: "Financing — Lyon Financial › Quick answer (AEO)"
+                value: "lyonfinancing_page::lyon_answer"
+              - label: "Financing — Lyon Financial › How it works (timeline)"
+                value: "lyonfinancing_page::lyon_timeline"
               - label: "Financing — Lyon Financial › Benefits"
                 value: "lyonfinancing_page::lyon_benefits"
-              - label: "Financing — Lyon Financial › How it works"
-                value: "lyonfinancing_page::lyon_steps"
+              - label: "Financing — Lyon Financial › Wait vs. build now"
+                value: "lyonfinancing_page::lyon_compare"
               - label: "Financing — Lyon Financial › About Lyon Financial"
                 value: "lyonfinancing_page::lyon_about"
               - label: "Financing — Lyon Financial › FAQ"
                 value: "lyonfinancing_page::lyon_faq"
+              - label: "Financing — Lyon Financial › Final call to action"
+                value: "lyonfinancing_page::lyon_cta"
               - label: "Financing — Lyon Financial › Terms"
                 value: "lyonfinancing_page::lyon_disclaimer"
               - label: "Finishes › Hero"
