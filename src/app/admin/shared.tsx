@@ -93,6 +93,8 @@ export type Call = {
   ts: string;
   location: string;
   page: string;
+  /** Identificador do visitante, o mesmo gravado na jornada do lead. */
+  vid?: string;
   /** Versão curta da jornada: o log guarda a completa, o painel não precisa dela. */
   attr?: { first?: Toque; last?: Toque; lastNonDirect?: Toque; sessions?: number } | null;
 };
@@ -321,4 +323,56 @@ export function PeriodFilter({
       </div>
     </div>
   );
+}
+
+/**
+ * Quando a página de agradecimento entrou no ar (deploy de 17/09/2026). Todo
+ * envio do formulário de contato a partir daí termina nela — o redirecionamento
+ * só acontece quando o servidor aceita o lead, que é exatamente quando ele
+ * aparece no log. Antes disso a pessoa via a mensagem no próprio formulário.
+ */
+const THANK_YOU_DESDE = Date.parse("2026-09-17T20:20:00Z");
+
+/** Se este lead passou pela /thank-you/ depois de enviar. */
+export function viuThankYou(s: Submission): boolean {
+  const t = Date.parse(s.ts);
+  return isLead(s) && !Number.isNaN(t) && t >= THANK_YOU_DESDE;
+}
+
+/**
+ * Ligações que cada lead fez DEPOIS de enviar o formulário, pelo identificador
+ * do visitante.
+ *
+ * A jornada do lead é tirada na hora do envio, então nada que ele faz depois
+ * entra nela — e o que ele mais faz depois é ligar da página de agradecimento.
+ * Uma ligação conta para o envio mais recente daquele visitante que a antecede:
+ * quem envia duas vezes não vê a mesma ligação repetida nos dois cartões.
+ *
+ * Recebe TODAS as ligações, não só as do período: um lead do último dia do
+ * filtro pode ter ligado no dia seguinte.
+ */
+export function ligacoesPorLead(submissions: Submission[], calls: Call[]): Map<string, Call[]> {
+  const envios = new Map<string, { chave: string; t: number }[]>();
+  for (const s of submissions) {
+    const vid = s.attribution?.vid;
+    const t = Date.parse(s.ts);
+    if (!vid || !s.id || Number.isNaN(t)) continue;
+    if (!envios.has(vid)) envios.set(vid, []);
+    envios.get(vid)!.push({ chave: s.id, t });
+  }
+  envios.forEach((lista) => lista.sort((a, b) => a.t - b.t));
+
+  const out = new Map<string, Call[]>();
+  for (const c of calls) {
+    const lista = c.vid ? envios.get(c.vid) : undefined;
+    const t = Date.parse(c.ts);
+    if (!lista || Number.isNaN(t)) continue;
+    let dono: string | null = null;
+    for (const e of lista) if (e.t <= t) dono = e.chave;
+    if (!dono) continue; // ligou antes de escrever: já é outra conversão
+    if (!out.has(dono)) out.set(dono, []);
+    out.get(dono)!.push(c);
+  }
+  out.forEach((lista) => lista.sort((a, b) => Date.parse(a.ts) - Date.parse(b.ts)));
+  return out;
 }

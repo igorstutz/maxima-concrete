@@ -10,8 +10,8 @@
  */
 
 import { useState } from "react";
-import { ChevronDown, ExternalLink, MousePointerClick, Route } from "lucide-react";
-import { canalDoLead, type Atribuicao, type Toque } from "./shared";
+import { CheckCircle2, ChevronDown, ExternalLink, MousePointerClick, PhoneCall, Route } from "lucide-react";
+import { canalDoLead, type Atribuicao, type Call, type Toque } from "./shared";
 
 const hora = (ts?: string) =>
   ts
@@ -57,13 +57,30 @@ function LinhaToque({ t, rotulo }: { t?: Toque; rotulo: string }) {
   );
 }
 
-export function LeadJourney({ a }: { a?: Atribuicao | null }) {
+/**
+ * `enviadoEm`, `thankYou` e `ligacoes` são o que veio DEPOIS do envio. A
+ * jornada gravada termina no clique de enviar; isto vem de fora dela — a
+ * página de agradecimento pelo redirecionamento, as ligações pelo log de
+ * cliques de telefone, cruzado pelo identificador do visitante.
+ */
+export function LeadJourney({
+  a,
+  enviadoEm,
+  thankYou = false,
+  ligacoes = [],
+}: {
+  a?: Atribuicao | null;
+  enviadoEm?: string;
+  thankYou?: boolean;
+  ligacoes?: Call[];
+}) {
   const [aberto, setAberto] = useState(false);
   if (!a) return null;
 
   const toques = a.touchpoints ?? [];
   const paginas = a.pages ?? [];
   const canal = canalDoLead(a);
+  const temDepois = thankYou || ligacoes.length > 0;
 
   return (
     <div className="mt-3 border-t border-gray-100 pt-3">
@@ -74,7 +91,15 @@ export function LeadJourney({ a }: { a?: Atribuicao | null }) {
             {a.sessions} visit{a.sessions > 1 ? "s" : ""} before contact
           </span>
         )}
-        {(toques.length > 0 || paginas.length > 0 || a.first) && (
+        {/* À vista, sem abrir a jornada: quem pegou o telefone logo depois de
+            escrever é o lead mais quente da lista. */}
+        {ligacoes.length > 0 && (
+          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-medium text-emerald-700">
+            <PhoneCall size={12} />
+            Called after submitting{ligacoes.length > 1 ? ` (${ligacoes.length}×)` : ""}
+          </span>
+        )}
+        {(toques.length > 0 || paginas.length > 0 || a.first || temDepois) && (
           <button
             onClick={() => setAberto((v) => !v)}
             className="ml-auto inline-flex items-center gap-1 text-xs font-medium text-ocean hover:text-navy"
@@ -136,6 +161,32 @@ export function LeadJourney({ a }: { a?: Atribuicao | null }) {
                   <li key={`${p.ts}-${i}`} className="flex items-baseline gap-2 text-xs">
                     <span className="truncate text-gray-700">{p.path}</span>
                     <span className="ml-auto shrink-0 text-gray-400">{hora(p.ts)}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          {temDepois && (
+            <div>
+              <p className="mb-2 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-gray-400">
+                <CheckCircle2 size={12} />
+                After submitting
+              </p>
+              <ol className="space-y-1">
+                {thankYou && (
+                  <li className="flex items-baseline gap-2 text-xs">
+                    <span className="truncate text-gray-700">/thank-you/</span>
+                    <span className="text-gray-400">thank-you page</span>
+                    <span className="ml-auto shrink-0 text-gray-400">{hora(enviadoEm)}</span>
+                  </li>
+                )}
+                {ligacoes.map((c, i) => (
+                  <li key={`${c.ts}-${i}`} className="flex items-baseline gap-2 text-xs">
+                    <PhoneCall size={11} className="shrink-0 self-center text-emerald-600" />
+                    <span className="font-medium text-gray-700">Tapped to call</span>
+                    <span className="truncate text-gray-500">from {c.page || "unknown page"}</span>
+                    <span className="ml-auto shrink-0 text-gray-400">{hora(c.ts)}</span>
                   </li>
                 ))}
               </ol>

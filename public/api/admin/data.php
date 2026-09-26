@@ -65,6 +65,9 @@ $calls = array_map(static function ($c) {
         'ts'       => $c['ts'] ?? null,
         'location' => $c['location'] ?? 'unknown',
         'page'     => $c['page'] ?? '',
+        // O visitante que ligou: é por ele que o painel acha o lead que ligou
+        // depois de enviar o formulário (da página de agradecimento, quase sempre).
+        'vid'      => $a ? (string)($a['vid'] ?? '') : '',
         'attr'     => $a ? array_filter([
             'first'         => origem_curta($a['first'] ?? null),
             'last'          => origem_curta($a['last'] ?? null),

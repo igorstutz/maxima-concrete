@@ -20,7 +20,9 @@ import {
   dayKey,
   fmtDayLabel,
   fmtTime,
+  ligacoesPorLead,
   nomeDoLead,
+  viuThankYou,
   useAdminData,
   useDateRange,
   type Preset,
@@ -32,6 +34,7 @@ const LOCATION_LABELS: Record<string, string> = {
   header: "Header",
   footer: "Footer",
   contact_form: "Contact form",
+  menu: "Menu",
   body: "Page body",
   unknown: "Other",
 };
@@ -102,6 +105,13 @@ export default function AdminDashboardPage() {
     [data, from, to]
   );
 
+  // Ligações de cada lead depois do envio. Sobre tudo, e não só o período:
+  // o lead do último dia do filtro pode ter ligado no dia seguinte.
+  const ligacoesDoLead = useMemo(
+    () => ligacoesPorLead(data?.submissions ?? [], data?.calls ?? []),
+    [data]
+  );
+
   // Group submissions by local day.
   const submissionsByDay = useMemo(() => {
     const groups = new Map<string, Submission[]>();
@@ -128,6 +138,17 @@ export default function AdminDashboardPage() {
     const m = new Map<string, number>();
     for (const c of calls) {
       const key = c.location || "unknown";
+      m.set(key, (m.get(key) ?? 0) + 1);
+    }
+    return Array.from(m.entries()).sort((a, b) => b[1] - a[1]);
+  }, [calls]);
+
+  // Por página: é o que mostra a /thank-you/ separada — pela posição ela
+  // entra como "Page body", misturada com o resto do site.
+  const callsByPage = useMemo(() => {
+    const m = new Map<string, number>();
+    for (const c of calls) {
+      const key = c.page || "unknown";
       m.set(key, (m.get(key) ?? 0) + 1);
     }
     return Array.from(m.entries()).sort((a, b) => b[1] - a[1]);
@@ -405,7 +426,12 @@ export default function AdminDashboardPage() {
                       )}
 
                       {/* De onde este lead veio, e por onde passou antes de escrever. */}
-                      <LeadJourney a={s.attribution} />
+                      <LeadJourney
+                        a={s.attribution}
+                        enviadoEm={s.ts}
+                        thankYou={viuThankYou(s)}
+                        ligacoes={s.id ? ligacoesDoLead.get(s.id) : undefined}
+                      />
                     </div>
                   ))}
                 </div>
@@ -465,6 +491,32 @@ export default function AdminDashboardPage() {
                   >
                     <span className="text-gray-600">
                       {LOCATION_LABELS[loc] ?? loc}
+                    </span>
+                    <span className="font-semibold text-gray-900">{count}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+
+          {/* By page */}
+          <div className="rounded-2xl bg-white border border-gray-100 p-6 shadow-sm lg:col-span-2">
+            <h3 className="text-sm font-semibold text-gray-700 mb-1">By page</h3>
+            <p className="text-xs text-gray-400 mb-4">
+              Calls from /thank-you/ come from people who had just sent the form — each one also
+              shows on that lead&apos;s card.
+            </p>
+            {callsByPage.length === 0 ? (
+              <p className="text-gray-400 text-sm">No clicks in this period.</p>
+            ) : (
+              <div className="grid gap-x-10 gap-y-3 sm:grid-cols-2 max-h-80 overflow-y-auto pr-1">
+                {callsByPage.map(([page, count]) => (
+                  <div
+                    key={page}
+                    className="flex items-center justify-between gap-4 text-sm"
+                  >
+                    <span className="truncate text-gray-600">
+                      {page === "/" ? "Home" : page}
                     </span>
                     <span className="font-semibold text-gray-900">{count}</span>
                   </div>
