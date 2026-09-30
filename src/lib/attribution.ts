@@ -94,7 +94,7 @@ const EMAIL = /(^|\.)(mail|outlook|webmail)\./i;
  * chegam só pelo referrer. Mesma lista em attribution-parse.php (IA_FONTES).
  */
 const IA =
-  /chatgpt|openai|perplexity|gemini\.google|bard\.google|copilot\.microsoft|claude\.ai|deepseek|grok\.com|meta\.ai|you\.com|phind|poe\.com|mistral\.ai/i;
+  /chatgpt|openai|perplexity|gemini|bard\.google|copilot|claude|deepseek|grok|meta\.ai|you\.com|phind|poe\.com|mistral/i;
 
 /** Os parâmetros de clique pago, do mais específico para o mais genérico. */
 const CLICK_IDS: { param: string; channel: string; source: string; medium: string }[] = [

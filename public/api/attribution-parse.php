@@ -108,7 +108,7 @@ if (!function_exists('attr_canal_ia')) {
      */
     function attr_canal_ia(string $canal, string $fonte): string {
         if ($canal === 'AI Search' || $fonte === '') return $canal;
-        $ia = '/chatgpt|openai|perplexity|gemini\.google|bard\.google|copilot\.microsoft|claude\.ai|deepseek|grok\.com|meta\.ai|you\.com|phind|poe\.com|mistral\.ai/i';
+        $ia = '/chatgpt|openai|perplexity|gemini|bard\.google|copilot|claude|deepseek|grok|meta\.ai|you\.com|phind|poe\.com|mistral/i';
         if (!preg_match($ia, $fonte)) return $canal;
         if ($canal === 'Referral' || $canal === 'Organic Search' || strpos($canal, 'Campaign') === 0) return 'AI Search';
         return $canal;
