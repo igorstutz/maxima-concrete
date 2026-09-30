@@ -96,6 +96,42 @@ if (!function_exists('attr_parse')) {
     }
 }
 
+if (!function_exists('attr_canal_ia')) {
+    /**
+     * Assistentes de IA — a mesma lista de `IA` em src/lib/attribution.ts.
+     *
+     * Até 2026-09-30 o rastreador não conhecia o canal "AI Search": o ChatGPT
+     * (utm_source=chatgpt.com, sem utm_medium) entrava como "Campaign —
+     * Chatgpt.com", Perplexity e Copilot como "Referral" e o Gemini
+     * (gemini.google.com) como "Organic Search". Reclassificado na leitura
+     * pela fonte, que foi gravada certa.
+     */
+    function attr_canal_ia(string $canal, string $fonte): string {
+        if ($canal === 'AI Search' || $fonte === '') return $canal;
+        $ia = '/chatgpt|openai|perplexity|gemini\.google|bard\.google|copilot\.microsoft|claude\.ai|deepseek|grok\.com|meta\.ai|you\.com|phind|poe\.com|mistral\.ai/i';
+        if (!preg_match($ia, $fonte)) return $canal;
+        if ($canal === 'Referral' || $canal === 'Organic Search' || strpos($canal, 'Campaign') === 0) return 'AI Search';
+        return $canal;
+    }
+}
+
+if (!function_exists('attr_consertar_ia')) {
+    /** Aplica attr_canal_ia() a todos os toques de uma jornada. */
+    function attr_consertar_ia(?array $a): ?array {
+        if (!$a) return $a;
+        $um = static function ($t) {
+            if (!is_array($t)) return $t;
+            $t['channel'] = attr_canal_ia((string)($t['channel'] ?? ''), (string)($t['source'] ?? ''));
+            return $t;
+        };
+        foreach (['first', 'last', 'lastNonDirect'] as $k) {
+            if (isset($a[$k])) $a[$k] = $um($a[$k]);
+        }
+        if (is_array($a['touchpoints'] ?? null)) $a['touchpoints'] = array_map($um, $a['touchpoints']);
+        return $a;
+    }
+}
+
 if (!function_exists('attr_consertar')) {
     /**
      * Conserta a jornada gravada antes da revisão 2 do rastreador.

@@ -173,14 +173,17 @@ export default function AdminAttributionPage() {
       const canal = canalDoLead(c.attr);
       cont.set(canal, (cont.get(canal) ?? 0) + 1);
     }
-    return Array.from(sess, ([canal, visitas]) => ({
-      canal,
-      visitas,
-      contatos: cont.get(canal) ?? 0,
-      taxa: visitas ? ((cont.get(canal) ?? 0) / visitas) * 100 : 0,
-    }))
-      .filter((r) => r.visitas >= 5) // abaixo disso a taxa é ruído
-      .sort((a, b) => b.taxa - a.taxa);
+    // Canal com contato aparece sempre, mesmo com poucas visitas: esconder a
+    // linha escondia o contato junto (ChatGPT com 2 visitas e 1 lead sumia).
+    // O que some abaixo de 5 visitas é só a TAXA, que ali seria ruído.
+    const canais = new Set([...sess.keys(), ...cont.keys()]);
+    return Array.from(canais, (canal) => {
+      const visitas = sess.get(canal) ?? 0;
+      const contatos = cont.get(canal) ?? 0;
+      return { canal, visitas, contatos, taxa: visitas >= 5 ? (contatos / visitas) * 100 : null };
+    })
+      .filter((r) => r.visitas >= 5 || r.contatos > 0)
+      .sort((a, b) => (b.taxa ?? -1) - (a.taxa ?? -1) || b.contatos - a.contatos);
   }, [sessoes, comOrigem]);
 
   const totalSessoes = sessoes.reduce((s, r) => s + r.count, 0);
@@ -327,7 +330,7 @@ export default function AdminAttributionPage() {
 
         <Cartao
           titulo="Conversion rate by channel"
-          subtitulo="Contacts ÷ visits. Channels with fewer than 5 visits are left out — the rate would be noise."
+          subtitulo="Contacts ÷ visits. With fewer than 5 visits the rate is left out — it would be noise."
           className="mb-6"
         >
           {conversao.length === 0 ? (
@@ -352,7 +355,11 @@ export default function AdminAttributionPage() {
                       </td>
                       <td className="py-2 text-right text-gray-900">{r.contatos}</td>
                       <td className="py-2 text-right font-semibold text-ocean">
-                        {r.taxa.toFixed(1)}%
+                        {r.taxa === null ? (
+                          <span className="font-normal text-gray-400" title="Fewer than 5 visits">—</span>
+                        ) : (
+                          `${r.taxa.toFixed(1)}%`
+                        )}
                       </td>
                     </tr>
                   ))}

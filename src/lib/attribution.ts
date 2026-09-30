@@ -87,6 +87,14 @@ const BUSCADORES =
 const SOCIAIS =
   /(^|\.)(facebook|fb|instagram|linkedin|twitter|x|t\.co|tiktok|youtube|pinterest|reddit|nextdoor|threads)\./i;
 const EMAIL = /(^|\.)(mail|outlook|webmail)\./i;
+/**
+ * Assistentes de IA. Vêm antes dos buscadores porque o Gemini mora em
+ * gemini.google.com e cairia em "Organic Search". O ChatGPT põe
+ * `utm_source=chatgpt.com` (sem utm_medium) nos links que cita; os outros
+ * chegam só pelo referrer. Mesma lista em attribution-parse.php (IA_FONTES).
+ */
+const IA =
+  /chatgpt|openai|perplexity|gemini\.google|bard\.google|copilot\.microsoft|claude\.ai|deepseek|grok\.com|meta\.ai|you\.com|phind|poe\.com|mistral\.ai/i;
 
 /** Os parâmetros de clique pago, do mais específico para o mais genérico. */
 const CLICK_IDS: { param: string; channel: string; source: string; medium: string }[] = [
@@ -155,6 +163,7 @@ export function classificar(url: URL, referrer: string): Toque {
   // 2. UTM declarada pela campanha.
   if (utmMedium || utmSource) {
     const porMeio = (): string => {
+      if (IA.test(utmSource) && !/^(cpc|ppc|paid|display|cpm)$/.test(utmMedium)) return "AI Search";
       if (/^(cpc|ppc|paid|paidsearch|paid_search|sem|display|banner|cpm)$/.test(utmMedium)) {
         if (/google/.test(utmSource)) return "Google Ads";
         if (/facebook|meta|fb/.test(utmSource)) return "Meta Ads";
@@ -188,6 +197,9 @@ export function classificar(url: URL, referrer: string): Toque {
 
   if (proprio) {
     return { ...base, channel: "Direct", source: "(direct)", medium: "(none)", referrer: undefined };
+  }
+  if (IA.test(host)) {
+    return { ...base, channel: "AI Search", source: host.replace(/^www\./, ""), medium: "referral" };
   }
   if (BUSCADORES.test(host)) {
     return { ...base, channel: "Organic Search", source: host.replace(/^www\./, ""), medium: "organic" };

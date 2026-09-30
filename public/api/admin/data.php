@@ -49,11 +49,11 @@ $callsRaw    = read_jsonl(ADMIN_PRIVATE_DIR . '/call-clicks.log', 20000);
 // "Organic Search" depois do clique no anúncio. Ver attr_consertar().
 require_once __DIR__ . '/../attribution-parse.php';
 foreach ($submissions as &$s) {
-    if (is_array($s['attribution'] ?? null)) $s['attribution'] = attr_consertar($s['attribution']);
+    if (is_array($s['attribution'] ?? null)) $s['attribution'] = attr_consertar_ia(attr_consertar($s['attribution']));
 }
 unset($s);
 foreach ($callsRaw as &$c) {
-    if (is_array($c['attribution'] ?? null)) $c['attribution'] = attr_consertar($c['attribution']);
+    if (is_array($c['attribution'] ?? null)) $c['attribution'] = attr_consertar_ia(attr_consertar($c['attribution']));
 }
 unset($c);
 
@@ -107,7 +107,7 @@ for ($i = 0; $i < 13; $i++) {
         $ts = (string)($s['ts'] ?? '');
         if ($ts === '') continue;
         $dia = substr($ts, 0, 10);
-        $canal = (string)($s['channel'] ?? 'Direct');
+        $canal = attr_canal_ia((string)($s['channel'] ?? 'Direct'), (string)($s['source'] ?? ''));
         $chave = $dia . '|' . $canal;
         if (!isset($sessions[$chave])) {
             $sessions[$chave] = ['day' => $dia, 'channel' => $canal, 'count' => 0, 'visitors' => []];
