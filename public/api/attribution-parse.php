@@ -79,6 +79,7 @@ if (!function_exists('attr_parse')) {
         }
 
         $out = [
+            'rev'           => max(0, min(99, (int)($d['rev'] ?? 0))),
             'vid'           => attr_txt($d['vid'] ?? '', 64),
             'first'         => attr_toque($d['first'] ?? null),
             'last'          => attr_toque($d['last'] ?? null),
@@ -92,5 +93,95 @@ if (!function_exists('attr_parse')) {
         ];
         $out = array_filter($out, static fn($v) => $v !== '' && $v !== null && $v !== [] && $v !== 0);
         return $out ?: null;
+    }
+}
+
+if (!function_exists('attr_consertar')) {
+    /**
+     * Conserta a jornada gravada antes da revisão 2 do rastreador.
+     *
+     * Até ali, trocar de página dentro do site reclassificava a visita com o
+     * `document.referrer` da chegada — que não muda quando o site navega sem
+     * recarregar. Quem vinha de um anúncio do Google (gclid na URL, google.com
+     * no referrer) virava "Organic Search" já no primeiro clique interno, e
+     * essa sessão falsa ficava como último toque e como canal creditado.
+     *
+     * A marca do erro é exata: um toque sem campanha e sem parâmetros na URL,
+     * classificado só pelo referrer, que começa com a sessão anterior ainda
+     * viva (menos de 30 min desde a última página) — e a anterior tinha vindo
+     * de clique pago ou UTM. Essa troca só acontecia pelo erro: o referrer não
+     * tem como mudar de canal no meio de uma sessão de verdade.
+     *
+     * Roda na leitura, sem reescrever o log: o registro original fica intacto.
+     */
+    function attr_consertar(?array $a): ?array {
+        if (!$a || (int)($a['rev'] ?? 0) >= 2) return $a;
+        $toques = $a['touchpoints'] ?? [];
+        if (!is_array($toques) || count($toques) < 2) return $a;
+
+        $porReferrer = ['Direct', 'Organic Search', 'Organic Social', 'Email', 'Referral'];
+        $quando = static function ($ts): ?int {
+            try { return (new DateTimeImmutable((string)$ts))->getTimestamp(); } catch (Throwable $e) { return null; }
+        };
+        $declarado = static fn(array $t): bool =>
+            !in_array($t['channel'] ?? '', $porReferrer, true)
+            || ($t['campaign'] ?? '') !== ''
+            || strpos((string)($t['landing'] ?? ''), '?') !== false;
+        $soReferrer = static fn(array $t): bool =>
+            in_array($t['channel'] ?? '', $porReferrer, true) && ($t['channel'] ?? '') !== 'Direct'
+            && ($t['campaign'] ?? '') === ''
+            && strpos((string)($t['landing'] ?? ''), '?') === false;
+
+        $paginas = [];
+        foreach ((array)($a['pages'] ?? []) as $p) {
+            $t = is_array($p) ? $quando($p['ts'] ?? '') : null;
+            if ($t !== null) $paginas[] = $t;
+        }
+
+        $mantidos = [$toques[0]];
+        $falsos = [];
+        for ($i = 1; $i < count($toques); $i++) {
+            $t = $toques[$i];
+            $ant = $mantidos[count($mantidos) - 1];
+            $tIni = $quando($t['ts'] ?? '');
+            $aIni = $quando($ant['ts'] ?? '');
+            if ($tIni !== null && $aIni !== null && $declarado($ant) && $soReferrer($t)) {
+                // Última atividade antes deste toque: a própria entrada ou a
+                // última página vista depois dela.
+                $ultima = $aIni;
+                foreach ($paginas as $pt) {
+                    if ($pt >= $aIni && $pt < $tIni && $pt > $ultima) $ultima = $pt;
+                }
+                if ($tIni - $ultima < 30 * 60) {
+                    $falsos[(string)($t['ts'] ?? '')] = true;
+                    continue;
+                }
+            }
+            $mantidos[] = $t;
+        }
+        if (!$falsos) return $a;
+
+        // Volta à versão completa do toque (com click_id e referrer) quando ela
+        // existe; os toques da lista guardam só o resumo.
+        $completo = static function (array $t) use ($a): array {
+            foreach (['first', 'last', 'lastNonDirect'] as $k) {
+                if (is_array($a[$k] ?? null) && ($a[$k]['ts'] ?? null) === ($t['ts'] ?? null)) return $a[$k];
+            }
+            return $t;
+        };
+
+        $a['touchpoints'] = $mantidos;
+        $a['sessions'] = max(1, (int)($a['sessions'] ?? count($toques)) - count($falsos));
+        if (isset($falsos[(string)($a['last']['ts'] ?? '')])) {
+            $a['last'] = $completo($mantidos[count($mantidos) - 1]);
+        }
+        if (isset($falsos[(string)($a['lastNonDirect']['ts'] ?? '')])) {
+            $credito = null;
+            foreach (array_reverse($mantidos) as $t) {
+                if (($t['channel'] ?? '') !== 'Direct') { $credito = $completo($t); break; }
+            }
+            if ($credito) $a['lastNonDirect'] = $credito; else unset($a['lastNonDirect']);
+        }
+        return $a;
     }
 }

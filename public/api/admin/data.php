@@ -45,6 +45,18 @@ function read_jsonl(string $path, int $cap = 0, bool $comId = false): array {
 $submissions = read_jsonl(ADMIN_PRIVATE_DIR . '/submissions.log', 0, true);
 $callsRaw    = read_jsonl(ADMIN_PRIVATE_DIR . '/call-clicks.log', 20000);
 
+// Jornadas gravadas antes da revisão 2 do rastreador têm uma sessão falsa
+// "Organic Search" depois do clique no anúncio. Ver attr_consertar().
+require_once __DIR__ . '/../attribution-parse.php';
+foreach ($submissions as &$s) {
+    if (is_array($s['attribution'] ?? null)) $s['attribution'] = attr_consertar($s['attribution']);
+}
+unset($s);
+foreach ($callsRaw as &$c) {
+    if (is_array($c['attribution'] ?? null)) $c['attribution'] = attr_consertar($c['attribution']);
+}
+unset($c);
+
 /** Só o essencial de uma origem, para o painel agrupar. */
 function origem_curta($t): ?array {
     if (!is_array($t)) return null;

@@ -77,7 +77,7 @@ export function AttributionTracker() {
       return; // a primeira já entrou no efeito acima
     }
     if (pathname?.startsWith("/admin")) return;
-    registrarVisita(); // renova o relógio da sessão
+    registrarVisita({ interna: true }); // renova o relógio da sessão, sem reclassificar
     registrarPagina(pathname || "/");
   }, [pathname]);
 

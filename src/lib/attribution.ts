@@ -274,17 +274,39 @@ export type ResultadoVisita = { jornada: Jornada; novaSessao: boolean; toque: To
  * Registra a visita: abre sessão quando preciso, atualiza primeira/última
  * origem e devolve a jornada. Idempotente dentro da mesma sessão.
  */
-export function registrarVisita(): ResultadoVisita | null {
+/**
+ * Como esta página foi aberta. Recarregar ou voltar pelo histórico reabre a
+ * mesma página com o `document.referrer` da entrada original — não é chegada
+ * nova, e tratá-la como tal inventaria uma segunda visita.
+ */
+function reabriuPagina(): boolean {
+  try {
+    const nav = performance.getEntriesByType("navigation")[0] as PerformanceNavigationTiming | undefined;
+    return nav?.type === "reload" || nav?.type === "back_forward";
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * @param interna Troca de rota dentro do site. O `document.referrer` NÃO muda
+ * quando o site navega sem recarregar: continua sendo o google.com de quem
+ * chegou pelo anúncio, e a URL nova já não tem o gclid. Classificar isso de
+ * novo transformava todo clique em anúncio em "Organic Search" na primeira
+ * página seguinte. Navegação interna é, por definição, sem origem externa.
+ */
+export function registrarVisita({ interna = false }: { interna?: boolean } = {}): ResultadoVisita | null {
   if (typeof window === "undefined") return null;
 
   const url = new URL(window.location.href);
-  const toque = classificar(url, document.referrer || "");
+  const toque = classificar(url, interna ? "" : document.referrer || "");
   const vid = visitorId();
 
   const anterior = sessaoViva();
   // Campanha nova abre sessão nova mesmo dentro dos 30 min: é a regra do GA4, e
   // sem ela um clique em anúncio logo depois de uma visita orgânica não apareceria.
-  const mudouCampanha = !!anterior && toque.channel !== "Direct" && toque.channel !== anterior.channel;
+  const mudouCampanha =
+    !!anterior && !interna && !reabriuPagina() && toque.channel !== "Direct" && toque.channel !== anterior.channel;
   const novaSessao = !anterior || mudouCampanha;
 
   grave(CHAVE_SESSAO, {
@@ -357,6 +379,9 @@ export function payloadAtribuicao(): string {
     };
   try {
     return JSON.stringify({
+      // Revisão 2: navegação interna já não abre sessão falsa. O painel só
+      // conserta a jornada das revisões anteriores (ver attribution-parse.php).
+      rev: 2,
       vid: j.vid,
       first: enxuto(j.first),
       last: enxuto(j.last),

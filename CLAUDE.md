@@ -97,6 +97,12 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   mantém sessão de 30 min e guarda **primeiro toque, último e último não-direto** mais a
   lista de visitas e páginas em `localStorage`. `AttributionTracker` (no layout) liga isso
   às trocas de rota. `/admin` fica fora, como já ficava no GTM.
+- **Troca de rota não reclassifica** (`registrarVisita({ interna: true })`): o
+  `document.referrer` não muda na navegação sem recarregar, então reclassificar dava
+  "Organic Search" a todo clique em anúncio já na segunda página. Recarregar/voltar
+  também não abre sessão nova. Jornadas gravadas antes disso (sem `rev: 2`) são
+  consertadas na leitura por `attr_consertar()` em `attribution-parse.php`, chamado no
+  `data.php` — o log fica intacto.
 - **Navegar não gera requisição.** A jornada viaja junto da conversão: campo oculto
   `attribution` no formulário e no corpo do beacon de `track-call.php`. É o padrão dos
   campos ocultos de HubSpot/Marketo, e é o que mantém o site rápido — sem ele seria uma
