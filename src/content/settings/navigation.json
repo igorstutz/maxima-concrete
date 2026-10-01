@@ -1,9 +1,10 @@
 {
   "logo": {
     "src": "/images/logo/maxima-logo-icon.webp",
+    "srcLight": "/images/assets/footer/footer-logo.webp",
     "alt": "Maxima Concrete",
-    "width": 137,
-    "height": 115
+    "width": 398,
+    "height": 300
   },
   "cta": {
     "label": "Free Estimate",

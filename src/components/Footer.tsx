@@ -46,8 +46,8 @@ export default function Footer() {
             <Image
               src={logoImage}
               alt="Maxima Concrete"
-              width={289}
-              height={79}
+              width={438}
+              height={330}
               className="h-auto w-auto max-h-[80px] md:max-h-[100px] lg:max-h-[110px] object-contain"
             />
             {tagline && (

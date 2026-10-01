@@ -158,11 +158,11 @@ const Navigation = () => {
 
           <Link href="/" onClick={closeMobileMenu} className="flex justify-center mb-5">
             <Image
-              src={logo.src}
+              src={logo.srcLight}
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
-              className="h-16 w-auto brightness-0 invert"
+              className="h-16 w-auto"
             />
           </Link>
 
