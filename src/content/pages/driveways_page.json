@@ -6,7 +6,7 @@
       "key": "custom_1766273483523_e1zxbj",
       "label": "Hero",
       "content": {
-        "title": "Driveways l Concrete",
+        "title": "Concrete Driveway",
         "ctaText": "Get Your Free Estimate",
         "subtitle": "Upgrade your curb appeal with a durable concrete driveway built for strength, lasting performance, and enhanced home value.",
         "_sourceLabel": "Hero",
@@ -170,7 +170,7 @@
         "title": "Can You Have a Paver, Brick and Stone Driveway? Absolutely.",
         "ctaText": "Explore Paver, Brick and Stone Driveways",
         "_sourceLabel": "Why Maxima",
-        "ctaLink": "/services/driveways/driveways-paver",
+        "ctaLink": "/services/driveways/paver-driveway",
         "backgroundImage": "/images/cms/uploads/1784048089782-6xn24b.webp",
         "overlayOpacity": 71,
         "description": "Paver, brick and stone driveways provide a premium, customizable solution that combines strength, functionality, and elegance to create a lasting first impression.\n\nA paver, brick and stone driveway is more than a place to park, it’s a statement of durability, design, and long-term value. Unlike traditional poured surfaces, paver driveways are engineered to handle heavy loads, extreme weather, and daily use without cracking, crumbling, or fading over time.\n\nAt Maxima, we design paver, brick and stone driveways that balance aesthetic impact with structural resilience. Each project is built with precision grading, proper base preparation, and premium paver materials selected to complement your home’s architecture and elevate curb appeal from the very first glance.\n\nBeyond looks, paver driveways offer superior drainage. Rainwater flows naturally through the joints, reducing pooling, preventing surface damage, and protecting your foundation. And when life happens, spills, stains, or localized wear — individual pavers can be replaced with ease, keeping your driveway looking pristine for years to come.\n\nChoose from classic cobblestone patterns for timeless elegance, sleek modern concrete pavers for a clean, contemporary feel, or custom layouts with borders and accents that reflect your personal style. The design flexibility is virtually limitless.\n\nDurable. Repairable. Built to last. \nUpgrade your driveway with a surface that performs as beautifully as it looks.",
@@ -315,7 +315,7 @@
       "key": "driveways_page_faq",
       "label": "FAQ",
       "content": {
-        "title": "FAQ — Driveways - Concrete",
+        "title": "FAQ — Concrete Driveway",
         "_sourceLabel": "",
         "items": [
           {

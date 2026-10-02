@@ -46,14 +46,14 @@
           {
             "image": "/images/cms/hub/drivewayshub_option_concrete.webp",
             "title": "Concrete Driveways",
-            "ctaLink": "/services/driveways/driveways-concrete",
+            "ctaLink": "/services/driveways/concrete-driveway",
             "ctaText": "Explore Concrete Driveways",
             "description": "Clean, durable, and endlessly customizable. From broom finishes to stamped and colored designs, concrete delivers strength that lasts for decades."
           },
           {
             "image": "/images/cms/hub/drivewayshub_option_paver.webp",
             "title": "Paver, Brick and Stone Driveways",
-            "ctaLink": "/services/driveways/driveways-paver",
+            "ctaLink": "/services/driveways/paver-driveway",
             "ctaText": "Explore Paver, Brick and Stone Driveways",
             "description": "Choose from classic cobblestone patterns or sleek modern pavers, brick and stone with custom borders and accents."
           }
@@ -99,7 +99,7 @@
       "content": {
         "title": "Paver, Stone and Brick Driveways That\nCombine Strength and Style",
         "ctaText": "Explore Paver, Stone and Brick Driveway",
-        "ctaLink": "/services/driveways/driveways-paver",
+        "ctaLink": "/services/driveways/paver-driveway",
         "tagline": "Durable. Repairable. Built to last.",
         "backgroundImage": "/images/cms/hub/drivewayshub_paver_bg.webp",
         "paragraphs": [
@@ -234,7 +234,7 @@
         "ctaLink": "#contact",
         "services": [
           {
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "label": "Patios"
           },
           {

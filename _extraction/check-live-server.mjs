@@ -77,7 +77,7 @@ console.log(`home: ${home.cadeia.map((c) => c.status).join(" -> ")}  título: "$
 // 2. Amostra de páginas de cada tipo
 const PAGINAS = [
   "/services/driveways/",
-  "/services/patios/patios-paver/",
+  "/services/patios/paver-patio/",
   "/finishes/stamped-colored/",
   "/gallery/",
   "/areas-we-serve/delaware/",
@@ -99,7 +99,7 @@ const REDIRECTS = {
   "/concrete/driveway": "/services/driveways/",
   "/concretefinishes/stampedfinish": "/finishes/stamped-colored/",
   "/portfolio/patios-photos": "/gallery/patios/",
-  "/paverandstones/paverpatio": "/services/patios/patios-paver/",
+  "/paverandstones/paverpatio": "/services/patios/paver-patio/",
   "/about/reviews": "/reviews/",
   "/career": "/join-our-team/",
   "/pools": "/services/pool-decks-surrounds/",

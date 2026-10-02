@@ -23,11 +23,16 @@ RewriteCond %{HTTP_HOST} ^maximaconcrete\.com$ [NC]
 RewriteRule ^(.*)$ https://maximaconcrete.com/$1 [L,R=301]
 
 # ── Legacy route redirects (URLs do site antigo/Lovable) ───────────────
-RewriteRule ^services/driveways-concrete/?$ /services/driveways/driveways-concrete/ [L,R=301]
-RewriteRule ^services/driveways-paver/?$ /services/driveways/driveways-paver/ [L,R=301]
-RewriteRule ^services/patios-concrete/?$ /services/patios/patios-concrete/ [L,R=301]
-RewriteRule ^services/patios-paver/?$ /services/patios/patios-paver/ [L,R=301]
+RewriteRule ^services/driveways-concrete/?$ /services/driveways/concrete-driveway/ [L,R=301]
+RewriteRule ^services/driveways-paver/?$ /services/driveways/paver-driveway/ [L,R=301]
+RewriteRule ^services/patios-concrete/?$ /services/patios/concrete-patio/ [L,R=301]
+RewriteRule ^services/patios-paver/?$ /services/patios/paver-patio/ [L,R=301]
 RewriteRule ^real-reviews/?$ /reviews/ [L,R=301]
+# Endereços que este site usou até 2026-10 (o nome do serviço passou a vir primeiro)
+RewriteRule ^services/driveways/driveways-concrete/?$ /services/driveways/concrete-driveway/ [L,R=301]
+RewriteRule ^services/driveways/driveways-paver/?$ /services/driveways/paver-driveway/ [L,R=301]
+RewriteRule ^services/patios/patios-concrete/?$ /services/patios/concrete-patio/ [L,R=301]
+RewriteRule ^services/patios/patios-paver/?$ /services/patios/paver-patio/ [L,R=301]
 
 # ── Redirects do site Wix (70 endereços indexados) ─────────────────────
 # Gerados a partir do sitemap do site antigo. Sem eles, todo resultado de
@@ -87,10 +92,10 @@ RewriteRule ^real-reviews/?$ /reviews/ [L,R=301]
 
   # Pavers e pedras
   RewriteRule ^paverandstones/paverapproach/?$ /services/approaches/ [L,R=301,NC]
-  RewriteRule ^paverandstones/paverdriveway/?$ /services/driveways/driveways-paver/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverdriveway/?$ /services/driveways/paver-driveway/ [L,R=301,NC]
   RewriteRule ^paverandstones/paverfirepit/?$ /services/fire-pits/ [L,R=301,NC]
   RewriteRule ^paverandstones/paverfireplaces/?$ /services/fireplaces/ [L,R=301,NC]
-  RewriteRule ^paverandstones/paverpatio/?$ /services/patios/patios-paver/ [L,R=301,NC]
+  RewriteRule ^paverandstones/paverpatio/?$ /services/patios/paver-patio/ [L,R=301,NC]
   RewriteRule ^paverandstones/paverporch/?$ /services/porches/ [L,R=301,NC]
   RewriteRule ^paverandstones/paversidewalk/?$ /services/sidewalks/ [L,R=301,NC]
   RewriteRule ^paverandstones/paversteps/?$ /services/steps/ [L,R=301,NC]

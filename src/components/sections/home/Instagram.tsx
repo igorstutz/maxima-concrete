@@ -6,6 +6,20 @@ import ElfsightWidget from "@/components/ElfsightWidget";
 // Feed do Instagram (Elfsight) — mesmo ID do site antigo.
 const INSTAGRAM_WIDGET_ID = "4f034239-e161-402c-af0e-9237ac6c441b";
 
+// O widget pinta usuário, nome e contadores de #111, que somem no fundo navy.
+// Classes "es-header-*" são as estáveis do widget (as do styled-components
+// mudam a cada versão); o botão "Follow" fica de fora, ele tem fundo próprio.
+const INSTAGRAM_WIDGET_CSS = `
+  .es-header-account-author-username,
+  .es-header-account-author-username a,
+  .es-header-account-author-name-container,
+  .es-header-account-author-name-container a,
+  .es-header-account-counters-container,
+  .es-header-account-counters-container * {
+    color: #fff !important;
+  }
+`;
+
 interface InstagramContent {
   titlePart1?: string;
   titlePart2?: string;
@@ -52,7 +66,11 @@ export default function Instagram({ content }: { content: Record<string, any> })
         </div>
 
         {/* Feed via Elfsight (carrega ao entrar na viewport) */}
-        <ElfsightWidget widgetId={INSTAGRAM_WIDGET_ID} className="max-w-[900px]" />
+        <ElfsightWidget
+          widgetId={INSTAGRAM_WIDGET_ID}
+          className="max-w-[900px]"
+          css={INSTAGRAM_WIDGET_CSS}
+        />
       </Container>
     </section>
   );

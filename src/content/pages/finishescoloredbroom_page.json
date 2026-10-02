@@ -103,13 +103,13 @@
         "cards": [
           {
             "title": "Driveways",
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "image": "/images/cms/uploads/1778531244973-wj8e5g.webp",
             "description": "Add curb appeal with rich color and reliable traction."
           },
           {
             "title": "Patios",
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "image": "/images/cms/uploads/1778531266783-mczm0e.webp",
             "description": "Create cozy, inviting areas with earthy tones or bold accents."
           },
@@ -185,11 +185,11 @@
             "label": "Buff Wash Concrete"
           },
           {
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "label": "Driveways"
           },
           {
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "label": "Patios"
           }
         ]

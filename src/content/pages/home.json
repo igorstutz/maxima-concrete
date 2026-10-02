@@ -53,23 +53,23 @@
         "description": "From durable foundations to stunning finishes, we deliver complete construction and hardscaping solutions for homes, businesses, and outdoor living spaces.",
         "items": [
           {
-            "link": "/services/driveways/driveways-concrete",
-            "name": "Driveways l Concrete",
+            "link": "/services/driveways/concrete-driveway",
+            "name": "Concrete Driveway",
             "image": "/images/cms/uploads/1782418764534-lilnfu.webp"
           },
           {
-            "link": "/services/driveways/driveways-paver",
-            "name": "Driveways l Paver, Brick and Stone",
+            "link": "/services/driveways/paver-driveway",
+            "name": "Paver Driveway",
             "image": "/images/cms/uploads/1782416905023-y7fvg9.webp"
           },
           {
-            "link": "/services/patios/patios-concrete",
-            "name": "Patios l Concrete",
+            "link": "/services/patios/concrete-patio",
+            "name": "Concrete Patio",
             "image": "/images/cms/uploads/1782419168172-799n1uh.webp"
           },
           {
-            "link": "/services/patios/patios-paver",
-            "name": "Patios l Paver, Brick and Stone",
+            "link": "/services/patios/paver-patio",
+            "name": "Paver Patio",
             "image": "/images/cms/uploads/1782419284904-bvifza.webp"
           },
           {

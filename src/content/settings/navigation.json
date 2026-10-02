@@ -67,11 +67,11 @@
           "children": [
             {
               "label": "Concrete",
-              "href": "/services/driveways/driveways-concrete"
+              "href": "/services/driveways/concrete-driveway"
             },
             {
               "label": "Paver",
-              "href": "/services/driveways/driveways-paver"
+              "href": "/services/driveways/paver-driveway"
             }
           ]
         },
@@ -82,11 +82,11 @@
           "children": [
             {
               "label": "Concrete",
-              "href": "/services/patios/patios-concrete"
+              "href": "/services/patios/concrete-patio"
             },
             {
               "label": "Paver",
-              "href": "/services/patios/patios-paver"
+              "href": "/services/patios/paver-patio"
             }
           ]
         },

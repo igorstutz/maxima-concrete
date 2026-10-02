@@ -121,13 +121,13 @@
         "cards": [
           {
             "title": "Driveways",
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "image": "/images/driveway-buff-and-wash-stamped.webp",
             "description": "Bold patterns and rich color that make the entrance to your home stand out."
           },
           {
             "title": "Patios",
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "image": "/images/stamped-concrete-patio-6.webp",
             "description": "Stone, slate, or wood-look textures that turn a patio into a finished outdoor room."
           },
@@ -169,11 +169,11 @@
             "label": "Buff Wash Concrete"
           },
           {
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "label": "Driveways"
           },
           {
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "label": "Patios"
           }
         ]

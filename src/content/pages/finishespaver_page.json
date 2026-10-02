@@ -107,13 +107,13 @@
         "cards": [
           {
             "title": "Driveways",
-            "link": "/services/driveways/driveways-paver",
+            "link": "/services/driveways/paver-driveway",
             "image": "/images/cms/uploads/1784039565339-vsd2ph.webp",
             "description": "A bold, high-end entrance built to handle vehicles and weather."
           },
           {
             "title": "Patios",
-            "link": "/services/patios/patios-paver",
+            "link": "/services/patios/paver-patio",
             "image": "/images/cms/uploads/1781035451185-xbftgb.webp",
             "description": "A distinctive outdoor living space with rich texture and color."
           },
@@ -161,11 +161,11 @@
             "label": "Exposed Aggregate & Buff Wash"
           },
           {
-            "link": "/services/driveways/driveways-paver",
+            "link": "/services/driveways/paver-driveway",
             "label": "Paver Driveways"
           },
           {
-            "link": "/services/patios/patios-paver",
+            "link": "/services/patios/paver-patio",
             "label": "Paver Patios"
           }
         ]

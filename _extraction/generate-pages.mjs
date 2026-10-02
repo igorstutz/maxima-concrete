@@ -11,11 +11,11 @@ const APP = join(ROOT, "src", "app");
 // rota → pageKey (espelho de src/lib/routes.ts, sem home e sem as especiais)
 const ROUTES = {
   "/services/driveways": "drivewayshub_page",
-  "/services/driveways/driveways-concrete": "driveways_page",
-  "/services/driveways/driveways-paver": "paverdriveways_page",
+  "/services/driveways/concrete-driveway": "driveways_page",
+  "/services/driveways/paver-driveway": "paverdriveways_page",
   "/services/patios": "patioshub_page",
-  "/services/patios/patios-concrete": "patios_page",
-  "/services/patios/patios-paver": "paverpatios_page",
+  "/services/patios/concrete-patio": "patios_page",
+  "/services/patios/paver-patio": "paverpatios_page",
   "/services/slabs": "slabs_page",
   "/services/porches": "porches_page",
   "/services/sidewalks": "sidewalks_page",

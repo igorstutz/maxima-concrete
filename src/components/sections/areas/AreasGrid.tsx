@@ -82,10 +82,10 @@ export default function AreasGrid({ content }: { content: Record<string, any> })
           <div className="grid grid-cols-1 gap-x-6 gap-y-12 sm:grid-cols-2 md:gap-x-8 md:gap-y-14 lg:grid-cols-3">
             {filteredAreas.map((area) => (
               <article key={area.slug} className="flex flex-col">
-                {/* Moldura com o degradê azul da marca ao redor da imagem */}
+                {/* Moldura azul-escura da marca ao redor da imagem */}
                 <Link
                   href={`/areas-we-serve/${area.slug}/`}
-                  className="gradient-blue group block w-full rounded-2xl p-[3px] transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/20"
+                  className="bg-primary-dark group block w-full rounded-2xl p-[3px] transition-shadow duration-300 hover:shadow-lg hover:shadow-primary/20"
                   aria-label={`See concrete services in ${area.name}, OH`}
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-[13px] bg-gray-100">

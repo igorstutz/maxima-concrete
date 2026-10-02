@@ -13,8 +13,15 @@ const ELFSIGHT_SCRIPT_SRC = "https://elfsightcdn.com/platform.js";
  * Esconde elementos indesejados injetados pelo widget Elfsight dentro de
  * `container` (percorrendo também shadow roots): o selo do plano gratuito
  * ("Free ... Widget") e cabeçalhos configurados (via `hideHeadings`).
+ * Também injeta `css` em cada raiz: os widgets novos do Elfsight renderizam
+ * num shadow DOM, onde o CSS global do site não chega.
  */
-function scrubWidget(container: HTMLElement, hideBadge: boolean, hideHeadings: string[]) {
+function scrubWidget(
+  container: HTMLElement,
+  hideBadge: boolean,
+  hideHeadings: string[],
+  css: string
+) {
   const roots: (Element | ShadowRoot)[] = [container];
   container.querySelectorAll("*").forEach((el) => {
     const sr = (el as HTMLElement).shadowRoot;
@@ -22,6 +29,13 @@ function scrubWidget(container: HTMLElement, hideBadge: boolean, hideHeadings: s
   });
 
   for (const root of roots) {
+    if (css && !Array.from(root.children).some((c) => c.matches("style[data-mx-elfsight]"))) {
+      const style = document.createElement("style");
+      style.setAttribute("data-mx-elfsight", "");
+      style.textContent = css;
+      root.appendChild(style);
+    }
+
     // Selo do plano gratuito do Elfsight ("Free ... Widget").
     if (hideBadge) {
       root
@@ -51,18 +65,22 @@ function scrubWidget(container: HTMLElement, hideBadge: boolean, hideHeadings: s
  * Embed Elfsight genérico (reviews Google, feed Instagram).
  * Só injeta o script externo quando a seção se aproxima da viewport
  * (IntersectionObserver) — mantém a home leve no carregamento inicial.
- * Força a remoção do selo gratuito do Elfsight e de cabeçalhos indesejados.
+ * Força a remoção do selo gratuito do Elfsight e de cabeçalhos indesejados,
+ * e aplica `css` dentro do widget (cores que o painel do Elfsight não ajusta
+ * para o fundo da seção).
  */
 export default function ElfsightWidget({
   widgetId,
   className = "",
   hideBadge = true,
   hideHeadings = [],
+  css = "",
 }: {
   widgetId: string;
   className?: string;
   hideBadge?: boolean;
   hideHeadings?: string[];
+  css?: string;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -104,9 +122,9 @@ export default function ElfsightWidget({
   useEffect(() => {
     if (!visible) return;
     const el = ref.current;
-    if (!el || (!hideBadge && hideHeadings.length === 0)) return;
+    if (!el || (!hideBadge && hideHeadings.length === 0 && !css)) return;
 
-    const run = () => scrubWidget(el, hideBadge, hideHeadings);
+    const run = () => scrubWidget(el, hideBadge, hideHeadings, css);
 
     run();
     const observer = new MutationObserver(() => run());
@@ -118,7 +136,7 @@ export default function ElfsightWidget({
       observer.disconnect();
       timers.forEach(clearTimeout);
     };
-  }, [visible, hideBadge, hideHeadings]);
+  }, [visible, hideBadge, hideHeadings, css]);
 
   return (
     <div ref={ref} className={className}>

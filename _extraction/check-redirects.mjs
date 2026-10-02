@@ -53,8 +53,8 @@ const MAPA = {
   "/paverandstones": "/finishes/paver/",
   "/paverandstones/pavertypes": "/finishes/paver/",
   "/paverandstones/paverapproach": "/services/approaches/",
-  "/paverandstones/paverdriveway": "/services/driveways/driveways-paver/",
-  "/paverandstones/paverpatio": "/services/patios/patios-paver/",
+  "/paverandstones/paverdriveway": "/services/driveways/paver-driveway/",
+  "/paverandstones/paverpatio": "/services/patios/paver-patio/",
   "/paverandstones/paverfirepit": "/services/fire-pits/",
   "/paverandstones/paverfireplaces": "/services/fireplaces/",
   "/paverandstones/paverporch": "/services/porches/",
@@ -80,9 +80,14 @@ const MAPA = {
   "/portfolio/walkways-photos": "/gallery/sidewalks/",
   "/sportcourts": "/services/sports-courts/",
   // Endereços do site Lovable, que já existiam antes deste mapa
-  "/services/driveways-concrete": "/services/driveways/driveways-concrete/",
-  "/services/patios-paver": "/services/patios/patios-paver/",
+  "/services/driveways-concrete": "/services/driveways/concrete-driveway/",
+  "/services/patios-paver": "/services/patios/paver-patio/",
   "/real-reviews": "/reviews/",
+  // Endereços que este site usou até 2026-10
+  "/services/driveways/driveways-concrete": "/services/driveways/concrete-driveway/",
+  "/services/driveways/driveways-paver": "/services/driveways/paver-driveway/",
+  "/services/patios/patios-concrete": "/services/patios/concrete-patio/",
+  "/services/patios/patios-paver": "/services/patios/paver-patio/",
 };
 
 const UA = { "user-agent": "Mozilla/5.0 (checagem de redirects Maxima)" };

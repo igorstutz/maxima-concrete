@@ -6,7 +6,7 @@
       "key": "custom_1762900000001_paverdrv",
       "label": "Hero",
       "content": {
-        "title": "Driveways l Paver, Brick and Stone",
+        "title": "Paver Driveway",
         "ctaText": "Get Your Free Estimate",
         "subtitle": "Enhance your home’s exterior with a beautifully crafted paver, brick and stone driveway designed for lasting style, durability, and curb appeal with a strong, low-maintenance surface built to last.",
         "_sourceLabel": "Hero",
@@ -221,11 +221,11 @@
         "ctaButtonText": "Schedule Your Free Design Consultation",
         "relatedServices": [
           {
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "label": "Concrete Driveways"
           },
           {
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "label": "Concrete Patios"
           },
           {

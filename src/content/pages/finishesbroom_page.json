@@ -107,13 +107,13 @@
         "cards": [
           {
             "title": "Driveways",
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "image": "/images/broom-finish-driveway.webp",
             "description": "Smooth to drive on, with safe traction even in rain or snow."
           },
           {
             "title": "Patios",
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "image": "/images/patio-broom-finish-1-2.webp",
             "description": "Functional and attractive, blending with landscape design."
           },
@@ -165,11 +165,11 @@
             "label": "Buff Wash Concrete"
           },
           {
-            "link": "/services/driveways/driveways-concrete",
+            "link": "/services/driveways/concrete-driveway",
             "label": "Driveways"
           },
           {
-            "link": "/services/patios/patios-concrete",
+            "link": "/services/patios/concrete-patio",
             "label": "Patios"
           }
         ]
