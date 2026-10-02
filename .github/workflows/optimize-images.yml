@@ -27,6 +27,15 @@ jobs:
   optimize:
     runs-on: ubuntu-latest
     steps:
+      # O Sveltia sobe muitas fotos em vários commits seguidos e só grava o
+      # conteúdo no último. Se este workflow commitar no meio disso, o painel
+      # recusa o resto ("updated by someone else") e o salvamento não completa.
+      # Esperar faz dele um debounce: cada push novo cancela a espera anterior
+      # (cancel-in-progress), então ele só roda com o painel parado.
+      - name: Esperar o painel terminar de salvar
+        if: github.event_name == 'push'
+        run: sleep 120
+
       - uses: actions/checkout@v4
         with:
           # A carência das sobras usa a data do commit que trouxe cada arquivo.

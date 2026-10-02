@@ -249,7 +249,18 @@ if (APPLY) {
       `não chegou no envio. Abra as páginas abaixo e envie a foto de novo: ${lista}`;
   }
 
-  writeJson(STATUS_FILE, { run: false, status });
+  // Rodada automática que não mudou nada não regrava o status só para trocar a
+  // hora: isso virava um commit, e um commit no meio de um salvamento do painel
+  // (o Sveltia sobe muitas fotos em vários commits seguidos) derruba o resto com
+  // "The repository has been updated by someone else while saving".
+  const anterior = existsSync(STATUS_FILE) ? JSON.parse(readFileSync(STATUS_FILE, "utf8")) : {};
+  const semHora = (s) => String(s ?? "").replace(/^✅ [^—]*— /, "");
+  const nadaMudou = !convertidas.length && !apagadas.length && !consertadas;
+  if (nadaMudou && anterior.run !== true && semHora(anterior.status) === semHora(status)) {
+    console.log("  status inalterado — nada a gravar.");
+  } else {
+    writeJson(STATUS_FILE, { run: false, status });
+  }
   writeJson(RENAMES_FILE, renames);
   console.log(`  ${status}`);
 }
