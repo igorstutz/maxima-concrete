@@ -99,7 +99,7 @@
     "slug": "bexley",
     "name": "Bexley",
     "description": "Concrete solutions that combine craftsmanship with long-term strength.",
-    "image": "/images/Bexley-1.png",
+    "image": "/images/Bexley.png",
     "headline": "Custom Concrete Services in Bexley, OH",
     "intro": "Maxima Concrete builds durable concrete surfaces that complement your property while providing long-term strength, beauty, and everyday functionality."
   },
@@ -147,7 +147,7 @@
     "slug": "grandview-heights",
     "name": "Grandview Heights",
     "description": "Custom concrete work built for durability and style.",
-    "image": "/images/Grandview Heights.png",
+    "image": "/images/grandview-heights.webp",
     "headline": "Premium Concrete Solutions in Grandview Heights, OH",
     "intro": "Maxima Concrete delivers professionally installed concrete driveways, patios, and sidewalks that combine structural performance with refined craftsmanship."
   },
@@ -191,7 +191,7 @@
     "slug": "plain-city",
     "name": "Plain City",
     "description": "Reliable concrete craftsmanship built for decades of use.",
-    "image": "/images/Plain City-1.png"
+    "image": "/images/Plain City.png"
   },
   {
     "slug": "reynoldsburg",
@@ -227,85 +227,85 @@
     "slug": "grove-city",
     "name": "Grove City",
     "description": "Strong, reinforced concrete systems built to last.",
-    "image": "/images/Grove City-1.png"
+    "image": "/images/Grove City.png"
   },
   {
     "slug": "groveport",
     "name": "Groveport",
     "description": "Residential concrete driveways and patios installed with expert precision.",
-    "image": "/images/Groveport-1.png"
+    "image": "/images/Groveport.png"
   },
   {
     "slug": "blacklick",
     "name": "Blacklick",
     "description": "Custom concrete solutions designed for durability and performance.",
-    "image": "/images/Blacklick-1.png"
+    "image": "/images/Blacklick.png"
   },
   {
     "slug": "etna",
     "name": "Etna",
     "description": "Engineered concrete installations built for long-term strength.",
-    "image": "/images/Etna-1.png"
+    "image": "/images/Etna.png"
   },
   {
     "slug": "pataskala",
     "name": "Pataskala",
     "description": "High-quality driveways and flatwork designed for reliability.",
-    "image": "/images/Pataskala-1.png"
+    "image": "/images/Pataskala.png"
   },
   {
     "slug": "clintonville",
     "name": "Clintonville",
     "description": "Clean, durable concrete solutions installed without subcontractors.",
-    "image": "/images/Clintonville-1.png"
+    "image": "/images/Clintonville.png"
   },
   {
     "slug": "galloway",
     "name": "Galloway",
     "description": "Family-owned concrete services focused on lasting results.",
-    "image": "/images/Galloway-1.png"
+    "image": "/images/Galloway.png"
   },
   {
     "slug": "obetz",
     "name": "Obetz",
     "description": "Reinforced concrete driveways built for daily use and durability.",
-    "image": "/images/Obetz-1.png"
+    "image": "/images/Obetz.png"
   },
   {
     "slug": "whitehall",
     "name": "Whitehall",
     "description": "Concrete systems designed for strength, safety, and longevity.",
-    "image": "/images/Whitehall-1.png"
+    "image": "/images/Whitehall.png"
   },
   {
     "slug": "lockbourne",
     "name": "Lockbourne",
     "description": "Professionally installed concrete surfaces built to endure.",
-    "image": "/images/Lockbourne-1.png"
+    "image": "/images/Lockbourne.png"
   },
   {
     "slug": "west-jefferson",
     "name": "West Jefferson",
     "description": "High-performance concrete solutions delivered with precision.",
-    "image": "/images/West Jefferson-1.png"
+    "image": "/images/West Jefferson.png"
   },
   {
     "slug": "franklin-county",
     "name": "Franklin County",
     "description": "Reinforced concrete driveways and patios installed by our in-house team, built to last.",
-    "image": "/images/Franklin County-1.png"
+    "image": "/images/Franklin County.png"
   },
   {
     "slug": "delaware-county",
     "name": "Delaware County",
     "description": "Durable residential concrete solutions designed for long-term performance.",
-    "image": "/images/Delaware County, OH, USA-1.png"
+    "image": "/images/Delaware County, OH, USA.png"
   },
   {
     "slug": "union-county",
     "name": "Union County",
     "description": "High-strength concrete systems installed without subcontractors.",
-    "image": "/images/Union County-1.png"
+    "image": "/images/Union County.png"
   },
   {
     "slug": "licking-county",
