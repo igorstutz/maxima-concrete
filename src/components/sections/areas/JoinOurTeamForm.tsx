@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import { ArrowRight, Upload } from "lucide-react";
 import { Container } from "@/components/Container";
+import PhoneInput from "@/components/PhoneInput";
 import { asset } from "@/lib/base-path";
 import { newLeadId, pushLeadEvent } from "@/lib/analytics";
 
@@ -144,7 +145,7 @@ export default function JoinOurTeamForm({ content }: { content: Record<string, a
             </div>
             <div>
               <label className="mb-1.5 block text-xs font-medium text-navy">Phone</label>
-              <input type="tel" name="phone" inputMode="tel" className={inputCls} />
+              <PhoneInput name="phone" className={inputCls} />
             </div>
             <div className="sm:col-span-2">
               <label className="mb-1.5 block text-xs font-medium text-navy">Position of interest</label>

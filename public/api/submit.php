@@ -14,6 +14,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/mailer.php';
 require_once __DIR__ . '/email-template.php';
 require_once __DIR__ . '/attribution-parse.php';
+require_once __DIR__ . '/phone.php';
 
 // === Configuration ====================================================
 // Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
@@ -99,7 +100,9 @@ function handle_resume(string $recipient): void {
 
     $errors = [];
     if (strlen($name) < 2) $errors['name'] = 'Please enter your name';
-    $hasPhone = strlen(preg_replace('/\D/', '', $phone)) >= 10;
+    // Telefone é opcional aqui (basta ele ou o e-mail); quando vem, vem no padrão.
+    $hasPhone = telefone_eua($phone) !== '';
+    if ($hasPhone) $phone = telefone_eua($phone);
     $hasEmail = filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
     if (!$hasPhone && !$hasEmail) $errors['contact'] = 'Please enter a valid phone number or email';
     if ($errors) { http_response_code(400); echo json_encode(['ok' => false, 'errors' => $errors]); return; }
@@ -210,9 +213,12 @@ $errors = [];
 if (strlen($firstName) < 2) $errors['first_name'] = 'Please enter your first name';
 if (strlen($lastName) < 2)  $errors['last_name']  = 'Please enter your last name';
 
-$hasPhone = strlen(preg_replace('/\D/', '', $phone)) >= 10;
+// Sempre "(614) 384-5917", venha como vier — e só número americano: é o que a
+// máscara do formulário aceita, e o que a equipe consegue retornar.
+$hasPhone = telefone_eua($phone) !== '';
 $hasEmail = filter_var($email, FILTER_VALIDATE_EMAIL) !== false;
-if (!$hasPhone) $errors['phone'] = 'Please enter a valid phone number';
+if ($hasPhone) $phone = telefone_eua($phone);
+else $errors['phone'] = 'Please enter a valid 10-digit US phone number';
 if (!$hasEmail) $errors['email'] = 'Please enter a valid email';
 
 if ($street === '')            $errors['street']     = 'Please enter your street';

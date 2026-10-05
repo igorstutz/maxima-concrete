@@ -380,7 +380,7 @@ export default function AdminDashboardPage() {
                       <div className="grid sm:grid-cols-3 gap-x-6 gap-y-2 text-sm">
                         {s.phone && (
                           <a
-                            href={`tel:${s.phone}`}
+                            href={`tel:${s.phone.replace(/[^\d+]/g, "")}`}
                             className="flex items-center gap-2 text-gray-700 hover:text-ocean"
                           >
                             <PhoneCall size={14} className="text-gray-400" />

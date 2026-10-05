@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, Check, ChevronDown, Loader2 } from "lucide-react";
+import PhoneInput from "@/components/PhoneInput";
 import { Container } from "@/components/Container";
 import { asset } from "@/lib/base-path";
 import { newLeadId, pushLeadEvent, toE164 } from "@/lib/analytics";
@@ -219,7 +220,7 @@ export default function Contact({ content }: { content: Record<string, any> }) {
             <div>
               <label className={LABEL_CLASS}>{c.contactSectionLabel || "Your Contact"}<Req /></label>
               <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-                <input type="tel" name="phone" placeholder="Phone Number" required
+                <PhoneInput name="phone" placeholder="Phone Number" required
                   className={INPUT_CLASS} />
                 <input type="email" name="email" placeholder="E-mail Address" required
                   className={INPUT_CLASS} />

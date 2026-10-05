@@ -163,6 +163,12 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   da chave (`re_` = Resend), então quando o DNS sair da Wix basta trocar a chave.
 - Todo lead é gravado em `.private/submissions.log` antes de qualquer envio, e o
   painel `/admin` lê desse arquivo — e-mail com problema nunca perde lead.
+- **Telefone sempre `(614) 384-5917`.** O campo (`src/components/PhoneInput.tsx`)
+  formata enquanto a pessoa digita e só aceita número americano completo;
+  `public/api/phone.php` repete a regra no servidor (`submit.php` recusa o que não
+  for 10 dígitos). Leads gravados antes disso são padronizados na leitura, no
+  `data.php` — o log fica intacto e o id de cada lead (hash da linha) não muda.
+  `src/lib/phone.ts` e `phone.php` são par: mudou um, mude o outro.
 
 ## Depois do formulário: /thank-you/ e a confirmação ao lead
 - O formulário de contato (`src/components/sections/home/Contact.tsx`, usado em

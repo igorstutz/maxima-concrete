@@ -48,8 +48,14 @@ $callsRaw    = read_jsonl(ADMIN_PRIVATE_DIR . '/call-clicks.log', 20000);
 // Jornadas gravadas antes da revisão 2 do rastreador têm uma sessão falsa
 // "Organic Search" depois do clique no anúncio. Ver attr_consertar().
 require_once __DIR__ . '/../attribution-parse.php';
+// Leads de antes do padrão de telefone chegaram como cada um digitou
+// ("6143845917", "614.384.5917"...). Padronizados aqui, na leitura, pelo mesmo
+// motivo das jornadas: o log fica intacto, e o id de cada lead (hash da linha,
+// que é como o painel apaga um) continua o mesmo.
+require_once __DIR__ . '/../phone.php';
 foreach ($submissions as &$s) {
     if (is_array($s['attribution'] ?? null)) $s['attribution'] = attr_consertar_ia(attr_consertar($s['attribution']));
+    if (isset($s['phone']) && is_string($s['phone'])) $s['phone'] = telefone_padronizado($s['phone']);
 }
 unset($s);
 foreach ($callsRaw as &$c) {
