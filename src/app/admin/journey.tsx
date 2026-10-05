@@ -9,8 +9,8 @@
  * os leads seguintes para fora da tela.
  */
 
-import { useState } from "react";
-import { CheckCircle2, ChevronDown, ExternalLink, MousePointerClick, PhoneCall, Route } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { ChevronDown, ClipboardCheck, ExternalLink, MousePointerClick, PhoneCall, Route } from "lucide-react";
 import { canalDoLead, type Atribuicao, type Call, type Toque } from "./shared";
 
 const hora = (ts?: string) =>
@@ -57,6 +57,37 @@ function LinhaToque({ t, rotulo }: { t?: Toque; rotulo: string }) {
   );
 }
 
+/** Um passo da linha do tempo: página vista, ou um dos momentos de conversão. */
+type Passo =
+  | { tipo: "pagina"; ts: string; path: string }
+  | { tipo: "form"; ts: string }
+  | { tipo: "thanks"; ts: string }
+  | { tipo: "ligacao"; ts: string; page: string };
+
+/** Desempate quando dois passos têm o mesmo horário: a página, o envio, a /thank-you/, a ligação. */
+const ORDEM: Record<Passo["tipo"], number> = { pagina: 0, form: 1, thanks: 2, ligacao: 3 };
+
+/**
+ * Páginas e conversões numa sequência só, em ordem de horário. É o que mostra
+ * QUANDO a pessoa virou contato: em que página estava, o que tinha visto antes
+ * e o que fez depois. Em duas listas separadas, isso não se lia.
+ */
+function linhaDoTempo(
+  paginas: { ts: string; path: string }[],
+  enviadoEm: string | undefined,
+  thankYou: boolean,
+  ligacoes: Call[],
+): Passo[] {
+  const passos: Passo[] = paginas.map((p) => ({ tipo: "pagina", ts: p.ts, path: p.path }));
+  if (enviadoEm) {
+    passos.push({ tipo: "form", ts: enviadoEm });
+    if (thankYou) passos.push({ tipo: "thanks", ts: enviadoEm });
+  }
+  for (const c of ligacoes) passos.push({ tipo: "ligacao", ts: c.ts, page: c.page });
+  const t = (x: Passo) => Date.parse(x.ts) || 0;
+  return passos.sort((x, y) => t(x) - t(y) || ORDEM[x.tipo] - ORDEM[y.tipo]);
+}
+
 /**
  * `enviadoEm`, `thankYou` e `ligacoes` são o que veio DEPOIS do envio. A
  * jornada gravada termina no clique de enviar; isto vem de fora dela — a
@@ -75,12 +106,25 @@ export function LeadJourney({
   ligacoes?: Call[];
 }) {
   const [aberto, setAberto] = useState(false);
+  const listaRef = useRef<HTMLOListElement>(null);
+  const conversaoRef = useRef<HTMLLIElement>(null);
+
+  // A lista tem rolagem e a conversão fica no fim dela: ao abrir, ela já
+  // aparece na tela, com algumas páginas de antes para dar contexto.
+  useEffect(() => {
+    const lista = listaRef.current;
+    const alvo = conversaoRef.current;
+    if (!aberto || !lista || !alvo) return;
+    lista.scrollTop = Math.max(0, alvo.offsetTop - lista.clientHeight / 2);
+  }, [aberto]);
+
   if (!a) return null;
 
   const toques = a.touchpoints ?? [];
   const paginas = a.pages ?? [];
   const canal = canalDoLead(a);
   const temDepois = thankYou || ligacoes.length > 0;
+  const passos = linhaDoTempo(paginas, enviadoEm, thankYou, ligacoes);
 
   return (
     <div className="mt-3 border-t border-gray-100 pt-3">
@@ -137,58 +181,78 @@ export function LeadJourney({
                 Visits ({toques.length})
               </p>
               <ol className="space-y-1.5">
-                {toques.map((t, i) => (
-                  <li key={`${t.ts}-${i}`} className="flex flex-wrap items-baseline gap-x-2 text-xs">
-                    <span className="w-4 shrink-0 text-gray-400">{i + 1}.</span>
-                    <span className="font-medium text-gray-700">{t.channel}</span>
-                    {t.campaign && <span className="text-gray-500">{t.campaign}</span>}
-                    {t.landing && <span className="text-gray-500">→ {t.landing}</span>}
-                    <span className="ml-auto text-gray-400">{hora(t.ts)}</span>
-                  </li>
-                ))}
+                {toques.map((t, i) => {
+                  // A jornada é gravada no envio: a última visita é aquela em que ele aconteceu.
+                  const converteu = Boolean(enviadoEm) && i === toques.length - 1;
+                  return (
+                    <li key={`${t.ts}-${i}`} className="flex flex-wrap items-baseline gap-x-2 text-xs">
+                      <span className="w-4 shrink-0 text-gray-400">{i + 1}.</span>
+                      <span className="font-medium text-gray-700">{t.channel}</span>
+                      {t.campaign && <span className="text-gray-500">{t.campaign}</span>}
+                      {t.landing && <span className="text-gray-500">→ {t.landing}</span>}
+                      {converteu && (
+                        <span className="inline-flex items-center gap-1 self-center rounded-full bg-emerald-50 px-2 py-0.5 font-medium text-emerald-700">
+                          <ClipboardCheck size={11} />
+                          Form sent on this visit
+                        </span>
+                      )}
+                      <span className="ml-auto text-gray-400">{hora(t.ts)}</span>
+                    </li>
+                  );
+                })}
               </ol>
             </div>
           )}
 
-          {paginas.length > 0 && (
+          {passos.length > 0 && (
             <div>
               <p className="mb-2 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-gray-400">
                 <MousePointerClick size={12} />
-                Pages viewed ({paginas.length})
+                Timeline
+                <span className="font-normal normal-case tracking-normal">
+                  · {paginas.length} page{paginas.length === 1 ? "" : "s"} viewed
+                  {enviadoEm || temDepois ? " · conversion in green" : ""}
+                </span>
               </p>
-              <ol className="max-h-44 space-y-1 overflow-y-auto pr-1">
-                {paginas.map((p, i) => (
-                  <li key={`${p.ts}-${i}`} className="flex items-baseline gap-2 text-xs">
-                    <span className="truncate text-gray-700">{p.path}</span>
-                    <span className="ml-auto shrink-0 text-gray-400">{hora(p.ts)}</span>
-                  </li>
-                ))}
-              </ol>
-            </div>
-          )}
-
-          {temDepois && (
-            <div>
-              <p className="mb-2 flex items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-gray-400">
-                <CheckCircle2 size={12} />
-                After submitting
-              </p>
-              <ol className="space-y-1">
-                {thankYou && (
-                  <li className="flex items-baseline gap-2 text-xs">
-                    <span className="truncate text-gray-700">/thank-you/</span>
-                    <span className="text-gray-400">thank-you page</span>
-                    <span className="ml-auto shrink-0 text-gray-400">{hora(enviadoEm)}</span>
-                  </li>
-                )}
-                {ligacoes.map((c, i) => (
-                  <li key={`${c.ts}-${i}`} className="flex items-baseline gap-2 text-xs">
-                    <PhoneCall size={11} className="shrink-0 self-center text-emerald-600" />
-                    <span className="font-medium text-gray-700">Tapped to call</span>
-                    <span className="truncate text-gray-500">from {c.page || "unknown page"}</span>
-                    <span className="ml-auto shrink-0 text-gray-400">{hora(c.ts)}</span>
-                  </li>
-                ))}
+              <ol ref={listaRef} className="relative max-h-56 space-y-1 overflow-y-auto pr-1">
+                {passos.map((p, i) => {
+                  if (p.tipo === "pagina") {
+                    return (
+                      <li key={`p-${p.ts}-${i}`} className="flex items-baseline gap-2 px-2 text-xs">
+                        <span className="truncate text-gray-700">{p.path}</span>
+                        <span className="ml-auto shrink-0 text-gray-400">{hora(p.ts)}</span>
+                      </li>
+                    );
+                  }
+                  if (p.tipo === "thanks") {
+                    return (
+                      <li key={`t-${i}`} className="flex items-baseline gap-2 px-2 text-xs">
+                        <span className="truncate text-gray-700">/thank-you/</span>
+                        <span className="text-gray-400">thank-you page</span>
+                        <span className="ml-auto shrink-0 text-gray-400">{hora(p.ts)}</span>
+                      </li>
+                    );
+                  }
+                  const form = p.tipo === "form";
+                  return (
+                    <li
+                      key={`${p.tipo}-${p.ts}-${i}`}
+                      ref={form ? conversaoRef : undefined}
+                      className="flex items-center gap-2 rounded-lg bg-emerald-50 px-2 py-1.5 text-xs ring-1 ring-inset ring-emerald-200"
+                    >
+                      <span className="flex size-5 shrink-0 items-center justify-center rounded-full bg-emerald-600 text-white">
+                        {form ? <ClipboardCheck size={11} /> : <PhoneCall size={11} />}
+                      </span>
+                      <span className="font-semibold text-emerald-800">
+                        {form ? "Form submitted" : "Tapped to call"}
+                      </span>
+                      {!form && (
+                        <span className="truncate text-emerald-700/80">from {p.page || "unknown page"}</span>
+                      )}
+                      <span className="ml-auto shrink-0 font-medium text-emerald-700">{hora(p.ts)}</span>
+                    </li>
+                  );
+                })}
               </ol>
             </div>
           )}
