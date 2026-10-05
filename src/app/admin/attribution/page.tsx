@@ -213,7 +213,7 @@ export default function AdminAttributionPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gray-50 pb-20 pt-28">
+    <section className="min-h-screen bg-gray-50 pb-20 pt-10">
       <div
         className={`mx-auto max-w-6xl px-4 transition-opacity sm:px-6 lg:px-8 ${
           refreshing ? "opacity-60" : ""

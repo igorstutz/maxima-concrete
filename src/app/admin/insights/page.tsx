@@ -280,7 +280,7 @@ export default function AdminInsightsPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gray-50 pb-20 pt-28">
+    <section className="min-h-screen bg-gray-50 pb-20 pt-10">
       {/* Na recarga a tela anterior fica, esmaecida: trocar por esqueleto faria
           o layout pular a cada Refresh. */}
       <div

@@ -13,6 +13,8 @@ import {
   ChevronDown,
   AlertCircle,
   Trash2,
+  Search,
+  X,
 } from "lucide-react";
 import {
   AdminNav,
@@ -39,6 +41,24 @@ const LOCATION_LABELS: Record<string, string> = {
   unknown: "Other",
 };
 
+/** Minúsculas e sem acento: "Jose" acha "José", "oerding" acha "Oerding". */
+const normalizar = (v: string) =>
+  v.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().trim();
+
+/**
+ * Se o lead bate com o que foi digitado: nome (em qualquer ordem das palavras),
+ * e-mail ou telefone. Telefone compara só os dígitos, porque cada lead antigo
+ * chegou num formato.
+ */
+function bateComBusca(s: Submission, busca: string): boolean {
+  const termos = normalizar(busca).split(/\s+/).filter(Boolean);
+  if (!termos.length) return true;
+  const texto = normalizar([nomeDoLead(s), s.email ?? ""].join(" "));
+  if (termos.every((t) => texto.includes(t))) return true;
+  const digitos = busca.replace(/\D/g, "");
+  return digitos.length >= 3 && (s.phone ?? "").replace(/\D/g, "").includes(digitos);
+}
+
 export default function AdminDashboardPage() {
   const router = useRouter();
   const { status, data, refreshing, load, logout } = useAdminData();
@@ -48,6 +68,8 @@ export default function AdminDashboardPage() {
   const [customTo, setCustomTo] = useState("");
   const [tab, setTab] = useState<"submissions" | "calls">("submissions");
   const [excluindo, setExcluindo] = useState<string | null>(null);
+  const [busca, setBusca] = useState("");
+  const buscando = busca.trim() !== "";
 
   /**
    * Remove um lead da listagem. O registro vai para uma lixeira no servidor,
@@ -90,11 +112,21 @@ export default function AdminDashboardPage() {
     return !Number.isNaN(t) && t >= from && t <= to;
   };
 
+  // Com algo digitado na busca, procura em TODAS as datas: quem procura um nome
+  // quer achar a pessoa, e ela pode ter escrito antes do período selecionado.
   const submissions = useMemo(
     () =>
       (data?.submissions ?? [])
-        .filter((s) => s.ts && inRange(s.ts))
+        .filter((s) => s.ts && (buscando ? bateComBusca(s, busca) : inRange(s.ts)))
         .sort((a, b) => new Date(b.ts).getTime() - new Date(a.ts).getTime()),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [data, from, to, busca, buscando]
+  );
+
+  // O cartão de resumo conta o PERÍODO, com ou sem busca: é o número que o
+  // filtro de datas logo acima promete. Os resultados da busca têm contagem própria.
+  const totalNoPeriodo = useMemo(
+    () => (data?.submissions ?? []).filter((s) => s.ts && inRange(s.ts)).length,
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [data, from, to]
   );
@@ -182,7 +214,7 @@ export default function AdminDashboardPage() {
   }
 
   return (
-    <section className="min-h-screen bg-gray-50 pt-28 pb-20">
+    <section className="min-h-screen bg-gray-50 pt-10 pb-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
@@ -246,7 +278,7 @@ export default function AdminDashboardPage() {
             </div>
             <div>
               <p className="text-3xl font-bold text-gray-900">
-                {submissions.length}
+                {totalNoPeriodo}
               </p>
               <p className="text-sm text-gray-500">Form submissions</p>
             </div>
@@ -269,8 +301,9 @@ export default function AdminDashboardPage() {
           </button>
         </div>
 
-        {/* Tabs */}
-        <div className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1 mb-8">
+        {/* Tabs + busca */}
+        <div className="mb-8 flex flex-wrap items-center justify-between gap-3">
+        <div className="inline-flex rounded-[12px] bg-white border border-gray-200 p-1">
           <button
             onClick={() => setTab("submissions")}
             className={`inline-flex items-center gap-2 px-5 py-2 rounded-[10px] text-sm font-medium transition ${
@@ -295,12 +328,48 @@ export default function AdminDashboardPage() {
           </button>
         </div>
 
+        {tab === "submissions" && (
+          <div className="relative w-full sm:w-80">
+            <Search
+              size={15}
+              className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400"
+            />
+            <input
+              type="search"
+              value={busca}
+              onChange={(e) => setBusca(e.target.value)}
+              placeholder="Search by name, e-mail or phone"
+              aria-label="Search leads"
+              className="w-full rounded-[12px] border border-gray-200 bg-white py-2.5 pl-10 pr-9 text-sm text-gray-700 outline-none transition placeholder:text-gray-400 focus:border-ocean focus:ring-2 focus:ring-ocean/15 [&::-webkit-search-cancel-button]:hidden"
+            />
+            {buscando && (
+              <button
+                type="button"
+                onClick={() => setBusca("")}
+                aria-label="Clear search"
+                className="absolute right-2.5 top-1/2 flex size-6 -translate-y-1/2 items-center justify-center rounded-full text-gray-400 transition hover:bg-gray-100 hover:text-navy"
+              >
+                <X size={14} />
+              </button>
+            )}
+          </div>
+        )}
+        </div>
+
+        {tab === "submissions" && buscando && (
+          <p className="-mt-4 mb-6 text-sm text-gray-500">
+            {submissions.length} result{submissions.length === 1 ? "" : "s"} for{" "}
+            <span className="font-medium text-navy">&ldquo;{busca.trim()}&rdquo;</span> · searching all
+            dates
+          </p>
+        )}
+
         {/* Submissions */}
         {tab === "submissions" && (
           <>
         {submissionsByDay.length === 0 ? (
           <div className="rounded-2xl bg-white border border-gray-100 p-10 text-center text-gray-400 mb-12">
-            No submissions in this period.
+            {buscando ? "No leads match this search." : "No submissions in this period."}
           </div>
         ) : (
           <div className="space-y-6 mb-12">
