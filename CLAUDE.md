@@ -163,6 +163,12 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   da chave (`re_` = Resend), então quando o DNS sair da Wix basta trocar a chave.
 - Todo lead é gravado em `.private/submissions.log` antes de qualquer envio, e o
   painel `/admin` lê desse arquivo — e-mail com problema nunca perde lead.
+- **Válido / inválido** (botões no cartão do lead): gravado por `api/admin/review.php` em
+  `.private/lead-review.json`, indexado pelo id do lead, e juntado na leitura pelo
+  `data.php`. Nunca escrever no `submissions.log`: o id é o hash da linha, e mudar a
+  linha perde o lead para o Delete e para a própria marcação. Lead inválido sai das
+  contas de Insights e Attribution (`contaNasMetricas` em `shared.tsx`, critério único
+  das duas telas) e a tela diz quantos ficaram de fora; não revisado conta.
 - **Telefone sempre `(614) 384-5917`.** O campo (`src/components/PhoneInput.tsx`)
   formata enquanto a pessoa digita e só aceita número americano completo;
   `public/api/phone.php` repete a regra no servidor (`submit.php` recusa o que não

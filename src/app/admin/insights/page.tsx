@@ -24,6 +24,7 @@ import {
 import {
   AdminNav,
   PeriodFilter,
+  contaNasMetricas,
   isLead,
   useAdminData,
   useDateRange,
@@ -158,11 +159,11 @@ export default function AdminInsightsPage() {
 
   const [from, to] = useDateRange(preset, customFrom, customTo);
 
-  /** Leads do período. Candidaturas do Join Our Team ficam de fora. */
+  /** Leads do período. Candidaturas e leads marcados como inválidos ficam de fora. */
   const leads = useMemo(
     () =>
       (data?.submissions ?? []).filter((s: Submission) => {
-        if (!s.ts || !isLead(s)) return false;
+        if (!s.ts || !contaNasMetricas(s)) return false;
         const t = new Date(s.ts).getTime();
         return !Number.isNaN(t) && t >= from && t <= to;
       }),
@@ -174,11 +175,22 @@ export default function AdminInsightsPage() {
     const janela = to - from;
     if (!Number.isFinite(janela) || janela <= 0 || preset === "all") return null;
     return (data?.submissions ?? []).filter((s: Submission) => {
-      if (!s.ts || !isLead(s)) return false;
+      if (!s.ts || !contaNasMetricas(s)) return false;
       const t = new Date(s.ts).getTime();
       return !Number.isNaN(t) && t >= from - janela && t < from;
     }).length;
   }, [data, from, to, preset]);
+
+  /** Quantos ficaram de fora por terem sido marcados como inválidos — dito na tela. */
+  const invalidos = useMemo(
+    () =>
+      (data?.submissions ?? []).filter((s: Submission) => {
+        if (!s.ts || !isLead(s) || contaNasMetricas(s)) return false;
+        const t = new Date(s.ts).getTime();
+        return !Number.isNaN(t) && t >= from && t <= to;
+      }).length,
+    [data, from, to],
+  );
 
   const delta = useMemo(() => {
     if (leadsAnteriores === null || leadsAnteriores === 0) return null;
@@ -357,6 +369,13 @@ export default function AdminInsightsPage() {
             detalhe={porOrigem[0] ? `${porOrigem[0].valor} leads` : "no data yet"}
           />
         </div>
+
+        {invalidos > 0 && (
+          <p className="-mt-3 mb-6 text-xs text-gray-500">
+            {invalidos} lead{invalidos === 1 ? "" : "s"} marked invalid in this period{" "}
+            {invalidos === 1 ? "is" : "are"} left out of these numbers.
+          </p>
+        )}
 
         <div className="mb-6 rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
           <div className="mb-5 flex flex-wrap items-start justify-between gap-3">

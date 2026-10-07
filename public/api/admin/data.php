@@ -53,7 +53,12 @@ require_once __DIR__ . '/../attribution-parse.php';
 // motivo das jornadas: o log fica intacto, e o id de cada lead (hash da linha,
 // que é como o painel apaga um) continua o mesmo.
 require_once __DIR__ . '/../phone.php';
+// Válido/inválido, marcado no painel (review.php). Fica fora do log pelo mesmo
+// motivo: o id do lead é o hash da linha.
+$revisoes = json_decode((string)@file_get_contents(ADMIN_PRIVATE_DIR . '/lead-review.json'), true);
+$revisoes = is_array($revisoes) ? $revisoes : [];
 foreach ($submissions as &$s) {
+    if (isset($s['id'], $revisoes[$s['id']]) && is_array($revisoes[$s['id']])) $s['review'] = $revisoes[$s['id']];
     if (is_array($s['attribution'] ?? null)) $s['attribution'] = attr_consertar_ia(attr_consertar($s['attribution']));
     if (isset($s['phone']) && is_string($s['phone'])) $s['phone'] = telefone_padronizado($s['phone']);
 }

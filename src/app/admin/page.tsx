@@ -15,6 +15,8 @@ import {
   Trash2,
   Search,
   X,
+  Check,
+  Ban,
 } from "lucide-react";
 import {
   AdminNav,
@@ -22,12 +24,14 @@ import {
   dayKey,
   fmtDayLabel,
   fmtTime,
+  isLead,
   ligacoesPorLead,
   nomeDoLead,
   viuThankYou,
   useAdminData,
   useDateRange,
   type Preset,
+  type Revisao,
   type Submission,
 } from "./shared";
 import { LeadJourney } from "./journey";
@@ -59,6 +63,15 @@ function bateComBusca(s: Submission, busca: string): boolean {
   return digitos.length >= 3 && (s.phone ?? "").replace(/\D/g, "").includes(digitos);
 }
 
+type Filtro = "all" | "pending" | "valid" | "invalid";
+
+const FILTROS: { value: Filtro; label: string }[] = [
+  { value: "all", label: "All" },
+  { value: "pending", label: "Not reviewed" },
+  { value: "valid", label: "Valid" },
+  { value: "invalid", label: "Invalid" },
+];
+
 export default function AdminDashboardPage() {
   const router = useRouter();
   const { status, data, refreshing, load, logout } = useAdminData();
@@ -70,6 +83,41 @@ export default function AdminDashboardPage() {
   const [excluindo, setExcluindo] = useState<string | null>(null);
   const [busca, setBusca] = useState("");
   const buscando = busca.trim() !== "";
+  // Marcações feitas nesta tela, por cima do que veio do servidor: o botão
+  // responde na hora, sem esperar o Refresh. null = desmarcado.
+  const [revisoes, setRevisoes] = useState<Record<string, Revisao | null>>({});
+  const [filtro, setFiltro] = useState<Filtro>("all");
+
+  const revisaoDe = (s: Submission): Revisao | null =>
+    s.id && s.id in revisoes ? revisoes[s.id] : (s.review?.status ?? null);
+
+  /**
+   * Marca o lead como válido ou inválido. Clicar de novo na marcação atual
+   * desmarca. A tela muda na hora; se o servidor recusar, volta ao que era.
+   */
+  async function marcar(s: Submission, status: Revisao) {
+    if (!s.id) return;
+    const id = s.id;
+    const anterior = revisaoDe(s);
+    const nova = anterior === status ? null : status;
+    setRevisoes((r) => ({ ...r, [id]: nova }));
+    try {
+      const res = await fetch("/api/admin/review.php", {
+        method: "POST",
+        credentials: "include",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id, status: nova ?? "" }),
+      });
+      if (res.status === 401) {
+        router.replace("/admin/login/");
+        return;
+      }
+      if (!res.ok) throw new Error(String(res.status));
+    } catch {
+      setRevisoes((r) => ({ ...r, [id]: anterior }));
+      window.alert("Could not save. Please try again.");
+    }
+  }
 
   /**
    * Remove um lead da listagem. O registro vai para uma lixeira no servidor,
@@ -145,15 +193,40 @@ export default function AdminDashboardPage() {
   );
 
   // Group submissions by local day.
+  /**
+   * O filtro de revisão vale sobre o que o período (ou a busca) já recortou.
+   * "Not reviewed" é a fila de trabalho: ao marcar, o lead sai dela na hora.
+   * Candidatura não se qualifica, então só aparece em "All".
+   */
+  const passaNoFiltro = (s: Submission, f: Filtro) => {
+    if (f === "all") return true;
+    if (!isLead(s)) return false;
+    const r = revisaoDe(s);
+    return f === "pending" ? r === null : r === f;
+  };
+
+  const contagemFiltro = useMemo(() => {
+    const c: Record<Filtro, number> = { all: 0, pending: 0, valid: 0, invalid: 0 };
+    for (const s of submissions) for (const f of FILTROS) if (passaNoFiltro(s, f.value)) c[f.value]++;
+    return c;
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [submissions, revisoes]);
+
+  const visiveis = useMemo(
+    () => submissions.filter((s) => passaNoFiltro(s, filtro)),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [submissions, filtro, revisoes]
+  );
+
   const submissionsByDay = useMemo(() => {
     const groups = new Map<string, Submission[]>();
-    for (const s of submissions) {
+    for (const s of visiveis) {
       const k = dayKey(s.ts);
       if (!groups.has(k)) groups.set(k, []);
       groups.get(k)!.push(s);
     }
     return Array.from(groups.entries());
-  }, [submissions]);
+  }, [visiveis]);
 
   // Calls aggregated by day (desc) and by location.
   const callsByDay = useMemo(() => {
@@ -356,8 +429,39 @@ export default function AdminDashboardPage() {
         )}
         </div>
 
+        {tab === "submissions" && (
+          <div
+            role="group"
+            aria-label="Filter by review"
+            className="-mt-3 mb-6 flex flex-wrap items-center gap-2"
+          >
+            {FILTROS.map((f) => (
+              <button
+                key={f.value}
+                type="button"
+                onClick={() => setFiltro(f.value)}
+                aria-pressed={filtro === f.value}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-xs font-medium transition ${
+                  filtro === f.value
+                    ? f.value === "valid"
+                      ? "border-emerald-600 bg-emerald-600 text-white"
+                      : f.value === "invalid"
+                        ? "border-red-500 bg-red-500 text-white"
+                        : "border-navy bg-navy text-white"
+                    : "border-gray-200 bg-white text-gray-600 hover:border-ocean/40 hover:text-ocean"
+                }`}
+              >
+                {f.label}
+                <span className={filtro === f.value ? "text-white/75" : "text-gray-400"}>
+                  {contagemFiltro[f.value]}
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
+
         {tab === "submissions" && buscando && (
-          <p className="-mt-4 mb-6 text-sm text-gray-500">
+          <p className="-mt-3 mb-6 text-sm text-gray-500">
             {submissions.length} result{submissions.length === 1 ? "" : "s"} for{" "}
             <span className="font-medium text-navy">&ldquo;{busca.trim()}&rdquo;</span> · searching all
             dates
@@ -369,7 +473,11 @@ export default function AdminDashboardPage() {
           <>
         {submissionsByDay.length === 0 ? (
           <div className="rounded-2xl bg-white border border-gray-100 p-10 text-center text-gray-400 mb-12">
-            {buscando ? "No leads match this search." : "No submissions in this period."}
+            {filtro !== "all" && submissions.length > 0
+              ? "No leads in this filter."
+              : buscando
+                ? "No leads match this search."
+                : "No submissions in this period."}
           </div>
         ) : (
           <div className="space-y-6 mb-12">
@@ -384,10 +492,20 @@ export default function AdminDashboardPage() {
                   </span>
                 </div>
                 <div className="space-y-3">
-                  {items.map((s, i) => (
+                  {items.map((s, i) => {
+                    const revisao = revisaoDe(s);
+                    return (
                     <div
                       key={`${key}-${i}`}
-                      className="rounded-2xl bg-white border border-gray-100 p-5 shadow-sm"
+                      // A faixa na borda esquerda deixa a lista legível de longe:
+                      // verde revisado e bom, vermelho descartado, sem faixa a revisar.
+                      className={`rounded-2xl bg-white border border-gray-100 p-5 shadow-sm ${
+                        revisao === "valid"
+                          ? "border-l-4 border-l-emerald-500"
+                          : revisao === "invalid"
+                            ? "border-l-4 border-l-red-400"
+                            : ""
+                      }`}
                     >
                       <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                         <div>
@@ -420,6 +538,43 @@ export default function AdminDashboardPage() {
                             <span className="text-xs bg-gray-100 text-gray-600 font-medium rounded-full px-2.5 py-1">
                               via {s.hear_about}
                             </span>
+                          )}
+                          {/* Só lead de venda: candidatura do Join Our Team não se qualifica. */}
+                          {s.id && isLead(s) && (
+                            <div
+                              role="group"
+                              aria-label="Lead quality"
+                              className="inline-flex rounded-[10px] border border-gray-200 p-0.5"
+                            >
+                              <button
+                                type="button"
+                                onClick={() => marcar(s, "valid")}
+                                aria-pressed={revisao === "valid"}
+                                title={revisao === "valid" ? "Marked as valid. Click to clear" : "Mark as a valid lead"}
+                                className={`inline-flex items-center gap-1 rounded-[8px] px-2 py-0.5 text-xs font-medium transition ${
+                                  revisao === "valid"
+                                    ? "bg-emerald-600 text-white"
+                                    : "text-gray-500 hover:bg-emerald-50 hover:text-emerald-700"
+                                }`}
+                              >
+                                <Check size={13} />
+                                Valid
+                              </button>
+                              <button
+                                type="button"
+                                onClick={() => marcar(s, "invalid")}
+                                aria-pressed={revisao === "invalid"}
+                                title={revisao === "invalid" ? "Marked as invalid. Click to clear" : "Mark as an invalid lead"}
+                                className={`inline-flex items-center gap-1 rounded-[8px] px-2 py-0.5 text-xs font-medium transition ${
+                                  revisao === "invalid"
+                                    ? "bg-red-500 text-white"
+                                    : "text-gray-500 hover:bg-red-50 hover:text-red-600"
+                                }`}
+                              >
+                                <Ban size={13} />
+                                Invalid
+                              </button>
+                            </div>
                           )}
                           {s.id && (
                             <button
@@ -502,7 +657,8 @@ export default function AdminDashboardPage() {
                         ligacoes={s.id ? ligacoesDoLead.get(s.id) : undefined}
                       />
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             ))}
