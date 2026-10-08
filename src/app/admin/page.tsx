@@ -35,6 +35,7 @@ import {
   type Submission,
 } from "./shared";
 import { LeadJourney } from "./journey";
+import { PainelFiltrosLead, aplicarFiltrosLead, type FiltrosLead } from "./lead-filters";
 
 const LOCATION_LABELS: Record<string, string> = {
   header: "Header",
@@ -87,6 +88,8 @@ export default function AdminDashboardPage() {
   // responde na hora, sem esperar o Refresh. null = desmarcado.
   const [revisoes, setRevisoes] = useState<Record<string, Revisao | null>>({});
   const [filtro, setFiltro] = useState<Filtro>("all");
+  const [filtrosLead, setFiltrosLead] = useState<FiltrosLead>({});
+  const filtrandoOrigem = Object.keys(filtrosLead).length > 0;
 
   const revisaoDe = (s: Submission): Revisao | null =>
     s.id && s.id in revisoes ? revisoes[s.id] : (s.review?.status ?? null);
@@ -205,17 +208,28 @@ export default function AdminDashboardPage() {
     return f === "pending" ? r === null : r === f;
   };
 
+  // Os dois filtros se cruzam: as contagens da revisão consideram os filtros de
+  // origem, e as opções dos filtros de origem consideram a revisão escolhida —
+  // todo número na tela bate com a lista que aparece embaixo dele.
+  const ctxFiltros = useMemo(() => ({ ligacoes: ligacoesDoLead }), [ligacoesDoLead]);
+
   const contagemFiltro = useMemo(() => {
     const c: Record<Filtro, number> = { all: 0, pending: 0, valid: 0, invalid: 0 };
-    for (const s of submissions) for (const f of FILTROS) if (passaNoFiltro(s, f.value)) c[f.value]++;
+    for (const s of aplicarFiltrosLead(submissions, filtrosLead, ctxFiltros))
+      for (const f of FILTROS) if (passaNoFiltro(s, f.value)) c[f.value]++;
     return c;
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [submissions, revisoes]);
+  }, [submissions, revisoes, filtrosLead, ctxFiltros]);
 
-  const visiveis = useMemo(
+  const porRevisao = useMemo(
     () => submissions.filter((s) => passaNoFiltro(s, filtro)),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [submissions, filtro, revisoes]
+  );
+
+  const visiveis = useMemo(
+    () => aplicarFiltrosLead(porRevisao, filtrosLead, ctxFiltros),
+    [porRevisao, filtrosLead, ctxFiltros]
   );
 
   const submissionsByDay = useMemo(() => {
@@ -433,7 +447,7 @@ export default function AdminDashboardPage() {
           <div
             role="group"
             aria-label="Filter by review"
-            className="-mt-3 mb-6 flex flex-wrap items-center gap-2"
+            className="-mt-3 mb-3 flex flex-wrap items-center gap-2"
           >
             {FILTROS.map((f) => (
               <button
@@ -460,6 +474,22 @@ export default function AdminDashboardPage() {
           </div>
         )}
 
+        {tab === "submissions" && (
+          <PainelFiltrosLead
+            base={porRevisao}
+            filtros={filtrosLead}
+            setFiltros={setFiltrosLead}
+            ligacoes={ligacoesDoLead}
+          />
+        )}
+
+        {tab === "submissions" && filtrandoOrigem && !buscando && (
+          <p className="-mt-3 mb-6 text-sm text-gray-500">
+            Showing <span className="font-medium text-navy">{visiveis.length}</span> of{" "}
+            {porRevisao.length} lead{porRevisao.length === 1 ? "" : "s"} in this period
+          </p>
+        )}
+
         {tab === "submissions" && buscando && (
           <p className="-mt-3 mb-6 text-sm text-gray-500">
             {submissions.length} result{submissions.length === 1 ? "" : "s"} for{" "}
@@ -473,7 +503,7 @@ export default function AdminDashboardPage() {
           <>
         {submissionsByDay.length === 0 ? (
           <div className="rounded-2xl bg-white border border-gray-100 p-10 text-center text-gray-400 mb-12">
-            {filtro !== "all" && submissions.length > 0
+            {(filtro !== "all" || filtrandoOrigem) && submissions.length > 0
               ? "No leads in this filter."
               : buscando
                 ? "No leads match this search."
