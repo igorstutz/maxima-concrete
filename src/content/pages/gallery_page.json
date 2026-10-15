@@ -2,23 +2,29 @@
   "pageKey": "gallery_page",
   "sections": [
     {
+      "type": "hero-minimal",
       "key": "gallery_page_hero",
       "label": "Hero",
-      "type": "hero-minimal",
       "content": {
         "title": "Gallery",
+        "description": "",
         "subtitle": "Explore our gallery for inspiration and real project results across Central Ohio.",
+        "_sourceLabel": "",
+        "overlayGradient": true,
+        "overlayOpacity": null,
         "backgroundImage": "/images/cms/uploads/1781013756777-c1lp7a.webp",
+        "backLink": "",
+        "backLabel": "",
+        "tagline": "",
         "secondaryCtaLink": "#find-work",
         "secondaryCtaText": "Find Our Work Near You",
-        "backgroundImageMobile": "/images/cms/uploads/1781013756777-c1lp7a-mobile.webp",
-        "overlayGradient": true
+        "backgroundImageMobile": "/images/cms/uploads/1781013756777-c1lp7a-mobile.webp"
       }
     },
     {
+      "type": "all-services",
       "key": "gallery_page_all_services",
       "label": "All our Services",
-      "type": "all-services",
       "content": {
         "items": [
           {
@@ -67,19 +73,19 @@
             "image": "/images/cms/uploads/1782830334542-cnpoot.webp"
           },
           {
+            "link": "/gallery/fire-pits-fireplaces",
             "name": "Fire Pits & Fireplaces",
-            "image": "/images/cms/uploads/1773315426841-ae08oq.webp",
-            "link": "/gallery/fire-pits-fireplaces"
+            "image": "/images/cms/uploads/1773315426841-ae08oq.webp"
           },
           {
+            "link": "/gallery/outdoor-living-kitchen",
             "name": "Outdoor Living & Outdoor Kitchen",
-            "image": "/images/cms/uploads/1784042023396-2dsref.webp",
-            "link": "/gallery/outdoor-living-kitchen"
+            "image": "/images/cms/uploads/1784042023396-2dsref.webp"
           },
           {
-            "name": "Retaining & City Walls",
-            "image": "/images/cms/uploads/1782842879795-trotyg.webp",
-            "link": "/gallery/retaining-city-walls"
+            "link": "/gallery/retaining-city-walls",
+            "name": "Retaining & Seating Walls",
+            "image": "/images/cms/uploads/1782842879795-trotyg.webp"
           }
         ],
         "title": "All our Services",
@@ -90,82 +96,85 @@
       }
     },
     {
+      "type": "more-than-concrete",
       "key": "gallery_page_more_than_concrete",
       "label": "More Than Concrete",
-      "type": "more-than-concrete",
       "content": {
         "title": "More Than Concrete,\nIt's Confidence.",
-        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time."
+        "description": "Whether it's a custom driveway, patio, or complete backyard transformation, Maxima Concrete delivers lasting beauty and performance.\nWe don't just pour concrete — we build trust, one project at a time.",
+        "_sourceLabel": ""
       }
     },
     {
+      "type": "reviews",
       "key": "reviews",
       "label": "Reviews",
-      "type": "reviews",
       "content": {
         "subtitle": "See What Our Customers Are Saying on Google",
-        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
-        "titlePart1": "Why Homeowners Recommend ",
+        "titlePart1": "Why Homeowners Recommend",
         "titlePart2": "Maxima Concrete?",
+        "profileUrl": "https://share.google/6TmWIOQXhNNs9xsPD",
         "viewAllText": "View all reviews on Google"
       }
     },
     {
+      "type": "trust-global",
       "key": "trust_global",
       "label": "Trust (Global)",
-      "type": "trust-global",
       "content": {
         "items": [
           {
+            "link": "/why-maxima/",
             "icon": "home",
             "title": "Family-Owned & Operated",
-            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust.",
-            "link": "/why-maxima/"
+            "description": "Since 2011, delivering quality concrete, outdoor living spaces, and personalized service you can trust."
           },
           {
+            "link": "/why-maxima/",
             "icon": "users",
             "title": "In-House Professionals",
-            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality.\n",
-            "link": "/why-maxima/"
+            "description": "Every project is completed by our skilled in-house team, ensuring expert craftsmanship and consistent quality."
           },
           {
+            "link": "/why-maxima/",
             "icon": "shield",
             "title": "Built for Decades",
-            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating.",
-            "link": "/why-maxima/"
+            "description": "High-strength concrete solutions built to last, backed by 9,000+ happy clients and an A+ BBB rating."
           },
           {
+            "link": "/licensing-insured/",
             "icon": "filecheck",
             "title": "Licensed, Fully Insured & Registered in your City",
-            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish.",
-            "link": "/licensing-insured/"
+            "description": "Licensed, bonded, and fully insured, providing professional, reliable service and peace of mind from start to finish."
           }
         ],
         "title": "Why Homeowners\nTrust Maxima Concrete?",
         "ctaLink": "/contact-us",
         "ctaText": "Get a Free Estimate",
-        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio",
-        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp"
+        "_sourceLabel": "",
+        "backgroundImage": "/images/cms/uploads/1784035953257-bvgwxh.webp",
+        "projectsText": "More Than 9,000 Happy Clients Served Across Central Ohio"
       }
     },
     {
+      "type": "find-work",
       "key": "find_work",
       "label": "Find Our Work Near You",
-      "type": "find-work",
       "content": {
         "title": "Find Our Work Near You",
-        "mapZoom": 8,
         "subtitle": "Explore our Central Ohio projects and see the Maxima Concrete difference. With 9,000+ satisfied clients, we deliver trusted craftsmanship, quality results, and expert service.",
+        "_sourceLabel": "",
+        "mapZoom": 8,
         "mapCenter": [
-          39.9612,
-          -82.9988
+          "39.9612",
+          "-82.9988"
         ]
       }
     },
     {
+      "type": "contact",
       "key": "custom_1772202224823_bj26dc",
       "label": "Contact",
-      "type": "contact",
       "content": {
         "title": "Ready to Transform Your Space? Let's Get Started.",
         "ctaText": "Send Request",
@@ -175,10 +184,12 @@
       }
     },
     {
+      "type": "faq",
       "key": "custom_gallery_faq",
       "label": "FAQ",
-      "type": "faq",
       "content": {
+        "title": "FAQ — Our Work",
+        "_sourceLabel": "FAQ",
         "items": [
           {
             "question": "Are these real Maxima Concrete projects?",
@@ -196,20 +207,18 @@
             "question": "How do I get started on my own project?",
             "answer": "Contact us for a free consultation and estimate, and we'll help bring your vision to life."
           }
-        ],
-        "title": "FAQ — Our Work",
-        "_sourceLabel": "FAQ"
+        ]
       }
     },
     {
+      "type": "instagram",
       "key": "custom_1772205371645_l1stai",
       "label": "Instagram",
-      "type": "instagram",
       "content": {
+        "_sourceLabel": "Instagram",
         "handle": "@maximaconcrete",
         "titlePart1": "Follow Us",
-        "titlePart2": "— On Instagram",
-        "_sourceLabel": "Instagram"
+        "titlePart2": "— On Instagram"
       }
     }
   ]
