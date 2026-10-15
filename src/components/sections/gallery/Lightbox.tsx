@@ -3,12 +3,13 @@
 import { useEffect } from "react";
 import { ArrowRight, X } from "lucide-react";
 import Image from "@/components/Image";
+import { PROJECT_TAGS, projectTagColor, type ProjectTag } from "./projectTags";
 
 interface LightboxProps {
   images: string[];
   index: number;
-  /** Optional concrete/paver tag shown above the image */
-  tag?: "concrete" | "paver" | null;
+  /** Optional finish tag (concrete/stamped/broom/paver…) shown above the image */
+  tag?: ProjectTag | null;
   onClose: () => void;
   onPrev: () => void;
   onNext: () => void;
@@ -91,15 +92,13 @@ export function Lightbox({
         />
       </div>
 
-      {/* Concrete/paver tag */}
+      {/* Finish tag */}
       {tag && (
         <span
           onClick={(e) => e.stopPropagation()}
-          className={`absolute left-1/2 top-16 -translate-x-1/2 rounded-full border border-white/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm sm:text-sm ${
-            tag === "paver" ? "bg-amber-700/80" : "bg-ocean/80"
-          }`}
+          className={`absolute left-1/2 top-16 -translate-x-1/2 rounded-full border border-white/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-white backdrop-blur-sm sm:text-sm ${projectTagColor(tag)}`}
         >
-          {tag}
+          {PROJECT_TAGS[tag]}
         </span>
       )}
 

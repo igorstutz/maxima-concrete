@@ -7,12 +7,19 @@ import Image from "@/components/Image";
 import { Container } from "@/components/Container";
 import { legacyAsset } from "@/components/sections/home/legacy";
 import { Lightbox } from "./Lightbox";
+import {
+  PROJECT_TAGS,
+  isProjectTag,
+  projectTagColor,
+  type ProjectTag,
+} from "./projectTags";
 
-type ImageTag = "concrete" | "paver" | null;
+type ImageTag = ProjectTag | null;
 
 /**
  * Featured projects mosaic on white background (1 large + 2 stacked + 3 equal)
- * with lightbox and optional concrete/paver tags on split gallery pages.
+ * with lightbox and optional finish tags (concrete/stamped/broom/paver…) on
+ * split gallery pages.
  */
 export default function ProjectsGrid({
   content,
@@ -30,14 +37,14 @@ export default function ProjectsGrid({
   const showTags =
     isSplitPage ||
     paverImages.length > 0 ||
-    imageTypes.some((t) => t === "paver");
+    imageTypes.some((t) => isProjectTag(t) && t !== "concrete");
 
   const imageItems: { url: string; type: ImageTag }[] = [
     ...concreteImages.map((url, i) => ({
       url,
       type: (showTags
-        ? imageTypes[i] === "paver"
-          ? "paver"
+        ? isProjectTag(imageTypes[i])
+          ? imageTypes[i]
           : "concrete"
         : null) as ImageTag,
     })),
@@ -77,11 +84,9 @@ export default function ProjectsGrid({
           />
           {tag && (
             <span
-              className={`absolute left-2 top-2 z-10 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm sm:text-xs ${
-                tag === "paver" ? "bg-amber-700/80" : "bg-ocean/80"
-              }`}
+              className={`absolute left-2 top-2 z-10 rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wide text-white backdrop-blur-sm sm:text-xs ${projectTagColor(tag)}`}
             >
-              {tag}
+              {PROJECT_TAGS[tag]}
             </span>
           )}
           <div className="absolute inset-0 flex items-center justify-center bg-black/0 transition-all duration-300 group-hover:bg-black/20">

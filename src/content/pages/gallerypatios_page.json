@@ -42,12 +42,12 @@
           "/images/patio-paver-2-2.webp"
         ],
         "imageTypes": [
-          "concrete",
           "paver",
-          "paver",
-          "concrete",
-          "paver",
-          "concrete"
+          "stamped",
+          "broom",
+          "broom",
+          "stamped",
+          "stamped"
         ]
       }
     },

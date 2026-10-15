@@ -89,8 +89,28 @@ function inferSchema(value) {
 }
 
 // ---------- schema → campos Decap/Sveltia ----------
+// Etiquetas das fotos do projects-grid: select em vez de texto livre (um valor
+// digitado errado vira "Concrete" no site). Par de PROJECT_TAGS em
+// src/components/sections/gallery/projectTags.ts — mudou um, mude o outro.
+const PROJECT_TAG_OPTIONS = [
+  { label: "Concrete", value: "concrete" },
+  { label: "Stamped", value: "stamped" },
+  { label: "Broom Finish", value: "broom" },
+  { label: "Exposed Aggregate", value: "exposed-aggregate" },
+  { label: "Paver", value: "paver" },
+];
+
 function schemaToField(name, schema, indentLevel) {
   const base = { name, label: name, required: false };
+  if (name === "imageTypes" && (schema?.kind === "list-string" || schema?.kind === "unknown-list")) {
+    return {
+      ...base,
+      label: "Photo tags (same order as images)",
+      hint: "One tag per photo, in the same order as the images list above.",
+      widget: "list",
+      field: { name: "item", label: "Tag", widget: "select", options: PROJECT_TAG_OPTIONS },
+    };
+  }
   switch (schema?.kind) {
     case "boolean":
       return { ...base, widget: "boolean" };

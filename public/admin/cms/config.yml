@@ -3026,6 +3026,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: items
                         label: items
                         required: false
@@ -3039,10 +3055,6 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
                       - name: closing1
                         label: closing1
                         required: false
@@ -3055,18 +3067,6 @@ collections:
                         label: subtitle
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: logos
                         label: logos
                         required: false
@@ -3150,6 +3150,18 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3168,18 +3180,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: tagline
                         label: tagline
                         required: false
@@ -3492,14 +3492,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -3520,6 +3520,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -3533,15 +3542,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -3723,6 +3723,22 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: ctaLink
+                        label: ctaLink
+                        required: false
+                        widget: string
+                      - name: ctaText
+                        label: ctaText
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
                       - name: items
                         label: items
                         required: false
@@ -3736,10 +3752,6 @@ collections:
                             label: description
                             required: false
                             widget: string
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
                       - name: closing1
                         label: closing1
                         required: false
@@ -3752,18 +3764,6 @@ collections:
                         label: subtitle
                         required: false
                         widget: text
-                      - name: ctaLink
-                        label: ctaLink
-                        required: false
-                        widget: string
-                      - name: ctaText
-                        label: ctaText
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
                       - name: logos
                         label: logos
                         required: false
@@ -3793,6 +3793,18 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -3811,18 +3823,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: tagline
                         label: tagline
                         required: false
@@ -3993,14 +3993,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: ready-to-build
                 name: ready-to-build
                 widget: object
@@ -4065,6 +4065,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -4078,15 +4087,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -4414,6 +4414,18 @@ collections:
                     label: Content
                     widget: object
                     fields:
+                      - name: title
+                        label: title
+                        required: false
+                        widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: subtitle
+                        label: subtitle
+                        required: false
+                        widget: string
                       - name: backgroundImage
                         label: backgroundImage
                         required: false
@@ -4432,18 +4444,6 @@ collections:
                         required: false
                         widget: image
                         choose_url: true
-                      - name: title
-                        label: title
-                        required: false
-                        widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: subtitle
-                        label: subtitle
-                        required: false
-                        widget: string
                       - name: tagline
                         label: tagline
                         required: false
@@ -4660,14 +4660,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: ready-to-build
                 name: ready-to-build
                 widget: object
@@ -4732,6 +4732,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -4745,15 +4754,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -9853,14 +9853,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -9881,6 +9881,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -9894,15 +9903,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -11018,14 +11018,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -11046,6 +11046,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -11059,15 +11068,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -11629,14 +11629,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -11657,6 +11657,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -11670,15 +11679,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -12240,14 +12240,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -12268,6 +12268,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -12281,15 +12290,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -12852,14 +12852,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: related-services
                 name: related-services
                 widget: object
@@ -12880,6 +12880,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -12893,15 +12902,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -15383,14 +15383,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: reviews
                 name: reviews
                 widget: object
@@ -15794,14 +15794,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -15845,13 +15845,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -16255,14 +16267,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -16306,13 +16318,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -16679,14 +16703,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -16730,13 +16754,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -17140,14 +17176,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -17191,13 +17227,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -17564,14 +17612,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -17615,13 +17663,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -18025,14 +18085,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -18076,13 +18136,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -18486,14 +18558,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -18537,13 +18609,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -18947,14 +19031,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -18998,13 +19082,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -19408,14 +19504,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -19459,13 +19555,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -19832,14 +19940,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -19883,13 +19991,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -20293,14 +20413,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -20344,13 +20464,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -20754,14 +20886,14 @@ collections:
                         label: title
                         required: false
                         widget: text
-                      - name: description
-                        label: description
-                        required: false
-                        widget: text
                       - name: _sourceLabel
                         label: _sourceLabel
                         required: false
                         widget: string
+                      - name: description
+                        label: description
+                        required: false
+                        widget: text
               - label: projects-grid
                 name: projects-grid
                 widget: object
@@ -20805,13 +20937,25 @@ collections:
                           widget: image
                           choose_url: true
                       - name: imageTypes
-                        label: imageTypes
+                        label: "Photo tags (same order as images)"
                         required: false
+                        hint: "One tag per photo, in the same order as the images list above."
                         widget: list
                         field:
                           name: item
-                          label: Item
-                          widget: string
+                          label: Tag
+                          widget: select
+                          options:
+                            - label: Concrete
+                              value: concrete
+                            - label: Stamped
+                              value: stamped
+                            - label: "Broom Finish"
+                              value: broom
+                            - label: "Exposed Aggregate"
+                              value: exposed-aggregate
+                            - label: Paver
+                              value: paver
               - label: reviews
                 name: reviews
                 widget: object
@@ -22783,6 +22927,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -22796,15 +22949,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -23512,6 +23656,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -23525,15 +23678,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
@@ -30057,6 +30201,15 @@ collections:
                         label: title
                         required: false
                         widget: string
+                      - name: _sourceLabel
+                        label: _sourceLabel
+                        required: false
+                        widget: string
+                      - name: backgroundImage
+                        label: backgroundImage
+                        required: false
+                        widget: image
+                        choose_url: true
                       - name: services
                         label: services
                         required: false
@@ -30070,15 +30223,6 @@ collections:
                             label: label
                             required: false
                             widget: string
-                      - name: _sourceLabel
-                        label: _sourceLabel
-                        required: false
-                        widget: string
-                      - name: backgroundImage
-                        label: backgroundImage
-                        required: false
-                        widget: image
-                        choose_url: true
               - label: reviews
                 name: reviews
                 widget: object
