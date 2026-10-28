@@ -175,6 +175,13 @@ Tailwind v4, conteúdo em JSON no repositório, painel Sveltia CMS, deploy Hosti
   for 10 dígitos). Leads gravados antes disso são padronizados na leitura, no
   `data.php` — o log fica intacto e o id de cada lead (hash da linha) não muda.
   `src/lib/phone.ts` e `phone.php` são par: mudou um, mude o outro.
+- **Só Central Ohio (desde 2026-10-28).** `public/api/service-area.php` aceita ZIP com
+  prefixo 430–433 (todas as cidades de `service-areas.json` + Marion/Richwood). Fora
+  disso o `submit.php` recusa com 400 e a mensagem do servidor aparece no formulário:
+  não vira lead, não manda e-mail, não conta conversão. Motivo: os pedidos de fora de
+  Ohio eram 100% propaganda/golpe (35 de 218 em set–out). A tentativa vai para
+  `.private/out-of-area.log` (mesmo formato do lead) — conferir de vez em quando que
+  nenhum cliente real ficou de fora. A regra mora só no servidor, de propósito.
 
 ## Depois do formulário: /thank-you/ e a confirmação ao lead
 - O formulário de contato (`src/components/sections/home/Contact.tsx`, usado em
