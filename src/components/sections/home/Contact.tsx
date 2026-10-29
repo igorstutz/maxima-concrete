@@ -134,18 +134,7 @@ export default function Contact({ content }: { content: Record<string, any> }) {
         method: "POST",
         body: data,
       });
-      if (!res.ok) {
-        // O servidor explica o que recusou (ZIP fora da área atendida, campo
-        // inválido): essa mensagem vale mais que o erro genérico abaixo.
-        const body = await res.json().catch(() => null);
-        const motivo = body?.errors && Object.values(body.errors)[0];
-        if (res.status === 400 && typeof motivo === "string") {
-          setStatus("error");
-          setErrorMessage(motivo);
-          return;
-        }
-        throw new Error(`HTTP ${res.status}`);
-      }
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
       setStatus("success");
       // Lido do envio, antes do form.reset() abaixo: depois disso os campos já
       // não existem mais na tela.
@@ -245,7 +234,6 @@ export default function Contact({ content }: { content: Record<string, any> }) {
                 <input type="text" name="street" placeholder="Street" required
                   className={INPUT_CLASS} />
                 <input type="text" name="zip_code" placeholder="Zip Code" required
-                  inputMode="numeric" autoComplete="postal-code" maxLength={10}
                   className={INPUT_CLASS} />
               </div>
             </div>

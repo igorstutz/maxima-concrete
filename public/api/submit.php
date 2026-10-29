@@ -15,7 +15,6 @@ require_once __DIR__ . '/mailer.php';
 require_once __DIR__ . '/email-template.php';
 require_once __DIR__ . '/attribution-parse.php';
 require_once __DIR__ . '/phone.php';
-require_once __DIR__ . '/service-area.php';
 
 // === Configuration ====================================================
 // Destinatários definidos pela Maxima em 2026-08-20 (resposta do Paul).
@@ -79,13 +78,13 @@ function field(string $k): string {
     return clean_line((string)($_POST[$k] ?? ''));
 }
 
-function log_submission(array $entry, string $arquivo = 'submissions.log'): void {
+function log_submission(array $entry): void {
     $dir = __DIR__ . '/../.private';
     if (!is_dir($dir)) {
         @mkdir($dir, 0700, true);
     }
     $line = json_encode($entry, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) . "\n";
-    @file_put_contents($dir . '/' . $arquivo, $line, FILE_APPEND | LOCK_EX);
+    @file_put_contents($dir . '/submissions.log', $line, FILE_APPEND | LOCK_EX);
 }
 
 /**
@@ -224,8 +223,6 @@ if (!$hasEmail) $errors['email'] = 'Please enter a valid email';
 
 if ($street === '')            $errors['street']     = 'Please enter your street';
 if ($zip === '')               $errors['zip_code']   = 'Please enter your zip code';
-elseif (zip_eua($zip) === '')  $errors['zip_code']   = 'Please enter a valid 5-digit ZIP code';
-else                           $zip = zip_eua($zip);
 if ($hearAbout === '')         $errors['hear_about'] = 'Please tell us how you heard about us';
 if (count($services) === 0)    $errors['services']   = 'Please choose at least one service';
 if (trim($message) === '')     $errors['message']    = 'Please enter your message';
@@ -233,36 +230,6 @@ if (trim($message) === '')     $errors['message']    = 'Please enter your messag
 if ($errors) {
     http_response_code(400);
     echo json_encode(['ok' => false, 'errors' => $errors]);
-    exit;
-}
-
-// Fora da área atendida (ver service-area.php): não vira lead, não vai para
-// ninguém e não conta conversão — o navegador recebe erro e não dispara o
-// generate_lead. Fica num log à parte, com tudo o que o lead teria, para dar
-// para conferir de tempos em tempos que nenhum cliente de verdade ficou de fora.
-if (!zip_na_area($zip)) {
-    log_submission([
-        'ts'          => gmdate('Y-m-d\TH:i:s\Z'),
-        'ip'          => $_SERVER['REMOTE_ADDR'] ?? 'unknown',
-        'ua'          => $_SERVER['HTTP_USER_AGENT'] ?? '',
-        'first_name'  => $firstName,
-        'last_name'   => $lastName,
-        'phone'       => $phone,
-        'email'       => $email,
-        'street'      => $street,
-        'zip_code'    => $zip,
-        'services'    => $services,
-        'hear_about'  => $hearAbout,
-        'page_url'    => $pageUrl,
-        'message'     => $message,
-        'attribution' => attr_parse((string)($_POST['attribution'] ?? '')),
-    ], 'out-of-area.log');
-
-    http_response_code(400);
-    echo json_encode(['ok' => false, 'errors' => [
-        'zip_code' => 'Sorry, we only serve Central Ohio (Columbus and surrounding areas). '
-            . 'If your project is in our area, please check the ZIP code or call us at (614) 384-5917.',
-    ]]);
     exit;
 }
 
